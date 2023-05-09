@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I’m currently a Masters student in the Padilla-Gamiño Lab and part of the School of Aquatic and Fishery Sciences at the University of Washington in Seattle.\nMy research focuses on the multiple stressor impacts of plastic pollution and heat stress on coastal primary producers. More specifically, I am researching a suite of common chemicals added to plastic consumer-products called phthalate acid-esters, phthalates or plasticizers, and their potential impacts on gene transcription, primary productivity, and microbial community structure in corals and kelps.\n\n\nResearch Influences\nI first began circling the issue of plastic pollution and marine debris in 2012 as an intern with the Alaska Dept. of Fish & Game at a remote Steller sea lion rookery near Dixon Entrance. During population surveys, I photographed sea lions entangled in plastic trash, and later worked with the Pinniped Entanglement Group (PEG) to research biodegradable alternatives to plastic packing bands on fish boxes. I learned how difficult it is to amend a system reliant on plastic.\nMore recently, a seminar taught by my advisor Dr. Padilla-Gamiño raised my awareness of the links between the fossil fuel industry, petrochemical-based plastics pollution, and the need for a plastics circular economy. Throughout the seminar, I was heavily influenced by:\n\ndocumentary, “The Story of Plastic”\na peer-reviewed paper, “Rethinking Microplastics as a Diverse Contaminant Suite” by Chelsea Rochman et. al 2019\n\nPhthalates are known endocrine-disrupting chemicals, which can have strong effects even at very low doses. This ecotoxicology concept is referred to as ‘low-dose effects’ and ‘non-monotonic’ response and was introduced to me by Dr. Alison Gardell as a guest-lecturer to a course in Integrated Environmental Physiology taught by Dr. Steven Roberts at the University of Washington in Seattle.\nI became increasingly interested in studying these types of environmental pollutants because they challenge the concept of ‘acceptable levels of pollution’. A book by Dr. Max Liboiron, titledPollution is Colonialism, taught me that ‘acceptable levels of pollution’ assumes settler and colonial access to Indigenous land and is not, in fact, acceptable."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Sarah Tanja",
+    "section": "",
+    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nMay 9, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nMay 6, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  }
+]

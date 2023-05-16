@@ -1,8 +1,8 @@
 ---
 title: "About"
-image: "/images/bio-photo.jpg"
+image: /images/bio-photo.jpg
 about:
-  template: trestles
+  template: jolla
   links:
     - icon: linkedin
       text: LinkedIn

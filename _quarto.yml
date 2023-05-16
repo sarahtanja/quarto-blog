@@ -7,12 +7,12 @@ website:
   navbar:
     right:
       - about.qmd
-       - icon: linkedin
-         href: https://www.linkedin.com/in/sarah-tanja-595722146/
-       - icon: github
-         href: https://github.com/sarahtanja
-       - icon: envelope-heart
-         href: mailto:stanja@uw.edu
+      - icon: linkedin
+        href: https://www.linkedin.com/in/sarah-tanja-595722146/
+      - icon: github
+        href: https://github.com/sarahtanja
+      - icon: envelope-heart
+        href: mailto:stanja@uw.edu
 
 format:
   html:

@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Sarah Tanja"
+  title: "Sarah Tanja's Open Lab Notebook"
   navbar:
     right:
       - about.qmd

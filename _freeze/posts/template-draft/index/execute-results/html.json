@@ -1,0 +1,14 @@
+{
+  "hash": "f388672666b0993bf14c61e7fddd42eb",
+  "result": {
+    "markdown": "---\ntitle: \"Post Template\"\nauthor: \"Sarah Tanja\"\ndate: '16-May-2023'\ncategories: [lab records, protocols, goals, committee meetings]\nimage: \"thumbnail.jpg\"\ndraft: true\ntoc: true\ntoc-exand: true\n---\n\n\n# Heading 1\n\nSome executable code.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n\n\n## Heading 2\n\n### Heading 3\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

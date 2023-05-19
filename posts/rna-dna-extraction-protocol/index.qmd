@@ -247,16 +247,15 @@ You can also label an additional qubit tube if you are moving straight from extr
 
 The qubit tube should only be labelled on the top; the sides should be clear so that the qubit fluorescence can be read without impedance.
 
-The intermediate tubes and qubit tubes should be labelled with the `cryo_id` & `extraction_id` , such as: `1Ea extr1`.
+The intermediate tubes and qubit tubes can just be labelled with the `cryo_id`, and whether they are RNA or DNA products such as: `1Ea DNA` or `2CHb RNA`
 
 The **FINAL** tubes should be labelled with `cryo_id`, `DNA/RNA`, `extraction_id`, `date (ddMMMyy)`, & `initials`, such as:
 
 ```         
 1Ea
+ex1 SST
 RNA
-extr1
 10APR23
-SST
 ```
 
 ⚠️**Important Notes! ⚠️**
@@ -322,25 +321,81 @@ The coral is also very hard and prone to 'squirting out' from under the pestle
 
     -   (10:1 ratio of sample:digestion buffer) & (2:1 ratio of digestion buffer:Proteinase K)
 
-    -   For tubes with 500ul add:
+    -   For tubes with 500uL of DNA/RNA Shield add:
 
         -   50ul pro k buffer
         -   25ul proteinase K
 
     -   If you have tubes with a larger volume you can scale up the volumes (ex for 700ul, you would use 70ul buffer and 35ul pro k)
 
-4.  Let incubate at room temperature for 2 hours
+4.  Incubate in heat-block for 30mins at 55C
+
+5.  Vortex to mix
+
+6.  Centrifuge on max for 30s
+
+7.  Transfer $400 \mu L$ of the cleared supernatent to a nuclease-free tube
+
+8.  Add $400 \mu L$ of **DNA/RNA Lysis Buffer** to the supernatent(1:1) and vortex to mix
 
 ### Purify DNA & RNA
 
-## End Products
+1.  Transfer the buffered supernatent (should be a total of 800uL, which can be passed through the filter in one go) to yellow **Spin-Away Filter** in a **Collection Tube** and centrifuge
+
+::: callout-danger
+Save The flow-through in the collection tube for RNA purification! At this step the DNA is in the yellow spin column filter and the RNA is in the flow through.
+:::
+
+2.  Tranfser the yellow **Spin-Away Filter** to a new **Collection Tube**
+
+3.  To the RNA flow-through, add 800uL (1:1) of 200-proof ethanol to the flow-through and mix by pipetting up and down 12 times
+
+4.  In aliquots up to 700uL, transfer the RNA in ethanol to the green **Zymo-Spin IIICG Column** in a **Collection Tube**, centrifuge, and discard the flow-through. This step binds the RNA to the green column filter.
+
+##### DNase 1 Treatment
+
+5.  Add 400uL **DNA/RNA Wash Buffer** to the green **Zymo-Spin IIICG Column**, centrifuge and discard the flow-through
+
+6.  To prepare **DNase 1 Reaction Mix**: $$
+    DNase\, 1\, volume = 5 \mu L * (no.\, of\, sample\, preps)
+    $$
+
+$$
+DNA\, Digestion\, Buffer\, volume  = 75 \mu L * (no.\, of\, sample\, preps)
+$$
+
+-   Add 75uL of **DNA Digestion Buffer** per prep to a new nuclease-free tube
+-   Add 5uL of reconstituted **DNase 1** (thawed if previously frozen at $-20^{\circ}C$) per sample prep to the nuclease-free tube
+-   Mix by gentle inversion
+
+7.  Carefully drip $80 \mu L$ of **DNase 1 Reaction Mix** directly onto the green **Zymo-Spin IIICG Column** filter and let incubate at room temperature for 15mins
+
+8.  Add $400 \mu L$ **DNA/RNA Prep Buffer** to each column and centrifuge at 16,000xg for 30s, then discard the flow-through
+
+9.  Add $700 \mu L$ of **DNA/RNA Wash Buffer** to each column and centrifuge at 16,000xg for 30s, then discard the flow-through
+
+10. Add $400 \mu L$ of **DNA/RNA Wash Buffer** to each column and centrifuge at 16,000xg for 2mins to ensure complete removal of the wash buffer, then discard the flow-through
+
+11. Carefully transfer the column into the FINAL nuclease-free tube labelled for containing the eluted DNA/RNA end products
+
+12. Add $50 \mu L$ **DNase/RNase-Free Water** directly to the column matrix and centrifuge at 16,000xg for 30s
+
+13. Place FINAL eluted DNA/RNA tubes on ice
+
+14. Transfer $1 \mu L$ of each eluted DNA/RNA sample to their respectively labelled Qubit assay tube, and place Qubit assay tubes with eluted DNA/RNA on ice
+
+15. Store FINAL eluted DNA/RNA tubes in wax boxes in the $-80^{\circ}C$ freezer
+
+16. Take Qubit assay tubes to run Qubit quantification on eluted DNA and RNA
+
+    ## End Products
 
 The end products are two 1.5mL vials per sample that contain:
 
-1.  100ul of DNA in nuclease-free water
-2.  100ul of RNA in nuclease-free water.
+1.  50ul of DNA in nuclease-free water
+2.  50ul of RNA in nuclease-free water.
 
-Place these vials on ice and for RNA proceed with [Qubit RNA Broad Range Protocol](https://sarahtanja.github.io/lab-book/protocols/protocol-qbit/) , for DNA proceed with Nanodrop DNA
+Place these vials on ice and for RNA proceed with [Qubit RNA Broad Range Protocol](https://sarahtanja.github.io/lab-book/protocols/protocol-qbit/)
 
 OR, to continue lab-work later,
 

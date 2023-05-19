@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Sarah Tanja">
-<meta name="dcterms.date" content="2023-05-17">
+<meta name="dcterms.date" content="2023-05-19">
 
 <title>Sarah Tanja’s Open Lab Notebook - Dual DNA &amp; RNA Extraction Protocol</title>
 <style>
@@ -134,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">May 17, 2023</p>
+        <p class="date">May 19, 2023</p>
       </div>
     </div>
     
@@ -170,7 +170,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#proteinase-k-digestion" id="toc-proteinase-k-digestion" class="nav-link" data-scroll-target="#proteinase-k-digestion">Proteinase-K Digestion</a></li>
   <li><a href="#purify-dna-rna" id="toc-purify-dna-rna" class="nav-link" data-scroll-target="#purify-dna-rna">Purify DNA &amp; RNA</a></li>
   </ul></li>
-  <li><a href="#end-products" id="toc-end-products" class="nav-link" data-scroll-target="#end-products">End Products</a></li>
   </ul>
 </nav>
     </div>
@@ -498,13 +497,12 @@ D --&gt; E[[RNA&lt;br&gt;  &lt;br&gt;tube&lt;br&gt;  &lt;br&gt;rack]]
 <p>Only thin-wall, clear 0.5 mL PCR tubes are appropriate for use in the Qubit® fluorometer. Acceptable tubes include <a href="https://www.thermofisher.com/order/catalog/product/Q32856?gclid=CjwKCAjwuqiiBhBtEiwATgvixAYKxw1FwdqIxIiPSxZ-ngW738s6bl94L2cdLCFjXfosHgMX1hyAShoCv9cQAvD_BwE&amp;ef_id=CjwKCAjwuqiiBhBtEiwATgvixAYKxw1FwdqIxIiPSxZ-ngW738s6bl94L2cdLCFjXfosHgMX1hyAShoCv9cQAvD_BwE:G:s&amp;s_kwcid=AL!3652!3!529745253294!p!!g!!qubit%20tubes!7851124045!80648205054&amp;cid=bid_pca_aqb_r01_co_cp1359_pjt0000_bid00000_0se_gaw_bt_pur_con"><strong>Qubit® assay tubes</strong></a> <strong>(Invitrogen Cat.</strong> <strong>no.</strong> <strong>Q32856, 500 tubes) or <a href="https://us.vwr.com/store/product?keyword=10011-830">Axygen PCR-05-C tubes</a>(VWR, part number 10011-830)</strong>.</p>
 </blockquote>
 <p>The qubit tube should only be labelled on the top; the sides should be clear so that the qubit fluorescence can be read without impedance.</p>
-<p>The intermediate tubes and qubit tubes should be labelled with the <code>cryo_id</code> &amp; <code>extraction_id</code> , such as: <code>1Ea extr1</code>.</p>
+<p>The intermediate tubes and qubit tubes can just be labelled with the <code>cryo_id</code>, and whether they are RNA or DNA products such as: <code>1Ea DNA</code> or <code>2CHb RNA</code></p>
 <p>The <strong>FINAL</strong> tubes should be labelled with <code>cryo_id</code>, <code>DNA/RNA</code>, <code>extraction_id</code>, <code>date (ddMMMyy)</code>, &amp; <code>initials</code>, such as:</p>
 <pre><code>1Ea
+ex1 SST
 RNA
-extr1
-10APR23
-SST</code></pre>
+10APR23</code></pre>
 <p>⚠️<strong>Important Notes! ⚠️</strong></p>
 <ul>
 <li><strong>Use <a href="https://www.amazon.com/dp/B09L3Q99WL/ref=sspa_dk_hqp_detail_aax_0?psc=1&amp;sp_csd=d2lkZ2V0TmFtZT1zcF9ocXBfc2hhcmVk&amp;spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyWUpaVTc1M0pRMVImZW5jcnlwdGVkSWQ9QTAxMTgzODBJOFI3QlZFQ0pKQUsmZW5jcnlwdGVkQWRJZD1BMDc2MTE0M1ExRUdBSkEwOFBBRiZ3aWRnZXROYW1lPXNwX2hxcF9zaGFyZWQmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl">ethanol-proof lab markers</a> to label tubes</strong> <em>(ethanol is added to the green spin away collection tube)</em></li>
@@ -563,32 +561,84 @@ SST</code></pre>
 <ul>
 <li><p>Add the appropriate volume of Pro K buffer and Proteinase K (Proteinase K is stored in the -20 after being reconstituted)</p></li>
 <li><p>(10:1 ratio of sample:digestion buffer) &amp; (2:1 ratio of digestion buffer:Proteinase K)</p></li>
-<li><p>For tubes with 500ul add:</p>
+<li><p>For tubes with 500uL of DNA/RNA Shield add:</p>
 <ul>
 <li>50ul pro k buffer</li>
 <li>25ul proteinase K</li>
 </ul></li>
 <li><p>If you have tubes with a larger volume you can scale up the volumes (ex for 700ul, you would use 70ul buffer and 35ul pro k)</p></li>
 </ul></li>
-<li><p>Let incubate at room temperature for 2 hours</p></li>
+<li><p>Incubate in heat-block for 30mins at 55C</p></li>
+<li><p>Vortex to mix</p></li>
+<li><p>Centrifuge on max for 30s</p></li>
+<li><p>Transfer <span class="math inline">\(400 \mu L\)</span> of the cleared supernatent to a nuclease-free tube</p></li>
+<li><p>Add <span class="math inline">\(400 \mu L\)</span> of <strong>DNA/RNA Lysis Buffer</strong> to the supernatent(1:1) and vortex to mix</p></li>
 </ol>
 </section>
 <section id="purify-dna-rna" class="level3">
-<h3 class="anchored" data-anchor-id="purify-dna-rna">Purify DNA &amp; RNA</h3>
-</section>
-</section>
-<section id="end-products" class="level2">
-<h2 class="anchored" data-anchor-id="end-products">End Products</h2>
+<h3 class="anchored">Purify DNA &amp; RNA</h3>
+<ol type="1">
+<li>Transfer the buffered supernatent (should be a total of 800uL, which can be passed through the filter in one go) to yellow <strong>Spin-Away Filter</strong> in a <strong>Collection Tube</strong> and centrifuge</li>
+</ol>
+<div class="callout-danger callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Danger
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Save The flow-through in the collection tube for RNA purification! At this step the DNA is in the yellow spin column filter and the RNA is in the flow through.</p>
+</div>
+</div>
+<ol start="2" type="1">
+<li><p>Tranfser the yellow <strong>Spin-Away Filter</strong> to a new <strong>Collection Tube</strong></p></li>
+<li><p>To the RNA flow-through, add 800uL (1:1) of 200-proof ethanol to the flow-through and mix by pipetting up and down 12 times</p></li>
+<li><p>In aliquots up to 700uL, transfer the RNA in ethanol to the green <strong>Zymo-Spin IIICG Column</strong> in a <strong>Collection Tube</strong>, centrifuge, and discard the flow-through. This step binds the RNA to the green column filter.</p></li>
+</ol>
+<section id="dnase-1-treatment" class="level5">
+<h5 class="anchored">DNase 1 Treatment</h5>
+<ol start="5" type="1">
+<li><p>Add 400uL <strong>DNA/RNA Wash Buffer</strong> to the green <strong>Zymo-Spin IIICG Column</strong>, centrifuge and discard the flow-through</p></li>
+<li><p>To prepare <strong>DNase 1 Reaction Mix</strong>: <span class="math display">\[
+DNase\, 1\, volume = 5 \mu L * (no.\, of\, sample\, preps)
+\]</span></p></li>
+</ol>
+<p><span class="math display">\[
+DNA\, Digestion\, Buffer\, volume  = 75 \mu L * (no.\, of\, sample\, preps)
+\]</span></p>
+<ul>
+<li>Add 75uL of <strong>DNA Digestion Buffer</strong> per prep to a new nuclease-free tube</li>
+<li>Add 5uL of reconstituted <strong>DNase 1</strong> (thawed if previously frozen at <span class="math inline">\(-20^{\circ}C\)</span>) per sample prep to the nuclease-free tube</li>
+<li>Mix by gentle inversion</li>
+</ul>
+<ol start="7" type="1">
+<li><p>Carefully drip <span class="math inline">\(80 \mu L\)</span> of <strong>DNase 1 Reaction Mix</strong> directly onto the green <strong>Zymo-Spin IIICG Column</strong> filter and let incubate at room temperature for 15mins</p></li>
+<li><p>Add <span class="math inline">\(400 \mu L\)</span> <strong>DNA/RNA Prep Buffer</strong> to each column and centrifuge at 16,000xg for 30s, then discard the flow-through</p></li>
+<li><p>Add <span class="math inline">\(700 \mu L\)</span> of <strong>DNA/RNA Wash Buffer</strong> to each column and centrifuge at 16,000xg for 30s, then discard the flow-through</p></li>
+<li><p>Add <span class="math inline">\(400 \mu L\)</span> of <strong>DNA/RNA Wash Buffer</strong> to each column and centrifuge at 16,000xg for 2mins to ensure complete removal of the wash buffer, then discard the flow-through</p></li>
+<li><p>Carefully transfer the column into the FINAL nuclease-free tube labelled for containing the eluted DNA/RNA end products</p></li>
+<li><p>Add <span class="math inline">\(50 \mu L\)</span> <strong>DNase/RNase-Free Water</strong> directly to the column matrix and centrifuge at 16,000xg for 30s</p></li>
+<li><p>Place FINAL eluted DNA/RNA tubes on ice</p></li>
+<li><p>Transfer <span class="math inline">\(1 \mu L\)</span> of each eluted DNA/RNA sample to their respectively labelled Qubit assay tube, and place Qubit assay tubes with eluted DNA/RNA on ice</p></li>
+<li><p>Store FINAL eluted DNA/RNA tubes in wax boxes in the <span class="math inline">\(-80^{\circ}C\)</span> freezer</p></li>
+<li><p>Take Qubit assay tubes to run Qubit quantification on eluted DNA and RNA</p>
+<h2 id="end-products" class="anchored" data-anchor-id="dnase-1-treatment">End Products</h2></li>
+</ol>
 <p>The end products are two 1.5mL vials per sample that contain:</p>
 <ol type="1">
-<li>100ul of DNA in nuclease-free water</li>
-<li>100ul of RNA in nuclease-free water.</li>
+<li>50ul of DNA in nuclease-free water</li>
+<li>50ul of RNA in nuclease-free water.</li>
 </ol>
-<p>Place these vials on ice and for RNA proceed with <a href="https://sarahtanja.github.io/lab-book/protocols/protocol-qbit/">Qubit RNA Broad Range Protocol</a> , for DNA proceed with Nanodrop DNA</p>
+<p>Place these vials on ice and for RNA proceed with <a href="https://sarahtanja.github.io/lab-book/protocols/protocol-qbit/">Qubit RNA Broad Range Protocol</a></p>
 <p>OR, to continue lab-work later,</p>
 <p>Place them in a wax freezer box, label the box, and freeze them in the -80C.</p>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->

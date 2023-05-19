@@ -1,7 +1,7 @@
 ---
 title: "Daily Lab Log"
-author: "Tristan O'Malley"
-date: '`r format(Sys.Date(), "%d-%b-%Y")`'
+author: "Sarah Tanja"
+date: '05/19/2023'
 categories: [daily log]
 toc: true
 toc_label: "Table of Contents" # default: Content

@@ -4,7 +4,6 @@ author: "Sarah Tanja"
 date: '`r format(Sys.Date(), "%d-%b-%Y")`'
 categories: [protocols]
 image: "nah-extractions.jpg"
-draft: true
 toc: true
 toc-exand: true
 ---

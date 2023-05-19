@@ -1,9 +1,9 @@
 ---
 title: "Dual DNA & RNA Extraction Protocol"
 author: "Sarah Tanja"
-date: '`r format(Sys.Date(), "%d-%b-%Y")`'
+date: '05/19/2023'
 categories: [protocols]
-image: "nah-extractions.jpg"
+image: nah-extractions.jpg
 toc: true
 toc-exand: true
 ---

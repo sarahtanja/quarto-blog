@@ -1,9 +1,9 @@
 ---
 title: "Post Template"
 author: "Sarah Tanja"
-date: '`r format(Sys.Date(), "%d-%b-%Y")`'
-categories: [lab records, protocols, goals, committee meetings]
-image: "thumbnail.jpg"
+date: '05/19/2023'
+categories: [lab records, protocols, goals, committee meetings, daily log]
+image: thumbnail.jpg
 draft: true
 toc: true
 toc-exand: true

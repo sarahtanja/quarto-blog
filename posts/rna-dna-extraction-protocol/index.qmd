@@ -5,7 +5,7 @@ date: '05/19/2023'
 categories: [protocols]
 image: nah-extractions.jpg
 toc: true
-toc-exand: true
+toc-expand: true
 ---
 
 The aim of this protocol is to take coral fragments that have been snap-frozen in liquid nitrogen and extract both DNA for downstream archaea & bacteria microbiome 16S Microbiome Sequencing and RNA for downstream coral-host tissue Tag-seq or RNA-seq analysis.

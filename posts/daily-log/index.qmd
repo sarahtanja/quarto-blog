@@ -7,7 +7,27 @@ toc: true
 toc_label: "Table of Contents" # default: Content
 toc_icon: "heart"  # corresponding Font Awesome icon name without the "fa" prefix
 toc_sticky: true   # enables sticky toc
+reference-location: margin
+citation-location: margin
 ---
+
+##### 19-MAY-2023. F
+
+-   Ran Qubit on ex7 samples
+-   Extraction #7 (the redo) on samples:
+    -   3-Eb
+    -   3-PH1b
+    -   2-PA2b
+    -   2-CH1b
+    -   4-PH1b
+    -   3-CA1b
+-   found out how to use quarto to do [Margin References](https://quarto.org/docs/blog/posts/2022-02-17-advanced-layout/#:~:text=.-,Margin%20References,-Footnotes%20and%20the)!
+-   found cool article on [Verbatim code chunks](https://themockup.blog/posts/2021-08-27-displaying-verbatim-code-chunks-in-xaringan-presentations/) in R (want to render the code chunk options and show what engine is being used?)
+-   dry-ice at biochem stockroom is low, have to check that there will be a replenishment next week so I have enough dry ice to ship samples!
+
+##### 18-MAY-2023. W
+
+-   wrote script to normalize eluted RNA/DNA
 
 ##### 04-MAY-2023. W
 
@@ -173,7 +193,7 @@ toc_sticky: true   # enables sticky toc
 
 -   spring break
 
-####### 23-MAR-2023, Th
+##### 23-MAR-2023, Th
 
 -   spring break
 

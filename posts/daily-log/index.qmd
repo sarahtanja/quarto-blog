@@ -2,14 +2,23 @@
 title: "Daily Lab Log"
 author: "Sarah Tanja"
 date: '05/19/2023'
+image: notebook.png
 categories: [daily log]
 toc: true
-toc_label: "Table of Contents" # default: Content
-toc_icon: "heart"  # corresponding Font Awesome icon name without the "fa" prefix
-toc_sticky: true   # enables sticky toc
+toccolor: lavender
+toc-location: left
 reference-location: margin
 citation-location: margin
 ---
+
+##### 23-MAY-2023. T
+
+-   completed UW driver safety training
+-   met with Steven Roberts, confirmed that no blank/standard is used for RNA-seq
+-   emailed with Jesse Zaneveld, learned about Zymo mock [microbial community standard](https://www.zymoresearch.com/collections/zymobiomics-microbial-community-standards/products/zymobiomics-microbial-community-standard) and [microbial community DNA standards](https://www.zymoresearch.com/collections/zymobiomics-microbial-community-standards/products/zymobiomics-microbial-community-dna-standard) to be used as positive controls for the extraction (community standard cells) and the PCR library prep and sequencing (community standard DNA) to assess bias in each process.
+-   Put both Zymo standards on purcahsing log, emailed Kat and she said she would buy them tonight with the pcard
+-   Met with Nora, she has made an [awesome quarto blog](https://norahess.quarto.pub/uw-lab-note-book/) for the IBIS celebration to showcase what she has learned. We also talked a bit about stats and need to follow up with what to do when your data is not normally distributed (moving from paired T test to Wilcoxon paired-sample T test)
+-   
 
 ##### 19-MAY-2023. F
 

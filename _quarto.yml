@@ -16,7 +16,7 @@ website:
 
 format:
   html:
-    theme: flatly
+    theme: minty
     css: styles.css
 
 editor: visual

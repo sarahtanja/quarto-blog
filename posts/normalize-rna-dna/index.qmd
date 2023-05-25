@@ -1,0 +1,22 @@
+---
+title: "Post Template"
+author: "Sarah Tanja"
+date: '05/19/2023'
+categories: [lab records, protocols, goals, committee meetings, daily log]
+image: thumbnail.jpg
+draft: true
+toc: true
+toc-exand: true
+---
+
+# Heading 1
+
+Some executable code.
+
+```{r}
+1 + 1
+```
+
+## Heading 2
+
+### Heading 3

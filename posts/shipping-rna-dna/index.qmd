@@ -1,0 +1,47 @@
+---
+title: "Shipping RNA/DNA on Dry-Ice"
+author: "Sarah Tanja"
+date: '05/23/2023'
+categories: [protocols]
+draft: true
+toc: true
+toc-exand: true
+---
+
+## Shipping eluted DNA to Mr. DNA 
+
+Here, we are shipping 20 total eluted DNA samples in volumes of 30uL and concentrations normalized to 20ng/uL in a 96-well PCR plate sealed with adhesive foil and packed on dry-ice.
+
+The main goal is to pack your samples securely. You want to protect plates/vials from breaking, lids from coming off, and samples from being damaged if the package is handled roughly during shipment.
+
+If you are sending plates be absolutely sure that the covers will not lift off during shipping. Films, foils etc. during the pressure changes of shipping can pop off. Even if a small portion of the film or foil lifts, it couldl allow for cross contamination of your DNA, and result in loss of samples. MR DNA is not responsible for anything related to issues that occur during shipping.
+
+#### Primary container (the inner container holding the DNA tubes):
+
+1.  FILL OUT A Sample submission form (obtained from MR DNA via email)
+2.  Use a vial, tube or plate made of high grade plastic or other medium suitable for transportation of the material being shipped. 1.5 ml snaptop or 2ml screwtop are appropriate.
+3.  Seal each vial tube or plate securely (tape parafilm etc) to absolutely prevent leakage and breakage and evaporation
+4.  Clearly identify the contents and avoid abbreviations (e.g. write out Salmonella enterica MK-06 rather than just MK-06).
+5.  Place them inside the primary container so they are protected from being crushed and if a tube breaks be sure to include enough absorbent material (e.g. paper towels) to fully contain any liquid if a tube breaks. Paper towels and other absorbent material also provide protection from breaking.
+
+#### Secondary container:
+
+1.  Use a watertight/leak proof container and reinforce with an adhesive tape as necessary to contain the individual vials contents (e.g. zip-lock type bag).
+2.  Include a packing list in a separate (zip lock bag or other water tight package) to prevent it from becoming wet and unreadable with a complete list of the contents including the scientific name and the amount in ml for liquids. Also email this list to MR.DNA at `info@mrdnalab.com`
+3.  Surround each primary container (e.g. vial) with sufficient absorbent packing material to completely absorb the contents should the primary container break
+4.  Use an outer container (shipping box) made of sufficient strength to protect the specimen.
+5.  Affix or write with permanent sharpie pen or other marking method a proper label on each tube or vial containing a sample to identify the contents and relate them to the packing list. Make sure labels cannot be wiped off.
+6.  Include on the packing slip an accurate address label with the complete address and phone number AND NAME for both the shipper and the recipient.
+7.  List the investigator or scientist so that the lab and MRDNA office personnel can get you your final data analyses without delays.
+8.  Affix the "double up arrows" sticker if orientation is important.
+9.   Using dry ice: If dry ice must be used in the packaging, these materials must be declared, and packages must be properly packaged and labeled with an ORM class 9 label and a Shipper's Declaration for Dangerous Goods must be completed (contact your shipper or shipping professionals at your institution for help with this). Note: Dry ice should never be placed in a sealed container. MOST DNA samples are stable at room temperature for a few days and will not require dry ice. If you do have any concerns please use your best judgment or contact MR DNA at `info@mrdnalab.com` for further instructions.
+
+Ship materials to:
+
+> Molecular Research Laboratory
+>
+> 503 Clovis Road Shallowater, TX 79363
+>
+> 806-789-7984
+>
+> Contact: Dr. Scot E. Dowd

@@ -1,0 +1,135 @@
+---
+title: "DNA/RNA Extractions Overview"
+author: "Sarah Tanja"
+date: '05/23/2023'
+image: "output/rna_dna.png"
+categories: [lab records]
+draft: false
+toc: true
+toc-exand: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+library(readr)
+```
+
+```{r}
+extr_meta <- read_csv("output/extractions_metadata.csv")
+head(extr_meta)
+```
+
+```{r}
+extracted <- extr_meta %>%
+  filter(!is.na(extraction_id))
+head(extracted, 20)
+
+```
+
+Qubit RNA BR Assay Kit The Qubit RNA BR (Broad-Range) Assay Kit, when used with the Qubit Fluorometer, provides an accurate and selective method for the quantitation of RNA samples. Depending on sample volume, the assay kit is designed to be accurate for initial RNA sample concentrations of 0.5 to 1,200 ng/µL, providing a detection range of 10−1,200 ng.
+
+\*\* IF RNA QUBIT IS ENTERED AS 1,201 IT WAS TOO HIGH!\*\*
+
+```{r}
+# Make RNA average column and move to after 3rd reading `qubit_rna_3`
+extracted <- extracted %>% 
+  mutate(
+    qubit_rna_avg = rowMeans(select(.,qubit_rna_1, qubit_rna_2, qubit_rna_3))) %>%
+    relocate(qubit_rna_avg, .after = qubit_rna_3) 
+
+# Make DNA average column and move to after 3rd reading `qubit_dna_3`
+extracted <- extracted %>% 
+  mutate(   
+    qubit_dna_avg = rowMeans(select(.,qubit_dna_1, qubit_dna_2, qubit_dna_3))) %>%
+    relocate(qubit_dna_avg, .after = qubit_dna_3)
+
+# Make a slimmed-down version 
+columns <- c("cryo_id", "extraction_id", "qubit_rna_avg", "qubit_dna_avg")
+
+extracted_slim <- extracted %>% 
+  select(all_of(columns))
+
+# Save this as a running list of extracted samples
+write_csv(extracted, "output/extracted.csv")
+write_csv(extracted_slim, "output/extracted_slim.csv")
+```
+
+```{r}
+# subset to review Qubit Scores
+qubit_scores <- extracted  %>%
+  select(cryo_id, extraction_id, qubit_dna_avg, qubit_rna_avg) %>% 
+  arrange(extraction_id)
+
+print(qubit_scores)
+```
+
+```{r}
+# Create base scatterplot
+rna <- ggplot(data = extracted, aes(x = extraction_id, y = qubit_rna_avg, color = cryo_id)) +
+  geom_point(size = 2, shape = 1) + 
+  ylab("RNA Quantity in ug/uL") + 
+  geom_hline(yintercept = 20, linetype = "solid", color = "red")
+
+# save the plot as an PNG file
+ggsave("../output/rna.png", plot = rna, width = 8, height = 4, dpi = 600)
+
+# View plot
+rna
+```
+
+```{r}
+dna <- ggplot(data = extracted, aes(x = extraction_id, y = qubit_dna_avg, color = cryo_id)) +
+  geom_point(size = 2, shape = 3) + 
+  ylab("DNA Quantity in ug/uL") + 
+  geom_hline(yintercept = 20, linetype = "solid", color = "red")
+
+# save the plot as an PNG file
+ggsave("../output/dna.png", plot = dna, width = 8, height = 4, dpi = 600)
+
+# View plot
+dna
+```
+
+```{r}
+rna_dna <- rna +
+  geom_point(data = extracted, aes(x = extraction_id, y = qubit_dna_avg, color = cryo_id), size = 2, shape = 3) +
+  scale_shape_manual(name = "Nucleotides", values = c(0, 2), labels = c("RNA", "DNA")) +
+  ylab("Nucleotide Quantity in ug/uL") + 
+  xlab("Extraction Batch")
+
+# save the plot as an PNG file
+ggsave("output/rna_dna.png", plot = rna_dna, width = 8, height = 4, dpi = 600)
+
+# View plot
+rna_dna
+```
+
+## Wilcoxon Paired-Sample T Test
+
+```{r}
+qubit_scores$diff <- qubit_scores$qubit_dna_avg - qubit_scores$qubit_rna_avg
+hist(qubit_scores$diff)
+qqnorm(qubit_scores$diff)
+shapiro.test(qubit_scores$diff)
+```
+
+The differences are not normally distributed, (p \< 0.05), therefore we cannot use a paired-sample t test. If the data do not meet the assumptions of normality required for parametric tests like the paired t-test, but you want to determine if there is a trend between two paired samples, you can use the Wilcoxon paired-sample T test. This is a non-parametric statistical test used to compare two related samples or repeated measures. It is appropriate for this dataset, because each row of DNA and RNA were extracted from the same sample. Here we really want to know if our Dual extraction method is biased toward optimizing yield for DNA or RNA, or if there is any trend at all. \> Our null and alternate hypotheses are:
+
+H0: There is no trend between the paired samples.
+
+H1: There is a trend between the paired samples.
+
+```{r}
+wilcox.test(x=qubit_scores$qubit_dna_avg, y=qubit_scores$qubit_rna_avg, paired=TRUE, alternative = 'two.sided')
+```
+
+The Wilcoxon signed-rank test, as a non-parametric test, determines whether there is a shift or trend in the paired observations but does not provide information about the direction or magnitude of the shift. It only tells you that there is a significant difference between the paired samples, but it does not indicate which sample has higher values or the direction of the shift.
+
+To determine the direction of the shift, you would need to examine the data and calculate the median or mean of the paired differences. If the median or mean of the differences is positive, it suggests that the second sample tends to have higher values than the first sample. Conversely, if the median or mean is negative, it indicates that the first sample tends to have higher values than the second sample.
+
+To get a better understanding of the direction and magnitude of the shift, you may consider plotting the paired differences or constructing a confidence interval around the median or mean difference. This can provide additional insights into the nature of the shift and help you interpret the results more accurately.

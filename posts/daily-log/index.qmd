@@ -1,7 +1,7 @@
 ---
 title: "Daily Lab Log"
 author: "Sarah Tanja"
-date: '05/19/2023'
+date: '05/23/2023'
 image: notebook.png
 categories: [daily log]
 toc: true
@@ -11,6 +11,20 @@ reference-location: margin
 citation-location: margin
 ---
 
+##### 24-MAY-2023. W
+
+-   University of Texas at Austin [Genomic Sequencing and Analysis Facility (GSAF)](https://wikis.utexas.edu/display/GSAF/Home+Page)
+
+    -   [Sample Input Guidelines](https://wikis.utexas.edu/display/GSAF/Sample+Input+Guidelines)
+
+        -   TagSeq:
+
+            -   25ng/ul concentration in greater than or equal to 25ul volume
+
+                (submitting RNA as low as 10ng/ul or as high as 100ng/ul is acceptable BUT ALL samples MUST be submitted at the same or very similar concentrations) 
+
+    -   [GSAF Requester Portal Login](https://lockbox-604.my.site.com/s/login/)
+
 ##### 23-MAY-2023. T
 
 -   completed UW driver safety training
@@ -18,7 +32,7 @@ citation-location: margin
 -   emailed with Jesse Zaneveld, learned about Zymo mock [microbial community standard](https://www.zymoresearch.com/collections/zymobiomics-microbial-community-standards/products/zymobiomics-microbial-community-standard) and [microbial community DNA standards](https://www.zymoresearch.com/collections/zymobiomics-microbial-community-standards/products/zymobiomics-microbial-community-dna-standard) to be used as positive controls for the extraction (community standard cells) and the PCR library prep and sequencing (community standard DNA) to assess bias in each process.
 -   Put both Zymo standards on purcahsing log, emailed Kat and she said she would buy them tonight with the pcard
 -   Met with Nora, she has made an [awesome quarto blog](https://norahess.quarto.pub/uw-lab-note-book/) for the IBIS celebration to showcase what she has learned. We also talked a bit about stats and need to follow up with what to do when your data is not normally distributed (moving from paired T test to Wilcoxon paired-sample T test)
--   
+-   Tried using `quarto publish gh-pages` command to publish blog
 
 ##### 19-MAY-2023. F
 

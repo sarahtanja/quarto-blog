@@ -11,19 +11,87 @@ reference-location: margin
 citation-location: margin
 ---
 
+## June 2023
+
+##### 02-JUN-2023. F
+
+-   Normalized DNA (still have RNA left to do)
+
+-   Tested normalized DNA on Qubit BR DNA assay
+
+##### 01-JUN-2023. Th
+
+-   Presented Bioinformatics [final project for FISH 546](https://rpubs.com/sarah_tanja/1048844)
+
+-   Attended GSR Meeting
+
+-   Attended Seminar/TGIT
+
+## May 2023
+
+##### 31-MAY-2023. W
+
+-   wrote `dilute` function to normalize RNA & DNA in [coral-DNA-RNA-lab-extractions](https://github.com/sarahtanja/coral-DNA-RNA-lab-extractions/blob/main/code/03-normalizing.qmd) GitHub repo:
+
+```{r}
+dilute <- function(C1, C2) {
+  # Initialize variables
+  n <- length(C1)
+  C1 <- C1
+  V1 <- numeric(n)  # Initialize V1 vector
+  V2 <- numeric(n)  # Initialize V2 vector
+  
+  # Loop through rows
+  for (i in seq_along(C1)) {
+    # Check for missing data
+    if (C1[i] <= 0) {
+      cat("Skipping row ", i, ": Invalid data\n")
+      next
+    }
+    
+    # Initialize V1 and V2 for the current row
+    V1_row <- 1
+    V2_row <- (C1[i] * V1_row) / C2
+    
+    # Loop until conditions are satisfied
+    while (!is.na(V1_row) && !is.na(V2_row) && (V1_row < 1 || V2_row < 50)) {
+      V1_row <- V1_row + 1
+      V2_row <- (C1[i] * V1_row) / C2
+      
+      # Break the loop if V1 exceeds a threshold value
+      if(V1_row > 49) {
+        cat("Skipping row ", i, ": No valid solution found\n")
+        next
+      }
+    }
+    
+    # Store optimized V1 and V2 values in the corresponding vectors
+    V1[i] <- V1_row
+    V2[i] <- V2_row
+  }
+  
+# Create a data frame with C1 column
+  result <- data.frame(C1 = C1)
+
+# Add V1 and V2 columns to the result data frame
+  result$V1 <- V1
+  result$V2 <- V2
+  result$C2 <- C1*V1/V2
+
+  return(result)
+}
+```
+
 ##### 24-MAY-2023. W
 
--   University of Texas at Austin [Genomic Sequencing and Analysis Facility (GSAF)](https://wikis.utexas.edu/display/GSAF/Home+Page)
-
+-   University of Texas at Austin [Genomic Sequencing and Analysis Facility (GSAF)](https://wikis.utexas.edu/display/GSAF/Home+Page):
     -   [Sample Input Guidelines](https://wikis.utexas.edu/display/GSAF/Sample+Input+Guidelines)
 
-        -   TagSeq:
-
-            -   25ng/ul concentration in greater than or equal to 25ul volume
-
-                (submitting RNA as low as 10ng/ul or as high as 100ng/ul is acceptable BUT ALL samples MUST be submitted at the same or very similar concentrations) 
+        > TagSeq: 25ng/ul concentration in greater than or equal to 25ul volume (submitting RNA as low as 10ng/ul or as high as 100ng/ul is acceptable BUT ALL samples MUST be submitted at the same or very similar concentrations) 
 
     -   [GSAF Requester Portal Login](https://lockbox-604.my.site.com/s/login/)
+
+    -   [Illumina BaseSpace Login](https://platform.login.illumina.com/platform-services-manager/?rURL=https://basespace.login.illumina.com/platform-home/&redirectMethod=GET&clientId=ps-home#/)
 
 ##### 23-MAY-2023. T
 

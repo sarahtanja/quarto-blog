@@ -6,7 +6,11 @@ categories: [lab records, protocols, goals, committee meetings, daily log]
 image: thumbnail.jpg
 draft: true
 toc: true
-toc-exand: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
 ---
 
 # Heading 1

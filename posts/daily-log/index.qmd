@@ -1,11 +1,12 @@
 ---
 title: "Daily Lab Log"
 author: "Sarah Tanja"
-date: '05/23/2023'
+date: '06/02/2023'
 image: notebook.png
 categories: [daily log]
 toc: true
-toccolor: lavender
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
 toc-location: left
 reference-location: margin
 citation-location: margin
@@ -16,15 +17,12 @@ citation-location: margin
 ##### 02-JUN-2023. F
 
 -   Normalized DNA (still have RNA left to do)
-
--   Tested normalized DNA on Qubit BR DNA assay
+-   Tested normalized DNA on Qubit BR DNA assay, results overall were good but a smidge lower than my goal
 
 ##### 01-JUN-2023. Th
 
 -   Presented Bioinformatics [final project for FISH 546](https://rpubs.com/sarah_tanja/1048844)
-
 -   Attended GSR Meeting
-
 -   Attended Seminar/TGIT
 
 ## May 2023
@@ -82,6 +80,17 @@ dilute <- function(C1, C2) {
 }
 ```
 
+-   SAFS Spring Picnic!
+
+##### 29-MAY-2023. T
+
+-   Worked on Bioinformatics Final Project, RNA expression heat map with Gene Ontology Terms (Protein Functions)
+-   IBIS Celebration of [Nora's Blog](https://norahess.quarto.pub/uw-lab-note-book/)!
+
+##### 25-MAY-2023. Th
+
+-   Hosted Dr. Nicola Smith as the GSIS
+
 ##### 24-MAY-2023. W
 
 -   University of Texas at Austin [Genomic Sequencing and Analysis Facility (GSAF)](https://wikis.utexas.edu/display/GSAF/Home+Page):
@@ -125,6 +134,8 @@ dilute <- function(C1, C2) {
 -   received Qubit DNA Broad Range (BR) Assay Kit!
 -   Gotta get P2 DNA/RNA free tips!
 -   ran qubit on DNA & RNA, got great results!
+
+## April 2023
 
 ##### 25-APR-2023. T
 
@@ -215,6 +226,8 @@ dilute <- function(C1, C2) {
 -   Zymo tech also shared that it's best to follow protocol and add Lysis buffer to the sample supernatent in a separate rnase-free tube. If you do it in the filter tube some sample may start to percolate thru the filter before being fully buffered.
 -   [Horizontal Microtube Holder](https://www.zymoresearch.com/products/horizontal-microtube-holder)
 
+## March 2023
+
 ##### 29-MAR-2023. W
 
 -   started template for DNA/RNA data extraction sheet in new repo for extractions\
@@ -302,7 +315,7 @@ dilute <- function(C1, C2) {
 -   interviewed for WSG student assistant position
 -   began work on himb-2022 coral collection report
 
-##### 20-MAR-2023, M
+##### 20-MAR-2023. M
 
 -   spring break
 -   installed Sophos anti-virus on Owl
@@ -383,6 +396,8 @@ dilute <- function(C1, C2) {
 -   attended Carter's Coastal Ecology candidate chalk talk
 -   met with Steven on Zoom and got permission to use Bioanalyzer
 -   worked on sequencing quotes, DNA/RNA extraction protocol, reached out to Emma Strand and Grace
+
+## January 2023
 
 ##### 31-JAN-2023
 

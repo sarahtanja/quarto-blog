@@ -4,7 +4,7 @@ author: "Sarah Tanja"
 date: '04/25/2023'
 categories: [lab records]
 image: .jpg
-draft: true
+draft: false
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>
 toc-depth: 5

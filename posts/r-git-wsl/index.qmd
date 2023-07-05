@@ -1,0 +1,66 @@
+---
+title: "Post Template"
+author: "Sarah Tanja"
+date: '05/19/2023'
+categories: [lab records, protocols, goals, committee meetings, daily log]
+image: thumbnail.jpg
+draft: true
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+---
+
+Follow this [tutorial](https://support.posit.co/hc/en-us/articles/360049776974-Using-RStudio-Server-in-Windows-WSL2)
+
+\## Install R in WSL2
+
+1\. \`\`\`
+
+sudo apt install -y r-base r-base-core r-recommended r-base-dev gdebi-core build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev
+
+\`\`\`
+
+2\. Verify by typing \`R\` in your terminal. Check R version. It should be
+
+3\. R will run an interactive session. Quite with \`q()\`
+
+\## Update R in WSL2
+
+\## Install RStudio in WSL2
+
+1\. \`wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-2023.03.0-386-amd64.deb\` (select most current version from \[here\](https://posit.co/download/rstudio-desktop/))
+
+2\. \`sudo apt -f install\` (required to install .deb files)
+
+3\. \`sudo dpkg -i rstudio-2023.03.0-386-amd64.deb\` (unpack file)
+
+\## Launch R Studio Server
+
+\`sudo rstudio-server start\`
+
+Then navigate to \>http://localhost:8787/auth-sign-in?appUri=%2F\<
+
+and use Ubuntu credentials to sign in
+
+\## Authenticate
+
+https://github.com/cli/cli/blob/trunk/docs/install_linux.md
+
+\`\`\`{bash}
+
+type -p curl \>/dev/null \|\| (sudo apt update && sudo apt install curl -y)
+
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg \| sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg \\
+
+&& sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg \\
+
+&& echo "deb \[arch=\$(dpkg \--print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg\] https://cli.github.com/packages stable main" \| sudo tee /etc/apt/sources.list.d/github-cli.list \> /dev/null \\
+
+&& sudo apt update \\
+
+&& sudo apt install gh -y
+
+\`\`\`

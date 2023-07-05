@@ -1,0 +1,213 @@
+---
+title: "M. capitata embryo development and pthalate exposure experimental methods"
+author: "Sarah Tanja"
+date: "06/22/2023"
+categories: [lab records, protocols]
+image: image.jpg
+draft: true
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+bibliography: env-relevant-pae.bib
+reference-location: margin
+citation-location: margin
+---
+
+# Acute plasticizer exposure to *Montipora capitata* egg-sperm bundle crosses
+
+## Project Overview
+
+Plasticizers are a suite of chemicals added to plastic consumer products to increase flexibily. The most widely used plasticizers are phthalate acid esters (PAEs). PAE's are classified as endocrine-disrupting chemicals, and can mimic estrogen. In this experiment, I exposed coral embryos and larvae to phthalates in filtered seawater and assess any toxic effects on the survival and development of the coral embryos. This experiment will be conducted in closed-system $20mL$ scintillation vials with foil-lined caps.
+
+#### Safety Considerations
+
+Please review the [SDS](https://www.sigmaaldrich.com/US/en/sds/supelco/48223) for EPA 506 phthalate mix, 500$\mu$g/L in methanol before working with this chemical!
+
+Hazard statements:
+
+-   H225 Highly flammable liquid and vapor
+-   Toxic if swallowed, in contact with skin or if inhaled
+-   Causes damage to organs (Eyes, Central nervous system)
+
+::: callout-caution
+This chemical is toxic and can absorb through skin, and vaporize and be inhaled. **WEAR GLOVES, SAFETY GLASSES, & MASK. WORK UNDER A HOOD!** *If you are pregnant, consider alternatives like preparing leachate similar to* [@tetu2019]
+:::
+
+## Phthalates
+
+I used the [EPA 506 phthalate esters mix 1](https://www.sigmaaldrich.com/US/en/product/supelco/48223?gclid=CjwKCAjw-8qVBhANEiwAfjXLrp8fD-G8yiB_NyrA3OLy3r2jdylgBmHVPUfGFnMp4CMfuVwePGi1dxoCBQIQAvD_BwE), which comes as a 1mL ampule vial with a glass break-off cap. It includes 6 common phthalates each at a concentration of $500\mu g/mL$, aka $(500,000 \mu g/L)$.
+
+The mix contained the following 6 phthalates:
+
+-   Benzyl butyl phthalate **(BBP)**
+
+-   Bis(2-ethylhexyl) adipate **(DEHA)**
+
+-   Bis(2-ethylhexyl) phthalate **(DEHP)**
+
+::: callout-caution
+**DEHP** is listed on EPA's Toxics Release Inventory (TRI)
+:::
+
+::: callout-caution
+**DEHP** is regulated under the Safe Drinking Water Act. The highest concentration allowed, the maximum contaminant level (MCL), is $0.006 mg/L$ , or ($6\mu g/L$)
+:::
+
+-   Dibutyl pthalate **(DBP)**
+
+::: callout-caution
+**DBP** is listed on EPA's Toxics Release Inventory (TRI)
+:::
+
+-   Diethyl phthalate **(DEP)**
+
+-   Dimethyl phthalate **(DMP)**
+
+Concentrations of phthalates in environmental sea water samples reported in the literature:
+
+| Reference            | Study Area                  | BBP | DEHA                 | DEHP                | DBP                | DEP                 | DMP                     | $\sum$PAE         |
+|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+| [@lynch2022]         | Review                      |     |                      |                     |                    |                     |                         | 0.5 - 10 $\mu$g/L |
+| [@jebara2021]        | Tunisia                     |     |                      | \<LOD-168$\mu$g/L   | \<LOD-30.5$\mu$g/L | \<LOD-17.0$\mu$g/L  |                         |                   |
+| [@sanchez-avila2012] | Mediterranean Coastal Spain |     | 0.0021-0.304$\mu$g/L | 0.031-0.617$\mu$g/L |                    | 0.024-0.483$\mu$g/L | 0.0028 - 0.142 $\mu$g/L |                   |
+
+@jebara2021 detected **DEHP** in 92.7% of 165 water samples. The mean concentration of **DEHP** in those samples were: $71.1\mu g/L$, and the median was: $45.7 \mu g/L$.
+
+Based on these sources reporting environmentally relevant concentrations of phthalates in surface waters, I chose to dose the coral gametes and larvae at the following concentrations:
+
+-   $0\mu g/L$ : control
+
+-   $0.5\mu g/L$ ($0.0005 \mu g/mL$): environmentally relevant value
+
+-   $5 \mu g/L$ ($0.005 \mu g/mL$): would be considered just under acceptable drinking water
+
+-   $50 \mu g/L$ ($0.05 \mu g/mL$) : increasing by factor of 10
+
+-   $150 \mu g/L$ ($0.150 \mu g/mL$): max environmental relevance $168 \mu g/L$)
+
+::: callout-tip
+Doses will be graphed on a log scale x axis
+:::
+
+#### Materials
+
+-   1mL of [EPA 506 phthalate mix , $500 \mu g/mL$ in methanol](https://www.sigmaaldrich.com/US/en/product/supelco/48223) (keep refrigerated)
+
+Glassware
+
+-   6L of 1-micron filtered seawater (fsw), in glass jars baked at 500$\degree$F (260$\degree$C) for 1hr
+-   6, 1L reagent bottle for stocks, autoclaved at 500$\degree$F (260$\degree$C) for 1hr
+-   1, 1000mL graduated cylinder for measuring out fsw
+
+Pipettes & Tips
+
+-   1, stereological 5mL pipette
+-   6, stereological 5mL pipette tips
+    -   1 for ea. concentration of phthalate
+-   1, stereological 25mL pipette
+-   6, stereological 25mL pipette tips
+    -   1 for ea. concentration of phthalate
+-   1, 1mL pipette and tips
+-   1, 20-200$\mu$L p200 pipette and tips
+-   1, 1-20$\mu$L p10 pipette and tips
+
+PPE
+
+-   safety glasses (wear 'em!)
+-   nitrile gloves
+    -   From correspondence with UW EH&S Occupational Safety and Health practitioner Ann Tu:
+        -   "NIOSH has a PPE guide: https://www.osha.gov/sites/default/files/publications/osha3151.pdf and I only see two types of phthalates listed,"dibutyl phthalate" and "diocytl phthalate" on page 26 (printed on book) of the guide and looks like **nitrile** gloves would work for both. "
+-   Chemical hood (ventilation ON!)
+-   If you do not have access to a fume hood, use a respirator with P95 cartridges
+    -   From correspondence with UW EH&S Occupational Safety and Health practitioner Ann Tu:
+        -   "I used the 3M Respirator selection guide to look for the appropriate mask to protect against inhalation of phthalates <https://multimedia.3m.com/mws/media/639110O/3m-respirator-selection-guide.pdf?fn=Respirator%20Selection%20Guide%20Final>. Looks like **P95** would work for all the phthalates listed in the guide which includes all the above except benzyl butyl phthalate and di-n-octyl (they have di-sec-octyl which is the same as bis(2-ethylhexyl) phthalate."
+
+Based on this review, I chose to doses at the following concentrations:
+
+-   0$\mu$g/L : control
+
+-   0.5$\mu$g/L (0.0005$\mu$g/mL): lowest detectable environmentally relevant value
+
+-   5$\mu$g/L (0.005$\mu$g/mL) : environmentally relevant value, would be considered acceptable as drinking water
+
+-   50$\mu$g/L (0.05$\mu$g/mL) : environmentally relevant value, an increase by a factor of 10 from the next lowest concentration
+
+-   150$\mu$g/L (0.150$\mu$g/mL): max environmental relevance (Jebara et al. 2021, in Tunisia \@ 168$\mu$g/L)
+
+-   500$\mu$g/L (0.500$\mu$g/mL): an overdose above environmental relevance to be used as a positive control
+
+### Dilution Plan
+
+The EPA standard mix is $500 \mu g/mL$ (or also $500,000 \mu g/L$). This is our known concentration $C_1$. We also know our desired diluted concentration, $C_2$, and the volume we need. Use the dilution equation, $C_1V_1 = C_2 V_2$, to solve for $V_1$, and find out how much of $C_1$ we need to add to filtered seawater make the total end volume $V_2$.
+
+### Prepare phthalate stock solutions in 1L reagent bottles
+
+Final volume of stock solutions must be enough to use in subsequent serial dilutions and in sample vials over the course of three nights of spawning. Keep stock solutions between -3$\degree$C to -8$\degree$C in a chemical storage refrigerator (same as the EPA standards mix).
+
+#### OVERDOSE: Make 500mL of $500 \mu g/L$ using EPA standard mix
+
+$$
+500\mu g(V_1)=0.500\mu g(500mL) \\
+V_1= \frac{0.500\mu g (500mL)}{500 \mu g} \\
+V_1 = 0.5
+mL
+$$
+
+$500mL - 0.5mL = 499.5mL$ : volume of filtered seawater to add to 1000mL reagent jar *(Do this via graduated cylinder, then add via p200 pipette)*
+
+$0.5mL = 500\mu L$ : volume of EPA standard mix to add to 1000mL reagent jar to attain end volume of 500mL *(use p200 pipette)*
+
+#### PEAK: Make 1000mL of $150 \mu g/L$ using EPA standard mix
+
+$$
+500\mu g(V_1)=0.150\mu g(1000mL) \\
+V_1= \frac{0.150\mu g (1000mL)}{500 \mu g} \\
+V_1 = 0.3
+mL
+$$
+
+$1000mL - 0.3mL = 999.7mL$ : volume of filtered seawater to add to 1000mL reagent jar *(Do this via graduated cylinder, then add via p200 pipette)*
+
+$0.3mL = 300\mu L$ : volume of EPA standard mix to add to 1000mL reagent jar to attain end volume of 1000mL *(use p200 pipette)*
+
+#### HIGH: Make 1000mL of $50 \mu g/L$ stock using EPA standard mix
+
+$$
+500\mu g(V_1)=0.05\mu g(1000mL) \\
+V_1= \frac{0.05\mu g (1000mL)}{500\mu g} \\
+V_1 = 0.1mL
+$$
+
+$1000mL - 0.1mL = 999.9mL$ : volume of filtered seawater to add to autoclaved 1000mL reagent jar to (Do this via graduated cylinder, then add via sereological and p200 pipette)
+
+$0.1mL = 100\mu L$ : volume of EPA standard mix to add to autoclaved 1000mL reagent jar to attain end volume of 1000mL *(use p200 pipette)*
+
+#### MID: Make 1000mL of 5$\mu$g/L stock using 50$\mu$g/L stock
+
+$$
+0.05\mu g(V_1)=0.005\mu g(1000mL) \\
+V_1= \frac{0.005\mu g (1000mL)}{0.05 \mu g} \\
+V_1 = 100mL
+$$
+
+$1000mL - 100mL = 900mL$ : volume of filtered seawater to add to autoclaved 1000mL reagent jar *(Do this via graduated cylinder)*
+
+$100mL$ : volume of 50$\mu$g/L stock to add to 0.005$\mu$g/mL stock 1000mL reagent jar to attain end volume of 1000mL *(do this via 4 pulls of 25mL serological pipette)*
+
+#### LOW: Make 1000mL of 0.5$\mu$g/L stock using 5$\mu$g/L stock
+
+$$
+0.005\mu g(V_1)=0.0005\mu g(1000mL) \\
+V_1= \frac{0.0005\mu g (1000mL)}{0.005 \mu g} \\
+V_1 = 100mL
+$$
+
+$1000mL - 100mL = 900mL$ : volume of filtered seawater to add to 1000mL reagent jar *(Do this via graduated cylinder)*
+
+$100mL$ : volume of 5$\mu$g/L stock to add to 0.05$\mu$g/mL stock 1000mL reagent jar to attain end volume of 1000mL *(do this via 4 pulls of 25mL serological pipette)*
+
+### Prepare treatments in 20mL scintillation vials
+- Use a 20mL serological pipette to transfer 19mL of 
+
+### Collect egg-sperm bundles and perform bundle-bundle crosses

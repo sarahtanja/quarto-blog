@@ -1,0 +1,31 @@
+---
+title: "Choosing 16S Primers for *M. capitata* microbiome"
+author: "Sarah Tanja"
+image: 16s-gene.png
+date: '06/08/2023'
+categories: [learning journey]
+draft: false
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+bibliography: choosing-16S-primers.bib
+---
+
+## 515 & 806 V4[@pratte2021]
+
+### [Pratte & Kellogg 2021](https://doi.org/10.3389/fmars.2021.684161)
+
+> " Indeed [Cruaud et al. (2014)](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B18) and [Fouhy et al. (2016)](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B23) show that primer choice has a far deeper influence on microbial community than extraction method, although they did compare two bead-beating methods so the differences would be minimized. Primer choice is also particularly important, as some bacterial 16S primers are known to amplify coral mitochondrial DNA ([Galkiewicz and Kellogg, 2008](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B25); [Weber et al., 2017](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B66); [Pollock F. J. et al., 2018](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B51); [Meyer et al., 2019](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B47)). As shown in our study, using the 515/806 V4 primers, *L. pertusa* may be particularly prone to mitochondrial amplification compared to the other coral species, resulting in fewer samples making it through quality control. This has also been reported for other coral species such as *Porites lobata* and *Pocillopora verrucosa* ([Weber et al., 2017](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B66); [Sonett et al., 2021](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B60)). Thus far, the coral microbiology community has employed a variety of solutions to combat this molecular hurdle: (1) deeper sequencing, to allow for discarding the mitochondrial bycatch ([Rosales et al., 2019](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B54)); (2) agarose gel size separation of the 16S rRNA band from the coral mitochondrial band ([Apprill et al., 2016](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B6)); (3) alternative primer sets ([Galkiewicz and Kellogg, 2008](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B25); [Bayer et al., 2013](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B8); [Liang et al., 2017](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B41)); and (4) PNA clamps ([Reigel et al., 2020](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B53)). Further, the magnitude of under-annotation of coral mitochondria by existing bioinformatic taxonomies has recently been quantified and *in silico* improvements offered ([Sonett et al., 2021](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B60)). " - [@pratte2021]
+
+### Brown et al. 2021
+
+> " The V4 variable region of the 16S rRNA gene was amplified using the 515F (5′-­GTGCCAGCMGCCGCGGTAA-­3′) and 806R (5′-­GGACTACHVGGGTWTCTAAT-­3′) primer set (Caporaso et al. 2011). " - [@brown2021]
+
+## 63F and 1542R
+
+### Galkiewicz & Kellog 2008
+
+> " The use of *Bacteria*-specific primer 63F ([23](https://journals.asm.org/doi/10.1128/AEM.01303-08#core-R23)) and universal primer 1542R ([24](https://journals.asm.org/doi/10.1128/AEM.01303-08#core-R24)) had several advantages. The sequence homology between the primers and coral DNA was low, with only 7 of 21 bp matching in 63F and 7 of 20 bp matching in 1542R (Fig. [1](https://journals.asm.org/doi/10.1128/AEM.01303-08#F1)). With such low binding strength, limited coral DNA amplification was expected. In addition, any coral 18S rRNA gene that was amplified would result in an amplicon length of 0.6 kbp, whereas bacterial 16S rRNA genes would have an amplicon length of 1.5 kbp. Test results indicated that during PCR, coral rRNA genes were amplified and appeared as a distinct band on the gel (Fig. [2](https://journals.asm.org/doi/10.1128/AEM.01303-08#F2), lane 3). This clear separation between coral and bacterial DNA allowed the isolation of the bacterial rRNA genes for further analysis. " - [@galkiewicz2008]

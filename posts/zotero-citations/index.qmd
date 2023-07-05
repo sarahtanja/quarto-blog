@@ -1,0 +1,24 @@
+---
+title: "Zotero Citations in R using Quarto"
+author: "Sarah Tanja"
+date: '06/21/2023'
+categories: [learning journey]
+image: thumbnail.jpg
+draft: false
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+---
+
+\-\--
+
+bibliography: references.bib
+
+reference-location: margin
+
+citation-location: margin
+
+\-\--

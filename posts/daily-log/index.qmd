@@ -1,4 +1,11 @@
----
+We aim to open the WSN website for online registration and the submission of abstracts for
+contributed papers and posters in August. Registration for attendees will remain open up to and
+including the days that the meeting is held, although late registration fees will apply. However,
+abstract submissions will only be accepted through Monday September 29
+th
+, 2023, and as
+
+in past years, will be first come, first accepted. Late abstracts will not be accepted.---
 title: "Daily Lab Log"
 author: "Sarah Tanja"
 date: '06/02/2023'
@@ -14,7 +21,7 @@ citation-location: margin
 
 ## June 2023
 
-##### 05-JUN-2023. M
+##### 05-JUN-2023
 
 -   Re-normalized 2-CA2a DNA and successfully got it to 19.5, 19.2 :D
 

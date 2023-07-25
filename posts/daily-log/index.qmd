@@ -18,6 +18,15 @@ toc-location: left
 reference-location: margin
 citation-location: margin
 ---
+## July 2023
+
+##### 25-JUL-2023
+
+Western Society of Naturalists (WSN) annual meeting, Nov 9th - 12th, Monterey, CA:
+> We aim to open the WSN website for online registration and the submission of abstracts for
+contributed papers and posters in **August**. Registration for attendees will remain open up to and
+including the days that the meeting is held, although late registration fees will apply. However,
+abstract submissions will only be accepted through Monday September 29th, 2023, and as in past years, will be first come, first accepted. Late abstracts will not be accepted.
 
 ## June 2023
 

@@ -1,35 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sarahtanja.github.io/quarto-blog/about.html</loc>
-    <lastmod>2023-07-20T22:52:46.471Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sarahtanja.github.io/quarto-blog/index.html</loc>
-    <lastmod>2023-07-20T22:52:47.227Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sarahtanja.github.io/quarto-blog/posts/choosing-16S-primers/index.html</loc>
-    <lastmod>2023-07-20T22:52:47.851Z</lastmod>
+    <loc>https://sarahtanja.github.io/quarto-blog/posts/dna-rna-extraction-protocol/index.html</loc>
+    <lastmod>2023-07-25T21:12:57.405Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/daily-log/index.html</loc>
-    <lastmod>2023-07-20T22:52:49.997Z</lastmod>
+    <lastmod>2023-07-25T21:12:54.640Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sarahtanja.github.io/quarto-blog/posts/choosing-16S-primers/index.html</loc>
+    <lastmod>2023-07-25T21:12:50.961Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sarahtanja.github.io/quarto-blog/about.html</loc>
+    <lastmod>2023-07-25T21:12:48.759Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sarahtanja.github.io/quarto-blog/index.html</loc>
+    <lastmod>2023-07-25T21:12:50.080Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/dna-rna-ex1/index.html</loc>
-    <lastmod>2023-07-20T22:52:50.632Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sarahtanja.github.io/quarto-blog/posts/dna-rna-extraction-protocol/index.html</loc>
-    <lastmod>2023-07-20T22:52:51.487Z</lastmod>
+    <lastmod>2023-07-25T21:12:55.759Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/extractions-overview/index.html</loc>
-    <lastmod>2023-07-20T22:52:52.427Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sarahtanja.github.io/quarto-blog/posts/zotero-citations/index.html</loc>
-    <lastmod>2023-07-20T22:52:55.962Z</lastmod>
+    <lastmod>2023-07-25T21:12:58.601Z</lastmod>
   </url>
 </urlset>

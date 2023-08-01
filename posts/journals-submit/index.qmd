@@ -1,0 +1,44 @@
+---
+title: "Journals for Submitting Manuscripts"
+author: "Sarah Tanja"
+date: '07/27/2023'
+categories: [learning journey]
+draft: false
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+---
+
+## [Environmental Pollution](https://www-sciencedirect-com.offcampus.lib.washington.edu/journal/environmental-pollution)
+
+> Impact Factor 8.9
+>
+> Site score 14.9
+>
+> ***Authors of toxicological submissions are asked to report analytical confirmation of their experimental test concentrations.***
+>
+> A cover letter must be sent with the manuscript and must include:\
+> •The novelty, scientific significance and importance of the manuscript.
+>
+> **Research Papers:** Full Research Papers should not exceed 8000 words (including abstract, figures, and tables but excluding references). Please note that small tables and figures each count as 300 words, and large tables or figures with multiple panels may count for 600 or more words. There should be no more than nine figures and tables (e.g., 5 figures and 4 tables maximum) in the main text. Any additional figures and tables should be placed in Supplementary Material.
+>
+> The abstract (up to 300 words), highlights and conclusions of papers in this journal must contain clear and concise statements. A graphical abstract is mandatory.
+>
+> **Footnotes**\
+> Footnotes should be used sparingly. Number them consecutively throughout the article.
+
+## [Marine Pollution Bulletin](https://www-sciencedirect-com.offcampus.lib.washington.edu/journal/marine-pollution-bulletin)
+
+> Impact Factor 5.8
+>
+> Cite score 10.1
+>
+> **Short Communications** are short research papers, with a typical length of 3000 words, and a maximum of 5000 words, 3 Figures or Tables.
+>
+> **Micro Articles** are very short papers, less than 3000 words or 2 pages. They must consist of a single, but well-described piece of information:\
+> • Original Data and/or a plot plus a description\
+> • Description of a new method, experiment or instrumentation\
+> • Descriptive case study

@@ -12,6 +12,36 @@ reference-location: margin
 citation-location: margin
 ---
 
+## July 2023
+
+##### 20-JUL-2023. Th
+
+-   [Integrating QIIME2 and R for data viz](https://forum.qiime2.org/t/tutorial-integrating-qiime2-and-r-for-data-visualization-and-analysis-using-qiime2r/4121)
+
+-   RStudio\>Project Options\> Python\> Python interpreter
+
+-   [Using Python with the RStudio IDE](https://support.posit.co/hc/en-us/articles/1500007929061-Using-Python-with-the-RStudio-IDE)
+
+##### 19-JUL-2023. W
+
+-   
+
+-   Emailed Jackie about getting another P1000
+
+-   Helped Bob Oxborrow with pipettes for stable isotope sample prep
+
+-   Downloaded QIIME2 to Roberts Lab Raven server for coral-pae-temp repo
+
+-   Shadowed Miranda to learn how to acid wash glassware in 10% HCl:
+
+    -   Scrub and let soak 24hrs in Alconite bath
+
+    -   Rinse 3X in Ultrapure water & shift to 10% HCl bath, let soak for 24hrs
+
+    -   Remove & rinse 3X in Ultrapure water and let sit in Ultrapure water for 24hrs
+
+    -   Remove & let air dry, cover opening with foil
+
 ## June 2023
 
 ##### 05-JUN-2023. M

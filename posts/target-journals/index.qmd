@@ -1,5 +1,5 @@
 ---
-title: "Journals for Submitting Manuscripts"
+title: "Target Journals for Submitting Manuscripts"
 author: "Sarah Tanja"
 date: '07/27/2023'
 categories: [learning journey]

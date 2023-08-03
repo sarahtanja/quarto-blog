@@ -1,10 +1,10 @@
 ---
-title: "M. capitata embryo development and pthalate exposure experimental methods"
+title: "Phthalate exposure to coral embryos methods"
+subtitle: "*M. capitata* embryo development and EPA 506 pthalate mix 1 acute exposure experimental methods"
 author: "Sarah Tanja"
 date: "06/22/2023"
 categories: [lab records, protocols]
-image: image.jpg
-draft: true
+draft: false
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>
 toc-depth: 5
@@ -208,6 +208,7 @@ $1000mL - 100mL = 900mL$ : volume of filtered seawater to add to 1000mL reagent 
 $100mL$ : volume of 5$\mu$g/L stock to add to 0.05$\mu$g/mL stock 1000mL reagent jar to attain end volume of 1000mL *(do this via 4 pulls of 25mL serological pipette)*
 
 ### Prepare treatments in 20mL scintillation vials
-- Use a 20mL serological pipette to transfer 19mL of 
+
+-   Use a 20mL serological pipette to transfer 19mL of stock solution to a 20mL scintillation vial
 
 ### Collect egg-sperm bundles and perform bundle-bundle crosses

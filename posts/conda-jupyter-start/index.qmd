@@ -1,0 +1,31 @@
+---
+title: "Getting Started with `conda` and `jupyter notebook`"
+author: "Sarah Tanja"
+date: '05/19/2023'
+categories: [protocols]
+image: thumbnail.jpg
+draft: true
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+---
+
+Sometimes it seems the hardest part about developing a new workflow is deciding *where* to put it! As I start working on analyzing my microbiome data, I need to have a workspace that has conda and can run QIIME2 in a jupyter notebook.
+
+I started by following the [QIIME2 Install Instructions](https://docs.qiime2.org/2023.5/install/native/) for a native install on a Windows Subsystem for Linux.
+
+SSH into the Roberts Lab raven server by:
+
+```{r. engine='bash'}
+ssh stanja@172.25.149.12
+```
+...and then enter the user password and press enter.
+
+The following is the command to start the conda shell on the Roberts Lab raven server:
+
+```{r, engine='bash'}
+eval "$(/opt/anaconda/anaconda3/bin/conda shell.bash hook)"
+```

@@ -1,10 +1,9 @@
 ---
-title: "Getting Started with `conda` and `jupyter notebook`"
+title: "Getting Started with `qiime2` and `jupyter notebook`"
 author: "Sarah Tanja"
 date: '05/19/2023'
 categories: [protocols]
-image: thumbnail.jpg
-draft: true
+draft: false
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>
 toc-depth: 5
@@ -13,16 +12,33 @@ reference-location: margin
 citation-location: margin
 ---
 
-Sometimes it seems the hardest part about developing a new workflow is deciding *where* to put it! As I start working on analyzing my microbiome data, I need to have a workspace that has conda and can run QIIME2 in a jupyter notebook.
+Sometimes it seems the hardest part about developing a new workflow is deciding *where* to put it! As I start working on analyzing my microbiome data, I need to have a Linux OS computing environment with `conda`, [`qiime2`](https://qiime2.org/) all running in a `jupyter notebook`.
+
+After various tries installing in VirtualBox, uninstalling, re-installing, running into big issues with package dependency conflicts, and [some strange `temporary failure` errors](https://forum.qiime2.org/t/temporary-failure-in-name-resolution-wget-unable-to-resolve-host-address-data-qiime2-org/27193), I finally got things setup to run `qiime2` commands in a `jupyter notebook` on a Linux OS remote server (which has more computing power and space than my PC or laptop).
+
+So the rest of this post details those steps; in case I ever (God willing) have to do it again or explain it to someone else.
+
+::: {.callout-note title="Objective"}
+Run `qiime2` commands in a `jupyter notebook` on a remote Linux server (from a Windows OS!)
+:::
+
+## Step 1. Get setup as a user on a remote Linux server
+
+This may be the hardest part because you are relying on support from your institution or PI (unless you have the ability to setup your own Linux server, which is outside the scope of this post).
+
+In Spring of 2023 I had taken the [Bioinformatics FISH 546](https://sr320.github.io/course-fish546-2023/schedule.html) taught by Steven Roberts at UW. In that class, I was added as a user to a remote Linux server hosted by the [Roberts Lab](https://robertslab.github.io/resources/). I got permission to continue using the remote server for my Master's Thesis research bioinformatics analysis. So, the Roberts Lab set me up with a username and a password to access the remote server.
+
+## Step 2. Download Windows Subsystem for Linux (WSL) to your Windows OS computer
+
+I followed the instructions found at the Microsoft Documentation website [Install Linux on Windows with WSL](https://learn.microsoft.com/en-us/windows/wsl/install). In brief, I opened Windows PowerShell and ran `wsl --install` which installed the Ubuntu Linux distribution.
+
+## Step 3.
 
 I started by following the [QIIME2 Install Instructions](https://docs.qiime2.org/2023.5/install/native/) for a native install on a Windows Subsystem for Linux.
 
 SSH into the Roberts Lab raven server by:
 
-```{r. engine='bash'}
-ssh stanja@172.25.149.12
-```
-...and then enter the user password and press enter.
+`{r. engine='bash'} ssh stanja@172.25.149.12` ...and then enter the user password and press enter.
 
 The following is the command to start the conda shell on the Roberts Lab raven server:
 

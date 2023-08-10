@@ -2,12 +2,12 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/conda-jupyter-start/index.html",
       "/posts/target-journals/index.html",
       "/posts/coral-pae-devo/index.html",
       "/posts/choosing-16S-primers/index.html",
       "/posts/daily-log/index.html",
       "/posts/extractions-overview/index.html",
-      "/posts/conda-jupyter-start/index.html",
       "/posts/dna-rna-extraction-protocol/index.html",
       "/posts/dna-rna-ex1/index.html"
     ]

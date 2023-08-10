@@ -1,8 +1,8 @@
 ---
 title: "Getting Started with `qiime2` and `jupyter notebook`"
 author: "Sarah Tanja"
-date: '05/19/2023'
-categories: [protocols]
+date: '08/10/2023'
+categories: [learning journey]
 draft: false
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>
@@ -30,18 +30,53 @@ In Spring of 2023 I had taken the [Bioinformatics FISH 546](https://sr320.github
 
 ## Step 2. Download Windows Subsystem for Linux (WSL) to your Windows OS computer
 
-I followed the instructions found at the Microsoft Documentation website [Install Linux on Windows with WSL](https://learn.microsoft.com/en-us/windows/wsl/install). In brief, I opened Windows PowerShell and ran `wsl --install` which installed the Ubuntu Linux distribution.
+I followed the instructions found at the Microsoft Documentation website [Install Linux on Windows with WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
 
-## Step 3.
+In brief, I opened Windows PowerShell and ran `wsl --install` which installed the Ubuntu Linux distribution. I kept the default Ubuntu distribution. I continued following the instructions to [Set up your Linux user info](https://learn.microsoft.com/en-us/windows/wsl/install#:~:text=use%20with%20WSL.-,Set%20up%20your%20Linux%20user%20info,-Once%20you%20have), and kept my password secret and safe 🤐
+
+## Step 3. Setup a 'tunnel' into the remote server
+
+I opened the WSL Ubuntu terminal 🐧 and made a .ssh directory in my home directory, and then opened the nano text editor to write a config file in the .ssh folder:
+
+    mkdir .ssh
+    nano ~/.ssh/config
+
+::: callout-tip
+The .ssh directory is hidden, and you won't see it when you run `ls`
+:::
+
+In the nano text editor I copied the following:
+
+    # Jupyter Notebook tunnel
+    Host <server>_tunnel
+        HostName <123.45.678.90>
+        User <username>
+        ControlMaster auto
+        ServerAliveInterval 30
+        ServerAliveCountMax 1200
+        ForwardX11 yes
+        LocalForward localhost:9000 127.0.0.1:9000
+
+where:
+
+> <server> is the remote server name (make this short and sweet, since you will execute this as a command later on and must needs type it out)
+>
+> \<123.45.678.90> is the remote server IP address in the HostName field
+>
+> <username> is the username setup for the remote server in the User field
+
+I saved the config file by writing it out (Ctrl+X) and pressing Enter.
+
+Next, I tested the tunnel by opening a new Linux Ubuntu terminal and running:
 
 I started by following the [QIIME2 Install Instructions](https://docs.qiime2.org/2023.5/install/native/) for a native install on a Windows Subsystem for Linux.
 
 SSH into the Roberts Lab raven server by:
 
-`{r. engine='bash'} ssh stanja@172.25.149.12` ...and then enter the user password and press enter.
+    ssh stanja@172.25.149.12` 
+
+...and then enter the user password and press enter.
 
 The following is the command to start the conda shell on the Roberts Lab raven server:
 
-```{r, engine='bash'}
-eval "$(/opt/anaconda/anaconda3/bin/conda shell.bash hook)"
-```
+    eval "$(/opt/anaconda/anaconda3/bin/conda shell.bash hook)"

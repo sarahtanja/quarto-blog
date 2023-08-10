@@ -44,7 +44,7 @@ In brief, I opened Windows PowerShell and ran `wsl --install` which installed th
 
 As a student at UW, I have access to some free software through the IT department, and to connect remotely to servers hosted at UW I need to download the virtual private network (VPN) https://www.lib.washington.edu/help/connect/husky-onnetClient to my home PC and my mobile laptop.
 
-So I followed [these instructions](https://www.lib.washington.edu/help/connect/husky-onnet) to download the BIG-IP Edge Client for UW students, and I did this for both my home PC and laptop.
+So I followed [these instructions](https://www.lib.washington.edu/help/connect/husky-onnet) to download the BIG-IP Edge Client for UW students, and I did this for both my home PC and laptop. I then connected to the VPN!
 
 ::: callout-important
 When connected to the VPN Client, make sure the Server selected is 'All Internet Traffic', otherwise Jupyter Lab local host won't connect!
@@ -65,6 +65,7 @@ The .ssh directory is hidden, and you won't see it when you run `ls`
 
 In the nano text editor I copied the following:
 
+```{r, engine='bash', eval=false, echo=true, title='bash'}
     # Jupyter Notebook tunnel
     Host <server>_tunnel
         HostName <123.45.678.90>
@@ -74,9 +75,9 @@ In the nano text editor I copied the following:
         ServerAliveCountMax 1200
         ForwardX11 yes
         LocalForward localhost:9000 127.0.0.1:9000
+```
 
 where:
-
 > \<server> is the remote server name (make this short and sweet, since you will execute this as a command later on and must needs type it out)
 >
 > \<123.45.678.90> is the remote server IP address in the HostName field
@@ -87,7 +88,11 @@ I saved the config file by writing it out (Ctrl+X) and pressing Enter.
 
 Next, I tested the tunnel by opening a new Linux Ubuntu terminal and running:
 
-    ssh <server>_tunnel
+```{r, engine='bash', eval=false, echo=false, title='bash'}
+ssh <server>_tunnel
+```
+
+
 
 This connected me to the remote server and prompted me to enter the password associated with my user on the remote server.
 

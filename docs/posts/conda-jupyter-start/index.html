@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Sarah Tanja">
-<meta name="dcterms.date" content="2023-05-19">
+<meta name="dcterms.date" content="2023-08-10">
 
-<title>Sarah Tanja’s Open Lab Notebook - Getting Started with qiime2 and jupyter notebook</title>
+<title>Sarah Tanja’s Open Lab Notebook - Getting Started with QIIME2 and jupyter notebook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -146,10 +146,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Getting Started with <code>qiime2</code> and <code>jupyter notebook</code></h1>
+      <h1 class="title">Getting Started with <code>QIIME2</code> and <code>jupyter notebook</code></h1>
             <p class="subtitle lead">Working from a Windows OS and connecting via VPN to a remote server</p>
                                 <div class="quarto-categories">
-                <div class="quarto-category">protocols</div>
+                <div class="quarto-category">learning journey</div>
               </div>
                   </div>
   </div>
@@ -167,7 +167,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">May 19, 2023</p>
+        <p class="date">August 10, 2023</p>
       </div>
     </div>
     
@@ -184,7 +184,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#step-1.-get-setup-as-a-user-on-a-remote-linux-server" id="toc-step-1.-get-setup-as-a-user-on-a-remote-linux-server" class="nav-link active" data-scroll-target="#step-1.-get-setup-as-a-user-on-a-remote-linux-server">Step 1. Get setup as a user on a remote Linux server</a></li>
   <li><a href="#step-2.-download-windows-subsystem-for-linux-wsl-to-your-windows-os-computer" id="toc-step-2.-download-windows-subsystem-for-linux-wsl-to-your-windows-os-computer" class="nav-link" data-scroll-target="#step-2.-download-windows-subsystem-for-linux-wsl-to-your-windows-os-computer">Step 2. Download Windows Subsystem for Linux (WSL) to your Windows OS computer</a></li>
-  <li><a href="#step-3." id="toc-step-3." class="nav-link" data-scroll-target="#step-3.">Step 3.</a></li>
+  <li><a href="#step-3.-download-a-vpn-client" id="toc-step-3.-download-a-vpn-client" class="nav-link" data-scroll-target="#step-3.-download-a-vpn-client">Step 3. Download a VPN Client</a></li>
+  <li><a href="#step-4.-setup-a-tunnel-into-the-remote-server" id="toc-step-4.-setup-a-tunnel-into-the-remote-server" class="nav-link" data-scroll-target="#step-4.-setup-a-tunnel-into-the-remote-server">Step 4. Setup a ‘tunnel’ into the remote server</a></li>
+  <li><a href="#step-5.-follow-qiime2-install" id="toc-step-5.-follow-qiime2-install" class="nav-link" data-scroll-target="#step-5.-follow-qiime2-install">Step 5. Follow QIIME2 Install</a>
+  <ul>
+  <li><a href="#step-5.1-install-miniconda" id="toc-step-5.1-install-miniconda" class="nav-link" data-scroll-target="#step-5.1-install-miniconda">Step 5.1 Install <code>Miniconda</code></a></li>
+  <li><a href="#step-5.2-install-qiime2-within-a-conda-environment" id="toc-step-5.2-install-qiime2-within-a-conda-environment" class="nav-link" data-scroll-target="#step-5.2-install-qiime2-within-a-conda-environment">Step 5.2 Install <code>QIIME2</code> within a <code>conda</code> environment</a></li>
+  <li><a href="#step-5.3-activate-conda-environment" id="toc-step-5.3-activate-conda-environment" class="nav-link" data-scroll-target="#step-5.3-activate-conda-environment">Step 5.3 Activate <code>conda</code> environment</a></li>
+  <li><a href="#step-5.4-test-installation" id="toc-step-5.4-test-installation" class="nav-link" data-scroll-target="#step-5.4-test-installation">Step 5.4 Test Installation</a></li>
+  </ul></li>
+  <li><a href="#step-6.-download-jupyter-lab-in-qiime2-conda-environment" id="toc-step-6.-download-jupyter-lab-in-qiime2-conda-environment" class="nav-link" data-scroll-target="#step-6.-download-jupyter-lab-in-qiime2-conda-environment">Step 6. Download Jupyter Lab in <code>QIIME2</code> <code>conda</code> environment</a></li>
   </ul>
 </nav>
 </nav>
@@ -221,20 +230,126 @@ Objective
 </section>
 <section id="step-2.-download-windows-subsystem-for-linux-wsl-to-your-windows-os-computer" class="level2">
 <h2 class="anchored" data-anchor-id="step-2.-download-windows-subsystem-for-linux-wsl-to-your-windows-os-computer">Step 2. Download Windows Subsystem for Linux (WSL) to your Windows OS computer</h2>
-<p>I followed the instructions found at the Microsoft Documentation website <a href="https://learn.microsoft.com/en-us/windows/wsl/install">Install Linux on Windows with WSL</a>. In brief, I opened Windows PowerShell and ran <code>wsl --install</code> which installed the Ubuntu Linux distribution.</p>
+<p>I followed the instructions found at the Microsoft Documentation website <a href="https://learn.microsoft.com/en-us/windows/wsl/install">Install Linux on Windows with WSL</a>.</p>
+<p>In brief, I opened Windows PowerShell and ran <code>wsl --install</code> which installed the Ubuntu Linux distribution. I kept the default Ubuntu distribution. I continued following the instructions to <a href="https://learn.microsoft.com/en-us/windows/wsl/install#:~:text=use%20with%20WSL.-,Set%20up%20your%20Linux%20user%20info,-Once%20you%20have">Set up your Linux user info</a>, and kept my password secret and safe.</p>
 </section>
-<section id="step-3." class="level2">
-<h2 class="anchored" data-anchor-id="step-3.">Step 3.</h2>
-<p>I started by following the <a href="https://docs.qiime2.org/2023.5/install/native/">QIIME2 Install Instructions</a> for a native install on a Windows Subsystem for Linux.</p>
-<p>SSH into the Roberts Lab raven server by:</p>
-<p><code>{r. engine='bash'} ssh stanja@172.25.149.12</code> …and then enter the user password and press enter.</p>
-<p>The following is the command to start the conda shell on the Roberts Lab raven server:</p>
+<section id="step-3.-download-a-vpn-client" class="level2">
+<h2 class="anchored" data-anchor-id="step-3.-download-a-vpn-client">Step 3. Download a VPN Client</h2>
+<p>As a student at UW, I have access to some free software through the IT department, and to connect remotely to servers hosted at UW I needed to download the virtual private network (VPN) <a href="https://www.lib.washington.edu/help/connect/husky-onnet">Big-IP Edge Client</a> to my home PC and my mobile laptop.</p>
+<p>So I followed <a href="https://www.lib.washington.edu/help/connect/husky-onnet">these instructions</a> to download the BIG-IP Edge Client for UW students, and I did this for both my home PC and laptop. I then connected to the VPN!</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When connected to the VPN Client, make sure the Server selected is ‘All Internet Traffic’, otherwise Jupyter Lab local host won’t connect!</p>
+</div>
+</div>
+</section>
+<section id="step-4.-setup-a-tunnel-into-the-remote-server" class="level2">
+<h2 class="anchored" data-anchor-id="step-4.-setup-a-tunnel-into-the-remote-server">Step 4. Setup a ‘tunnel’ into the remote server</h2>
+<p>I opened the WSL Ubuntu terminal 🐧 and made a .ssh directory in my home directory, and then opened the nano text editor to write a config file in the .ssh folder:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">eval</span> <span class="st">"</span><span class="va">$(</span><span class="ex">/opt/anaconda/anaconda3/bin/conda</span> shell.bash hook<span class="va">)</span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>/bin/bash: /opt/anaconda/anaconda3/bin/conda: No such file or directory</code></pre>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> .ssh</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">nano</span> ~/.ssh/config</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<p>The .ssh directory is hidden, and you won’t see it when you run <code>ls</code></p>
+</div>
+</div>
+<p>In the nano text editor I copied the following:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Jupyter Notebook tunnel</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="ex">Host</span> <span class="op">&lt;</span>server<span class="op">&gt;</span>_tunnel</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>        <span class="ex">HostName</span> <span class="op">&lt;</span>123.45.678.90<span class="op">&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>        <span class="ex">User</span> <span class="op">&lt;</span>username<span class="op">&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        <span class="ex">ControlMaster</span> auto</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        <span class="ex">ServerAliveInterval</span> 30</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        <span class="ex">ServerAliveCountMax</span> 1200</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        <span class="ex">ForwardX11</span> yes</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        <span class="ex">LocalForward</span> localhost:9000 127.0.0.1:9000</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>where:</p>
+<ul>
+<li><p><strong>&lt;server&gt;</strong> is the remote server name (make this short and sweet, since you will execute this as a command later on and must needs type it out)</p></li>
+<li><p><strong>&lt;123.45.678.90&gt;</strong> is the remote server IP address in the HostName field</p></li>
+<li><p><strong>&lt;username</strong>&gt; is the username setup for the remote server in the User field</p></li>
+</ul>
+<p>I saved the config file by writing it out (Ctrl+X) and pressing Enter.</p>
+<p>Next, I tested the tunnel by opening a new Linux Ubuntu terminal and running:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> <span class="op">&lt;</span>server<span class="op">&gt;</span>_tunnel</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>In addition, you can test direct access to the remote server (not using the tunnel) with:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> <span class="op">&lt;</span>username<span class="op">&gt;</span>@<span class="op">&lt;</span>IP-address<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The tunnel connected me to the remote server and prompted me to enter the password associated with my user on the remote server.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Once tunneled into the remote server you’ll notice the &lt;username&gt;@&lt;server&gt; in the terminal changes from your local computer to the remote server.</p>
+</div>
+</div>
+</section>
+<section id="step-5.-follow-qiime2-install" class="level2">
+<h2 class="anchored" data-anchor-id="step-5.-follow-qiime2-install">Step 5. Follow QIIME2 Install</h2>
+<p>I followed the <a href="https://docs.qiime2.org/2023.5/install/native/">QIIME2 Install Instructions</a> for a native install on a Linux OS. The steps below are taken directly from the <code>QIIME2</code> docs instruction on Natively installing <code>QIIME2</code> using <code>Miniconda</code> on a Linux machine.</p>
+<section id="step-5.1-install-miniconda" class="level3">
+<h3 class="anchored" data-anchor-id="step-5.1-install-miniconda">Step 5.1 Install <code>Miniconda</code></h3>
+<p><a href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a> provides the <code>conda</code> environment and package manager, and is the recommended way to install <code>QIIME 2</code>. Follow the <a href="https://conda.io/projects/conda/en/latest/user-guide/install/index.html">Miniconda instructions</a> for downloading and installing <code>Miniconda</code>.</p>
+<p>Here, I choose to work with <code>Miniconda3</code>, because I also have <code>Python 3</code>. I am also following <a href="https://conda.io/projects/conda/en/latest/user-guide/install/linux.html">instructions for downloading to a Linux environment</a>.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It is important to follow all of the directions, particularly ensuring that you run <code>conda init</code> at the end of the installation process.</p>
+</div>
+</div>
+<p>In the remote server terminal run:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-O</span> https://repo.anaconda.com/miniconda/Miniconda3-py311_23.5.2-0-Linux-x86_64.sh</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="step-5.2-install-qiime2-within-a-conda-environment" class="level3">
+<h3 class="anchored" data-anchor-id="step-5.2-install-qiime2-within-a-conda-environment">Step 5.2 Install <code>QIIME2</code> within a <code>conda</code> environment</h3>
+</section>
+<section id="step-5.3-activate-conda-environment" class="level3">
+<h3 class="anchored" data-anchor-id="step-5.3-activate-conda-environment">Step 5.3 Activate <code>conda</code> environment</h3>
+</section>
+<section id="step-5.4-test-installation" class="level3">
+<h3 class="anchored" data-anchor-id="step-5.4-test-installation">Step 5.4 Test Installation</h3>
+</section>
+</section>
+<section id="step-6.-download-jupyter-lab-in-qiime2-conda-environment" class="level2">
+<h2 class="anchored" data-anchor-id="step-6.-download-jupyter-lab-in-qiime2-conda-environment">Step 6. Download Jupyter Lab in <code>QIIME2</code> <code>conda</code> environment</h2>
 
 
 </section>

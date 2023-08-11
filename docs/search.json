@@ -102,28 +102,28 @@
     "href": "index.html",
     "title": "Posts",
     "section": "",
-    "text": "Getting Started with qiime2 and jupyter notebook\n\n\nWorking from a Windows OS and connecting via VPN to a remote server\n\n\n\n\nlearning journey\n\n\n\n\n\n\n\n\n\n\n\nAug 10, 2023\n\n\nSarah Tanja\n\n\n\n\n\n\n  \n\n\n\n\nTarget Journals for Submitting Manuscripts\n\n\n\n\n\n\n\nlearning journey\n\n\n\n\n\n\n\n\n\n\n\nJul 27, 2023\n\n\nSarah Tanja\n\n\n\n\n\n\n  \n\n\n\n\nPhthalate exposure to coral embryos methods\n\n\nM. capitata embryo development and EPA 506 pthalate mix 1 acute exposure experimental methods\n\n\n\n\nlab records\n\n\nprotocols\n\n\n\n\n\n\n\n\n\n\n\nJun 22, 2023\n\n\nSarah Tanja\n\n\n\n\n\n\n  \n\n\n\n\nChoosing 16S Primers for M. capitata microbiome\n\n\n\n\n\n\n\nlearning journey\n\n\n\n\n\n\n\n\n\n\n\nJun 8, 2023\n\n\nSarah Tanja\n\n\n\n\n\n\n  \n\n\n\n\nDaily Lab Log\n\n\n\n\n\n\n\ndaily log\n\n\n\n\n\n\n\n\n\n\n\nJun 2, 2023\n\n\nSarah Tanja\n\n\n\n\n\n\n  \n\n\n\n\nDNA/RNA Extractions Overview\n\n\n\n\n\n\n\nlab records\n\n\n\n\n\n\n\n\n\n\n\nMay 23, 2023\n\n\nSarah Tanja\n\n\n\n\n\n\n  \n\n\n\n\nDual DNA & RNA Extraction Protocol\n\n\n\n\n\n\n\nprotocols\n\n\n\n\n\n\n\n\n\n\n\nMay 19, 2023\n\n\nSarah Tanja\n\n\n\n\n\n\n  \n\n\n\n\nDual DNA & RNA Extraction #1\n\n\n\n\n\n\n\nlab records\n\n\n\n\n\n\n\n\n\n\n\nApr 25, 2023\n\n\nSarah Tanja\n\n\n\n\n\n\nNo matching items"
+    "text": "Getting Started with QIIME2 and jupyter notebook\n\n\nWorking from a Windows OS and connecting via VPN to a remote server\n\n\n\n\nlearning journey\n\n\n\n\n\n\n\n\n\n\n\nAug 10, 2023\n\n\nSarah Tanja\n\n\n\n\n\n\n  \n\n\n\n\nTarget Journals for Submitting Manuscripts\n\n\n\n\n\n\n\nlearning journey\n\n\n\n\n\n\n\n\n\n\n\nJul 27, 2023\n\n\nSarah Tanja\n\n\n\n\n\n\n  \n\n\n\n\nPhthalate exposure to coral embryos methods\n\n\nM. capitata embryo development and EPA 506 pthalate mix 1 acute exposure experimental methods\n\n\n\n\nlab records\n\n\nprotocols\n\n\n\n\n\n\n\n\n\n\n\nJun 22, 2023\n\n\nSarah Tanja\n\n\n\n\n\n\n  \n\n\n\n\nChoosing 16S Primers for M. capitata microbiome\n\n\n\n\n\n\n\nlearning journey\n\n\n\n\n\n\n\n\n\n\n\nJun 8, 2023\n\n\nSarah Tanja\n\n\n\n\n\n\n  \n\n\n\n\nDaily Lab Log\n\n\n\n\n\n\n\ndaily log\n\n\n\n\n\n\n\n\n\n\n\nJun 2, 2023\n\n\nSarah Tanja\n\n\n\n\n\n\n  \n\n\n\n\nDNA/RNA Extractions Overview\n\n\n\n\n\n\n\nlab records\n\n\n\n\n\n\n\n\n\n\n\nMay 23, 2023\n\n\nSarah Tanja\n\n\n\n\n\n\n  \n\n\n\n\nDual DNA & RNA Extraction Protocol\n\n\n\n\n\n\n\nprotocols\n\n\n\n\n\n\n\n\n\n\n\nMay 19, 2023\n\n\nSarah Tanja\n\n\n\n\n\n\n  \n\n\n\n\nDual DNA & RNA Extraction #1\n\n\n\n\n\n\n\nlab records\n\n\n\n\n\n\n\n\n\n\n\nApr 25, 2023\n\n\nSarah Tanja\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/conda-jupyter-start/index.html",
     "href": "posts/conda-jupyter-start/index.html",
-    "title": "Getting Started with qiime2 and jupyter notebook",
+    "title": "Getting Started with QIIME2 and jupyter notebook",
     "section": "",
     "text": "Sometimes it seems the hardest part about developing a new workflow is deciding where to put it! As I start working on analyzing my microbiome data, I need to have a Linux OS computing environment with conda, qiime2 all running in a jupyter notebook.\nAfter various tries installing in VirtualBox, uninstalling, re-installing, running into big issues with package dependency conflicts, and some strange temporary failure errors, I finally got things setup to run qiime2 commands in a jupyter notebook on a Linux OS remote server (which has more computing power and space than my PC or laptop).\nSo the rest of this post details those steps; in case I ever (God willing) have to do it again or explain it to someone else."
   },
   {
     "objectID": "posts/conda-jupyter-start/index.html#step-1.-get-setup-as-a-user-on-a-remote-linux-server",
     "href": "posts/conda-jupyter-start/index.html#step-1.-get-setup-as-a-user-on-a-remote-linux-server",
-    "title": "Getting Started with qiime2 and jupyter notebook",
+    "title": "Getting Started with QIIME2 and jupyter notebook",
     "section": "Step 1. Get setup as a user on a remote Linux server",
     "text": "Step 1. Get setup as a user on a remote Linux server\nThis may be the hardest part because you are relying on support from your institution or PI (unless you have the ability to setup your own Linux server, which is outside the scope of this post).\nIn Spring of 2023 I had taken the Bioinformatics FISH 546 taught by Steven Roberts at UW. In that class, I was added as a user to a remote Linux server hosted by the Roberts Lab. I got permission to continue using the remote server for my Master’s Thesis research bioinformatics analysis. So, the Roberts Lab set me up with a username and a password to access the remote server."
   },
   {
     "objectID": "posts/conda-jupyter-start/index.html#step-2.-download-windows-subsystem-for-linux-wsl-to-your-windows-os-computer",
     "href": "posts/conda-jupyter-start/index.html#step-2.-download-windows-subsystem-for-linux-wsl-to-your-windows-os-computer",
-    "title": "Getting Started with qiime2 and jupyter notebook",
+    "title": "Getting Started with QIIME2 and jupyter notebook",
     "section": "Step 2. Download Windows Subsystem for Linux (WSL) to your Windows OS computer",
-    "text": "Step 2. Download Windows Subsystem for Linux (WSL) to your Windows OS computer\nI followed the instructions found at the Microsoft Documentation website Install Linux on Windows with WSL. In brief, I opened Windows PowerShell and ran wsl --install which installed the Ubuntu Linux distribution."
+    "text": "Step 2. Download Windows Subsystem for Linux (WSL) to your Windows OS computer\nI followed the instructions found at the Microsoft Documentation website Install Linux on Windows with WSL.\nIn brief, I opened Windows PowerShell and ran wsl --install which installed the Ubuntu Linux distribution. I kept the default Ubuntu distribution. I continued following the instructions to Set up your Linux user info, and kept my password secret and safe."
   },
   {
     "objectID": "posts/conda-jupyter-start/index.html#step-3.",
@@ -229,5 +229,33 @@
     "title": "Target Journals for Submitting Manuscripts",
     "section": "Marine Pollution Bulletin",
     "text": "Marine Pollution Bulletin\n\nImpact Factor 5.8\nCite score 10.1\nShort Communications are short research papers, with a typical length of 3000 words, and a maximum of 5000 words, 3 Figures or Tables.\nMicro Articles are very short papers, less than 3000 words or 2 pages. They must consist of a single, but well-described piece of information:\n• Original Data and/or a plot plus a description\n• Description of a new method, experiment or instrumentation\n• Descriptive case study"
+  },
+  {
+    "objectID": "posts/conda-jupyter-start/index.html#step-3.-download-a-vpn-client",
+    "href": "posts/conda-jupyter-start/index.html#step-3.-download-a-vpn-client",
+    "title": "Getting Started with QIIME2 and jupyter notebook",
+    "section": "Step 3. Download a VPN Client",
+    "text": "Step 3. Download a VPN Client\nAs a student at UW, I have access to some free software through the IT department, and to connect remotely to servers hosted at UW I needed to download the virtual private network (VPN) Big-IP Edge Client to my home PC and my mobile laptop.\nSo I followed these instructions to download the BIG-IP Edge Client for UW students, and I did this for both my home PC and laptop. I then connected to the VPN!\n\n\n\n\n\n\nImportant\n\n\n\nWhen connected to the VPN Client, make sure the Server selected is ‘All Internet Traffic’, otherwise Jupyter Lab local host won’t connect!"
+  },
+  {
+    "objectID": "posts/conda-jupyter-start/index.html#step-4.-setup-a-tunnel-into-the-remote-server",
+    "href": "posts/conda-jupyter-start/index.html#step-4.-setup-a-tunnel-into-the-remote-server",
+    "title": "Getting Started with QIIME2 and jupyter notebook",
+    "section": "Step 4. Setup a ‘tunnel’ into the remote server",
+    "text": "Step 4. Setup a ‘tunnel’ into the remote server\nI opened the WSL Ubuntu terminal 🐧 and made a .ssh directory in my home directory, and then opened the nano text editor to write a config file in the .ssh folder:\n\nmkdir .ssh\nnano ~/.ssh/config\n\n\n\n\n\n\n\nTip\n\n\n\nThe .ssh directory is hidden, and you won’t see it when you run ls\n\n\nIn the nano text editor I copied the following:\n\n    # Jupyter Notebook tunnel\n    Host &lt;server&gt;_tunnel\n        HostName &lt;123.45.678.90&gt;\n        User &lt;username&gt;\n        ControlMaster auto\n        ServerAliveInterval 30\n        ServerAliveCountMax 1200\n        ForwardX11 yes\n        LocalForward localhost:9000 127.0.0.1:9000\n\nwhere:\n\n&lt;server&gt; is the remote server name (make this short and sweet, since you will execute this as a command later on and must needs type it out)\n&lt;123.45.678.90&gt; is the remote server IP address in the HostName field\n&lt;username&gt; is the username setup for the remote server in the User field\n\nI saved the config file by writing it out (Ctrl+X) and pressing Enter.\nNext, I tested the tunnel by opening a new Linux Ubuntu terminal and running:\n\nssh &lt;server&gt;_tunnel\n\nIn addition, you can test direct access to the remote server (not using the tunnel) with:\n\nssh &lt;username&gt;@&lt;IP-address&gt;\n\nThe tunnel connected me to the remote server and prompted me to enter the password associated with my user on the remote server.\n\n\n\n\n\n\nTip\n\n\n\nOnce tunneled into the remote server you’ll notice the &lt;username&gt;@&lt;server&gt; in the terminal changes from your local computer to the remote server."
+  },
+  {
+    "objectID": "posts/conda-jupyter-start/index.html#step-5.-follow-qiime2-install",
+    "href": "posts/conda-jupyter-start/index.html#step-5.-follow-qiime2-install",
+    "title": "Getting Started with QIIME2 and jupyter notebook",
+    "section": "Step 5. Follow QIIME2 Install",
+    "text": "Step 5. Follow QIIME2 Install\nI followed the QIIME2 Install Instructions for a native install on a Linux OS. The steps below are taken directly from the QIIME2 docs instruction on Natively installing QIIME2 using Miniconda on a Linux machine.\n\nStep 5.1 Install Miniconda\nMiniconda provides the conda environment and package manager, and is the recommended way to install QIIME 2. Follow the Miniconda instructions for downloading and installing Miniconda.\nHere, I choose to work with Miniconda3, because I also have Python 3. I am also following instructions for downloading to a Linux environment.\n\n\n\n\n\n\nImportant\n\n\n\nIt is important to follow all of the directions, particularly ensuring that you run conda init at the end of the installation process.\n\n\nIn the remote server terminal run:\n\ncurl -O https://repo.anaconda.com/miniconda/Miniconda3-py311_23.5.2-0-Linux-x86_64.sh\n\n\n\nStep 5.2 Install QIIME2 within a conda environment\n\n\nStep 5.3 Activate conda environment\n\n\nStep 5.4 Test Installation"
+  },
+  {
+    "objectID": "posts/conda-jupyter-start/index.html#step-6.-download-jupyter-lab-in-qiime2-conda-environment",
+    "href": "posts/conda-jupyter-start/index.html#step-6.-download-jupyter-lab-in-qiime2-conda-environment",
+    "title": "Getting Started with QIIME2 and jupyter notebook",
+    "section": "Step 6. Download Jupyter Lab in QIIME2 conda environment",
+    "text": "Step 6. Download Jupyter Lab in QIIME2 conda environment"
   }
 ]

@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with `qiime2` and `jupyter notebook`"
+title: "Getting Started with `QIIME2` and `jupyter notebook`"
 subtitle: "Working from a Windows OS and connecting via VPN to a remote server"
 author: "Sarah Tanja"
 date: '08/10/2023'
@@ -38,11 +38,11 @@ In Spring of 2023 I had taken the [Bioinformatics FISH 546](https://sr320.github
 
 I followed the instructions found at the Microsoft Documentation website [Install Linux on Windows with WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
 
-In brief, I opened Windows PowerShell and ran `wsl --install` which installed the Ubuntu Linux distribution. I kept the default Ubuntu distribution. I continued following the instructions to [Set up your Linux user info](https://learn.microsoft.com/en-us/windows/wsl/install#:~:text=use%20with%20WSL.-,Set%20up%20your%20Linux%20user%20info,-Once%20you%20have), and kept my password secret and safe 🤐
+In brief, I opened Windows PowerShell and ran `wsl --install` which installed the Ubuntu Linux distribution. I kept the default Ubuntu distribution. I continued following the instructions to [Set up your Linux user info](https://learn.microsoft.com/en-us/windows/wsl/install#:~:text=use%20with%20WSL.-,Set%20up%20your%20Linux%20user%20info,-Once%20you%20have), and kept my password secret and safe.
 
 ## Step 3. Download a VPN Client
 
-As a student at UW, I have access to some free software through the IT department, and to connect remotely to servers hosted at UW I need to download the virtual private network (VPN) https://www.lib.washington.edu/help/connect/husky-onnetClient to my home PC and my mobile laptop.
+As a student at UW, I have access to some free software through the IT department, and to connect remotely to servers hosted at UW I needed to download the virtual private network (VPN) [Big-IP Edge Client](https://www.lib.washington.edu/help/connect/husky-onnet) to my home PC and my mobile laptop.
 
 So I followed [these instructions](https://www.lib.washington.edu/help/connect/husky-onnet) to download the BIG-IP Edge Client for UW students, and I did this for both my home PC and laptop. I then connected to the VPN!
 
@@ -54,7 +54,7 @@ When connected to the VPN Client, make sure the Server selected is 'All Internet
 
 I opened the WSL Ubuntu terminal 🐧 and made a .ssh directory in my home directory, and then opened the nano text editor to write a config file in the .ssh folder:
 
-```{r, engine='bash', eval=false, echo=true}
+```{r, engine='bash', eval=FALSE, echo=TRUE}
 mkdir .ssh
 nano ~/.ssh/config
 ```
@@ -65,7 +65,7 @@ The .ssh directory is hidden, and you won't see it when you run `ls`
 
 In the nano text editor I copied the following:
 
-```{r, engine='bash', eval=false, echo=true, title='bash'}
+```{r, engine='bash', eval=FALSE, echo=TRUE}
     # Jupyter Notebook tunnel
     Host <server>_tunnel
         HostName <123.45.678.90>
@@ -78,34 +78,58 @@ In the nano text editor I copied the following:
 ```
 
 where:
-> \<server> is the remote server name (make this short and sweet, since you will execute this as a command later on and must needs type it out)
->
-> \<123.45.678.90> is the remote server IP address in the HostName field
->
-> \<username> is the username setup for the remote server in the User field
+
+-   **\<server>** is the remote server name (make this short and sweet, since you will execute this as a command later on and must needs type it out)
+
+-    **\<123.45.678.90>** is the remote server IP address in the HostName field
+
+-   **\<username**\> is the username setup for the remote server in the User field
 
 I saved the config file by writing it out (Ctrl+X) and pressing Enter.
 
 Next, I tested the tunnel by opening a new Linux Ubuntu terminal and running:
 
-```{r, engine='bash', eval=false, echo=false, title='bash'}
+```{r, engine='bash', eval=FALSE, echo=TRUE}
 ssh <server>_tunnel
 ```
 
+In addition, you can test direct access to the remote server (not using the tunnel) with:
 
+```{r, engine='bash', eval=FALSE, echo=TRUE}
+ssh <username>@<IP-address>
+```
 
-This connected me to the remote server and prompted me to enter the password associated with my user on the remote server.
+The tunnel connected me to the remote server and prompted me to enter the password associated with my user on the remote server.
 
+::: callout-tip
 Once tunneled into the remote server you'll notice the \<username>\@\<server> in the terminal changes from your local computer to the remote server.
+:::
 
-I started by following the [QIIME2 Install Instructions](https://docs.qiime2.org/2023.5/install/native/) for a native install on a Windows Subsystem for Linux.
+## Step 5. Follow QIIME2 Install
 
-SSH into the remote server by:
+I followed the [QIIME2 Install Instructions](https://docs.qiime2.org/2023.5/install/native/) for a native install on a Linux OS. The steps below are taken directly from the `QIIME2` docs instruction on Natively installing `QIIME2` using `Miniconda` on a Linux machine.
 
-    ssh <username>@<IP-address>
+### Step 5.1 Install `Miniconda`
 
-...and then enter the user password and press enter.
+[Miniconda](https://docs.conda.io/en/latest/miniconda.html) provides the `conda` environment and package manager, and is the recommended way to install `QIIME 2`. Follow the [Miniconda instructions](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) for downloading and installing `Miniconda`.
 
-The following is the command to start the conda shell on the Roberts Lab raven server:
+Here, I choose to work with `Miniconda3`, because I also have `Python 3`. I am also following [instructions for downloading to a Linux environment](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html).
 
-    eval "$(/opt/anaconda/anaconda3/bin/conda shell.bash hook)"
+:::{.callout-important}
+It is important to follow all of the directions, particularly ensuring that you run `conda init` at the end of the installation process.
+:::
+
+In the remote server terminal run:
+
+```{r, engine='bash', eval=FALSE, echo=TRUE}
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-py311_23.5.2-0-Linux-x86_64.sh
+
+```
+
+### Step 5.2 Install `QIIME2` within a `conda` environment
+
+### Step 5.3 Activate `conda` environment
+
+### Step 5.4 Test Installation
+
+## Step 6. Download Jupyter Lab in `QIIME2` `conda` environment

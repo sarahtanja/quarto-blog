@@ -126,11 +126,32 @@
     "text": "Step 2. Download Windows Subsystem for Linux (WSL) to your Windows OS computer\nI followed the instructions found at the Microsoft Documentation website Install Linux on Windows with WSL.\nIn brief, I opened Windows PowerShell and ran wsl --install which installed the Ubuntu Linux distribution. I kept the default Ubuntu distribution. I continued following the instructions to Set up your Linux user info, and kept my password secret and safe."
   },
   {
-    "objectID": "posts/conda-jupyter-start/index.html#step-3.",
-    "href": "posts/conda-jupyter-start/index.html#step-3.",
-    "title": "Getting Started with qiime2 and jupyter notebook",
-    "section": "Step 3.",
-    "text": "Step 3.\nI started by following the QIIME2 Install Instructions for a native install on a Windows Subsystem for Linux.\nSSH into the Roberts Lab raven server by:\n{r. engine='bash'} ssh stanja@172.25.149.12 …and then enter the user password and press enter.\nThe following is the command to start the conda shell on the Roberts Lab raven server:\n\neval \"$(/opt/anaconda/anaconda3/bin/conda shell.bash hook)\"\n\n/bin/bash: /opt/anaconda/anaconda3/bin/conda: No such file or directory"
+    "objectID": "posts/conda-jupyter-start/index.html#step-3.-download-a-vpn-client",
+    "href": "posts/conda-jupyter-start/index.html#step-3.-download-a-vpn-client",
+    "title": "Getting Started with QIIME2 and jupyter notebook",
+    "section": "Step 3. Download a VPN Client",
+    "text": "Step 3. Download a VPN Client\nAs a student at UW, I have access to some free software through the IT department, and to connect remotely to servers hosted at UW I needed to download the virtual private network (VPN) Big-IP Edge Client to my home PC and my mobile laptop.\nSo I followed these instructions to download the BIG-IP Edge Client for UW students, and I did this for both my home PC and laptop. I then connected to the VPN!\n\n\n\n\n\n\nImportant\n\n\n\nWhen connected to the VPN Client, make sure the Server selected is ‘All Internet Traffic’, otherwise Jupyter Lab local host won’t connect!"
+  },
+  {
+    "objectID": "posts/conda-jupyter-start/index.html#step-4.-setup-a-tunnel-into-the-remote-server",
+    "href": "posts/conda-jupyter-start/index.html#step-4.-setup-a-tunnel-into-the-remote-server",
+    "title": "Getting Started with QIIME2 and jupyter notebook",
+    "section": "Step 4. Setup a ‘tunnel’ into the remote server",
+    "text": "Step 4. Setup a ‘tunnel’ into the remote server\nI opened the WSL Ubuntu terminal 🐧 and made a .ssh directory in my home directory, and then opened the nano text editor to write a config file in the .ssh folder:\n\nmkdir .ssh\nnano ~/.ssh/config\n\n\n\n\n\n\n\nTip\n\n\n\nThe .ssh directory is hidden, and you won’t see it when you run ls\n\n\nIn the nano text editor I copied the following:\n\n    # Jupyter Notebook tunnel\n    Host &lt;server&gt;_tunnel\n        HostName &lt;123.45.678.90&gt;\n        User &lt;username&gt;\n        ControlMaster auto\n        ServerAliveInterval 30\n        ServerAliveCountMax 1200\n        ForwardX11 yes\n        LocalForward localhost:9000 127.0.0.1:9000\n\nwhere:\n\n&lt;server&gt; is the remote server name (make this short and sweet, since you will execute this as a command later on and must needs type it out)\n&lt;123.45.678.90&gt; is the remote server IP address in the HostName field\n&lt;username&gt; is the username setup for the remote server in the User field\n\nI saved the config file by writing it out (Ctrl+X) and pressing Enter.\nNext, I tested the tunnel by opening a new Linux Ubuntu terminal and running:\n\nssh &lt;server&gt;_tunnel\n\nIn addition, you can test direct access to the remote server (not using the tunnel) with:\n\nssh &lt;username&gt;@&lt;IP-address&gt;\n\nThe tunnel connected me to the remote server and prompted me to enter the password associated with my user on the remote server.\n\n\n\n\n\n\nTip\n\n\n\nOnce tunneled into the remote server you’ll notice the &lt;username&gt;@&lt;server&gt; in the terminal changes from your local computer to the remote server."
+  },
+  {
+    "objectID": "posts/conda-jupyter-start/index.html#step-5.-follow-qiime2-install",
+    "href": "posts/conda-jupyter-start/index.html#step-5.-follow-qiime2-install",
+    "title": "Getting Started with QIIME2 and jupyter notebook",
+    "section": "Step 5. Follow QIIME2 Install",
+    "text": "Step 5. Follow QIIME2 Install\nI followed the QIIME2 Install Instructions for a native install on a Linux OS. The steps below are taken directly from the QIIME2 docs instruction on Natively installing QIIME2 using Miniconda on a Linux machine.\n\nStep 5.1 Install Miniconda\nMiniconda provides the conda environment and package manager, and is the recommended way to install QIIME 2. Follow the Miniconda instructions for downloading and installing Miniconda.\nHere, I choose to work with Miniconda3, because I also have Python 3. I am also following instructions for downloading to a Linux environment.\n\n\n\n\n\n\nImportant\n\n\n\nIt is important to follow all of the directions, particularly ensuring that you run conda init at the end of the installation process.\n\n\nIn the remote server terminal run:\n\ncurl -O https://repo.anaconda.com/miniconda/Miniconda3-py311_23.5.2-0-Linux-x86_64.sh\n\n\n\nStep 5.2 Install QIIME2 within a conda environment\n\n\nStep 5.3 Activate conda environment\n\n\nStep 5.4 Test Installation"
+  },
+  {
+    "objectID": "posts/conda-jupyter-start/index.html#step-6.-download-jupyter-lab-in-qiime2-conda-environment",
+    "href": "posts/conda-jupyter-start/index.html#step-6.-download-jupyter-lab-in-qiime2-conda-environment",
+    "title": "Getting Started with QIIME2 and jupyter notebook",
+    "section": "Step 6. Download Jupyter Lab in QIIME2 conda environment",
+    "text": "Step 6. Download Jupyter Lab in QIIME2 conda environment"
   },
   {
     "objectID": "posts/daily-log/index.html",
@@ -229,33 +250,5 @@
     "title": "Target Journals for Submitting Manuscripts",
     "section": "Marine Pollution Bulletin",
     "text": "Marine Pollution Bulletin\n\nImpact Factor 5.8\nCite score 10.1\nShort Communications are short research papers, with a typical length of 3000 words, and a maximum of 5000 words, 3 Figures or Tables.\nMicro Articles are very short papers, less than 3000 words or 2 pages. They must consist of a single, but well-described piece of information:\n• Original Data and/or a plot plus a description\n• Description of a new method, experiment or instrumentation\n• Descriptive case study"
-  },
-  {
-    "objectID": "posts/conda-jupyter-start/index.html#step-3.-download-a-vpn-client",
-    "href": "posts/conda-jupyter-start/index.html#step-3.-download-a-vpn-client",
-    "title": "Getting Started with QIIME2 and jupyter notebook",
-    "section": "Step 3. Download a VPN Client",
-    "text": "Step 3. Download a VPN Client\nAs a student at UW, I have access to some free software through the IT department, and to connect remotely to servers hosted at UW I needed to download the virtual private network (VPN) Big-IP Edge Client to my home PC and my mobile laptop.\nSo I followed these instructions to download the BIG-IP Edge Client for UW students, and I did this for both my home PC and laptop. I then connected to the VPN!\n\n\n\n\n\n\nImportant\n\n\n\nWhen connected to the VPN Client, make sure the Server selected is ‘All Internet Traffic’, otherwise Jupyter Lab local host won’t connect!"
-  },
-  {
-    "objectID": "posts/conda-jupyter-start/index.html#step-4.-setup-a-tunnel-into-the-remote-server",
-    "href": "posts/conda-jupyter-start/index.html#step-4.-setup-a-tunnel-into-the-remote-server",
-    "title": "Getting Started with QIIME2 and jupyter notebook",
-    "section": "Step 4. Setup a ‘tunnel’ into the remote server",
-    "text": "Step 4. Setup a ‘tunnel’ into the remote server\nI opened the WSL Ubuntu terminal 🐧 and made a .ssh directory in my home directory, and then opened the nano text editor to write a config file in the .ssh folder:\n\nmkdir .ssh\nnano ~/.ssh/config\n\n\n\n\n\n\n\nTip\n\n\n\nThe .ssh directory is hidden, and you won’t see it when you run ls\n\n\nIn the nano text editor I copied the following:\n\n    # Jupyter Notebook tunnel\n    Host &lt;server&gt;_tunnel\n        HostName &lt;123.45.678.90&gt;\n        User &lt;username&gt;\n        ControlMaster auto\n        ServerAliveInterval 30\n        ServerAliveCountMax 1200\n        ForwardX11 yes\n        LocalForward localhost:9000 127.0.0.1:9000\n\nwhere:\n\n&lt;server&gt; is the remote server name (make this short and sweet, since you will execute this as a command later on and must needs type it out)\n&lt;123.45.678.90&gt; is the remote server IP address in the HostName field\n&lt;username&gt; is the username setup for the remote server in the User field\n\nI saved the config file by writing it out (Ctrl+X) and pressing Enter.\nNext, I tested the tunnel by opening a new Linux Ubuntu terminal and running:\n\nssh &lt;server&gt;_tunnel\n\nIn addition, you can test direct access to the remote server (not using the tunnel) with:\n\nssh &lt;username&gt;@&lt;IP-address&gt;\n\nThe tunnel connected me to the remote server and prompted me to enter the password associated with my user on the remote server.\n\n\n\n\n\n\nTip\n\n\n\nOnce tunneled into the remote server you’ll notice the &lt;username&gt;@&lt;server&gt; in the terminal changes from your local computer to the remote server."
-  },
-  {
-    "objectID": "posts/conda-jupyter-start/index.html#step-5.-follow-qiime2-install",
-    "href": "posts/conda-jupyter-start/index.html#step-5.-follow-qiime2-install",
-    "title": "Getting Started with QIIME2 and jupyter notebook",
-    "section": "Step 5. Follow QIIME2 Install",
-    "text": "Step 5. Follow QIIME2 Install\nI followed the QIIME2 Install Instructions for a native install on a Linux OS. The steps below are taken directly from the QIIME2 docs instruction on Natively installing QIIME2 using Miniconda on a Linux machine.\n\nStep 5.1 Install Miniconda\nMiniconda provides the conda environment and package manager, and is the recommended way to install QIIME 2. Follow the Miniconda instructions for downloading and installing Miniconda.\nHere, I choose to work with Miniconda3, because I also have Python 3. I am also following instructions for downloading to a Linux environment.\n\n\n\n\n\n\nImportant\n\n\n\nIt is important to follow all of the directions, particularly ensuring that you run conda init at the end of the installation process.\n\n\nIn the remote server terminal run:\n\ncurl -O https://repo.anaconda.com/miniconda/Miniconda3-py311_23.5.2-0-Linux-x86_64.sh\n\n\n\nStep 5.2 Install QIIME2 within a conda environment\n\n\nStep 5.3 Activate conda environment\n\n\nStep 5.4 Test Installation"
-  },
-  {
-    "objectID": "posts/conda-jupyter-start/index.html#step-6.-download-jupyter-lab-in-qiime2-conda-environment",
-    "href": "posts/conda-jupyter-start/index.html#step-6.-download-jupyter-lab-in-qiime2-conda-environment",
-    "title": "Getting Started with QIIME2 and jupyter notebook",
-    "section": "Step 6. Download Jupyter Lab in QIIME2 conda environment",
-    "text": "Step 6. Download Jupyter Lab in QIIME2 conda environment"
   }
 ]

@@ -1,8 +1,9 @@
 ---
-title: "About"
+title: "Sarah Tanja"
 image: images/sarah-smile.jpg
 about:
-  template: jolla
+  template: trestles
+  image-shape: round
   links:
     - icon: linkedin
       text: LinkedIn
@@ -12,7 +13,7 @@ about:
       href: https://github.com/sarahtanja
     - icon: envelope-heart
       text: Email Me
-      href: mailto:stanja@uw.edu
+      href: mailto::stanja@uw.edu
 ---
 
 ![](images/sarah-pour.jpg)

@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with `QIIME2` and `jupyter notebook`"
+title: "Getting Started with `QIIME2` and `Jupyter Lab`"
 subtitle: "Working from a Windows OS and connecting via VPN to a remote server"
 author: "Sarah Tanja"
 date: '08/10/2023'
@@ -18,7 +18,7 @@ highlight-style:
   dark: arrow-dark
 ---
 
-Sometimes it seems the hardest part about developing a new workflow is deciding *where* to put it! As I start working on analyzing my microbiome data, I need to have a Linux OS computing environment with `conda`, [`qiime2`](https://qiime2.org/) all running in a `jupyter notebook`.
+Sometimes it seems the hardest part about developing a new workflow is deciding *where* to put it! As I start working on analyzing my microbiome data, I need to have a Linux OS computing environment with `conda`, [`qiime2`](https://qiime2.org/) all running in a [`jupyter notebook`](https://jupyter.org/).
 
 After various tries installing in VirtualBox, uninstalling, re-installing, running into big issues with package dependency conflicts, and [some strange `temporary failure` errors](https://forum.qiime2.org/t/temporary-failure-in-name-resolution-wget-unable-to-resolve-host-address-data-qiime2-org/27193), I finally got things setup to run `qiime2` commands in a `jupyter notebook` on a Linux OS remote server (which has more computing power and space than my PC or laptop).
 

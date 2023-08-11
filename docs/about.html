@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -72,6 +91,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/s-pertusa.svg" alt="Sparlingia pertusa watercolor, artwork by Sarah Tanja" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Sarah Tanja’s Open Lab Notebook</span>
     </a>
@@ -84,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./about.html" rel="" target="" aria-current="page">
- <span class="menu-text">Sarah Tanja</span></a>
+ <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://www.linkedin.com/in/sarah-tanja-595722146/" rel="" target=""><i class="bi bi-linkedin" role="img">
@@ -113,20 +135,57 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+  <ul>
+  <li><a href="#research-influences" id="toc-research-influences" class="nav-link active" data-scroll-target="#research-influences">Research Influences</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<div class="quarto-about-trestles column-page">
-  <div class="about-entity">
-    <img src="images/sarah-smile.jpg" class="about-image
-  round " style="height: 20em; width: 20em;">
-<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-about-jolla page-columns page-full column-page-left">
+  <img src="images/sarah-smile.jpg" class="about-image
+  round " style="height: 15em; width: 15em;">
+ <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Sarah Tanja</h1>
 </div>
 <div class="quarto-title-meta">
   </div>
-</header>
-    <div class="about-links">
+</header><main class="content page-columns page-full column-page-left" id="quarto-document-content">
+
+<div class="{hero-heading}">
+<p>I’m currently a Masters student in the <a href="https://padilla-gaminolab.weebly.com/">Padilla-Gamiño Lab</a> and part of the <a href="https://fish.uw.edu/">School of Aquatic and Fishery Sciences</a> at the University of Washington in Seattle.</p>
+<p>My research focuses on the multiple stressor impacts of plastic pollution and heat stress on coastal primary producers. More specifically, I am researching a suite of common chemicals added to plastic consumer-products called phthalate acid-esters, phthalates or plasticizers, and their potential impacts on gene expression and microbial community structure in corals.</p>
+</div>
+<hr>
+<section id="research-influences" class="level3 page-columns page-full">
+<h3 data-anchor-id="research-influences">Research Influences</h3>
+<p>I first began circling the issue of plastic pollution and marine debris in 2012 as an <a href="https://www.adfg.alaska.gov/index.cfm?adfg=internexp.donohoe">intern</a> with the Alaska Dept. of Fish &amp; Game at a remote Steller sea lion rookery near Dixon Entrance. During population surveys, I photographed sea lions entangled in plastic trash, and later worked with the Pinniped Entanglement Group <a href="https://pinnipedentanglementgroup.org/">(PEG)</a> to research biodegradable alternatives to plastic packing bands on fish boxes. I learned how difficult it is to amend a system reliant on plastic.</p>
+<p>More recently, a seminar taught by my advisor <a href="https://fish.uw.edu/faculty/jacqueline-padilla-gamino/">Dr.&nbsp;Padilla-Gamiño</a> raised my awareness of the <a href="https://www.youtube.com/watch?v=iO3SA4YyEYU">links</a> between the fossil fuel industry, petrochemical-based plastics pollution, and the need for a plastics circular economy. Throughout the seminar, I was heavily influenced by a documentary titled, “<a href="https://www.youtube.com/show/SC2l9YPiNhgA1NwB2avpZwgw">The Story of Plastic</a>” and a number of papers, including: “Rethinking Microplastics as a Diverse Contaminant Suite” [<span class="citation" data-cites="rochman_rethinking_2019">Rochman et al. (<a href="#ref-rochman_rethinking_2019" role="doc-biblioref">2019</a>)</span>], and “Plastic leachates impair growth and oxygen production in Prochlorococcus, the ocean’s most abundant photosynthetic bacteria” [<span class="citation" data-cites="tetu2019">Tetu et al. (<a href="#ref-tetu2019" role="doc-biblioref">2019</a>)</span>].</p>
+<div class="no-row-height column-margin column-container"><div id="ref-rochman_rethinking_2019" class="csl-entry" role="listitem">
+Rochman, Chelsea M., Cole Brookson, Jacqueline Bikker, Natasha Djuric, Arielle Earn, Kennedy Bucci, Samantha Athey, et al. 2019. <span>“Rethinking Microplastics as a Diverse Contaminant Suite.”</span> <em>Environ Toxicol Chem</em> 38 (4): 703–11. <a href="https://doi.org/10.1002/etc.4371">https://doi.org/10.1002/etc.4371</a>.
+</div><div id="ref-tetu2019" class="csl-entry" role="listitem">
+Tetu, Sasha G., Indrani Sarker, Verena Schrameyer, Russell Pickford, Liam D. H. Elbourne, Lisa R. Moore, and Ian T. Paulsen. 2019. <span>“Plastic Leachates Impair Growth and Oxygen Production in Prochlorococcus, the Ocean’s Most Abundant Photosynthetic Bacteria.”</span> <em>Commun Biol</em> 2 (May): 184. <a href="https://doi.org/10.1038/s42003-019-0410-x">https://doi.org/10.1038/s42003-019-0410-x</a>.
+</div></div><p>Phthalates are known endocrine-disrupting chemicals, which can have strong effects even at very low doses. This ecotoxicology concept is referred to as ‘low-dose effects’ and ‘non-monotonic’ response and was introduced to me by <a href="https://directory.tacoma.uw.edu/employee/agardell">Dr.&nbsp;Alison Gardell</a> as a guest-lecturer to a course in Integrated Environmental Physiology taught by <a href="https://fish.uw.edu/faculty/steven-roberts/">Dr.&nbsp;Steven Roberts</a> at the University of Washington in Seattle.</p>
+<p>I became increasingly interested in studying these types of environmental pollutants because they challenge the concept of ‘acceptable levels of pollution’. A book by <a href="https://maxliboiron.com/">Dr.&nbsp;Max Liboiron</a>, titled <a href="https://www.dukeupress.edu/pollution-is-colonialism"><em>Pollution is Colonialism</em></a>, <span class="citation" data-cites="liboiron2021">(<a href="#ref-liboiron2021" role="doc-biblioref">Liboiron 2021</a>)</span>taught me that ‘acceptable levels of pollution’ assumes settler and colonial access to Indigenous land and is not, in fact, acceptable.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-liboiron2021" class="csl-entry" role="listitem">
+Liboiron, Max. 2021. <em>Pollution Is Colonialism</em>. Duke University Press. <a href="https://doi.org/10.2307/j.ctv1jhvnk1">https://doi.org/10.2307/j.ctv1jhvnk1</a>.
+</div></div><div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/sarah-pour.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">This is me measuring out some filtered seawater at the Hawaii Institute of Marine Biology (HIMB) in preparation for my pilot study on phthalate impacts on coral embryo development</figcaption>
+</figure>
+</div>
+<hr>
+
+
+
+</section>
+</main> 
+  <hr class="about-sep">
+   <div class="about-links">
   <a href="https://www.linkedin.com/in/sarah-tanja-595722146/" class="about-link" rel="" target="">
     <i class="bi bi-linkedin"></i>
      <span class="about-link-text">LinkedIn</span>
@@ -140,27 +199,6 @@ ul.task-list li input[type="checkbox"] {
      <span class="about-link-text">Email Me</span>
   </a>
 </div>
-  </div>
-  <div class="about-contents"><main class="content column-page" id="quarto-document-content">
-<p><img src="images/sarah-pour.jpg" class="img-fluid"></p>
-<p>I’m currently a Masters student in the <a href="https://padilla-gaminolab.weebly.com/">Padilla-Gamiño Lab</a> and part of the <a href="https://fish.uw.edu/">School of Aquatic and Fishery Sciences</a> at the University of Washington in Seattle.</p>
-<p>My research focuses on the multiple stressor impacts of plastic pollution and heat stress on coastal primary producers. More specifically, I am researching a suite of common chemicals added to plastic consumer-products called phthalate acid-esters, phthalates or plasticizers, and their potential impacts on gene transcription, primary productivity, and microbial community structure in corals and kelps.</p>
-<hr>
-<section id="research-influences" class="level3">
-<h3 data-anchor-id="research-influences">Research Influences</h3>
-<p>I first began circling the issue of plastic pollution and marine debris in 2012 as an <a href="https://www.adfg.alaska.gov/index.cfm?adfg=internexp.donohoe">intern</a> with the Alaska Dept. of Fish &amp; Game at a remote Steller sea lion rookery near Dixon Entrance. During population surveys, I photographed sea lions entangled in plastic trash, and later worked with the Pinniped Entanglement Group <a href="https://pinnipedentanglementgroup.org/">(PEG)</a> to research biodegradable alternatives to plastic packing bands on fish boxes. I learned how difficult it is to amend a system reliant on plastic.</p>
-<p>More recently, a seminar taught by my advisor <a href="https://fish.uw.edu/faculty/jacqueline-padilla-gamino/">Dr.&nbsp;Padilla-Gamiño</a> raised my awareness of the <a href="https://www.youtube.com/watch?v=iO3SA4YyEYU">links</a> between the fossil fuel industry, petrochemical-based plastics pollution, and the need for a plastics circular economy. Throughout the seminar, I was heavily influenced by:</p>
-<ul>
-<li>a documentary, “<a href="https://www.youtube.com/show/SC2l9YPiNhgA1NwB2avpZwgw">The Story of Plastic</a>”</li>
-<li>a peer-reviewed paper, “<a href="https://doi.org/10.1002/etc.4371">Rethinking Microplastics as a Diverse Contaminant Suite</a>” by Chelsea Rochman et. al 2019</li>
-</ul>
-<p>Phthalates are known endocrine-disrupting chemicals, which can have strong effects even at very low doses. This ecotoxicology concept is referred to as ‘low-dose effects’ and ‘non-monotonic’ response and was introduced to me by <a href="https://directory.tacoma.uw.edu/employee/agardell">Dr.&nbsp;Alison Gardell</a> as a guest-lecturer to a course in Integrated Environmental Physiology taught by <a href="https://fish.uw.edu/faculty/steven-roberts/">Dr.&nbsp;Steven Roberts</a> at the University of Washington in Seattle.</p>
-<p>I became increasingly interested in studying these types of environmental pollutants because they challenge the concept of ‘acceptable levels of pollution’. A book by <a href="https://maxliboiron.com/">Dr.&nbsp;Max Liboiron</a>, titled <a href="https://www.dukeupress.edu/pollution-is-colonialism"><em>Pollution is Colonialism</em></a>, taught me that ‘acceptable levels of pollution’ assumes settler and colonial access to Indigenous land and is not, in fact, acceptable.</p>
-<hr>
-
-
-</section>
-</main></div>
 </div>
  <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -505,6 +543,36 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">This page is built using <a href="https://quarto.org/">Quarto</a>❤️</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/sarah-tanja-595722146/">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/sarahtanja">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:stanja@uw.edu">
+      <i class="bi bi-envelope-heart" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 

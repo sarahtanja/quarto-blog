@@ -110,7 +110,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../images/s-pertusa.svg" alt="Sparlingia pertusa watercolor, artwork by Sarah Tanja" class="navbar-logo">
+    <img src="../../images/S-pertusa.png" alt="Sparlingia pertusa watercolor, artwork by Sarah Tanja" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Sarah Tanja’s Open Lab Notebook</span>
@@ -208,7 +208,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>extr_meta <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"output/extractions_metadata.csv"</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(extr_meta)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 6 × 19
+<pre><code># A tibble: 6 x 19
   cryo_id colony pae_treatment temp_treatment tank  cryo_rep pae_ugL freeze_date
   &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;         &lt;chr&gt;          &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;chr&gt;      
 1 1-Ea         1 environmental kbay           na    a        na      8/5/2022   
@@ -217,7 +217,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 4 2-Eb         2 environmental kbay           na    b        na      8/5/2022   
 5 3-Ea         3 environmental kbay           na    a        na      8/5/2022   
 6 3-Eb         3 environmental kbay           na    b        na      8/5/2022   
-# ℹ 11 more variables: cull_notes &lt;chr&gt;, extraction_id &lt;dbl&gt;, extr_date &lt;chr&gt;,
+# i 11 more variables: cull_notes &lt;chr&gt;, extraction_id &lt;dbl&gt;, extr_date &lt;chr&gt;,
 #   qubit_rna_run_date &lt;chr&gt;, qubit_rna_1 &lt;dbl&gt;, qubit_rna_2 &lt;dbl&gt;,
 #   qubit_rna_3 &lt;dbl&gt;, qubit_dna_run_date &lt;chr&gt;, qubit_dna_1 &lt;dbl&gt;,
 #   qubit_dna_2 &lt;dbl&gt;, qubit_dna_3 &lt;dbl&gt;</code></pre>
@@ -228,7 +228,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(extraction_id))</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(extracted, <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 20 × 19
+<pre><code># A tibble: 20 x 19
    cryo_id colony pae_treatment temp_treatment tank  cryo_rep pae_ugL
    &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;         &lt;chr&gt;          &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;  
  1 1-Ea         1 environmental kbay           na    a        na     
@@ -251,7 +251,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 18 4-CH1a       4 control       hot            H1    a        0      
 19 4-PA2a       4 peak          ambient        A2    a        150    
 20 4-PH1a       4 peak          hot            H1    a        150    
-# ℹ 12 more variables: freeze_date &lt;chr&gt;, cull_notes &lt;chr&gt;,
+# i 12 more variables: freeze_date &lt;chr&gt;, cull_notes &lt;chr&gt;,
 #   extraction_id &lt;dbl&gt;, extr_date &lt;chr&gt;, qubit_rna_run_date &lt;chr&gt;,
 #   qubit_rna_1 &lt;dbl&gt;, qubit_rna_2 &lt;dbl&gt;, qubit_rna_3 &lt;dbl&gt;,
 #   qubit_dna_run_date &lt;chr&gt;, qubit_dna_1 &lt;dbl&gt;, qubit_dna_2 &lt;dbl&gt;,
@@ -291,7 +291,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(qubit_scores)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 20 × 4
+<pre><code># A tibble: 20 x 4
    cryo_id extraction_id qubit_dna_avg qubit_rna_avg
    &lt;chr&gt;           &lt;dbl&gt;         &lt;dbl&gt;         &lt;dbl&gt;
  1 3-Ea                1         38.8            0  
@@ -384,7 +384,9 @@ data:  qubit_scores$diff
 W = 0.84347, p-value = 0.004152</code></pre>
 </div>
 </div>
-<p>The differences are not normally distributed, (p &lt; 0.05), therefore we cannot use a paired-sample t test. If the data do not meet the assumptions of normality required for parametric tests like the paired t-test, but you want to determine if there is a trend between two paired samples, you can use the Wilcoxon paired-sample T test. This is a non-parametric statistical test used to compare two related samples or repeated measures. It is appropriate for this dataset, because each row of DNA and RNA were extracted from the same sample. Here we really want to know if our Dual extraction method is biased toward optimizing yield for DNA or RNA, or if there is any trend at all. &gt; Our null and alternate hypotheses are: H0: There is no trend between the paired samples. H1: There is a trend between the paired samples.</p>
+<p>The differences are not normally distributed, (p &lt; 0.05), therefore we cannot use a paired-sample t test. If the data do not meet the assumptions of normality required for parametric tests like the paired t-test, but you want to determine if there is a trend between two paired samples, you can use the Wilcoxon paired-sample T test. This is a non-parametric statistical test used to compare two related samples or repeated measures. It is appropriate for this dataset, because each row of DNA and RNA were extracted from the same sample. Here we really want to know if our Dual extraction method is biased toward optimizing yield for DNA or RNA, or if there is any trend at all. &gt; Our null and alternate hypotheses are:</p>
+<p>H0: There is no trend between the paired samples.</p>
+<p>H1: There is a trend between the paired samples.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(<span class="at">x=</span>qubit_scores<span class="sc">$</span>qubit_dna_avg, <span class="at">y=</span>qubit_scores<span class="sc">$</span>qubit_rna_avg, <span class="at">paired=</span><span class="cn">TRUE</span>, <span class="at">alternative =</span> <span class="st">'two.sided'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">

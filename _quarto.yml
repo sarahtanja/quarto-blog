@@ -4,20 +4,46 @@ project:
 
 website:
   title: "Sarah Tanja's Open Lab Notebook"
+  page-navigation: true
+  site-url: https://sarahtanja.github.io/quarto-blog/
+  repo-url: https://github.com/sarahtanja/quarto-blog
+  
+  
   navbar:
+    logo: images/s-pertusa.svg
+    logo-alt: "Sparlingia pertusa watercolor, artwork by Sarah Tanja"
+    background: secondary
+    search: true
     right:
-      - about.qmd
+      - text: "About"
+        file: about.qmd
       - icon: linkedin
         href: https://www.linkedin.com/in/sarah-tanja-595722146/
       - icon: github
         href: https://github.com/sarahtanja
       - icon: envelope-heart
         href: mailto:stanja@uw.edu
+  
+  page-footer: 
+    left: "This page is built using [Quarto](https://quarto.org/)❤️" 
+    right: 
+      - icon: linkedin
+        href: https://www.linkedin.com/in/sarah-tanja-595722146/
+      - icon: github
+        href: https://github.com/sarahtanja
+      - icon: envelope-heart
+        href: mailto:stanja@uw.edu 
 
 format:
   html:
-    theme: minty
+    theme: 
+      light: minty
+      dark: superhero
     css: styles.css
+    page-layout: full
+    code-background: true
+    code-copy: true
+    toc: true 
 
 editor: visual
 

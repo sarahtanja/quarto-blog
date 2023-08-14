@@ -1,94 +1,135 @@
 ---
-title: "Getting Started with `conda` and `jupyter notebook`"
+title: "Getting Started with `QIIME2` and `Jupyter Lab`"
+subtitle: "Working from a Windows OS and connecting via VPN to a remote server"
 author: "Sarah Tanja"
-date: '05/19/2023'
-categories: [protocols]
-image: thumbnail.jpg
-draft: true
+date: '08/10/2023'
+categories: [learning journey]
+draft: false
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>
 toc-depth: 5
 toc-location: left
 reference-location: margin
 citation-location: margin
+code-block-border-left: true
+code-block-bg: true
+highlight-style: 
+  light: arrow
+  dark: arrow-dark
 ---
 
-Sometimes it seems the hardest part about developing a new workflow is deciding *where* to put it! As I start working on analyzing my microbiome data, I need to have a workspace that has conda and can run QIIME2 in a jupyter notebook.
+Sometimes it seems the hardest part about developing a new workflow is deciding *where* to put it! As I start working on analyzing my microbiome data, I need to have a Linux OS computing environment with `conda`, [`qiime2`](https://qiime2.org/) all running in a [`jupyter notebook`](https://jupyter.org/).
 
-I started by opening the [QIIME2 Install Instructions](https://docs.qiime2.org/2023.5/install/native/) for a native install on a Windows Subsystem for Linux.
+After various tries installing in VirtualBox, uninstalling, re-installing, running into big issues with package dependency conflicts, and [some strange `temporary failure` errors](https://forum.qiime2.org/t/temporary-failure-in-name-resolution-wget-unable-to-resolve-host-address-data-qiime2-org/27193), I finally got things setup to run `qiime2` commands in a `jupyter notebook` on a Linux OS remote server (which has more computing power and space than my PC or laptop).
 
-Open a Linux terminal and type:
-```{r, engine='bash'}
+So the rest of this post details those steps; in case I ever (God willing) have to do it again or explain it to someone else.
+
+::: {.callout-note title="Objective"}
+Run `qiime2` commands in a `jupyter notebook` on a remote Linux server (from a Windows OS!)
+:::
+
+## Step 1. Get setup as a user on a remote Linux server
+
+This may be the hardest part because you are relying on support from your institution or PI (unless you have the ability to setup your own Linux server, which is outside the scope of this post).
+
+In Spring of 2023 I had taken the [Bioinformatics FISH 546](https://sr320.github.io/course-fish546-2023/schedule.html) taught by Steven Roberts at UW. In that class, I was added as a user to a remote Linux server hosted by the [Roberts Lab](https://robertslab.github.io/resources/). I got permission to continue using the remote server for my Master's Thesis research bioinformatics analysis. So, the Roberts Lab set me up with a username and a password to access the remote server.
+
+## Step 2. Download Windows Subsystem for Linux (WSL) to your Windows OS computer
+
+I followed the instructions found at the Microsoft Documentation website [Install Linux on Windows with WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
+
+In brief, I opened Windows PowerShell and ran `wsl --install` which installed the Ubuntu Linux distribution. I kept the default Ubuntu distribution. I continued following the instructions to [Set up your Linux user info](https://learn.microsoft.com/en-us/windows/wsl/install#:~:text=use%20with%20WSL.-,Set%20up%20your%20Linux%20user%20info,-Once%20you%20have), and kept my password secret and safe.
+
+## Step 3. Download a VPN Client
+
+As a student at UW, I have access to some free software through the IT department, and to connect remotely to servers hosted at UW I needed to download the virtual private network (VPN) [Big-IP Edge Client](https://www.lib.washington.edu/help/connect/husky-onnet) to my home PC and my mobile laptop.
+
+So I followed [these instructions](https://www.lib.washington.edu/help/connect/husky-onnet) to download the BIG-IP Edge Client for UW students, and I did this for both my home PC and laptop. I then connected to the VPN!
+
+::: callout-important
+When connected to the VPN Client, make sure the Server selected is 'All Internet Traffic', otherwise Jupyter Lab local host won't connect!
+:::
+
+## Step 4. Setup a 'tunnel' into the remote server
+
+I opened the WSL Ubuntu terminal 🐧 and made a .ssh directory in my home directory, and then opened the nano text editor to write a config file in the .ssh folder:
+
+```{r, engine='bash', eval=FALSE, echo=TRUE}
+mkdir .ssh
 nano ~/.ssh/config
 ```
 
-Then copy configuration for a server tunnel into the ssh/config file
-```{r, engine='bash'}
-# Jupyter Notebook tunnel
-Host raven_tunnel
-    HostName <remote server IP address>
-    User <username>
-    ControlMaster auto
-    ServerAliveInterval 30
-    ServerAliveCountMax 1200
-    ForwardX11 yes
-    LocalForward localhost:9000 <local machine IP address>:9000
+::: callout-tip
+The .ssh directory is hidden, and you won't see it when you run `ls`
+:::
+
+In the nano text editor I copied the following:
+
+```{r, engine='bash', eval=FALSE, echo=TRUE}
+    # Jupyter Notebook tunnel
+    Host <server>_tunnel
+        HostName <123.45.678.90>
+        User <username>
+        ControlMaster auto
+        ServerAliveInterval 30
+        ServerAliveCountMax 1200
+        ForwardX11 yes
+        LocalForward localhost:9000 127.0.0.1:9000
 ```
 
-After this, you can access the remote server simply by opening a Linux terminal and typing `ssh raven_tunnel` and entering the server password.
+where:
 
-Alternatively, you can SSH into the remote server by `ssh <username>@<remote server IP address>` and then typing the password and pressing enter.
+-   **\<server>** is the remote server name (make this short and sweet, since you will execute this as a command later on and must needs type it out)
 
-Once in the remote server, I downloaded `Miniconda3` following the instructions from the [QIIME2 Install Instructions](https://docs.qiime2.org/2023.5/install/native/).
+-    **\<123.45.678.90>** is the remote server IP address in the HostName field
 
-I followed the instructions to also download QIIME2 and created the qiime2-2023.5 conda environment. 
+-   **\<username**\> is the username setup for the remote server in the User field
 
-I activated the conda environment, and then executed the following command to open a jupyter notebook in the remote server:
-```{r, engine='bash'}
-jupyter-lab --no-browser --port=9000
+I saved the config file by writing it out (Ctrl+X) and pressing Enter.
+
+Next, I tested the tunnel by opening a new Linux Ubuntu terminal and running:
+
+```{r, engine='bash', eval=FALSE, echo=TRUE}
+ssh <server>_tunnel
 ```
 
-Then I used `Ctrl + Click` to follow the http://localhost:9000 link that was generated.
+In addition, you can test direct access to the remote server (not using the tunnel) with:
 
-bash kernel? 
-qiime kernel?
-
-Following this [blog](https://saturncloud.io/blog/running-jupyter-notebooks-with-different-kernels/)
-
-```
-(base) stanja@raven:~$ pip install ipykernel
-(base) stanja@raven:~$ python -m ipykernel install --user --name qiime2-2023.5 --display-name "qiime2-2023.5"
-0.00s - Debugger warning: It seems that frozen modules are being used, which may
-0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
-0.00s - to python to disable frozen modules.
-0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
-Installed kernelspec qiime2-2023.5 in /home/shared/8TB_HDD_02/stanja/.local/share/jupyter/kernels/qiime2-2023.5
-(base) stanja@raven:~$
+```{r, engine='bash', eval=FALSE, echo=TRUE}
+ssh <username>@<IP-address>
 ```
 
-How to execute qiime commands in a Jupyter Notebook?
-checkout [this forum post](https://forum.qiime2.org/t/activating-jupyterlab-in-qiime2/9697)
-```{r, engine='bash'}
-(base) stanja@raven:~$ conda activate qiime2-2023.5
-(qiime2-2023.5) stanja@raven:~$ conda install -c conda-forge jupyterlab
+The tunnel connected me to the remote server and prompted me to enter the password associated with my user on the remote server.
+
+::: callout-tip
+Once tunneled into the remote server you'll notice the \<username>\@\<server> in the terminal changes from your local computer to the remote server.
+:::
+
+## Step 5. Follow QIIME2 Install
+
+I followed the [QIIME2 Install Instructions](https://docs.qiime2.org/2023.5/install/native/) for a native install on a Linux OS. The steps below are taken directly from the `QIIME2` docs instruction on Natively installing `QIIME2` using `Miniconda` on a Linux machine.
+
+### Step 5.1 Install `Miniconda`
+
+[Miniconda](https://docs.conda.io/en/latest/miniconda.html) provides the `conda` environment and package manager, and is the recommended way to install `QIIME 2`. Follow the [Miniconda instructions](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) for downloading and installing `Miniconda`.
+
+Here, I choose to work with `Miniconda3`, because I also have `Python 3`. I am also following [instructions for downloading to a Linux environment](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html).
+
+:::{.callout-important}
+It is important to follow all of the directions, particularly ensuring that you run `conda init` at the end of the installation process.
+:::
+
+In the remote server terminal run:
+
+```{r, engine='bash', eval=FALSE, echo=TRUE}
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-py311_23.5.2-0-Linux-x86_64.sh
+
 ```
 
-Now when you run `conda list` you should see q2 commands and jupyterlab commands 
+### Step 5.2 Install `QIIME2` within a `conda` environment
 
-R
-I logged into the Roberts Lab RStudio raven server and installed the IRkernel package there. 
+### Step 5.3 Activate `conda` environment
 
-To use R in Jupyter notebooks, we can use the IRkernel package. We can install this package in our R environment using the following command:
-```{r}
-install.packages('IRkernel')
-```
-Once we have installed the IRkernel package, we can register it as a kernel in Jupyter notebooks using the following command:
+### Step 5.4 Test Installation
 
-```{r, engine='bash'}
-IRkernel::installspec()
-```
-p.s.
-The following is the command to start the conda shell on the Roberts Lab raven server:
-```{r, engine='bash'}
-eval "$(/opt/anaconda/anaconda3/bin/conda shell.bash hook)"
-```
+## Step 6. Download Jupyter Lab in `QIIME2` `conda` environment

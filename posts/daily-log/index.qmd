@@ -1,8 +1,7 @@
 ---
 title: "Daily Lab Log"
 author: "Sarah Tanja"
-date: '06/02/2023'
-image: notebook.png
+date: '08/11/2023'
 categories: [daily log]
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>

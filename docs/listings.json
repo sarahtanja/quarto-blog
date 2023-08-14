@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/conda-jupyter-start/index.html",
       "/posts/target-journals/index.html",
       "/posts/coral-pae-devo/index.html",
       "/posts/choosing-16S-primers/index.html",

@@ -14,8 +14,8 @@ website:
   navbar:
     logo: "images/binocs-logo-big.png"
     logo-alt: "Sparlingia pertusa watercolor, artwork by Sarah Tanja"
-    background: dark
-    foreground: secondary
+    background: primary
+    foreground: light
     search: true
     right: #align navbar items to right/left/center
       - text: "About"
@@ -33,10 +33,10 @@ website:
 format:
   html:
     theme: 
-      light: minty
-      dark: superhero
+      light: journal
+      dark: solar
     css: styles.css
-    page-layout: full
+    #page-layout: full
     code-background: true
     code-copy: true
     toc: true 

@@ -1,0 +1,14 @@
+{
+  "hash": "249b6472e4fb83ef4dfb8a9286cc2c39",
+  "result": {
+    "markdown": "---\ntitle: \"Getting Started with `conda` and `jupyter notebook`\"\nauthor: \"Sarah Tanja\"\ndate: '05/19/2023'\ncategories: [protocols]\nimage: thumbnail.jpg\ndraft: true\ntoc: true\ntoc-title: Contents <i class=\"bi bi-bookmark-heart\"></i>\ntoc-depth: 5\ntoc-location: left\nreference-location: margin\ncitation-location: margin\n---\n\n\nSometimes it seems the hardest part about developing a new workflow is deciding *where* to put it! As I start working on analyzing my microbiome data, I need to have a workspace that has conda and can run QIIME2 in a jupyter notebook.\n\nI started by following the [QIIME2 Install Instructions](https://docs.qiime2.org/2023.5/install/native/) for a native install on a Windows Subsystem for Linux.\n\nSSH into the Roberts Lab raven server by:\n\n```{r. engine='bash'}\nssh stanja@172.25.149.12\n```\n...and then enter the user password and press enter.\n\nThe following is the command to start the conda shell on the Roberts Lab raven server:\n\n\n::: {.cell}\n\n```{.bash .cell-code}\neval \"$(/opt/anaconda/anaconda3/bin/conda shell.bash hook)\"\n```\n\n\n::: {.cell-output .cell-output-stdout}\n```\n/bin/bash: /opt/anaconda/anaconda3/bin/conda: No such file or directory\n```\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

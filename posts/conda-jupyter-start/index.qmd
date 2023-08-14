@@ -15,17 +15,80 @@ citation-location: margin
 
 Sometimes it seems the hardest part about developing a new workflow is deciding *where* to put it! As I start working on analyzing my microbiome data, I need to have a workspace that has conda and can run QIIME2 in a jupyter notebook.
 
-I started by following the [QIIME2 Install Instructions](https://docs.qiime2.org/2023.5/install/native/) for a native install on a Windows Subsystem for Linux.
+I started by opening the [QIIME2 Install Instructions](https://docs.qiime2.org/2023.5/install/native/) for a native install on a Windows Subsystem for Linux.
 
-SSH into the Roberts Lab raven server by:
-
-```{r. engine='bash'}
-ssh stanja@172.25.149.12
+Open a Linux terminal and type:
+```{r, engine='bash'}
+nano ~/.ssh/config
 ```
-...and then enter the user password and press enter.
 
+Then copy configuration for a server tunnel into the ssh/config file
+```{r, engine='bash'}
+# Jupyter Notebook tunnel
+Host raven_tunnel
+    HostName <remote server IP address>
+    User <username>
+    ControlMaster auto
+    ServerAliveInterval 30
+    ServerAliveCountMax 1200
+    ForwardX11 yes
+    LocalForward localhost:9000 <local machine IP address>:9000
+```
+
+After this, you can access the remote server simply by opening a Linux terminal and typing `ssh raven_tunnel` and entering the server password.
+
+Alternatively, you can SSH into the remote server by `ssh <username>@<remote server IP address>` and then typing the password and pressing enter.
+
+Once in the remote server, I downloaded `Miniconda3` following the instructions from the [QIIME2 Install Instructions](https://docs.qiime2.org/2023.5/install/native/).
+
+I followed the instructions to also download QIIME2 and created the qiime2-2023.5 conda environment. 
+
+I activated the conda environment, and then executed the following command to open a jupyter notebook in the remote server:
+```{r, engine='bash'}
+jupyter-lab --no-browser --port=9000
+```
+
+Then I used `Ctrl + Click` to follow the http://localhost:9000 link that was generated.
+
+bash kernel? 
+qiime kernel?
+
+Following this [blog](https://saturncloud.io/blog/running-jupyter-notebooks-with-different-kernels/)
+
+```
+(base) stanja@raven:~$ pip install ipykernel
+(base) stanja@raven:~$ python -m ipykernel install --user --name qiime2-2023.5 --display-name "qiime2-2023.5"
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+Installed kernelspec qiime2-2023.5 in /home/shared/8TB_HDD_02/stanja/.local/share/jupyter/kernels/qiime2-2023.5
+(base) stanja@raven:~$
+```
+
+How to execute qiime commands in a Jupyter Notebook?
+checkout [this forum post](https://forum.qiime2.org/t/activating-jupyterlab-in-qiime2/9697)
+```{r, engine='bash'}
+(base) stanja@raven:~$ conda activate qiime2-2023.5
+(qiime2-2023.5) stanja@raven:~$ conda install -c conda-forge jupyterlab
+```
+
+Now when you run `conda list` you should see q2 commands and jupyterlab commands 
+
+R
+I logged into the Roberts Lab RStudio raven server and installed the IRkernel package there. 
+
+To use R in Jupyter notebooks, we can use the IRkernel package. We can install this package in our R environment using the following command:
+```{r}
+install.packages('IRkernel')
+```
+Once we have installed the IRkernel package, we can register it as a kernel in Jupyter notebooks using the following command:
+
+```{r, engine='bash'}
+IRkernel::installspec()
+```
+p.s.
 The following is the command to start the conda shell on the Roberts Lab raven server:
-
 ```{r, engine='bash'}
 eval "$(/opt/anaconda/anaconda3/bin/conda shell.bash hook)"
 ```

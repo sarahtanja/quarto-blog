@@ -1,0 +1,19 @@
+---
+title: "The RNA Inhibitors"
+subtitle: "A tragic saga of continued troubles"
+author: "Sarah Tanja"
+date: '08/15/2023'
+categories: [lab records]
+draft: false
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+---
+ 
+ After shipping 20 samples to the University of Texas at Austin GSAF for TagSeq on June 7th 2023, I got a message back from them on June 28th 2023:
+ > " Your samples failed in library prep. All 20 of them, the other samples on the 96 well plate as well as our positive control all worked great. We seen this before and it is almost always an indication that there are some type of inhibitors in your samples and it impacted the prep. Based on the quality of the RNA there is nothing more we can do for them, they will not work in the prep until they have been purified, I am not sure how they were cleaned up after the extraction but it needs to be more rigorous and be certain there are no contaminants in the RNA."
+ 
+

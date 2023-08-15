@@ -5,49 +5,11 @@ date: '08/11/2023'
 categories: [daily log]
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>
-toc-depth: 5
+toc-depth: 3
 toc-location: left
 reference-location: margin
 citation-location: margin
 ---
-
-## August 2023
-
-##### 07-AUG-2023
-
--   Read Lohman et al 2016 doi: 10.1111/1755-0998.12529 on TagSeq at UT Austin GSAF
-
--   Got into a Jupyter Notebook and QIIME2 environment on raven server! Whoo! Did this from the school office, now we need to see if I can do it from my home network using Big IP Edge VPN Client
-
-##### 03-AUG-2023
-
--   Received the RNA samples back from UTGSAF!
-
--   Discovered that the bioinformatics computer in lab 238 (jp-d20) no longer dual-boots to Linux and Windows... It only boots to Linux. This is a problem because the NanoDrop software only works on Windows. Sam White helped me figure that out via slack, and Jeremy helped me find a CD NanoDrop software install.
-
--   Attended Roberts Lab meeting
-
--   Selected 5 samples to run through the [Zymo OneStep PCR Inhibitor Removal Kit](https://www.zymoresearch.com/products/onestep-pcr-inhibitor-removal-kit) (of which I got the free kit sample) : 1-CA2a, 1-CH2a, 1-Ea, 1-PA2a, 1-PH1a
-
--   Ran those samples through the Roberts Lab NanoDrop! Read the manual found as a [pdf online here](https://assets.thermofisher.com/TFS-Assets/CAD/manuals/nd-1000-v3.8-users-manual-8%205x11.pdf)
-
--   Learned about NanoDrop from [this YouTube Video](https://toptipbio.com/the-nanodrop-results-explained/)
-
--   Sadly, the Zymo OneStep PCR Inhibitor Removal Kit didn't so the trick. All of the samples had good 260/280 ratios of around 1.9, indicating there isn't protein contamination. But... they ALL have low 260/230 ratios, indicating contamination by salts.
-
-| sample ID | ng/uL | 260/280 | 260/230 |
-|-----------|-------|---------|---------|
-| 1-CA2a    | 63.88 | 1.92    | 1.40    |
-| 1-CH2a    | 26.87 | 1.97    | 0.79    |
-| 1-PA2a    | 41.26 | 2.07    | 1.15    |
-| 1-Ea      | 44.54 | 1.98    | 1.25    |
-| 1-PH1a    | 30.24 | 1.97    | 1.64    |
-
-: Nanodrop 1000 results from 03AUG2023
-
--   So now we have to find a way to purify the RNA to target getting rid of salty contamination and inhibitors[^1].
-
-[^1]: It might be phenols carried over from the RNA extraction ([paper here](https://www.sciencedirect.com/science/article/pii/S0003269718312545)), ([putnam lab issue here](https://kevinhwong1.github.io/KevinHWong_Notebook/20210121-Nanodrop-results-on-Tag-Seq-samples/)), ([roberts lab issue here](https://github.com/RobertsLab/resources/issues/1670))
 
 ## July 2023
 
@@ -55,7 +17,7 @@ citation-location: margin
 
 -   [Integrating QIIME2 and R for data viz](https://forum.qiime2.org/t/tutorial-integrating-qiime2-and-r-for-data-visualization-and-analysis-using-qiime2r/4121)
 
--   RStudio\>Project Options\> Python\> Python interpreter
+-   RStudio>Project Options> Python> Python interpreter
 
 -   [Using Python with the RStudio IDE](https://support.posit.co/hc/en-us/articles/1500007929061-Using-Python-with-the-RStudio-IDE)
 
@@ -185,6 +147,7 @@ dilute <- function(C1, C2) {
 ##### 24-MAY-2023
 
 -   University of Texas at Austin [Genomic Sequencing and Analysis Facility (GSAF)](https://wikis.utexas.edu/display/GSAF/Home+Page):
+
     -   [Sample Input Guidelines](https://wikis.utexas.edu/display/GSAF/Sample+Input+Guidelines)
 
         > TagSeq: 25ng/ul concentration in greater than or equal to 25ul volume (submitting RNA as low as 10ng/ul or as high as 100ng/ul is acceptable BUT ALL samples MUST be submitted at the same or very similar concentrations) 
@@ -205,15 +168,20 @@ dilute <- function(C1, C2) {
 ##### 19-MAY-2023
 
 -   Ran Qubit on ex7 samples
+
 -   Extraction #7 (the redo) on samples:
+
     -   3-Eb
     -   3-PH1b
     -   2-PA2b
     -   2-CH1b
     -   4-PH1b
     -   3-CA1b
+
 -   found out how to use quarto to do [Margin References](https://quarto.org/docs/blog/posts/2022-02-17-advanced-layout/#:~:text=.-,Margin%20References,-Footnotes%20and%20the)!
+
 -   found cool article on [Verbatim code chunks](https://themockup.blog/posts/2021-08-27-displaying-verbatim-code-chunks-in-xaringan-presentations/) in R (want to render the code chunk options and show what engine is being used?)
+
 -   dry-ice at biochem stockroom is low, have to check that there will be a replenishment next week so I have enough dry ice to ship samples!
 
 ##### 18-MAY-2023
@@ -252,15 +220,20 @@ dilute <- function(C1, C2) {
 ##### 21-APR-2023
 
 -   met with JPG April 1on1
+
     -   talked about travel from Sept. 12 - Oct 9th, missing first 2 weeks of Autumn '23 quarter, focusing that quarter on writing & analysis
     -   GOAL: have all sequences (16S & Transcriptomes) by September 1st 2023
     -   Initial 20 samples extracted & sent for sequencing before FHL
     -   2nd committee meeting to be held once initial 20 samples are run through 1st analysis for 16S & DGE, get advice on strategy for selecting remaining samples
     -   Follow-up samples extracted & sent for sequencing in July/August
     -   Send draft letter for NAH experiential learning fund to JPG on Monday April 24th
+
 -   Initial test round 2 samples extracted!!!
+
     -   3-CA1a
+
     -   3-Ea
+
         -   Sampes selected from [extr1](https://github.com/sarahtanja/coral-DNA-RNA-lab-extractions/blob/main/rand-sample-processing.Rmd) using a random number generator
         -   details can be found in the [coral-DNA-RNA-lab-extractions](https://github.com/sarahtanja/coral-DNA-RNA-lab-extractions) repository
 
@@ -305,10 +278,13 @@ dilute <- function(C1, C2) {
 ##### 11-APR-2023
 
 -   NCBI SRA links downloading RNAseq fastq files
+
 -   Looking for 'fake data' for M. capitata
+
     -   DNA, ITS2 to measure symbiont to host cell ratios for 'Patterns of bleaching and recovery of Montipora capitata in Kaneohe Bay' hosted at zenodo [here](https://zenodo.org/record/53231#.ZDWE0HbMKTQ) https://zenodo.org/record/53231#.ZDWE0HbMKTQ -RNAseq resources from A. Huffmeyer
+
         -   https://ahuffmyer.github.io/ASH_Putnam_Lab_Notebook/E5-Deep-Dive-RNAseq-Count-Matrix-Analysis/
-        -   https://github.com/AHuffmyer/EarlyLifeHistory_Energetics \> Here is the spreadsheet of my NCBI accession numbers for my sequences: https://docs.google.com/spreadsheets/d/1qDGGpLFcmoO-fIFOPSUhPcxi4ErXIq2PkQbxvCCzI40/edit?pli=1#gid=457642286 If you look at the Mcapitata Ontogeny Timeseries tab it'll have all the SRR numbers you will need to download the TagSeq files. Instead of downloading the full data set you could just pick like three lifestages for a test comparison - AH
+        -   https://github.com/AHuffmyer/EarlyLifeHistory_Energetics > Here is the spreadsheet of my NCBI accession numbers for my sequences: https://docs.google.com/spreadsheets/d/1qDGGpLFcmoO-fIFOPSUhPcxi4ErXIq2PkQbxvCCzI40/edit?pli=1#gid=457642286 If you look at the Mcapitata Ontogeny Timeseries tab it'll have all the SRR numbers you will need to download the TagSeq files. Instead of downloading the full data set you could just pick like three lifestages for a test comparison - AH
 
 ##### 10-APR-2023
 
@@ -322,14 +298,18 @@ dilute <- function(C1, C2) {
 ##### 29-MAR-2023
 
 -   started template for DNA/RNA data extraction sheet in new repo for extractions\
--   organized notes for samples in metadata
--   installed git on WSL via [this tutorial](https://www.git-tower.com/blog/git-wsl/)
--   finished homework 1 for FISH546
--   lab-meeting notes
-    -   purchasing
-        -   no purchases in June!
 
-        -   
+-   organized notes for samples in metadata
+
+-   installed git on WSL via [this tutorial](https://www.git-tower.com/blog/git-wsl/)
+
+-   finished homework 1 for FISH546
+
+-   lab-meeting notes
+
+    -   purchasing
+
+        -   no purchases in June!
 
             > The University of Washington is transitioning from their old DOS-based system to Workday Finance, with a Go Live date of July 5th, 2023. During the transition period, there will be some disruptions to normal operations, and the continuity of research and teaching and minimizing the impact on faculty, staff, and students is the priority. There will be Restrictive Periods during which no one will be able to process purchase orders or obtain reimbursements in ARIBA. Exceptions may be made for urgent or emergency purchases. Travel reimbursements and non-travel-related reimbursements should be submitted before June 9th, and processing will resume on July 5th. Blanket Purchase Orders that are expected to be active past June 30th, 2023, will not be automatically transferred to Workday, and all continuing BPOs must be manually reentered by the College of the Environment. Navigating the transition will require patience and close partnerships between research and administrative groups
 
@@ -348,8 +328,6 @@ dilute <- function(C1, C2) {
 
     -   [Bourne et al. 2016](https://www.annualreviews.org/doi/pdf/10.1146/annurev-micro-102215-095440)
 
-        ![coral-tissue-layer-diagram](%7B%7B%20site.url%20%7D%7D%7B%7B%20site.baseurl%20%7D%7D/assets/images/bourne2016_coral_layers.jpeg)
-
     -   [Sogin et al. 2017](https://ami-journals.onlinelibrary.wiley.com/doi/epdf/10.1111/1758-2229.12541)
 
     -   [Kelly et al. 2014](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4104888/)
@@ -357,10 +335,15 @@ dilute <- function(C1, C2) {
 -   called Zymo tech Christian Camacho ccamacho\@zymoresearch.com to get advice on working with coral samples and the Zymo DNA/RNA miniprep kit:
 
     -   bead bash for 40 minutes for microbes on mortexer vortex-mixer! This is still tested to result in good RNA, though there may be a trade-off between bead-bashing for lysis and RNA interity... see Zymo optimized lysis protocol
+
     -   benchmark mortexer is not a tested method for the kit.. but it's closest to the vortex genie approved method for lysis
+
         -   [optimized lysis protocols](https://files.zymoresearch.com/documents/bead_beating_short_protocol_tables.pdf)
+
     -   mortar & pestle with liquid nitrogen, then add powder to bead bashing tube with RNA shield
+
     -   lyophilized (freeze-dried) proteinase K is stable at room temp, it should be stored in the -20 freezer only after resuspending in the buffer
+
     -   the DNAse 1 is similarly a lyophilized powder, but a very small amount, such that the vial looks empty
 
 -   Gathered lab supplies
@@ -381,18 +364,20 @@ dilute <- function(C1, C2) {
 ##### 27-MAR-2023
 
 -   read papers:
+
     -   https://environmentalevidencejournal.biomedcentral.com/articles/10.1186/s13750-023-00298-y
+
 -   worked on coral collection report
+
+##### 
 
 ##### 21-MAR-2023
 
--   spring break
 -   interviewed for WSG student assistant position
 -   began work on himb-2022 coral collection report
 
 ##### 20-MAR-2023
 
--   spring break
 -   installed Sophos anti-virus on Owl
 -   attended Robert's Lab meeting
 -   checked out Qubit buffer + reagents in Roberts lab with Olivia & Zach
@@ -428,8 +413,11 @@ dilute <- function(C1, C2) {
 ##### 09-MAR-2023
 
 -   Attended Coastal Ecology candidate chalk talk
+
 -   Shadowed Grace for new RNA extraction protocol & Qubit QC for RNA quality
+
 -   Met with Emma Strand about M cap DNA/RNA extractions... notes from Zoom chat:
+
     -   email Erin Chille [eec72\@scarletmail.rutgers.edu](mailto:eec72@scarletmail.rutgers.edu){.email} about 16S extraction kit
     -   https://emmastrand.github.io/EmmaStrand_Notebook/Kbay-Bleaching-2019-DNA-RNA-Extractions/
     -   host DNA (looked at DNA methylation), symbiont DNA (ITS2), microbiome DNA (16S not so good), host RNA + symbiont RNA (Illumina Nova Seq RNAseq)
@@ -488,10 +476,14 @@ dilute <- function(C1, C2) {
 ##### 19-JAN-2023
 
 -   read [Ariana Huffmyer's](https://ahuffmyer.github.io/ASH_Putnam_Lab_Notebook/) lab posts on extraction protocols
+
 -   read [Ainsworth et al 2015](https://www.nature.com/articles/ismej201539.pdf) & [Brown et al 2021](https://onlinelibrary.wiley.com/doi/abs/10.1111/mec.15899)
+
     -   MarBio Plant DNA extraction Kit for whole coral holobiont 16S rRNA Bacteria
     -   Pure Link Plant Total DNA purification systems (Invitrogen) for 16S rRNA Bacteria
+
 -   attended JPG lab meeting and gave feedback on Eileen Bates' pinto abalone presentation for Alaska Science Sympsosium
+
 -   designed graphical methods in Canva for pae-temp experiment
 
 ##### 18-JAN-2023
@@ -514,10 +506,15 @@ dilute <- function(C1, C2) {
 ##### 12-JAN-2023
 
 -   Explored the use of purple sea urchin and/or Aiptasia for phthalate low-dose effect gametogenesis study (proposal brainstorming) for the [IBIS research mentor program](https://environment.uw.edu/students/current-students/identity-belonging-and-inquiry-in-science-ibis-program/)
+
 -   Created [ibis repo](https://github.com/sarahtanja/ibis) to organize project
+
 -   Completed [lab safety training matrix](https://github.com/sarahtanja/ibis/blob/main/ehslabsafetytrainmatrix.pdf) for myself and NH, identified required and recommended lab safety trainings
+
 -   Potential to use rack in PBB near interior door for Aiptasia spawning incubator, setup workflow with dissecting scope and camera all in PBB for IBIS project
+
 -   Inventoried equipment we have in lab 236 for molecular work:
+
     -   Beckman Coulter Allegra X-30R Centrifuge
     -   Thermo Scientific NanoDrop 2000c Spectrophotometer
     -   Fisherbrand Isotemp heat block

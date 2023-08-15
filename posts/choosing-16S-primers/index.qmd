@@ -1,7 +1,6 @@
 ---
 title: "Choosing 16S Primers for *M. capitata* microbiome"
 author: "Sarah Tanja"
-image: 16s-gene.png
 date: '06/08/2023'
 categories: [learning journey]
 draft: false

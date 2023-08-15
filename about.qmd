@@ -6,8 +6,8 @@ reference-location: margin
 citation-location: margin
 about:
   id: hero-heading
-  template: jolla
-  image-shape: round
+  template: marquee
+  #image-shape: round
   links:
     - icon: linkedin
       text: LinkedIn

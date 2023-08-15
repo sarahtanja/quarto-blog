@@ -159,6 +159,12 @@ sarahtanja@MINERVA:~$ # I started here
 (qiime2-2023.5) stanja@raven:~$ # after conda activate
 ```
 
+Install Jupyter Lab by running: 
+```{r, engine='bash', eval=FALSE, echo=TRUE}
+conda install -c conda-forge jupyterlab
+```
+
+
 ## Step 7. Enable qiime2 plugins for Python API use
 ```{r, engine='bash', eval=FALSE, echo=TRUE}
 jupyter serverextension enable --py qiime2 --sys-prefix

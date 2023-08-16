@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Sarah Tanja's Open Lab Notebook"
-  favicon: "images/binocs-logo.png"
+  favicon: "images/favicon.png"
   page-navigation: true
   description: "This Open Lab Notebook is a creative landing space for learning about Bioinformatics, Marine Botany, & Data Science. It's mostly for me, but also for you! 😘"
   site-url: https://sarahtanja.github.io/quarto-blog/
@@ -12,7 +12,7 @@ website:
   
   
   navbar:
-    logo: "images/binocs-logo-big.png"
+    logo: "images/binocs.png"
     logo-alt: "Sparlingia pertusa watercolor, artwork by Sarah Tanja"
     background: primary
     foreground: light
@@ -36,7 +36,7 @@ format:
       light: journal
       dark: solar
     css: styles.css
-    #page-layout: full
+    page-layout: full
     code-background: true
     code-copy: true
     toc: true 

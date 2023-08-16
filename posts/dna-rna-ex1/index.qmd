@@ -3,7 +3,6 @@ title: "Dual DNA & RNA Extraction #1"
 author: "Sarah Tanja"
 date: '04/25/2023'
 categories: [lab records]
-image: .jpg
 draft: false
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>
@@ -29,7 +28,7 @@ Metadata and notes are also recorded in the [extr1_21APR23.csv](https://github.c
 ## Key Results
 
 | cryo_id | extr_date | qubit_rna_run_date | qubit_rna_1 | qubit_rna_2 | qubit_rna3 | qubit_dna_run_date | qubit_dna_1 | qubit_dna_2 | qubit_dna_3 |
-|---------|-----------|--------------------|-------------|-------------|------------|--------------------|-------------|-------------|-------------|
+|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
 | 3-CA1a  | 4/21/2023 | 4/25/2023          | 12.4        | 14          | 12.4       | 5/4/2023           | 72.8        | 75          | 74.4        |
 | 3-Ea    | 4/21/2023 | 4/25/2023          | 0.0         | 0           | 0          | 5/4/2023           | 39          | 38.4        | 39          |
 

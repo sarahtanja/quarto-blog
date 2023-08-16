@@ -56,7 +56,6 @@ When connected to the VPN Client, make sure the Server selected is 'All Internet
 You do not need to connect to the VPN Client when you are on the same network as the remote server! The VPN Client is only needed when working from home/cafe/or on travel.
 :::
 
-
 ## Step 4. Setup a 'tunnel' into the remote server
 
 I opened the WSL Ubuntu terminal 🐧 and made a .ssh directory in my home directory, and then opened the nano text editor to write a config file in the .ssh folder:
@@ -86,9 +85,9 @@ In the nano text editor I copied the following:
 
 where:
 
--   **\<server>** is the remote server name (make this short and sweet, since you will execute this as a command later on and must needs type it out)
+-   **\<server\>** is the remote server name (make this short and sweet, since you will execute this as a command later on and must needs type it out)
 
--    **\<123.45.678.90>** is the remote server IP address in the HostName field
+-   **\<123.45.678.90\>** is the remote server IP address in the HostName field
 
 -   **\<username**\> is the username setup for the remote server in the User field
 
@@ -109,7 +108,7 @@ ssh <username>@<IP-address>
 The tunnel connected me to the remote server and prompted me to enter the password associated with my user on the remote server.
 
 ::: callout-tip
-Once tunneled into the remote server you'll notice the \<username>\@\<server> in the terminal changes from your local computer to the remote server.
+Once tunneled into the remote server you'll notice the \<username\>\@\<server\> in the terminal changes from your local computer to the remote server.
 :::
 
 ## Step 5. Follow QIIME2 Install
@@ -122,7 +121,7 @@ I followed the [QIIME2 Install Instructions](https://docs.qiime2.org/2023.5/inst
 
 Here, I choose to work with `Miniconda3`, because I also have `Python 3`. I am also following [instructions for downloading to a Linux environment](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html).
 
-:::{.callout-important}
+::: callout-important
 It is important to follow all of the directions, particularly ensuring that you run `conda init` at the end of the installation process.
 :::
 
@@ -133,7 +132,9 @@ curl -O https://repo.anaconda.com/miniconda/Miniconda3-py311_23.5.2-0-Linux-x86_
 ```
 
 ### Step 5.2 Install `QIIME2` within a `conda` environment
+
 I continued following the the [QIIME2 Install Instructions](https://docs.qiime2.org/2023.5/install/native/) and, in the remote server terminal ran:
+
 ```{r, engine='bash', eval=FALSE, echo=TRUE}
 wget https://data.qiime2.org/distro/core/qiime2-2023.5-py38-linux-conda.yml
 conda env create -n qiime2-2023.5 --file qiime2-2023.5-py38-linux-conda.yml
@@ -141,17 +142,20 @@ rm qiime2-2023.5-py38-linux-conda.yml
 ```
 
 ### Step 5.3 Activate `conda` environment
+
 ```{r, engine='bash', eval=FALSE, echo=TRUE}
 conda activate qiime2-2023.5
 ```
 
 ### Step 5.4 Test Installation
+
 ```{r, engine='bash', eval=FALSE, echo=TRUE}
 qiime --help
 ```
 
 ## Step 6. Download Jupyter Lab in `QIIME2` `conda` environment
-Now that I am operating on the remote server, and within the qiime2 conda environment (what a feat!) I can download `jupyter lab` inside the qiime2-2023.5 env. 
+
+Now that I am operating on the remote server, and within the qiime2 conda environment (what a feat!) I can download `jupyter lab` inside the qiime2-2023.5 env.
 
 ```{r, engine='bash', eval=FALSE, echo=TRUE}
 sarahtanja@MINERVA:~$ # I started here
@@ -159,30 +163,24 @@ sarahtanja@MINERVA:~$ # I started here
 (qiime2-2023.5) stanja@raven:~$ # after conda activate
 ```
 
-Install Jupyter Lab by running: 
+Install Jupyter Lab by running:
+
 ```{r, engine='bash', eval=FALSE, echo=TRUE}
 conda install -c conda-forge jupyterlab
 ```
 
-
 ## Step 7. Enable qiime2 plugins for Python API use
+
 ```{r, engine='bash', eval=FALSE, echo=TRUE}
 jupyter serverextension enable --py qiime2 --sys-prefix
 ```
 
 ## Step 7. Review Startup Sequence
+
 If working from a different network than the remote server, start Big IP-Edge VPN Client and connect to 'All Internet Traffic' server.
 
 Open Ubuntu Linux terminal
 
-Run `ssh <server>_tunnel`
-Enter user pasword
-Run `conda activate qiime2-2023.5`
-Run `jupyter lab --no-browser --port=9000`
-Ctrl+Click or Copy&Paste the jupyter lab local host url into a browser window
+Run `ssh <server>_tunnel` Enter user pasword Run `conda activate qiime2-2023.5` Run `jupyter lab --no-browser --port=9000` Ctrl+Click or Copy&Paste the jupyter lab local host url into a browser window
 
-Open a new Python 3 (ipykernel) notebook
-Run `qiime` commands either with Python API or with `!qiime` an exclamation point before bash command line code, Or, like I do, use a combination of both!
-
-
-
+Open a new Python 3 (ipykernel) notebook Run `qiime` commands either with Python API or with `!qiime` an exclamation point before bash command line code, Or, like I do, use a combination of both!

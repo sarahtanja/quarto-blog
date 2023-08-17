@@ -1,7 +1,7 @@
 ---
 title: "Daily Lab Log"
 author: "Sarah Tanja"
-date: '08/11/2023'
+date: '08/16/2023'
 categories: [daily log]
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>
@@ -11,13 +11,45 @@ reference-location: margin
 citation-location: margin
 ---
 
+## August 2023
+
+##### 16-AUG-2023
+
+-   asked JPG to buy benchtop UV Sterilizer for me & Callum, got approval! Purchased by Kat same day :D
+
+-   NMDS (non-metric multidimensional scaling) ordination plots
+
+-   walked with Callum, plan to ask JPG to buy Qubit too!
+
+-   Made some taxonomy bar plots and heatmap dendrograms... still working to understand what they mean but they don't look like there is separation between treatments. Haven't gotten any pvalues yet from the composition analyses...
+
+-   Wondering if I should break up the Notebook into diversity & composition? It's getting really long and overwhelming with all the analyses moshed together
+
+-   Still can't `quarto render` in Jupyter Lab on raven server, need to figure out how to get those interactive jupyter plots in my notebook!
+
+##### 15-AUG-2023
+
+-   met with Dr. Amy VanCise about microbiome analysis:
+
+    -   Look into work by WHOI Amy Apprill, Laura Weber, Cynthia Becker
+
+    -   Focus analysis on **community composition** over **diversity** statistics
+
+    -   Differential abundance analysis on microbial community is similar to differential gene expression analysis!
+
+    -   Sampling depth is normalizing between samples
+
+    -   Look into getting a UV Sterilizer
+
+    -   Do the analysis without blank, mock, & env samples included... get a clean look at only treatments
+
 ## July 2023
 
 ##### 20-JUL-2023
 
 -   [Integrating QIIME2 and R for data viz](https://forum.qiime2.org/t/tutorial-integrating-qiime2-and-r-for-data-visualization-and-analysis-using-qiime2r/4121)
 
--   RStudio>Project Options> Python> Python interpreter
+-   RStudio\>Project Options\> Python\> Python interpreter
 
 -   [Using Python with the RStudio IDE](https://support.posit.co/hc/en-us/articles/1500007929061-Using-Python-with-the-RStudio-IDE)
 
@@ -284,7 +316,7 @@ dilute <- function(C1, C2) {
     -   DNA, ITS2 to measure symbiont to host cell ratios for 'Patterns of bleaching and recovery of Montipora capitata in Kaneohe Bay' hosted at zenodo [here](https://zenodo.org/record/53231#.ZDWE0HbMKTQ) https://zenodo.org/record/53231#.ZDWE0HbMKTQ -RNAseq resources from A. Huffmeyer
 
         -   https://ahuffmyer.github.io/ASH_Putnam_Lab_Notebook/E5-Deep-Dive-RNAseq-Count-Matrix-Analysis/
-        -   https://github.com/AHuffmyer/EarlyLifeHistory_Energetics > Here is the spreadsheet of my NCBI accession numbers for my sequences: https://docs.google.com/spreadsheets/d/1qDGGpLFcmoO-fIFOPSUhPcxi4ErXIq2PkQbxvCCzI40/edit?pli=1#gid=457642286 If you look at the Mcapitata Ontogeny Timeseries tab it'll have all the SRR numbers you will need to download the TagSeq files. Instead of downloading the full data set you could just pick like three lifestages for a test comparison - AH
+        -   https://github.com/AHuffmyer/EarlyLifeHistory_Energetics \> Here is the spreadsheet of my NCBI accession numbers for my sequences: https://docs.google.com/spreadsheets/d/1qDGGpLFcmoO-fIFOPSUhPcxi4ErXIq2PkQbxvCCzI40/edit?pli=1#gid=457642286 If you look at the Mcapitata Ontogeny Timeseries tab it'll have all the SRR numbers you will need to download the TagSeq files. Instead of downloading the full data set you could just pick like three lifestages for a test comparison - AH
 
 ##### 10-APR-2023
 

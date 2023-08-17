@@ -1,5 +1,6 @@
 ---
 title: "Daily Lab Log"
+subtitle: "Enter at your peril; This one is for me, not you"
 author: "Sarah Tanja"
 date: '08/16/2023'
 categories: [daily log]
@@ -12,6 +13,26 @@ citation-location: margin
 ---
 
 ## August 2023
+
+##### 17-AUG-2023
+
+-   Are we sure we want to try TriZol for RNA? It isn't a phenol-free kit like the Quick DNA/RNA Miniprep, and we have RNA, we just need to purify it. Tomorrow lets run all eluted RNA through RNA Clean & Concentrator, and check it on Nanodrop! LFG.
+
+-   **THE BLANK HAD 'TOO LOW' DNA IN QUBIT!**
+
+-   Organized extraction notes (handwritten) for extractions 1-8
+
+-   Reserved 1 King Bed in Hotel Block for WSN
+
+-   Applied for WSN Student Travel Grant
+
+    > **How will attending the WSN meeting help you advance your career as a naturalist and/or scientist (75 words max)?**
+    >
+    > Attending WSN would be my first opportunity to share my Masters thesis with the scientific community. As an undergrad, I had a bad first conference experience where I was ridiculed for not having results in a methods poster. I hope to attend WSN because its reputation as a welcoming environment for early-career scientists is the kind of scientific community I wish to be a part of and perpetuate in my own career.
+    >
+    > **What are you working on to improve diversity, equity and inclusion in your community (75 words max)? (Examples may relate to personal identify, interest, experience, etc.)**
+    >
+    > I recently took part of the Identity, Belonging, and Inquiry in Science Program, and received special training to mentor students from diverse backgrounds. My mentee worked hard to complete research that she will present at the upcoming SACNAS conference, and I couldn't be more proud. The training gave me confidence to take on another mentee, this time a Capstone student. Mentorship is a key part of DEI efforts that I find extremely rewarding.
 
 ##### 16-AUG-2023
 

@@ -393,7 +393,8 @@ The end products are two 1.5mL vials per sample that contain:
 1.  50ul of DNA in nuclease-free water
 2.  50ul of RNA in nuclease-free water.
 
-Place these vials on ice and for RNA proceed with [Qubit RNA Broad Range Protocol](https://sarahtanja.github.io/lab-book/protocols/protocol-qbit/)
+Place these vials on ice and proceed with Nanodrop & Qubit quantification:
+- [Qubit RNA Broad Range Protocol](https://sarahtanja.github.io/lab-book/protocols/protocol-qbit/)
 
 OR, to continue lab-work later,
 

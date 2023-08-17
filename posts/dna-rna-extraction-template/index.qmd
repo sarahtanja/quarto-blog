@@ -12,45 +12,110 @@ reference-location: margin
 citation-location: margin
 ---
 
+# Samples
 
-## Samples
+# Extraction Notes
 
-list of cryo_ID's:
+date:
 
+ex_id:
 
-## Key Results
+kit:
 
-| cryo_id | ex_id     | qubit_rna_1 | qubit_rna_2 | qubit_dna_1 | qubit_dna_2 | 
-|---------|-----------|-------------|-------------|-------------|-------------|
+eluted DNA volume:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--   qubit_rna_1 was run by SST and NAH at 1140 on 25APR2023, Run ID 2023-04-25-110503
--   qubit_rna_2 and qubit_rna_3 were run on 2 separately prepared technical replicates by SST at 1340 on 25APR2023, Run ID 2023-04-25-133744
--   exported RNA Qubit Data file **(Run ID 2023-04-25-133744 & 2023-04-25-110503)** with more details can be found [HERE](https://github.com/sarahtanja/coral-DNA-RNA-lab-extractions/blob/main/data/QubitData_2023-04-25/QubitData_2023-04-25_13-41-07.csv)
--   qubit_dna was checked on 5/4/2023 because we were waiting for the Thermo Qubit DNA Broad Range (BR) Assay Kit to be delivered. Samples were frozen in a -80C freezer between extraction and being checked by Qubit for quantity
--   exported DNA Qubit Data file **(Run ID 2023-05-02-102849)** with more details can be found [HERE](https://github.com/sarahtanja/coral-DNA-RNA-lab-extractions/blob/main/data/QubitData_2023-05-02/QubitData_2023-05-02_10-32-16.csv)
-
-Samples are stored in -80C 'sucks' freezer in respective `Eluted-DNA` or `Eluted-RNA` wax freezer boxes with the labels:
-
-# Quantify
+eluted RNA volume:
 
 ## Nanodrop
 
+### DNA
+
+date
+
+| sample_id | ng/uL | A260 | A280 | 260/280 | 260/230 |
+|-----------|-------|------|------|---------|---------|
+|           |       |      |      |         |         |
+|           |       |      |      |         |         |
+|           |       |      |      |         |         |
+|           |       |      |      |         |         |
+|           |       |      |      |         |         |
+|           |       |      |      |         |         |
+|           |       |      |      |         |         |
+|           |       |      |      |         |         |
+|           |       |      |      |         |         |
+|           |       |      |      |         |         |
+
+: DNA Nanodrop
+
+### RNA
+
+date
+
+| sample_id | ng/uL | A260 | A280 | 260/280 | 260/230 |
+|-----------|-------|------|------|---------|---------|
+|           |       |      |      |         |         |
+|           |       |      |      |         |         |
+|           |       |      |      |         |         |
+|           |       |      |      |         |         |
+|           |       |      |      |         |         |
+|           |       |      |      |         |         |
+|           |       |      |      |         |         |
+|           |       |      |      |         |         |
+|           |       |      |      |         |         |
+|           |       |      |      |         |         |
+
+: RNA Nanodrop
+
 ## Qubit
 
-# Summary
+date
 
+### DNA
+
+date:
+
+standard 1:
+
+standard 2:
+
+RunID:
+
+| sample_id | qubit_rna_1 | qubit_rna_2 |
+|-----------|-------------|-------------|
+|           |             |             |
+|           |             |             |
+|           |             |             |
+|           |             |             |
+|           |             |             |
+|           |             |             |
+|           |             |             |
+|           |             |             |
+|           |             |             |
+|           |             |             |
+
+### RNA
+
+date:
+
+standard 1:
+
+standard 2:
+
+RunID:
+
+| sample_id | qubit_rna_1 | qubit_rna_2 |
+|-----------|-------------|-------------|
+|           |             |             |
+|           |             |             |
+|           |             |             |
+|           |             |             |
+|           |             |             |
+|           |             |             |
+|           |             |             |
+|           |             |             |
+|           |             |             |
+|           |             |             |
+
+#### Storage Location
+
+Samples are stored in -80C 'sucks' freezer in respective `Eluted-DNA` or `Eluted-RNA` wax freezer boxes with the labels:

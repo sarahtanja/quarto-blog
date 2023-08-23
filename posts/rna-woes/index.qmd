@@ -2,18 +2,147 @@
 title: "The RNA Inhibitors"
 subtitle: "A tragic saga of continued troubles"
 author: "Sarah Tanja"
-date: '08/15/2023'
+date: '08/22/2023'
 categories: [lab records]
 draft: false
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>
 toc-depth: 5
 toc-location: left
+bibliography: references.bib
 reference-location: margin
 citation-location: margin
+quarto:
+  package_options:
+    cran: "https://cran.rstudio.com/"
 ---
- 
- After shipping 20 samples to the University of Texas at Austin GSAF for TagSeq on June 7th 2023, I got a message back from them on June 28th 2023:
- > " Your samples failed in library prep. All 20 of them, the other samples on the 96 well plate as well as our positive control all worked great. We seen this before and it is almost always an indication that there are some type of inhibitors in your samples and it impacted the prep. Based on the quality of the RNA there is nothing more we can do for them, they will not work in the prep until they have been purified, I am not sure how they were cleaned up after the extraction but it needs to be more rigorous and be certain there are no contaminants in the RNA."
- 
 
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  message=FALSE,
+  warning=FALSE,
+  include=TRUE,
+  cache=TRUE
+  )
+```
+
+```{r, include=FALSE}
+#install.packages("data.table")
+#install.packages("dplyr")
+#install.packages("formattable")
+#install.packages("tidyverse")
+```
+
+## So your samples failed library prep ... 😰
+
+After shipping 20 samples to the University of Texas at Austin GSAF for TagSeq on June 7th 2023, I got a message back from them on June 28th 2023:
+
+> "Your samples failed in library prep. All 20 of them, the other samples on the 96 well plate as well as our positive control all worked great. We seen this before and it is almost always an indication that there are some type of inhibitors in your samples and it impacted the prep. Based on the quality of the RNA there is nothing more we can do for them, they will not work in the prep until they have been purified, I am not sure how they were cleaned up after the extraction but it needs to be more rigorous and be certain there are no contaminants in the RNA."
+
+After initial panic and frustration 😨😭... I started researching reverse transcriptase[^1] inhibitors and reaching out to the [Roberts](https://robertslab.github.io/resources/) and [Putnam](http://putnamlab.com/) Labs to ask for advice (recorded in this Roberts Lab [github issue](https://github.com/RobertsLab/resources/issues/1670)).
+
+[^1]: Reverse transcriptase is an enzyme that transcribes single-stranded RNA into complementary DNA (cDNA) during library prep for RNA sequencing. It was discovered in the 1970's by David Baltimore and Howard Temin when studying retroviruses (checkout this [YouTube video](https://www.youtube.com/watch?app=desktop&v=v9EL8V-6la4) for a brief history on reverse transcriptase, and this [YouTube video](https://www.youtube.com/watch?v=POEDYHKyYDk) for a brief explanation of how it is used to turn mRNA to cDNA).
+
+So what did I find, and what does this mean for my samples?
+
+The RNA quantity, measured by Qubit Fluorometer, is good. And the RNA quality, measured by UT GSAF Bioanalyzer, is also good. The issue is that there is *something else* in the sample that is preventing the reverse transcriptase from generating the cDNA.
+
+Nanodrop purity targets[^2]:
+
+[^2]: Check out [Assessing RNA quantity and purity with Nanodrop](https://toptipbio.com/the-nanodrop-results-explained/) by TopTipBio
+
+-   260/280 (protein purity) **1.80 - 2.00**
+
+-   260/230 (salts purity) **2.00 - 2.20**
+
+### Zymo OneStep PCR Inhibitor Removal Kit
+
+I first tried purifying sample RNA using the [Zymo OneStep PCR Inhibitor Removal Kit](https://www.zymoresearch.com/collections/onestep-pcr-inhibitor-removal-kits)on a subset of the samples.
+
+I made the tables based off an article by [Little Miss Data](https://www.littlemissdata.com/blog/prettytables)
+
+```{r}
+library(data.table)
+library(dplyr)
+library(formattable)
+library(tidyverse)
+```
+
+```{r}
+customGreen0 = "#DeF7E9"
+customGreen = "#71CA97"
+customRed = "#ff7f7f"
+```
+
+```{r}
+salts <- formatter("span",
+  style = x ~ style("font-weight" = ifelse(x > 2.0, "bold", NA),
+                    "background-color" = ifelse(x > 2.0, customGreen, "inherit")
+                    ))
+
+proteins <- formatter("span",
+  style = x ~ style("font-weight" = ifelse(x > 1.8, "bold", NA),
+                    "background-color" = ifelse(x > 1.8, customGreen, "inherit")
+                    ))
+
+```
+
+```{r}
+rnaNanodrop <- read_csv("RNA-Nanodrop.csv")
+formattable(rnaNanodrop, 
+              align = "l", # aligns text to the left
+              list(
+                '260-230'= salts,
+                '260-280' = proteins)
+                )
+```
+
+| sample ID | ng/uL | 260/280 | 260/230 |
+|-----------|-------|---------|---------|
+| 1-CA2a    | 63.88 | 1.92    | 1.40    |
+| 1-CH2a    | 26.87 | 1.97    | 0.79    |
+| 1-PA2a    | 41.26 | 2.07    | 1.15    |
+| 1-Ea      | 44.54 | 1.98    | 1.25    |
+| 1-PH1a    | 30.24 | 1.97    | 1.64    |
+
+::: {.callout-caution appearance="minimal" icon="false"}
+Even after running samples through the Zymo OneStep PCR Inhibitor Removal Kit, The 260/230 ratios are all below the target of 2.0, indicating contamination by salts.
+:::
+
+![Nanodrop plot results](nanodrop_plot_03AUG23.jpg)
+
+:   *RNA Nanodrop absorbance plots after passing samples through Zymo OneStep PCR Inhibitor Removal Kit*
+
+### Zymo RNA Clean & Concentrator Kit
+
+I next tried to purify with the Zymo RNA Clean & Concentrator Kit:
+
+![Nanodrop table results](18aug23_drop_table.jpg)
+
+:   *RNA Nanodrop results after passing Zymo DNA/RNA Quick Miniprep Plus extracted samples through the Zymo RNA Clean & Concentrator Kit.*
+
+> "A 260/280 ratio greater than 2.0 does NOT indicate the presence of especially high quality DNA, it most often reflects residual contaminants, such as phenol ." -[@zotero-2042]
+>
+> " ... samples with purity ratios that range from 1.8 to 2.0 are typically considered pure. Although purity ratios are very useful and informative, they do not always provide a complete picture of sample purity."
+>
+> "Residual chemicals from nucleic acid extraction processes (such as guanidine salts or phenol) or cell components that co-extract with the nucleic acids (such as protein) can artificially inflate the A260 value."
+
+::: {.callout-note appearance="minimal" icon="false"}
+Note that samples 1Ea, 1CH2a, 1CA2a. 1PA2a & 1PH1a had already been passed through the Zymo OneStep PCR Inhibitor Removal Kit.
+:::
+
+![Nanodrop plot results](18aug23_drop_plot.jpg)
+
+:   *RNA Nanodrop absorbance plot after passing Zymo DNA/RNA Quick Miniprep Plus extracted samples through the Zymo RNA Clean & Concentrator Kit.*
+
+### Comparing...
+
+|           |         |         |           |           |         |              |
+|-----------|---------|---------|-----------|-----------|---------|--------------|
+|           | OneStep | PCR     | Inhibitor | RNA Clean | &       | Concentrator |
+| sample ID | ng/uL   | 260/280 | 260/230   | ng/uL     | 260/280 | 260/230      |
+| 1-CA2a    | 63.88   | 1.92    | 1.40      |           |         |              |
+| 1-CH2a    | 26.87   | 1.97    | 0.79      |           |         |              |
+| 1-PA2a    | 41.26   | 2.07    | 1.15      |           |         |              |
+| 1-Ea      | 44.54   | 1.98    | 1.25      |           |         |              |
+| 1-PH1a    | 30.24   | 1.97    | 1.64      |           |         |              |

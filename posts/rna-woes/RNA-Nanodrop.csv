@@ -1,0 +1,27 @@
+﻿sample-ID,date,ng-uL,A260,A280,260-280,260-230,kit
+1-CA2a ,8/3/2023,63.88,1.597,0.831,1.92,1.4,OneStepPCRInhibitor
+1-CH2a,8/3/2023,26.87,0.672,0.34,1.97,0.79,OneStepPCRInhibitor
+1-PA2a ,8/3/2023,41.26,1.031,0.498,2.07,1.15,OneStepPCRInhibitor
+1-Ea ,8/3/2023,44.54,1.114,0.562,1.98,1.25,OneStepPCRInhibitor
+1-PH1a,8/3/2023,30.24,0.75,0.362,1.97,1.64,OneStepPCRInhibitor
+2-PA1a,8/18/2023,34.73,0.868,0.461,1.88,1.14,RNAClean&Concentrate
+2-Ea,8/18/2023,20.28,0.507,0.273,1.86,1.19,RNAClean&Concentrate
+2-Ea,8/18/2023,13.78,0.345,0.137,2.52,1.98,RNAClean&Concentrate
+3-PA1a,8/18/2023,29.59,0.74,0.372,1.99,1.64,RNAClean&Concentrate
+4-CA1a,8/18/2023,34.63,0.866,0.472,1.83,1.16,RNAClean&Concentrate
+4-Ea,8/18/2023,16.98,0.424,0.201,2.12,1.77,RNAClean&Concentrate
+3-Eb,8/18/2023,22.01,0.55,0.239,2.3,1.47,RNAClean&Concentrate
+3-CH2a,8/18/2023,36.81,0.92,0.494,1.86,1.06,RNAClean&Concentrate
+1-Ea ,8/18/2023,26.94,0.674,0.331,2.04,1.5,RNAClean&Concentrate
+3-CA1b,8/18/2023,14.02,0.35,0.148,2.36,1.8,RNAClean&Concentrate
+2-CA2a,8/18/2023,39.03,0.976,0.524,1.86,1.07,RNAClean&Concentrate
+3-PH1a,8/18/2023,14.13,0.353,0.128,2.76,2.29,RNAClean&Concentrate
+2-PH2a,8/18/2023,15.61,0.39,0.181,2.16,1.67,RNAClean&Concentrate
+4-PA2a,8/18/2023,28.58,0.715,0.378,1.89,0.98,RNAClean&Concentrate
+1-CH2a,8/18/2023,13.93,0.348,0.157,2.22,1.31,RNAClean&Concentrate
+1-PH1a,8/18/2023,27.61,0.69,0.32,2.15,1.84,RNAClean&Concentrate
+2-CH1b,8/18/2023,18.28,0.457,0.219,2.09,1.46,RNAClean&Concentrate
+1-PA2a ,8/18/2023,35.33,0.883,0.414,2.13,2.38,RNAClean&Concentrate
+4-PH1b,8/18/2023,13.48,0.337,0.139,2.43,1.87,RNAClean&Concentrate
+1-CA2a ,8/18/2023,42.86,1.072,0.525,2.04,1.93,RNAClean&Concentrate
+4-CH1a,8/18/2023,28.95,0.724,0.362,2,1.41,RNAClean&Concentrate

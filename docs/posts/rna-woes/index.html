@@ -22,69 +22,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
@@ -237,11 +174,15 @@ div.csl-indent {
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#so-your-samples-failed-library-prep" id="toc-so-your-samples-failed-library-prep" class="nav-link active" data-scroll-target="#so-your-samples-failed-library-prep">So your samples failed library prep … 😰</a>
+  <li><a href="#so-your-samples-failed-library-prep" id="toc-so-your-samples-failed-library-prep" class="nav-link active" data-scroll-target="#so-your-samples-failed-library-prep">So your samples failed library prep … 😰</a></li>
+  <li><a href="#assessing-purity" id="toc-assessing-purity" class="nav-link" data-scroll-target="#assessing-purity">Assessing Purity</a>
   <ul>
+  <li><a href="#phenol-contamination-may-manifest-in-a-260280-ratio-greater-than-2.00" id="toc-phenol-contamination-may-manifest-in-a-260280-ratio-greater-than-2.00" class="nav-link" data-scroll-target="#phenol-contamination-may-manifest-in-a-260280-ratio-greater-than-2.00">⚠️ Phenol Contamination may manifest in a 260/280 ratio greater than 2.00 !</a></li>
+  </ul></li>
   <li><a href="#zymo-onestep-pcr-inhibitor-removal-kit" id="toc-zymo-onestep-pcr-inhibitor-removal-kit" class="nav-link" data-scroll-target="#zymo-onestep-pcr-inhibitor-removal-kit">Zymo OneStep PCR Inhibitor Removal Kit</a></li>
-  <li><a href="#zymo-rna-clean-concentrator-kit" id="toc-zymo-rna-clean-concentrator-kit" class="nav-link" data-scroll-target="#zymo-rna-clean-concentrator-kit">Zymo RNA Clean &amp; Concentrator Kit</a></li>
-  <li><a href="#comparing" id="toc-comparing" class="nav-link" data-scroll-target="#comparing">Comparing…</a></li>
+  <li><a href="#zymo-rna-clean-concentrator-kit" id="toc-zymo-rna-clean-concentrator-kit" class="nav-link" data-scroll-target="#zymo-rna-clean-concentrator-kit">Zymo RNA Clean &amp; Concentrator Kit</a>
+  <ul>
+  <li><a href="#did-the-rna-clean-concentrate-kit-improve-the-samples-that-had-already-been-through-the-onestep-pcr-inhibitor-removal-kit" id="toc-did-the-rna-clean-concentrate-kit-improve-the-samples-that-had-already-been-through-the-onestep-pcr-inhibitor-removal-kit" class="nav-link" data-scroll-target="#did-the-rna-clean-concentrate-kit-improve-the-samples-that-had-already-been-through-the-onestep-pcr-inhibitor-removal-kit">Did the RNA Clean &amp; Concentrate Kit improve the samples that had already been through the OneStep PCR Inhibitor Removal Kit?</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -264,45 +205,48 @@ div.csl-indent {
 <div class="page-columns page-full"><p>After initial panic and frustration 😨😭… I started researching reverse transcriptase<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> inhibitors and reaching out to the <a href="https://robertslab.github.io/resources/">Roberts</a> and <a href="http://putnamlab.com/">Putnam</a> Labs to ask for advice (recorded in this Roberts Lab <a href="https://github.com/RobertsLab/resources/issues/1670">github issue</a>).</p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;Reverse transcriptase is an enzyme that transcribes single-stranded RNA into complementary DNA (cDNA) during library prep for RNA sequencing. It was discovered in the 1970’s by David Baltimore and Howard Temin when studying retroviruses (checkout this <a href="https://www.youtube.com/watch?app=desktop&amp;v=v9EL8V-6la4">YouTube video</a> for a brief history on reverse transcriptase, and this <a href="https://www.youtube.com/watch?v=POEDYHKyYDk">YouTube video</a> for a brief explanation of how it is used to turn mRNA to cDNA).</p></li></div></div>
 <p>So what did I find, and what does this mean for my samples?</p>
 <p>The RNA quantity, measured by Qubit Fluorometer, is good. And the RNA quality, measured by UT GSAF Bioanalyzer, is also good. The issue is that there is <em>something else</em> in the sample that is preventing the reverse transcriptase from generating the cDNA.</p>
+</section>
+<section id="assessing-purity" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="assessing-purity">Assessing Purity</h2>
 <div class="page-columns page-full"><p>Nanodrop purity targets<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>:</p><div class="no-row-height column-margin column-container"><li id="fn2"><p><sup>2</sup>&nbsp;Check out <a href="https://toptipbio.com/the-nanodrop-results-explained/">Assessing RNA quantity and purity with Nanodrop</a> by TopTipBio</p></li></div></div>
 <ul>
 <li><p>260/280 (protein purity) <strong>1.80 - 2.00</strong></p></li>
 <li><p>260/230 (salts purity) <strong>2.00 - 2.20</strong></p></li>
 </ul>
-<section id="zymo-onestep-pcr-inhibitor-removal-kit" class="level3">
-<h3 class="anchored" data-anchor-id="zymo-onestep-pcr-inhibitor-removal-kit">Zymo OneStep PCR Inhibitor Removal Kit</h3>
-<p>I first tried purifying sample RNA using the <a href="https://www.zymoresearch.com/collections/onestep-pcr-inhibitor-removal-kits">Zymo OneStep PCR Inhibitor Removal Kit</a>on a subset of the samples.</p>
-<p>I made the tables based off an article by <a href="https://www.littlemissdata.com/blog/prettytables">Little Miss Data</a></p>
-<div class="cell" data-hash="index_cache/html/unnamed-chunk-3_b56c15ea5e8de05e367504d439102ca8">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(data.table)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(formattable)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="phenol-contamination-may-manifest-in-a-260280-ratio-greater-than-2.00" class="level4 page-columns page-full">
+<h4 class="anchored" data-anchor-id="phenol-contamination-may-manifest-in-a-260280-ratio-greater-than-2.00">⚠️ Phenol Contamination may manifest in a 260/280 ratio greater than 2.00 !</h4>
+<blockquote class="blockquote page-columns page-full">
+<p>“<strong>A 260/280 ratio greater than 2.0 does NOT indicate the presence of especially high quality DNA, it most often reflects residual contaminants, such as phenol.</strong>” -<span class="citation" data-cites="zotero-2042">(<a href="#ref-zotero-2042" role="doc-biblioref"><span>“Ultraviolet <span>Spectrophotometry</span> - an Overview | <span>ScienceDirect Topics</span>”</span> n.d.</a>)</span></p>
+<div class="no-row-height column-margin column-container"><div id="ref-zotero-2042" class="csl-entry" role="doc-biblioentry">
+<span>“Ultraviolet <span>Spectrophotometry</span> - an Overview | <span>ScienceDirect Topics</span>.”</span> n.d. Accessed August 22, 2023. <a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/ultraviolet-spectrophotometry">https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/ultraviolet-spectrophotometry</a>.
+</div></div><p>” … samples with purity ratios that range from 1.8 to 2.0 are typically considered pure. <strong>Although purity ratios are very useful and informative, they do not always provide a complete picture of sample purity.</strong>”</p>
+<p>“Residual chemicals from nucleic acid extraction processes (such as <strong>guanidine salts or phenol</strong>) or cell components that co-extract with the nucleic acids (such as protein) <strong>can</strong> <strong>artificially inflate the A260 value</strong>.”</p>
+</blockquote>
+</section>
+</section>
+<section id="zymo-onestep-pcr-inhibitor-removal-kit" class="level2">
+<h2 class="anchored" data-anchor-id="zymo-onestep-pcr-inhibitor-removal-kit">Zymo OneStep PCR Inhibitor Removal Kit</h2>
+<p>I first tried purifying sample RNA using the <a href="https://www.zymoresearch.com/collections/onestep-pcr-inhibitor-removal-kits">Zymo OneStep PCR Inhibitor Removal Kit</a> on a subset of the samples.</p>
+<div class="cell" data-hash="index_cache/html/include packages_42d7154bc60fea029fcb9801367c10fb">
+
 </div>
-<div class="cell" data-hash="index_cache/html/unnamed-chunk-4_df6b82ccea88d7258dd8d6281adf86b7">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>customGreen0 <span class="ot">=</span> <span class="st">"#DeF7E9"</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>customGreen <span class="ot">=</span> <span class="st">"#71CA97"</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>customRed <span class="ot">=</span> <span class="st">"#ff7f7f"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="index_cache/html/load in data_e0b535121dffd5d78cde6115abb9d5a1">
+
 </div>
-<div class="cell" data-hash="index_cache/html/unnamed-chunk-5_2c9bb9d8152b6ae3fbdbb201f0b2d867">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>salts <span class="ot">&lt;-</span> <span class="fu">formatter</span>(<span class="st">"span"</span>,</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">style =</span> x <span class="sc">~</span> <span class="fu">style</span>(<span class="st">"font-weight"</span> <span class="ot">=</span> <span class="fu">ifelse</span>(x <span class="sc">&gt;</span> <span class="fl">2.0</span>, <span class="st">"bold"</span>, <span class="cn">NA</span>),</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"background-color"</span> <span class="ot">=</span> <span class="fu">ifelse</span>(x <span class="sc">&gt;</span> <span class="fl">2.0</span>, customGreen, <span class="st">"inherit"</span>)</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>                    ))</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>proteins <span class="ot">&lt;-</span> <span class="fu">formatter</span>(<span class="st">"span"</span>,</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">style =</span> x <span class="sc">~</span> <span class="fu">style</span>(<span class="st">"font-weight"</span> <span class="ot">=</span> <span class="fu">ifelse</span>(x <span class="sc">&gt;</span> <span class="fl">1.8</span>, <span class="st">"bold"</span>, <span class="cn">NA</span>),</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"background-color"</span> <span class="ot">=</span> <span class="fu">ifelse</span>(x <span class="sc">&gt;</span> <span class="fl">1.8</span>, customGreen, <span class="st">"inherit"</span>)</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>                    ))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="index_cache/html/custom colors_48eb715d02a129b77605354820a13b1f">
+
 </div>
-<div class="cell" data-hash="index_cache/html/unnamed-chunk-6_aa7c8f3499d4c77e4582fcad7694eda3">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>rnaNanodrop <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"RNA-Nanodrop.csv"</span>)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">formattable</span>(rnaNanodrop, </span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>              <span class="at">align =</span> <span class="st">"l"</span>, <span class="co"># aligns text to the left</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>              <span class="fu">list</span>(</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>                <span class="st">'260-230'</span><span class="ot">=</span> salts,</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>                <span class="st">'260-280'</span> <span class="ot">=</span> proteins)</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>                )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="index_cache/html/formattable functions_cf242737ea52720cd6fe1d61a09f5f83">
+
+</div>
+<p>I followed the kit instructions, and assessed the samples for purity using a Nanodrop.</p>
+<dl>
+<dt><img src="nanodrop_plot_03AUG23.jpg" class="img-fluid" alt="Nanodrop plot results"></dt>
+<dd>
+<p><em>RNA Nanodrop absorbance plot after passing Zymo DNA/RNA Quick Miniprep Plus extracted RNA samples through the Zymo OneStep PCR Inhibitor Kit. Run 03AUG2023.</em></p>
+</dd>
+</dl>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-3_c7681b5e8978980f47fb882779f6f1dd">
 <div class="cell-output-display">
 
 <table class="table table-condensed">
@@ -355,7 +299,7 @@ kit
 <span style="font-weight: bold; background-color: #71CA97">1.92</span>
 </td>
 <td style="text-align:left;">
-<span style="background-color: inherit">1.40</span>
+<span style="background-color: #ff7f7f">1.40</span>
 </td>
 <td style="text-align:left;">
 OneStepPCRInhibitor
@@ -381,33 +325,7 @@ OneStepPCRInhibitor
 <span style="font-weight: bold; background-color: #71CA97">1.97</span>
 </td>
 <td style="text-align:left;">
-<span style="background-color: inherit">0.79</span>
-</td>
-<td style="text-align:left;">
-OneStepPCRInhibitor
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-1-PA2a
-</td>
-<td style="text-align:left;">
-8/3/2023
-</td>
-<td style="text-align:left;">
-41.26
-</td>
-<td style="text-align:left;">
-1.031
-</td>
-<td style="text-align:left;">
-0.498
-</td>
-<td style="text-align:left;">
-<span style="font-weight: bold; background-color: #71CA97">2.07</span>
-</td>
-<td style="text-align:left;">
-<span style="background-color: inherit">1.15</span>
+<span style="background-color: #ff7f7f">0.79</span>
 </td>
 <td style="text-align:left;">
 OneStepPCRInhibitor
@@ -433,7 +351,33 @@ OneStepPCRInhibitor
 <span style="font-weight: bold; background-color: #71CA97">1.98</span>
 </td>
 <td style="text-align:left;">
-<span style="background-color: inherit">1.25</span>
+<span style="background-color: #ff7f7f">1.25</span>
+</td>
+<td style="text-align:left;">
+OneStepPCRInhibitor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+1-PA2a
+</td>
+<td style="text-align:left;">
+8/3/2023
+</td>
+<td style="text-align:left;">
+41.26
+</td>
+<td style="text-align:left;">
+1.031
+</td>
+<td style="text-align:left;">
+0.498
+</td>
+<td style="text-align:left;">
+<span style="font-weight: bold; background-color: #fda172">2.07</span>
+</td>
+<td style="text-align:left;">
+<span style="background-color: #ff7f7f">1.15</span>
 </td>
 <td style="text-align:left;">
 OneStepPCRInhibitor
@@ -459,12 +403,71 @@ OneStepPCRInhibitor
 <span style="font-weight: bold; background-color: #71CA97">1.97</span>
 </td>
 <td style="text-align:left;">
-<span style="background-color: inherit">1.64</span>
+<span style="background-color: #ff7f7f">1.64</span>
 </td>
 <td style="text-align:left;">
 OneStepPCRInhibitor
 </td>
 </tr>
+</tbody>
+
+</table>
+</div>
+</div>
+<div class="callout-warning callout callout-style-simple">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Even after running samples through the Zymo OneStep PCR Inhibitor Removal Kit, The 260/230 ratios are all below the target of 2.0, indicating contamination by salts. Any 260/280 protein ratios OVER 2.0 may indicate contamination by phenols, which absorb between 280-300nm wavelengths. So… be suspicious when you see at 260/280 ratio higher than 2.0!</p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="zymo-rna-clean-concentrator-kit" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="zymo-rna-clean-concentrator-kit">Zymo RNA Clean &amp; Concentrator Kit</h2>
+<p>I next tried to purify the RNA with the Zymo RNA Clean &amp; Concentrator Kit:</p>
+<dl>
+<dt><img src="18aug23_drop_plot.jpg" class="img-fluid" alt="Nanodrop plot results"></dt>
+<dd>
+<p><em>RNA Nanodrop absorbance plot after passing Zymo DNA/RNA Quick Miniprep Plus extracted RNA samples through the Zymo RNA Clean &amp; Concentrator Kit. Run 18AUG2023.</em></p>
+</dd>
+</dl>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-4_9df5bacecffd715dfb2b8c0d54d15253">
+<div class="cell-output-display">
+
+<table class="table table-condensed">
+<thead>
+<tr>
+<th style="text-align:left;">
+sample-ID
+</th>
+<th style="text-align:left;">
+date
+</th>
+<th style="text-align:left;">
+ng-uL
+</th>
+<th style="text-align:left;">
+A260
+</th>
+<th style="text-align:left;">
+A280
+</th>
+<th style="text-align:left;">
+260-280
+</th>
+<th style="text-align:left;">
+260-230
+</th>
+<th style="text-align:left;">
+kit
+</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td style="text-align:left;">
 2-PA1a
@@ -485,7 +488,7 @@ OneStepPCRInhibitor
 <span style="font-weight: bold; background-color: #71CA97">1.88</span>
 </td>
 <td style="text-align:left;">
-<span style="background-color: inherit">1.14</span>
+<span style="background-color: #ff7f7f">1.14</span>
 </td>
 <td style="text-align:left;">
 RNAClean&amp;Concentrate
@@ -511,7 +514,7 @@ RNAClean&amp;Concentrate
 <span style="font-weight: bold; background-color: #71CA97">1.86</span>
 </td>
 <td style="text-align:left;">
-<span style="background-color: inherit">1.19</span>
+<span style="background-color: #ff7f7f">1.19</span>
 </td>
 <td style="text-align:left;">
 RNAClean&amp;Concentrate
@@ -534,10 +537,10 @@ RNAClean&amp;Concentrate
 0.137
 </td>
 <td style="text-align:left;">
-<span style="font-weight: bold; background-color: #71CA97">2.52</span>
+<span style="font-weight: bold; background-color: #fda172">2.52</span>
 </td>
 <td style="text-align:left;">
-<span style="background-color: inherit">1.98</span>
+<span style="background-color: #ff7f7f">1.98</span>
 </td>
 <td style="text-align:left;">
 RNAClean&amp;Concentrate
@@ -563,7 +566,7 @@ RNAClean&amp;Concentrate
 <span style="font-weight: bold; background-color: #71CA97">1.99</span>
 </td>
 <td style="text-align:left;">
-<span style="background-color: inherit">1.64</span>
+<span style="background-color: #ff7f7f">1.64</span>
 </td>
 <td style="text-align:left;">
 RNAClean&amp;Concentrate
@@ -589,7 +592,7 @@ RNAClean&amp;Concentrate
 <span style="font-weight: bold; background-color: #71CA97">1.83</span>
 </td>
 <td style="text-align:left;">
-<span style="background-color: inherit">1.16</span>
+<span style="background-color: #ff7f7f">1.16</span>
 </td>
 <td style="text-align:left;">
 RNAClean&amp;Concentrate
@@ -612,10 +615,10 @@ RNAClean&amp;Concentrate
 0.201
 </td>
 <td style="text-align:left;">
-<span style="font-weight: bold; background-color: #71CA97">2.12</span>
+<span style="font-weight: bold; background-color: #fda172">2.12</span>
 </td>
 <td style="text-align:left;">
-<span style="background-color: inherit">1.77</span>
+<span style="background-color: #ff7f7f">1.77</span>
 </td>
 <td style="text-align:left;">
 RNAClean&amp;Concentrate
@@ -638,10 +641,10 @@ RNAClean&amp;Concentrate
 0.239
 </td>
 <td style="text-align:left;">
-<span style="font-weight: bold; background-color: #71CA97">2.30</span>
+<span style="font-weight: bold; background-color: #fda172">2.30</span>
 </td>
 <td style="text-align:left;">
-<span style="background-color: inherit">1.47</span>
+<span style="background-color: #ff7f7f">1.47</span>
 </td>
 <td style="text-align:left;">
 RNAClean&amp;Concentrate
@@ -667,7 +670,7 @@ RNAClean&amp;Concentrate
 <span style="font-weight: bold; background-color: #71CA97">1.86</span>
 </td>
 <td style="text-align:left;">
-<span style="background-color: inherit">1.06</span>
+<span style="background-color: #ff7f7f">1.06</span>
 </td>
 <td style="text-align:left;">
 RNAClean&amp;Concentrate
@@ -690,10 +693,10 @@ RNAClean&amp;Concentrate
 0.331
 </td>
 <td style="text-align:left;">
-<span style="font-weight: bold; background-color: #71CA97">2.04</span>
+<span style="font-weight: bold; background-color: #fda172">2.04</span>
 </td>
 <td style="text-align:left;">
-<span style="background-color: inherit">1.50</span>
+<span style="background-color: #ff7f7f">1.50</span>
 </td>
 <td style="text-align:left;">
 RNAClean&amp;Concentrate
@@ -716,10 +719,10 @@ RNAClean&amp;Concentrate
 0.148
 </td>
 <td style="text-align:left;">
-<span style="font-weight: bold; background-color: #71CA97">2.36</span>
+<span style="font-weight: bold; background-color: #fda172">2.36</span>
 </td>
 <td style="text-align:left;">
-<span style="background-color: inherit">1.80</span>
+<span style="background-color: #ff7f7f">1.80</span>
 </td>
 <td style="text-align:left;">
 RNAClean&amp;Concentrate
@@ -745,7 +748,7 @@ RNAClean&amp;Concentrate
 <span style="font-weight: bold; background-color: #71CA97">1.86</span>
 </td>
 <td style="text-align:left;">
-<span style="background-color: inherit">1.07</span>
+<span style="background-color: #ff7f7f">1.07</span>
 </td>
 <td style="text-align:left;">
 RNAClean&amp;Concentrate
@@ -768,7 +771,7 @@ RNAClean&amp;Concentrate
 0.128
 </td>
 <td style="text-align:left;">
-<span style="font-weight: bold; background-color: #71CA97">2.76</span>
+<span style="font-weight: bold; background-color: #fda172">2.76</span>
 </td>
 <td style="text-align:left;">
 <span style="font-weight: bold; background-color: #71CA97">2.29</span>
@@ -794,10 +797,10 @@ RNAClean&amp;Concentrate
 0.181
 </td>
 <td style="text-align:left;">
-<span style="font-weight: bold; background-color: #71CA97">2.16</span>
+<span style="font-weight: bold; background-color: #fda172">2.16</span>
 </td>
 <td style="text-align:left;">
-<span style="background-color: inherit">1.67</span>
+<span style="background-color: #ff7f7f">1.67</span>
 </td>
 <td style="text-align:left;">
 RNAClean&amp;Concentrate
@@ -823,7 +826,7 @@ RNAClean&amp;Concentrate
 <span style="font-weight: bold; background-color: #71CA97">1.89</span>
 </td>
 <td style="text-align:left;">
-<span style="background-color: inherit">0.98</span>
+<span style="background-color: #ff7f7f">0.98</span>
 </td>
 <td style="text-align:left;">
 RNAClean&amp;Concentrate
@@ -846,10 +849,10 @@ RNAClean&amp;Concentrate
 0.157
 </td>
 <td style="text-align:left;">
-<span style="font-weight: bold; background-color: #71CA97">2.22</span>
+<span style="font-weight: bold; background-color: #fda172">2.22</span>
 </td>
 <td style="text-align:left;">
-<span style="background-color: inherit">1.31</span>
+<span style="background-color: #ff7f7f">1.31</span>
 </td>
 <td style="text-align:left;">
 RNAClean&amp;Concentrate
@@ -872,10 +875,10 @@ RNAClean&amp;Concentrate
 0.320
 </td>
 <td style="text-align:left;">
-<span style="font-weight: bold; background-color: #71CA97">2.15</span>
+<span style="font-weight: bold; background-color: #fda172">2.15</span>
 </td>
 <td style="text-align:left;">
-<span style="background-color: inherit">1.84</span>
+<span style="background-color: #ff7f7f">1.84</span>
 </td>
 <td style="text-align:left;">
 RNAClean&amp;Concentrate
@@ -898,10 +901,10 @@ RNAClean&amp;Concentrate
 0.219
 </td>
 <td style="text-align:left;">
-<span style="font-weight: bold; background-color: #71CA97">2.09</span>
+<span style="font-weight: bold; background-color: #fda172">2.09</span>
 </td>
 <td style="text-align:left;">
-<span style="background-color: inherit">1.46</span>
+<span style="background-color: #ff7f7f">1.46</span>
 </td>
 <td style="text-align:left;">
 RNAClean&amp;Concentrate
@@ -924,7 +927,7 @@ RNAClean&amp;Concentrate
 0.414
 </td>
 <td style="text-align:left;">
-<span style="font-weight: bold; background-color: #71CA97">2.13</span>
+<span style="font-weight: bold; background-color: #fda172">2.13</span>
 </td>
 <td style="text-align:left;">
 <span style="font-weight: bold; background-color: #71CA97">2.38</span>
@@ -950,10 +953,10 @@ RNAClean&amp;Concentrate
 0.139
 </td>
 <td style="text-align:left;">
-<span style="font-weight: bold; background-color: #71CA97">2.43</span>
+<span style="font-weight: bold; background-color: #fda172">2.43</span>
 </td>
 <td style="text-align:left;">
-<span style="background-color: inherit">1.87</span>
+<span style="background-color: #ff7f7f">1.87</span>
 </td>
 <td style="text-align:left;">
 RNAClean&amp;Concentrate
@@ -976,10 +979,10 @@ RNAClean&amp;Concentrate
 0.525
 </td>
 <td style="text-align:left;">
-<span style="font-weight: bold; background-color: #71CA97">2.04</span>
+<span style="font-weight: bold; background-color: #fda172">2.04</span>
 </td>
 <td style="text-align:left;">
-<span style="background-color: inherit">1.93</span>
+<span style="background-color: #ff7f7f">1.93</span>
 </td>
 <td style="text-align:left;">
 RNAClean&amp;Concentrate
@@ -1005,7 +1008,7 @@ RNAClean&amp;Concentrate
 <span style="font-weight: bold; background-color: #71CA97">2.00</span>
 </td>
 <td style="text-align:left;">
-<span style="background-color: inherit">1.41</span>
+<span style="background-color: #ff7f7f">1.41</span>
 </td>
 <td style="text-align:left;">
 RNAClean&amp;Concentrate
@@ -1016,176 +1019,379 @@ RNAClean&amp;Concentrate
 </table>
 </div>
 </div>
-<table class="table">
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>P.S. I made these pretty tables based off <a href="https://www.littlemissdata.com/blog/prettytables">this article by Little Miss Data</a></p>
+</div></div><div class="callout-warning callout callout-style-simple">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The 260/280 ratios over 2.0 may indicate worse phenol contamination!</p>
+</div>
+</div>
+</div>
+<section id="did-the-rna-clean-concentrate-kit-improve-the-samples-that-had-already-been-through-the-onestep-pcr-inhibitor-removal-kit" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="did-the-rna-clean-concentrate-kit-improve-the-samples-that-had-already-been-through-the-onestep-pcr-inhibitor-removal-kit">Did the RNA Clean &amp; Concentrate Kit improve the samples that had already been through the OneStep PCR Inhibitor Removal Kit?</h3>
+<div class="cell page-columns page-full" data-hash="index_cache/html/unnamed-chunk-5_680449722fac1a168fd4ffa0c7465303">
+
+<div class="no-row-height column-margin column-container"><div class="cell-output-display">
+
+<table class="table table-condensed">
 <thead>
-<tr class="header">
-<th>sample ID</th>
-<th>ng/uL</th>
-<th>260/280</th>
-<th>260/230</th>
+<tr>
+<th style="text-align:left;">
+sample-ID
+</th>
+<th style="text-align:left;">
+date
+</th>
+<th style="text-align:left;">
+ng-uL
+</th>
+<th style="text-align:left;">
+A260
+</th>
+<th style="text-align:left;">
+A280
+</th>
+<th style="text-align:left;">
+260-280
+</th>
+<th style="text-align:left;">
+260-230
+</th>
+<th style="text-align:left;">
+kit
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td>1-CA2a</td>
-<td>63.88</td>
-<td>1.92</td>
-<td>1.40</td>
+<tr>
+<td style="text-align:left;">
+1-CA2a
+</td>
+<td style="text-align:left;">
+8/3/2023
+</td>
+<td style="text-align:left;">
+63.88
+</td>
+<td style="text-align:left;">
+1.597
+</td>
+<td style="text-align:left;">
+0.831
+</td>
+<td style="text-align:left;">
+<span style="font-weight: bold; background-color: #71CA97">1.92</span>
+</td>
+<td style="text-align:left;">
+<span style="background-color: #ff7f7f">1.40</span>
+</td>
+<td style="text-align:left;">
+OneStepPCRInhibitor
+</td>
 </tr>
-<tr class="even">
-<td>1-CH2a</td>
-<td>26.87</td>
-<td>1.97</td>
-<td>0.79</td>
+<tr>
+<td style="text-align:left;">
+1-CH2a
+</td>
+<td style="text-align:left;">
+8/3/2023
+</td>
+<td style="text-align:left;">
+26.87
+</td>
+<td style="text-align:left;">
+0.672
+</td>
+<td style="text-align:left;">
+0.340
+</td>
+<td style="text-align:left;">
+<span style="font-weight: bold; background-color: #71CA97">1.97</span>
+</td>
+<td style="text-align:left;">
+<span style="background-color: #ff7f7f">0.79</span>
+</td>
+<td style="text-align:left;">
+OneStepPCRInhibitor
+</td>
 </tr>
-<tr class="odd">
-<td>1-PA2a</td>
-<td>41.26</td>
-<td>2.07</td>
-<td>1.15</td>
+<tr>
+<td style="text-align:left;">
+1-Ea
+</td>
+<td style="text-align:left;">
+8/3/2023
+</td>
+<td style="text-align:left;">
+44.54
+</td>
+<td style="text-align:left;">
+1.114
+</td>
+<td style="text-align:left;">
+0.562
+</td>
+<td style="text-align:left;">
+<span style="font-weight: bold; background-color: #71CA97">1.98</span>
+</td>
+<td style="text-align:left;">
+<span style="background-color: #ff7f7f">1.25</span>
+</td>
+<td style="text-align:left;">
+OneStepPCRInhibitor
+</td>
 </tr>
-<tr class="even">
-<td>1-Ea</td>
-<td>44.54</td>
-<td>1.98</td>
-<td>1.25</td>
+<tr>
+<td style="text-align:left;">
+1-PA2a
+</td>
+<td style="text-align:left;">
+8/3/2023
+</td>
+<td style="text-align:left;">
+41.26
+</td>
+<td style="text-align:left;">
+1.031
+</td>
+<td style="text-align:left;">
+0.498
+</td>
+<td style="text-align:left;">
+<span style="font-weight: bold; background-color: #fda172">2.07</span>
+</td>
+<td style="text-align:left;">
+<span style="background-color: #ff7f7f">1.15</span>
+</td>
+<td style="text-align:left;">
+OneStepPCRInhibitor
+</td>
 </tr>
-<tr class="odd">
-<td>1-PH1a</td>
-<td>30.24</td>
-<td>1.97</td>
-<td>1.64</td>
+<tr>
+<td style="text-align:left;">
+1-PH1a
+</td>
+<td style="text-align:left;">
+8/3/2023
+</td>
+<td style="text-align:left;">
+30.24
+</td>
+<td style="text-align:left;">
+0.750
+</td>
+<td style="text-align:left;">
+0.362
+</td>
+<td style="text-align:left;">
+<span style="font-weight: bold; background-color: #71CA97">1.97</span>
+</td>
+<td style="text-align:left;">
+<span style="background-color: #ff7f7f">1.64</span>
+</td>
+<td style="text-align:left;">
+OneStepPCRInhibitor
+</td>
 </tr>
 </tbody>
+
 </table>
-<div class="callout-caution callout callout-style-simple no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Even after running samples through the Zymo OneStep PCR Inhibitor Removal Kit, The 260/230 ratios are all below the target of 2.0, indicating contamination by salts.</p>
-</div>
-</div>
-</div>
-<dl>
-<dt><img src="nanodrop_plot_03AUG23.jpg" class="img-fluid" alt="Nanodrop plot results"></dt>
-<dd>
-<p><em>RNA Nanodrop absorbance plots after passing samples through Zymo OneStep PCR Inhibitor Removal Kit</em></p>
-</dd>
-</dl>
-</section>
-<section id="zymo-rna-clean-concentrator-kit" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="zymo-rna-clean-concentrator-kit">Zymo RNA Clean &amp; Concentrator Kit</h3>
-<p>I next tried to purify with the Zymo RNA Clean &amp; Concentrator Kit:</p>
-<dl>
-<dt><img src="18aug23_drop_table.jpg" class="img-fluid" alt="Nanodrop table results"></dt>
-<dd>
-<p><em>RNA Nanodrop results after passing Zymo DNA/RNA Quick Miniprep Plus extracted samples through the Zymo RNA Clean &amp; Concentrator Kit.</em></p>
-</dd>
-</dl>
-<blockquote class="blockquote page-columns page-full">
-<p>“A 260/280 ratio greater than 2.0 does NOT indicate the presence of especially high quality DNA, it most often reflects residual contaminants, such as phenol .” -<span class="citation" data-cites="zotero-2042">(<a href="#ref-zotero-2042" role="doc-biblioref"><span>“Ultraviolet <span>Spectrophotometry</span> - an Overview | <span>ScienceDirect Topics</span>”</span> n.d.</a>)</span></p>
-<div class="no-row-height column-margin column-container"><div id="ref-zotero-2042" class="csl-entry" role="doc-biblioentry">
-<span>“Ultraviolet <span>Spectrophotometry</span> - an Overview | <span>ScienceDirect Topics</span>.”</span> n.d. Accessed August 22, 2023. <a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/ultraviolet-spectrophotometry">https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/ultraviolet-spectrophotometry</a>.
-</div></div><p>” … samples with purity ratios that range from 1.8 to 2.0 are typically considered pure. Although purity ratios are very useful and informative, they do not always provide a complete picture of sample purity.”</p>
-<p>“Residual chemicals from nucleic acid extraction processes (such as guanidine salts or phenol) or cell components that co-extract with the nucleic acids (such as protein) can artificially inflate the A260 value.”</p>
-</blockquote>
-<div class="callout-note callout callout-style-simple no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Note that samples 1Ea, 1CH2a, 1CA2a. 1PA2a &amp; 1PH1a had already been passed through the Zymo OneStep PCR Inhibitor Removal Kit.</p>
-</div>
-</div>
-</div>
-<dl>
-<dt><img src="18aug23_drop_plot.jpg" class="img-fluid" alt="Nanodrop plot results"></dt>
-<dd>
-<p><em>RNA Nanodrop absorbance plot after passing Zymo DNA/RNA Quick Miniprep Plus extracted samples through the Zymo RNA Clean &amp; Concentrator Kit.</em></p>
-</dd>
-</dl>
-</section>
-<section id="comparing" class="level3">
-<h3 class="anchored" data-anchor-id="comparing">Comparing…</h3>
-<table class="table">
-<colgroup>
-<col style="width: 14%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 14%">
-<col style="width: 14%">
-<col style="width: 12%">
-<col style="width: 18%">
-</colgroup>
+<p>Nanodrop Results from OneStep PCR Inhibitor Removal</p>
+</div></div></div>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-6_80bfa6d12f0298acf5a4b9286d73a2ad">
+<div class="cell-output-display">
+
+<table class="table table-condensed">
+<thead>
+<tr>
+<th style="text-align:left;">
+sample-ID
+</th>
+<th style="text-align:left;">
+date
+</th>
+<th style="text-align:left;">
+ng-uL
+</th>
+<th style="text-align:left;">
+A260
+</th>
+<th style="text-align:left;">
+A280
+</th>
+<th style="text-align:left;">
+260-280
+</th>
+<th style="text-align:left;">
+260-230
+</th>
+<th style="text-align:left;">
+kit
+</th>
+</tr>
+</thead>
 <tbody>
-<tr class="odd">
-<td></td>
-<td>OneStep</td>
-<td>PCR</td>
-<td>Inhibitor</td>
-<td>RNA Clean</td>
-<td>&amp;</td>
-<td>Concentrator</td>
+<tr>
+<td style="text-align:left;">
+1-CA2a
+</td>
+<td style="text-align:left;">
+8/18/2023
+</td>
+<td style="text-align:left;">
+42.86
+</td>
+<td style="text-align:left;">
+1.072
+</td>
+<td style="text-align:left;">
+0.525
+</td>
+<td style="text-align:left;">
+<span style="font-weight: bold; background-color: #fda172">2.04</span>
+</td>
+<td style="text-align:left;">
+<span style="background-color: #ff7f7f">1.93</span>
+</td>
+<td style="text-align:left;">
+RNAClean&amp;Concentrate
+</td>
 </tr>
-<tr class="even">
-<td>sample ID</td>
-<td>ng/uL</td>
-<td>260/280</td>
-<td>260/230</td>
-<td>ng/uL</td>
-<td>260/280</td>
-<td>260/230</td>
+<tr>
+<td style="text-align:left;">
+1-CH2a
+</td>
+<td style="text-align:left;">
+8/18/2023
+</td>
+<td style="text-align:left;">
+13.93
+</td>
+<td style="text-align:left;">
+0.348
+</td>
+<td style="text-align:left;">
+0.157
+</td>
+<td style="text-align:left;">
+<span style="font-weight: bold; background-color: #fda172">2.22</span>
+</td>
+<td style="text-align:left;">
+<span style="background-color: #ff7f7f">1.31</span>
+</td>
+<td style="text-align:left;">
+RNAClean&amp;Concentrate
+</td>
 </tr>
-<tr class="odd">
-<td>1-CA2a</td>
-<td>63.88</td>
-<td>1.92</td>
-<td>1.40</td>
-<td></td>
-<td></td>
-<td></td>
+<tr>
+<td style="text-align:left;">
+1-Ea
+</td>
+<td style="text-align:left;">
+8/18/2023
+</td>
+<td style="text-align:left;">
+26.94
+</td>
+<td style="text-align:left;">
+0.674
+</td>
+<td style="text-align:left;">
+0.331
+</td>
+<td style="text-align:left;">
+<span style="font-weight: bold; background-color: #fda172">2.04</span>
+</td>
+<td style="text-align:left;">
+<span style="background-color: #ff7f7f">1.50</span>
+</td>
+<td style="text-align:left;">
+RNAClean&amp;Concentrate
+</td>
 </tr>
-<tr class="even">
-<td>1-CH2a</td>
-<td>26.87</td>
-<td>1.97</td>
-<td>0.79</td>
-<td></td>
-<td></td>
-<td></td>
+<tr>
+<td style="text-align:left;">
+1-PA2a
+</td>
+<td style="text-align:left;">
+8/18/2023
+</td>
+<td style="text-align:left;">
+35.33
+</td>
+<td style="text-align:left;">
+0.883
+</td>
+<td style="text-align:left;">
+0.414
+</td>
+<td style="text-align:left;">
+<span style="font-weight: bold; background-color: #fda172">2.13</span>
+</td>
+<td style="text-align:left;">
+<span style="font-weight: bold; background-color: #71CA97">2.38</span>
+</td>
+<td style="text-align:left;">
+RNAClean&amp;Concentrate
+</td>
 </tr>
-<tr class="odd">
-<td>1-PA2a</td>
-<td>41.26</td>
-<td>2.07</td>
-<td>1.15</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>1-Ea</td>
-<td>44.54</td>
-<td>1.98</td>
-<td>1.25</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>1-PH1a</td>
-<td>30.24</td>
-<td>1.97</td>
-<td>1.64</td>
-<td></td>
-<td></td>
-<td></td>
+<tr>
+<td style="text-align:left;">
+1-PH1a
+</td>
+<td style="text-align:left;">
+8/18/2023
+</td>
+<td style="text-align:left;">
+27.61
+</td>
+<td style="text-align:left;">
+0.690
+</td>
+<td style="text-align:left;">
+0.320
+</td>
+<td style="text-align:left;">
+<span style="font-weight: bold; background-color: #fda172">2.15</span>
+</td>
+<td style="text-align:left;">
+<span style="background-color: #ff7f7f">1.84</span>
+</td>
+<td style="text-align:left;">
+RNAClean&amp;Concentrate
+</td>
 </tr>
 </tbody>
+
 </table>
+<p>Nanodrop Results from RNA Clean &amp; Concentrate</p>
+</div>
+</div>
+<div class="callout-tip callout callout-style-simple">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The RNA Clean &amp; Concentrator improved the 260/230 ratios for samples 1Ea, 1CH2a, 1CA2a. 1PA2a &amp; 1PH1a which had already been passed through the Zymo OneStep PCR Inhibitor Removal Kit.</p>
+</div>
+</div>
+</div>
+<div class="callout-warning callout callout-style-simple">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>However, the 260/280 ratios are suspiciously high, making me question if phenol contamination has been made worse!</p>
+</div>
+</div>
+</div>
 
 
 

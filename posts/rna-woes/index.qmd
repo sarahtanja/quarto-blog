@@ -22,7 +22,8 @@ knitr::opts_chunk$set(
   message=FALSE,
   warning=FALSE,
   include=TRUE,
-  cache=TRUE
+  cache=TRUE,
+  echo=FALSE
   )
 ```
 
@@ -47,6 +48,8 @@ So what did I find, and what does this mean for my samples?
 
 The RNA quantity, measured by Qubit Fluorometer, is good. And the RNA quality, measured by UT GSAF Bioanalyzer, is also good. The issue is that there is *something else* in the sample that is preventing the reverse transcriptase from generating the cDNA.
 
+## Assessing Purity
+
 Nanodrop purity targets[^2]:
 
 [^2]: Check out [Assessing RNA quantity and purity with Nanodrop](https://toptipbio.com/the-nanodrop-results-explained/) by TopTipBio
@@ -55,41 +58,91 @@ Nanodrop purity targets[^2]:
 
 -   260/230 (salts purity) **2.00 - 2.20**
 
-### Zymo OneStep PCR Inhibitor Removal Kit
+#### ⚠️ Phenol Contamination may manifest in a 260/280 ratio greater than 2.00 !
 
-I first tried purifying sample RNA using the [Zymo OneStep PCR Inhibitor Removal Kit](https://www.zymoresearch.com/collections/onestep-pcr-inhibitor-removal-kits)on a subset of the samples.
+> "**A 260/280 ratio greater than 2.0 does NOT indicate the presence of especially high quality DNA, it most often reflects residual contaminants, such as phenol.**" -[@zotero-2042]
+>
+> " ... samples with purity ratios that range from 1.8 to 2.0 are typically considered pure. **Although purity ratios are very useful and informative, they do not always provide a complete picture of sample purity.**"
+>
+> "Residual chemicals from nucleic acid extraction processes (such as **guanidine salts or phenol**) or cell components that co-extract with the nucleic acids (such as protein) **can** **artificially inflate the A260 value**."
 
-I made the tables based off an article by [Little Miss Data](https://www.littlemissdata.com/blog/prettytables)
+## Zymo OneStep PCR Inhibitor Removal Kit
 
-```{r}
+I first tried purifying sample RNA using the [Zymo OneStep PCR Inhibitor Removal Kit](https://www.zymoresearch.com/collections/onestep-pcr-inhibitor-removal-kits) on a subset of the samples.
+
+```{r include packages}
 library(data.table)
 library(dplyr)
 library(formattable)
 library(tidyverse)
 ```
 
-```{r}
+```{r load in data}
+rnaNanodrop <- read_csv("RNA-Nanodrop.csv")
+```
+
+```{r custom colors}
 customGreen0 = "#DeF7E9"
 customGreen = "#71CA97"
 customRed = "#ff7f7f"
+customOrange = "#fda172"
 ```
 
-```{r}
+```{r formattable functions}
 salts <- formatter("span",
   style = x ~ style("font-weight" = ifelse(x > 2.0, "bold", NA),
-                    "background-color" = ifelse(x > 2.0, customGreen, "inherit")
+                    "background-color" = ifelse(x > 2.2, customGreen,
+                                                ifelse(x >= 2.0 & x <= 2.2, customGreen0,
+                                                       ifelse(x < 2.0, customRed, "inherit")))
                     ))
 
 proteins <- formatter("span",
   style = x ~ style("font-weight" = ifelse(x > 1.8, "bold", NA),
-                    "background-color" = ifelse(x > 1.8, customGreen, "inherit")
+                    "background-color" = ifelse(x > 2.0, customOrange,
+                                                ifelse(x >= 1.8 & x <= 2.0, customGreen,
+                                                       ifelse(x < 1.8, customRed, "inherit")))
                     ))
 
 ```
 
+I followed the kit instructions, and assessed the samples for purity using a Nanodrop.
+
+![Nanodrop plot results](nanodrop_plot_03AUG23.jpg)
+
+:   *RNA Nanodrop absorbance plot after passing Zymo DNA/RNA Quick Miniprep Plus extracted RNA samples through the Zymo OneStep PCR Inhibitor Kit. Run 03AUG2023.*
+
 ```{r}
-rnaNanodrop <- read_csv("RNA-Nanodrop.csv")
-formattable(rnaNanodrop, 
+onestep <- rnaNanodrop %>% 
+  filter(kit == 'OneStepPCRInhibitor') %>% 
+  arrange(`sample-ID`)
+
+formattable(onestep,
+              align = "l",
+              list(
+                '260-230'= salts,
+                '260-280' = proteins)
+                )
+```
+
+::: {.callout-warning appearance="simple"}
+Even after running samples through the Zymo OneStep PCR Inhibitor Removal Kit, The 260/230 ratios are all below the target of 2.0, indicating contamination by salts. Any 260/280 protein ratios OVER 2.0 may indicate contamination by phenols, which absorb between 280-300nm wavelengths. So... be suspicious when you see at 260/280 ratio higher than 2.0!
+:::
+
+------------------------------------------------------------------------
+
+## Zymo RNA Clean & Concentrator Kit
+
+I next tried to purify the RNA with the Zymo RNA Clean & Concentrator Kit:
+
+![Nanodrop plot results](18aug23_drop_plot.jpg)
+
+:   *RNA Nanodrop absorbance plot after passing Zymo DNA/RNA Quick Miniprep Plus extracted RNA samples through the Zymo RNA Clean & Concentrator Kit. Run 18AUG2023.*
+
+```{r}
+rnaCC <- rnaNanodrop %>% 
+          filter(kit == 'RNAClean&Concentrate')
+
+formattable(rnaCC, 
               align = "l", # aligns text to the left
               list(
                 '260-230'= salts,
@@ -97,52 +150,49 @@ formattable(rnaNanodrop,
                 )
 ```
 
-| sample ID | ng/uL | 260/280 | 260/230 |
-|-----------|-------|---------|---------|
-| 1-CA2a    | 63.88 | 1.92    | 1.40    |
-| 1-CH2a    | 26.87 | 1.97    | 0.79    |
-| 1-PA2a    | 41.26 | 2.07    | 1.15    |
-| 1-Ea      | 44.54 | 1.98    | 1.25    |
-| 1-PH1a    | 30.24 | 1.97    | 1.64    |
-
-::: {.callout-caution appearance="minimal" icon="false"}
-Even after running samples through the Zymo OneStep PCR Inhibitor Removal Kit, The 260/230 ratios are all below the target of 2.0, indicating contamination by salts.
+::: column-margin
+P.S. I made these pretty tables based off [this article by Little Miss Data](https://www.littlemissdata.com/blog/prettytables)
 :::
 
-![Nanodrop plot results](nanodrop_plot_03AUG23.jpg)
-
-:   *RNA Nanodrop absorbance plots after passing samples through Zymo OneStep PCR Inhibitor Removal Kit*
-
-### Zymo RNA Clean & Concentrator Kit
-
-I next tried to purify with the Zymo RNA Clean & Concentrator Kit:
-
-![Nanodrop table results](18aug23_drop_table.jpg)
-
-:   *RNA Nanodrop results after passing Zymo DNA/RNA Quick Miniprep Plus extracted samples through the Zymo RNA Clean & Concentrator Kit.*
-
-> "A 260/280 ratio greater than 2.0 does NOT indicate the presence of especially high quality DNA, it most often reflects residual contaminants, such as phenol ." -[@zotero-2042]
->
-> " ... samples with purity ratios that range from 1.8 to 2.0 are typically considered pure. Although purity ratios are very useful and informative, they do not always provide a complete picture of sample purity."
->
-> "Residual chemicals from nucleic acid extraction processes (such as guanidine salts or phenol) or cell components that co-extract with the nucleic acids (such as protein) can artificially inflate the A260 value."
-
-::: {.callout-note appearance="minimal" icon="false"}
-Note that samples 1Ea, 1CH2a, 1CA2a. 1PA2a & 1PH1a had already been passed through the Zymo OneStep PCR Inhibitor Removal Kit.
+::: {.callout-warning appearance="simple"}
+The 260/280 ratios over 2.0 may indicate worse phenol contamination!
 :::
 
-![Nanodrop plot results](18aug23_drop_plot.jpg)
+### Did the RNA Clean & Concentrate Kit improve the samples that had already been through the OneStep PCR Inhibitor Removal Kit?
 
-:   *RNA Nanodrop absorbance plot after passing Zymo DNA/RNA Quick Miniprep Plus extracted samples through the Zymo RNA Clean & Concentrator Kit.*
+```{r}
+#| column: margin
+#| fig-cap: "Nanodrop Results from OneStep PCR Inhibitor Removal"
+#| cap-location: margin
+formattable(onestep,
+              align = "l",
+              list(
+                '260-230'= salts,
+                '260-280' = proteins)
+                )
+```
 
-### Comparing...
+```{r}
+#| fig-cap: Nanodrop Results from RNA Clean & Concentrate
+onesamples <- onestep$`sample-ID`
 
-|           |         |         |           |           |         |              |
-|-----------|---------|---------|-----------|-----------|---------|--------------|
-|           | OneStep | PCR     | Inhibitor | RNA Clean | &       | Concentrator |
-| sample ID | ng/uL   | 260/280 | 260/230   | ng/uL     | 260/280 | 260/230      |
-| 1-CA2a    | 63.88   | 1.92    | 1.40      |           |         |              |
-| 1-CH2a    | 26.87   | 1.97    | 0.79      |           |         |              |
-| 1-PA2a    | 41.26   | 2.07    | 1.15      |           |         |              |
-| 1-Ea      | 44.54   | 1.98    | 1.25      |           |         |              |
-| 1-PH1a    | 30.24   | 1.97    | 1.64      |           |         |              |
+compare <- rnaNanodrop %>% 
+  filter(kit == 'RNAClean&Concentrate') %>% 
+  filter(`sample-ID` %in% onesamples) %>% 
+  arrange(`sample-ID`)
+
+formattable(compare, 
+              align = "l", # aligns text to the left
+              list(
+                '260-230'= salts,
+                '260-280' = proteins)
+                )
+```
+
+::: {.callout-tip appearance="simple"}
+The RNA Clean & Concentrator improved the 260/230 ratios for samples 1Ea, 1CH2a, 1CA2a. 1PA2a & 1PH1a which had already been passed through the Zymo OneStep PCR Inhibitor Removal Kit.
+:::
+
+::: {.callout-warning appearance="simple"}
+However, the 260/280 ratios are suspiciously high, making me question if phenol contamination has been made worse!
+:::

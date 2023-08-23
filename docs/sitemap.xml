@@ -2,54 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/about.html</loc>
-    <lastmod>2023-08-17T22:41:49.326Z</lastmod>
+    <lastmod>2023-08-23T00:59:33.992Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/index.html</loc>
-    <lastmod>2023-08-23T00:58:30.333Z</lastmod>
+    <lastmod>2023-08-23T00:59:35.351Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/choosing-16S-primers/index.html</loc>
-    <lastmod>2023-08-17T22:41:52.454Z</lastmod>
+    <lastmod>2023-08-23T00:59:36.066Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/committee-1/index.html</loc>
-    <lastmod>2023-08-17T22:41:54.278Z</lastmod>
+    <lastmod>2023-08-23T00:59:37.119Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/coral-pae-devo/index.html</loc>
-    <lastmod>2023-08-17T22:41:55.525Z</lastmod>
+    <lastmod>2023-08-23T00:59:37.974Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/daily-log/index.html</loc>
-    <lastmod>2023-08-17T22:41:57.755Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sarahtanja.github.io/quarto-blog/posts/dna-rna-ex1/index.html</loc>
-    <lastmod>2023-08-17T22:41:58.805Z</lastmod>
+    <lastmod>2023-08-23T00:59:39.561Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/dna-rna-extraction-protocol/index.html</loc>
-    <lastmod>2023-08-17T22:42:00.264Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sarahtanja.github.io/quarto-blog/posts/extractions-overview/index.html</loc>
-    <lastmod>2023-08-17T22:42:02.726Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sarahtanja.github.io/quarto-blog/posts/qiime-jupyter-start/index.html</loc>
-    <lastmod>2023-08-17T22:42:07.845Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sarahtanja.github.io/quarto-blog/posts/rna-woes/index.html</loc>
-    <lastmod>2023-08-23T00:58:33.169Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sarahtanja.github.io/quarto-blog/posts/target-journals/index.html</loc>
-    <lastmod>2023-08-17T22:42:12.918Z</lastmod>
+    <lastmod>2023-08-23T00:59:40.761Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/dna-rna-extractions/index.html</loc>
-    <lastmod>2023-08-22T19:40:26.794Z</lastmod>
+    <lastmod>2023-08-23T00:59:42.151Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sarahtanja.github.io/quarto-blog/posts/extractions-overview/index.html</loc>
+    <lastmod>2023-08-23T00:59:43.252Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sarahtanja.github.io/quarto-blog/posts/qiime-jupyter-start/index.html</loc>
+    <lastmod>2023-08-23T00:59:47.673Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sarahtanja.github.io/quarto-blog/posts/rna-woes/index.html</loc>
+    <lastmod>2023-08-23T00:59:51.027Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sarahtanja.github.io/quarto-blog/posts/target-journals/index.html</loc>
+    <lastmod>2023-08-23T00:59:52.273Z</lastmod>
   </url>
 </urlset>

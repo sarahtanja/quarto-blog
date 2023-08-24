@@ -128,6 +128,10 @@ formattable(onestep,
 Even after running samples through the Zymo OneStep PCR Inhibitor Removal Kit, The 260/230 ratios are all below the target of 2.0, indicating contamination by salts. Any 260/280 protein ratios OVER 2.0 may indicate contamination by phenols, which absorb between 280-300nm wavelengths. So... be suspicious when you see at 260/280 ratio higher than 2.0!
 :::
 
+The Zymo rep responded with the following advice:
+
+> "The guanidine salts in our DNA/RNA Shield and DNA/RNA Lysis Buffer could be the reason of increased A230. We see this happening most often when small impurities (e.g., cell debris, protein aggregation) were transferred from sample processing and got stuck on the column. They would absorb buffers and release them during elution. Ways to avoid this include increasing the amount of DNA/RNA Shield used during processing, reducing sample input, and transferring only a fraction of sample (e.g.,500 µl from 800 µl) from the BashingBead tube to avoid debris. You can also further purify your existing eluted samples with either the RNA Clean & Concentrator that is on the way to you, or by following the \"Liquids/Reaction Clean-up\" procedure included in the Appendices section Quick-DNA/RNA Miniprep Plus\'s protocol."
+
 ------------------------------------------------------------------------
 
 ## Zymo RNA Clean & Concentrator Kit

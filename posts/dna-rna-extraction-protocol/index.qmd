@@ -1,10 +1,15 @@
 ---
 title: "Dual DNA & RNA Extraction Protocol"
 author: "Sarah Tanja"
-date: '05/19/2023'
+date: '08/23/2023'
 categories: [protocols]
 toc: true
 toc-expand: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
 ---
 
 The aim of this protocol is to take coral fragments that have been snap-frozen in liquid nitrogen and extract both DNA for downstream archaea & bacteria microbiome 16S Microbiome Sequencing and RNA for downstream coral-host tissue Tag-seq or RNA-seq analysis.
@@ -15,13 +20,15 @@ The benefits of doing DNA and RNA extraction together are that it saves time, mo
 
 The challenge is lysing the sample enough to get the bacterial DNA (busting open all those layers of cell membranes!) and retaining host (coral) RNA integrity.
 
-This protocol follows the Zymo Research [*Quick*-DNA/RNA Mininprep Plus Kit Instruction Manual](https://files.zymoresearch.com/protocols/_d7003t_d7003_quick-dna-rna_miniprep_plus_kit.pdf) with help and optimization from URI Putnam Lab Members Open Lab Notebook posts; such as Emma Strand's notebook post on [Zymo-Duet-RNA-DNA-Extraction-Protocol](https://emmastrand.github.io/EmmaStrand_Notebook/Zymo-Duet-RNA-DNA-Extraction-Protocol/), Kevin Wong's post on [Porites Extractions](https://kevinhwong1.github.io/KevinHWong_Notebook/20201027-DNA-RNA-Extractions-Porites-July-Bleaching-Experiment) and M.E. Schedl's post on [Porites Extractions](https://meschedl.github.io/MESPutnam_Open_Lab_Notebook/porites-zymo-rna/), as well as suggestions from a Zymo tech on [March 28th 2023](https://sarahtanja.github.io/lab-book/blog/daily-log/#28-mar-2023-t) regarding [optimized lysis protocols](https://files.zymoresearch.com/documents/bead_beating_short_protocol_tables.pdf) and suggestions from a Zymo tech on May 15th 2023 regarding optimized Proteinase K digestion temperature.
+This protocol follows the Zymo Research [*Quick*-DNA/RNA Mininprep Plus Kit Instruction Manual](https://files.zymoresearch.com/protocols/_d7003t_d7003_quick-dna-rna_miniprep_plus_kit.pdf) with help and optimization from URI Putnam Lab Members Open Lab Notebook posts; such as Emma Strand's notebook post on [Zymo-Duet-RNA-DNA-Extraction-Protocol](https://emmastrand.github.io/EmmaStrand_Notebook/Zymo-Duet-RNA-DNA-Extraction-Protocol/), Kevin Wong's post on [Porites Extractions](https://kevinhwong1.github.io/KevinHWong_Notebook/20201027-DNA-RNA-Extractions-Porites-July-Bleaching-Experiment) and M.E. Schedl's post on [Porites Extractions](https://meschedl.github.io/MESPutnam_Open_Lab_Notebook/porites-zymo-rna/), as well as suggestions from a Zymo tech on [March 28th 2023](https://sarahtanja.github.io/lab-book/blog/daily-log/#28-mar-2023-t) regarding [optimized lysis protocols](https://files.zymoresearch.com/documents/bead_beating_short_protocol_tables.pdf) and suggestions from a Zymo tech on May 15th 2023 regarding optimized Proteinase K digestion temperature. This protocol was updated again in August 2023 after initial RNA samples failed library prep[^1] and DNA sample analysis showed high contamination present in the blank.
 
-::: callout-tip
+[^1]: See my post [The RNA Inhibitors](https://sarahtanja.github.io/quarto-blog/posts/rna-woes/) to learn more on this misadventure...
+
+::: {.callout-tip appearance="simple"}
 📞 Zymo is very responsive to phone calls! Any questions on the kit you can call **888-882-9682** and reference catalog number **D7003** to ask technical questions galore.
 :::
 
-::: callout-tip
+::: {.callout-tip appearance="simple"}
 **For useful background on spin-column kits:**
 
 -   watch [Bumbling Biochemist 'Spin column purification of nucleic acids'](https://www.youtube.com/watch?v=Y_-xP60SYe0)
@@ -35,11 +42,15 @@ This protocol follows the Zymo Research [*Quick*-DNA/RNA Mininprep Plus Kit Inst
 
 ### Biological Sample Info
 
--   liquid-nitrogen snap-frozen \~3cm *Montipora capitata* coral fragments held at -80°C
+The samples I am working with are liquid-nitrogen snap-frozen \~3cm *Montipora capitata* coral fragments held at -80°C, in 1.5mL cryovials. They samples are fragments of coral that had been exposed to the multiple stressors of thermal stress and phthalate pollution in 20mL mesocosms for 48 hours.
 
-![\~1.5cm Fragments of *M. capitata* coral cut and prepped for inserting into 1.5mL cryovials and flash freezing in liquid-nitrogen](fragment-cull.jpg){fig-align="left" width="3827"}
+::: column-margin
+![\~1.5cm Fragments of *M. capitata* coral cut and prepped for inserting into 1.5mL cryovials and flash freezing in liquid-nitrogen](fragment-cull.jpg)
+:::
 
+::: column-margin
 ![Samples, 280 total 1.5mL cryovials of flash-frozen *M. capitata* fragments being transferred from a -80C freezer to a liquid nitrogen cooled dry-shipper at the Hawaiian Institute of Marine Biology (HIMB) to ship from HI to WA](frozen-cryovials.jpg)
+:::
 
 ### Materials List
 
@@ -59,15 +70,33 @@ This protocol follows the Zymo Research [*Quick*-DNA/RNA Mininprep Plus Kit Inst
     -   [ ] Zymo-Spin IIICG Columns
     -   [ ] Collection Tubes
 -   [ ] [ZR BashingBead Lysis 2mL Tubes with 0.1 & 0.5mm beads](https://www.zymoresearch.com/collections/lysis-tubes/products/zr-bashingbead-lysis-tubes-0-1-0-5-mm), 1 per prep
--   [ ] [DNase/RNase/nuclease-Free Tubes](https://www.zymoresearch.com/products/dnase-rnase-free-tubes), 3 per prep
--   [ ] [DNase/RNase-Free Tubes](https://www.zymoresearch.com/products/dnase-rnase-free-tubes), 3 per prep
+-   [ ] [DNase/RNase-Free Tubes](https://www.zymoresearch.com/products/dnase-rnase-free-tubes), 4 per prep (plus extras)
 
-#### *Qubit DNA & RNA Broad-Range Assay Kits*
+#### *RNA Clean & Concentrator*
+
+-   [ ] [RNA Clean & Concentrator-5, DNase not Included](https://www.zymoresearch.com/products/rna-clean-concentrator-5?gad=1&gclid=Cj0KCQjw3JanBhCPARIsAJpXTx6_HqFIKQUjYO9E6qR9e9s4gPbpSk6wIvu14hZOfUxQJ3I6kISe2bgaAtTxEALw_wcB)[^2]
+
+[^2]: [RNA Clean & Concentrator-5](https://urldefense.com/v3/__https://www.zymoresearch.com/products/rna-clean-concentrator-5__;!!K-Hz7m0Vt54!hR2-lkKEDNSp8jnMNOSVR-eH6FDvAmxFQ8SAc6nqkmfQy-HeMxMt7PXcmGztye4mcxtq1kbGQCmqcA$) is used to further clean-up and concentrate your extracted RNA samples of low purity readings
+
+#### *Microbiome Standards*
+
+-   [ ] [ZymoBIOMICS Microbial Community Standard](https://www.zymoresearch.com/collections/zymobiomics-microbial-community-standards/products/zymobiomics-microbial-community-standard)[^3], 10 preps
+-   [ ] [ZymoBIOMICS Microbial Community DNA Standard](https://www.zymoresearch.com/collections/zymobiomics-microbial-community-standards/products/zymobiomics-microbial-community-dna-standard), 200ng
+
+[^3]: Checkout [**HOW TO USE THE ZYMOBIOMICS® MICROBIAL COMMUNITY STANDARDS**](https://www.zymoresearch.com/blogs/blog/zymobiomics-microbial-standards-optimize-your-microbiomics-workflow%20%20%20%20%20%20%20%20)
+
+::: column-margin
+#### *Qubit DNA & RNA Broad-Range Assay Kits (needed for the next step of DNA & RNA quantification!)*
+
+-   [ ] [Qubit® assay tubes](https://www.thermofisher.com/order/catalog/product/Q32856?gclid=CjwKCAjwuqiiBhBtEiwATgvixAYKxw1FwdqIxIiPSxZ-ngW738s6bl94L2cdLCFjXfosHgMX1hyAShoCv9cQAvD_BwE&ef_id=CjwKCAjwuqiiBhBtEiwATgvixAYKxw1FwdqIxIiPSxZ-ngW738s6bl94L2cdLCFjXfosHgMX1hyAShoCv9cQAvD_BwE:G:s&s_kwcid=AL!3652!3!529745253294!p!!g!!qubit%20tubes!7851124045!80648205054&cid=bid_pca_aqb_r01_co_cp1359_pjt0000_bid00000_0se_gaw_bt_pur_con)(Invitrogen Cat. no. Q32856, 500 tubes) or [Axygen PCR-05-C tubes](https://us.vwr.com/store/product?keyword=10011-830)(VWR, part number 10011-830).
+-   [ ] [Qubit™ 1X dsDNA Broad Range (BR) Assay Kit](https://www.thermofisher.com/order/catalog/product/Q33265)
+-   [ ] [Qubit™ RNA High Sensitivity (HS) or Broad Range (BR) Assay Kit](https://www.thermofisher.com/order/catalog/product/Q10210)
+:::
 
 #### *PPE*
 
 -   [ ] nitrile gloves
--   [ ] liquid-nitrogen & cold storage handling gloves
+-   [ ] liquid-nitrogen & cold storage handling [gloves](https://www.amazon.com/Bonvoisin-Cryogenic-Mid-arm-Protective-Nitrogen/dp/B09HBPDVR6/ref=sr_1_3_sspa?crid=2GWDIWEP208IC&keywords=cryo+gloves&qid=1681163221&refinements=p_85%3A2470955011&rnid=2470954011&rps=1&s=industrial&sprefix=cryo+gloves%2Cindustrial%2C154&sr=1-3-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyMDRZQ1A3WElQVFVPJmVuY3J5cHRlZElkPUEwNTQ5OTQ2MkpFVDhQSEE4NTFJMSZlbmNyeXB0ZWRBZElkPUEwMDEyNzg2M085UTA3WkpZOUlPOCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=)
 -   [ ] lab coats
 
 #### *Lab Equipment*
@@ -76,6 +105,9 @@ This protocol follows the Zymo Research [*Quick*-DNA/RNA Mininprep Plus Kit Inst
 -   [ ] [1.5mL microcentrifuge tube racks](https://www.southernlabware.com/80-well-micro-tube-racks-assorted-5-pacl.html?gclid=CjwKCAiAjPyfBhBMEiwAB2CCIkxZXHoOz72MNKvsWFcKscbsG8H5wIyMEw974wfKSvbU2W5a4Tk2IRoCBtEQAvD_BwE)
 -   [ ] lab mortar & pestle sets
 -   [ ] lab label tape
+-   [ ] [mini stainless steel funnels](https://www.amazon.com/Stainless-Funnel-Essential-Bottles-Flasks/dp/B012HYPBMS/ref=asc_df_B012HYPBMS/?tag=hyprod-20&linkCode=df0&hvadid=198121735885&hvpos=&hvnetw=g&hvrand=2616461327632465481&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9033309&hvtargid=pla-348455548253&psc=1)
+-   [ ] [stainless steel scoopulas](https://www.amazon.com/EISCO-CH0635A-Scoop-Spatula-Stainless/dp/B00BLS7FNK/ref=sr_1_1_sspa?crid=3FAFVO4Y5BM94&keywords=scoopula&qid=1681163488&s=industrial&sprefix=scoopulas%2Cindustrial%2C129&sr=1-1-spons&psc=1&smid=ACTB8CBED46SR&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFZWUxKRlpOM1BYWUkmZW5jcnlwdGVkSWQ9QTAyMjM5OTIxSkhSWVpKSlFHRkZQJmVuY3J5cHRlZEFkSWQ9QTA5NjQ3MTJPNEMwQzY4UVUzWFQmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl)
+-   [ ] [film-sealing plate roller](https://www.amazon.com/Film-Sealing-Plate-Roller-4-inch-Rubber/dp/B07GNRJ4L7/ref=sr_1_3?crid=3FACE7I1NNX2X&keywords=film+sealing+plate+roller&qid=1682444911&s=industrial&sprefix=film+sealing+plate+rolle%2Cindustrial%2C138&sr=1-3)
 -   [ ] centrifuge
 -   [ ] [Beckman Coulter Microfuge 16](https://www.beckman.com/landing/ppc/cent/benchtop/microcentrifuges?utm_source=google&utm_medium=cpc&utm_term=microcentrifuge&gclid=CjwKCAjw586hBhBrEiwAQYEnHYq-F4WNopG5rWYG4Bb0YjPlfXL7pVCESNmTwqyT6Cgxty-Si8AAdhoC8I0QAvD_BwE)
 -   [ ] mortexer / homogenizer
@@ -86,7 +118,7 @@ This protocol follows the Zymo Research [*Quick*-DNA/RNA Mininprep Plus Kit Inst
 -   [ ] small cooler (for dry ice and samples)
 -   [ ] dry-ice
 
-::: callout-tip
+::: {.callout-tip appearance="simple"}
 -   Dry-ice at UW can be purchased via a budget# at the Biochemistry Store in hallway adjacent to Room J-014, Health Sciences Building
 -   The entrance can be found at the [Health Sciences Building loading dock](https://goo.gl/maps/hYnYcm6EiTHGEE4SA) across NE Boat St. from Saint Bread, NE of the Ocean Sciences Building
 -   You must have UW Husky Card to fob-activate doors leading from loading dock and interior hall
@@ -95,8 +127,18 @@ This protocol follows the Zymo Research [*Quick*-DNA/RNA Mininprep Plus Kit Inst
 
 #### *Reagents*
 
--   [ ] nuclease free ([DEPC-treated](https://www.thermofisher.com/order/catalog/product/4387937#:~:text=DEPC%2Dtreated%20water%20is%20autoclaved,%2C%20exonuclease%2C%20and%20RNase%20activity.)) autoclaved water
--   [ ] 95% (190 proof) - 99.5% (200 proof) ethanol
+::: column-margin
+I previously used [DEPC-treated](https://www.thermofisher.com/order/catalog/product/4387937#:~:text=DEPC%2Dtreated%20water%20is%20autoclaved,%2C%20exonuclease%2C%20and%20RNase%20activity.) water to dilute the 2X concentrated DNA/RNA Sheild, thinking this was the same thing as nuclease-free water. It Isn't! and this may have been a source of contamination in my initial blank microbiome sample!
+:::
+
+::: {.callout-important appearance="simple"}
+The nuclease-free water is used to dilute 2X concentrated DNA/RNA Shield. It is very important for microbiome studies that this water does not have any bacterial contamination!
+
+> "...extraction kits have a good amount of background (as does every reagent including the water you used... about the only reagent that does not have some background is the qiagen DNA free water... the 16s is extremely sensitive and a water extraction is VERY pure DNA so amplifies very well." - Advice via email from Dr. Scot Dowd, [Mr DNA Lab](https://www.mrdnalab.com/)
+:::
+
+-   [ ] [Qiagen nuclease-free water](https://www.qiagen.com/us/products/discovery-and-translational-research/lab-essentials/buffers-reagents/nuclease-free-water)
+-   [ ] 99.5% (200 proof) molecular-grade ethanol
 
 #### *Sterilizing*
 
@@ -117,19 +159,21 @@ This protocol follows the Zymo Research [*Quick*-DNA/RNA Mininprep Plus Kit Inst
 
 Make sure to randomize which samples are processed in each batch of extractions to reduce 'batch effects'!
 
+::: column-margin
 See ['Randomize Sample Processing'](https://github.com/sarahtanja/coral-DNA-RNA-lab-extractions/blob/main/rand-sample-processing.Rmd) script for how I randomized sample processing.
+:::
 
-::: callout-tip
-Think about how many samples you can process at once, and your kit, centrifuge, and homogenizer capacity.
+::: {.callout-tip appearance="simple"}
+Think about how many samples you can process at once, and your kit, centrifuge, and homogenizer capacity. You should also make sure to include a blank and a mock community with each batch of extractions.
 :::
 
 ## Lab Setup
 
 ### Sterilize {#sterilize}
 
-1.  Don lab coat 🥼 & tie hair back , glove up 🧤
+-   Don lab coat 🥼 & tie hair back , glove up 🧤
 
-2.  Spray down `benchtop`, `microcentrifuge tube racks`, `pipettes`, and `pipette tip boxes` with:
+-   Spray down `benchtop`, `microcentrifuge tube racks`, `pipettes`, and `pipette tip boxes` with:
 
     -   `10% bleach` in spray-bottle, then wipe with Kimwipe
 
@@ -137,7 +181,7 @@ Think about how many samples you can process at once, and your kit, centrifuge, 
 
     -   `70% ethanol`in spray-bottle, then wipe with Kimwipe
 
-3.  Spray down `mortars & pestles` , `scoopulas`, and `forceps` with:
+-   Spray down `mortars & pestles` , `scoopulas`, and `forceps` with:
 
     -   `10% bleach` in spray-bottle, then wipe with Kimwipe
 
@@ -147,21 +191,21 @@ Think about how many samples you can process at once, and your kit, centrifuge, 
 
     -   `RNase away` in spray-bottle, then wipe with Kimwipe
 
-4.  Spray Kimwipe with `RNase away` and wipe down equipment buttons/handles/surfaces that may have been touched by ungloved hands
+-   Spray Kimwipe with `RNase away` and wipe down equipment buttons/handles/surfaces that may have been touched by ungloved hands
 
-5.  Spray `RNase away`on gloves and rub hands together
+-   Spray `RNase away`on gloves and rub hands together
 
 ### Arrange Lab Bench + Tubes
-
-This extraction protocol can be split into two main phases: **Lysing** and **Purification**.
 
 **Lysing Station**
 
 -   liquid nitrogen dewer
--   dry-ice bucket with samples
--   scoopulas & forceps
+-   dry-ice bucket with ❄️samples, ❄️scoopulas, & ❄️mini funnels[^4]
+-   forceps
 -   mortars & pestles
 -   mortexer
+
+[^4]: Placing the scoopulas and mini funnels on dry ice gets them cold to the same temperature as the powdered coral samples after grinding them in the mortar. This allows you to scoop the powder and have it remain cold❄️ while you transfer it as a cold dry powder through the funnel into the bead-bashing tube. If the scoopula and funnel are room temperature, when they touch the cold powdered sample they condensate and the sample gets wet and booger-like in consistency, making it impossible to transfer into the bead-bashing tube.
 
 **Purification Station**
 
@@ -195,7 +239,7 @@ flowchart LR
      class A grey
 ```
 
-::: callout-tip
+::: {.callout-tip appearance="simple"}
 Make sure you have trash, pipette disposal, and liquid kit waste disposal containers within easy reach of the bench.
 :::
 
@@ -218,32 +262,36 @@ D --> E[[RNA<br>  <br>tube<br>  <br>rack]]
      class C purple
 ```
 
-2.  For each sample, arrange the following 9 tubes in microcentrifuge tube racks:
-    1.  [bead-bashing tube]{style="background-color:#993399"}
+2.  For each sample, arrange the following 10 tubes in microcentrifuge tube racks:
+    1.  [**bead-bashing tube**]{style="background-color:#993399"}
 
-    2.  [nuclease-free tube]{style="background-color:#993399"}
+    2.  [**nuclease-free tube for proteinase K digestion**]{style="background-color:#993399"}
 
-    3.  [DNA Spin-Away Filter (yellow) in a Collection Tube]{style="background-color:#ff0"}
+    3.  [**nuclease-free tube**]{style="background-color:#993399"}
 
-    4.  [Collection Tube]{style="background-color:#ff0"}
+    4.  [**DNA Spin-Away Filter (yellow) in a Collection Tube**]{style="background-color:#ff0"}
 
-    5.  [FINAL nuclease-free tube for eluted DNA]{style="background-color:#ff0"}
+    5.  [**Collection Tube**]{style="background-color:#ff0"}
 
-    6.  [Qubit assay tube for $1\mu L$ of eluted DNA]{style="background-color:#ff0"}
+    6.  [**FINAL nuclease-free tube for eluted DNA**]{style="background-color:#ff0"}
 
-    7.  [RNA Spin-Away Filter (green) in a Collection Tube]{style="background-color:#9f6"}
+    7.  [**Qubit assay tube for** $1\mu L$ **of eluted DNA**]{style="background-color:#ff0"}
 
-    8.  [FINAL nuclease-free tube for eluted RNA]{style="background-color:#9f6"}
+    8.  [**RNA Spin-Away Filter (green) in a Collection Tube**]{style="background-color:#9f6"}
 
-    9.  [Qubit assay tube for $1\mu L$ of eluted RNA]{style="background-color:#9f6"}
+    9.  [**FINAL nuclease-free tube for eluted RNA**]{style="background-color:#9f6"}
 
+    10. [**Qubit assay tube for** $1\mu L$ **of eluted RNA**]{style="background-color:#9f6"}
+
+::: column-margin
 ![Tubes should be laid out and labelled like this photo shown here ☝️](tube-racks.jpg){fig-alt="example of three microcentrifuge tube racks laid out and 9 labelled tubes" fig-align="center"}
+:::
 
-You can also label an additional qubit tube if you are moving straight from extraction to quantification.
+::: column-margin
+Only thin-wall, clear 0.5 mL PCR tubes are appropriate for use in the Qubit® fluorometer. Acceptable tubes include [**Qubit® assay tubes**](https://www.thermofisher.com/order/catalog/product/Q32856?gclid=CjwKCAjwuqiiBhBtEiwATgvixAYKxw1FwdqIxIiPSxZ-ngW738s6bl94L2cdLCFjXfosHgMX1hyAShoCv9cQAvD_BwE&ef_id=CjwKCAjwuqiiBhBtEiwATgvixAYKxw1FwdqIxIiPSxZ-ngW738s6bl94L2cdLCFjXfosHgMX1hyAShoCv9cQAvD_BwE:G:s&s_kwcid=AL!3652!3!529745253294!p!!g!!qubit%20tubes!7851124045!80648205054&cid=bid_pca_aqb_r01_co_cp1359_pjt0000_bid00000_0se_gaw_bt_pur_con) **(Invitrogen Cat.** **no.** **Q32856, 500 tubes) or [Axygen PCR-05-C tubes](https://us.vwr.com/store/product?keyword=10011-830)(VWR, part number 10011-830)**.
 
-> Only thin-wall, clear 0.5 mL PCR tubes are appropriate for use in the Qubit® fluorometer. Acceptable tubes include [**Qubit® assay tubes**](https://www.thermofisher.com/order/catalog/product/Q32856?gclid=CjwKCAjwuqiiBhBtEiwATgvixAYKxw1FwdqIxIiPSxZ-ngW738s6bl94L2cdLCFjXfosHgMX1hyAShoCv9cQAvD_BwE&ef_id=CjwKCAjwuqiiBhBtEiwATgvixAYKxw1FwdqIxIiPSxZ-ngW738s6bl94L2cdLCFjXfosHgMX1hyAShoCv9cQAvD_BwE:G:s&s_kwcid=AL!3652!3!529745253294!p!!g!!qubit%20tubes!7851124045!80648205054&cid=bid_pca_aqb_r01_co_cp1359_pjt0000_bid00000_0se_gaw_bt_pur_con) **(Invitrogen Cat.** **no.** **Q32856, 500 tubes) or [Axygen PCR-05-C tubes](https://us.vwr.com/store/product?keyword=10011-830)(VWR, part number 10011-830)**.
-
-The qubit tube should only be labelled on the top; the sides should be clear so that the qubit fluorescence can be read without impedance.
+**The qubit tube should only be labelled on the top; the sides should be clear so that the qubit fluorescence can be read without impedance.**
+:::
 
 The intermediate tubes and qubit tubes can just be labelled with the `cryo_id`, and whether they are RNA or DNA products such as: `1Ea DNA` or `2CHb RNA`
 
@@ -256,12 +304,12 @@ RNA
 10APR23
 ```
 
-⚠️**Important Notes! ⚠️**
-
+::: {.callout-important appearance="simple"}
 -   **Use [ethanol-proof lab markers](https://www.amazon.com/dp/B09L3Q99WL/ref=sspa_dk_hqp_detail_aax_0?psc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ocXBfc2hhcmVk&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyWUpaVTc1M0pRMVImZW5jcnlwdGVkSWQ9QTAxMTgzODBJOFI3QlZFQ0pKQUsmZW5jcnlwdGVkQWRJZD1BMDc2MTE0M1ExRUdBSkEwOFBBRiZ3aWRnZXROYW1lPXNwX2hxcF9zaGFyZWQmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl) to label tubes** *(ethanol is added to the green spin away collection tube)*
 -   **Label collection tubes, not filters!**
 -   **Always wear lab gloves that have been sterilized before handling tubes!**
 -   **Shake tubes out of their bags onto sterilized surface, don't 'reach in' (this reduces potential contamination)**
+:::
 
 ### Prepare Buffers
 
@@ -285,116 +333,172 @@ RNA
 
 ### Grind/Homogenize: Mortar & Pestle Samples
 
-1.  Take [dry-ice](#dry-ice) cooler to -80 freezer, pull out frozen samples and place them in the dry-ice cooler. Work quickly and carefully to sort through the vials and select the ones that you are working with. Nest the selected sample vials in the dry ice, and return the rest back to the -80 freezer. Bring working samples on dry-ice back to the lab bench.
+-   Take [dry-ice](#dry-ice) cooler to the -80 freezer, pull out frozen samples and place them in the dry-ice cooler. Work quickly and carefully to sort through the vials and select the ones that you are working with. Nest the selected sample vials in the dry ice, and return the rest back to the -80 freezer. Bring working samples on dry-ice back to the lab bench.
 
-2.  Don cryo-gloves over nitrile gloves and ⚠️carefully⚠️ dispense a small amount (no more than 1L) of liquid nitrogen (LN2) into the transfer thermos. **Everyone working with LN2 should have taken the Liquid Nitrogen Online Safety Course found [HERE](https://www.ehs.washington.edu/training/liquid-nitrogen-safety)**
+    ::: {.callout-important appearance="simple"}
+    Place the ❄️scoopulas❄️ and ❄️mini funnels❄️ in the dry ice 🧊 bucket!
+    :::
 
-3.  Grind each sample with mortar & pestle on LN2 -
+-   Don cryo-gloves over nitrile gloves and ⚠️carefully⚠️ dispense a small amount of liquid nitrogen (LN2) into the transfer thermos. **Everyone working with LN2 should have taken the Liquid Nitrogen Online Safety Course found [HERE](https://www.ehs.washington.edu/training/liquid-nitrogen-safety)**
 
-    1.  ⚠️carefully⚠️ pour a small amount of LN2 into a [sterilized](#sterilize) mortar
-    2.  Using [sterilized](#sterilize) forceps, pluck out coral fragments from the cryo vial and place in the mortar until you have as much material as about the size of an M&M (roughly a 16mm diameter sphere). Material amount does not have to be precise.
-    3.  Pestle the coral fragment until it is ground to a powder. Work quickly to ensure the sample remains frozen. Add more LN2 when it evaporates from the mortar. This step is challenging! LN2 evaporates very quickly and must be replenished multiple times.
+-   Grind each sample with mortar & pestle on LN2 -
 
-The coral is also very hard and prone to 'squirting out' from under the pestle
+    -   ⚠️carefully⚠️ pour a small amount of LN2 into a [sterilized](#sterilize) mortar
+    -   Using [sterilized](#sterilize) forceps, pluck out coral fragments from the cryo vial and place in the mortar until you have about as much material as a lima bean. Material amount does not have to be precise.
+    -   Pestle the coral fragment until it is ground to a powder[^5]. Work quickly to ensure the sample remains frozen. Add more LN2 when it evaporates from the mortar. This step is challenging! LN2 evaporates very quickly and must be replenished multiple times.
+
+[^5]: The coral fragments are prone to 'squirting out' from under the pestle. Don't lose sample material! Rather than use your arms to 'stir' the fragments in a circular motion, crush the fragments by firmly placing the pestle square atop a fragment and press your whole torso body-weight onto the pestle. Think like a hydraulic press!
 
 ### Lyse: Bead-Bash Samples
 
-1.  Use [sterilized](#sterilize) scoopula to transfer the sample powder to its correspondingly labelled [bead bashing tube](https://www.zymoresearch.com/collections/lysis-tubes/products/zr-bashingbead-lysis-tubes-0-1-0-5-mm)
+-   Add 500uL of `DNA/RNA Shield` to each 2mL (0.1 - 0.5mm) bead-bashing tube
 
-2.  Aim to transfer 500uL of volume to each tube
+::: column-margin
+In initial extractions I only used 500uL of DNA/RNA Sheild and was advised to increase it to at least 800uL by a Zymo rep:
 
-3.  Add 500uL of `DNA/RNA Shield` to each 2mL (0.1 - 0.5mm) bead-bashing tube with powdered sample and vortex to ensure powder is submersed in `DNA/RNA Shield`
+> "A minimum of 800 µl of liquid volume is what we typically recommend when working with the BashingBead Tubes. This is because anything lower may lead to inefficient bead movement during shaking, oversaturation of content, and difficulties when transferring sample from the tube without disturbing the debris. All of these can lead to impurity by precipitation/clogging in the columns, therefore we highly recommend increasing the amount of DNA/RNA Shield for processing."
+:::
 
-4.  Set bead-bashing tubes in Mortexer and vortex at high speed for 40 minutes
+-   Use chilled, [sterilized](#sterilize) scoopula and a sterilized chilled mini-funnel to transfer the sample powder to its correspondingly labelled [bead bashing tube](https://www.zymoresearch.com/collections/lysis-tubes/products/zr-bashingbead-lysis-tubes-0-1-0-5-mm)
+
+-   Aim to transfer 500uL of powdered volume (take up about 1/4th of the 2mL tube, or an equal volume as the beads)
+
+-   Cap the bead-bashing tube and shake it like a Polaroid picture
+
+-   Open the tube, and 'top-off' the sample with another 500uL of `DNA/RNA Shield`, bringing the total volume to 1000uL
+
+-   Vortex to ensure powder is fully submersed in `DNA/RNA Shield`
+
+-   Set bead-bashing tubes in Mortexer and homogenize at high speed for **40 minutes**
 
 ### Proteinase-K Digestion
 
-1.  After bead bashing tubes are ['intensely bubbly'](https://meschedl.github.io/MESPutnam_Open_Lab_Notebook/Larvae-Ex-Protocol/#:~:text=Tubes%20after%20vortexing%20are%20intensely%20bubbly)
+-   Get the Proteinase K out of the -20 freezer & set the heat-block to warm up to 55C for 30mins
 
-2.  To tamp down bubbles, centrifuge in the mini-centrifuge for 1-2 minutes
+-   After bead bashing, tubes are ['intensely bubbly'](https://meschedl.github.io/MESPutnam_Open_Lab_Notebook/Larvae-Ex-Protocol/#:~:text=Tubes%20after%20vortexing%20are%20intensely%20bubbly), to tamp down bubbles, centrifuge in the mini-centrifuge for 1min
 
-3.  Add Proteinase K & Buffer
+-   Transfer 600uL of supernatent to a new nuclease-free tube, making sure not to disturb beads and debris at the bottom of the bead-bashing tube[^6]
+
+-   Add Proteinase K & Buffer
 
     -   Add the appropriate volume of Pro K buffer and Proteinase K (Proteinase K is stored in the -20 after being reconstituted)
 
     -   (10:1 ratio of sample:digestion buffer) & (2:1 ratio of digestion buffer:Proteinase K)
 
-    -   For tubes with 500uL of DNA/RNA Shield add:
+    -   For tubes with approximately 500uL of sample add:
 
-        -   50ul pro k buffer
+        -   50ul pro K buffer
         -   25ul proteinase K
 
-    -   If you have tubes with a larger volume you can scale up the volumes (ex for 700ul, you would use 70ul buffer and 35ul pro k)
+-   Incubate in the heat-block for 30mins at 55C
 
-4.  Incubate in heat-block for 30mins at 55C
+-   Vortex to mix & centrifuge on max for 2mins to pellet any debris
 
-5.  Vortex to mix
+-   Transfer 350uL of the cleared supernatent to a new 1.5mL nuclease-free tube, making sure not to disturb any debris at the bottom of the tube
 
-6.  Centrifuge on max for 30s
+-   Add 350uL of **DNA/RNA Lysis Buffer** to the supernatent(1:1) and vortex to mix
 
-7.  Transfer $400 \mu L$ of the cleared supernatent to a nuclease-free tube
+[^6]: Why do we transfer from the bead-bashing tube to two different nuclease-free tubes in this step? Jerry Yu from Zymo says:
 
-8.  Add $400 \mu L$ of **DNA/RNA Lysis Buffer** to the supernatent(1:1) and vortex to mix
+    > "We are worried about the sample debris remaining in the tube, which should still contain protein. One of the reasons for Proteinase K treatment at this step is to break down protein in the solution to make it less viscous/sticky, so the column can process it without issue. By transferring the mixture out, the treatment could be more efficient."
 
-### Purify DNA & RNA
+------------------------------------------------------------------------
 
-1.  Transfer the buffered supernatent (should be a total of 800uL, which can be passed through the filter in one go) to yellow **Spin-Away Filter** in a **Collection Tube** and centrifuge
+## Purify DNA & RNA
 
-::: callout-danger
+Transfer the buffered supernatent (should be a total of 700uL, which can be passed through the filter in one go) to yellow **`Spin-Away Filter`** in a **`Collection Tube`** and centrifuge
+
+::: {.callout-warning appearance="simple"}
 Save The flow-through in the collection tube for RNA purification! At this step the DNA is in the yellow spin column filter and the RNA is in the flow through.
 :::
 
-2.  Tranfser the yellow **Spin-Away Filter** to a new **Collection Tube**
+Transfer the yellow **`Spin-Away Filter`** to a new **`Collection Tube`**
 
-3.  To the RNA flow-through, add 800uL (1:1) of 200-proof ethanol to the flow-through and mix by pipetting up and down 12 times
+-   To the RNA flow-through, add 700uL (1:1) of 200-proof ethanol to the flow-through and mix by pipetting up and down 12 times
 
-4.  In aliquots up to 700uL, transfer the RNA in ethanol to the green **Zymo-Spin IIICG Column** in a **Collection Tube**, centrifuge, and discard the flow-through. This step binds the RNA to the green column filter.
+-   The RNA+ethanol volume is now 1,400uL. In aliquots up to 700uL, transfer the RNA sample to the green **`Zymo-Spin IIICG Column`** in a **`Collection Tube`**, centrifuge, and discard the flow-through. This step binds the RNA to the green column filter. Repeat until all RNA Sample has passed through the filter.
 
-##### DNase 1 Treatment
+> #### DNase 1 Treatment for RNA
+>
+> -   Add 400uL **`DNA/RNA Wash Buffer`** to the `green Zymo-Spin IIICG Column`, centrifuge and discard the flow-through
+>
+> -   For each sample to be treated, prepare **`DNase 1 Reaction Mix`**: $$
+>     DNase\, 1\, volume = 5 \mu L * (no.\, of\, sample\, preps)
+>     $$ $$
+>     DNA\, Digestion\, Buffer\, volume  = 75 \mu L * (no.\, of\, sample\, preps)
+>     $$
+>
+> -   Add 75uL of **`DNA Digestion Buffer`** per prep to a new nuclease-free tube
+>
+> -   Add 5uL of reconstituted **`DNase 1`** (thawed if previously frozen at -20C) per sample prep to the nuclease-free tube
+>
+> -   Mix by gentle inversion
+>
+> -   Carefully drip 80uL of **`DNase 1 Reaction Mix`** directly onto the `green Zymo-Spin IIICG Column` filter and let incubate at room temperature for **15mins**
 
-5.  Add 400uL **DNA/RNA Wash Buffer** to the green **Zymo-Spin IIICG Column**, centrifuge and discard the flow-through
+### Wash & Elute
 
-6.  To prepare **DNase 1 Reaction Mix**: $$
-    DNase\, 1\, volume = 5 \mu L * (no.\, of\, sample\, preps)
-    $$
+-   Add 400uL **`DNA/RNA Prep Buffer`** to each column and centrifuge at 16,000xg for 30s, then discard the flow-through
 
-$$
-DNA\, Digestion\, Buffer\, volume  = 75 \mu L * (no.\, of\, sample\, preps)
-$$
+-   Add 700uL of **`DNA/RNA Wash Buffer`** [^7]to each column and centrifuge at 16,000xg for 30s, then discard the flow-through
 
--   Add 75uL of **DNA Digestion Buffer** per prep to a new nuclease-free tube
--   Add 5uL of reconstituted **DNase 1** (thawed if previously frozen at $-20^{\circ}C$) per sample prep to the nuclease-free tube
--   Mix by gentle inversion
+-   Add 400uL of **`DNA/RNA Wash Buffer`** to each column and centrifuge at 16,000xg for 2mins to ensure complete removal of the wash buffer, then discard the flow-through
 
-7.  Carefully drip $80 \mu L$ of **DNase 1 Reaction Mix** directly onto the green **Zymo-Spin IIICG Column** filter and let incubate at room temperature for 15mins
+-   Conduct a dry spin and centrifuge at 16,000xg for 2mins to ensure complete removal of the wash buffer prior to elution[^8]
 
-8.  Add $400 \mu L$ **DNA/RNA Prep Buffer** to each column and centrifuge at 16,000xg for 30s, then discard the flow-through
+-   Carefully transfer the column into the FINAL nuclease-free tube labelled for containing the eluted DNA/RNA end products
 
-9.  Add $700 \mu L$ of **DNA/RNA Wash Buffer** to each column and centrifuge at 16,000xg for 30s, then discard the flow-through
+-   Add 70uL **`DNase/RNase-Free Water`** directly to the column matrix and centrifuge at 16,000xg for 30s
 
-10. Add $400 \mu L$ of **DNA/RNA Wash Buffer** to each column and centrifuge at 16,000xg for 2mins to ensure complete removal of the wash buffer, then discard the flow-through
+-   Place FINAL eluted DNA/RNA tubes on ice
 
-11. Carefully transfer the column into the FINAL nuclease-free tube labelled for containing the eluted DNA/RNA end products
+-   Transfer 1uL of each eluted DNA/RNA sample to their respectively labelled Qubit assay tube, and keep on ice
 
-12. Add $50 \mu L$ **DNase/RNase-Free Water** directly to the column matrix and centrifuge at 16,000xg for 30s
+[^7]: Slowly dispense wash buffer along the sides of the filter like pouring a heady beer down the side of a pint glass. Jerry Yu from Zymo says:
 
-13. Place FINAL eluted DNA/RNA tubes on ice
+    > "You are correct with the beer analogy. By slowly dispensing wash buffer along the inner radius of the column, you can rinse off salts/residuals from previous spins, so future spins will be cleaner."
 
-14. Transfer $1 \mu L$ of each eluted DNA/RNA sample to their respectively labelled Qubit assay tube, and place Qubit assay tubes with eluted DNA/RNA on ice
+[^8]: Another tip from Zymo:
 
-15. Store FINAL eluted DNA/RNA tubes in wax boxes in the $-80^{\circ}C$ freezer
+    > The goal of rinsing and reducing the volume of wash buffer is to avoid residual buffer from previous washes to end up in the elution, which will reduce purity. If volume of the wash buffer is increased in the final wash step, make sure to also increase the centrifugation time (e.g., 2 minutes) or include a second spin without buffer (dry spin) to ensure complete removal of the buffer prior to elution.
 
-16. Take Qubit assay tubes to run Qubit quantification on eluted DNA and RNA
+------------------------------------------------------------------------
 
-    ## End Products
+## RNA Clean-up **WORK IN PROGRESS RESULTS UNKNOWN PROCEED WITH... EMBRACING FAILURE**
 
-The end products are two 1.5mL vials per sample that contain:
+### RNA Clean & Concentrator-5
 
-1.  50ul of DNA in nuclease-free water
-2.  50ul of RNA in nuclease-free water.
+-   Open the **`RNA Clean & Concentrator-5`** kit
 
-Place these vials on ice and proceed with Nanodrop & Qubit quantification:
-- [Qubit RNA Broad Range Protocol](https://sarahtanja.github.io/lab-book/protocols/protocol-qbit/)
+-   Add 140uL of **`RNA Binding Buffer`** to each 70uL of eluted RNA sample (2:1, **`RNA Binding Buffer`**:eluted RNA sample)
+
+-   Add 210uL (140+70) of 99.5% (200 proof) molecular-grade ethanol (1:1, **`RNA Binding Buffer`**+eluted RNA sample: ethanol) to each tube
+
+-   Transfer the sample to the `Zymo-Spin IC Column` in a `Collection Tube` and centrifuge at 16,000xg for 30sec
+
+-   Discard the flow through, pat the collection tube dry with a clean kim wipe
+
+-   Add 400uL **`RNA Prep Buffer`** to each column and centrifuge at 16,000xg for 30s, then discard the flow-through
+
+-   Add 700uL of **`RNA Wash Buffer`** to each column and centrifuge at 16,000xg for 30s, then discard the flow-through
+
+-   Add 400uL of **`RNA Wash Buffer`** to each column and centrifuge at 16,000xg for 2mins to ensure complete removal of the wash buffer, then discard the flow-through
+
+-   Conduct a dry spin and centrifuge at 16,000xg for 2mins to ensure complete removal of the wash buffer prior to elution
+
+## End Products
+
+The end products are:
+
+-   70ul of DNA in nuclease-free water
+
+-   1uL of DNA in nuclease-free water for Qubit
+
+-   70ul of RNA in nuclease-free water
+
+-   1uL of RNA in nuclease-free water for Qubit
+
+Place these vials on ice and proceed with Nanodrop & Qubit quantification: - [Nanodrop Protocol]() - [Qubit RNA Broad Range Protocol]()
 
 OR, to continue lab-work later,
 

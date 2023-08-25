@@ -78,7 +78,7 @@ library(tidyverse)
 ```
 
 ```{r load in data}
-rnaNanodrop <- read_csv("RNA-Nanodrop.csv")
+nanodrop18AUG <- read_csv("nanodrop_18AUG23.csv")
 ```
 
 ```{r custom colors}
@@ -91,14 +91,14 @@ customOrange = "#fda172"
 ```{r formattable functions}
 salts <- formatter("span",
   style = x ~ style("font-weight" = ifelse(x > 2.0, "bold", NA),
-                    "background-color" = ifelse(x > 2.2, customGreen,
-                                                ifelse(x >= 2.0 & x <= 2.2, customGreen0,
+                    "background-color" = ifelse(x > 2.2, customGreen0,
+                                                ifelse(x >= 2.0 & x <= 2.2, customGreen,
                                                        ifelse(x < 2.0, customRed, "inherit")))
                     ))
 
 proteins <- formatter("span",
   style = x ~ style("font-weight" = ifelse(x > 1.8, "bold", NA),
-                    "background-color" = ifelse(x > 2.0, customOrange,
+                    "background-color" = ifelse(x > 2.0, customGreen0,
                                                 ifelse(x >= 1.8 & x <= 2.0, customGreen,
                                                        ifelse(x < 1.8, customRed, "inherit")))
                     ))
@@ -112,7 +112,7 @@ I followed the kit instructions, and assessed the samples for purity using a Nan
 :   *RNA Nanodrop absorbance plot after passing Zymo DNA/RNA Quick Miniprep Plus extracted RNA samples through the Zymo OneStep PCR Inhibitor Kit. Run 03AUG2023.*
 
 ```{r}
-onestep <- rnaNanodrop %>% 
+onestep <- nanodrop18AUG %>% 
   filter(kit == 'OneStepPCRInhibitor') %>% 
   arrange(`sample-ID`)
 
@@ -130,7 +130,7 @@ Even after running samples through the Zymo OneStep PCR Inhibitor Removal Kit, T
 
 The Zymo rep responded with the following advice:
 
-> "The guanidine salts in our DNA/RNA Shield and DNA/RNA Lysis Buffer could be the reason of increased A230. We see this happening most often when small impurities (e.g., cell debris, protein aggregation) were transferred from sample processing and got stuck on the column. They would absorb buffers and release them during elution. Ways to avoid this include increasing the amount of DNA/RNA Shield used during processing, reducing sample input, and transferring only a fraction of sample (e.g.,500 µl from 800 µl) from the BashingBead tube to avoid debris. You can also further purify your existing eluted samples with either the RNA Clean & Concentrator that is on the way to you, or by following the \"Liquids/Reaction Clean-up\" procedure included in the Appendices section Quick-DNA/RNA Miniprep Plus\'s protocol."
+> "The guanidine salts in our DNA/RNA Shield and DNA/RNA Lysis Buffer could be the reason of increased A230. We see this happening most often when small impurities (e.g., cell debris, protein aggregation) were transferred from sample processing and got stuck on the column. They would absorb buffers and release them during elution. Ways to avoid this include increasing the amount of DNA/RNA Shield used during processing, reducing sample input, and transferring only a fraction of sample (e.g.,500 µl from 800 µl) from the BashingBead tube to avoid debris. You can also further purify your existing eluted samples with either the RNA Clean & Concentrator that is on the way to you, or by following the "Liquids/Reaction Clean-up" procedure included in the Appendices section Quick-DNA/RNA Miniprep Plus's protocol."
 
 ------------------------------------------------------------------------
 
@@ -143,7 +143,7 @@ I next tried to purify the RNA with the Zymo RNA Clean & Concentrator Kit:
 :   *RNA Nanodrop absorbance plot after passing Zymo DNA/RNA Quick Miniprep Plus extracted RNA samples through the Zymo RNA Clean & Concentrator Kit. Run 18AUG2023.*
 
 ```{r}
-rnaCC <- rnaNanodrop %>% 
+rnaCC <- nanodrop18AUG %>% 
           filter(kit == 'RNAClean&Concentrate')
 
 formattable(rnaCC, 
@@ -180,7 +180,7 @@ formattable(onestep,
 #| fig-cap: Nanodrop Results from RNA Clean & Concentrate
 onesamples <- onestep$`sample-ID`
 
-compare <- rnaNanodrop %>% 
+compare <- nanodrop18AUG %>% 
   filter(kit == 'RNAClean&Concentrate') %>% 
   filter(`sample-ID` %in% onesamples) %>% 
   arrange(`sample-ID`)
@@ -200,3 +200,20 @@ The RNA Clean & Concentrator improved the 260/230 ratios for samples 1Ea, 1CH2a,
 ::: {.callout-warning appearance="simple"}
 However, the 260/280 ratios are suspiciously high, making me question if phenol contamination has been made worse!
 :::
+
+---
+## RNA Clean & Concentrator wins
+
+```{r}
+nanodrop24AUG <- read_csv("nanodrop_24AUG23.csv")
+
+formattable(nanodrop24AUG, 
+              align = "l", # aligns text to the left
+              list(
+                '260-230'= salts,
+                '260-280' = proteins)
+                )
+```
+
+
+

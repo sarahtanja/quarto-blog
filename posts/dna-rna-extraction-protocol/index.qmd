@@ -262,29 +262,31 @@ D --> E[[RNA<br>  <br>tube<br>  <br>rack]]
      class C purple
 ```
 
-2.  For each sample, arrange the following 10 tubes in microcentrifuge tube racks:
+2.  For each sample, arrange the following tubes in microcentrifuge tube racks:
     1.  [**bead-bashing tube**]{style="background-color:#993399"}
 
     2.  [**nuclease-free tube for proteinase K digestion**]{style="background-color:#993399"}
 
     3.  [**nuclease-free tube**]{style="background-color:#993399"}
 
-    4.  [**DNA Spin-Away Filter (yellow) in a Collection Tube**]{style="background-color:#ff0"}
+    4.  [**DNA Spin-Away Filter (yellow) in a Collection Tube** *(Quick-DNA/RNA Miniprep Plus)*]{style="background-color:#ff0"}
 
-    5.  [**Collection Tube**]{style="background-color:#ff0"}
+    5.  [**Collection Tube** *(Quick-DNA/RNA Miniprep Plus)*]{style="background-color:#ff0"}
 
-    6.  [**FINAL nuclease-free tube for eluted DNA**]{style="background-color:#ff0"}
+    6.  [**nuclease-free tube for eluted DNA**]{style="background-color:#ff0"}
 
-    7.  [**Qubit assay tube for** $1\mu L$ **of eluted DNA**]{style="background-color:#ff0"}
+    7.  [**Qubit assay tube for** 1uL **of eluted DNA**]{style="background-color:#ff0"}
 
-    8.  [**RNA Spin-Away Filter (green) in a Collection Tube**]{style="background-color:#9f6"}
+    8.  [**RNA Spin-Away Filter (green) in a Collection Tube** *(Quick-DNA/RNA Miniprep Plus)*]{style="background-color:#9f6"}
 
-    9.  [**FINAL nuclease-free tube for eluted RNA**]{style="background-color:#9f6"}
+    9.  [**Zymo Spin IC Column in a Collection Tube** *(RNA Clean & Concentrator-5)*]{style="background-color:#9f6"}
 
-    10. [**Qubit assay tube for** $1\mu L$ **of eluted RNA**]{style="background-color:#9f6"}
+    10. [**nuclease-free tube for eluted RNA**]{style="background-color:#9f6"}
+
+    11. [**Qubit assay tube for 1uL of eluted RNA**]{style="background-color:#9f6"}
 
 ::: column-margin
-![Tubes should be laid out and labelled like this photo shown here ☝️](tube-racks.jpg){fig-alt="example of three microcentrifuge tube racks laid out and 9 labelled tubes" fig-align="center"}
+![Tubes should be laid out and labelled like this photo shown here ☝️](tube-racks.jpg){fig-alt="example of three microcentrifuge tube racks laid out with labelled tubes" fig-align="center"}
 :::
 
 ::: column-margin
@@ -295,7 +297,7 @@ Only thin-wall, clear 0.5 mL PCR tubes are appropriate for use in the Qubit® fl
 
 The intermediate tubes and qubit tubes can just be labelled with the `cryo_id`, and whether they are RNA or DNA products such as: `1Ea DNA` or `2CHb RNA`
 
-The **FINAL** tubes should be labelled with `cryo_id`, `DNA/RNA`, `extraction_id`, `date (ddMMMyy)`, & `initials`, such as:
+Any tubes that will be kept should be labelled with `cryo_id`, `DNA/RNA`, `extraction_id`, `date (ddMMMyy)`, & `initials`, such as:
 
 ```         
 1Ea
@@ -365,7 +367,7 @@ In initial extractions I only used 500uL of DNA/RNA Sheild and was advised to in
 
 -   Cap the bead-bashing tube and shake it like a Polaroid picture
 
--   Open the tube, and 'top-off' the sample with another 500uL of `DNA/RNA Shield`, bringing the total volume to 1000uL
+-   Open the tube, and 'top-off' the sample with another 1000uL of `DNA/RNA Shield`, bringing the total volume to 1500uL
 
 -   Vortex to ensure powder is fully submersed in `DNA/RNA Shield`
 
@@ -390,6 +392,8 @@ In initial extractions I only used 500uL of DNA/RNA Sheild and was advised to in
         -   50ul pro K buffer
         -   25ul proteinase K
 
+-   Vortex to mix 
+
 -   Incubate in the heat-block for 30mins at 55C
 
 -   Vortex to mix & centrifuge on max for 2mins to pellet any debris
@@ -406,7 +410,7 @@ In initial extractions I only used 500uL of DNA/RNA Sheild and was advised to in
 
 ## Purify DNA & RNA
 
-Transfer the buffered supernatent (should be a total of 700uL, which can be passed through the filter in one go) to yellow **`Spin-Away Filter`** in a **`Collection Tube`** and centrifuge
+Transfer the buffered supernatent (should be a total of 700uL, which can be passed through the filter in one go) to yellow **`Spin-Away Filter`** in a **`Collection Tube`** and centrifuge at 16,000xg for 30 sec
 
 ::: {.callout-warning appearance="simple"}
 Save The flow-through in the collection tube for RNA purification! At this step the DNA is in the yellow spin column filter and the RNA is in the flow through.
@@ -416,7 +420,7 @@ Transfer the yellow **`Spin-Away Filter`** to a new **`Collection Tube`**
 
 -   To the RNA flow-through, add 700uL (1:1) of 200-proof ethanol to the flow-through and mix by pipetting up and down 12 times
 
--   The RNA+ethanol volume is now 1,400uL. In aliquots up to 700uL, transfer the RNA sample to the green **`Zymo-Spin IIICG Column`** in a **`Collection Tube`**, centrifuge, and discard the flow-through. This step binds the RNA to the green column filter. Repeat until all RNA Sample has passed through the filter.
+-   The RNA+ethanol volume is now 1,400uL. In aliquots up to 700uL, transfer the RNA sample to the green **`Zymo-Spin IIICG Column`** in a **`Collection Tube`**, centrifuge, and discard the flow-through. Dab the rim of the collection tube with a Kim Wipe to clean off any residual flow-through. This step binds the RNA to the green column filter. Repeat until all RNA Sample has passed through the filter.
 
 > #### DNase 1 Treatment for RNA
 >
@@ -446,13 +450,12 @@ Transfer the yellow **`Spin-Away Filter`** to a new **`Collection Tube`**
 
 -   Conduct a dry spin and centrifuge at 16,000xg for 2mins to ensure complete removal of the wash buffer prior to elution[^8]
 
--   Carefully transfer the column into the FINAL nuclease-free tube labelled for containing the eluted DNA/RNA end products
+-   Carefully transfer the column into the nuclease-free tube labelled for containing the eluted DNA/RNA end products
 
 -   Add 70uL **`DNase/RNase-Free Water`** directly to the column matrix and centrifuge at 16,000xg for 30s
 
--   Place FINAL eluted DNA/RNA tubes on ice
+-   Place eluted DNA/RNA tubes on ice to continue work, or store in the -80C freezer for later
 
--   Transfer 1uL of each eluted DNA/RNA sample to their respectively labelled Qubit assay tube, and keep on ice
 
 [^7]: Slowly dispense wash buffer along the sides of the filter like pouring a heady beer down the side of a pint glass. Jerry Yu from Zymo says:
 
@@ -464,7 +467,7 @@ Transfer the yellow **`Spin-Away Filter`** to a new **`Collection Tube`**
 
 ------------------------------------------------------------------------
 
-## RNA Clean-up **WORK IN PROGRESS RESULTS UNKNOWN PROCEED WITH... EMBRACING FAILURE**
+## RNA Clean-up 
 
 ### RNA Clean & Concentrator-5
 
@@ -486,6 +489,10 @@ Transfer the yellow **`Spin-Away Filter`** to a new **`Collection Tube`**
 
 -   Conduct a dry spin and centrifuge at 16,000xg for 2mins to ensure complete removal of the wash buffer prior to elution
 
+## Qubit Prep
+
+-   Transfer 1uL of each eluted & purified DNA/RNA sample to their respectively labelled Qubit assay tube, and keep on ice to continue work, or freeze int he -80C for later
+
 ## End Products
 
 The end products are:
@@ -494,7 +501,7 @@ The end products are:
 
 -   1uL of DNA in nuclease-free water for Qubit
 
--   70ul of RNA in nuclease-free water
+-   60ul of RNA in nuclease-free water
 
 -   1uL of RNA in nuclease-free water for Qubit
 

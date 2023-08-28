@@ -192,10 +192,11 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#wash-elute" id="toc-wash-elute" class="nav-link" data-scroll-target="#wash-elute">Wash &amp; Elute</a></li>
   </ul></li>
-  <li><a href="#rna-clean-up-work-in-progress-results-unknown-proceed-with-embracing-failure" id="toc-rna-clean-up-work-in-progress-results-unknown-proceed-with-embracing-failure" class="nav-link" data-scroll-target="#rna-clean-up-work-in-progress-results-unknown-proceed-with-embracing-failure">RNA Clean-up <strong>WORK IN PROGRESS RESULTS UNKNOWN PROCEED WITH… EMBRACING FAILURE</strong></a>
+  <li><a href="#rna-clean-up" id="toc-rna-clean-up" class="nav-link" data-scroll-target="#rna-clean-up">RNA Clean-up</a>
   <ul>
   <li><a href="#rna-clean-concentrator-5" id="toc-rna-clean-concentrator-5" class="nav-link" data-scroll-target="#rna-clean-concentrator-5">RNA Clean &amp; Concentrator-5</a></li>
   </ul></li>
+  <li><a href="#qubit-prep" id="toc-qubit-prep" class="nav-link" data-scroll-target="#qubit-prep">Qubit Prep</a></li>
   <li><a href="#end-products" id="toc-end-products" class="nav-link" data-scroll-target="#end-products">End Products</a></li>
   </ul>
 </nav>
@@ -527,25 +528,26 @@ D --&gt; E[[RNA&lt;br&gt;  &lt;br&gt;tube&lt;br&gt;  &lt;br&gt;rack]]
 </div>
 </div>
 <ol start="2" type="1">
-<li>For each sample, arrange the following 10 tubes in microcentrifuge tube racks:
+<li>For each sample, arrange the following tubes in microcentrifuge tube racks:
 <ol type="1">
 <li><p><span style="background-color:#993399"><strong>bead-bashing tube</strong></span></p></li>
 <li><p><span style="background-color:#993399"><strong>nuclease-free tube for proteinase K digestion</strong></span></p></li>
 <li><p><span style="background-color:#993399"><strong>nuclease-free tube</strong></span></p></li>
-<li><p><span style="background-color:#ff0"><strong>DNA Spin-Away Filter (yellow) in a Collection Tube</strong></span></p></li>
-<li><p><span style="background-color:#ff0"><strong>Collection Tube</strong></span></p></li>
-<li><p><span style="background-color:#ff0"><strong>FINAL nuclease-free tube for eluted DNA</strong></span></p></li>
-<li><p><span style="background-color:#ff0"><strong>Qubit assay tube for</strong> <span class="math inline">\(1\mu L\)</span> <strong>of eluted DNA</strong></span></p></li>
-<li><p><span style="background-color:#9f6"><strong>RNA Spin-Away Filter (green) in a Collection Tube</strong></span></p></li>
-<li><p><span style="background-color:#9f6"><strong>FINAL nuclease-free tube for eluted RNA</strong></span></p></li>
-<li><p><span style="background-color:#9f6"><strong>Qubit assay tube for</strong> <span class="math inline">\(1\mu L\)</span> <strong>of eluted RNA</strong></span></p></li>
+<li><p><span style="background-color:#ff0"><strong>DNA Spin-Away Filter (yellow) in a Collection Tube</strong> <em>(Quick-DNA/RNA Miniprep Plus)</em></span></p></li>
+<li><p><span style="background-color:#ff0"><strong>Collection Tube</strong> <em>(Quick-DNA/RNA Miniprep Plus)</em></span></p></li>
+<li><p><span style="background-color:#ff0"><strong>nuclease-free tube for eluted DNA</strong></span></p></li>
+<li><p><span style="background-color:#ff0"><strong>Qubit assay tube for</strong> 1uL <strong>of eluted DNA</strong></span></p></li>
+<li><p><span style="background-color:#9f6"><strong>RNA Spin-Away Filter (green) in a Collection Tube</strong> <em>(Quick-DNA/RNA Miniprep Plus)</em></span></p></li>
+<li><p><span style="background-color:#9f6"><strong>Zymo Spin IC Column in a Collection Tube</strong> <em>(RNA Clean &amp; Concentrator-5)</em></span></p></li>
+<li><p><span style="background-color:#9f6"><strong>nuclease-free tube for eluted RNA</strong></span></p></li>
+<li><p><span style="background-color:#9f6"><strong>Qubit assay tube for 1uL of eluted RNA</strong></span></p></li>
 </ol></li>
 </ol>
 
 <div class="no-row-height column-margin column-container"><div class="">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="tube-racks.jpg" class="img-fluid figure-img" alt="example of three microcentrifuge tube racks laid out and 9 labelled tubes"></p>
+<p><img src="tube-racks.jpg" class="img-fluid figure-img" alt="example of three microcentrifuge tube racks laid out with labelled tubes"></p>
 <p></p><figcaption class="figure-caption">Tubes should be laid out and labelled like this photo shown here ☝️</figcaption><p></p>
 </figure>
 </div>
@@ -554,7 +556,7 @@ D --&gt; E[[RNA&lt;br&gt;  &lt;br&gt;tube&lt;br&gt;  &lt;br&gt;rack]]
 <p><strong>The qubit tube should only be labelled on the top; the sides should be clear so that the qubit fluorescence can be read without impedance.</strong></p>
 </div></div>
 <p>The intermediate tubes and qubit tubes can just be labelled with the <code>cryo_id</code>, and whether they are RNA or DNA products such as: <code>1Ea DNA</code> or <code>2CHb RNA</code></p>
-<p>The <strong>FINAL</strong> tubes should be labelled with <code>cryo_id</code>, <code>DNA/RNA</code>, <code>extraction_id</code>, <code>date (ddMMMyy)</code>, &amp; <code>initials</code>, such as:</p>
+<p>Any tubes that will be kept should be labelled with <code>cryo_id</code>, <code>DNA/RNA</code>, <code>extraction_id</code>, <code>date (ddMMMyy)</code>, &amp; <code>initials</code>, such as:</p>
 <pre><code>1Ea
 ex1 SST
 RNA
@@ -631,7 +633,7 @@ RNA
 <li><p>Use chilled, <a href="#sterilize">sterilized</a> scoopula and a sterilized chilled mini-funnel to transfer the sample powder to its correspondingly labelled <a href="https://www.zymoresearch.com/collections/lysis-tubes/products/zr-bashingbead-lysis-tubes-0-1-0-5-mm">bead bashing tube</a></p></li>
 <li><p>Aim to transfer 500uL of powdered volume (take up about 1/4th of the 2mL tube, or an equal volume as the beads)</p></li>
 <li><p>Cap the bead-bashing tube and shake it like a Polaroid picture</p></li>
-<li><p>Open the tube, and ‘top-off’ the sample with another 500uL of <code>DNA/RNA Shield</code>, bringing the total volume to 1000uL</p></li>
+<li><p>Open the tube, and ‘top-off’ the sample with another 1000uL of <code>DNA/RNA Shield</code>, bringing the total volume to 1500uL</p></li>
 <li><p>Vortex to ensure powder is fully submersed in <code>DNA/RNA Shield</code></p></li>
 <li><p>Set bead-bashing tubes in Mortexer and homogenize at high speed for <strong>40 minutes</strong></p></li>
 </ul>
@@ -652,6 +654,7 @@ RNA
 <li>25ul proteinase K</li>
 </ul></li>
 </ul></li>
+<li><p>Vortex to mix</p></li>
 <li><p>Incubate in the heat-block for 30mins at 55C</p></li>
 <li><p>Vortex to mix &amp; centrifuge on max for 2mins to pellet any debris</p></li>
 <li><p>Transfer 350uL of the cleared supernatent to a new 1.5mL nuclease-free tube, making sure not to disturb any debris at the bottom of the tube</p></li>
@@ -666,7 +669,7 @@ RNA
 </section>
 <section id="purify-dna-rna" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="purify-dna-rna">Purify DNA &amp; RNA</h2>
-<p>Transfer the buffered supernatent (should be a total of 700uL, which can be passed through the filter in one go) to yellow <strong><code>Spin-Away Filter</code></strong> in a <strong><code>Collection Tube</code></strong> and centrifuge</p>
+<p>Transfer the buffered supernatent (should be a total of 700uL, which can be passed through the filter in one go) to yellow <strong><code>Spin-Away Filter</code></strong> in a <strong><code>Collection Tube</code></strong> and centrifuge at 16,000xg for 30 sec</p>
 <div class="callout-warning callout callout-style-simple">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -680,7 +683,7 @@ RNA
 <p>Transfer the yellow <strong><code>Spin-Away Filter</code></strong> to a new <strong><code>Collection Tube</code></strong></p>
 <ul>
 <li><p>To the RNA flow-through, add 700uL (1:1) of 200-proof ethanol to the flow-through and mix by pipetting up and down 12 times</p></li>
-<li><p>The RNA+ethanol volume is now 1,400uL. In aliquots up to 700uL, transfer the RNA sample to the green <strong><code>Zymo-Spin IIICG Column</code></strong> in a <strong><code>Collection Tube</code></strong>, centrifuge, and discard the flow-through. This step binds the RNA to the green column filter. Repeat until all RNA Sample has passed through the filter.</p></li>
+<li><p>The RNA+ethanol volume is now 1,400uL. In aliquots up to 700uL, transfer the RNA sample to the green <strong><code>Zymo-Spin IIICG Column</code></strong> in a <strong><code>Collection Tube</code></strong>, centrifuge, and discard the flow-through. Dab the rim of the collection tube with a Kim Wipe to clean off any residual flow-through. This step binds the RNA to the green column filter. Repeat until all RNA Sample has passed through the filter.</p></li>
 </ul>
 <blockquote class="blockquote">
 <h4 id="dnase-1-treatment-for-rna" class="anchored">DNase 1 Treatment for RNA</h4>
@@ -704,10 +707,9 @@ DNA\, Digestion\, Buffer\, volume  = 75 \mu L * (no.\, of\, sample\, preps)
 <li><p>Add 700uL of <strong><code>DNA/RNA Wash Buffer</code></strong> <a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>to each column and centrifuge at 16,000xg for 30s, then discard the flow-through</p></li>
 <li><p>Add 400uL of <strong><code>DNA/RNA Wash Buffer</code></strong> to each column and centrifuge at 16,000xg for 2mins to ensure complete removal of the wash buffer, then discard the flow-through</p></li>
 <li><p>Conduct a dry spin and centrifuge at 16,000xg for 2mins to ensure complete removal of the wash buffer prior to elution<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></p></li>
-<li><p>Carefully transfer the column into the FINAL nuclease-free tube labelled for containing the eluted DNA/RNA end products</p></li>
+<li><p>Carefully transfer the column into the nuclease-free tube labelled for containing the eluted DNA/RNA end products</p></li>
 <li><p>Add 70uL <strong><code>DNase/RNase-Free Water</code></strong> directly to the column matrix and centrifuge at 16,000xg for 30s</p></li>
-<li><p>Place FINAL eluted DNA/RNA tubes on ice</p></li>
-<li><p>Transfer 1uL of each eluted DNA/RNA sample to their respectively labelled Qubit assay tube, and keep on ice</p></li>
+<li><p>Place eluted DNA/RNA tubes on ice to continue work, or store in the -80C freezer for later</p></li>
 </ul>
 <div class="no-row-height column-margin column-container"><li id="fn7"><p><sup>7</sup>&nbsp;Slowly dispense wash buffer along the sides of the filter like pouring a heady beer down the side of a pint glass. Jerry Yu from Zymo says:</p>
 <blockquote class="blockquote">
@@ -720,8 +722,8 @@ DNA\, Digestion\, Buffer\, volume  = 75 \mu L * (no.\, of\, sample\, preps)
 </li></div><hr>
 </section>
 </section>
-<section id="rna-clean-up-work-in-progress-results-unknown-proceed-with-embracing-failure" class="level2">
-<h2 class="anchored" data-anchor-id="rna-clean-up-work-in-progress-results-unknown-proceed-with-embracing-failure">RNA Clean-up <strong>WORK IN PROGRESS RESULTS UNKNOWN PROCEED WITH… EMBRACING FAILURE</strong></h2>
+<section id="rna-clean-up" class="level2">
+<h2 class="anchored" data-anchor-id="rna-clean-up">RNA Clean-up</h2>
 <section id="rna-clean-concentrator-5" class="level3">
 <h3 class="anchored" data-anchor-id="rna-clean-concentrator-5">RNA Clean &amp; Concentrator-5</h3>
 <ul>
@@ -737,13 +739,19 @@ DNA\, Digestion\, Buffer\, volume  = 75 \mu L * (no.\, of\, sample\, preps)
 </ul>
 </section>
 </section>
+<section id="qubit-prep" class="level2">
+<h2 class="anchored" data-anchor-id="qubit-prep">Qubit Prep</h2>
+<ul>
+<li>Transfer 1uL of each eluted &amp; purified DNA/RNA sample to their respectively labelled Qubit assay tube, and keep on ice to continue work, or freeze int he -80C for later</li>
+</ul>
+</section>
 <section id="end-products" class="level2">
 <h2 class="anchored" data-anchor-id="end-products">End Products</h2>
 <p>The end products are:</p>
 <ul>
 <li><p>70ul of DNA in nuclease-free water</p></li>
 <li><p>1uL of DNA in nuclease-free water for Qubit</p></li>
-<li><p>70ul of RNA in nuclease-free water</p></li>
+<li><p>60ul of RNA in nuclease-free water</p></li>
 <li><p>1uL of RNA in nuclease-free water for Qubit</p></li>
 </ul>
 <p>Place these vials on ice and proceed with Nanodrop &amp; Qubit quantification: - <a href="">Nanodrop Protocol</a> - <a href="">Qubit RNA Broad Range Protocol</a></p>

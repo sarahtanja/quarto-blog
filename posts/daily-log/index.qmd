@@ -16,14 +16,40 @@ citation-location: margin
 
 ##### 29-AUG-2023
 
+-   Strategy for the next 2 weeks before leaving for France Rugby World Cup:
+
+    -   new sterilizer and qubit won't arrive in time...
+
+    -   DNA Clean & Concentrator likely wont arrive in time
+
+    -   We'll have to do it without... for another 20 sub samples
+
+    -   I want to send RNA and DNA for sequencing on Sept 7th
+
+    -   I want to send at least 20 samples for TagSeq to UT Austin (cheaper rate in 96 well plate)
+
+    -   Elute twice as much so we have a full set of backups (at least 60uL for each sample!)
+
+    -   Save the bead bash tubes & proteinase K tubes too! Double backups
+
+    -   I can run one kit per day with 10 samples, and then 8 samples, 1 blank, 1 mock
+
+    -   Total of 18 new RNA samples & DNA samples... I want to explore differences in lower PAE treatments
+
+    -   So I have to identify the 18 samples
+
+    -   For RNA, I can send in a few of the best quality samples from the first round clean up just to see if they pass library prep. Just plate and send them all together.
+
+    -   Will mim_c get back to me soon enough? I can always bring them the samples to hold onto until they're ready...
+
+```{=html}
+<!-- -->
+```
 -   Submitted abstract for SICB! JPG and SR listed as co-authors. Section Invertebrate Zoology, topic microbiome. Dates Jan 2-6 Seattle. Title "Corals in a hot plastic ocean: How heat and phthalates shift a Montipora capitata coral microbiome". Talk, backup poster. ID 1230.
 
     -   <div>
 
-        > Corals survive in nutrient poor waters by relying on the complex relationship with
-        > their diverse and abundant endosymbionts and microbiomes. Through their
-        > symbiotic partnerships, they sustain 25% of the world's marine biodiversity and
-        > are vital to economic and food security for hundreds of millions of people. Unfortunately, coral reefs are in ecological crisis. Climate change and ocean plastic pollution threaten reef-building corals and the global services worth \$2.7 trillion USD they provide. Even under an ambitious emissions reduction scenario, 100% of coral reefs are projected to experience annual severe bleaching by 2045; and every year, 4.8 to 12.7 million tons of plastic waste enters the oceans. In this study, we examine the effects of thermal stress and plastic-additives known as phthalates on the *Montipora capitata* microbiome. Phthalates are known for reproductive and acute aquatic toxicity even at low concentrations. Previous research shows that phthalate-exposed plants, bacteria, and algae display impaired growth, reduced photosynthesis, and disturbed microbial community function. In corals, very little is known about the effects of phthalates on the microbiome. Using a multiple stressor experiment, this study provides new insight on the impacts of phthalate pollution on coral microbial communities in the context of ocean warming. Managing coral reefs for resilience to thermal stress and reducing pollution is paramount to their conservation, and microbial communities are a key part of coral resilience.
+        > Corals survive in nutrient poor waters by relying on the complex relationship with their diverse and abundant endosymbionts and microbiomes. Through their symbiotic partnerships, they sustain 25% of the world's marine biodiversity and are vital to economic and food security for hundreds of millions of people. Unfortunately, coral reefs are in ecological crisis. Climate change and ocean plastic pollution threaten reef-building corals and the global services worth \$2.7 trillion USD they provide. Even under an ambitious emissions reduction scenario, 100% of coral reefs are projected to experience annual severe bleaching by 2045; and every year, 4.8 to 12.7 million tons of plastic waste enters the oceans. In this study, we examine the effects of thermal stress and plastic-additives known as phthalates on the *Montipora capitata* microbiome. Phthalates are known for reproductive and acute aquatic toxicity even at low concentrations. Previous research shows that phthalate-exposed plants, bacteria, and algae display impaired growth, reduced photosynthesis, and disturbed microbial community function. In corals, very little is known about the effects of phthalates on the microbiome. Using a multiple stressor experiment, this study provides new insight on the impacts of phthalate pollution on coral microbial communities in the context of ocean warming. Managing coral reefs for resilience to thermal stress and reducing pollution is paramount to their conservation, and microbial communities are a key part of coral resilience.
 
         </div>
 

@@ -14,6 +14,19 @@ citation-location: margin
 
 ## August 2023
 
+##### 29-AUG-2023
+
+-   Submitted abstract for SICB! JPG and SR listed as co-authors. Section Invertebrate Zoology, topic microbiome. Dates Jan 2-6 Seattle. Title "Corals in a hot plastic ocean: How heat and phthalates shift a Montipora capitata coral microbiome". Talk, backup poster. ID 1230.
+
+    -   <div>
+
+        > Corals survive in nutrient poor waters by relying on the complex relationship with
+        > their diverse and abundant endosymbionts and microbiomes. Through their
+        > symbiotic partnerships, they sustain 25% of the world's marine biodiversity and
+        > are vital to economic and food security for hundreds of millions of people. Unfortunately, coral reefs are in ecological crisis. Climate change and ocean plastic pollution threaten reef-building corals and the global services worth \$2.7 trillion USD they provide. Even under an ambitious emissions reduction scenario, 100% of coral reefs are projected to experience annual severe bleaching by 2045; and every year, 4.8 to 12.7 million tons of plastic waste enters the oceans. In this study, we examine the effects of thermal stress and plastic-additives known as phthalates on the *Montipora capitata* microbiome. Phthalates are known for reproductive and acute aquatic toxicity even at low concentrations. Previous research shows that phthalate-exposed plants, bacteria, and algae display impaired growth, reduced photosynthesis, and disturbed microbial community function. In corals, very little is known about the effects of phthalates on the microbiome. Using a multiple stressor experiment, this study provides new insight on the impacts of phthalate pollution on coral microbial communities in the context of ocean warming. Managing coral reefs for resilience to thermal stress and reducing pollution is paramount to their conservation, and microbial communities are a key part of coral resilience.
+
+        </div>
+
 ##### 17-AUG-2023
 
 -   Are we sure we want to try TriZol for RNA? It isn't a phenol-free kit like the Quick DNA/RNA Miniprep, and we have RNA, we just need to purify it. Tomorrow lets run all eluted RNA through RNA Clean & Concentrator, and check it on Nanodrop! LFG.
@@ -70,7 +83,7 @@ citation-location: margin
 
 -   [Integrating QIIME2 and R for data viz](https://forum.qiime2.org/t/tutorial-integrating-qiime2-and-r-for-data-visualization-and-analysis-using-qiime2r/4121)
 
--   RStudio\>Project Options\> Python\> Python interpreter
+-   RStudio>Project Options> Python> Python interpreter
 
 -   [Using Python with the RStudio IDE](https://support.posit.co/hc/en-us/articles/1500007929061-Using-Python-with-the-RStudio-IDE)
 
@@ -337,7 +350,7 @@ dilute <- function(C1, C2) {
     -   DNA, ITS2 to measure symbiont to host cell ratios for 'Patterns of bleaching and recovery of Montipora capitata in Kaneohe Bay' hosted at zenodo [here](https://zenodo.org/record/53231#.ZDWE0HbMKTQ) https://zenodo.org/record/53231#.ZDWE0HbMKTQ -RNAseq resources from A. Huffmeyer
 
         -   https://ahuffmyer.github.io/ASH_Putnam_Lab_Notebook/E5-Deep-Dive-RNAseq-Count-Matrix-Analysis/
-        -   https://github.com/AHuffmyer/EarlyLifeHistory_Energetics \> Here is the spreadsheet of my NCBI accession numbers for my sequences: https://docs.google.com/spreadsheets/d/1qDGGpLFcmoO-fIFOPSUhPcxi4ErXIq2PkQbxvCCzI40/edit?pli=1#gid=457642286 If you look at the Mcapitata Ontogeny Timeseries tab it'll have all the SRR numbers you will need to download the TagSeq files. Instead of downloading the full data set you could just pick like three lifestages for a test comparison - AH
+        -   https://github.com/AHuffmyer/EarlyLifeHistory_Energetics > Here is the spreadsheet of my NCBI accession numbers for my sequences: https://docs.google.com/spreadsheets/d/1qDGGpLFcmoO-fIFOPSUhPcxi4ErXIq2PkQbxvCCzI40/edit?pli=1#gid=457642286 If you look at the Mcapitata Ontogeny Timeseries tab it'll have all the SRR numbers you will need to download the TagSeq files. Instead of downloading the full data set you could just pick like three lifestages for a test comparison - AH
 
 ##### 10-APR-2023
 

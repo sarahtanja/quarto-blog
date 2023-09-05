@@ -130,7 +130,7 @@ Even after running samples through the Zymo OneStep PCR Inhibitor Removal Kit, T
 
 The Zymo rep responded with the following advice:
 
-> "The guanidine salts in our DNA/RNA Shield and DNA/RNA Lysis Buffer could be the reason of increased A230. We see this happening most often when small impurities (e.g., cell debris, protein aggregation) were transferred from sample processing and got stuck on the column. They would absorb buffers and release them during elution. Ways to avoid this include increasing the amount of DNA/RNA Shield used during processing, reducing sample input, and transferring only a fraction of sample (e.g.,500 µl from 800 µl) from the BashingBead tube to avoid debris. You can also further purify your existing eluted samples with either the RNA Clean & Concentrator that is on the way to you, or by following the "Liquids/Reaction Clean-up" procedure included in the Appendices section Quick-DNA/RNA Miniprep Plus's protocol."
+> "The guanidine salts in our DNA/RNA Shield and DNA/RNA Lysis Buffer could be the reason of increased A230. We see this happening most often when small impurities (e.g., cell debris, protein aggregation) were transferred from sample processing and got stuck on the column. They would absorb buffers and release them during elution. Ways to avoid this include increasing the amount of DNA/RNA Shield used during processing, reducing sample input, and transferring only a fraction of sample (e.g.,500 µl from 800 µl) from the BashingBead tube to avoid debris. You can also further purify your existing eluted samples with either the RNA Clean & Concentrator that is on the way to you, or by following the"Liquids/Reaction Clean-up" procedure included in the Appendices section Quick-DNA/RNA Miniprep Plus's protocol."
 
 ------------------------------------------------------------------------
 
@@ -197,11 +197,12 @@ formattable(compare,
 The RNA Clean & Concentrator improved the 260/230 ratios for samples 1Ea, 1CH2a, 1CA2a. 1PA2a & 1PH1a which had already been passed through the Zymo OneStep PCR Inhibitor Removal Kit.
 :::
 
-::: {.callout-warning appearance="simple"}
-However, the 260/280 ratios are suspiciously high, making me question if phenol contamination has been made worse!
+::: {.callout-tip appearance="simple"}
+The 260/280 ratios are suspiciously high, making me wonder about phenol contamination\... However, the Zymo Kit is phenol-free, so the only source of phenol would be from the samples themselves. We'll find out for sure when we send in the purified samples for another attempt at TagSeq Library Prep by UT GSAF.
 :::
 
----
+------------------------------------------------------------------------
+
 ## RNA Clean & Concentrator wins
 
 ```{r}
@@ -214,6 +215,3 @@ formattable(nanodrop24AUG,
                 '260-280' = proteins)
                 )
 ```
-
-
-

@@ -12,7 +12,93 @@ reference-location: margin
 citation-location: margin
 ---
 
+## September 2023
+
+##### 05-SEP-2023
+
+-   WSN newsletter says abstracts close Sep 29th 2023
+
+-   5 min lightning talk or 15 minute talk
+
+-   [WSN presenter guidelines](https://www.wsn-online.org/presenter-guidelines/)
+
+-   Abstract Guidelines
+
+```         
+The abstract should briefly introduce the project, the goals, the results, and the significance
+
+The presentation title should have no more than 130 characters max (including spaces) in ALL UPPERCASE
+
+The abstract should have no more than 1600 characters max (including spaces); use standard HTML tags for special formatting (e.g., \<b\>**bold text**\</b\>, \<i\>*italic text*\</i\>, etc.)
+```
+
+##### 01-SEP-2023
+
+-   crashed my bike and badly injured my hands... can't do lab work 😭
+
+-   met with UW mim_c Steven Salipantes
+
+    -   I need to send him a sample list for a final quote, but should be \$2K for \~100-120 samples (cost of sequencing lane + reagents) .. averages to \~\$20/sample, much better than Mr. DNA \~\$85/sample, plus no shipping charges.
+
+    -   bring all 100-120 samples together
+
+    -   1.5mL microcentrifuge tubes
+
+    -   50uL volume , 20ng/uL quantity concentration
+
 ## August 2023
+
+##### 31-AUG-2023
+
+-   purchased additional kits, qubit assays, tubes, etc. to spend down Hall Grant
+
+-   received Qubit and UV-C Sterilizer!
+
+-   extracted:
+
+    -   mock
+
+    -   blank
+
+    -   4-LA2a
+
+    -   1-HH2a
+
+    -   2-HH2a
+
+    -   3-HA2a
+
+    -   3-MA2a
+
+    -   1-Ha2a
+
+    -   4-MA2a
+
+    -   3-HA2a
+
+##### 29-AUG-2023
+
+-   submitted SICB abstract
+
+-   submitted Kip's capstone proposal to Greg Jensen
+
+##### 28-AUG-2023
+
+-   Look into the [Margaret A. Davidson Graduate Fellowship](https://coast.noaa.gov/nerrs/research/davidson-fellowship.html)
+
+-   Wrote abstract for [SICB](https://sicb.org/) , Seattle Jan 2-6 ... Deadline is Aug 29th!
+
+-   Met with UW mim_c Kyle Asfahl
+
+-   balanced Hall budget, have \~\$5K left to spend
+
+-   Michael Shriever reset medusaFTIR and downloaded Nanodrop software to it
+
+-   Take Jeremy's samples out of freezer to thaw at 4PM
+
+##### 24-AUG-2023
+
+-   Trial with 2 ambient samples of modified extraction protocol and RNA Clean & Concentrator. I did 2 samples because I had a kit that had 2 preps left over. Most of the time spent is in lab bench sterilizing, prepping, labelling, getting ice! Which takes literally a 30 minute hike across campus... But I started at 930AM and finished with Qubit in the FTR Roberts Lab by 4PM. With 2 samples! Extractions take ALL DAY.
 
 ##### 17-AUG-2023
 

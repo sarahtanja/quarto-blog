@@ -42,7 +42,7 @@ This protocol follows the Zymo Research [*Quick*-DNA/RNA Mininprep Plus Kit Inst
 
 ### Biological Sample Info
 
-The samples I am working with are liquid-nitrogen snap-frozen \~3cm *Montipora capitata* coral fragments held at -80°C, in 1.5mL cryovials. They samples are fragments of coral that had been exposed to the multiple stressors of thermal stress and phthalate pollution in 20mL mesocosms for 48 hours.
+The samples I am working with are liquid-nitrogen snap-frozen \~3cm *Montipora capitata* coral fragments held at -80°C, in 1.5mL cryovials. The samples are fragments of coral that had been exposed to the multiple stressors of thermal stress and phthalate pollution in 20mL mesocosms for 48 hours.
 
 ::: column-margin
 ![\~1.5cm Fragments of *M. capitata* coral cut and prepped for inserting into 1.5mL cryovials and flash freezing in liquid-nitrogen](fragment-cull.jpg)
@@ -54,31 +54,16 @@ The samples I am working with are liquid-nitrogen snap-frozen \~3cm *Montipora c
 
 ### Materials List
 
-#### *Extraction Kit*
+#### *Kits & Tubes*
 
 -   [ ] Zymo Research [Quick-DNA/RNA Miniprep Plus Kit](https://www.zymoresearch.com/products/quick-dna-rna-miniprep-plus-kit) (50 prep D7003, or 10 prep D7003T) *1 prep = 1 sample that results in DNA in one tube, and RNA in another*
-    -   [ ] DNA/RNA Lysis Buffer
-    -   [ ] DNA/RNA Prep Buffer
-    -   [ ] DNase/RNase-Free Water
-    -   [ ] DNase I2 (lyophilized... aka freeze-dried)
-    -   [ ] DNA Digestion Buffer
-    -   [ ] DNA/RNA Shield (2X concentrate)
-    -   [ ] PK Digestion Buffer
-    -   [ ] Proteinase K3 (lyophilized... aka freeze-dried)
-    -   [ ] Proteinase K3 Storage Buffer
-    -   [ ] Spin-Away Filters
-    -   [ ] Zymo-Spin IIICG Columns
-    -   [ ] Collection Tubes
 -   [ ] [ZR BashingBead Lysis 2mL Tubes with 0.1 & 0.5mm beads](https://www.zymoresearch.com/collections/lysis-tubes/products/zr-bashingbead-lysis-tubes-0-1-0-5-mm), 1 per prep
 -   [ ] [DNase/RNase-Free Tubes](https://www.zymoresearch.com/products/dnase-rnase-free-tubes), 4 per prep (plus extras)
-
-#### *RNA Clean & Concentrator*
-
 -   [ ] [RNA Clean & Concentrator-5, DNase not Included](https://www.zymoresearch.com/products/rna-clean-concentrator-5?gad=1&gclid=Cj0KCQjw3JanBhCPARIsAJpXTx6_HqFIKQUjYO9E6qR9e9s4gPbpSk6wIvu14hZOfUxQJ3I6kISe2bgaAtTxEALw_wcB)[^2]
 
 [^2]: [RNA Clean & Concentrator-5](https://urldefense.com/v3/__https://www.zymoresearch.com/products/rna-clean-concentrator-5__;!!K-Hz7m0Vt54!hR2-lkKEDNSp8jnMNOSVR-eH6FDvAmxFQ8SAc6nqkmfQy-HeMxMt7PXcmGztye4mcxtq1kbGQCmqcA$) is used to further clean-up and concentrate your extracted RNA samples of low purity readings
 
-#### *Microbiome Standards*
+#### *Standards*
 
 -   [ ] [ZymoBIOMICS Microbial Community Standard](https://www.zymoresearch.com/collections/zymobiomics-microbial-community-standards/products/zymobiomics-microbial-community-standard)[^3], 10 preps
 -   [ ] [ZymoBIOMICS Microbial Community DNA Standard](https://www.zymoresearch.com/collections/zymobiomics-microbial-community-standards/products/zymobiomics-microbial-community-dna-standard), 200ng
@@ -164,7 +149,7 @@ See ['Randomize Sample Processing'](https://github.com/sarahtanja/coral-DNA-RNA-
 :::
 
 ::: {.callout-tip appearance="simple"}
-Think about how many samples you can process at once, and your kit, centrifuge, and homogenizer capacity. You should also make sure to include a blank and a mock community with each batch of extractions.
+Think about how many samples you can process at once, and your kit, centrifuge, and homogenizer capacity. You should also make sure to include a blank and a mock community for downstream analysis. 1 blank and 1 mock community extraction per analysis will suffice for a study like this one, which is focusing on the differences between treatments (and not focusing on the absolute numbers of bacteria in the samples)
 :::
 
 ## Lab Setup
@@ -267,7 +252,7 @@ D --> E[[RNA<br>  <br>tube<br>  <br>rack]]
 
     2.  [**nuclease-free tube for proteinase K digestion**]{style="background-color:#993399"}
 
-    3.  [**nuclease-free tube**]{style="background-color:#993399"}
+    3.  [**nuclease-free tube for addition of Lysis Buffer**]{style="background-color:#993399"}
 
     4.  [**DNA Spin-Away Filter (yellow) in a Collection Tube** *(Quick-DNA/RNA Miniprep Plus)*]{style="background-color:#ff0"}
 
@@ -275,15 +260,17 @@ D --> E[[RNA<br>  <br>tube<br>  <br>rack]]
 
     6.  [**nuclease-free tube for eluted DNA**]{style="background-color:#ff0"}
 
-    7.  [**Qubit assay tube for** 1uL **of eluted DNA**]{style="background-color:#ff0"}
+    7.  [**Qubit assay tube for 1uL of eluted DNA**]{style="background-color:#ff0"}
 
     8.  [**RNA Spin-Away Filter (green) in a Collection Tube** *(Quick-DNA/RNA Miniprep Plus)*]{style="background-color:#9f6"}
 
-    9.  [**Zymo Spin IC Column in a Collection Tube** *(RNA Clean & Concentrator-5)*]{style="background-color:#9f6"}
+    9.  [**nuclease-free tube for eluted RNA**]{style="background-color:#9f6"}
 
-    10. [**nuclease-free tube for eluted RNA**]{style="background-color:#9f6"}
+    10. [**Zymo Spin IC Column in a Collection Tube** *(RNA Clean & Concentrator-5)*]{style="background-color:#9f6"}
 
-    11. [**Qubit assay tube for 1uL of eluted RNA**]{style="background-color:#9f6"}
+    11. [**nuclease-free tube for eluted purified RNA**]{style="background-color:#9f6"}
+
+    12. [**Qubit assay tube for 1uL of eluted RNA**]{style="background-color:#9f6"}
 
 ::: column-margin
 ![Tubes should be laid out and labelled like this photo shown here ☝️](tube-racks.jpg){fig-alt="example of three microcentrifuge tube racks laid out with labelled tubes" fig-align="center"}
@@ -392,7 +379,7 @@ In initial extractions I only used 500uL of DNA/RNA Sheild and was advised to in
         -   50ul pro K buffer
         -   25ul proteinase K
 
--   Vortex to mix 
+-   Vortex to mix
 
 -   Incubate in the heat-block for 30mins at 55C
 
@@ -456,7 +443,6 @@ Transfer the yellow **`Spin-Away Filter`** to a new **`Collection Tube`**
 
 -   Place eluted DNA/RNA tubes on ice to continue work, or store in the -80C freezer for later
 
-
 [^7]: Slowly dispense wash buffer along the sides of the filter like pouring a heady beer down the side of a pint glass. Jerry Yu from Zymo says:
 
     > "You are correct with the beer analogy. By slowly dispensing wash buffer along the inner radius of the column, you can rinse off salts/residuals from previous spins, so future spins will be cleaner."
@@ -467,7 +453,7 @@ Transfer the yellow **`Spin-Away Filter`** to a new **`Collection Tube`**
 
 ------------------------------------------------------------------------
 
-## RNA Clean-up 
+## RNA Clean-up
 
 ### RNA Clean & Concentrator-5
 

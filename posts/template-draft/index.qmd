@@ -13,14 +13,6 @@ reference-location: margin
 citation-location: margin
 ---
 
-# Heading 1
+[some *citrine* text]{style="color:#E4D00A"} [This text is highlighted in citrine.]{style="background-color:#E4D00A"}
 
-Some executable code.
-
-```{r}
-1 + 1
-```
-
-## Heading 2
-
-### Heading 3
+[some *pistachio* text]{style="color:#93C572"} [This text is highlighted in pistachio.]{style="background-color:#93C572"}

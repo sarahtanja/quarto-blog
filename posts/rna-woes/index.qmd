@@ -32,6 +32,33 @@ knitr::opts_chunk$set(
 #install.packages("dplyr")
 #install.packages("formattable")
 #install.packages("tidyverse")
+
+library(data.table)
+library(dplyr)
+library(formattable)
+library(tidyverse)
+
+customGreen0 = "#DeF7E9"
+customGreen = "#71CA97"
+customRed = "#ff7f7f"
+customOrange = "#fda172"
+
+# formattable functions
+salts <- formatter("span",
+  style = x ~ style("font-weight" = ifelse(x > 2.0, "bold", NA),
+                    "background-color" = ifelse(x > 2.2, customGreen0,
+                                                ifelse(x >= 2.0 & x <= 2.2, customGreen,
+                                                       ifelse(x < 2.0, customRed, "inherit")))
+                    ))
+
+proteins <- formatter("span",
+  style = x ~ style("font-weight" = ifelse(x > 1.8, "bold", NA),
+                    "background-color" = ifelse(x > 2.0, customGreen0,
+                                                ifelse(x >= 1.8 & x <= 2.0, customGreen,
+                                                       ifelse(x < 1.8, customRed, "inherit")))
+                    ))
+
+
 ```
 
 ## So your samples failed library prep ... 😰
@@ -70,39 +97,8 @@ Nanodrop purity targets[^2]:
 
 I first tried purifying sample RNA using the [Zymo OneStep PCR Inhibitor Removal Kit](https://www.zymoresearch.com/collections/onestep-pcr-inhibitor-removal-kits) on a subset of the samples.
 
-```{r include packages}
-library(data.table)
-library(dplyr)
-library(formattable)
-library(tidyverse)
-```
-
 ```{r load in data}
 nanodrop18AUG <- read_csv("nanodrop_18AUG23.csv")
-```
-
-```{r custom colors}
-customGreen0 = "#DeF7E9"
-customGreen = "#71CA97"
-customRed = "#ff7f7f"
-customOrange = "#fda172"
-```
-
-```{r formattable functions}
-salts <- formatter("span",
-  style = x ~ style("font-weight" = ifelse(x > 2.0, "bold", NA),
-                    "background-color" = ifelse(x > 2.2, customGreen0,
-                                                ifelse(x >= 2.0 & x <= 2.2, customGreen,
-                                                       ifelse(x < 2.0, customRed, "inherit")))
-                    ))
-
-proteins <- formatter("span",
-  style = x ~ style("font-weight" = ifelse(x > 1.8, "bold", NA),
-                    "background-color" = ifelse(x > 2.0, customGreen0,
-                                                ifelse(x >= 1.8 & x <= 2.0, customGreen,
-                                                       ifelse(x < 1.8, customRed, "inherit")))
-                    ))
-
 ```
 
 I followed the kit instructions, and assessed the samples for purity using a Nanodrop.
@@ -203,7 +199,14 @@ The 260/280 ratios are suspiciously high, making me wonder about phenol contamin
 
 ------------------------------------------------------------------------
 
-## RNA Clean & Concentrator wins
+## RNA Clean & Concentrator follow-up tests
+
+#### 24-AUG-2023
+
+**Samples:**
+
+-   10-Aa
+-   6-Aa
 
 ```{r}
 nanodrop24AUG <- read_csv("nanodrop_24AUG23.csv")
@@ -215,3 +218,40 @@ formattable(nanodrop24AUG,
                 '260-280' = proteins)
                 )
 ```
+
+#### 31-AUG-2023
+
+::: {.callout-warning appearance="simple"}
+*In this extraction, I accidentally eluted the RNA into the collection tube instead of a nuclease free tube in the RNA Clean & Concentrator elution step. This might have contaminated the eluted RNA, so I took all 10 samples and ran them through another round of RNA Clean & Concentrator prior to quantification on Nanodrop & Qubit.*
+:::
+
+**Samples:**
+
+-   mock
+-   blank
+-   4-LA2a
+-   1-HH2a
+-   2-HH2a
+-   3-HA2a
+-   3-MA2a
+-   1-HA2a
+-   4-MA2a
+-   3-HH2a
+
+```{r}
+nanodrop31AUG <- read_csv("31aug23_drop_table.csv")
+
+formattable(nanodrop31AUG, 
+              align = "l", # aligns text to the left
+              list(
+                '260/230'= salts,
+                '260/280' = proteins)
+                )
+
+```
+
+![RNA Nanodrop absorbance plots after conducting modified extraction protocol and passing samples through two rounds of RNA Clean & Concentrator](31aug23_drop_plots.png){fig-alt="Plots of RNA nucleic acid absorbance spectra for 10 samples"}
+
+::: {.callout-important appearance="simple"}
+The absorbance spectra show that samples **4-LA2a**, **3-MA2a** & **3-HA2a** have salts contamination and **3-HA2a** shows protein contamination. In the table they have 260/280 and 260/230 values below the desired targets. The other 5 RNA samples seem to pass the contamination check... as far as we can tell....
+:::

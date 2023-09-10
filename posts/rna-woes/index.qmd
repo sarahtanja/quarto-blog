@@ -22,7 +22,7 @@ knitr::opts_chunk$set(
   message=FALSE,
   warning=FALSE,
   include=TRUE,
-  cache=TRUE,
+  #cache=TRUE,
   echo=FALSE
   )
 ```
@@ -38,26 +38,37 @@ library(dplyr)
 library(formattable)
 library(tidyverse)
 
-customGreen0 = "#DeF7E9"
 customGreen = "#71CA97"
-customRed = "#ff7f7f"
 customOrange = "#fda172"
+customRed = "#ff7f7f"
+
 
 # formattable functions
+
+# salts are good indicated by green text between 2.0 and 2.2
 salts <- formatter("span",
-  style = x ~ style("font-weight" = ifelse(x > 2.0, "bold", NA),
-                    "background-color" = ifelse(x > 2.2, customGreen0,
-                                                ifelse(x >= 2.0 & x <= 2.2, customGreen,
-                                                       ifelse(x < 2.0, customRed, "inherit")))
+  style = x ~ style("font-weight" = ifelse(x > 2.0, "bold", "normal"),
+                    "color" = ifelse(x > 2.2, customGreen,
+                                  ifelse(x >= 2.0 & x <= 2.2, customGreen,
+                                      ifelse(x < 2.0, customRed, "inherit")))
                     ))
 
+# proteins are good indicated by green text between 1.8 and 2.0
 proteins <- formatter("span",
-  style = x ~ style("font-weight" = ifelse(x > 1.8, "bold", NA),
-                    "background-color" = ifelse(x > 2.0, customGreen0,
-                                                ifelse(x >= 1.8 & x <= 2.0, customGreen,
-                                                       ifelse(x < 1.8, customRed, "inherit")))
+  style = x ~ style("font-weight" = ifelse(x > 1.8, "bold", "normal"),
+                    "color" = ifelse(x > 2.0, customGreen,
+                                    ifelse(x >= 1.8 & x <= 2.0, customGreen,
+                                          ifelse(x < 1.8, customOrange, 
+                                                ifelse(x < 1.6, customRed, "inherit"))))
                     ))
 
+# concentration (nanograms per microliter) is good indicated by green text between 15-35 ng/uL 
+ngul <- formatter("span",
+  style = x ~ style("font-weight" = ifelse(x > 15, "bold", "normal"),
+                    "color" = ifelse(x >= 15, customGreen,
+                                  ifelse(x < 15 & x >= 10, customOrange,
+                                        ifelse(x < 10, customRed, "inherit")))
+                    ))
 
 ```
 
@@ -255,3 +266,132 @@ formattable(nanodrop31AUG,
 ::: {.callout-important appearance="simple"}
 The absorbance spectra show that samples **4-LA2a**, **3-MA2a** & **3-HA2a** have salts contamination and **3-HA2a** shows protein contamination. In the table they have 260/280 and 260/230 values below the desired targets. The other 5 RNA samples seem to pass the contamination check... as far as we can tell....
 :::
+
+#### 06-SEP-2023
+
+These 12 samples were passed through the Zymo RNA Clean & Concentrator kit a 2nd (or 3rd!) time to see if doing the kit another round made further improvements to purity
+
+Samples:
+
+-   1-CA2a
+-   1-CH2a
+-   1-Ea
+-   1-PH1a
+-   2-CH1b
+-   3-CH2a
+-   3-MA2a
+-   3-HA2a
+-   4-CH1a
+-   4-MA2a
+-   4-PH1b
+-   4-LA2a
+
+I wasn't stoked on the results....
+
+![Nanodrop of RNA from 06SEP2023](06sep23_drop_plot.png)
+
+```{r}
+
+# Import Nanodrop CSV
+nanodrop06sepRNA <- read_csv("06sep23_drop_table.csv")
+
+# Build qubit (qbit for short) data.frame 
+
+## qbit sampleID
+sampleID <- c('3HA2a', '2CH1b', '3MA2a', '1CA2a', 
+              '1Ea', '3CH2a', '4CH1a', '1CH2a', 
+              '1PH1a', '4LA2a', '4MA2a', '4PH1b')
+## qbit 1st read              
+qbit1 <- c(25.8, 0, 30.0, 22.6, 
+           12.0, 16.8, 10.8, 11.6,
+           13.8, 31.0, 13.0, 10.0)
+
+## qbit 2nd read           
+qbit2 <- c(25.0, 0, 29.6, 21.8, 
+           11.0, 16.6, 10.4, 11.0,
+           12.6, 30.2, 12.4, 13.2)
+
+## make a qbit data.frame
+qbit06sepRNA <- data_frame("Sample ID" = sampleID, qbit1 = qbit1, qbit2 = qbit2)
+## make an average column from first and second qbit reads
+qbit06sepRNA <- qbit06sepRNA %>% 
+  mutate(qbitAVG = (qbit1 + qbit2)/2)
+
+## combine dataframes
+qaqc06sepRNA <- full_join(qbit06sepRNA, nanodrop06sepRNA, by = "Sample ID")
+```
+
+```{r}
+# Table of QAQC results
+formattable(qaqc06sepRNA, 
+              align = "l", # aligns text to the left
+              list(
+                '260/230'= salts,
+                '260/280' = proteins,
+                'Nucleic Acid' = ngul,
+                'qbitAVG'= ngul
+                ))
+
+```
+
+::: column-margin
+I want to pick out the samples that are the best purity to send to UT Austin GSAF to see if they will pass library prep.
+
+The purified RNA samples that are 'green across the board' on both concentration and purity and are 'good to go' are:
+
+-   3-HA2a (50.4ng/uL nanodrop \| 25.4 qubit)
+
+-   1-CA2a (49.3ng/uL nanodrop \| 22.2 qubit)
+
+The ones that are borderline.....
+
+-   1-PH1a (27.4ng/uL nanodrop \| 13.2 qubit?)
+
+-   3-CH2a (21.5ng/uL nanodrop \| 16.7 qubit?)
+
+-   4-MA2a (22.1ng/uL nanodrop \| 12.7 qubit?)
+
+-   4-LA2a ( 260/230: 1.42? \| 30.6 qubit)
+
+-   10-Aa?
+
+-   6Aa?
+:::
+
+::: {.callout-warning appearance="simple"}
+Some of the sample purity was made WORSE by running them through RNA Clean & Concentrator a second or third time....
+
+3MA2a on 31AUG2023:
+
+260/280: 1.85
+
+260/230: 1.63
+
+vs.
+
+3MA2a on 06SEP2023:
+
+260/280: 1.72
+
+260/230: 0.94
+
+However other samples were made slightly better... 
+
+3HA2a on 31AUG2023
+
+260/280: 1.85
+
+260/230: 2.08
+
+vs.
+
+3HA2a on 06SEP2023
+
+260/280: 2.04
+
+260/230: 2.08
+:::
+
+Really still frustrated that I'm not getting consistent results... 
+Does this kit work to purify the samples? Not in large batches.... few of the samples meet the purity targets. 
+I'm also worried that the more I work with the RNA the more it degrades and I'm losing quantity (ng/uL) and possibly the quality (time will tell when the RIN scores come back from UT GSAF)

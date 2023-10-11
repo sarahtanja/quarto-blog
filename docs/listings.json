@@ -2,9 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/daily-log/index.html",
       "/posts/dna-rna-extraction-protocol/index.html",
       "/posts/rna-woes/index.html",
-      "/posts/daily-log/index.html",
       "/posts/qiime-jupyter-start/index.html",
       "/posts/target-journals/index.html",
       "/posts/coral-pae-devo/index.html",

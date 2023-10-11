@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,14 +17,15 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -38,8 +39,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -76,7 +76,8 @@ div.csl-indent {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -98,35 +99,35 @@ div.csl-indent {
     <span class="navbar-title">Sarah Tanja’s Open Lab Notebook</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page">
+    <a class="nav-link active" href="./about.html" rel="" target="" aria-current="page">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/sarah-tanja-595722146/"><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/sarah-tanja-595722146/" rel="" target=""><i class="bi bi-linkedin" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/sarahtanja"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/sarahtanja" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:stanja@uw.edu"><i class="bi bi-envelope-heart" role="img">
+    <a class="nav-link" href="mailto:stanja@uw.edu" rel="" target=""><i class="bi bi-envelope-heart" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div class="quarto-toggle-container">
-                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-              </div>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -136,7 +137,12 @@ div.csl-indent {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+  <ul>
+  <li><a href="#research-influences" id="toc-research-influences" class="nav-link active" data-scroll-target="#research-influences">Research Influences</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <div class="quarto-about-marquee page-columns page-full column-page-left">
@@ -151,6 +157,7 @@ div.csl-indent {
 <div class="quarto-title-meta">
   </div>
 </header> <main class="content page-columns page-full column-page-left" id="quarto-document-content">
+
 <div class="{hero-heading}">
 <p>I’m currently a Masters student in the <a href="https://padilla-gaminolab.weebly.com/">Padilla-Gamiño Lab</a> and part of the <a href="https://fish.uw.edu/">School of Aquatic and Fishery Sciences</a> at the University of Washington in Seattle.</p>
 <p>My research focuses on the multiple stressor impacts of plastic pollution and heat stress on coastal primary producers. More specifically, I am researching a suite of common chemicals added to plastic consumer-products called phthalate acid-esters, phthalates or plasticizers, and their potential impacts on gene expression and microbial community structure in corals.</p>
@@ -160,20 +167,23 @@ div.csl-indent {
 <h3 data-anchor-id="research-influences">Research Influences</h3>
 <p>I first began circling the issue of plastic pollution and marine debris in 2012 as an <a href="https://www.adfg.alaska.gov/index.cfm?adfg=internexp.donohoe">intern</a> with the Alaska Dept. of Fish &amp; Game at a remote Steller sea lion rookery near Dixon Entrance. During population surveys, I photographed sea lions entangled in plastic trash, and later worked with the Pinniped Entanglement Group <a href="https://pinnipedentanglementgroup.org/">(PEG)</a> to research biodegradable alternatives to plastic packing bands on fish boxes. I learned how difficult it is to amend a system reliant on plastic.</p>
 <p>More recently, a seminar taught by my advisor <a href="https://fish.uw.edu/faculty/jacqueline-padilla-gamino/">Dr.&nbsp;Padilla-Gamiño</a> raised my awareness of the <a href="https://www.youtube.com/watch?v=iO3SA4YyEYU">links</a> between the fossil fuel industry, petrochemical-based plastics pollution, and the need for a plastics circular economy. Throughout the seminar, I was heavily influenced by a documentary titled, “<a href="https://www.youtube.com/show/SC2l9YPiNhgA1NwB2avpZwgw">The Story of Plastic</a>” and a number of papers, including: “Rethinking Microplastics as a Diverse Contaminant Suite” [<span class="citation" data-cites="rochman_rethinking_2019">Rochman et al. (<a href="#ref-rochman_rethinking_2019" role="doc-biblioref">2019</a>)</span>], and “Plastic leachates impair growth and oxygen production in Prochlorococcus, the ocean’s most abundant photosynthetic bacteria” [<span class="citation" data-cites="tetu2019">Tetu et al. (<a href="#ref-tetu2019" role="doc-biblioref">2019</a>)</span>].</p>
-<div class="no-row-height column-margin column-container"><div id="ref-rochman_rethinking_2019" class="csl-entry" role="doc-biblioentry">
+<div class="no-row-height column-margin column-container"><div id="ref-rochman_rethinking_2019" class="csl-entry" role="listitem">
 Rochman, Chelsea M., Cole Brookson, Jacqueline Bikker, Natasha Djuric, Arielle Earn, Kennedy Bucci, Samantha Athey, et al. 2019. <span>“Rethinking Microplastics as a Diverse Contaminant Suite.”</span> <em>Environ Toxicol Chem</em> 38 (4): 703–11. <a href="https://doi.org/10.1002/etc.4371">https://doi.org/10.1002/etc.4371</a>.
-</div><div id="ref-tetu2019" class="csl-entry" role="doc-biblioentry">
+</div><div id="ref-tetu2019" class="csl-entry" role="listitem">
 Tetu, Sasha G., Indrani Sarker, Verena Schrameyer, Russell Pickford, Liam D. H. Elbourne, Lisa R. Moore, and Ian T. Paulsen. 2019. <span>“Plastic Leachates Impair Growth and Oxygen Production in Prochlorococcus, the Ocean’s Most Abundant Photosynthetic Bacteria.”</span> <em>Commun Biol</em> 2 (May): 184. <a href="https://doi.org/10.1038/s42003-019-0410-x">https://doi.org/10.1038/s42003-019-0410-x</a>.
 </div></div><p>Phthalates are known endocrine-disrupting chemicals, which can have strong effects even at very low doses. This ecotoxicology concept is referred to as ‘low-dose effects’ and ‘non-monotonic’ response and was introduced to me by <a href="https://directory.tacoma.uw.edu/employee/agardell">Dr.&nbsp;Alison Gardell</a> as a guest-lecturer to a course in Integrated Environmental Physiology taught by <a href="https://fish.uw.edu/faculty/steven-roberts/">Dr.&nbsp;Steven Roberts</a> at the University of Washington in Seattle.</p>
 <p>I became increasingly interested in studying these types of environmental pollutants because they challenge the concept of ‘acceptable levels of pollution’. A book by <a href="https://maxliboiron.com/">Dr.&nbsp;Max Liboiron</a>, titled <a href="https://www.dukeupress.edu/pollution-is-colonialism"><em>Pollution is Colonialism</em></a>, <span class="citation" data-cites="liboiron2021">(<a href="#ref-liboiron2021" role="doc-biblioref">Liboiron 2021</a>)</span>taught me that ‘acceptable levels of pollution’ assumes settler and colonial access to Indigenous land and is not, in fact, acceptable.</p>
-<div class="no-row-height column-margin column-container"><div id="ref-liboiron2021" class="csl-entry" role="doc-biblioentry">
+<div class="no-row-height column-margin column-container"><div id="ref-liboiron2021" class="csl-entry" role="listitem">
 Liboiron, Max. 2021. <em>Pollution Is Colonialism</em>. Duke University Press. <a href="https://doi.org/10.2307/j.ctv1jhvnk1">https://doi.org/10.2307/j.ctv1jhvnk1</a>.
 </div></div><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/sarah-pour.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">This is me measuring out some filtered seawater at the Hawaii Institute of Marine Biology (HIMB) in preparation for my pilot study on phthalate impacts on coral embryo development</figcaption><p></p>
+<figcaption class="figure-caption">This is me measuring out some filtered seawater at the Hawaii Institute of Marine Biology (HIMB) in preparation for my pilot study on phthalate impacts on coral embryo development</figcaption>
 </figure>
 </div>
+<blockquote class="blockquote">
+<p>“There is suffering in the world, in the work each of us is doing, we have chosen not to look away, but to do what is in our power to heal and repair, and I see that in every single one of you. My hope from what we’ve created here together, and in the affirmation that teaching and learning in communion with each other can be regenerative and transforming, so thank you.” - Dr.&nbsp;Anne Beaudreau, SMEA 500 Autumn 2023</p>
+</blockquote>
 <hr>
 
 
@@ -181,15 +191,15 @@ Liboiron, Max. 2021. <em>Pollution Is Colonialism</em>. Duke University Press. <
 </section>
 </main> 
     <div class="about-footer"><div class="about-links">
-  <a href="https://www.linkedin.com/in/sarah-tanja-595722146/" class="about-link">
+  <a href="https://www.linkedin.com/in/sarah-tanja-595722146/" class="about-link" rel="" target="">
     <i class="bi bi-linkedin"></i>
      <span class="about-link-text">LinkedIn</span>
   </a>
-  <a href="https://github.com/sarahtanja" class="about-link">
+  <a href="https://github.com/sarahtanja" class="about-link" rel="" target="">
     <i class="bi bi-github"></i>
      <span class="about-link-text">Github</span>
   </a>
-  <a href="mailto::stanja@uw.edu" class="about-link">
+  <a href="mailto::stanja@uw.edu" class="about-link" rel="" target="">
     <i class="bi bi-envelope-heart"></i>
      <span class="about-link-text">Email Me</span>
   </a>
@@ -333,9 +343,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -400,6 +424,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -443,6 +553,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">This page is built using <a href="https://quarto.org/">Quarto</a>❤️</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
   </div>
 </footer>
 

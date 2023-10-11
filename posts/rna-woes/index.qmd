@@ -92,9 +92,23 @@ Nanodrop purity targets[^2]:
 
 [^2]: Check out [Assessing RNA quantity and purity with Nanodrop](https://toptipbio.com/the-nanodrop-results-explained/) by TopTipBio
 
--   260/280 (protein purity) **1.80 - 2.00**
+-   [^3]260/280 (protein purity) **1.80 - 2.00**
 
 -   260/230 (salts purity) **2.00 - 2.20**
+
+[^3]: 5 nucleotides have different 260:280 ratios:
+
+    -   Guanine: 1.15
+
+    -   Adenine: 4.50
+
+    -   Cytosine: 1.51
+
+    -   Uracil: 4.0
+
+    -   Thymine: 1.47
+
+    So RNA typically has a higher 260/280 ratio than DNA due to the higher 260/280 ratio of Uracil compared to Thymine
 
 #### ⚠️ Phenol Contamination may manifest in a 260/280 ratio greater than 2.00 !
 
@@ -205,7 +219,7 @@ The RNA Clean & Concentrator improved the 260/230 ratios for samples 1Ea, 1CH2a,
 :::
 
 ::: {.callout-tip appearance="simple"}
-The 260/280 ratios are suspiciously high, making me wonder about phenol contamination\... However, the Zymo Kit is phenol-free, so the only source of phenol would be from the samples themselves. We'll find out for sure when we send in the purified samples for another attempt at TagSeq Library Prep by UT GSAF.
+The 260/280 ratios are suspiciously high, making me wonder about phenol contamination... However, the Zymo Kit is phenol-free, so the only source of phenol would be from the samples themselves. We'll find out for sure when we send in the purified samples for another attempt at TagSeq Library Prep by UT GSAF.
 :::
 
 ------------------------------------------------------------------------
@@ -375,7 +389,7 @@ vs.
 
 260/230: 0.94
 
-However other samples were made slightly better... 
+However other samples were made slightly better...
 
 3HA2a on 31AUG2023
 
@@ -392,6 +406,4 @@ vs.
 260/230: 2.08
 :::
 
-Really still frustrated that I'm not getting consistent results... 
-Does this kit work to purify the samples? Not in large batches.... few of the samples meet the purity targets. 
-I'm also worried that the more I work with the RNA the more it degrades and I'm losing quantity (ng/uL) and possibly the quality (time will tell when the RIN scores come back from UT GSAF)
+Really still frustrated that I'm not getting consistent results... Does this kit work to purify the samples? Not in large batches.... few of the samples meet the purity targets. I'm also worried that the more I work with the RNA the more it degrades and I'm losing quantity (ng/uL) and possibly the quality (time will tell when the RIN scores come back from UT GSAF)

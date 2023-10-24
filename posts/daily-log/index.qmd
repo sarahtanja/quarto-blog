@@ -10,9 +10,50 @@ toc-depth: 3
 toc-location: left
 reference-location: margin
 citation-location: margin
+bibliography: references.bib
 ---
 
 ## October
+
+24-OCT-2023
+
+-   working on WSN presentation!
+
+23-OCT-2023
+
+-   JPG 1on1
+
+-   Bought Amtrak tickets to WSN (refundable)
+
+16-OCT-2023
+
+-   attended lab meeting via Zoom
+
+"Total RNA was extracted using the Duet DNA/RNA Miniprep Plus Kit (Zymo Research, Irvine, CA, USA, Cat #D7003) with modifications to the manufacturer's sample preparation steps, as described here. Sterile clippers were used to remove an approximately 1-cm diameter region from the coral tissue. The tissue clipping was placed in 500 μL of DNA/RNA shield (Zymo Cat #R1100-50) with 0.5 mm glass beads (Fisher Scientific Cat #15-340-152) and homogenized by vortexing for 1 minute. The supernatant (450 μl) was transferred to a new tube and centrifuged at 9000 rcf for 3 min to remove any debris. The supernatant (300 μl) was mixed with 30 μl of Proteinase K (Zymo Cat #D3001-2-20) digestion buffer and 15 μl of Proteinase K in a new tube using a brief vortex step. Equal volume of Zymo lysis buffer (Zymo Cat #D7001-1-200) was added (345 μl) and extraction was completed as outlined in the manufacturer's protocol. RNA concentration was quantified using the Qubit RNA Broad Range kit (Invitrogen Cat #Q10211) and integrity was assayed with an Agilent TapeStation 4200 system and the RNA Integrity Number (RIN) values ranged from 7.0--8.9. RNA libraries were prepared using the Zymo-Seq RiboFree Total RNA Library Kit (Zymo Cat #R3000) according to the manufacturer's instructions, starting with 125 ng of RNA as input. Prepared libraries were sent to Zymo Research Corporation for sequencing using the Illumina HiSeq for paired end sequencing (2 × 100 base pairs \[bp\])." - Wong & Putnam 2022 [@wong2022]
+
+11-OCT-2023
+
+-   Attended [ISB](https://isbscience.org/) workshop day 1
+
+    -   Gibbons-Lab github repo: <https://github.com/Gibbons-Lab/isb_course_2023/tree/main>
+
+    -   Course presentation slides: <https://gibbons-lab.github.io/isb_course_2023/16S/>
+
+    -   Multinomial Naive Bayes `qiime feature-classifier classify-sklearn` trained on V4 region of the 16S marker gene
+
+    -   center log ratio transform abundance counts
+
+    -   recommended papers:
+
+        -   [**Microbiome differential abundance methods produce different results across 38 datasets**](https://www.nature.com/articles/s41467-022-28034-z)
+
+        -   [**Beta diversity (or Ordination) analysis**](https://www.futurelearn.com/info/courses/exploring-the-landscape-of-antibiotic-resistance-in-microbiomes/0/steps/272960#:~:text=PCoA%20and%20NMDS%20methods%20take,to%20fit%20a%20normal%20distribution)"PCoA and NMDS methods take the distance matrix as an input and are sensitive to distance method used. The PCoA maximises the linear correlation between samples, wherein NMDS maximises the rank-order correlation between samples. Additionally, in case of NMDS, data is not required to fit a normal distribution." This link has some good visualizations: <https://www.davidzeleny.net/anadat-r/doku.php/en:pcoa_nmds>
+
+        -   Why is the mean being used instead of the median or the modal? Bacteria distribution is not a normal distribution across populations.... This is a log ratio of (relative abundance/geometric mean). It's a common method for transforming compositional data. For sequencing data normalization does not mean making anything normally distributed but rather putting samples on the same scale... Here's a review on the topic: <https://www.nature.com/articles/s41522-020-00160-w>
+
+            ![Nature](https://slack-imgs.com/?c=1&o1=wi32.he32.si&url=https%253A%252F%252Fwww.nature.com%252Fstatic%252Fimages%252Ffavicons%252Fnature%252Fapple-touch-icon-f39cb19454.png)**Nature**
+
+            [**Analysis of microbial compositions: a review of normalization and differential abundance analysis**](https://www.nature.com/articles/s41522-020-00160-w)
 
 ##### 10-OCT-2023
 

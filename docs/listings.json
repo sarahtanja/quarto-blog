@@ -2,9 +2,10 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/chp1-15min-presentation/index.html",
+      "/posts/daily-log/index.html",
       "/posts/dna-rna-extraction-protocol/index.html",
       "/posts/rna-woes/index.html",
-      "/posts/daily-log/index.html",
       "/posts/qiime-jupyter-start/index.html",
       "/posts/target-journals/index.html",
       "/posts/coral-pae-devo/index.html",

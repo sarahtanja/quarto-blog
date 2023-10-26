@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Sarah Tanja">
-<meta name="dcterms.date" content="2023-08-16">
+<meta name="dcterms.date" content="2023-10-10">
 
 <title>Sarah Tanja’s Open Lab Notebook - Daily Lab Log</title>
 <style>
@@ -19,9 +19,10 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -48,44 +49,33 @@ pre.numberSource code > span > a:first-child::before
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
     padding: 0 4px; width: 4em;
-    color: #aaaaaa;
   }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
 div.sourceCode
   {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -123,7 +113,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -131,7 +122,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="floating nav-fixed">
+<body class="floating nav-fixed slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -145,35 +136,35 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <span class="navbar-title">Sarah Tanja’s Open Lab Notebook</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html">
+    <a class="nav-link" href="../../about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/sarah-tanja-595722146/"><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/sarah-tanja-595722146/" rel="" target=""><i class="bi bi-linkedin" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/sarahtanja"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/sarahtanja" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:stanja@uw.edu"><i class="bi bi-envelope-heart" role="img">
+    <a class="nav-link" href="mailto:stanja@uw.edu" rel="" target=""><i class="bi bi-envelope-heart" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div class="quarto-toggle-container">
-                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-              </div>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -181,7 +172,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-right">
+    <div class="quarto-title column-body">
       <h1 class="title">Daily Lab Log</h1>
             <p class="subtitle lead">Enter at your peril; This one is for me, not you</p>
                                 <div class="quarto-categories">
@@ -203,7 +194,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">August 16, 2023</p>
+        <p class="date">October 10, 2023</p>
       </div>
     </div>
     
@@ -213,12 +204,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#september-2023" id="toc-september-2023" class="nav-link active" data-scroll-target="#september-2023">September 2023</a></li>
+  <li><a href="#october" id="toc-october" class="nav-link active" data-scroll-target="#october">October</a></li>
+  <li><a href="#september-2023" id="toc-september-2023" class="nav-link" data-scroll-target="#september-2023">September 2023</a></li>
   <li><a href="#august-2023" id="toc-august-2023" class="nav-link" data-scroll-target="#august-2023">August 2023</a></li>
   <li><a href="#july-2023" id="toc-july-2023" class="nav-link" data-scroll-target="#july-2023">July 2023</a></li>
   <li><a href="#june-2023" id="toc-june-2023" class="nav-link" data-scroll-target="#june-2023">June 2023</a></li>
@@ -229,15 +221,85 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </ul>
 </nav>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content">
+<main class="content quarto-banner-title-block page-columns page-full column-body" id="quarto-document-content">
 
 
 
 
+<section id="october" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="october">October</h2>
+<p>24-OCT-2023</p>
+<ul>
+<li>working on WSN presentation!</li>
+</ul>
+<p>23-OCT-2023</p>
+<ul>
+<li><p>JPG 1on1</p></li>
+<li><p>Bought Amtrak tickets to WSN (refundable)</p></li>
+</ul>
+<p>16-OCT-2023</p>
+<ul>
+<li>attended lab meeting via Zoom</li>
+</ul>
+<p>“Total RNA was extracted using the Duet DNA/RNA Miniprep Plus Kit (Zymo Research, Irvine, CA, USA, Cat #D7003) with modifications to the manufacturer’s sample preparation steps, as described here. Sterile clippers were used to remove an approximately 1-cm diameter region from the coral tissue. The tissue clipping was placed in 500&nbsp;μL of DNA/RNA shield (Zymo Cat #R1100-50) with 0.5&nbsp;mm glass beads (Fisher Scientific Cat #15-340-152) and homogenized by vortexing for 1&nbsp;minute. The supernatant (450&nbsp;μl) was transferred to a new tube and centrifuged at 9000&nbsp;rcf for 3&nbsp;min to remove any debris. The supernatant (300&nbsp;μl) was mixed with 30&nbsp;μl of Proteinase K (Zymo Cat #D3001-2-20) digestion buffer and 15&nbsp;μl of Proteinase K in a new tube using a brief vortex step. Equal volume of Zymo lysis buffer (Zymo Cat #D7001-1-200) was added (345&nbsp;μl) and extraction was completed as outlined in the manufacturer’s protocol. RNA concentration was quantified using the Qubit RNA Broad Range kit (Invitrogen Cat #Q10211) and integrity was assayed with an Agilent TapeStation 4200 system and the RNA Integrity Number (RIN) values ranged from 7.0–8.9. RNA libraries were prepared using the Zymo-Seq RiboFree Total RNA Library Kit (Zymo Cat #R3000) according to the manufacturer’s instructions, starting with 125&nbsp;ng of RNA as input. Prepared libraries were sent to Zymo Research Corporation for sequencing using the Illumina HiSeq for paired end sequencing (2&nbsp;×&nbsp;100&nbsp;base pairs [bp]).” - Wong &amp; Putnam 2022 <span class="citation" data-cites="wong2022">(<a href="#ref-wong2022" role="doc-biblioref">Wong and Putnam 2022</a>)</span></p>
+<div class="no-row-height column-margin column-container"><div id="ref-wong2022" class="csl-entry" role="listitem">
+Wong, Kevin H., and Hollie M. Putnam. 2022. <span>“The Genome of the Mustard Hill Coral, Porites Astreoides.”</span> <em>Gigabyte</em> 2022 (July): 1–12. <a href="https://doi.org/10.46471/gigabyte.65">https://doi.org/10.46471/gigabyte.65</a>.
+</div></div><p>11-OCT-2023</p>
+<ul>
+<li><p>Attended <a href="https://isbscience.org/">ISB</a> workshop day 1</p>
+<ul>
+<li><p>Gibbons-Lab github repo: <a href="https://github.com/Gibbons-Lab/isb_course_2023/tree/main" class="uri">https://github.com/Gibbons-Lab/isb_course_2023/tree/main</a></p></li>
+<li><p>Course presentation slides: <a href="https://gibbons-lab.github.io/isb_course_2023/16S/" class="uri">https://gibbons-lab.github.io/isb_course_2023/16S/</a></p></li>
+<li><p>Multinomial Naive Bayes <code>qiime feature-classifier classify-sklearn</code> trained on V4 region of the 16S marker gene</p></li>
+<li><p>center log ratio transform abundance counts</p></li>
+<li><p>recommended papers:</p>
+<ul>
+<li><p><a href="https://www.nature.com/articles/s41467-022-28034-z"><strong>Microbiome differential abundance methods produce different results across 38 datasets</strong></a></p></li>
+<li><p><a href="https://www.futurelearn.com/info/courses/exploring-the-landscape-of-antibiotic-resistance-in-microbiomes/0/steps/272960#:~:text=PCoA%20and%20NMDS%20methods%20take,to%20fit%20a%20normal%20distribution"><strong>Beta diversity (or Ordination) analysis</strong></a>“PCoA and NMDS methods take the distance matrix as an input and are sensitive to distance method used. The PCoA maximises the linear correlation between samples, wherein NMDS maximises the rank-order correlation between samples. Additionally, in case of NMDS, data is not required to fit a normal distribution.” This link has some good visualizations: <a href="https://www.davidzeleny.net/anadat-r/doku.php/en:pcoa_nmds" class="uri">https://www.davidzeleny.net/anadat-r/doku.php/en:pcoa_nmds</a></p></li>
+<li><p>Why is the mean being used instead of the median or the modal? Bacteria distribution is not a normal distribution across populations…. This is a log ratio of (relative abundance/geometric mean). It’s a common method for transforming compositional data. For sequencing data normalization does not mean making anything normally distributed but rather putting samples on the same scale… Here’s a review on the topic: <a href="https://www.nature.com/articles/s41522-020-00160-w" class="uri">https://www.nature.com/articles/s41522-020-00160-w</a></p>
+<p><img src="https://slack-imgs.com/?c=1&amp;o1=wi32.he32.si&amp;url=https%253A%252F%252Fwww.nature.com%252Fstatic%252Fimages%252Ffavicons%252Fnature%252Fapple-touch-icon-f39cb19454.png" class="img-fluid" alt="Nature"><strong>Nature</strong></p>
+<p><a href="https://www.nature.com/articles/s41522-020-00160-w"><strong>Analysis of microbial compositions: a review of normalization and differential abundance analysis</strong></a></p></li>
+</ul></li>
+</ul></li>
+</ul>
+<section id="oct-2023" class="level5">
+<h5 class="anchored" data-anchor-id="oct-2023">10-OCT-2023</h5>
+<ul>
+<li>Bought WSN flights</li>
+<li>Sent list of 123 samples to UW mim_c for formal quote</li>
+<li>filled out GI Bill enrollment verification</li>
+<li>updated all extraction notebook posts from handwritten notes</li>
+</ul>
+</section>
+<section id="oct-2023-1" class="level5">
+<h5 class="anchored" data-anchor-id="oct-2023-1">03-OCT-2023</h5>
+<ul>
+<li>Submitted abstract to WSN, registered for conference!</li>
+</ul>
+</section>
+<section id="oct-2023-2" class="level5">
+<h5 class="anchored" data-anchor-id="oct-2023-2">02-OCT-2023</h5>
+<ul>
+<li><p>Abstratc accepted to SICB for Jan 3rd!</p></li>
+<li><div>
+<blockquote class="blockquote">
+<p>Your abstract Corals in a hot plastic ocean: How heat and phthalates shift a Montipora capitata coral microbiome has been accepted for the 2024 Annual Meeting in Seattle, WA,&nbsp;on&nbsp;2-6 January 2024. Your abstract id is 1230.<br>
+<br>
+You presentation is in the&nbsp;Response to anthropogenic environmental changes Concurrent session on&nbsp;Wednesday,&nbsp;January 03, 2024.</p>
+<p>The online program can be found <a href="https://urldefense.com/v3/__https://mandrillapp.com/track/click/30774040/www.xcdsystem.com?p=eyJzIjoiVHg1NGFGcEZRZmMyYWdNaEdPOTREWjRMcGQwIiwidiI6MSwicCI6IntcInVcIjozMDc3NDA0MCxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy54Y2RzeXN0ZW0uY29tXFxcL3NpY2JcXFwvcHJvZ3JhbVxcXC9JMUtyMjN0XFxcL2luZGV4LmNmbT9wZ2lkPTEzNDImUnVuUmVtb3ZlU2Vzc2lvbkZpbHRlcj0xXCIsXCJpZFwiOlwiZWZiNjZmNTg1MGQ2NDFjMzk1NjU5ZjQ2MjJjMmMzZTZcIixcInVybF9pZHNcIjpbXCI4MDZmOTNlZTNiZmY5ZTM3ODhhMDM1MmE4YzhkODkzMmM1OTFlOTgxXCJdfSJ9__;!!K-Hz7m0Vt54!h-p1pLv7irLQW3sPow2nFi6Q2BxoJRfyoVmE8uN9VbspkSR__iihdpN1iPfG-49elEJFsqnVnF5IW-lY$">HERE</a>. If you need to make a change to your abstract or cancel it you MUST fill out this <a href="https://urldefense.com/v3/__https://mandrillapp.com/track/click/30774040/docs.google.com?p=eyJzIjoiZ0VMSHdvazI5OGJDRWMyMV81NEtlcHZuMWgwIiwidiI6MSwicCI6IntcInVcIjozMDc3NDA0MCxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL2RvY3MuZ29vZ2xlLmNvbVxcXC9mb3Jtc1xcXC9kXFxcL2VcXFwvMUZBSXBRTFNkbmRxdTBwRERoLUhySVBZUXdIZUp6S29fYlRldzJsb2xVeEdSV1Q3STZ1ZWwwZndcXFwvdmlld2Zvcm1cIixcImlkXCI6XCJlZmI2NmY1ODUwZDY0MWMzOTU2NTlmNDYyMmMyYzNlNlwiLFwidXJsX2lkc1wiOltcIjNhOTc5YWRhMTZmM2RiNDliODQ4NDdlOTQ2ZmI2NDk5MzllZDY3MDNcIl19In0__;!!K-Hz7m0Vt54!h-p1pLv7irLQW3sPow2nFi6Q2BxoJRfyoVmE8uN9VbspkSR__iihdpN1iPfG-49elEJFsqnVnJHbFgyn$">FORM</a>.&nbsp; This is the only way changes and cancellations will be accepted.<br>
+<br>
+Information regarding presentations at the SICB meeting can be found <a href="https://urldefense.com/v3/__https://mandrillapp.com/track/click/30774040/www.xcdsystem.com?p=eyJzIjoiTjJ3UFUxQ25vcmR1RWZGN093bUtaZXpBU3l3IiwidiI6MSwicCI6IntcInVcIjozMDc3NDA0MCxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy54Y2RzeXN0ZW0uY29tXFxcL3NpY2JcXFwvcHJvZ3JhbVxcXC9JMUtyMjN0XFxcL2luZGV4LmNmbT9wZ2lkPTEzNjJcIixcImlkXCI6XCJlZmI2NmY1ODUwZDY0MWMzOTU2NTlmNDYyMmMyYzNlNlwiLFwidXJsX2lkc1wiOltcIjgwNmY5M2VlM2JmZjllMzc4OGEwMzUyYThjOGQ4OTMyYzU5MWU5ODFcIl19In0__;!!K-Hz7m0Vt54!h-p1pLv7irLQW3sPow2nFi6Q2BxoJRfyoVmE8uN9VbspkSR__iihdpN1iPfG-49elEJFsqnVnMuFu7ui$">HERE</a>.</p>
+<p>Please note that all presenters must register for the meeting by the presenter registration deadline of 1 November 2023, otherwise your talk may be cancelled. Click <a href="https://urldefense.com/v3/__https://mandrillapp.com/track/click/30774040/www.xcdsystem.com?p=eyJzIjoiaVNESXlTUjZ6anQ1Mi1FaS1Fa1dBZG50VjRJIiwidiI6MSwicCI6IntcInVcIjozMDc3NDA0MCxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy54Y2RzeXN0ZW0uY29tXFxcL3NpY2JcXFwvcHJvZ3JhbVxcXC81WDlPSWJVXFxcL2luZGV4LmNmbT9wZ2lkPTQ0OFwiLFwiaWRcIjpcImVmYjY2ZjU4NTBkNjQxYzM5NTY1OWY0NjIyYzJjM2U2XCIsXCJ1cmxfaWRzXCI6W1wiNzY1MmM2ZTg0NzcxMDQ3MWFiZmNiZDQ0MGE1OGQ2NTFkNTg5MTgyNFwiXX0ifQ__;!!K-Hz7m0Vt54!h-p1pLv7irLQW3sPow2nFi6Q2BxoJRfyoVmE8uN9VbspkSR__iihdpN1iPfG-49elEJFsqnVnACQAtql$">HERE</a> to register. Please visit the meeting web site for complete information on registering and conference activities. If you have registration questions email <a href="mailto:MScarbrough@burkinc.com">registration@sicb.org</a>, for meeting questions email <a href="mailto:lstrong@burkinc.com">lstrong@burkinc.com</a>.</p>
+</blockquote>
+</div></li>
+</ul>
+</section>
+</section>
 <section id="september-2023" class="level2">
 <h2 class="anchored" data-anchor-id="september-2023">September 2023</h2>
 <section id="sep-2023" class="level5">
@@ -248,6 +310,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p><a href="https://www.wsn-online.org/presenter-guidelines/">WSN presenter guidelines</a></p></li>
 <li><p>Abstract Guidelines</p></li>
 </ul>
+<!-- -->
 <pre><code>The abstract should briefly introduce the project, the goals, the results, and the significance
 
 The presentation title should have no more than 130 characters max (including spaces) in ALL UPPERCASE
@@ -347,12 +410,33 @@ The abstract should have no more than 1600 characters max (including spaces); us
 <li><p>met with Dr.&nbsp;Amy VanCise about microbiome analysis:</p>
 <ul>
 <li><p>Look into work by WHOI Amy Apprill, Laura Weber, Cynthia Becker</p></li>
-<li><p>Focus analysis on <strong>community composition</strong> over <strong>diversity</strong> statistics</p></li>
+<li><p>Focus analysis on <strong>community composition</strong> over <strong>diversity</strong> statistics</p>
+<blockquote class="blockquote">
+<p>different sampling depths across different samples … subsample the counts without replacement so that each sample has the same number of features</p>
+</blockquote></li>
 <li><p>Differential abundance analysis on microbial community is similar to differential gene expression analysis!</p></li>
 <li><p>Sampling depth is normalizing between samples</p></li>
 <li><p>Look into getting a UV Sterilizer</p></li>
 <li><p>Do the analysis without blank, mock, &amp; env samples included… get a clean look at only treatments</p></li>
+<li><p>Look into R Vegan package</p></li>
+<li><p>Phred score: spatial, 30 (or 25) is good to keep</p></li>
 </ul></li>
+</ul>
+</section>
+<section id="aug-2023-7" class="level5">
+<h5 class="anchored" data-anchor-id="aug-2023-7">03-Aug-2023</h5>
+<ul>
+<li><p>Received RNA samples back from UT GSAF</p></li>
+<li><p>Used PCR Inhibitor Removal Kit on five of the samples (see RNA Woes post <a href="https://sarahtanja.github.io/quarto-blog/posts/rna-woes/#:~:text=A260%20value.%E2%80%9D-,Zymo%20OneStep%20PCR%20Inhibitor%20Removal%20Kit,-I%20first%20tried">here</a>) :</p>
+<ul>
+<li><p>1-CA2a</p></li>
+<li><p>1-CH2a</p></li>
+<li><p>1-Ea</p></li>
+<li><p>1-PA2a</p></li>
+<li><p>1-PH1a</p></li>
+</ul></li>
+<li><p>PCR Inhibitor Removal Kit said to add 50-200uL of RNA, but I only could add 30uL. I took the 5 samples from the 96-well plate and augmented them with all the leftover diluted normalized RNA.</p></li>
+<li><p>Nanodrop note: blank should result in a spectrum that varies no more than 0.050A in the 1mm path. For this batch I used the Roberts Lab Nanodrop and the blank was -0.009/-0.008 10mm path.</p></li>
 </ul>
 </section>
 </section>
@@ -385,7 +469,19 @@ The abstract should have no more than 1600 characters max (including spaces); us
 <section id="june-2023" class="level2">
 <h2 class="anchored" data-anchor-id="june-2023">June 2023</h2>
 <section id="jun-2023" class="level5">
-<h5 class="anchored" data-anchor-id="jun-2023">05-JUN-2023</h5>
+<h5 class="anchored" data-anchor-id="jun-2023">07-JUN-2023</h5>
+<ul>
+<li>Shipped DNA to Mr.&nbsp;DNA and RNA to UT GSAF!</li>
+</ul>
+</section>
+<section id="jun-2023-1" class="level5">
+<h5 class="anchored" data-anchor-id="jun-2023-1">06-JUN-2023</h5>
+<ul>
+<li>Normalized all 20 RNA samples</li>
+</ul>
+</section>
+<section id="jun-2023-2" class="level5">
+<h5 class="anchored" data-anchor-id="jun-2023-2">05-JUN-2023</h5>
 <ul>
 <li><p>Re-normalized 2-CA2a DNA and successfully got it to 19.5, 19.2 :D</p></li>
 <li><p>Worked all day to normalize RNA with mixed results. In the first batch, 7 out of 20 samples were ‘off’ of the target concentration of 25ng/uL by enough to make me want to redo them (one was way high at 230ng/uL, others were too low at ~10ng/uL)</p></li>
@@ -403,15 +499,16 @@ The abstract should have no more than 1600 characters max (including spaces); us
 </ul></li>
 </ul>
 </section>
-<section id="jun-2023-1" class="level5">
-<h5 class="anchored" data-anchor-id="jun-2023-1">02-JUN-2023</h5>
+<section id="jun-2023-3" class="level5">
+<h5 class="anchored" data-anchor-id="jun-2023-3">02-JUN-2023</h5>
 <ul>
 <li>Normalized DNA (still have RNA left to do)</li>
 <li>Tested normalized DNA on Qubit BR DNA assay, results overall were good but a smidge lower than my goal</li>
+<li>blank + microbial standard extraction</li>
 </ul>
 </section>
-<section id="jun-2023-2" class="level5">
-<h5 class="anchored" data-anchor-id="jun-2023-2">01-JUN-2023</h5>
+<section id="jun-2023-4" class="level5">
+<h5 class="anchored" data-anchor-id="jun-2023-4">01-JUN-2023</h5>
 <ul>
 <li>Presented Bioinformatics <a href="https://rpubs.com/sarah_tanja/1048844">final project for FISH 546</a></li>
 <li>Attended GSR Meeting</li>
@@ -731,8 +828,8 @@ The abstract should have no more than 1600 characters max (including spaces); us
 </ul>
 <p>NEED</p>
 <ul class="task-list">
-<li><input type="checkbox" disabled="">scoopulas (to scoop powder from mortar to weigh paper)</li>
-<li><input type="checkbox" disabled="">denatured ethyl alcohol (disinfect labware between samples)</li>
+<li><input type="checkbox">scoopulas (to scoop powder from mortar to weigh paper)</li>
+<li><input type="checkbox">denatured ethyl alcohol (disinfect labware between samples)</li>
 </ul></li>
 </ul>
 </section>
@@ -974,6 +1071,7 @@ The abstract should have no more than 1600 characters max (including spaces); us
 <p>​</p>
 
 
+
 </section>
 </section>
 
@@ -1120,9 +1218,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -1187,6 +1299,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -1230,6 +1428,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">This page is built using <a href="https://quarto.org/">Quarto</a>❤️</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
   </div>
 </footer>
 

@@ -2,7 +2,8 @@
 title: "Daily Lab Log"
 subtitle: "Enter at your peril; This one is for me, not you"
 author: "Sarah Tanja"
-date: '10/10/2023'
+date: '01/01/2023'
+date-modified: "11/05/2023"
 categories: [daily log]
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>
@@ -11,11 +12,77 @@ toc-location: left
 reference-location: margin
 citation-location: margin
 bibliography: references.bib
+image: log.png
 ---
 
 ## November 2023
 
+#### 05-NOV-2023
+
+-   Undoing large file commit on coral-pae-temp for \~2hrs 🤬, tried to just undo the one commit, but couldn't get it to work. Had to execute `git reset –hard origin/main`
+
+-   Added the following to the `git/hooks/pre-commit` file:
+
+        #!/bin/bash
+
+        echo "automatically ignoring large files"
+        find . -size 5M | sed 's|^\./||g' >> .gitignore
+        cat .gitignore | sort | uniq > .gitignore
+
+        git diff --exit-code .gitignore
+        exit_status=$?
+        if [ $exit_status -eq 1 ]
+        then
+            set +e
+            for i in `cat .gitignore`
+            do
+            set +e
+                git rm --cached $i
+            done
+
+            git add .gitignore
+            git commit .gitignore --no-verify -m"ignoring large files"
+
+            echo "ignored new large files"
+        fi
+
+-   
+
+#### 02-NOV-2023
+
+-   
+
 #### 01-NOV-2023
+
+-   GSS Presentation Design Workshop with Tim Essington
+
+    -   Presentations should have ONE THING they are communicating: 'Here's a nugget'
+
+    -   One Word Theme
+
+    -   One Sentence Summary
+
+    -   Add motion to a few slides to break things up visually
+
+    -   Use a blank slide and pause at a key pivot in your story
+
+    -   build the slide iteratively when you have a complex figure
+
+    -   story arc:
+
+        -   ordinary world
+
+        -   challenge
+
+        -   series of actions to overcome challenge
+
+        -   resolution
+
+        -   new world
+
+    -   'Lean into your 'buts'
+
+    -   leave silence + space between story arcs
 
 ## October 2023
 
@@ -70,7 +137,7 @@ bibliography: references.bib
 
 -   Submitted abstract to WSN, registered for conference!
 
-##### 02-OCT-2023
+#### 02-OCT-2023
 
 -   Abstratc accepted to SICB for Jan 3rd!
 
@@ -90,11 +157,11 @@ bibliography: references.bib
 
 ## September 2023
 
-##### 20-SEP-2023
+#### 20-SEP-2023
 
 -   [Hidden Toxic Histories](https://theconversation.com/the-importance-of-shining-a-light-on-hidden-toxic-histories-211657?utm_medium=email&utm_campaign=Daily%20newsletter%20September%2014%202023&utm_content=Daily%20newsletter%20September%2014%202023+CID_1c20b166b5da888ab34925d477cebf8d&utm_source=campaign_monitor_us&utm_term=the%20artists%20and%20activists%20who%20are%20calling%20attention%20to%20toxic%20legacies)
 
-##### 05-SEP-2023
+#### 05-SEP-2023
 
 -   WSN newsletter says abstracts close Sep 29th 2023
 
@@ -112,7 +179,7 @@ bibliography: references.bib
 
     The abstract should have no more than 1600 characters max (including spaces); use standard HTML tags for special formatting (e.g., \<b\>**bold text**\</b\>, \<i\>*italic text*\</i\>, etc.)
 
-##### 01-SEP-2023
+#### 01-SEP-2023
 
 -   crashed my bike and badly injured my hands... can't do lab work 😭
 
@@ -128,7 +195,7 @@ bibliography: references.bib
 
 ## August 2023
 
-##### 31-AUG-2023
+#### 31-AUG-2023
 
 -   purchased additional kits, qubit assays, tubes, etc. to spend down Hall Grant
 
@@ -156,13 +223,13 @@ bibliography: references.bib
 
     -   3-HA2a
 
-##### 29-AUG-2023
+#### 29-AUG-2023
 
 -   submitted SICB abstract
 
 -   submitted Kip's capstone proposal to Greg Jensen
 
-##### 28-AUG-2023
+#### 28-AUG-2023
 
 -   Look into the [Margaret A. Davidson Graduate Fellowship](https://coast.noaa.gov/nerrs/research/davidson-fellowship.html)
 
@@ -176,11 +243,11 @@ bibliography: references.bib
 
 -   Take Jeremy's samples out of freezer to thaw at 4PM
 
-##### 24-AUG-2023
+#### 24-AUG-2023
 
 -   Trial with 2 ambient samples of modified extraction protocol and RNA Clean & Concentrator. I did 2 samples because I had a kit that had 2 preps left over. Most of the time spent is in lab bench sterilizing, prepping, labelling, getting ice! Which takes literally a 30 minute hike across campus... But I started at 930AM and finished with Qubit in the FTR Roberts Lab by 4PM. With 2 samples! Extractions take ALL DAY.
 
-##### 17-AUG-2023
+#### 17-AUG-2023
 
 -   Are we sure we want to try TriZol for RNA? It isn't a phenol-free kit like the Quick DNA/RNA Miniprep, and we have RNA, we just need to purify it. Tomorrow lets run all eluted RNA through RNA Clean & Concentrator, and check it on Nanodrop! LFG.
 
@@ -200,7 +267,7 @@ bibliography: references.bib
     >
     > I recently took part of the Identity, Belonging, and Inquiry in Science Program, and received special training to mentor students from diverse backgrounds. My mentee worked hard to complete research that she will present at the upcoming SACNAS conference, and I couldn't be more proud. The training gave me confidence to take on another mentee, this time a Capstone student. Mentorship is a key part of DEI efforts that I find extremely rewarding.
 
-##### 16-AUG-2023
+#### 16-AUG-2023
 
 -   asked JPG to buy benchtop UV Sterilizer for me & Callum, got approval! Purchased by Kat same day :D
 
@@ -214,7 +281,7 @@ bibliography: references.bib
 
 -   Still can't `quarto render` in Jupyter Lab on raven server, need to figure out how to get those interactive jupyter plots in my notebook!
 
-##### 15-AUG-2023
+#### 15-AUG-2023
 
 -   met with Dr. Amy VanCise about microbiome analysis:
 
@@ -236,7 +303,7 @@ bibliography: references.bib
 
     -   Phred score: spatial, 30 (or 25) is good to keep
 
-##### 03-Aug-2023
+#### 03-AUG-2023
 
 -   Received RNA samples back from UT GSAF
 
@@ -258,7 +325,7 @@ bibliography: references.bib
 
 ## July 2023
 
-##### 20-JUL-2023
+#### 20-JUL-2023
 
 -   [Integrating QIIME2 and R for data viz](https://forum.qiime2.org/t/tutorial-integrating-qiime2-and-r-for-data-visualization-and-analysis-using-qiime2r/4121)
 
@@ -266,7 +333,7 @@ bibliography: references.bib
 
 -   [Using Python with the RStudio IDE](https://support.posit.co/hc/en-us/articles/1500007929061-Using-Python-with-the-RStudio-IDE)
 
-##### 19-JUL-2023
+#### 19-JUL-2023
 
 -   Emailed Jackie about getting another P1000
 
@@ -286,15 +353,15 @@ bibliography: references.bib
 
 ## June 2023
 
-##### 07-JUN-2023
+#### 07-JUN-2023
 
 -   Shipped DNA to Mr. DNA and RNA to UT GSAF!
 
-##### 06-JUN-2023
+#### 06-JUN-2023
 
 -   Normalized all 20 RNA samples
 
-##### 05-JUN-2023
+#### 05-JUN-2023
 
 -   Re-normalized 2-CA2a DNA and successfully got it to 19.5, 19.2 :D
 
@@ -320,13 +387,13 @@ bibliography: references.bib
 
     -   4-CA1a - 14.0, 13.0
 
-##### 02-JUN-2023
+#### 02-JUN-2023
 
 -   Normalized DNA (still have RNA left to do)
 -   Tested normalized DNA on Qubit BR DNA assay, results overall were good but a smidge lower than my goal
 -   blank + microbial standard extraction
 
-##### 01-JUN-2023
+#### 01-JUN-2023
 
 -   Presented Bioinformatics [final project for FISH 546](https://rpubs.com/sarah_tanja/1048844)
 -   Attended GSR Meeting
@@ -334,7 +401,7 @@ bibliography: references.bib
 
 ## May 2023
 
-##### 31-MAY-2023
+#### 31-MAY-2023
 
 -   wrote `dilute` function to normalize RNA & DNA in [coral-DNA-RNA-lab-extractions](https://github.com/sarahtanja/coral-DNA-RNA-lab-extractions/blob/main/code/03-normalizing.qmd) GitHub repo:
 
@@ -389,16 +456,16 @@ dilute <- function(C1, C2) {
 
 -   SAFS Spring Picnic!
 
-##### 29-MAY-2023
+#### 29-MAY-2023
 
 -   Worked on Bioinformatics Final Project, RNA expression heat map with Gene Ontology Terms (Protein Functions)
 -   IBIS Celebration of [Nora's Blog](https://norahess.quarto.pub/uw-lab-note-book/)!
 
-##### 25-MAY-2023
+#### 25-MAY-2023
 
 -   Hosted Dr. Nicola Smith as the GSIS
 
-##### 24-MAY-2023
+#### 24-MAY-2023
 
 -   University of Texas at Austin [Genomic Sequencing and Analysis Facility (GSAF)](https://wikis.utexas.edu/display/GSAF/Home+Page):
 
@@ -410,7 +477,7 @@ dilute <- function(C1, C2) {
 
     -   [Illumina BaseSpace Login](https://platform.login.illumina.com/platform-services-manager/?rURL=https://basespace.login.illumina.com/platform-home/&redirectMethod=GET&clientId=ps-home#/)
 
-##### 23-MAY-2023
+#### 23-MAY-2023
 
 -   completed UW driver safety training
 -   met with Steven Roberts, confirmed that no blank/standard is used for RNA-seq
@@ -419,7 +486,7 @@ dilute <- function(C1, C2) {
 -   Met with Nora, she has made an [awesome quarto blog](https://norahess.quarto.pub/uw-lab-note-book/) for the IBIS celebration to showcase what she has learned. We also talked a bit about stats and need to follow up with what to do when your data is not normally distributed (moving from paired T test to Wilcoxon paired-sample T test)
 -   Tried using `quarto publish gh-pages` command to publish blog
 
-##### 19-MAY-2023
+#### 19-MAY-2023
 
 -   Ran Qubit on ex7 samples
 
@@ -438,11 +505,11 @@ dilute <- function(C1, C2) {
 
 -   dry-ice at biochem stockroom is low, have to check that there will be a replenishment next week so I have enough dry ice to ship samples!
 
-##### 18-MAY-2023
+#### 18-MAY-2023
 
 -   wrote script to normalize eluted RNA/DNA
 
-##### 04-MAY-2023
+#### 04-MAY-2023
 
 -   received Qubit DNA Broad Range (BR) Assay Kit!
 -   Gotta get P2 DNA/RNA free tips!
@@ -450,14 +517,14 @@ dilute <- function(C1, C2) {
 
 ## April 2023
 
-##### 25-APR-2023
+#### 25-APR-2023
 
 -   sorted pipettes with Callum
 -   submitted Bioinformatics Assignment
 -   ordered Qubit DNA BR assay kit
 -   ordered film sealing plate roller
 
-##### 24-APR-2023
+#### 24-APR-2023
 
 -   sent draft letter for NAH experiential learning fund to JPG on Monday April 24th
 
@@ -471,7 +538,7 @@ dilute <- function(C1, C2) {
 
     > FYI, if you're solely using the NanoDrop for quantification (i.e. not worried about 260/280), then I'd highly recommend just relying on the Qubit, with both DNA and RNA. The reason for this is that the NanoDrop will almost always over-"calculate" your sample concentrations (both RNA and DNA). The reason for this is that the NanoDrop is a spectrophotometer and measures light absorbance. With almost all DNA/RNA isolations, there will be residual DNA or RNA in your sample. The NanoDrop cannot distinguish between the two molecules, because they're both made up of the same material; nucleotides. Nucleotides, regardless of their of their origin will absorb light at an average wavelength of 260nm.Since the Qubit assays use molecule-specific dyes, the dye will only bind to DNA or only to RNA. The dyes will not bind to any carryover of other types of molecules in the sample, so the accuracy (and sensitivity) is much, much higher than the NanoDrop.
 
-##### 21-APR-2023
+#### 21-APR-2023
 
 -   met with JPG April 1on1
 
@@ -491,7 +558,7 @@ dilute <- function(C1, C2) {
         -   Sampes selected from [extr1](https://github.com/sarahtanja/coral-DNA-RNA-lab-extractions/blob/main/rand-sample-processing.Rmd) using a random number generator
         -   details can be found in the [coral-DNA-RNA-lab-extractions](https://github.com/sarahtanja/coral-DNA-RNA-lab-extractions) repository
 
-##### 20-APR-2023
+#### 20-APR-2023
 
 -   downloaded fastq files for 'fake data' to continue script for bioinformatics workflow
 -   Received Mortexer! Whoo!
@@ -504,13 +571,13 @@ dilute <- function(C1, C2) {
 -   placed signage on lab 236 to lint roll and lab coat (because I forgot to and that was embarassing)
 -   submitted purchase for mortexer attachment head that will homogenize 12 1.5-2mL tubes at a time horizontal orientation (even better because closer to original lysis protocol for Zymo) Sadly, I should have looked for something like this earlier, but I saw it on the mortexer instruction manual when it was delivered and realized that was what I needed
 
-##### 19-APR-2023
+#### 19-APR-2023
 
 -   continued draft application for ONeill-Quinn
 -   continued editing extraction protocol
 -   expected delivery of mortexer by end of day
 
-##### 18-APR-2023
+#### 18-APR-2023
 
 -   Met with Nora, selected samples for processing using [R script to randomize](https://github.com/sarahtanja/coral-DNA-RNA-lab-extractions/blob/main/rand-sample-processing.Rmd)
 -   Setup workflow in Hyak
@@ -518,18 +585,18 @@ dilute <- function(C1, C2) {
 -   waiting for mortexer delivery, expected by end of day, but FedEx package delivery delayed
 -   emailed asking for details about Neptune controller unit (it was returned after being sent away for RMA maintenance request, but nothing appears to have been done to it)
 
-##### 17-APR-2023
+#### 17-APR-2023
 
 -   added to extraction protocol
 -   read about remote computing, Hyak Mox
 -   enabled Hyak account
 
-##### 14-APR-2023
+#### 14-APR-2023
 
 -   attended Cat Fong chalk talk & SAFS Cafe
 -   gave tour to Edith
 
-##### 11-APR-2023
+#### 11-APR-2023
 
 -   NCBI SRA links downloading RNAseq fastq files
 
@@ -540,7 +607,7 @@ dilute <- function(C1, C2) {
         -   https://ahuffmyer.github.io/ASH_Putnam_Lab_Notebook/E5-Deep-Dive-RNAseq-Count-Matrix-Analysis/
         -   https://github.com/AHuffmyer/EarlyLifeHistory_Energetics > Here is the spreadsheet of my NCBI accession numbers for my sequences: https://docs.google.com/spreadsheets/d/1qDGGpLFcmoO-fIFOPSUhPcxi4ErXIq2PkQbxvCCzI40/edit?pli=1#gid=457642286 If you look at the Mcapitata Ontogeny Timeseries tab it'll have all the SRR numbers you will need to download the TagSeq files. Instead of downloading the full data set you could just pick like three lifestages for a test comparison - AH
 
-##### 10-APR-2023
+#### 10-APR-2023
 
 -   created script to randomize sample processing in [coral-DNA-RNA-lab-extractions](https://github.com/sarahtanja/coral-DNA-RNA-lab-extractions) repo
 -   called Zymo and learned that 'mix' in protocol step can either mean pipette up and down 10-12 times, or briefly touch to vortex mixer for a pulse
@@ -549,7 +616,7 @@ dilute <- function(C1, C2) {
 
 ## March 2023
 
-##### 29-MAR-2023
+#### 29-MAR-2023
 
 -   started template for DNA/RNA data extraction sheet in new repo for extractions\
 
@@ -576,7 +643,7 @@ dilute <- function(C1, C2) {
             -   60% 264, 264B
             -   undergrad Nora Hessen 2hrs per week in 264, 264B since January '23
 
-##### 28-MAR-2023
+#### 28-MAR-2023
 
 -   read papers:
 
@@ -615,7 +682,7 @@ dilute <- function(C1, C2) {
     -   [ ] scoopulas (to scoop powder from mortar to weigh paper)
     -   [ ] denatured ethyl alcohol (disinfect labware between samples)
 
-##### 27-MAR-2023
+#### 27-MAR-2023
 
 -   read papers:
 
@@ -625,12 +692,12 @@ dilute <- function(C1, C2) {
 
 ##### 
 
-##### 21-MAR-2023
+#### 21-MAR-2023
 
 -   interviewed for WSG student assistant position
 -   began work on himb-2022 coral collection report
 
-##### 20-MAR-2023
+#### 20-MAR-2023
 
 -   installed Sophos anti-virus on Owl
 -   attended Robert's Lab meeting
@@ -638,33 +705,33 @@ dilute <- function(C1, C2) {
 -   put mortexer, DEPC-treated water, Qubit assay kit, on purchase log
 -   wrote [Qubit RNA Broad Range Protocol](https://sarahtanja.github.io/lab-book/protocols/protocol-qbit/) post
 
-##### 16-MAR-2023
+#### 16-MAR-2023
 
 -   finished SMEA/FISH 539 final paper
 
-##### 15-MAR-2023
+#### 15-MAR-2023
 
 -   out sick
 -   worked on SMEA/FISH 539 final paper
 
-##### 14-MAR-2023
+#### 14-MAR-2023
 
 -   out sick
 -   talked with Hailey Dockery about shadowing RNA extractions
 
-##### 13-MAR-2023
+#### 13-MAR-2023
 
 -   worked on SMEA/FISH 539 final paper
 -   updated R & RStudio to latest versions
 
-##### 10-MAR-2023
+#### 10-MAR-2023
 
 -   finished SMEA/FISH 1page reflection
 -   worked on SMEA/FISH 539 final paper
 -   met with GSIS speaker on Zoom
 -   made hotel reservations for GSIS
 
-##### 09-MAR-2023
+#### 09-MAR-2023
 
 -   Attended Coastal Ecology candidate chalk talk
 
@@ -687,26 +754,26 @@ dilute <- function(C1, C2) {
     -   https://github.com/hputnam/HI_Bleaching_Timeseries/blob/main/Dec-July-2019-analysis/data/Molecular-labwork.xlsx
     -   sample ID, use a separate extraction ID (in the event of multiple extractions from the same sample!)
 
-##### 07-MAR-2023
+#### 07-MAR-2023
 
 -   worked on SMEA/FISH 539 final paper
 -   met to make GSIS budget w/ Juliette
 -   met with Grace from Robert's Lab to practice RNA extraction
 -   participated in SAC interview for ADDEI
 
-##### 06-MAR-2023
+#### 06-MAR-2023
 
 -   presented final group project in SMEA/FISH 539
 -   worked on SMEA/FISH 539 final paper
 -   attended Coastal Ecology faculty candidate seminar
 
-##### 03-MAR-2023
+#### 03-MAR-2023
 
 -   I swear I've done stuff since January / how has winter quarter gone by so fast?!
 -   submitted [PCC Climate Solutions](https://pcc.uw.edu/research/funding-opportunities/) grant funding application this morning
 -   worked on FSMEA/FISH 539 final project + presentation
 
-##### 02-MAR-2023
+#### 02-MAR-2023
 
 -   submitted FHL TA application for summer A term marine botany
 -   helped interview ADDEI candidate
@@ -716,18 +783,18 @@ dilute <- function(C1, C2) {
 
 ## January 2023
 
-##### 31-JAN-2023
+#### 31-JAN-2023
 
 -   prepared 1st committee meeting blog post
 
-##### 20-JAN-2023
+#### 20-JAN-2023
 
 -   cleaned PBB
 -   strategized chapter 1: Low Dose Effects & chapter 2: Multiple Stressors for thesis
 -   arranged to meet with Miranda to talk about summer kelp gametophyte project
 -   completed lab safety trainings
 
-##### 19-JAN-2023
+#### 19-JAN-2023
 
 -   read [Ariana Huffmyer's](https://ahuffmyer.github.io/ASH_Putnam_Lab_Notebook/) lab posts on extraction protocols
 
@@ -740,16 +807,16 @@ dilute <- function(C1, C2) {
 
 -   designed graphical methods in Canva for pae-temp experiment
 
-##### 18-JAN-2023
+#### 18-JAN-2023
 
 -   worked with [norahess](https://github.com/norahess) to setup collaboration on ibis repo!
 -   talking about setting up Aiptasia spawning tanks to run experiments with cnidarian model organism reproduction
 
-##### 17-JAN-2023
+#### 17-JAN-2023
 
 -   attended Roberts lab meeting, discussed curriculum development for Maritime Highschool
 
-##### 13-JAN-2023
+#### 13-JAN-2023
 
 -   Read up on 'Omics', started a post on definitions and basics of the study of DNA & RNA
 -   Found [whole genome for *M. capitata* on NCBI](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/montipora%20capitata)
@@ -757,7 +824,7 @@ dilute <- function(C1, C2) {
 -   Williams, A., Pathmanathan, J. S., Stephens, T. G., Su, X., Chiles, E. N., Conetta, D., Putnam, H. M., & Bhattacharya, D. (2021). Multi-omic characterization of the thermal stress phenome in the stony coral Montipora capitata. *PeerJ*, *9*, e12335. https://doi.org/10.7717/peerj.12335
 -   Shumaker, A., Putnam, H. M., Qiu, H., Price, D. C., Zelzion, E., Harel, A., Wagner, N. E., Gates, R. D., Yoon, H. S., & Bhattacharya, D. (2019). Genome analysis of the rice coral Montipora capitata. *Scientific Reports*, *9*(1), 2571. https://doi.org/10.1038/s41598-019-39274-3
 
-##### 12-JAN-2023
+#### 12-JAN-2023
 
 -   Explored the use of purple sea urchin and/or Aiptasia for phthalate low-dose effect gametogenesis study (proposal brainstorming) for the [IBIS research mentor program](https://environment.uw.edu/students/current-students/identity-belonging-and-inquiry-in-science-ibis-program/)
 
@@ -775,7 +842,7 @@ dilute <- function(C1, C2) {
     -   Beckman Coulter Microfuge 16 Centrifuge
     -   Eppendorf Mastercycler nexus gradient
 
-##### 09-JAN-2023
+#### 09-JAN-2023
 
 -   Today I setup my GitHub 'notebook'! This is the beginning of my exploration of using GitHub to jot down thoughts, record 'daily bits', and organize the procedures and methods I'll use in my thesis research
 

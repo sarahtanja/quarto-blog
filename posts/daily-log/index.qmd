@@ -48,11 +48,87 @@ image: log.png
 
 -   
 
+#### 03-NOV-2023
+
+-   Finished extraction, nanodrop & qubit for 12 samples
+
+    -   6MH1a
+
+    -   10OH1a - greenish, bad! no DNA/RNA, degraded!
+
+    -   6PA2a
+
+    -   5HH1a
+
+    -   5HA1a
+
+    -   9OA2a
+
+    -   7HA1a
+
+    -   3CA1a
+
+    -   8CA1a
+
+    -   2OA1a
+
+    -   2MH1a
+
+    -   5CA2a
+
 #### 02-NOV-2023
 
--   
+-   Started extraction of 12 samples, paused after adding 350uL of DNA/RNA Lysis Buffer to 350uL of PK-Digested sample supernatent, and frozen in -80 freezer:
+
+    -   6MH1a
+    -   10OH1a - green
+    -   6PA2a
+    -   5HH1a
+    -   5HA1a
+    -   9OA2a
+    -   7HA1a
+    -   3CA1a
+    -   8CA1a
+    -   2OA1a
+    -   2MH1a
+    -   5CA2a - green
+
+-   Finished qubit of 10 samples:
+
+    -   1MH2a
+
+    -   2LA1a
+
+    -   1MA1a
+
+    -   1OH2a
+
+    -   6PH2a
+
+    -   10LH1a
+
+    -   9LA2a
+
+    -   8CH2a
+
+    -   8OA1a
+
+    -   5OH1a
 
 #### 01-NOV-2023
+
+-   Finished extraction & nanodrop of 10 samples:
+
+    -   1MH2a
+    -   2LA1a
+    -   1MA1a
+    -   1OH2a
+    -   6PH2a
+    -   10LH1a
+    -   9LA2a
+    -   8CH2a
+    -   8OA1a
+    -   5OH1a
 
 -   GSS Presentation Design Workshop with Tim Essington
 

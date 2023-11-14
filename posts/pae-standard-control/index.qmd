@@ -1,0 +1,96 @@
+---
+title: "Making PAE treatments and controls"
+author: "Sarah Tanja"
+date: '11/14/2023'
+categories: [protocols]
+image: thumbnail.jpg
+draft: false
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+---
+
+## Phthalates
+
+I used the [EPA 506 phthalate esters mix 1](https://www.sigmaaldrich.com/US/en/product/supelco/48223?gclid=CjwKCAjw-8qVBhANEiwAfjXLrp8fD-G8yiB_NyrA3OLy3r2jdylgBmHVPUfGFnMp4CMfuVwePGi1dxoCBQIQAvD_BwE), which comes as a 1mL ampule vial with a glass break-off cap. It includes 6 common phthalates each at a concentration of $500\mu g/mL$, aka $(500,000 \mu g/L)$.
+
+The mix contained the following 6 phthalates:
+
+1.  Benzyl butyl phthalate **(BBP)**
+
+2.  Bis(2-ethylhexyl) adipate **(DEHA)**
+
+3.  Bis(2-ethylhexyl) phthalate **(DEHP)**
+
+::: callout-caution
+**DEHP** is listed on EPA's Toxics Release Inventory (TRI)
+:::
+
+::: callout-caution
+**DEHP** is regulated under the Safe Drinking Water Act. The highest concentration allowed, the maximum contaminant level (MCL), is $0.006 mg/L$ , or ($6\mu g/L$)
+
+4.  Dibutyl pthalate **(DBP)**
+
+**DBP** is listed on EPA's Toxics Release Inventory (TRI)
+:::
+
+5.  Diethyl phthalate **(DEP)**
+
+6.  Dimethyl phthalate **(DMP)**
+
+#### Safety Considerations
+
+Please review the [SDS](https://www.sigmaaldrich.com/US/en/sds/supelco/48223) for EPA 506 phthalate mix, 500$\mu$g/L in methanol before working with this chemical!
+
+Hazard statements:
+
+-   H225 Highly flammable liquid and vapor
+-   Toxic if swallowed, in contact with skin or if inhaled
+-   Causes damage to organs (Eyes, Central nervous system)
+
+::: callout-caution
+This chemical mix is toxic and can absorb through skin, and vaporize and be inhaled. **WEAR GLOVES, SAFETY GLASSES, & MASK. WORK UNDER A HOOD!** *If you are pregnant, consider alternatives like preparing leachate similar to* [@tetu2019]
+:::
+
+## Environmentally Relevant Doses
+
+Concentrations of phthalates in environmental sea water samples reported in the literature:
+
+| Reference            | Study Area                  | BBP | DEHA                 | DEHP                | DBP                | DEP                 | DMP                     | $\sum$PAE         |
+|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+| [@lynch2022]         | Review                      |     |                      |                     |                    |                     |                         | 0.5 - 10 $\mu$g/L |
+| [@jebara2021]        | Tunisia                     |     |                      | \<LOD-168$\mu$g/L   | \<LOD-30.5$\mu$g/L | \<LOD-17.0$\mu$g/L  |                         |                   |
+| [@sanchez-avila2012] | Mediterranean Coastal Spain |     | 0.0021-0.304$\mu$g/L | 0.031-0.617$\mu$g/L |                    | 0.024-0.483$\mu$g/L | 0.0028 - 0.142 $\mu$g/L |                   |
+
+@jebara2021 detected **DEHP** in 92.7% of 165 water samples. The mean concentration of **DEHP** in those samples were: $71.1\mu g/L$, and the median was: $45.7 \mu g/L$.
+
+Based on these sources reporting environmentally relevant concentrations of phthalates in surface waters, I chose to dose the coral gametes and larvae at the following concentrations:
+
+-   $0\mu g/L$ : control
+
+-   $0.5\mu g/L$ ($0.0005 \mu g/mL$): environmentally relevant value
+
+-   $5 \mu g/L$ ($0.005 \mu g/mL$): would be considered just under acceptable drinking water
+
+-   $50 \mu g/L$ ($0.05 \mu g/mL$) : increasing by factor of 10
+
+-   $150 \mu g/L$ ($0.150 \mu g/mL$): max environmental relevance $168 \mu g/L$)
+
+::: callout-tip
+Doses will be graphed on a log scale x axis
+:::
+
+C1C2=V1V2
+
+V1 = C2V2/C1
+
+| c1(ug/mL) | c2(ug/mL) |  v2(mL) |  v1(mL) |
+|-----------|-----------|---------|---------|
+| 200       | 0.15      | 800     | 0.6     |
+| 0.15      | 0.05      | 600     | 200     |
+| 0.05      | 0.005     | 500     | 50      |
+| 0.005     |  0.0005   | 500     | 50      |
+|           |           |         |         |

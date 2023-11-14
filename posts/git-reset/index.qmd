@@ -33,16 +33,17 @@ or file name!). Here are the steps to follow:
 
 -   Add the following text to the `.git/hooks/pre-commit` file:
 
-```{=html}
 <!-- -->
+
+```         
+#!/bin/sh
+
+# Maximum file size (in bytes)
+max_file_size=104857600
+
+# Find all files larger than max_file_size and add them to the .gitignore file
+find . -type f -size +$max_file_size -exec echo "{}" >> .gitignore \;
 ```
-    #!/bin/sh
-
-    # Maximum file size (in bytes)
-    max_file_size=104857600
-
-    # Find all files larger than max_file_size and add them to the .gitignore file
-    find . -type f -size +$max_file_size -exec echo "{}" >> .gitignore \;
 
 > This code sets the max_file_size variable to 100 MB and then uses the
 > find command to locate all files in the repository that are larger
@@ -62,10 +63,12 @@ git diff --exit-code .gitignore exit_status=\$? if \[ \$exit_status -eq
 1 \] then set +e for i in `cat .gitignore` do set +e git rm --cached \$i
 done
 
-    git add .gitignore
-    git commit .gitignore --no-verify -m"ignoring large files"
+```         
+git add .gitignore
+git commit .gitignore --no-verify -m"ignoring large files"
 
-    echo "ignored new large files"
+echo "ignored new large files"
+```
 
 fi
 
@@ -97,29 +100,33 @@ Lab Course Issue
 
 ## Using **`git revert`**:
 
-    -   Open your terminal or command prompt.
+```         
+-   Open your terminal or command prompt.
 
-    -   Navigate to the repository directory using the **`cd`** command.
+-   Navigate to the repository directory using the **`cd`** command.
 
-    -   Execute the following command to revert the most recent commit:
+-   Execute the following command to revert the most recent commit:
 
-        `git revert HEAD`
+    `git revert HEAD`
 
-    -   Git will create a new commit that undoes the changes introduced by the previous commit. A text editor will open for you to provide a commit message. Save and close the editor to complete the revert process.
+-   Git will create a new commit that undoes the changes introduced by the previous commit. A text editor will open for you to provide a commit message. Save and close the editor to complete the revert process.
+```
 
 ## Using **`git reset`**
 
-    -   Open your terminal or command prompt.
+```         
+-   Open your terminal or command prompt.
 
-    -   Navigate to the repository directory using the **`cd`** command.
+-   Navigate to the repository directory using the **`cd`** command.
 
-    -   Execute the following command to reset the repository to the commit before the most recent one:
+-   Execute the following command to reset the repository to the commit before the most recent one:
 
-        `git reset HEAD~1`
+    `git reset HEAD~1`
 
-        This command moves the branch pointer to the commit before the most recent one, effectively undoing the last commit.
+    This command moves the branch pointer to the commit before the most recent one, effectively undoing the last commit.
 
-    -   Note that the changes introduced in the undone commit will still be present in your working directory. You can then modify or discard them as needed.
+-   Note that the changes introduced in the undone commit will still be present in your working directory. You can then modify or discard them as needed.
+```
 
 Please exercise caution when using these commands, as they modify the
 Git history. If you have already pushed the commit you want to undo to a
@@ -130,7 +137,7 @@ that instead.
 
 ## Last Resort... Burn it down
 
-> In the event that you accidentally committed a big file (>100MB), you
+> In the event that you accidentally committed a big file (\>100MB), you
 > can reset to the last successful git master branch push
 
 ::: callout-warning

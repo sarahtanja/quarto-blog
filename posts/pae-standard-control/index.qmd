@@ -3,7 +3,6 @@ title: "Making PAE treatments and controls"
 author: "Sarah Tanja"
 date: '11/14/2023'
 categories: [protocols]
-image: thumbnail.jpg
 draft: false
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>
@@ -11,11 +10,12 @@ toc-depth: 5
 toc-location: left
 reference-location: margin
 citation-location: margin
+bibliography: "../library.bib"
 ---
 
 ## Phthalates
 
-I used the [EPA 506 phthalate esters mix 1](https://www.sigmaaldrich.com/US/en/product/supelco/48223?gclid=CjwKCAjw-8qVBhANEiwAfjXLrp8fD-G8yiB_NyrA3OLy3r2jdylgBmHVPUfGFnMp4CMfuVwePGi1dxoCBQIQAvD_BwE), which comes as a 1mL ampule vial with a glass break-off cap. It includes 6 common phthalates each at a concentration of $500\mu g/mL$, aka $(500,000 \mu g/L)$.
+I used the [EPA 506 phthalate esters mix 1](https://www.sigmaaldrich.com/US/en/product/supelco/48223?gclid=CjwKCAjw-8qVBhANEiwAfjXLrp8fD-G8yiB_NyrA3OLy3r2jdylgBmHVPUfGFnMp4CMfuVwePGi1dxoCBQIQAvD_BwE), which comes as a 1mL ampule vial with a glass break-off cap. It includes 6 common phthalates each at a concentration of $500\mu g/mL$, aka $(500,000 \mu g/L)$ in methanol as a carrier solvent to stabilize the phthalate esters mix.
 
 The mix contained the following 6 phthalates:
 
@@ -45,7 +45,7 @@ The mix contained the following 6 phthalates:
 
 #### Safety Considerations
 
-Please review the [SDS](https://www.sigmaaldrich.com/US/en/sds/supelco/48223) for EPA 506 phthalate mix, 500$\mu$g/L in methanol before working with this chemical!
+Please review the [SDS](https://www.sigmaaldrich.com/US/en/sds/supelco/48223) for EPA 506 phthalate mix, 500$\mu$g/mL in methanol before working with this chemical!
 
 Hazard statements:
 
@@ -62,7 +62,7 @@ This chemical mix is toxic and can absorb through skin, and vaporize and be inha
 Concentrations of phthalates in environmental sea water samples reported in the literature:
 
 | Reference            | Study Area                  | BBP | DEHA                 | DEHP                | DBP                | DEP                 | DMP                     | $\sum$PAE         |
-|----------------------|-----------------------------|-----|----------------------|---------------------|--------------------|---------------------|-------------------------|-------------------|
+|--------|--------|--------|--------|--------|--------|--------|--------|--------|
 | [@lynch2022]         | Review                      |     |                      |                     |                    |                     |                         | 0.5 - 10 $\mu$g/L |
 | [@jebara2021]        | Tunisia                     |     |                      | \<LOD-168$\mu$g/L   | \<LOD-30.5$\mu$g/L | \<LOD-17.0$\mu$g/L  |                         |                   |
 | [@sanchez-avila2012] | Mediterranean Coastal Spain |     | 0.0021-0.304$\mu$g/L | 0.031-0.617$\mu$g/L |                    | 0.024-0.483$\mu$g/L | 0.0028 - 0.142 $\mu$g/L |                   |
@@ -85,9 +85,7 @@ Based on these sources reporting environmentally relevant concentrations of phth
 Doses will be graphed on a log scale x axis
 :::
 
-C1C2=V1V2
-
-V1 = C2V2/C1
+## Methanol 'Solvent' Control
 
 | c1(ug/mL) | c2(ug/mL) | v2(mL) | v1(mL) |
 |-----------|-----------|--------|--------|

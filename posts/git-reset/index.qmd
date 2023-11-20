@@ -77,7 +77,7 @@ echo "ignored new large files"
 Save the pre-commit file and make it executable by running the following
 command in Terminal from your base git directory:
 
-```{r, engine='bash'}
+```
 chmod +x .git/hooks/pre-commit
 ```
 

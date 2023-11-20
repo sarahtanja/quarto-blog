@@ -2,7 +2,7 @@
 title: "Post Template"
 author: "Sarah Tanja"
 date: '05/19/2023'
-categories: [lab records, protocols, goals, committee meetings, daily log]
+categories: [lab records, protocols, committee, daily log, learning journey, code help]
 image: thumbnail.jpg
 draft: true
 toc: true
@@ -11,6 +11,8 @@ toc-depth: 5
 toc-location: left
 reference-location: margin
 citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
 ---
 
 [some *citrine* text]{style="color:#E4D00A"} [This text is highlighted in citrine.]{style="background-color:#E4D00A"}

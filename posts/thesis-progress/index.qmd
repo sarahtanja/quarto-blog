@@ -1,0 +1,79 @@
+---
+title: "Master's Thesis Progress"
+author: "Sarah Tanja"
+date: '11/19/2023'
+categories: [learning journey, committee]
+draft: false
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
+---
+
+# Sarah's Master's Thesis Progress:
+
+| Milestone                                                                                                                     | Expected         | Completed            |
+|----------------------------------|-------------------|-------------------|
+| [Form Committee](https://docs.google.com/forms/d/e/1FAIpQLSdMCg96RoRiT4yEIAMorzOPT6GqDYFRQcPp0Ttr0D22idJqYg/viewform)         | \[AU22\] 16DEC22 | \[WI23\] 05JAN23     |
+| [Submit Plan of Study](https://forms.gle/15siYRGdHKr5dX2B7)                                                                   | \[AU22\] 16DEC22 | \[WI23\] 05JAN23     |
+| [Submit Thesis Proposal](https://docs.google.com/forms/d/e/1FAIpQLScL5Tp4GOxGUTxV2c1-kXW0orPTZEfuFeGtMF4eoJ9LHC9mcw/viewform) | \[AU22\] 16DEC22 | \[WI23\] **Overdue** |
+| End-of-Program Meeting with GPA                                                                                               | \[AU23\] 01NOV23 | **Overdue**          |
+| Submit Thesis Draft                                                                                                           | \[WI24\] 31JAN24 |                      |
+| Request Final Exam                                                                                                            | \[WI24\] 31JAN24 |                      |
+| Request Master's Degree                                                                                                       | \[WI24\] 31JAN24 |                      |
+| Final Exam: Thesis Seminar + Oral Exam                                                                                        | \[SP24\] 05APR24 |                      |
+| Submit Master's Thesis                                                                                                        | \[SP24\] 31MAY24 |                      |
+| Commencement                                                                                                                  | 08JUN24          |                      |
+
+Check Degree Audit for SAFS [here](https://myplan.uw.edu/audit/#/degree?states=N4Ig7gDgziBcLADrgJYDsAmB7MAJApigOYAWALsrAMxUCctANMmOtmAApZQpkpZqUAjAFYALAF8Q4oA)
+
+# Completed Coursework
+
+::: {.callout-tip appearance="minimal" icon="false"}
+| Qtr  | Course                                      | Credits | Grade |
+|:-----|---------------------------------------------|---------|-------|
+| WI21 | OCEAN 518-Scientific Writing                | 2.0     | CR    |
+| SU21 | FHL 446-Marine Botany                       | 9.0     | 4.0   |
+| AU21 | FISH 511-Topics: Evol&Ecol Plastics Seminar | 2.0     | CR    |
+| AU21 | FISH 522-Hot Topics in AFS                  | 2.0     | CR    |
+| AU21 | FISH 552-Intro R Programming                | 2.0     | CR    |
+| AU21 | FISH 553-ADV R Programming                  | 2.0     | CR    |
+| AU21 | QSCI 482-Statistical Inference in Ecol      | 5.0     | 3.8   |
+| WI22 | FISH 521-Research Proposal Writing          | 4.0     | 3.7   |
+| WI22 | FISH 700-Masters Thesis                     | 3.0     | CR    |
+| WI22 | OCEAN 531-Marine Phyto Biogeochem           | 3.0     | 3.9   |
+| WI22 | FISH 700-Masters Thesis                     | 5.0     | CR    |
+| WI22 | FISH 541-Environmental Physiology           | 5.0     | 4.0   |
+| SU22 | FISH 700-Masters Thesis                     | 10.0    | CR    |
+| AU22 | FISH 561-Resource Economics & Policy        | 4.0     | 4.0   |
+| AU22 | SMEA 500-Human Dimensions of Global Change  | 3.0     | 4.0   |
+| AU22 | SMEA 521-Climate Change Governance          | 3.0     | 3.7   |
+| WI23 | FISH 539-US Fishery Management & Policy     | 3.0     | 4.0   |
+| WI23 | FISH 700-Masters Thesis                     | 7.0     | CR    |
+| SP23 | FISH 546-Bioinformatics                     | 3.0     | 3.8   |
+| SP23 | FISH 700-Masters Thesis                     | 7.0     | CR    |
+| SU23 | FISH 700-Masters Thesis                     | 10.0    | CR    |
+:::
+
+# Audited Coursework
+
+::: {.callout-important appearance="minimal" icon="false"}
+| Qtr  | Course                             |
+|:-----|------------------------------------|
+| WI22 | B BIO 495 C-Investigative Biology  |
+| WI22 | FISH 427 A-Tropical Marine Biology |
+:::
+
+# In-Progress Coursework
+
+::: {.callout-important appearance="minimal" icon="false"}
+| Qtr  | Course                                    | Credits |
+|:-----|-------------------------------------------|---------|
+| AU23 | C ENV-Improv for Science Communication    | 1.0     |
+| AU23 | FISH 510- Topics in Genetics & Physiology | 2.0     |
+| AU23 | FISH 700-Masters Thesis                   | 7.0     |
+:::

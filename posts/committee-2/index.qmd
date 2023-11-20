@@ -1,0 +1,168 @@
+---
+title: "Master's Thesis Committee Meeting #2"
+subtitle: "Options for addressing the need for a solvent control"
+author: "Sarah Tanja"
+date: '11/19/2023'
+categories: [committee]
+draft: false
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
+bibliography: references.bib
+---
+
+# *Tuesday Nov 21st 2023*
+
+## Agenda
+
+Introduce [issue] with lack of solvent control in experimental design - 5 mins
+
+Introduce [options] for addressing the issue - 15 mins
+
+Seek [feedback] & advice - 40 mins
+
+## Committee
+
+-   Supervisory Committee Chair - Dr. Jacqueline L Padilla-Gamiño, jpgamino\@uw.edu
+-   Committee UW SAFS Core Faculty - Dr. Steven B Roberts, sr320\@uw.edu
+-   Committee UW SAFS Core Faculty - Dr. Amy Van Cise, avancise\@uw.edu
+-   Committee Member - Dr. Jesse R Zaneveld, zaneveld\@uw.edu
+-   Graduate Student, (Master's Thesis) - Sarah S Tanja, stanja\@uw.edu
+
+## Agreements
+
+::: {.callout-note appearance="simple" icon="false"}
+These agreements will help facilitate our mentor/mentee expectations in a living document that will be collaboratively updated throughout Sarah's Master's work
+:::
+
+From the [2022-23 SAFS graduate student guide:](https://docs.google.com/document/d/1KITnRsUObcn0QNrKD8WAiq3dozwWW2Bs_fJYRq5u_cQ/edit)
+
+> "The Chair and at least one-half of the total membership must be members of the Graduate Faculty. A minimum of two committee members must also be SAFS Core faculty**.** **The supervisory committee will provide expertise and depth in areas related to the student's research. The student should rely primarily on the Supervisory Committee Chair and secondarily on the other committee members for professional guidance.**"
+
+-   We will work with open, honest, and kind communication
+-   We will prioritize doing fewer projects well over many small projects poorly
+-   We acknowledge that we may be working flexibly or remotely from different time-zones
+-   Sarah will organize her research with `GitHub` to foster open science
+    -   tips on [writing & editing a manuscript](http://paulklemm.com/blog/2014-07-16-use-github-for-scientific-writing/) with multiple reviewers using`GitHub`
+-   Sarah will organize all committee meetings, and be responsible for reaching out to individual committee members for help when she needs it
+-   Sarah is on a learning curve and will need to reach out to the committee for guidance; at the same time it is her responsibility to own the project and learn the analyses she is conducting
+-   Sarah will maintain an [open lab notebook](https://sarahtanja.github.io/quarto-blog/) and post (at least weekly) to it
+
+### Our shared vision of success looks like:
+
+-   [ ] two published manuscripts (one for each chapter)[^1]
+-   [ ] two complete thesis chapters[^2]
+-   [ ] graduation by FALL '24[^3]
+-   [ ] reproducible, open-science
+-   [ ] prioritize researcher safety & environmental health
+
+[^1]: Publication is not a requirement for graduation, but it is something I want to do in order to prove that I am a scientist
+
+[^2]: Only one chapter is required by UW for a Master's degree but SAFS faculty often push students to do two
+
+[^3]: Previous graduation goal was SP '24. My Post 9-11 GI Bill Funding ends after SP '24. We plan to extend my program by two quarter through a 1-quarter TAship and a 1-quarter SAFS Finishing Fellowship.
+
+### [Sarah's Thesis Progress](../thesis-progress/index.qmd)
+
+### Research Questions
+
+1.  **What are the combined effects of temperature and phthalates on the *M. capitata* coral microbiome?**
+
+2.  **What are the combined effects of temperature and phthalates on *M. capitata* coral gene expression?**
+
+3.  Does gene expression covary with microbiome composition[@fuess2021]? [^4]
+
+[^4]: A new question that I've been curious about, but that may not fit into the scope and timeline of a Master's Thesis
+
+# ISSUE {#issue}
+
+## Lack of Solvent Control
+
+I used the [EPA 506 phthalate esters mix 1](https://www.sigmaaldrich.com/US/en/product/supelco/48223?gclid=CjwKCAjw-8qVBhANEiwAfjXLrp8fD-G8yiB_NyrA3OLy3r2jdylgBmHVPUfGFnMp4CMfuVwePGi1dxoCBQIQAvD_BwE) as my standard from which I created my phthalate doses.
+
+The EPA 506 phthalate esteres mix 1 is a 1mL vial that includes the **6 most common phthalates added to consumer products** each at a concentration of 500$\mu$g / mL, *(500,000*$\mu$g/L) **in methanol.**
+
+I neglected to include a **methanol solvent control** in my experimental design. This means that I can't fully attribute the differences I see between my treatments to the presence of phthalates. They may be due to the methanol solvent interactions along with the phthalates!
+
+There are a few examples of ecotoxicology studies on phthalate plasticizers that use a solvent control [@park2019; @park2020; @zhu2022], and others that don't mention a solvent control [@zhou2022].
+
+Still other studies that focus on different environmental toxins use solvent controls as common practice [@mauduit2023].
+
+# OPTIONS {#options}
+
+## 1. Filter & justify
+
+I could address the issue of the lack of methanol control in the microbiome chapter by filtering out the methylophaga bacteria that are known to 'feed' on methanol. This is operating under the assumption that the methylophaga bacteria present in all the samples, but especially in the 'polluted' samples, were only present because of the methanol solvent. This doesn't attribute other potentially pathogenic bacteria to the presence of methanol. It's a pretty weak method of addressing the issue.
+
+I could further justify the results of any differences in differentially expressed genes in the transcriptomics chapter by focusing the discussion on known pathways that are affected by phthalates, such as those involved in oxidative stress, and the transcriptions of enzymes like superoxide dismutase (SOD), catalase (CAT) and peroxidase (POD). Similar to above, this is a pretty weak method and it's likely those same pathways may be affected by the methanol solvent.
+
+| Pros                                                                      | Cons                                                                      |
+|------------------------------------|------------------------------------|
+| fastest, cheapest                                                         | not publishable?                                                          |
+| no throwing away data, not wasteful                                       | results are still confounded                                              |
+| realistic: I'm just a student and here's what I learned in the time I had | It looks bad to have spent 3 years in a grad program with no publications |
+
+This is the easiest, quickest option. However, it seems unlikely that the results from this would pass peer review and make it into a published manuscript. I would also not be proud of this work, and feel that my results from this option would have too many limitations to be impactful.
+
+## 2. Conduct separate solvent experiment
+
+This would involve justifying the existing data with a separate study that looks at the impacts of only the methanol solvent on the coral microbiome and gene expression. Unfortunately, this would still involve traveling to HIMB, setting up the experiment, and running a 6X2X10 factorial experiment (120 samples!) because each concentration of phthalates corresponds to a different concentration of methanol solvent.
+
+|                           |                          |                    |                                   |                                 |              |
+|-----------|------------|-------------|--------------|--------------------|---------------|
+| Initial \[PAE\](ug/mL) C1 | Target \[PAE\](ug/mL) C2 | End Volume (mL) V2 | Volume of Initial \[PAE\] (mL) V1 | Volume of Filtered Seawater(mL) | \[methanol\] |
+| 500                       | 0.5                      | 500                | 0.5                               | 499.5                           | 0.100000%    |
+| 500                       | 0.15                     | 1000               | 0.3                               | 999.7                           | 0.030000%    |
+| 500                       | 0.05                     | 1000               | 0.1                               | 999.9                           | 0.010000%    |
+| 0.05                      | 0.005                    | 1000               | 100                               | 900                             | 0.001000%    |
+| 0.005                     | 0.0005                   | 500                | 5                                 | 495                             | 0.000010%    |
+
+I think this is probably the worst way to address the issue... lots of effort, and still quite risky. It's risky because if we find large differences in the filtered seawater control and the methanol, it will be hard to apply those differences to the existing dataset because the experiment would be occurring with different coral colonies in a different season.
+
+| Pros                                  | Cons                                                                        |
+|------------------------------------------------|------------------------|
+| no throwing away data....             | have to process and sequence an additional 140? samples                     |
+| could this be done with a smaller n?  | still have to travel to HI and take time to run experiment & do extractions |
+
+## 3. Redo with solvent control
+
+We could redo the whole experiment with a single solvent control by increasing the concentration of methanol solvent in each treatment to be uniform.[^5]
+
+[^5]: Big thank you to [Celeste Valdivia](https://valeste.github.io/) who introduced me to this method for ecotoxicologists!
+
+| Pros                                                       | Cons                                                        |
+|------------------------------------------------------------|-------------------------------------------------------------|
+| genotypes & season are the same                            | travel to HI, takes time to run experiment & do extractions |
+| one solvent control in place of the 'overdose' treatment   | still would have to process 6x2x7=84 samples for DNA/RNA    |
+| could reduce n from 10 to 7 to make things more manageable | handling hazardous chemicals... again 😞                    |
+
+## 4. Redo using home-brewed leachates
+
+We could redo the whole experiment and sub in home-brewed leachate instead of the EPA 506 Phthalate ester mix, thus getting rid of the need to run a solvent control.
+
+| Pros                                                                   | Cons                                                                              |
+|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| genotypes & season are the same                                        | travel to HI, takes time to run experiment & do extractions                       |
+| no solvent control, no need for hazardous chemical handling            | still would have to process 6x2x7=84 samples for DNA/RNA                          |
+| could reduce n from 10 to 7 to make things more manageable             | don't know if we're hitting the target of environmentally relevant concentrations |
+| More environmentally realistic to show impacts of 'chemical cocktails' | can't pinpoint phthalates in 'leachate', less impactful discussion                |
+|                                                                        | difficult to characterize the 'chemical cocktail'                                 |
+
+# Original Experimental Design
+
+PAE-TEMP \| *M. capitata* Acute Phthalate & Thermal Stress Exposure (As conducted in August 2022)
+
+![pae-temp-graphical-methods](graphical-methods.png)visual/*graphical methods*
+
+**In Summary:** the [coral-pae-temp](https://github.com/sarahtanja/coral-pae-temp) experiment resulted in a total of 140 samples, with an n=10, that were flash-frozen in liquid nitrogen and can be used for DNA/RNA studies.
+
+**Limitations:** In order to ensure the phthalate concentration was controlled in each treatment, the 20mL scintillation vials were a closed, 'mesocosm', and the corals did not receive water changes during the short 48hr exposure. Because of this, I expect we will see degradation between the environmental and experimental control samples. This study can't account for the fact that corals in Kaneohe Bay may already be exposed to chronic low-levels of PAE pollution, so we can't say our control baseline is 'zero PAE exposure'. Replication may be difficult because it relies on the use of [EPA 506 phthalate esters mix 1](https://www.sigmaaldrich.com/US/en/product/supelco/48223?gclid=CjwKCAjw-8qVBhANEiwAfjXLrp8fD-G8yiB_NyrA3OLy3r2jdylgBmHVPUfGFnMp4CMfuVwePGi1dxoCBQIQAvD_BwE), which may pose harm to researcher health.
+
+# FEEDBACK {#feedback}
+
+------------------------------------------------------------------------

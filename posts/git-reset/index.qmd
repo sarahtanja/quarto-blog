@@ -33,8 +33,6 @@ or file name!). Here are the steps to follow:
 
 -   Add the following text to the `.git/hooks/pre-commit` file:
 
-<!-- -->
-
 ```         
 #!/bin/sh
 
@@ -69,8 +67,6 @@ git commit .gitignore --no-verify -m"ignoring large files"
 
 echo "ignored new large files"
 ```
-
-fi
 
 > It is pretty brute force and the downside is that in case there were
 > new large files added by the git hook, the origin commit fails because

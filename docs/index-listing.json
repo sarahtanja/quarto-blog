@@ -1,6 +1,7 @@
 {
   "listing": "/index.html",
   "items": [
+    "/posts/pae-standard-control/index.html",
     "/posts/git-reset/index.html",
     "/posts/dna-rna-extraction-protocol/index.html",
     "/posts/rna-woes/index.html",

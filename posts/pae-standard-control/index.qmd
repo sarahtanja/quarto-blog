@@ -31,9 +31,11 @@ The mix contained the following 6 phthalates:
 
 ::: callout-caution
 **DEHP** is regulated under the Safe Drinking Water Act. The highest concentration allowed, the maximum contaminant level (MCL), is $0.006 mg/L$ , or ($6\mu g/L$)
+:::
 
 4.  Dibutyl pthalate **(DBP)**
 
+::: callout-caution
 **DBP** is listed on EPA's Toxics Release Inventory (TRI)
 :::
 
@@ -60,7 +62,7 @@ This chemical mix is toxic and can absorb through skin, and vaporize and be inha
 Concentrations of phthalates in environmental sea water samples reported in the literature:
 
 | Reference            | Study Area                  | BBP | DEHA                 | DEHP                | DBP                | DEP                 | DMP                     | $\sum$PAE         |
-|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+|----------------------|-----------------------------|-----|----------------------|---------------------|--------------------|---------------------|-------------------------|-------------------|
 | [@lynch2022]         | Review                      |     |                      |                     |                    |                     |                         | 0.5 - 10 $\mu$g/L |
 | [@jebara2021]        | Tunisia                     |     |                      | \<LOD-168$\mu$g/L   | \<LOD-30.5$\mu$g/L | \<LOD-17.0$\mu$g/L  |                         |                   |
 | [@sanchez-avila2012] | Mediterranean Coastal Spain |     | 0.0021-0.304$\mu$g/L | 0.031-0.617$\mu$g/L |                    | 0.024-0.483$\mu$g/L | 0.0028 - 0.142 $\mu$g/L |                   |
@@ -87,10 +89,10 @@ C1C2=V1V2
 
 V1 = C2V2/C1
 
-| c1(ug/mL) | c2(ug/mL) |  v2(mL) |  v1(mL) |
-|-----------|-----------|---------|---------|
-| 200       | 0.15      | 800     | 0.6     |
-| 0.15      | 0.05      | 600     | 200     |
-| 0.05      | 0.005     | 500     | 50      |
-| 0.005     |  0.0005   | 500     | 50      |
-|           |           |         |         |
+| c1(ug/mL) | c2(ug/mL) | v2(mL) | v1(mL) |
+|-----------|-----------|--------|--------|
+| 200       | 0.15      | 800    | 0.6    |
+| 0.15      | 0.05      | 600    | 200    |
+| 0.05      | 0.005     | 500    | 50     |
+| 0.005     | 0.0005    | 500    | 50     |
+|           |           |        |        |

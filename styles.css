@@ -1,1 +1,7 @@
 /* css styles */
+
+/* nav bar logo size*/
+.navbar-brand img {
+    width: 150px;
+    min-height: 200px ;
+}

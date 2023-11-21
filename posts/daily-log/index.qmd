@@ -17,34 +17,42 @@ image: log.png
 
 ## November 2023
 
+#### **21-NOV-2023**
+
+-   2nd Master's Thesis Committee Meeting
+
+    -   Trying to come up with a solution to lack of solvent control.. how to move forward
+
 #### 05-NOV-2023
 
 -   Undoing large file commit on coral-pae-temp for \~2hrs 🤬, tried to just undo the one commit, but couldn't get it to work. Had to execute `git reset –hard origin/main`
 
 -   Added the following to the `git/hooks/pre-commit` file:
 
-        #!/bin/bash
+    ```         
+    #!/bin/bash
 
-        echo "automatically ignoring large files"
-        find . -size 5M | sed 's|^\./||g' >> .gitignore
-        cat .gitignore | sort | uniq > .gitignore
+    echo "automatically ignoring large files"
+    find . -size 5M | sed 's|^\./||g' >> .gitignore
+    cat .gitignore | sort | uniq > .gitignore
 
-        git diff --exit-code .gitignore
-        exit_status=$?
-        if [ $exit_status -eq 1 ]
-        then
-            set +e
-            for i in `cat .gitignore`
-            do
-            set +e
-                git rm --cached $i
-            done
+    git diff --exit-code .gitignore
+    exit_status=$?
+    if [ $exit_status -eq 1 ]
+    then
+        set +e
+        for i in `cat .gitignore`
+        do
+        set +e
+            git rm --cached $i
+        done
 
-            git add .gitignore
-            git commit .gitignore --no-verify -m"ignoring large files"
+        git add .gitignore
+        git commit .gitignore --no-verify -m"ignoring large files"
 
-            echo "ignored new large files"
-        fi
+        echo "ignored new large files"
+    fi
+    ```
 
 -   
 
@@ -162,6 +170,38 @@ image: log.png
 
 ## October 2023
 
+#### **27-OCT-2023**
+
+-   QA/QC'd samples from 26-OCT-2023
+
+-   Met with Kip & moved experiment setup to PBB
+
+-   Collected glycerol from Jon Bakker at Horticultural Center Merill Hall
+
+#### **26-OCT-2023**
+
+-   extracted samples:
+
+    -   6LH1a
+
+    -   8LA2a
+
+    -   10CH2a
+
+    -   5CH2a
+
+    -   4HA2a
+
+    -   7OA2a
+
+    -   2MA2a
+
+    -   3LH1a
+
+    -   5LA1a
+
+    -   8MH2a
+
 #### 24-OCT-2023
 
 -   working on WSN presentation!
@@ -249,11 +289,13 @@ image: log.png
 
 <!-- -->
 
-    The abstract should briefly introduce the project, the goals, the results, and the significance
+```         
+The abstract should briefly introduce the project, the goals, the results, and the significance
 
-    The presentation title should have no more than 130 characters max (including spaces) in ALL UPPERCASE
+The presentation title should have no more than 130 characters max (including spaces) in ALL UPPERCASE
 
-    The abstract should have no more than 1600 characters max (including spaces); use standard HTML tags for special formatting (e.g., \<b\>**bold text**\</b\>, \<i\>*italic text*\</i\>, etc.)
+The abstract should have no more than 1600 characters max (including spaces); use standard HTML tags for special formatting (e.g., \<b\>**bold text**\</b\>, \<i\>*italic text*\</i\>, etc.)
+```
 
 #### 01-SEP-2023
 
@@ -405,7 +447,7 @@ image: log.png
 
 -   [Integrating QIIME2 and R for data viz](https://forum.qiime2.org/t/tutorial-integrating-qiime2-and-r-for-data-visualization-and-analysis-using-qiime2r/4121)
 
--   RStudio>Project Options> Python> Python interpreter
+-   RStudio\>Project Options\> Python\> Python interpreter
 
 -   [Using Python with the RStudio IDE](https://support.posit.co/hc/en-us/articles/1500007929061-Using-Python-with-the-RStudio-IDE)
 
@@ -681,7 +723,7 @@ dilute <- function(C1, C2) {
     -   DNA, ITS2 to measure symbiont to host cell ratios for 'Patterns of bleaching and recovery of Montipora capitata in Kaneohe Bay' hosted at zenodo [here](https://zenodo.org/record/53231#.ZDWE0HbMKTQ) https://zenodo.org/record/53231#.ZDWE0HbMKTQ -RNAseq resources from A. Huffmeyer
 
         -   https://ahuffmyer.github.io/ASH_Putnam_Lab_Notebook/E5-Deep-Dive-RNAseq-Count-Matrix-Analysis/
-        -   https://github.com/AHuffmyer/EarlyLifeHistory_Energetics > Here is the spreadsheet of my NCBI accession numbers for my sequences: https://docs.google.com/spreadsheets/d/1qDGGpLFcmoO-fIFOPSUhPcxi4ErXIq2PkQbxvCCzI40/edit?pli=1#gid=457642286 If you look at the Mcapitata Ontogeny Timeseries tab it'll have all the SRR numbers you will need to download the TagSeq files. Instead of downloading the full data set you could just pick like three lifestages for a test comparison - AH
+        -   https://github.com/AHuffmyer/EarlyLifeHistory_Energetics \> Here is the spreadsheet of my NCBI accession numbers for my sequences: https://docs.google.com/spreadsheets/d/1qDGGpLFcmoO-fIFOPSUhPcxi4ErXIq2PkQbxvCCzI40/edit?pli=1#gid=457642286 If you look at the Mcapitata Ontogeny Timeseries tab it'll have all the SRR numbers you will need to download the TagSeq files. Instead of downloading the full data set you could just pick like three lifestages for a test comparison - AH
 
 #### 10-APR-2023
 

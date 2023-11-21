@@ -13,7 +13,7 @@ reference-location: margin
 citation-location: margin
 link-external-icon: true
 link-external-newwindow: true
-bibliography: references.bib
+bibliography: ../library.bib
 ---
 
 # *Tuesday Nov 21st 2023*
@@ -69,13 +69,19 @@ From the [2022-23 SAFS graduate student guide:](https://docs.google.com/document
 
 ### [Sarah's Thesis Progress](../thesis-progress/index.qmd)
 
-### Research Questions
+### Thesis Research Questions
 
 1.  **What are the combined effects of temperature and phthalates on the *M. capitata* coral microbiome?**
 
 2.  **What are the combined effects of temperature and phthalates on *M. capitata* coral gene expression?**
 
-3.  Does gene expression covary with microbiome composition[@fuess2021]? [^4]
+Broad & Tangential Research Interests...
+
+1.  Does gene expression covary with microbiome composition[@fuess2021]? [^4]
+
+2.  Does plastic pollution undermine resilience to thermal stress?
+
+3.  Does plastic pollution reduce photosynthetic efficiency and ocean primary production?
 
 [^4]: A new question that I've been curious about, but that may not fit into the scope and timeline of a Master's Thesis
 
@@ -125,7 +131,7 @@ This would involve justifying the existing data with a separate study that looks
 I think this is probably the worst way to address the issue... lots of effort, and still quite risky. It's risky because if we find large differences in the filtered seawater control and the methanol, it will be hard to apply those differences to the existing dataset because the experiment would be occurring with different coral colonies in a different season.
 
 | Pros                                 | Cons                                                                        |
-|-----------------------------------------------|------------------------|
+|-----------------------------------------------|-------------------------|
 | no throwing away data....            | have to process and sequence an additional 140? samples                     |
 | could this be done with a smaller n? | still have to travel to HI and take time to run experiment & do extractions |
 
@@ -152,6 +158,26 @@ We could redo the whole experiment and sub in home-brewed leachate instead of th
 | could reduce n from 10 to 7 to make things more manageable             | don't know if we're hitting the target of environmentally relevant concentrations |
 | More environmentally realistic to show impacts of 'chemical cocktails' | can't pinpoint phthalates in 'leachate', less impactful discussion                |
 |                                                                        | difficult to characterize the 'chemical cocktail'                                 |
+
+::: {.callout-important appearance="simple"}
+Jackie met with Francesco Saliu on 21NOV2023 and they spoke about using plastics from his studies in which he has already characterized PVC leachate 'chemical cocktail' and the associated phthalates. This would look like getting Francesco to send us
+:::
+
+## 6. Redo with Aiptasia model organism
+
+| Pros                                                                                                      | Cons                                         |
+|------------------------------------------|----------------------|
+| model organism for coral                                                                                  | they're mostly clones                        |
+| could keep and manipulate at UW                                                                           | it's kind of already been done [@klein2021a] |
+| fully annotated genome [**Exaiptasia diaphana**](https://www.ncbi.nlm.nih.gov/datasets/taxonomy/2652724/) |                                              |
+
+## 7. Redo microbiome study with PNW crustose coralline algae (CCA)
+
+| Pros                                                                                                                | Cons                                                                                                                                                                       |
+|---------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| hasn't been done                                                                                                    | only annotated genome is contaminated and for [Porolithon onkodes](https://www.ncbi.nlm.nih.gov/datasets/taxonomy/231751/), \... not a great candidate for gene expression |
+| microbiome of CCA is relevant to invertebrate settlement and related to other work in our lab (abalone restoration) | cryptic, can't tell species apart                                                                                                                                          |
+| could keep and manipulate at UW                                                                                     |                                                                                                                                                                            |
 
 # Original Experimental Design
 

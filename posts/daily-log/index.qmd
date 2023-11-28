@@ -3,7 +3,7 @@ title: "Daily Lab Log"
 subtitle: "Enter at your peril; This one is for me, not you"
 author: "Sarah Tanja"
 date: '01/01/2023'
-date-modified: "11/05/2023"
+date-modified: "11/27/2023"
 categories: [daily log]
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>
@@ -17,11 +17,37 @@ image: log.png
 
 ## November 2023
 
+#### 27-NOV-2023
+
+-   Lab Meeting:
+    -   Requested to order cultured abalone sea urchins
+    -   Reminded JPG about meeting with Alison Gardell Tues Nov 28th at 1:30PM via Zoom
+    -   JPG requested I put together slides for meeting with Alison Gardell
+-   Got seawater from Seattle Aquarium
+-   Met with Kip and got them setup with safety trainings
+-   Must order sea urchins on Mon Dec 11th for a Mon Dec 18th/Tues Dec 19th delivery
+
 #### **21-NOV-2023**
 
--   2nd Master's Thesis Committee Meeting
+-   [2nd Master's Thesis Committee Meeting](../committee-2/index.qmd)
 
     -   Trying to come up with a solution to lack of solvent control.. how to move forward
+
+#### 11-NOV-2023
+
+-   WSN day 4
+
+#### 10-NOV-2023
+
+-   WSN day 3
+
+#### 09-NOV 2023
+
+-   WSN day 2
+
+#### 08-NOV-2023
+
+-   WSN day 1
 
 #### 05-NOV-2023
 
@@ -53,8 +79,6 @@ image: log.png
         echo "ignored new large files"
     fi
     ```
-
--   
 
 #### 03-NOV-2023
 

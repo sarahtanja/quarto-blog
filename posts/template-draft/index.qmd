@@ -13,6 +13,7 @@ reference-location: margin
 citation-location: margin
 link-external-icon: true
 link-external-newwindow: true
+bibliography: ../library.bib
 ---
 
 [some *citrine* text]{style="color:#E4D00A"} [This text is highlighted in citrine.]{style="background-color:#E4D00A"}

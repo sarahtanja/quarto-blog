@@ -1,0 +1,43 @@
+---
+title: "Phthalates around the World"
+author: "Sarah Tanja"
+date: '11/29/2023'
+categories: [learning journey]
+image: thumbnail.jpg
+draft: false
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+#citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
+bibliography: ../library.bib
+---
+
+> The toxicity of PAEs remains under debate because the debate is characterized by tension between the commercial importance of PAEs and their impact on human health and on the environment. - @net2015
+
+Since we are starting from the drawing board I'm going to do a quick review of the literature and look for environmental phthalate concentrations found in near-coastal waters, specifically I'm interested in water soluble phthalates like di-methyl phthalate (DMP) and di-ethyl phthlate (DEP). Francesco Saliu suggested we focus on water soluble phthalates in our experimental design so that we don't have to mess with a carrier solvent control, but can still control the treatments to be within a range of environmental relevance. However, I just learned that "Low molecular weight PAEs such as dimethyl phthalate (DMP), diethyl phthalate (DEP), and DnBP are components of industrial solvents, solvents in perfumes, adhesives, waxes, inks, pharmaceutical products, insecticide materials, and cosmetics [@net2015]" and that PAEs with longer alkyl chains are used as plasticizers. Since I want to tie my work into marine plastic pollution, I should really focus on common phthalates added to plastics. Unfortunately, it looks like using a water soluble PAE may not be an option. In the table from @net2015, water solubility (S~w^25^~ ) indicates solubility in mg/L at 25$^\circ$C. Notice that it decreases with increasing alkyl length (carbon atom per chain, or carbon chain length).
+
+I learned about the concept of octanol-water partition coefficient (K~ow~), which is a log value used for "predicting how a chemical will concentrate in marine organisms." A high value of K~ow~ indicates higher potential bioconcentration in organisms, explained in further detail in @net2015 and @amezqueta2020.
+
+[![Table 1. from Net et al. 2015](net2015-table1.png)](https://pubs.acs.org/doi/epdf/10.1021/es505233b)
+
+::: callout-important
+The half-life of PAEs decrease with temperature!!!!
+
+Longer half-lives are more likely under anaerobic conditions and in cold, nutrient poor environments.
+
+The half-life of PAEs decrease in the presence of photosensitizers like nitrate, nitrite and chromophoric dissolved organic matter (CDOM)[^1]
+:::
+
+[^1]: CDOM is the fraction of dissolved organic carbon pool that absorbs light in both the ultra violet and visible ranges. It is sometimes called 'coloured' dissolved organic matter. The decay of organic matter releases tannins that stain the water, CDOM are the main light-absorbing particles in aquatic systems and estimated to account for 20-70% of dissolved organic carbon in the ocean, with particularly high values of CDOM in coastal zones with heavy terrestrial input [@zhao2023].
+
+I found a good table by @hermabessiere2017 that shows a review of papers that report levels of phthalates in marine waters.. however most of the sampling sites are in Europe and the Mediterranean. I'd like to expand on the table to get a better global picture of phthalate pollution levels in coastal marine waters.
+
+@law1991 conducted sampling around the North and Irish Seas in 1988 and 1989. In this short and sweet report, values are represented as ng/dm^3^ which is nanograms per cubic decimeter
+
+DMP DEP, DnBP, BBzP, DEHP & DnOP are included in the list of priority pollutants in Chinese waters @net2015
+
+> Even if PAEs can be eliminated from different environmental matrices via various processes as reported in previous sections, their extensive use and permanent emissions have resulted in their ubiquitous presence in the environment. @net2015

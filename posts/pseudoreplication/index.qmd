@@ -1,0 +1,18 @@
+---
+title: "Pseudoreplication"
+subtitle: "How to design an empirical experiment without it!"
+author: "Sarah Tanja"
+date: '12/06/2023'
+categories: [learning journey]
+image: thumbnail.jpg
+draft: true
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
+bibliography: ../library.bib
+---

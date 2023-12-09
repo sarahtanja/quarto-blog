@@ -1,11 +1,11 @@
 ---
-title: "Pseudoreplication"
-subtitle: "How to design an empirical experiment without it!"
+title: "Pseudoreplication & Control"
+subtitle: "How to design a manipulation experiment"
 author: "Sarah Tanja"
 date: '12/06/2023'
 categories: [learning journey]
 image: thumbnail.jpg
-draft: true
+draft: false
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>
 toc-depth: 5
@@ -16,3 +16,66 @@ link-external-icon: true
 link-external-newwindow: true
 bibliography: ../library.bib
 ---
+
+Replication is repeating an experiment.
+
+Here is a simple youtube video on [Pseudoreplication](https://www.youtube.com/watch?app=desktop&v=0oqp9yBcvRw), and another on [Biological & Technical Replicates](https://www.youtube.com/watch?v=c_cpl5YsBV8) by Henrik's Lab
+
+Technical replicates increase accuracy of the same sample
+
+Biological replicated are measurements from different samples and capture the biological variation.
+
+Basic tents of experimental design:
+
+1.  experimental variables within a treatment must not influence each other more than they influence the variables within another treatment.
+    1.  
+2.  factors other than the treatments must, on average, be equal across all treatments
+    1.  (e.g. seawater source, light, salinity, etc.) must all be the same in each treatment and controlled across the experiment so that those factors do not confound the differences you see between treatment groups
+
+Degree of precision that the treatment is applies and its effects measured
+
+> "If treatment effects are confused with the effects of other factors not under investigation, then an accurate assessment of the effects of the treatment cannot be made."-@cornwall2016
+
+## Simple Pseudoreplication
+
+One 'experimental unit' per treatment and multiple individuals in that treatment whose response is being measured.
+
+## Temporal Pseudoreplication
+
+Multiple measurements are made through time on the same experimental unit and treated as independent.
+
+## Sacrificial Pseudoreplication
+
+Multiple 'experimental units' per treatment and multiple individuals within each experimental unit, but the individuals within each experimental unit are treated as experimental units during the statistical analysis.
+
+> \"These three definitions demonstrate how a misinterpretation as to what constitutes an experimental unit vs. an \"evaluation unit\" could lead to inappropriate design and analysis.\" ([@cornwall2016], p. 573)
+
+Experimental tank arrays:
+
+-   Completely randomized
+
+-   Randomized block
+
+-   Systematic
+
+-   Simple segregation
+
+-   Clumped segregation
+
+-   Isolative segregation
+
+-   Clumped segregation & Interdependent replicates within treatments
+
+-   Randomized, but replicated interdependent within treatments
+
+-   No replication
+
+Tank types:
+
+-   Storage tank: seawater stored before altered
+
+-   Mixing tank: where chemicals and seawater are mixed to create treatments before contact with the study species
+
+-   Header tank: treatments stored before exposure to study species
+
+-   Experimental tank: the 'experimental unit' where study species is housed in the treatment

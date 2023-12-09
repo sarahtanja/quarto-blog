@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Sarah Tanja">
-<meta name="dcterms.date" content="2023-11-14">
+<meta name="dcterms.date" content="2023-12-06">
 
-<title>Sarah Tanja’s Open Lab Notebook - Making PAE treatments and controls</title>
+<title>Sarah Tanja’s Open Lab Notebook - Pseudoreplication &amp; Control</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -83,7 +83,6 @@ div.csl-indent {
   }
 }</script>
 
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -139,9 +138,10 @@ div.csl-indent {
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Making PAE treatments and controls</h1>
+      <h1 class="title">Pseudoreplication &amp; Control</h1>
+            <p class="subtitle lead">How to design a manipulation experiment</p>
                                 <div class="quarto-categories">
-                <div class="quarto-category">protocols</div>
+                <div class="quarto-category">learning journey</div>
               </div>
                   </div>
   </div>
@@ -159,7 +159,7 @@ div.csl-indent {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">November 14, 2023</p>
+        <p class="date">December 6, 2023</p>
       </div>
     </div>
     
@@ -174,12 +174,9 @@ div.csl-indent {
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#phthalates" id="toc-phthalates" class="nav-link active" data-scroll-target="#phthalates">Phthalates</a>
-  <ul>
-  <li><a href="#safety-considerations" id="toc-safety-considerations" class="nav-link" data-scroll-target="#safety-considerations">Safety Considerations</a></li>
-  </ul></li>
-  <li><a href="#environmentally-relevant-doses" id="toc-environmentally-relevant-doses" class="nav-link" data-scroll-target="#environmentally-relevant-doses">Environmentally Relevant Doses</a></li>
-  <li><a href="#methanol-solvent-control" id="toc-methanol-solvent-control" class="nav-link" data-scroll-target="#methanol-solvent-control">Methanol ‘Solvent’ Control</a></li>
+  <li><a href="#simple-pseudoreplication" id="toc-simple-pseudoreplication" class="nav-link active" data-scroll-target="#simple-pseudoreplication">Simple Pseudoreplication</a></li>
+  <li><a href="#temporal-pseudoreplication" id="toc-temporal-pseudoreplication" class="nav-link" data-scroll-target="#temporal-pseudoreplication">Temporal Pseudoreplication</a></li>
+  <li><a href="#sacrificial-pseudoreplication" id="toc-sacrificial-pseudoreplication" class="nav-link" data-scroll-target="#sacrificial-pseudoreplication">Sacrificial Pseudoreplication</a></li>
   </ul>
 </nav>
 </nav>
@@ -192,224 +189,60 @@ div.csl-indent {
 
 
 
-<section id="phthalates" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="phthalates">Phthalates</h2>
-<p>I used the <a href="https://www.sigmaaldrich.com/US/en/product/supelco/48223?gclid=CjwKCAjw-8qVBhANEiwAfjXLrp8fD-G8yiB_NyrA3OLy3r2jdylgBmHVPUfGFnMp4CMfuVwePGi1dxoCBQIQAvD_BwE">EPA 506 phthalate esters mix 1</a>, which comes as a 1mL ampule vial with a glass break-off cap. It includes 6 common phthalates each at a concentration of <span class="math inline">\(500\mu g/mL\)</span>, aka <span class="math inline">\((500,000 \mu g/L)\)</span> in methanol as a carrier solvent to stabilize the phthalate esters mix.</p>
-<p>The mix contained the following 6 phthalates:</p>
+<p>Replication is repeating an experiment.</p>
+<p>Here is a simple youtube video on <a href="https://www.youtube.com/watch?app=desktop&amp;v=0oqp9yBcvRw">Pseudoreplication</a>, and another on <a href="https://www.youtube.com/watch?v=c_cpl5YsBV8">Biological &amp; Technical Replicates</a> by Henrik’s Lab</p>
+<p>Technical replicates increase accuracy of the same sample</p>
+<p>Biological replicated are measurements from different samples and capture the biological variation.</p>
+<p>Basic tents of experimental design:</p>
 <ol type="1">
-<li><p>Benzyl butyl phthalate <strong>(BBP)</strong></p></li>
-<li><p>Bis(2-ethylhexyl) adipate <strong>(DEHA)</strong></p></li>
-<li><p>Bis(2-ethylhexyl) phthalate <strong>(DEHP)</strong></p></li>
+<li>experimental variables within a treatment must not influence each other more than they influence the variables within another treatment.
+<ol type="1">
+<li></li>
+</ol></li>
+<li>factors other than the treatments must, on average, be equal across all treatments
+<ol type="1">
+<li>(e.g.&nbsp;seawater source, light, salinity, etc.) must all be the same in each treatment and controlled across the experiment so that those factors do not confound the differences you see between treatment groups</li>
+</ol></li>
 </ol>
-<div class="callout-caution callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Danger
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>DEHP</strong> is listed on EPA’s Toxics Release Inventory (TRI)</p>
-</div>
-</div>
-<div class="callout-caution callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Danger
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>DEHP</strong> is regulated under the Safe Drinking Water Act. The highest concentration allowed, the maximum contaminant level (MCL), is <span class="math inline">\(0.006 mg/L\)</span> , or (<span class="math inline">\(6\mu g/L\)</span>)</p>
-</div>
-</div>
-<ol start="4" type="1">
-<li>Dibutyl pthalate <strong>(DBP)</strong></li>
-</ol>
-<div class="callout-caution callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Danger
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>DBP</strong> is listed on EPA’s Toxics Release Inventory (TRI)</p>
-</div>
-</div>
-<ol start="5" type="1">
-<li><p>Diethyl phthalate <strong>(DEP)</strong></p></li>
-<li><p>Dimethyl phthalate <strong>(DMP)</strong></p></li>
-</ol>
-<section id="safety-considerations" class="level4 page-columns page-full">
-<h4 class="anchored" data-anchor-id="safety-considerations">Safety Considerations</h4>
-<p>Please review the <a href="https://www.sigmaaldrich.com/US/en/sds/supelco/48223">SDS</a> for EPA 506 phthalate mix, 500<span class="math inline">\(\mu\)</span>g/mL in methanol before working with this chemical!</p>
-<p>Hazard statements:</p>
+<p>Degree of precision that the treatment is applies and its effects measured</p>
+<blockquote class="blockquote page-columns page-full">
+<p>“If treatment effects are confused with the effects of other factors not under investigation, then an accurate assessment of the effects of the treatment cannot be made.”-<span class="citation" data-cites="cornwall2016">Cornwall and Hurd (<a href="#ref-cornwall2016" role="doc-biblioref">2016</a>)</span></p>
+<div class="no-row-height column-margin column-container"></div></blockquote>
+<section id="simple-pseudoreplication" class="level2">
+<h2 class="anchored" data-anchor-id="simple-pseudoreplication">Simple Pseudoreplication</h2>
+<p>One ‘experimental unit’ per treatment and multiple individuals in that treatment whose response is being measured.</p>
+</section>
+<section id="temporal-pseudoreplication" class="level2">
+<h2 class="anchored" data-anchor-id="temporal-pseudoreplication">Temporal Pseudoreplication</h2>
+<p>Multiple measurements are made through time on the same experimental unit and treated as independent.</p>
+</section>
+<section id="sacrificial-pseudoreplication" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="sacrificial-pseudoreplication">Sacrificial Pseudoreplication</h2>
+<p>Multiple ‘experimental units’ per treatment and multiple individuals within each experimental unit, but the individuals within each experimental unit are treated as experimental units during the statistical analysis.</p>
+<blockquote class="blockquote page-columns page-full">
+<p>"These three definitions demonstrate how a misinterpretation as to what constitutes an experimental unit vs.&nbsp;an "evaluation unit" could lead to inappropriate design and analysis." (<span class="citation" data-cites="cornwall2016">(<a href="#ref-cornwall2016" role="doc-biblioref">Cornwall and Hurd 2016</a>)</span>, p.&nbsp;573)</p>
+<div class="no-row-height column-margin column-container"><div id="ref-cornwall2016" class="csl-entry" role="doc-biblioentry">
+Cornwall, Christopher E., and Catriona L. Hurd. 2016. <span>“Experimental Design in Ocean Acidification Research: Problems and Solutions.”</span> <em>ICES Journal of Marine Science</em> 73 (3): 572–81. <a href="https://doi.org/10.1093/icesjms/fsv118">https://doi.org/10.1093/icesjms/fsv118</a>.
+</div></div></blockquote>
+<p>Experimental tank arrays:</p>
 <ul>
-<li>H225 Highly flammable liquid and vapor</li>
-<li>Toxic if swallowed, in contact with skin or if inhaled</li>
-<li>Causes damage to organs (Eyes, Central nervous system)</li>
+<li><p>Completely randomized</p></li>
+<li><p>Randomized block</p></li>
+<li><p>Systematic</p></li>
+<li><p>Simple segregation</p></li>
+<li><p>Clumped segregation</p></li>
+<li><p>Isolative segregation</p></li>
+<li><p>Clumped segregation &amp; Interdependent replicates within treatments</p></li>
+<li><p>Randomized, but replicated interdependent within treatments</p></li>
+<li><p>No replication</p></li>
 </ul>
-<div class="callout-caution callout callout-style-default callout-captioned page-columns page-full">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Danger
-</div>
-</div>
-<div class="callout-body-container callout-body page-columns page-full">
-<p>This chemical mix is toxic and can absorb through skin, and vaporize and be inhaled. <strong>WEAR GLOVES, SAFETY GLASSES, &amp; MASK. WORK UNDER A HOOD!</strong> <em>If you are pregnant, consider alternatives like preparing leachate similar to</em> <span class="citation" data-cites="tetu2019">(<a href="#ref-tetu2019" role="doc-biblioref">Tetu et al. 2019</a>)</span></p>
-<div class="no-row-height column-margin column-container"><div id="ref-tetu2019" class="csl-entry" role="doc-biblioentry">
-Tetu, Sasha G., Indrani Sarker, Verena Schrameyer, Russell Pickford, Liam D. H. Elbourne, Lisa R. Moore, and Ian T. Paulsen. 2019. <span>“Plastic Leachates Impair Growth and Oxygen Production in <span>Prochlorococcus</span>, the Ocean’s Most Abundant Photosynthetic Bacteria.”</span> <em>Communications Biology</em> 2 (May): 184. <a href="https://doi.org/10.1038/s42003-019-0410-x">https://doi.org/10.1038/s42003-019-0410-x</a>.
-</div></div></div>
-</div>
-</section>
-</section>
-<section id="environmentally-relevant-doses" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="environmentally-relevant-doses">Environmentally Relevant Doses</h2>
-<p>Concentrations of phthalates in environmental sea water samples reported in the literature:</p>
-<table class="table">
-<colgroup>
-<col style="width: 11%">
-<col style="width: 15%">
-<col style="width: 2%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 10%">
-<col style="width: 11%">
-<col style="width: 13%">
-<col style="width: 10%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Reference</th>
-<th>Study Area</th>
-<th>BBP</th>
-<th>DEHA</th>
-<th>DEHP</th>
-<th>DBP</th>
-<th>DEP</th>
-<th>DMP</th>
-<th><span class="math inline">\(\sum\)</span>PAE</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="citation" data-cites="lynch2022">(<a href="#ref-lynch2022" role="doc-biblioref">Lynch, Knauer, and Shaw 2022</a>)</span></td>
-<td>Review</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>0.5 - 10 <span class="math inline">\(\mu\)</span>g/L</td>
-</tr>
-<tr class="even">
-<td><span class="citation" data-cites="jebara2021">(<a href="#ref-jebara2021" role="doc-biblioref">Jebara et al. 2021</a>)</span></td>
-<td>Tunisia</td>
-<td></td>
-<td></td>
-<td>&lt;LOD-168<span class="math inline">\(\mu\)</span>g/L</td>
-<td>&lt;LOD-30.5<span class="math inline">\(\mu\)</span>g/L</td>
-<td>&lt;LOD-17.0<span class="math inline">\(\mu\)</span>g/L</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><span class="citation" data-cites="sanchez-avila2012">(<a href="#ref-sanchez-avila2012" role="doc-biblioref">Sánchez-Avila, Tauler, and Lacorte 2012</a>)</span></td>
-<td>Mediterranean Coastal Spain</td>
-<td></td>
-<td>0.0021-0.304<span class="math inline">\(\mu\)</span>g/L</td>
-<td>0.031-0.617<span class="math inline">\(\mu\)</span>g/L</td>
-<td></td>
-<td>0.024-0.483<span class="math inline">\(\mu\)</span>g/L</td>
-<td>0.0028 - 0.142 <span class="math inline">\(\mu\)</span>g/L</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<div class="no-row-height column-margin column-container"><div id="ref-lynch2022" class="csl-entry" role="doc-biblioentry">
-Lynch, Jennifer M., Katrina Knauer, and Katherine R. Shaw. 2022. <span>“Plastic <span>Additives</span> in the <span>Ocean</span>.”</span> In <em>Plastics and the <span>Ocean</span></em>, edited by Anthony L. Andrady, 1st ed., 43–76. <span>Wiley</span>. <a href="https://doi.org/10.1002/9781119768432.ch2">https://doi.org/10.1002/9781119768432.ch2</a>.
-</div><div id="ref-jebara2021" class="csl-entry" role="doc-biblioentry">
-Jebara, Amel, Ambrogina Albergamo, Rossana Rando, Angela Potortì, Vincenzo Turco, Hedi Ben Mansour, and Giuseppa Di Bella. 2021. <span>“Phthalates and Non-Phthalate Plasticizers in <span>Tunisian</span> Marine Samples: <span>Occurrence</span>, Spatial Distribution and Seasonal Variation.”</span> <em>Marine Pollution Bulletin</em> 163 (January). <a href="https://doi.org/10.1016/j.marpolbul.2021.111967">https://doi.org/10.1016/j.marpolbul.2021.111967</a>.
-</div><div id="ref-sanchez-avila2012" class="csl-entry" role="doc-biblioentry">
-Sánchez-Avila, Juan, Romà Tauler, and Silvia Lacorte. 2012. <span>“Organic Micropollutants in Coastal Waters from <span>NW Mediterranean Sea</span>: <span>Sources</span> Distribution and Potential Risk.”</span> <em>Environment International</em> 46 (October): 50–62. <a href="https://doi.org/10.1016/j.envint.2012.04.013">https://doi.org/10.1016/j.envint.2012.04.013</a>.
-</div></div><p><span class="citation" data-cites="jebara2021">Jebara et al. (<a href="#ref-jebara2021" role="doc-biblioref">2021</a>)</span> detected <strong>DEHP</strong> in 92.7% of 165 water samples. The mean concentration of <strong>DEHP</strong> in those samples were: <span class="math inline">\(71.1\mu g/L\)</span>, and the median was: <span class="math inline">\(45.7 \mu g/L\)</span>.</p>
-<p>Based on these sources reporting environmentally relevant concentrations of phthalates in surface waters, I chose to dose the coral gametes and larvae at the following concentrations:</p>
+<p>Tank types:</p>
 <ul>
-<li><p><span class="math inline">\(0\mu g/L\)</span> : control</p></li>
-<li><p><span class="math inline">\(0.5\mu g/L\)</span> (<span class="math inline">\(0.0005 \mu g/mL\)</span>): environmentally relevant value</p></li>
-<li><p><span class="math inline">\(5 \mu g/L\)</span> (<span class="math inline">\(0.005 \mu g/mL\)</span>): would be considered just under acceptable drinking water</p></li>
-<li><p><span class="math inline">\(50 \mu g/L\)</span> (<span class="math inline">\(0.05 \mu g/mL\)</span>) : increasing by factor of 10</p></li>
-<li><p><span class="math inline">\(150 \mu g/L\)</span> (<span class="math inline">\(0.150 \mu g/mL\)</span>): max environmental relevance <span class="math inline">\(168 \mu g/L\)</span>)</p></li>
+<li><p>Storage tank: seawater stored before altered</p></li>
+<li><p>Mixing tank: where chemicals and seawater are mixed to create treatments before contact with the study species</p></li>
+<li><p>Header tank: treatments stored before exposure to study species</p></li>
+<li><p>Experimental tank: the ‘experimental unit’ where study species is housed in the treatment</p></li>
 </ul>
-<div class="callout-tip callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Doses will be graphed on a log scale x axis</p>
-</div>
-</div>
-</section>
-<section id="methanol-solvent-control" class="level2">
-<h2 class="anchored" data-anchor-id="methanol-solvent-control">Methanol ‘Solvent’ Control</h2>
-<table class="table">
-<thead>
-<tr class="header">
-<th>c1(ug/mL)</th>
-<th>c2(ug/mL)</th>
-<th>v2(mL)</th>
-<th>v1(mL)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>200</td>
-<td>0.15</td>
-<td>800</td>
-<td>0.6</td>
-</tr>
-<tr class="even">
-<td>0.15</td>
-<td>0.05</td>
-<td>600</td>
-<td>200</td>
-</tr>
-<tr class="odd">
-<td>0.05</td>
-<td>0.005</td>
-<td>500</td>
-<td>50</td>
-</tr>
-<tr class="even">
-<td>0.005</td>
-<td>0.0005</td>
-<td>500</td>
-<td>50</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
 
 
 
@@ -662,6 +495,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/https:\/\/sarahtanja\.github\.io\/quarto-blog\//);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->

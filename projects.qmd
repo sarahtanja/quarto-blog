@@ -1,0 +1,15 @@
+---
+title: "Projects"
+listing: 
+  contents: posts/projects/*.qmd
+#  sort: "date desc"
+  type: grid
+  grid-item-align: center
+  image-height: 300px
+#  categories: true
+  sort-ui: false
+  filter-ui: false
+  fields: [image, title]
+page-layout: full
+title-block-banner: true
+---

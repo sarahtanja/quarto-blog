@@ -17,20 +17,23 @@ link-external-newwindow: true
 bibliography: ../library.bib
 ---
 
+> "the use of inferential statistics to test for treatment effects with data from experiments where either treatments are not replicated (though samples may be) or replicates are not statistically independent" [@hurlbert1984]
+
 Replication is repeating an experiment.
+
+Pseudoreplication happens when treatments are not actually replicated or replicates are not
 
 Here is a simple youtube video on [Pseudoreplication](https://www.youtube.com/watch?app=desktop&v=0oqp9yBcvRw), and another on [Biological & Technical Replicates](https://www.youtube.com/watch?v=c_cpl5YsBV8) by Henrik's Lab
 
-Technical replicates increase accuracy of the same sample
-
-Biological replicated are measurements from different samples and capture the biological variation.
+Technical replicates increase the accuracy of the same sample, whereas biological replicates are measurements from different samples and capture the biological variation.
 
 Basic tents of experimental design:
 
 1.  experimental variables within a treatment must not influence each other more than they influence the variables within another treatment.
-    1.  
+
 2.  factors other than the treatments must, on average, be equal across all treatments
-    1.  (e.g. seawater source, light, salinity, etc.) must all be the same in each treatment and controlled across the experiment so that those factors do not confound the differences you see between treatment groups
+
+    (e.g. seawater source, light, salinity, etc.) must all be the same in each treatment and controlled across the experiment so that those factors do not confound the differences you see between treatment groups
 
 Degree of precision that the treatment is applies and its effects measured
 
@@ -48,15 +51,24 @@ Multiple measurements are made through time on the same experimental unit and tr
 
 Multiple 'experimental units' per treatment and multiple individuals within each experimental unit, but the individuals within each experimental unit are treated as experimental units during the statistical analysis.
 
-> \"These three definitions demonstrate how a misinterpretation as to what constitutes an experimental unit vs. an \"evaluation unit\" could lead to inappropriate design and analysis.\" ([@cornwall2016], p. 573)
+> "These three definitions demonstrate how a misinterpretation as to what constitutes an experimental unit vs. an"evaluation unit" could lead to inappropriate design and analysis." ([@cornwall2016], p. 573)
 
-Experimental tank arrays:
+## Implicit Pseudoreplication
+
+## Experimental tank arrays:
+
+::: {.callout-tip icon="false"}
+## Good (true replication)
 
 -   Completely randomized
 
 -   Randomized block
 
 -   Systematic
+:::
+
+::: {.callout-caution icon="false"}
+## Bad (pseudoreplication)
 
 -   Simple segregation
 
@@ -69,8 +81,9 @@ Experimental tank arrays:
 -   Randomized, but replicated interdependent within treatments
 
 -   No replication
+:::
 
-Tank types:
+## Tank types:
 
 -   Storage tank: seawater stored before altered
 
@@ -79,3 +92,27 @@ Tank types:
 -   Header tank: treatments stored before exposure to study species
 
 -   Experimental tank: the 'experimental unit' where study species is housed in the treatment
+
+## Randomized Complete Block Design
+
+-   blocks are constructed around known or suspected source of variation
+
+-   each block contains all treatments
+
+-   blocks are relatively uniform
+
+-   puts experimental units that are as similar as possible together in the same block, and assign all treatments into each block separately and independently
+
+-   variation among blocks can be measured and removed as experimental error
+
+## Factorial Design
+
+-   tests for interaction between multiple variables
+
+    -   (thermal stress & pollution stress)
+
+-   all treatments of one factor should be tried with all treatments of the other factors
+
+Further Literature on Pseudoreplication:
+
+[@tincani2017]

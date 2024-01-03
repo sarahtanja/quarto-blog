@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,14 +19,15 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -40,8 +41,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -79,7 +79,8 @@ div.csl-indent {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -101,35 +102,35 @@ div.csl-indent {
     <span class="navbar-title">Sarah Tanja’s Open Lab Notebook</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html">
+    <a class="nav-link" href="../../about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/sarah-tanja-595722146/"><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/sarah-tanja-595722146/" rel="" target=""><i class="bi bi-linkedin" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/sarahtanja"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/sarahtanja" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:stanja@uw.edu"><i class="bi bi-envelope-heart" role="img">
+    <a class="nav-link" href="mailto:stanja@uw.edu" rel="" target=""><i class="bi bi-envelope-heart" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div class="quarto-toggle-container">
-                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-              </div>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -169,7 +170,7 @@ div.csl-indent {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
@@ -177,9 +178,15 @@ div.csl-indent {
   <li><a href="#simple-pseudoreplication" id="toc-simple-pseudoreplication" class="nav-link active" data-scroll-target="#simple-pseudoreplication">Simple Pseudoreplication</a></li>
   <li><a href="#temporal-pseudoreplication" id="toc-temporal-pseudoreplication" class="nav-link" data-scroll-target="#temporal-pseudoreplication">Temporal Pseudoreplication</a></li>
   <li><a href="#sacrificial-pseudoreplication" id="toc-sacrificial-pseudoreplication" class="nav-link" data-scroll-target="#sacrificial-pseudoreplication">Sacrificial Pseudoreplication</a></li>
+  <li><a href="#implicit-pseudoreplication" id="toc-implicit-pseudoreplication" class="nav-link" data-scroll-target="#implicit-pseudoreplication">Implicit Pseudoreplication</a></li>
+  <li><a href="#experimental-tank-arrays" id="toc-experimental-tank-arrays" class="nav-link" data-scroll-target="#experimental-tank-arrays">Experimental tank arrays:</a></li>
+  <li><a href="#tank-types" id="toc-tank-types" class="nav-link" data-scroll-target="#tank-types">Tank types:</a></li>
+  <li><a href="#randomized-complete-block-design" id="toc-randomized-complete-block-design" class="nav-link" data-scroll-target="#randomized-complete-block-design">Randomized Complete Block Design</a></li>
+  <li><a href="#factorial-design" id="toc-factorial-design" class="nav-link" data-scroll-target="#factorial-design">Factorial Design</a></li>
   </ul>
 </nav>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
@@ -189,20 +196,20 @@ div.csl-indent {
 
 
 
+<blockquote class="blockquote page-columns page-full">
+<p>“the use of inferential statistics to test for treatment effects with data from experiments where either treatments are not replicated (though samples may be) or replicates are not statistically independent” <span class="citation" data-cites="hurlbert1984">(<a href="#ref-hurlbert1984" role="doc-biblioref">Hurlbert 1984</a>)</span></p>
+<div class="no-row-height column-margin column-container"><div id="ref-hurlbert1984" class="csl-entry" role="listitem">
+Hurlbert, Stuart H. 1984. <span>“Pseudoreplication and the Design of Ecological Field Experiments.”</span> <em>Ecological Monographs</em> 54 (2): 187–211. <a href="https://doi.org/10.2307/1942661">https://doi.org/10.2307/1942661</a>.
+</div></div></blockquote>
 <p>Replication is repeating an experiment.</p>
+<p>Pseudoreplication happens when treatments are not actually replicated or replicates are not</p>
 <p>Here is a simple youtube video on <a href="https://www.youtube.com/watch?app=desktop&amp;v=0oqp9yBcvRw">Pseudoreplication</a>, and another on <a href="https://www.youtube.com/watch?v=c_cpl5YsBV8">Biological &amp; Technical Replicates</a> by Henrik’s Lab</p>
-<p>Technical replicates increase accuracy of the same sample</p>
-<p>Biological replicated are measurements from different samples and capture the biological variation.</p>
+<p>Technical replicates increase the accuracy of the same sample, whereas biological replicates are measurements from different samples and capture the biological variation.</p>
 <p>Basic tents of experimental design:</p>
 <ol type="1">
-<li>experimental variables within a treatment must not influence each other more than they influence the variables within another treatment.
-<ol type="1">
-<li></li>
-</ol></li>
-<li>factors other than the treatments must, on average, be equal across all treatments
-<ol type="1">
-<li>(e.g.&nbsp;seawater source, light, salinity, etc.) must all be the same in each treatment and controlled across the experiment so that those factors do not confound the differences you see between treatment groups</li>
-</ol></li>
+<li><p>experimental variables within a treatment must not influence each other more than they influence the variables within another treatment.</p></li>
+<li><p>factors other than the treatments must, on average, be equal across all treatments</p>
+<p>(e.g.&nbsp;seawater source, light, salinity, etc.) must all be the same in each treatment and controlled across the experiment so that those factors do not confound the differences you see between treatment groups</p></li>
 </ol>
 <p>Degree of precision that the treatment is applies and its effects measured</p>
 <blockquote class="blockquote page-columns page-full">
@@ -220,15 +227,44 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="sacrificial-pseudoreplication">Sacrificial Pseudoreplication</h2>
 <p>Multiple ‘experimental units’ per treatment and multiple individuals within each experimental unit, but the individuals within each experimental unit are treated as experimental units during the statistical analysis.</p>
 <blockquote class="blockquote page-columns page-full">
-<p>"These three definitions demonstrate how a misinterpretation as to what constitutes an experimental unit vs.&nbsp;an "evaluation unit" could lead to inappropriate design and analysis." (<span class="citation" data-cites="cornwall2016">(<a href="#ref-cornwall2016" role="doc-biblioref">Cornwall and Hurd 2016</a>)</span>, p.&nbsp;573)</p>
-<div class="no-row-height column-margin column-container"><div id="ref-cornwall2016" class="csl-entry" role="doc-biblioentry">
-Cornwall, Christopher E., and Catriona L. Hurd. 2016. <span>“Experimental Design in Ocean Acidification Research: Problems and Solutions.”</span> <em>ICES Journal of Marine Science</em> 73 (3): 572–81. <a href="https://doi.org/10.1093/icesjms/fsv118">https://doi.org/10.1093/icesjms/fsv118</a>.
+<p>“These three definitions demonstrate how a misinterpretation as to what constitutes an experimental unit vs.&nbsp;an”evaluation unit” could lead to inappropriate design and analysis.” (<span class="citation" data-cites="cornwall2016">(<a href="#ref-cornwall2016" role="doc-biblioref">Cornwall and Hurd 2016</a>)</span>, p.&nbsp;573)</p>
+<div class="no-row-height column-margin column-container"><div id="ref-cornwall2016" class="csl-entry" role="listitem">
+Cornwall, Christopher E., and Catriona L. Hurd. 2016. <span>“Experimental Design in Ocean Acidification Research: Problems and Solutions.”</span> <em><span>ICES</span> Journal of Marine Science</em> 73 (3): 572–81. <a href="https://doi.org/10.1093/icesjms/fsv118">https://doi.org/10.1093/icesjms/fsv118</a>.
 </div></div></blockquote>
-<p>Experimental tank arrays:</p>
+</section>
+<section id="implicit-pseudoreplication" class="level2">
+<h2 class="anchored" data-anchor-id="implicit-pseudoreplication">Implicit Pseudoreplication</h2>
+</section>
+<section id="experimental-tank-arrays" class="level2">
+<h2 class="anchored" data-anchor-id="experimental-tank-arrays">Experimental tank arrays:</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Good (true replication)
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
 <li><p>Completely randomized</p></li>
 <li><p>Randomized block</p></li>
 <li><p>Systematic</p></li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Bad (pseudoreplication)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
 <li><p>Simple segregation</p></li>
 <li><p>Clumped segregation</p></li>
 <li><p>Isolative segregation</p></li>
@@ -236,16 +272,44 @@ Cornwall, Christopher E., and Catriona L. Hurd. 2016. <span>“Experimental Desi
 <li><p>Randomized, but replicated interdependent within treatments</p></li>
 <li><p>No replication</p></li>
 </ul>
-<p>Tank types:</p>
+</div>
+</div>
+</section>
+<section id="tank-types" class="level2">
+<h2 class="anchored" data-anchor-id="tank-types">Tank types:</h2>
 <ul>
 <li><p>Storage tank: seawater stored before altered</p></li>
 <li><p>Mixing tank: where chemicals and seawater are mixed to create treatments before contact with the study species</p></li>
 <li><p>Header tank: treatments stored before exposure to study species</p></li>
 <li><p>Experimental tank: the ‘experimental unit’ where study species is housed in the treatment</p></li>
 </ul>
+</section>
+<section id="randomized-complete-block-design" class="level2">
+<h2 class="anchored" data-anchor-id="randomized-complete-block-design">Randomized Complete Block Design</h2>
+<ul>
+<li><p>blocks are constructed around known or suspected source of variation</p></li>
+<li><p>each block contains all treatments</p></li>
+<li><p>blocks are relatively uniform</p></li>
+<li><p>puts experimental units that are as similar as possible together in the same block, and assign all treatments into each block separately and independently</p></li>
+<li><p>variation among blocks can be measured and removed as experimental error</p></li>
+</ul>
+</section>
+<section id="factorial-design" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="factorial-design">Factorial Design</h2>
+<ul>
+<li><p>tests for interaction between multiple variables</p>
+<ul>
+<li>(thermal stress &amp; pollution stress)</li>
+</ul></li>
+<li><p>all treatments of one factor should be tried with all treatments of the other factors</p></li>
+</ul>
+<p>Further Literature on Pseudoreplication:</p>
+<p><span class="citation" data-cites="tincani2017">(<a href="#ref-tincani2017" role="doc-biblioref">Tincani et al. 2017</a>)</span></p>
 
 
-
+<div class="no-row-height column-margin column-container"><div id="ref-tincani2017" class="csl-entry" role="listitem">
+Tincani, Flávio H., Gabrieli L. Galvan, Antonio E. M. L. Marques, Gustavo S. Santos, Letícia S. Pereira, Thiago A. da Silva, Helena C. Silva de Assis, Ronilson V. Barbosa, and Marta M. Cestari. 2017. <span>“Pseudoreplication and the Usage of Biomarkers in Ecotoxicological Bioassays.”</span> <em>Environmental Toxicology and Chemistry</em> 36 (10): 2868–74. <a href="https://doi.org/10.1002/etc.3823">https://doi.org/10.1002/etc.3823</a>.
+</div></div>
 </section>
 
 </main> <!-- /main -->
@@ -391,9 +455,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -458,6 +536,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -496,12 +660,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp(/https:\/\/sarahtanja\.github\.io\/quarto-blog\//);
+      var filterRegex = new RegExp("https:\/\/sarahtanja\.github\.io\/quarto-blog\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
-    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -517,6 +681,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">This page is built using <a href="https://quarto.org/">Quarto</a>❤️</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
   </div>
 </footer>
 

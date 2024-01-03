@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/about.html</loc>
-    <lastmod>2023-11-30T19:14:49.138Z</lastmod>
+    <lastmod>2024-01-03T22:59:07.146Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/index.html</loc>
-    <lastmod>2023-12-08T23:57:52.360Z</lastmod>
+    <lastmod>2024-01-03T23:06:25.681Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/choosing-16S-primers/index.html</loc>
@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/committee-2/index.html</loc>
-    <lastmod>2023-11-30T19:14:58.262Z</lastmod>
+    <lastmod>2024-01-03T22:59:09.542Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/coral-pae-devo/index.html</loc>
@@ -30,7 +30,7 @@
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/daily-log/index.html</loc>
-    <lastmod>2023-11-30T19:15:04.942Z</lastmod>
+    <lastmod>2024-01-03T22:59:14.771Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/dna-rna-extraction-protocol/index.html</loc>
@@ -70,10 +70,22 @@
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/world-phthalates/index.html</loc>
-    <lastmod>2023-12-08T21:24:31.241Z</lastmod>
+    <lastmod>2024-01-03T22:59:31.997Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/pseudoreplication/index.html</loc>
-    <lastmod>2023-12-08T23:57:51.166Z</lastmod>
+    <lastmod>2024-01-03T23:06:23.001Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-pae-temp/dna-rna-extractions/index.html</loc>
+    <lastmod>2024-01-03T22:59:17.079Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-pae-temp.html</loc>
+    <lastmod>2024-01-03T22:59:45.295Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sarahtanja.github.io/quarto-blog/projects.html</loc>
+    <lastmod>2024-01-03T22:59:22.936Z</lastmod>
   </url>
 </urlset>

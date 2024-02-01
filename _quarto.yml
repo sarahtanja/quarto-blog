@@ -10,22 +10,24 @@ website:
   site-url: https://sarahtanja.github.io/quarto-blog/
   repo-url: https://github.com/sarahtanja/quarto-blog
   
-  
   navbar:
     logo: "images/binocs.png"
-    logo-alt: "Sparlingia pertusa watercolor, artwork by Sarah Tanja"
+    logo-alt: "Self-portrait at Tracy Arm, watercolor artwork by Sarah Tanja"
     background: primary
     foreground: light
     search: true
     right: #align navbar items to right/left/center
       - text: "About"
         file: about.qmd
-      - icon: linkedin
+      - text: "Projects"
+        file: projects.qmd
+      - icon: linkedin #bootstrap icon
         href: https://www.linkedin.com/in/sarah-tanja-595722146/
       - icon: github
         href: https://github.com/sarahtanja
-      - icon: envelope-heart
+      - icon: envelope-heart #bootstrap icon
         href: mailto:stanja@uw.edu
+        
   
   page-footer: 
     left: "This page is built using [Quarto](https://quarto.org/)❤️" 

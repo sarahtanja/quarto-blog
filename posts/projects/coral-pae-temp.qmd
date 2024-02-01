@@ -1,17 +1,16 @@
 ---
 title: "Montipora capitata "
-subtitle: "coral-pae-temp"
+subtitle: "Microbial community changes in Montipora capitata corals under EPA506 Phthalates Mix and thermal stress exposures"
 about:
   id: description
   template: trestles
-  image: "../../images/Pacific_cod.jpg"
-  image-shape: rounded
+  image: "himb-mcap-horizon.jpg"
   links:
     - icon: github
-      text: Github
-      href: https://github.com/RobertsLab/project-cod-temperature
+      text: https://github.com/sarahtanja/coral-pae-temp
+      href: https://github.com/sarahtanja/coral-pae-temp
 listing: 
-  contents: pacific_cod
+  contents: coral-pae-temp
   sort: "date desc"
   type: table
 #  categories: true
@@ -25,7 +24,13 @@ format:
 ---
 
 ::: {#description}
-**Gene activity and genetic selection in Pacific cod reared under thermal stress**
+This project was a multiple-stressor mesocosm experiment I conducted in August 2022 at the Hawaii Institute of Marine Biology (HIMB) in Kaneohe Bay. 
 
-Juvenile Pacific cod will be reared in three temperatures under feeding and non-feeding conditions, then an integrated genomic approach will identify genes, gene variants, and epigenetic markers that respond to thermal stress and confer resilience. To complement the genomic approaches and further investigate temperature influences on energy resources, we will perform lipid analyses. This work will inform predictions of genetic selection and molecular response of Pacific cod in the Gulf of Alaska under climate change.
+In this experiment, I exposed coral fragments to a chemical mix of 6 common phthalate pollutants in methanol and thermal stress for 48 hours. **Unfortunately, in this pilot experiment, we lack a methanol solvent control. This means that we cannot differentiate the effects of the phthalate pollutants from the effects of the methanol on the microbial community changes when compared to the no-pollution controls.**
+
+However, this project and the data can be used as a 'practice set' for developing microbiome analysis pipelines and figures.
+
+Since the phthalates are confounded with methanol, the treatments can be re-characterized as 'chemical pollution exposure' versus a 'control'.
+
+The data and code files for this project are organized on GitHub at \[https://github.com/sarahtanja/coral-pae-temp\]
 :::

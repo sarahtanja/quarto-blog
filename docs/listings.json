@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/projects/anemone.html",
       "/posts/projects/coral-pae-temp.html",
       "/posts/pseudoreplication/index.html",
       "/posts/world-phthalates/index.html",
@@ -23,12 +24,19 @@
   },
   {
     "listing": "/posts/projects/coral-pae-temp.html",
-    "items": []
+    "items": [
+      "/posts/projects/coral-pae-temp/dna-rna-extractions/index.html"
+    ]
   },
   {
     "listing": "/projects.html",
     "items": [
+      "/posts/projects/anemone.html",
       "/posts/projects/coral-pae-temp.html"
     ]
+  },
+  {
+    "listing": "/posts/projects/anemone.html",
+    "items": []
   }
 ]

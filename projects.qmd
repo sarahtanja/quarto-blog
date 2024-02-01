@@ -1,8 +1,10 @@
 ---
 title: "Projects"
 listing: 
-  contents: posts/projects/*.qmd
-#  sort: "date desc"
+  contents: 
+    - posts/projects/anemone.qmd
+    - posts/projects/coral-pae-temp.qmd
+#  sort: false
   type: grid
   grid-item-align: center
   image-height: 300px

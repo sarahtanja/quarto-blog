@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Sarah Tanja’s Open Lab Notebook - Sarah Tanja</title>
+<title>Sarah Tanja’s Open Lab Notebook - Anthopleura elegentissima</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,46 +20,29 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,9 +62,39 @@ div.csl-indent {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="styles.css">
+    const options = {
+      valueNames: ['listing-image','listing-date','listing-title','listing-author','listing-categories','listing-reading-time',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -91,10 +104,10 @@ div.csl-indent {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/binocs.png" alt="Self-portrait at Tracy Arm, watercolor artwork by Sarah Tanja" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/binocs.png" alt="Self-portrait at Tracy Arm, watercolor artwork by Sarah Tanja" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Sarah Tanja’s Open Lab Notebook</span>
     </a>
   </div>
@@ -104,11 +117,11 @@ div.csl-indent {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page">
+    <a class="nav-link" href="../../about.html">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html">
+    <a class="nav-link" href="../../projects.html">
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item compact">
@@ -136,81 +149,79 @@ div.csl-indent {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page">
+      <h1 class="title">Anthopleura elegentissima</h1>
+            <p class="subtitle lead">lets try again</p>
+                      </div>
+  </div>
+  <div class="quarto-title-meta">
+    </div>
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    </div>
+    
 <!-- main -->
-<div class="quarto-about-marquee page-columns page-full column-page-left">
-  <div class="about-image-container">
-    <img src="images/sarah-smile.jpg" class="about-image " style="width: 100%;">
-  </div>
-  <div class="about-contents page-columns page-full">
-    <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Sarah Tanja</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header> <main class="content page-columns page-full column-page-left" id="quarto-document-content">
-<div class="{hero-heading}">
-<p>I’m currently a Masters student in the <a href="https://padilla-gaminolab.weebly.com/">Padilla-Gamiño Lab</a> and part of the <a href="https://fish.uw.edu/">School of Aquatic and Fishery Sciences</a> at the University of Washington in Seattle.</p>
-<p>My research focuses on the multiple stressor impacts of plastic pollution and heat stress on coastal primary producers. More specifically, I am researching a suite of common chemicals added to plastic consumer-products called phthalate acid-esters, phthalates or plasticizers, and their potential impacts on gene expression and microbial community structure in corals.</p>
-</div>
-<hr>
-<section id="research-influences" class="level3 page-columns page-full">
-<h3 data-anchor-id="research-influences">Research Influences</h3>
-<p>I first began circling the issue of plastic pollution and marine debris in 2012 as an <a href="https://www.adfg.alaska.gov/index.cfm?adfg=internexp.donohoe">intern</a> with the Alaska Dept. of Fish &amp; Game at a remote Steller sea lion rookery near Dixon Entrance. During population surveys, I photographed sea lions entangled in plastic trash, and later worked with the Pinniped Entanglement Group <a href="https://pinnipedentanglementgroup.org/">(PEG)</a> to research biodegradable alternatives to plastic packing bands on fish boxes. I learned how difficult it is to amend a system reliant on plastic.</p>
-<p>More recently, a seminar taught by my advisor <a href="https://fish.uw.edu/faculty/jacqueline-padilla-gamino/">Dr.&nbsp;Padilla-Gamiño</a> raised my awareness of the <a href="https://www.youtube.com/watch?v=iO3SA4YyEYU">links</a> between the fossil fuel industry, petrochemical-based plastics pollution, and the need for a plastics circular economy. Throughout the seminar, I was heavily influenced by a documentary titled, “<a href="https://www.youtube.com/show/SC2l9YPiNhgA1NwB2avpZwgw">The Story of Plastic</a>” and a number of papers, including: “Rethinking Microplastics as a Diverse Contaminant Suite” <span class="citation" data-cites="rochman_rethinking_2019">(<a href="#ref-rochman_rethinking_2019" role="doc-biblioref">Rochman et al. 2019</a>)</span>, and “Plastic leachates impair growth and oxygen production in Prochlorococcus, the ocean’s most abundant photosynthetic bacteria” <span class="citation" data-cites="tetu2019">(<a href="#ref-tetu2019" role="doc-biblioref">Tetu et al. 2019</a>)</span>.</p>
-<div class="no-row-height column-margin column-container"><div id="ref-rochman_rethinking_2019" class="csl-entry" role="doc-biblioentry">
-Rochman, Chelsea M., Cole Brookson, Jacqueline Bikker, Natasha Djuric, Arielle Earn, Kennedy Bucci, Samantha Athey, et al. 2019. <span>“Rethinking Microplastics as a Diverse Contaminant Suite.”</span> <em>Environ Toxicol Chem</em> 38 (4): 703–11. <a href="https://doi.org/10.1002/etc.4371">https://doi.org/10.1002/etc.4371</a>.
-</div><div id="ref-tetu2019" class="csl-entry" role="doc-biblioentry">
-Tetu, Sasha G., Indrani Sarker, Verena Schrameyer, Russell Pickford, Liam D. H. Elbourne, Lisa R. Moore, and Ian T. Paulsen. 2019. <span>“Plastic Leachates Impair Growth and Oxygen Production in Prochlorococcus, the Ocean’s Most Abundant Photosynthetic Bacteria.”</span> <em>Commun Biol</em> 2 (May): 184. <a href="https://doi.org/10.1038/s42003-019-0410-x">https://doi.org/10.1038/s42003-019-0410-x</a>.
-</div></div><p>The release of Rachel Carson’s book Silent Spring in the early 1960s publicly unified two distinct branches of science, ecology and toxicology, into a new area called “ecotoxicology.”</p>
-<blockquote class="blockquote page-columns page-full">
-<p>"The definition and starting point of ecotoxicology as a formal and independent branch of science can be attributed to Professor Truhaut, who defined it in 1969 as "the branch of Toxicology concerned with the study of toxic effects, caused by natural or synthetic pollutants, to the constituents of ecosystems, animal (including human), vegetable and microbial"" (Tincani et al., 2017, p.&nbsp;2868) <span class="citation" data-cites="tincani2017">(<a href="#ref-tincani2017" role="doc-biblioref">Tincani et al. 2017</a>)</span></p>
-<div class="no-row-height column-margin column-container"><div id="ref-tincani2017" class="csl-entry" role="doc-biblioentry">
-Tincani, Flávio H., Gabrieli L. Galvan, Antonio E. M. L. Marques, Gustavo S. Santos, Letícia S. Pereira, Thiago A. da Silva, Helena C. Silva de Assis, Ronilson V. Barbosa, and Marta M. Cestari. 2017. <span>“Pseudoreplication and the Usage of Biomarkers in Ecotoxicological Bioassays.”</span> <em>Environmental Toxicology and Chemistry</em> 36 (10): 2868–74. <a href="https://doi.org/10.1002/etc.3823">https://doi.org/10.1002/etc.3823</a>.
-</div></div></blockquote>
-<p>Phthalates are known endocrine-disrupting chemicals, which can have strong effects even at very low doses. This ecotoxicology concept is referred to as ‘low-dose effects’ and ‘non-monotonic’ response and was introduced to me by <a href="https://directory.tacoma.uw.edu/employee/agardell">Dr.&nbsp;Alison Gardell</a> as a guest-lecturer to a course in Integrated Environmental Physiology taught by <a href="https://fish.uw.edu/faculty/steven-roberts/">Dr.&nbsp;Steven Roberts</a> at the University of Washington in Seattle.</p>
-<p>I became increasingly interested in studying these types of environmental pollutants because they challenge the concept of ‘acceptable levels of pollution’. A book by <a href="https://maxliboiron.com/">Dr.&nbsp;Max Liboiron</a>, titled <a href="https://www.dukeupress.edu/pollution-is-colonialism"><em>Pollution is Colonialism</em></a>, <span class="citation" data-cites="liboiron2021">(<a href="#ref-liboiron2021" role="doc-biblioref">Liboiron 2021</a>)</span>taught me that ‘acceptable levels of pollution’ assumes settler and colonial access to Indigenous land and is not, in fact, acceptable.</p>
-<div class="no-row-height column-margin column-container"><div id="ref-liboiron2021" class="csl-entry" role="doc-biblioentry">
-Liboiron, Max. 2021. <em>Pollution Is Colonialism</em>. Duke University Press. <a href="https://doi.org/10.2307/j.ctv1jhvnk1">https://doi.org/10.2307/j.ctv1jhvnk1</a>.
-</div></div><div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/sarah-pour.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">This is me measuring out some filtered seawater at the Hawaii Institute of Marine Biology (HIMB) in preparation for my pilot study on phthalate impacts on coral embryo development</figcaption><p></p>
-</figure>
-</div>
-<blockquote class="blockquote">
-<p>“There is suffering in the world, in the work each of us is doing, we have chosen not to look away, but to do what is in our power to heal and repair, and I see that in every single one of you. My hope from what we’ve created here together, and in the affirmation that teaching and learning in communion with each other can be regenerative and transforming, so thank you.” - Dr.&nbsp;Anne Beaudreau, SMEA 500 Autumn 2023</p>
-</blockquote>
-<hr>
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
 
 
-</section>
-</main> 
-    <div class="about-footer"><div class="about-links">
-  <a href="https://www.linkedin.com/in/sarah-tanja-595722146/" class="about-link">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/sarahtanja" class="about-link">
+
+<div class="quarto-about-trestles column-page">
+  <div class="about-entity">
+    <img src="Aggregating-anemone-Mesa-Schumacher.jpg" class="about-image
+  rounded " style="width: 20em;">
+
+    <div class="about-links">
+  <a href="https://github.com/sarahtanja/anemone-leachate-exposure" class="about-link">
     <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
+     <span class="about-link-text">https://github.com/sarahtanja/anemone-leachate-exposure</span>
   </a>
-  <a href="mailto::stanja@uw.edu" class="about-link">
-    <i class="bi bi-envelope-heart"></i>
-     <span class="about-link-text">Email Me</span>
-  </a>
-</div>
 </div>
   </div>
+  <div class="about-contents"><div id="description">
+<p>This science experiment tests the photobiology, microbiome, and gene expression responses of the aggregating sea anemone to plastic pollutant derived leachate</p>
+</div></div>
 </div>
- <!-- /main -->
+
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+</th>
+<th>
+Date
+</th>
+<th>
+Title
+</th>
+<th>
+Author
+</th>
+<th>
+Categories
+</th>
+<th>
+Reading Time
+</th>
+</tr>
+</thead>
+<tbody class="list">
+</tbody>
+
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

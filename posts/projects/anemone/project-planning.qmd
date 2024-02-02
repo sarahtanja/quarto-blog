@@ -1,0 +1,65 @@
+---
+title: "Anemone Project Planning"
+author: "Sarah Tanja"
+date: '01/02/2024'
+categories: [anemones]
+draft: false
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
+---
+
+## Conceptual planning
+
+### Question(s)
+
+::: callout-note Overarching question Does chronic microplastic-associated leachate pollution reduce marine anthozoan's climate resilience to marine heatwaves? :::
+
+2.  ***Photobiology:***
+
+3.  ***Microbiome:*** Does exposure to microplastic-associated leachate pollution disrupt the beneficial function of the anthozoan microbiome community? Is microbial community function disrupted more under added thermal stress?
+
+4.  ***Differential Gene Expression:***
+
+5.  
+
+Hypotheses
+
+Statistical analysis
+
+Sample size
+
+Experimental design
+
+Controlling batch effects or confounding variables
+
+## Timeline
+
+## Equipment
+
+| item        | purpose     | location             | status  |
+|-------------|-------------|----------------------|---------|
+| 2 seatables | water baths | portage bay building | working |
+|             |             |                      |         |
+|             |             |                      |         |
+
+## Budget
+
+| item                | quantity | cost | source |
+|---------------------|----------|------|--------|
+| 250mL glass beakers | 40       |      |        |
+|                     |          |      |        |
+|                     |          |      |        |
+
+## Permits
+
+Washington Department of Fish & Wildlife scientific collection permit (Tanja 24-010) was submitted on 05-JAN-2024 and the \$117 processing fee was paid from the lab's purchase card over the phone on 08-JAN-2024. WDFW scientific collection permits can take up to 3 months to be approved.
+
+## Scheduling
+
+## Data & Code Organization

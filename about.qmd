@@ -23,7 +23,13 @@ about:
 ::: {hero-heading}
 I'm currently a Masters student in the [Padilla-Gamiño Lab](https://padilla-gaminolab.weebly.com/) and part of the [School of Aquatic and Fishery Sciences](https://fish.uw.edu/) at the University of Washington in Seattle.
 
-My research focuses on the multiple stressor impacts of plastic pollution and heat stress on coastal primary producers. More specifically, I am researching a suite of common chemicals added to plastic consumer-products called phthalate acid-esters, phthalates or plasticizers, and their potential impacts on gene expression and microbial community structure in corals.
+My research focuses on the multiple stressor impacts of microplastic-associated pollution and heat stress on coastal primary producers.
+
+My main question is "Does pollution undermine climate resilience?"
+
+I'm interested in exploring this question in the context of marine coastal habitat-forming organisms. These include scleractinian corals that form the structures of tropical coral reefs, soft-bodied anemones that cover the rocky intertidal habitats of the temperate coasts, and canopy-forming and understory kelps and seaweeds that provide habitat and organic carbon to various ecosystems.
+
+Other questions I like to explore are "Do microplastic-associated pollutants alter the beneficial microbiome in marine organisms?", "Do microplastic pollutants alter gene expression in marine organisms?", and "Do microplastic pollutants decrease photosynthetic efficiency in the ocean?".
 :::
 
 ------------------------------------------------------------------------
@@ -36,7 +42,7 @@ More recently, a seminar taught by my advisor [Dr. Padilla-Gamiño](https://fish
 
 The release of Rachel Carson's book Silent Spring in the early 1960s publicly unified two distinct branches of science, ecology and toxicology, into a new area called "ecotoxicology."
 
-> \"The definition and starting point of ecotoxicology as a formal and independent branch of science can be attributed to Professor Truhaut, who defined it in 1969 as \"the branch of Toxicology concerned with the study of toxic effects, caused by natural or synthetic pollutants, to the constituents of ecosystems, animal (including human), vegetable and microbial\"\" (Tincani et al., 2017, p. 2868) [@tincani2017]
+> "The definition and starting point of ecotoxicology as a formal and independent branch of science can be attributed to Professor Truhaut, who defined it in 1969 as "the branch of Toxicology concerned with the study of toxic effects, caused by natural or synthetic pollutants, to the constituents of ecosystems, animal (including human), vegetable and microbial"" (Tincani et al., 2017, p. 2868) [@tincani2017]
 
 Phthalates are known endocrine-disrupting chemicals, which can have strong effects even at very low doses. This ecotoxicology concept is referred to as 'low-dose effects' and 'non-monotonic' response and was introduced to me by [Dr. Alison Gardell](https://directory.tacoma.uw.edu/employee/agardell) as a guest-lecturer to a course in Integrated Environmental Physiology taught by [Dr. Steven Roberts](https://fish.uw.edu/faculty/steven-roberts/) at the University of Washington in Seattle.
 

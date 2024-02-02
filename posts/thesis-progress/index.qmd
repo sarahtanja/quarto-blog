@@ -17,11 +17,11 @@ link-external-newwindow: true
 # Sarah's Master's Thesis Progress:
 
 | Milestone                                                                                                                     | Expected         | Completed            |
-|----------------------------------|-------------------|-------------------|
-| [Form Committee](https://docs.google.com/forms/d/e/1FAIpQLSdMCg96RoRiT4yEIAMorzOPT6GqDYFRQcPp0Ttr0D22idJqYg/viewform)         | \[AU22\] 16DEC22 | \[WI23\] 05JAN23     |
-| [Submit Plan of Study](https://forms.gle/15siYRGdHKr5dX2B7)                                                                   | \[AU22\] 16DEC22 | \[WI23\] 05JAN23     |
+|-------------------------------------------------------------------------------------------------------------------------------|------------------|----------------------|
+| [Form Committee](https://docs.google.com/forms/d/e/1FAIpQLSdMCg96RoRiT4yEIAMorzOPT6GqDYFRQcPp0Ttr0D22idJqYg/viewform)         | \[AU22\] 16DEC22 | \[WI23\] 05JAN2023   |
+| [Submit Plan of Study](https://forms.gle/15siYRGdHKr5dX2B7)                                                                   | \[AU22\] 16DEC22 | \[WI23\] 05JAN2023   |
 | [Submit Thesis Proposal](https://docs.google.com/forms/d/e/1FAIpQLScL5Tp4GOxGUTxV2c1-kXW0orPTZEfuFeGtMF4eoJ9LHC9mcw/viewform) | \[AU22\] 16DEC22 | \[WI23\] **Overdue** |
-| End-of-Program Meeting with GPA                                                                                               | \[AU23\] 01NOV23 | **Overdue**          |
+| End-of-Program Meeting with GPA                                                                                               | \[AU23\] 01NOV23 | \[WI24\] 10JAN2024   |
 | Submit Thesis Draft                                                                                                           | \[WI24\] 31JAN24 |                      |
 | Request Final Exam                                                                                                            | \[WI24\] 31JAN24 |                      |
 | Request Master's Degree                                                                                                       | \[WI24\] 31JAN24 |                      |

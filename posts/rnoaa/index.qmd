@@ -1,0 +1,109 @@
+---
+title: "Tides & WX Station Data"
+subtitle: "How to use the rnoaa package"
+author: "Sarah Tanja"
+date: '02/05/2024'
+categories: [learning journey]
+image: thumbnail.jpg
+draft: false
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
+bibliography: ../library.bib
+---
+
+"Air temperature and tide data Air temperature and tide level data was obtained from various sources depending on the location. Hourly temperature and tide data for Toke Point and Port Townsend and tide data from Neah Bay and Budd Inlet was obtained from publically available National Oceanic and Atmospheric Administration (NOAA) tide station data using the 'rnoaa' package in R (Chamberlin et al. 2021, R Core Team 2021). Hourly temperature and tide data for Vancouver and tide data for Pruth Bay was obtained from publically available Department of Fisheries and Oceans (DFO) Canada tide station data. Air temperature data for Pruth Bay was obtained from the Hakai Institute weather station (Giesbrecht et al. 2021). Air temperature data for Neah Bay was obtained from a weather station on nearby Tatoosh Island, WA (C. Pfister and T. Wootton personal communication). Air temperature data for Budd Inlet was obtained from the nearby Evergreen State College weather station. If raw data was reported at time scale less than one hour, mean hourly temperature was calculated. These data can be accessed two ways, both of which are available (Raymond, 2022). There, static data files are archived as well as code to query and process them if necessary. Long term, 1991 -- 2020, air temperature data was obtained from the National Aeronautical and Space Agency (NASA) DAYMET surface temperature database using the 'daymetr' package in R (Hufkens 2021). We extracted maximum and minimum daily surface air temperatures from 2° latitude by 2° longitude grids. Grids were selected by the location of the hourly temperatures/tide stations above. These are Toke Point 46.7499° N -124.0250°W, Budd Inlet 47.0643°N -122.9106°W, Neah Bay 48.3770°N -124.6897°W, Port Townsend and Vancouver 48.1172°N -122.7890°W, and Pruth Bay 51.6271°N -127.6450°W. From this raw daily data, long term daily mean high and low temperatures were calculated. Code to obtain and processes these data in the R environment are available (Raymond, 2022)."
+
+archived in Zenodo https://zenodo.org/records/6555076
+
+https://github.com/wraymond/Ecology_heatwave-salish-sea-shellfish/tree/v1.0
+
+### Install packages
+
+```{r}
+if ('tidyverse' %in% rownames(installed.packages()) == 'FALSE') install.packages('tidyverse')
+if ('noaaoceans' %in% rownames(installed.packages()) == 'FALSE') install.packages('noaaoceans')
+if ('cowplot' %in% rownames(installed.packages()) == 'FALSE') install.packages('cowplot')
+if ('lubridate' %in% rownames(installed.packages()) == 'FALSE') install.packages('lubridate')
+if ('rnoaa' %in% rownames(installed.packages()) == 'FALSE') install.packages('rnoaa')
+if ('daymetr' %in% rownames(installed.packages()) == 'FALSE') install.packages('daymetr')
+if ('heatwaveR' %in% rownames(installed.packages()) =='FALSE') install.packages('heatwaveR')
+if ('tiff' %in% rownames(installed.packages()) == 'FALSE') install.packages('tiff')
+```
+
+### Load libraries
+
+```{r libraries}
+library(noaaoceans)
+library(tidyverse)
+library(cowplot)
+library(lubridate)
+library(rnoaa)
+library(daymetr)
+library(heatwaveR)
+library(tiff)
+
+theme_set(theme_classic())
+```
+### Load Data
+Import NOAA tide and weather station data
+
+```{r}
+# NOAA Air temp data from Toke Point, Port Townsend #
+noaa.air.stations <- c("9440910", "9444900")
+air.temp <- data.frame()
+for (i in noaa.air.stations) {
+    query.df2 <- query_coops_data(station_id = i,
+                                 start_date = '20210624',
+                                 end_date = '20210701',
+                                 data_product = 'air_temperature',
+                                 units = "metric", 
+                                 time_zone = "lst_ldt",
+                                 interval = 'h') 
+    air.temp <- air.temp %>% bind_rows(., query.df2)
+}
+```
+
+```{r}
+## Water Levels ##
+
+# NOAA Water levels from Toke Point, Port Townsend, Neah Bay, and Budd Inlet #
+noaa.tide.stations <- c("9440910", "9444900", "9443090", "9446807")
+water.level <- data.frame()
+for (i in noaa.tide.stations) {
+    query.df3 <- query_coops_data(station_id = i,
+                                 start_date = '20210624',
+                                 end_date = '20210701',
+                                 data_product = 'predictions',
+                                 units = "metric",
+                                 datum = "MLLW",
+                                 interval = "h",
+                                 time_zone = "lst_ldt") 
+    water.level <- water.level %>% bind_rows(., query.df3)
+}
+```
+
+### Load Gridded climate data
+Pull from Daymet 2 X 2 degree surface grid. https://daymet.ornl.gov/getdata
+
+```{r gridded}
+## Olympia ##
+oly.grid <- download_daymet(site = "olympia", lat = 47.064316, lon = -122.910577, start = 1991, end = 2020, internal = TRUE)
+
+## Port Townsend + Vancouver BC ##
+ptv.grid <- download_daymet(site = "port_townsend", lat = 48.1172, lon = -122.789, start = 1991, end = 2020, internal = TRUE)
+
+## Neah Bay ##
+nhb.grid <- download_daymet(site = "neah_bay", lat = 48.377, lon = -124.6897, start = 1991, end = 2020, internal = TRUE)
+
+## Toke Point ##
+tkp.grid <- download_daymet(site = "toke_point", lat = 46.7499, lon = -124.025, start = 1991, end = 2020, internal = TRUE)
+
+## Calvert Island ##
+cvi.grid <- download_daymet(site = "calvert_island", lat = 51.6271, lon = -127.645, start = 1991, end = 2020, internal = TRUE)
+```

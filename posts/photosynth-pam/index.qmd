@@ -1,0 +1,41 @@
+---
+title: "Understanding photosynthesis"
+subtitle: ""
+author: "Sarah Tanja"
+date: '02/05/2024'
+categories: [learning journey]
+image: thumbnail.jpg
+draft: true
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
+bibliography: photosynth-pam.bib
+---
+
+```{r}
+tribble(
+    ~Abbreviation, ~ Definition,
+    "ETR", "electron transport rate",
+    "PSII", "effective quantum yield",
+    "rETR", "relative electron transport rate",
+    "PAR", "photosynthetically active radiation"
+) %>%
+    arrange(Abbreviation)
+```
+
+What is fluorescence?
+
+Pulse Amplitude Modulation (PAM) Fluorometers use three different lights to trigger the photosynthetic apparatus and chlorophyll-a molecule.
+
+-   weak measuring light
+
+-   saturating pulse
+
+-   actinic light
+
+[@ralph2005]

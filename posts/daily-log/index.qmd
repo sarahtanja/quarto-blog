@@ -15,6 +15,28 @@ bibliography: references.bib
 image: log.png
 ---
 
+## January 2024
+
+#### 05-JAN-2024
+
+-   Lab meeting cancelled
+
+-   emailed Francesco Saliu asking about sending their lab SPME fibers for analysis
+
+    -   still no package or protocol, starting to think about plan B/C/D...etc
+
+-   found rnoaa package and zenodo by Wendell Raymond https://zenodo.org/records/6555076 from paper "[Assessment of the impacts of an unprecedented heatwave on intertidal shellfish of the Salish Sea](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecy.3798)" recommended by Bob Oxborrow
+
+    -   explored rnoaa package
+
+-   13:30 - shadow fish 427 lab on photosynthesis and respiration with Miranda
+
+Goal for the week:
+
+-   Get PAM photosynthesis initial data
+
+## December 2023
+
 ## November 2023
 
 #### 27-NOV-2023

@@ -4,8 +4,10 @@
     "items": [
       "/posts/projects/anemone.html",
       "/posts/projects/coral-pae-temp.html",
+      "/posts/rnoaa/index.html",
       "/posts/projects/anemone/project-planning.html",
       "/posts/pseudoreplication/index.html",
+      "/posts/quarto-blog-create/index.html",
       "/posts/world-phthalates/index.html",
       "/posts/committee-2/index.html",
       "/posts/thesis-progress/index.html",
@@ -38,6 +40,8 @@
   },
   {
     "listing": "/posts/projects/anemone.html",
-    "items": []
+    "items": [
+      "/posts/projects/anemone/project-planning.html"
+    ]
   }
 ]

@@ -4,6 +4,7 @@
     "items": [
       "/posts/projects/anemone.html",
       "/posts/projects/coral-pae-temp.html",
+      "/posts/projects/anemone/about-anemone.html",
       "/posts/rnoaa/index.html",
       "/posts/projects/anemone/project-planning.html",
       "/posts/pseudoreplication/index.html",
@@ -41,6 +42,7 @@
   {
     "listing": "/posts/projects/anemone.html",
     "items": [
+      "/posts/projects/anemone/about-anemone.html",
       "/posts/projects/anemone/project-planning.html"
     ]
   }

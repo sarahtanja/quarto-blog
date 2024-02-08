@@ -2,8 +2,7 @@
 title: "Daily Lab Log"
 subtitle: "Enter at your peril; This one is for me, not you"
 author: "Sarah Tanja"
-date: '01/01/2023'
-date-modified: "11/27/2023"
+date: '02/08/2024'
 categories: [daily log]
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>
@@ -15,9 +14,23 @@ bibliography: references.bib
 image: log.png
 ---
 
-## January 2024
+# February 2024
 
-#### 05-JAN-2024
+#### 08-FEB-2024
+
+-   attended Roberts Lab meeting
+
+    -   Will be presenting experiment design & proposal on Feb 22nd
+
+-   worked on dropbox-uploader app in raven server to try and get data from dropbox directly to raven \*not working
+
+#### 07-FEB-2024
+
+-   Identified anemones from Alki Beach have *Symbiodinium muscatinei*
+
+-   Identified anemones from Teddy Bear Cove have *Symbiodinium muscatinei*
+
+#### 05-FEB-2024
 
 -   Lab meeting cancelled
 
@@ -34,6 +47,8 @@ image: log.png
 Goal for the week:
 
 -   Get PAM photosynthesis initial data
+
+## January 2024
 
 ## December 2023
 

@@ -18,13 +18,20 @@ bibliography: photosynth-pam.bib
 ---
 
 ```{r}
+if ('tidyverse' %in% rownames(installed.packages()) == 'FALSE') install.packages('tidyverse')
+```
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
 tribble(
     ~Abbreviation, ~ Definition,
     "ETR", "electron transport rate",
     "PSII", "effective quantum yield",
     "rETR", "relative electron transport rate",
-    "PAR", "photosynthetically active radiation"
-) %>%
+    "PAR", "photosynthetically active radiation") %>%
     arrange(Abbreviation)
 ```
 

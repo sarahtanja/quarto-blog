@@ -1,9 +1,9 @@
 ---
-title: "Understanding photosynthesis"
-subtitle: ""
+title: "Measuring photosynthesis & respiration"
+subtitle: "Setup & Operation of the Walz Mini-PAM-II"
 author: "Sarah Tanja"
 date: '02/05/2024'
-categories: [learning journey]
+categories: [learning journey, anemones]
 image: thumbnail.jpg
 draft: true
 toc: true
@@ -31,9 +31,19 @@ tribble(
     "ETR", "electron transport rate",
     "PSII", "effective quantum yield",
     "rETR", "relative electron transport rate",
-    "PAR", "photosynthetically active radiation") %>%
+    "PAR", "photosynthetically active radiation",
+    "ADP", "adeonsine diphosohate",
+    "ATP", "adenosine triphosphate",
+    "Chl-a", "chlorophyll-a",
+    "PSII", "photosystem II") %>%
     arrange(Abbreviation)
 ```
+
+## A brief review of photosynthesis
+
+PAM fluorescense measurements analyze the state and turnover of photosystem II reaction centers. Combined with oxygen consumption, we an assess the role of alternative oxygen-processing pathways.
+
+The MINI-PAM-II uses an oxygen optode, the sensor's responsive element is a luminescent dye whose light emission is quenched by oxygen. The optode measurement does not consume oxygen.
 
 What is fluorescence?
 

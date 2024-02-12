@@ -16,14 +16,16 @@ image: log.png
 
 # February 2024
 
-#### 02-FEB-2024
+#### **02-FEB-2024**
+
+-   Follow-up with UW office of veterans affairs about debt
 
 -   Lab meeting notes:
 
-    -   Move shaker table to lab 242 hood
-
+    -   move shaker table to lab 242 hood
     -   move nitrogen needle lipid extractor to methanol/chloroform cabinet in 242
-
+    -   ok to buy organizational bins for PBB, keep receipts & get reimbursed
+    -   respirometry chamber battery operation problematic... reduced flow, battery drain over time (30mins); Nuria left a plug-in chamber somewhere in PBB
     -   
 
 -   Writing your resume for federal job webinar
@@ -41,6 +43,20 @@ image: log.png
     -   Itemize how how manage something, on top of listing your role... you have to explain what you did in that role. The role 'president of xx' doesn't translate to the person reviewing the resume knowing what you can do\... leave nothing to the imagination. Be explicit.
 
     -   Spoken presentations: how many presentations you have given, what & when
+
+    -   The first person that looks at your resume is a human resources specialist, not a scientist!
+
+    -   show that you are an 'innovator' and that when you see a problem, you take initiative to fix it.
+
+    -   where you go, people are impacted positively, there is recognition, things change or improve, things get better, you save money, you meet deadlines, you bring about conflict resolution.
+
+    -   the cover letter is not used to qualify you, ONLY THE RESUME!
+
+    -   Vet team to assist navigating federal hiring process: fedshirevets\@opm.gov
+
+    -   You get shuttled into qualified, well-qualified, best-qualified. Qualifying doesn't mean that you get referred to the hiring manager\... you can qualify but not get referred to the hiring manager. You can be referred, but not get an interview.
+
+    -   wrp workforce recruitment program
 
 #### 08-FEB-2024
 

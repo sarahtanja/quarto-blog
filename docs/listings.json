@@ -4,8 +4,10 @@
     "items": [
       "/posts/projects/anemone.html",
       "/posts/projects/coral-pae-temp.html",
-      "/posts/projects/anemone/about-anemone.html",
+      "/posts/projects/anemone/about-anemones/about-anemone.html",
+      "/posts/projects/anemone/tanks/tanks.html",
       "/posts/daily-log/index.html",
+      "/posts/projects/anemone/photosynth-pam/photosynth-pam.html",
       "/posts/rnoaa/index.html",
       "/posts/projects/anemone/project-planning.html",
       "/posts/pseudoreplication/index.html",
@@ -27,6 +29,15 @@
     ]
   },
   {
+    "listing": "/posts/projects/anemone.html",
+    "items": [
+      "/posts/projects/anemone/about-anemones/about-anemone.html",
+      "/posts/projects/anemone/tanks/tanks.html",
+      "/posts/projects/anemone/photosynth-pam/photosynth-pam.html",
+      "/posts/projects/anemone/project-planning.html"
+    ]
+  },
+  {
     "listing": "/posts/projects/coral-pae-temp.html",
     "items": [
       "/posts/projects/coral-pae-temp/dna-rna-extractions/index.html"
@@ -37,13 +48,6 @@
     "items": [
       "/posts/projects/anemone.html",
       "/posts/projects/coral-pae-temp.html"
-    ]
-  },
-  {
-    "listing": "/posts/projects/anemone.html",
-    "items": [
-      "/posts/projects/anemone/about-anemone.html",
-      "/posts/projects/anemone/project-planning.html"
     ]
   }
 ]

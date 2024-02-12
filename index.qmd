@@ -1,5 +1,5 @@
 ---
-title: "Posts"
+title: "Notebook"
 listing:
   contents: posts
   sort: "date desc"
@@ -10,4 +10,3 @@ listing:
 page-layout: full
 title-block-banner: true
 ---
-

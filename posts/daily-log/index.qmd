@@ -16,6 +16,32 @@ image: log.png
 
 # February 2024
 
+#### 02-FEB-2024
+
+-   Lab meeting notes:
+
+    -   Move shaker table to lab 242 hood
+
+    -   move nitrogen needle lipid extractor to methanol/chloroform cabinet in 242
+
+    -   
+
+-   Writing your resume for federal job webinar
+
+    -   schedule A: disability accommodation
+
+    -   Federal hiring resume, there is no page limit
+
+    -   The resume gets you to the hiring manager, show in the resume that you qualify before it goes to a hiring manager
+
+    -   hiring managers in Federal hiring do not click on links (github, linkedIn, etc.) they won't be viewed...
+
+    -   'Your resume is the movie trailer...' Highlight the level of complexity of your work
+
+    -   Itemize how how manage something, on top of listing your role... you have to explain what you did in that role. The role 'president of xx' doesn't translate to the person reviewing the resume knowing what you can do\... leave nothing to the imagination. Be explicit.
+
+    -   Spoken presentations: how many presentations you have given, what & when
+
 #### 08-FEB-2024
 
 -   attended Roberts Lab meeting

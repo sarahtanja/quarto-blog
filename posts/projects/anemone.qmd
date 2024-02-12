@@ -1,5 +1,5 @@
 ---
-title: "Anthopleura elegentissima"
+title: "Anthopleura elegantissima"
 subtitle: "lets try again"
 about:
   id: description
@@ -7,8 +7,8 @@ about:
   image: "Aggregating-anemone-Mesa-Schumacher.jpg"
   links:
     - icon: github
-      text: https://github.com/sarahtanja/anemone-leachate-exposure
-      href: https://github.com/sarahtanja/anemone-leachate-exposure
+      text: https://github.com/sarahtanja/anemone-leachate-heat
+      href: https://github.com/sarahtanja/anemone-leachate-heat
 listing: 
   contents: anemone
   sort: "date desc"

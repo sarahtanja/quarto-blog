@@ -1,0 +1,60 @@
+---
+title: "Experimental tank setup"
+subtitle: ""
+author: "Sarah Tanja"
+date: '02/09/2024'
+categories: [protocols, anemones]
+draft: false
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
+---
+
+## Lights
+
+### AI
+
+[Hydra 32HD manual](https://support.aquaillumination.com/hc/en-us/article_attachments/4402389133335)
+
+serial number: 897600704A2
+
+### Kessil lights
+
+Download the [Kessil App](https://kessil.com/products/app_wifi.php) [A360X Tuna Blue](https://kessil.com/products/saltwater_A360X.php) [WiFi Dongle](https://kessil.com/products/accessories_WifiDongle.php)
+
+[Kessil WiFi app control user manual](https://kessil.com/downloads/accessories/kessilwifi_UserManual/wifi_user_manual.html)
+
+Connect all 4 lights to each other in a daisy-chain using the `k-link` usb-c cords. There will be one light with an open k-link port. Plug a Kessil WiFi Dongle into the open k-link port.
+
+The WiFi dongle will blink purple. In the Kessil App, select to connect `Through Wireless Router` where `Device can connect to internet & control AP9X/Dongle at the same time`and check the box that says `Apex Fusion control ONLY`.
+
+The purple blinking light switched straight to green in this case, because it had been previously connected to the neptune Apex network.
+
+Sign-in to Apex Fusion account, you'll notice you can control the on&off cycle of the lights through Apex!
+
+The seatables are controlled by Apex controller `Rack6-Trays-1-2`
+
+The dashboard will look like:
+
+![Seatables neptune controller dashboard](neptune-rack6.png){fig-align="center"}
+
+Click the 'three gear icon' in the top nav bar to expand the nav bar.
+
+It'll show additional icons. Click on the one that looks like an outlet.
+
+This controls 'on' and 'off'. It doesn't control the intensity or color, which have to be controlled manually using the potentiometers on the back of the lights.
+
+![Seatable neptune light outlet settings 12hrs 'on' from 0600 PST to 1800 PST](TRY2_LT1.png){fig-align="center"}
+
+Because they're all linked with the k-links, when you adjust the light color or intensity it is mimicked with the other three. This way we can control that they go on and off in Neptune, and when they are on, they're all at the same intensity and color (so long as nobody touches the potentiometers!)
+
+Let's measure the light level with the apogee light meter, apogee instruments Model MQ-510 serial \# 2116.
+
+## Pumps
+
+SICCE Syncra silent multifunction pump 4.0, HMAX 3.7m (12.5ft), QMAX: 3500 L/H (951 gph). Though tray 2 of the seatables rack is lower(meaning that the pump had to work harder to move water from the tray to the heat exchangers mounted above), the flow rate was adjusted so that each seatable tray had a GPH flow rate of \~20gph.

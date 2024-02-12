@@ -1,0 +1,86 @@
+---
+title: "Measuring photosynthesis & respiration"
+subtitle: "Setup & Operation of the Walz Mini-PAM-II"
+author: "Sarah Tanja"
+date: '02/05/2024'
+categories: [learning journey, anemones]
+image: thumbnail.jpg
+draft: false
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
+bibliography: photophysiology.bib
+---
+
+```{r message=FALSE, warning=FALSE}
+if ('tidyverse' %in% rownames(installed.packages()) == 'FALSE') install.packages('tidyverse')
+```
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+```
+
+```{r}
+tribble(
+    ~Abbreviation, ~ Definition,
+    "ETR", "electron transport rate",
+    "PSII", "effective quantum yield",
+    "rETR", "relative electron transport rate",
+    "PAR", "photosynthetically active radiation",
+    "ADP", "adeonsine diphosohate",
+    "ATP", "adenosine triphosphate",
+    "Chl-a", "chlorophyll-a",
+    "PSII", "photosystem II") %>%
+    arrange(Abbreviation)
+```
+
+## A deep dive in photosynthesis
+
+Photosynthesis is magic. Four proteins embedded in a delicate lipid membrane turn light into sugar. It's pure energy transformation! The original alchemy that sustains all aerobic life on earth. Let me repeat that: **Photosynthesis sustains all aerobic life on earth**. Photosynthesis takes water (H~2~O) and carbon dioxide (CO~2~) and converts it to oxygen (O~2~) that is released into the environment, making its way to the atmosphere and our lungs, and cells. Every bit of oxygen on the earth was produced through photosynthesis and the molecules that travel through our blood and bodies were made through cyanobacteria, algae, and plants. For how important this process is, it's so often overlooked or skimmed past. In this post, I will take a deep dive. So grab a cup of tea and a sketch pad and take a deep breath. We're going under!
+
+Photosynthesis occurs in two out of three Domains of life: Bacteria (cyanobacteria, (a.k.a. blue-green algae) & Eukarya (red, brown, & green algae & plants!) Archaea, the third Domain, is made up of a group of single-celled microorganisms that do not photosynthesize. Here, I will focus mostly on the marine endosymbionts that are dinoflagellates from the brown algae, *Symbiodinium spp.* , and *Elliptochloris marina*, a green algae endosymbiont to the pacific northwest coastal sea anemone *Anthopleura elegantissima*.
+
+### Primary endosymbiosis
+
+Photosynthesis started in the cyanobacteria, and was transferred to the Eukarya phototrophs through primary and secondary endosymbiosis. Essentially, a cyanobacteria was eaten! Bacteria are prokaryotic, meaning they do not have a nuclear membrane separating their DNA from the cytoplasm.
+
+The evolution of the chloroplast can be traced back to when an alphaproteobacterium engulfed a cyanobacterium. This event is called the 'primary endosymbiosis' and is illustrated in the daigram below by a green pac-man shape (the alphaproteobacterium) engulfing a blue football-shaped cyanobacterium. Primary endosybiosis resulted in plastids (here plastids mean chloroplasts and mitochondria) that are bounded by two membranes. The lineage of primary endosymbiosis diverged into three: red algae, green algae, and glaucophytes.
+
+The green algae are thus products of primary endosymbiosis and are characterized by two layers of membranes around their plastids. This includes their chloroplasts.
+
+![Taken from P.J. Keeling , Figure 2. Diagram of primary, secondary, & tertiary endosymbiosis and explaining the origins of chloroplasts.](Keeling_fig2.png){fig-align="center"}
+
+### An overview
+
+Photosynthesis works
+
+### The knitty-gritty
+
+![Fig. 1 From @shevela2023 : "Schematic representation of the light-induced electron (solid arrows) and proton (dashed arrows) transfer reactions driven by the photosynthetic protein complexes embedded in the thylakoid membrane of oxygenic organisms (plants, algae, and cyanobacteria)."](Shevala_fig1.png)
+
+## How do we measure photosynthesis?
+
+PAM fluorescence measurements analyze the state and turnover of photosystem II reaction centers. Combined with oxygen consumption, we an assess the role of alternative oxygen-processing pathways.
+
+The MINI-PAM-II uses an oxygen optode, the sensor's responsive element is a luminescent dye whose light emission is quenched by oxygen. The optode measurement does not consume oxygen.
+
+What is fluorescence?
+
+Pulse Amplitude Modulation (PAM) Fluorometers use three different lights to trigger the photosynthetic apparatus and chlorophyll-a molecule.
+
+-   weak measuring light
+
+-   saturating pulse
+
+-   actinic light
+
+[@ralph2005]
+
+## Don't forget, photosynthesizers also do respiration!
+
+They don't just produce oxygen, they also consume it and release carbon dioxide (CO~2~).

@@ -417,14 +417,14 @@
     "href": "posts/projects/anemone/tanks/tanks.html",
     "title": "Experimental tank setup",
     "section": "",
-    "text": "Download the Kessil App A360X Tuna Blue WiFi Dongle\nKessil WiFi app control user manual\nConnect all 4 lights to each other in a daisy-chain using the k-link usb-c cords. There will be one light with an open k-link port. Plug a Kessil WiFi Dongle into the open k-link port.\nThe WiFi dongle will blink purple. In the Kessil App, select to connect Through Wireless Router where Device can connect to internet & control AP9X/Dongle at the same timeand check the box that says Apex Fusion control ONLY.\nThe purple blinking light switched straight to green in this case, because it had been previously connected to the neptune Apex network.\nSign-in to Apex Fusion account, you’ll notice you can control the on&off cycle of the lights through Apex!\nThe seatables are controlled by Apex controller Rack6-Trays-1-2\nThe dashboard will look like:\n\n\n\nSeatables neptune controller dashboard\n\n\nClick the ‘three gear icon’ in the top nav bar to expand the nav bar.\nIt’ll show additional icons. Click on the one that looks like an outlet.\nThis controls ‘on’ and ‘off’. It doesn’t control the intensity or color, which have to be controlled manually using the potentiometers on the back of the lights.\n\n\n\nSeatable neptune light outlet settings 12hrs ‘on’ from 0600 PST to 1800 PST\n\n\nBecause they’re all linked with the k-links, when you adjust the light color or intensity it is mimicked with the other three. This way we can control that they go on and off in Neptune, and when they are on, they’re all at the same intensity and color (so long as nobody touches the potentiometers!)\nLet’s measure the light level with the apogee light meter, apogee instruments Model MQ-510 serial # 2116."
+    "text": "Hydra 32HD manual\nserial number: 897600704A2\nPhone\nDownloaded the APP on phone\nMade a Hydra account\nLogin\nClick +\nChoose AI-Fi Device\nIn WiFI settings, connect to network directly hydra26-D897600704A2\nWhen connected, it will auto open a browser tab with the controller & settings for the lights\nExit and go back to app\nclick + again\nchoose AI-Fi\nIt will prompt you with a window to somplete setup\nName the tank\nSelect all the lights in the system\nParent\nChild\nConnect to JPG-Lab network: ed_cW=#Wbb_ZWF[_aYW@\nLights will attempt to connect to Wi-Fi Network…. needed for firmware updates…\n\n\n\nDownload the Kessil App A360X Tuna Blue WiFi Dongle\nKessil WiFi app control user manual\nConnect all 4 lights to each other in a daisy-chain using the k-link usb-c cords. There will be one light with an open k-link port. Plug a Kessil WiFi Dongle into the open k-link port.\nThe WiFi dongle will blink purple. In the Kessil App, select to connect Through Wireless Router where Device can connect to internet & control AP9X/Dongle at the same timeand check the box that says Apex Fusion control ONLY.\nThe purple blinking light switched straight to green in this case, because it had been previously connected to the neptune Apex network.\nSign-in to Apex Fusion account, you’ll notice you can control the on&off cycle of the lights through Apex!\nThe seatables are controlled by Apex controller Rack6-Trays-1-2\nThe dashboard will look like:\n\n\n\nSeatables neptune controller dashboard\n\n\nClick the ‘three gear icon’ in the top nav bar to expand the nav bar.\nIt’ll show additional icons. Click on the one that looks like an outlet.\nThis controls ‘on’ and ‘off’. It doesn’t control the intensity or color, which have to be controlled manually using the potentiometers on the back of the lights.\n\n\n\nSeatable neptune light outlet settings 12hrs ‘on’ from 0600 PST to 1800 PST\n\n\nBecause they’re all linked with the k-links, when you adjust the light color or intensity it is mimicked with the other three. This way we can control that they go on and off in Neptune, and when they are on, they’re all at the same intensity and color (so long as nobody touches the potentiometers!)\nLet’s measure the light level with the apogee light meter, apogee instruments Model MQ-510 serial # 2116."
   },
   {
     "objectID": "posts/projects/anemone.html",
     "href": "posts/projects/anemone.html",
     "title": "Anthopleura elegantissima",
     "section": "",
-    "text": "https://github.com/sarahtanja/anemone-leachate-heat\n  \n\n  \n  \nThis science experiment tests the photobiology, microbiome, and gene expression responses of the aggregating sea anemone to plastic pollutant derived leachate\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\nCategories\n\n\nReading Time\n\n\n\n\n\n\n\n \n\n\n\nMay 2, 2024\n\n\nThe aggregating anemone, Anthopleura elegantissima\n\n\nSarah Tanja\n\n\nanemones\n\n\n2 min\n\n\n\n\n\n\n\nFeb 9, 2024\n\n\nExperimental tank setup\n\n\nSarah Tanja\n\n\nprotocols,anemones\n\n\n1 min\n\n\n\n\n\n\n\nFeb 5, 2024\n\n\nMeasuring photosynthesis & respiration\n\n\nSarah Tanja\n\n\nlearning journey,anemones\n\n\n2 min\n\n\n\n\n\n \n\n\n\nJan 2, 2024\n\n\nAnemone Project Planning\n\n\nSarah Tanja\n\n\nanemones\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
+    "text": "https://github.com/sarahtanja/anemone-leachate-heat\n  \n\n  \n  \nThis science experiment tests the photobiology, microbiome, and gene expression responses of the aggregating sea anemone to plastic pollutant derived leachate\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\nCategories\n\n\nReading Time\n\n\n\n\n\n\n\n \n\n\n\nMay 2, 2024\n\n\nThe aggregating anemone, Anthopleura elegantissima\n\n\nSarah Tanja\n\n\nanemones\n\n\n2 min\n\n\n\n\n\n\n\nFeb 9, 2024\n\n\nExperimental tank setup\n\n\nSarah Tanja\n\n\nprotocols,anemones\n\n\n2 min\n\n\n\n\n\n\n\nFeb 5, 2024\n\n\nMeasuring photosynthesis & respiration\n\n\nSarah Tanja\n\n\nlearning journey,anemones\n\n\n2 min\n\n\n\n\n\n \n\n\n\nJan 2, 2024\n\n\nAnemone Project Planning\n\n\nSarah Tanja\n\n\nanemones\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/projects/coral-pae-temp/dna-rna-extractions/index.html",
@@ -887,5 +887,19 @@
     "title": "Projects",
     "section": "",
     "text": "Anthopleura elegantissima\n\n\n\n\n\n\n\n\n\n \n\n\n\nMontipora capitata\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/projects/anemone/tanks/tanks.html#pumps",
+    "href": "posts/projects/anemone/tanks/tanks.html#pumps",
+    "title": "Experimental tank setup",
+    "section": "Pumps",
+    "text": "Pumps\nSICCE Syncra silent multifunction pump 4.0, HMAX 3.7m (12.5ft), QMAX: 3500 L/H (951 gph). Though tray 2 of the seatables rack is lower(meaning that the pump had to work harder to move water from the tray to the heat exchangers mounted above), the flow rate was adjusted so that each seatable tray had a GPH flow rate of ~20gph."
+  },
+  {
+    "objectID": "posts/projects/anemone/tanks/tanks.html#float-valve",
+    "href": "posts/projects/anemone/tanks/tanks.html#float-valve",
+    "title": "Experimental tank setup",
+    "section": "Float Valve",
+    "text": "Float Valve"
   }
 ]

@@ -1,6 +1,5 @@
 ---
 title: "Experimental tank setup"
-subtitle: ""
 author: "Sarah Tanja"
 date: '02/09/2024'
 categories: [protocols, anemones]
@@ -22,6 +21,42 @@ link-external-newwindow: true
 [Hydra 32HD manual](https://support.aquaillumination.com/hc/en-us/article_attachments/4402389133335)
 
 serial number: 897600704A2
+
+Phone
+
+Downloaded the APP on phone
+
+Made a Hydra account
+
+Login
+
+Click `+`
+
+Choose AI-Fi Device
+
+In WiFI settings, connect to network directly `hydra26-D897600704A2`
+
+When connected, it will auto open a browser tab with the controller & settings for the lights
+
+Exit and go back to app
+
+click `+` again
+
+choose AI-Fi
+
+It will prompt you with a window to somplete setup
+
+Name the tank
+
+Select all the lights in the system
+
+Parent
+
+Child
+
+Connect to JPG-Lab network: ed_cW=#Wbb_ZWF\[\_aYW\@
+
+Lights will attempt to connect to Wi-Fi Network.... needed for firmware updates...
 
 ### Kessil lights
 
@@ -58,3 +93,5 @@ Let's measure the light level with the apogee light meter, apogee instruments Mo
 ## Pumps
 
 SICCE Syncra silent multifunction pump 4.0, HMAX 3.7m (12.5ft), QMAX: 3500 L/H (951 gph). Though tray 2 of the seatables rack is lower(meaning that the pump had to work harder to move water from the tray to the heat exchangers mounted above), the flow rate was adjusted so that each seatable tray had a GPH flow rate of \~20gph.
+
+## Float Valve

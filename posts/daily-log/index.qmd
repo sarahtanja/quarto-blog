@@ -2,7 +2,7 @@
 title: "Daily Lab Log"
 subtitle: "Enter at your peril; This one is for me, not you"
 author: "Sarah Tanja"
-date: '02/08/2024'
+date: '02/21/2024'
 categories: [daily log]
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>
@@ -15,6 +15,97 @@ image: log.png
 ---
 
 # February 2024
+
+#### 21-FEB-2024
+
+-   pyroscience FireStingO2 only works on Windows 10!
+
+-   Ammonia levels in PBB header tank are at 1ppm, something green is growing in there. When was the last time we checked that the UV sterilizer was working? I should change out all the filters on that seawater purification rig, and the reverse osmosis deionized water filter cascade.
+
+-    Met with Kip, Added Kip to WDFW scientific collection permit
+
+    -   9 permit locations!
+    - Messing around with mapping the collection sites, from R Graph Gallery, https://r-graph-gallery.com/180-change-background-in-leaflet-map.html
+
+Interactive Map with `leaflet`
+```{r}
+## install packages
+install.packages("tidyverse")
+install.packages("leaflet")
+```
+
+```{r}
+## load libraries
+library(tidyverse)
+library(leaflet)
+```
+
+```{r}
+# Background 1: greyscale
+grey <- leaflet() %>% 
+   addTiles() %>% 
+   setView( lng = 2.34, lat = 48.85, zoom = 5 ) %>% 
+   addProviderTiles("Esri.WorldGrayCanvas")
+grey
+```
+```{r}
+# Background 2: terrain
+terrain <- leaflet() %>% 
+   addTiles() %>% 
+   setView( lng = -122.8, lat = 47.9, zoom = 8 ) %>% 
+   addProviderTiles("Esri.WorldTerrain")
+terrain
+```
+
+```{r}
+# make data file with lat/lon coordinates of collection locations
+sites <- c()
+
+# bounding box for puget sound
+puget <- c(bottom = 47.3, top = 48.8, right = -122.2, left = -122.8)
+
+# make base maps using stamen maps
+pugetmap <- get_stamenmap(bbox = puget, zoom = 14,
+              maptype = "toner", crop = FALSE)
+ggmap(pugetmap)
+
+# add points to base raster map
+ggmap(pugetmap) +
+  geom_point(data = pseafarm, mapping = aes(x = lon, y = lat, 
+                                            color = name, shape = factor(permit)),
+                                  alpha = 0.8,
+                                  size = 3) 
+
+nat <- native_areas(cb = TRUE)
+
+gg <- ggplot()
+gg <- gg + geom_sf(data = nat, color="black", fill="white", size=0.25)
+gg <- gg + coord_sf(xlim=c(-125, -122),  # WA
+                    ylim=c(46, 48))
+gg <- gg + theme_map()
+gg
+
+
+```
+
+Static Map with `GGPLOT2`
+```{r}
+
+
+```
+
+Interactive Map with `GGPLOT2` and `
+-   scheduled SAFS truck for Friday FEB 23 from 10-4 for seawater transfer
+
+-   emailed Hannah at Seattle Aquarium about seawater pickup for Friday FEB 23 from 10-4
+
+#### 20-FEB-2024
+
+-   Downloaded pyroscience FireStingO2 Pyro Oxygen Logger
+
+    -   First tried on my computer Owl, USB was not recognizing, so we're trying it on QuelpoToo
+
+    -   The USB connection doesn't connect to QuelpoToo either (is it the cable?)
 
 #### **02-FEB-2024**
 

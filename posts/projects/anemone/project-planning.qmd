@@ -18,7 +18,7 @@ link-external-newwindow: true
 
 ### Question(s)
 
-::: callout-note Overarching question Does chronic microplastic-associated leachate pollution reduce marine anthozoan's climate resilience to marine heatwaves? :::
+Does chronic microplastic-associated leachate pollution reduce Cnidarian's resilience to marine heatwaves?
 
 2.  ***Photobiology:***
 

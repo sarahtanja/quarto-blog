@@ -84,3 +84,7 @@ Pulse Amplitude Modulation (PAM) Fluorometers use three different lights to trig
 ## Don't forget, photosynthesizers also do respiration!
 
 They don't just produce oxygen, they also consume it and release carbon dioxide (CO~2~).
+
+## Oxygen Measurement with Oxygen Meter FireStingO2 & Fluorescense with MINI-PAM-II
+
+Download the Oxygen Logger software for the [FireStingO2](https://www.pyroscience.com/en/downloads/legacy) at the legacy downloads site for PyroSciences.

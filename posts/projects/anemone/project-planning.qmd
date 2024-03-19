@@ -16,29 +16,56 @@ link-external-newwindow: true
 
 ## Conceptual planning
 
+### Problem
+
+-   Marine microplastics are just one of a long list of anthropogenic sources of pollution
+
+-   They're more complicated than you might think, they are full of chemicals that are not covalently bound to them, and the chemicals leach out, we call this leachate
+
+-   We don't know if/how microplastic leachate affects Cnidarians
+
+-   We don't know if/how microplastic leachate affects Cnidarians in the context of a marine heatwave
+
+### Here's what we do know
+
 ### Question(s)
 
-Does chronic microplastic-associated leachate pollution reduce Cnidarian's resilience to marine heatwaves?
+-   Does chronic microplastic-associated leachate pollution reduce Cnidarians' resilience to marine heatwaves?
 
-2.  ***Photobiology:***
+-   How do the combined stressors of marine microplastic leachate and thermal stress affect the physiology of the temperate coastal anemone *Anthopleura elegantissima*?
 
-3.  ***Microbiome:*** Does exposure to microplastic-associated leachate pollution disrupt the beneficial function of the anthozoan microbiome community? Is microbial community function disrupted more under added thermal stress?
+-   Does exposure to microplastic-associated leachate pollution disrupt the beneficial function of the Cnidarian microbiome community?
 
-4.  ***Differential Gene Expression:***
+-   Is microbial community function disrupted more under added thermal stress?
 
-5.  
+### Hypotheses
 
-Hypotheses
+-   Symbionts play a critical role in the stress response of Cnidarians to thermal stress
 
-Statistical analysis
+-   Microplastic leachate exposure changes the microbial community
 
-Sample size
+-   Microplastic leachate exposure changes the microbial community in such a way that Cnidarians are more susceptible to thermal stress
 
-Experimental design
+-   Microplastic leachate and thermal stress act synergistically to disrupt Cnidarian microbial communities
 
-Controlling batch effects or confounding variables
+-   The microbial community changes differently when exposed to microplastic stress as compared to thermal stress
+
+### Statistical analysis
+
+### Sample size
+
+### Experimental design
+
+### Controlling batch effects or confounding variables
 
 ## Timeline
+
+#### Schedule detail:
+
+-   05-JAN-2024: submitted scientific collection permit
+-   26-FEB-2024: received scientific collection permit
+-   06-MAR-2024: SST & KH scouted collection site at Point Defiance
+-   08-MAR-2024: Seattle Aquarium seawater pickup
 
 ## Equipment
 
@@ -50,16 +77,14 @@ Controlling batch effects or confounding variables
 
 ## Budget
 
-| item                | quantity | cost | source |
-|---------------------|----------|------|--------|
-| 250mL glass beakers | 40       |      |        |
-|                     |          |      |        |
-|                     |          |      |        |
+| item                               | quantity | cost | source |
+|------------------------------------|----------|------|--------|
+| 0.5 pint Kerr Wide Mouth Mason Jar | 60       |      |        |
+|                                    |          |      |        |
+|                                    |          |      |        |
 
 ## Permits
 
-Washington Department of Fish & Wildlife scientific collection permit (Tanja 24-010) was submitted on 05-JAN-2024 and the \$117 processing fee was paid from the lab's purchase card over the phone on 08-JAN-2024. WDFW scientific collection permits can take up to 3 months to be approved.
-
-## Scheduling
+Washington Department of Fish & Wildlife scientific collection permit (Tanja 24-010) was submitted on 05-JAN-2024 and the \$117 processing fee was paid from the lab's purchase card over the phone on 08-JAN-2024. WDFW scientific collection permits can take up to 3 months to be approved. The final permit was approved on 26-FEB-2024. The permit allows for 40 lethal-take and 40 non-lethal take anemones to be collected at each of the following sites: - Keystone Jetty, Island County - Pocket Beach, King County - Skyline Wall, Skagit County - Deadman Bay, San Juan County - Sunrise Beach Park, Pierce County - Chuckanut Bay, Whatcom County - Cone Island, Skagit County - Point Defiance Park, Pierce County - Constellation Park, King County
 
 ## Data & Code Organization

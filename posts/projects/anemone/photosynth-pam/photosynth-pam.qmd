@@ -88,3 +88,9 @@ They don't just produce oxygen, they also consume it and release carbon dioxide 
 ## Oxygen Measurement with Oxygen Meter FireStingO2 & Fluorescense with MINI-PAM-II
 
 Download the Oxygen Logger software for the [FireStingO2](https://www.pyroscience.com/en/downloads/legacy) at the legacy downloads site for PyroSciences.
+
+Before connecting the FireStingO2 to the Walz Mini-PAM II, you need to configure the software to the particular oxygen optode sensor used. Anytime you download new software, or switch sensors, you will need to do this step. For this, you only need the FireStingO2, the oxygen optode sensor you will be using, and the micro-USB cable that connects the FireStingO2 to a computer with `Oxygen Logger` software installed.
+
+::: callout-warning
+The insertion of the `interface plug` disables USB communication via the Micro-USB port. To change settings of the `FireStingO2` oxymeter via USB connection by the `Oxygen Logger` software, the `interface plug` must be removed.
+:::

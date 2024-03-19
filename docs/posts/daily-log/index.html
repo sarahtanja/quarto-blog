@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Sarah Tanja">
-<meta name="dcterms.date" content="2023-01-01">
+<meta name="dcterms.date" content="2024-02-22">
 
 <title>Sarah Tanja’s Open Lab Notebook - Daily Lab Log</title>
 <style>
@@ -145,6 +145,17 @@ div.csl-indent {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script src="../../site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="../../site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="../../site_libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="../../site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="../../site_libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="../../site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="../../site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="../../site_libs/leaflet-binding-2.2.1/leaflet.js"></script>
+<script src="../../site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
+<script src="../../site_libs/leaflet-providers-plugin-2.2.1/leaflet-providers-plugin.js"></script>
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -226,16 +237,10 @@ div.csl-indent {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 1, 2023</p>
+        <p class="date">February 22, 2024</p>
       </div>
     </div>
     
-      <div>
-      <div class="quarto-title-meta-heading">Modified</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date-modified">November 27, 2023</p>
-      </div>
-    </div>
       
     </div>
     
@@ -247,10 +252,16 @@ div.csl-indent {
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#january-2024" id="toc-january-2024" class="nav-link active" data-scroll-target="#january-2024">January 2024</a>
+  <li><a href="#february-2024" id="toc-february-2024" class="nav-link active" data-scroll-target="#february-2024">February 2024</a>
   <ul>
-  <li><a href="#jan-2024" id="toc-jan-2024" class="nav-link" data-scroll-target="#jan-2024">05-JAN-2024</a></li>
-  </ul></li>
+  <li><a href="#feb-2024" id="toc-feb-2024" class="nav-link" data-scroll-target="#feb-2024">22-FEB-2024</a></li>
+  <li><a href="#feb-2024-1" id="toc-feb-2024-1" class="nav-link" data-scroll-target="#feb-2024-1">21-FEB-2024</a></li>
+  <li><a href="#feb-2024-2" id="toc-feb-2024-2" class="nav-link" data-scroll-target="#feb-2024-2">20-FEB-2024</a></li>
+  <li><a href="#feb-2024-3" id="toc-feb-2024-3" class="nav-link" data-scroll-target="#feb-2024-3"><strong>02-FEB-2024</strong></a></li>
+  <li><a href="#feb-2024-4" id="toc-feb-2024-4" class="nav-link" data-scroll-target="#feb-2024-4">08-FEB-2024</a></li>
+  <li><a href="#feb-2024-5" id="toc-feb-2024-5" class="nav-link" data-scroll-target="#feb-2024-5">07-FEB-2024</a></li>
+  <li><a href="#feb-2024-6" id="toc-feb-2024-6" class="nav-link" data-scroll-target="#feb-2024-6">05-FEB-2024</a></li>
+  <li><a href="#january-2024" id="toc-january-2024" class="nav-link" data-scroll-target="#january-2024">January 2024</a></li>
   <li><a href="#december-2023" id="toc-december-2023" class="nav-link" data-scroll-target="#december-2023">December 2023</a></li>
   <li><a href="#november-2023" id="toc-november-2023" class="nav-link" data-scroll-target="#november-2023">November 2023</a>
   <ul>
@@ -336,7 +347,7 @@ div.csl-indent {
   <li><a href="#mar-2023" id="toc-mar-2023" class="nav-link" data-scroll-target="#mar-2023">29-MAR-2023</a></li>
   <li><a href="#mar-2023-1" id="toc-mar-2023-1" class="nav-link" data-scroll-target="#mar-2023-1">28-MAR-2023</a></li>
   <li><a href="#mar-2023-2" id="toc-mar-2023-2" class="nav-link" data-scroll-target="#mar-2023-2">27-MAR-2023</a>
-  <ul>
+  <ul class="collapse">
   <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
   </ul></li>
   <li><a href="#mar-2023-3" id="toc-mar-2023-3" class="nav-link" data-scroll-target="#mar-2023-3">21-MAR-2023</a></li>
@@ -363,6 +374,7 @@ div.csl-indent {
   <li><a href="#jan-2023-6" id="toc-jan-2023-6" class="nav-link" data-scroll-target="#jan-2023-6">12-JAN-2023</a></li>
   <li><a href="#jan-2023-7" id="toc-jan-2023-7" class="nav-link" data-scroll-target="#jan-2023-7">09-JAN-2023</a></li>
   </ul></li>
+  </ul></li>
   </ul>
 </nav>
 </nav>
@@ -375,10 +387,139 @@ div.csl-indent {
 
 
 
-<section id="january-2024" class="level2">
-<h2 class="anchored" data-anchor-id="january-2024">January 2024</h2>
-<section id="jan-2024" class="level4">
-<h4 class="anchored" data-anchor-id="jan-2024">05-JAN-2024</h4>
+<section id="february-2024" class="level1 page-columns page-full">
+<h1>February 2024</h1>
+<section id="feb-2024" class="level4">
+<h4 class="anchored" data-anchor-id="feb-2024">22-FEB-2024</h4>
+<ul>
+<li><p>Roberts Lab meeting, received feedback on anemone research proposal: suggested I do initial response curves to find at what temp A. elegantissima experience stress, at what microplastic leachate concentration do they experience stress? Measure response variables ‘quickly’ by respirometry and PAM. Can I make the single stress, multiple response variable, the first chapter of the Master’s thesis? Then, two stressors together with `omics response variables (once we find the inflection points of stress) can be the second chapter…. Ariana pointed out that the paper reviewers are going to want to know why I chose certain concentrations of microplastic leachate. I have to justify that by doing a response curve first. Learned about Roberts Lab pubathon.</p></li>
+<li><p>Took FireSting O2 to IT to try and get correct drivers on <code>mariscos</code> ruggedized laptop to run the program…</p></li>
+<li><p>pyroscience FireStingO2 deemed ‘dead’ by IT specialist Michael Shriver… the unit won’t connect. I sent the following to the Walz product support team Todd Kana (kana@bayinstruments.com) &amp; Erich Keim (ekeim@walz.com):</p>
+<blockquote class="blockquote">
+<p>Good afternoon&nbsp; Erich and Todd,&nbsp;</p>
+<p>I’m a graduate student researcher in the Padilla-Gamino Lab at the University of Washington, and I’m working with a Walz Mini PAM-II and FireStingO2 oxygen meter that our lab purchased from you as a set. The instrument was previously used by Miranda Roethler, who passed your contact information on to me.&nbsp;</p>
+<p>The FireStingO2 oxygen meter is not powering up, and won’t connect to any computer that we’ve tried it on. It was just with our IT specialist for the last few hours (he was attempting to get it to connect by downloading&nbsp;old drivers), and he shared that the laser-cut `FiresStingO2` light on the instrument would ‘pulse’ red and then remain off. He deemed the instrument ‘dead’...&nbsp;</p>
+<p>This instrument has only been used a handful of times, and it has been kept in good condition (not dropped, or been exposed/submerged in water etc.).&nbsp;</p>
+<p>Have you had this issue before? If so, are there any solutions you can help provide?</p>
+<p>Kindy,&nbsp;</p>
+<p>- Sarah Tanja&nbsp;</p>
+</blockquote></li>
+</ul>
+</section>
+<section id="feb-2024-1" class="level4">
+<h4 class="anchored" data-anchor-id="feb-2024-1">21-FEB-2024</h4>
+<ul>
+<li><p>pyroscience FireStingO2 only works on Windows 10!?</p></li>
+<li><p>Ammonia levels in PBB header tank are at 1ppm, something green is growing in there. When was the last time we checked that the UV sterilizer was working? I should change out all the filters on that seawater purification rig, and the reverse osmosis deionized water filter cascade.</p></li>
+<li><p>There is algae growing in the PBB header/holding tank</p></li>
+<li><p>Met with Kip, Added Kip to WDFW scientific collection permit</p></li>
+<li><p>9 permit locations!</p></li>
+<li><p>Messed around with mapping the collection sites, from R Graph Gallery, https://r-graph-gallery.com/180-change-background-in-leaflet-map.html</p></li>
+</ul>
+<p>Interactive Map with <code>leaflet</code></p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-1_e1273c0b08b52608eb720317ddcc903a">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## set CRAN mirror</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">repos =</span> <span class="fu">c</span>(<span class="at">CRAN =</span> <span class="st">"https://cran.r-project.org/"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-2_d526c3f902b4a91584ffc07aa8047cd0">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="do">## install packages</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">"tidyverse"</span>, <span class="at">character.only =</span> <span class="cn">TRUE</span>)) { <span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)}</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">"leaflet"</span>, <span class="at">character.only =</span> <span class="cn">TRUE</span>)){ <span class="fu">install.packages</span>(<span class="st">"leaflet"</span>)}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-3_eb341bdeb5f21714024db96a85221e2c">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="do">## load libraries</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># background 1: greyscale</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>grey <span class="ot">&lt;-</span> <span class="fu">leaflet</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">setView</span>( <span class="at">lng =</span> <span class="sc">-</span><span class="fl">122.8</span>, <span class="at">lat =</span> <span class="fl">47.9</span>, <span class="at">zoom =</span> <span class="dv">8</span> ) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">addProviderTiles</span>(<span class="st">"Esri.WorldGrayCanvas"</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>grey</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-30fccc70bfcd83eec2f6" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-30fccc70bfcd83eec2f6">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addProviderTiles","args":["Esri.WorldGrayCanvas",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]}],"setView":[[47.9,-122.8],8,[]]},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># background 2: terrain</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>terrain <span class="ot">&lt;-</span> <span class="fu">leaflet</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">setView</span>( <span class="at">lng =</span> <span class="sc">-</span><span class="fl">122.8</span>, <span class="at">lat =</span> <span class="fl">47.9</span>, <span class="at">zoom =</span> <span class="dv">8</span> ) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">addProviderTiles</span>(<span class="st">"Esri.WorldTerrain"</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>terrain</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-58d3b59560d2a434af12" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-58d3b59560d2a434af12">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addProviderTiles","args":["Esri.WorldTerrain",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]}],"setView":[[47.9,-122.8],8,[]]},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<ul>
+<li><p>emailed Hannah at Seattle Aquarium about seawater pickup for Friday FEB 23 from 10-4</p></li>
+<li><p>reserved SAFS Truck for seawater pickup</p></li>
+</ul>
+</section>
+<section id="feb-2024-2" class="level4">
+<h4 class="anchored" data-anchor-id="feb-2024-2">20-FEB-2024</h4>
+<ul>
+<li><p>Downloaded pyroscience FireStingO2 Pyro Oxygen Logger</p>
+<ul>
+<li><p>First tried on my computer Owl, USB was not recognizing, so we’re trying it on QuelpoToo</p></li>
+<li><p>The USB connection doesn’t connect to QuelpoToo either (is it the cable?)</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="feb-2024-3" class="level4">
+<h4 class="anchored" data-anchor-id="feb-2024-3"><strong>02-FEB-2024</strong></h4>
+<ul>
+<li><p>Follow-up with UW office of veterans affairs about debt</p></li>
+<li><p>Lab meeting notes:</p>
+<ul>
+<li>move shaker table to lab 242 hood</li>
+<li>move nitrogen needle lipid extractor to methanol/chloroform cabinet in 242</li>
+<li>ok to buy organizational bins for PBB, keep receipts &amp; get reimbursed</li>
+<li>respirometry chamber battery operation problematic… reduced flow, battery drain over time (30mins); Nuria left a plug-in chamber somewhere in PBB</li>
+<li></li>
+</ul></li>
+<li><p>Writing your resume for federal job webinar</p>
+<ul>
+<li><p>schedule A: disability accommodation</p></li>
+<li><p>Federal hiring resume, there is no page limit</p></li>
+<li><p>The resume gets you to the hiring manager, show in the resume that you qualify before it goes to a hiring manager</p></li>
+<li><p>hiring managers in Federal hiring do not click on links (github, linkedIn, etc.) they won’t be viewed…</p></li>
+<li><p>‘Your resume is the movie trailer…’ Highlight the level of complexity of your work</p></li>
+<li><p>Itemize how how manage something, on top of listing your role… you have to explain what you did in that role. The role ‘president of xx’ doesn’t translate to the person reviewing the resume knowing what you can do... leave nothing to the imagination. Be explicit.</p></li>
+<li><p>Spoken presentations: how many presentations you have given, what &amp; when</p></li>
+<li><p>The first person that looks at your resume is a human resources specialist, not a scientist!</p></li>
+<li><p>show that you are an ‘innovator’ and that when you see a problem, you take initiative to fix it.</p></li>
+<li><p>where you go, people are impacted positively, there is recognition, things change or improve, things get better, you save money, you meet deadlines, you bring about conflict resolution.</p></li>
+<li><p>the cover letter is not used to qualify you, ONLY THE RESUME!</p></li>
+<li><p>Vet team to assist navigating federal hiring process: fedshirevets@opm.gov</p></li>
+<li><p>You get shuttled into qualified, well-qualified, best-qualified. Qualifying doesn’t mean that you get referred to the hiring manager... you can qualify but not get referred to the hiring manager. You can be referred, but not get an interview.</p></li>
+<li><p>wrp workforce recruitment program</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="feb-2024-4" class="level4">
+<h4 class="anchored" data-anchor-id="feb-2024-4">08-FEB-2024</h4>
+<ul>
+<li><p>attended Roberts Lab meeting</p>
+<ul>
+<li>Will be presenting experiment design &amp; proposal on Feb 22nd</li>
+</ul></li>
+<li><p>worked on dropbox-uploader app in raven server to try and get data from dropbox directly to raven *not working</p></li>
+</ul>
+</section>
+<section id="feb-2024-5" class="level4">
+<h4 class="anchored" data-anchor-id="feb-2024-5">07-FEB-2024</h4>
+<ul>
+<li><p>Identified anemones from Alki Beach have <em>Symbiodinium muscatinei</em></p></li>
+<li><p>Identified anemones from Teddy Bear Cove have <em>Symbiodinium muscatinei</em></p></li>
+</ul>
+</section>
+<section id="feb-2024-6" class="level4">
+<h4 class="anchored" data-anchor-id="feb-2024-6">05-FEB-2024</h4>
 <ul>
 <li><p>Lab meeting cancelled</p></li>
 <li><p>emailed Francesco Saliu asking about sending their lab SPME fibers for analysis</p>
@@ -396,6 +537,8 @@ div.csl-indent {
 <li>Get PAM photosynthesis initial data</li>
 </ul>
 </section>
+<section id="january-2024" class="level2">
+<h2 class="anchored" data-anchor-id="january-2024">January 2024</h2>
 </section>
 <section id="december-2023" class="level2">
 <h2 class="anchored" data-anchor-id="december-2023">December 2023</h2>
@@ -902,52 +1045,52 @@ The abstract should have no more than 1600 characters max (including spaces); us
 <li>wrote <code>dilute</code> function to normalize RNA &amp; DNA in <a href="https://github.com/sarahtanja/coral-DNA-RNA-lab-extractions/blob/main/code/03-normalizing.qmd">coral-DNA-RNA-lab-extractions</a> GitHub repo:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>dilute <span class="ot">&lt;-</span> <span class="cf">function</span>(C1, C2) {</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Initialize variables</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  n <span class="ot">&lt;-</span> <span class="fu">length</span>(C1)</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  C1 <span class="ot">&lt;-</span> C1</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  V1 <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n)  <span class="co"># Initialize V1 vector</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  V2 <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n)  <span class="co"># Initialize V2 vector</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Loop through rows</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_along</span>(C1)) {</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Check for missing data</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (C1[i] <span class="sc">&lt;=</span> <span class="dv">0</span>) {</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>      <span class="fu">cat</span>(<span class="st">"Skipping row "</span>, i, <span class="st">": Invalid data</span><span class="sc">\n</span><span class="st">"</span>)</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>      <span class="cf">next</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Initialize V1 and V2 for the current row</span></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    V1_row <span class="ot">&lt;-</span> <span class="dv">1</span></span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    V2_row <span class="ot">&lt;-</span> (C1[i] <span class="sc">*</span> V1_row) <span class="sc">/</span> C2</span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Loop until conditions are satisfied</span></span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (<span class="sc">!</span><span class="fu">is.na</span>(V1_row) <span class="sc">&amp;&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(V2_row) <span class="sc">&amp;&amp;</span> (V1_row <span class="sc">&lt;</span> <span class="dv">1</span> <span class="sc">||</span> V2_row <span class="sc">&lt;</span> <span class="dv">50</span>)) {</span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>      V1_row <span class="ot">&lt;-</span> V1_row <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>      V2_row <span class="ot">&lt;-</span> (C1[i] <span class="sc">*</span> V1_row) <span class="sc">/</span> C2</span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>      </span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Break the loop if V1 exceeds a threshold value</span></span>
-<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span>(V1_row <span class="sc">&gt;</span> <span class="dv">49</span>) {</span>
-<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>        <span class="fu">cat</span>(<span class="st">"Skipping row "</span>, i, <span class="st">": No valid solution found</span><span class="sc">\n</span><span class="st">"</span>)</span>
-<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>        <span class="cf">next</span></span>
-<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>      }</span>
-<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Store optimized V1 and V2 values in the corresponding vectors</span></span>
-<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>    V1[i] <span class="ot">&lt;-</span> V1_row</span>
-<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>    V2[i] <span class="ot">&lt;-</span> V2_row</span>
-<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a data frame with C1 column</span></span>
-<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>  result <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">C1 =</span> C1)</span>
-<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a><span class="co"># Add V1 and V2 columns to the result data frame</span></span>
-<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>  result<span class="sc">$</span>V1 <span class="ot">&lt;-</span> V1</span>
-<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>  result<span class="sc">$</span>V2 <span class="ot">&lt;-</span> V2</span>
-<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>  result<span class="sc">$</span>C2 <span class="ot">&lt;-</span> C1<span class="sc">*</span>V1<span class="sc">/</span>V2</span>
-<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(result)</span>
-<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>dilute <span class="ot">&lt;-</span> <span class="cf">function</span>(C1, C2) {</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Initialize variables</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  n <span class="ot">&lt;-</span> <span class="fu">length</span>(C1)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  C1 <span class="ot">&lt;-</span> C1</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  V1 <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n)  <span class="co"># Initialize V1 vector</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  V2 <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n)  <span class="co"># Initialize V2 vector</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Loop through rows</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_along</span>(C1)) {</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Check for missing data</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (C1[i] <span class="sc">&lt;=</span> <span class="dv">0</span>) {</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>      <span class="fu">cat</span>(<span class="st">"Skipping row "</span>, i, <span class="st">": Invalid data</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>      <span class="cf">next</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Initialize V1 and V2 for the current row</span></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>    V1_row <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    V2_row <span class="ot">&lt;-</span> (C1[i] <span class="sc">*</span> V1_row) <span class="sc">/</span> C2</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Loop until conditions are satisfied</span></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (<span class="sc">!</span><span class="fu">is.na</span>(V1_row) <span class="sc">&amp;&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(V2_row) <span class="sc">&amp;&amp;</span> (V1_row <span class="sc">&lt;</span> <span class="dv">1</span> <span class="sc">||</span> V2_row <span class="sc">&lt;</span> <span class="dv">50</span>)) {</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>      V1_row <span class="ot">&lt;-</span> V1_row <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>      V2_row <span class="ot">&lt;-</span> (C1[i] <span class="sc">*</span> V1_row) <span class="sc">/</span> C2</span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Break the loop if V1 exceeds a threshold value</span></span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span>(V1_row <span class="sc">&gt;</span> <span class="dv">49</span>) {</span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>        <span class="fu">cat</span>(<span class="st">"Skipping row "</span>, i, <span class="st">": No valid solution found</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>        <span class="cf">next</span></span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Store optimized V1 and V2 values in the corresponding vectors</span></span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>    V1[i] <span class="ot">&lt;-</span> V1_row</span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>    V2[i] <span class="ot">&lt;-</span> V2_row</span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a data frame with C1 column</span></span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>  result <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">C1 =</span> C1)</span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a><span class="co"># Add V1 and V2 columns to the result data frame</span></span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>  result<span class="sc">$</span>V1 <span class="ot">&lt;-</span> V1</span>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>  result<span class="sc">$</span>V2 <span class="ot">&lt;-</span> V2</span>
+<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a>  result<span class="sc">$</span>C2 <span class="ot">&lt;-</span> C1<span class="sc">*</span>V1<span class="sc">/</span>V2</span>
+<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(result)</span>
+<span id="cb8-46"><a href="#cb8-46" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>SAFS Spring Picnic!</li>
@@ -1450,6 +1593,7 @@ The abstract should have no more than 1600 characters max (including spaces); us
 
 
 
+</section>
 </section>
 </section>
 

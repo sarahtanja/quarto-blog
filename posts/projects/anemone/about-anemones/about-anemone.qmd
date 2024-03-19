@@ -15,13 +15,21 @@ link-external-newwindow: true
 bibliography: anemones.bib
 ---
 
-*Anthopleura elegantissima*
+# *Anthopleura elegantissima*
+
+## Life history
 
 Puget Sound Museum of Natural History article [here](https://www.pugetsound.edu/puget-sound-museum-natural-history/exhibits/marine-panel/aggregating-anemone)
 
 > "This anemone is an effective predator living in zooplankton-rich water, so one would not expect it to be as nutrient-limited, nor as dependent on algal photosynthetic productivity as its tropical symbiotic counterparts. It is also adapted to prolonged aerial exposure and greater temperature extremes; the animal feeds and its symbionts photosynthesize at temperatures approaching 5°C." - @mccloskey1996
 
+## Animal husbandry
+
 In the paper by @mccloskey1996 the anemone's were fed every other day with \~30mg of freshly hatched *Artemia nauplii* and maintained for 22 days with a single anemone each in its own 100mL jar, with seawater replaced every other day at 14°C ±2°C.
+
+In the study by @dimond2017, anemones were housed in 200mL glass beakers in a seawater flow-through tank as a bath, with the water level just below the top of the beakers.
+
+## Symbiosis
 
 Normally, *A. elegantissima* expels symbionts from its coelenteron in a bolus of mucus and undigested material. Expulsion of symbionts should not be confused with "bleaching" phenomenon in reef corals, and may serve an ulterior purpose and undergo a different process. The anemones 'cull' or 'weed' the symbionts to maintain an optimal symbiont population density.
 
@@ -29,10 +37,14 @@ The optimized symbiont density is reported in the literature as 10^6^ cells·mg^
 
 > Sea anemones of the genus Anthopleura along northeast Pacific intertidal shores engage in a particularly unique symbiosis with two especially phylogenetically and physiologically different symbionts: the chlorophyte *Elliptochloris marina* (Letsch et al., 2009) and the dinoflagellate *Symbiodinium muscatinei* (LaJeunesse and Trench, 2000). - @dimond2017
 
-Most anemones only host one symbiont, or the other. It is rare for mixed assemblages of the two 'symbiont morphs' to occur. In the paper by @mccloskey1996, they found that among 91 anemones, \>95% had a single symbiont type. The chlorophyte *Elliptochloris marina* is relatively sensitive to light and is limited to cooler, low light environments typical of the low intertidal. The dinoflagellate *Symbiodinium muscatinei*, on the other hand, tolerates higher light and temperatures and is more commonly found in anemones in the upper intertidal zone. Aposymbiotic (non-symbiont forming) *A. elegantissima* anemones can be found thriving in very low light conditions, often inside rocky crevasses within the intertidal zone. Transplantation of *A. elegantissima* anemones with chlorophyte *E. marina* symbionts to warmer, higher-light environments results in shifts in the symbiont population from *E. marina* to *S. muscatinei* [@dimond2017].
+The *Symbiodinium muscatinei*[@lajeunesse2000a]were reclassified as *Breviolum muscatinei*
 
-Anemones hosting *Symbiodinium muscatinei* have a golden-brown color, while those that host *Elliptochloris marina* are mossy green. Symbiont type can be verified by viewing excised tentacles under light microscopy, and commonly, no mixed-symbiont populations are observed [@dimond2017].
+Most anemones only host one symbiont, or the other. It is rare for mixed assemblages of the two 'symbiont morphs' to occur. In the paper by @mccloskey1996, they found that among 91 anemones, \>95% had a single symbiont type. The chlorophyte *Elliptochloris marina* is relatively sensitive to light and is limited to cooler, low light environments typical of the low intertidal. The dinoflagellate *B. muscatinei*, on the other hand, tolerates higher light and temperatures and is more commonly found in anemones in the upper intertidal zone. Aposymbiotic (non-symbiont forming) *A. elegantissima* anemones can be found thriving in very low light conditions, often inside rocky crevasses within the intertidal zone. Transplantation of *A. elegantissima* anemones with chlorophyte *E. marina* symbionts to warmer, higher-light environments results in shifts in the symbiont population from *E. marina* to *B. muscatinei* [@dimond2017].
 
-In the study by @dimond2017, anemones were housed in 200mL glass beakers in a seawater flow-through tank as a bath, with the water level just below the top of the beakers.
+Anemones hosting *B. muscatinei* have a golden-brown color, while those that host *E. marina* are mossy green. Symbiont type can be verified by viewing excised tentacles under light microscopy, and commonly, no mixed-symbiont populations are observed [@dimond2017].
 
-Based on metrics including photosynthetic rate, mitotic index, chlorophyll content, and population density, several studies have concluded that while S. muscatinei is tolerant of a broad range of environmental
+![Figure 1 from the dissertation by Beck, 2022 WWU](beck-fig1.png)
+
+![Figure 3 from the dissertation by Beck, 2022 WWU](beck-fig3.png)
+
+![Figure 9 from the dissertation by Beck, 2022 WWU](beck-fig9.png)

@@ -2,7 +2,7 @@
 title: "Daily Lab Log"
 subtitle: "Enter at your peril; This one is for me, not you"
 author: "Sarah Tanja"
-date: '02/21/2024'
+date: '02/22/2024'
 categories: [daily log]
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>
@@ -16,40 +16,72 @@ image: log.png
 
 # February 2024
 
+#### 22-FEB-2024
+
+-   Roberts Lab meeting, received feedback on anemone research proposal: suggested I do initial response curves to find at what temp A. elegantissima experience stress, at what microplastic leachate concentration do they experience stress? Measure response variables 'quickly' by respirometry and PAM. Can I make the single stress, multiple response variable, the first chapter of the Master's thesis? Then, two stressors together with \`omics response variables (once we find the inflection points of stress) can be the second chapter.... Ariana pointed out that the paper reviewers are going to want to know why I chose certain concentrations of microplastic leachate. I have to justify that by doing a response curve first. Learned about Roberts Lab pubathon.
+
+-   Took FireSting O2 to IT to try and get correct drivers on `mariscos` ruggedized laptop to run the program...
+
+-   pyroscience FireStingO2 deemed 'dead' by IT specialist Michael Shriver... the unit won't connect. I sent the following to the Walz product support team Todd Kana (kana\@bayinstruments.com) & Erich Keim (ekeim\@walz.com):
+
+    > Good afternoon  Erich and Todd, 
+    >
+    > I'm a graduate student researcher in the Padilla-Gamino Lab at the University of Washington, and I'm working with a Walz Mini PAM-II and FireStingO2 oxygen meter that our lab purchased from you as a set. The instrument was previously used by Miranda Roethler, who passed your contact information on to me. 
+    >
+    > The FireStingO2 oxygen meter is not powering up, and won't connect to any computer that we've tried it on. It was just with our IT specialist for the last few hours (he was attempting to get it to connect by downloading old drivers), and he shared that the laser-cut \`FiresStingO2\` light on the instrument would 'pulse' red and then remain off. He deemed the instrument 'dead'\... 
+    >
+    > This instrument has only been used a handful of times, and it has been kept in good condition (not dropped, or been exposed/submerged in water etc.). 
+    >
+    > Have you had this issue before? If so, are there any solutions you can help provide?
+    >
+    > Kindy, 
+    >
+    > \- Sarah Tanja 
+
 #### 21-FEB-2024
 
--   pyroscience FireStingO2 only works on Windows 10!
+-   pyroscience FireStingO2 only works on Windows 10!?
 
 -   Ammonia levels in PBB header tank are at 1ppm, something green is growing in there. When was the last time we checked that the UV sterilizer was working? I should change out all the filters on that seawater purification rig, and the reverse osmosis deionized water filter cascade.
 
--    Met with Kip, Added Kip to WDFW scientific collection permit
+-   There is algae growing in the PBB header/holding tank
 
-    -   9 permit locations!
-    - Messing around with mapping the collection sites, from R Graph Gallery, https://r-graph-gallery.com/180-change-background-in-leaflet-map.html
+-   Met with Kip, Added Kip to WDFW scientific collection permit
+
+-   9 permit locations!
+
+-   Messed around with mapping the collection sites, from R Graph Gallery, https://r-graph-gallery.com/180-change-background-in-leaflet-map.html
 
 Interactive Map with `leaflet`
-```{r}
-## install packages
-install.packages("tidyverse")
-install.packages("leaflet")
+
+```{r echo=TRUE, cache=TRUE}
+## set CRAN mirror
+options(repos = c(CRAN = "https://cran.r-project.org/"))
 ```
 
-```{r}
+```{r echo=TRUE, cache=TRUE}
+## install packages
+if (!require("tidyverse", character.only = TRUE)) { install.packages("tidyverse")}
+if (!require("leaflet", character.only = TRUE)){ install.packages("leaflet")}
+```
+
+```{r echo=TRUE, cache=TRUE}
 ## load libraries
 library(tidyverse)
 library(leaflet)
 ```
 
-```{r}
-# Background 1: greyscale
+```{r message=FALSE, warning=FALSE}
+# background 1: greyscale
 grey <- leaflet() %>% 
    addTiles() %>% 
-   setView( lng = 2.34, lat = 48.85, zoom = 5 ) %>% 
+   setView( lng = -122.8, lat = 47.9, zoom = 8 ) %>% 
    addProviderTiles("Esri.WorldGrayCanvas")
 grey
 ```
-```{r}
-# Background 2: terrain
+
+```{r message=FALSE, warning=FALSE}
+# background 2: terrain
 terrain <- leaflet() %>% 
    addTiles() %>% 
    setView( lng = -122.8, lat = 47.9, zoom = 8 ) %>% 
@@ -57,47 +89,9 @@ terrain <- leaflet() %>%
 terrain
 ```
 
-```{r}
-# make data file with lat/lon coordinates of collection locations
-sites <- c()
-
-# bounding box for puget sound
-puget <- c(bottom = 47.3, top = 48.8, right = -122.2, left = -122.8)
-
-# make base maps using stamen maps
-pugetmap <- get_stamenmap(bbox = puget, zoom = 14,
-              maptype = "toner", crop = FALSE)
-ggmap(pugetmap)
-
-# add points to base raster map
-ggmap(pugetmap) +
-  geom_point(data = pseafarm, mapping = aes(x = lon, y = lat, 
-                                            color = name, shape = factor(permit)),
-                                  alpha = 0.8,
-                                  size = 3) 
-
-nat <- native_areas(cb = TRUE)
-
-gg <- ggplot()
-gg <- gg + geom_sf(data = nat, color="black", fill="white", size=0.25)
-gg <- gg + coord_sf(xlim=c(-125, -122),  # WA
-                    ylim=c(46, 48))
-gg <- gg + theme_map()
-gg
-
-
-```
-
-Static Map with `GGPLOT2`
-```{r}
-
-
-```
-
-Interactive Map with `GGPLOT2` and `
--   scheduled SAFS truck for Friday FEB 23 from 10-4 for seawater transfer
-
 -   emailed Hannah at Seattle Aquarium about seawater pickup for Friday FEB 23 from 10-4
+
+-   reserved SAFS Truck for seawater pickup
 
 #### 20-FEB-2024
 

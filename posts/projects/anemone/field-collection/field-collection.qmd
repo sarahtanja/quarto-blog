@@ -1,0 +1,84 @@
+---
+title: "Field collection at Owens Beach, Point Defiance Park, Tacoma"
+author: "Sarah Tanja"
+date: '03/18/2024'
+categories: [anemones]
+draft: false
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
+---
+
+```{r echo=TRUE}
+## install packages
+if (!require("tidyverse", character.only = TRUE)) { install.packages("tidyverse")}
+if (!require("leaflet", character.only = TRUE)){ install.packages("leaflet")}
+```
+
+```{r echo=TRUE}
+## load libraries
+library(tidyverse)
+library(leaflet)
+```
+
+# Data sheet
+
+```{r}
+anemone_collection <- read_csv('anemone-collections.csv',
+                               col_types = cols(
+                                 date = col_date(format = "%m/%d/%Y"),
+                                 timePST = col_time(format = "%H:%M"),
+                                 site = col_character(),
+                                 rock = col_factor(),
+                                 lat = col_double(),
+                                 lon = col_double()
+                               ))
+```
+
+```{r}
+head(anemone_collection)
+options(digits = 9)
+```
+
+```{r}
+
+```
+
+```{r}
+pdp <- leaflet() %>% # pdp stands for point defiance park 
+   addTiles() %>% 
+   setView( lng = -122.53, lat = 47.31, zoom = 14 ) %>% 
+   addProviderTiles("Esri.WorldImagery") #Esri World Imagery tiles
+pdp
+```
+
+```{r}
+
+# Prepare the text for the tooltip:
+mytext <- paste(
+   "Rock: ", anemone_collection$rock, "<br/>", 
+   "Date: ", anemone_collection$date) %>%
+  lapply(htmltools::HTML)
+
+# Final Map
+pdp <- leaflet(anemone_collection) %>% 
+  addTiles()  %>% 
+  setView( lng = -122.53, lat = 47.31, zoom = 14 ) %>% 
+  addProviderTiles("Esri.WorldImagery") %>% 
+  addCircleMarkers(~lon, ~lat, 
+    fillColor = "orange", fillOpacity = 0.7, color="white", radius=8, stroke=FALSE,
+    label = mytext,
+    labelOptions = labelOptions( style = list("font-weight" = "normal", padding = "3px 8px"), textsize = "13px", direction = "auto")
+  )
+
+pdp
+
+# save the widget in a html file if needed.
+# library(htmlwidgets)
+# saveWidget(m, file=paste0( getwd(), "/HtmlWidget/bubblemapQuakes.html"))
+
+```

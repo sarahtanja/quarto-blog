@@ -50,7 +50,9 @@ image: log.png
 
 -   9 permit locations!
 
--   Messed around with mapping the collection sites, from R Graph Gallery, https://r-graph-gallery.com/180-change-background-in-leaflet-map.html
+-   Messed around with mapping the collection sites, from R Graph Gallery, <https://r-graph-gallery.com/180-change-background-in-leaflet-map.html>
+
+-   All map background by leaflet can be found here: <https://leaflet-extras.github.io/leaflet-providers/preview/index.html>
 
 Interactive Map with `leaflet`
 
@@ -72,7 +74,6 @@ library(leaflet)
 ```
 
 ```{r message=FALSE, warning=FALSE}
-# background 1: greyscale
 grey <- leaflet() %>% 
    addTiles() %>% 
    setView( lng = -122.8, lat = 47.9, zoom = 8 ) %>% 
@@ -81,13 +82,46 @@ grey
 ```
 
 ```{r message=FALSE, warning=FALSE}
-# background 2: terrain
 terrain <- leaflet() %>% 
    addTiles() %>% 
    setView( lng = -122.8, lat = 47.9, zoom = 8 ) %>% 
    addProviderTiles("Esri.WorldTerrain")
 terrain
 ```
+
+```{r message=FALSE, warning=FALSE}
+Stadia.AlidadeSmooth <- leaflet() %>% 
+   addTiles() %>% 
+   setView( lng = -122.8, lat = 47.9, zoom = 8 ) %>% 
+   addProviderTiles("Stadia.AlidadeSmooth")
+Stadia.AlidadeSmooth
+```
+
+```{r message=FALSE, warning=FALSE}
+Stadia.OSMBright <- leaflet() %>% 
+   addTiles() %>% 
+   setView( lng = -122.8, lat = 47.9, zoom = 8 ) %>% 
+   addProviderTiles("Stadia.OSMBright")
+Stadia.OSMBright
+```
+
+```{r message=FALSE, warning=FALSE}
+Jawg.Lagoon <- leaflet() %>% 
+   addTiles() %>% 
+   setView( lng = -122.8, lat = 47.9, zoom = 8 ) %>% 
+   addProviderTiles("Jawg.Lagoon")
+Jawg.Lagoon
+```
+
+```{r}
+Stadia.StamenWatercolor <- leaflet() %>% 
+   addTiles() %>% 
+   setView( lng = -122.8, lat = 47.9, zoom = 8 ) %>% 
+   addProviderTiles("Stadia.StamenWatercolor")
+Stadia.StamenWatercolor
+```
+
+-   
 
 -   emailed Hannah at Seattle Aquarium about seawater pickup for Friday FEB 23 from 10-4
 

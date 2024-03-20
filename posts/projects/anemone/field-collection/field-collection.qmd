@@ -106,7 +106,7 @@ pdp
 
 ### 3
 
-::: {layout-ncols="2"}
+::: {layout-ncol="2"}
 ![Michael showing off aggregate no. 3](field-pics/3/PXL_20240319_013251605.jpg)
 
 ![...yes, he is my husband](field-pics/3/PXL_20240319_013248468.jpg)
@@ -124,7 +124,7 @@ pdp
 
 ### 5
 
-::: {layout-ncols="2"}
+::: {layout-ncol="2"}
 ![This one is aggregate no. 5, because Kip is holding up 5 fingers](field-pics/5/PXL_20240319_015625041.jpg)
 
 ![Kip, Owen & Chloe collecting from aggregate no. 5](field-pics/5/PXL_20240319_015630097.jpg)
@@ -134,7 +134,7 @@ pdp
 
 ### 6
 
-::: {layout-ncols="2"}
+::: {layout-ncol="2"}
 ![Michael picks out aggregate no. 6](field-pics/6/PXL_20240319_015251255.jpg)
 
 ![Michael and Miguel with aggregate no. 6 at sunset](field-pics/6/PXL_20240319_015734571.jpg)
@@ -144,33 +144,33 @@ pdp
 
 ### 7
 
+::: {layout-ncol="2"}
 ![Aggregate no. 7 was unique in that it was formed directly on a clay deposit in the lower intertidal](field-pics/7/PXL_20240319_020739117.jpg)
 
 ![There were many 'single' anemones in the clay, but this was the only 'aggregate' we found](field-pics/7/PXL_20240319_020753667.jpg)
+:::
 
 ------------------------------------------------------------------------
 
 ### 8
 
+::: {layout-ncol='2'}
 ![Aggregate no. 8 was actually the last one collected, and was found higher than the rest, but below a cave-like undercut of a boulder](field-pics/8/PXL_20240319_023825413.jpg)
 
-![](field-pics/8/PXL_20240319_023825413.jpg)
-
 ![Don't forget to look under the rocks too](field-pics/8/PXL_20240319_023843094.jpg)
-
-![](field-pics/8/PXL_20240319_023843094.jpg)
+:::
 
 ------------------------------------------------------------------------
 
 ### 9
 
-![](field-pics/9/IMG_4790.jpg)
+![Sam with aggregate no. 9](field-pics/9/IMG_4790.jpg)
 
 ------------------------------------------------------------------------
 
 ### 10
 
-::: {layout-ncols="3"}
+::: {layout-ncol="3"}
 ![Sam and Miranda frolicking after a successful collection](field-pics/10/PXL_20240319_015218469.jpg)
 
 ![This area had the greatest aabundance of large, visible aggregates](field-pics/10/IMG_4794.jpg)
@@ -182,7 +182,7 @@ pdp
 
 ### 11
 
-::: {layout-ncols="3"}
+::: {layout-ncol="3"}
 ![Sam and landscape perspective of no. 11](field-pics/11/IMG_4800.jpg)
 
 ![](field-pics/11/IMG_4799.jpg)
@@ -196,12 +196,10 @@ pdp
 
 ![Sam poses with aggregate no. 12](field-pics/12/PXL_20240319_021738372.jpg)
 
-::: {layout-nrows="2"}
+::: {layout-ncol="3"}
 ![Sam and Miranda collecting at no. 12](field-pics/12/PXL_20240319_021748187.jpg)
 
 ![It's useful to invert your perspective](field-pics/12/PXL_20240319_022158975.jpg)
-
-![](field-pics/12/PXL_20240319_022158975.jpg)
 
 ![Many hands make light work](field-pics/12/PXL_20240319_022403631.jpg)
 :::
@@ -221,4 +219,4 @@ pdp
 Why do we speculate we found them where we did, and not on the tip or south-facing sides of the point? I think because the north-facing beach is protected from the hot afternoon sun. In Washington summers, the hottest part of the day is usually around \~5PM, where we found the anemones, they would be shaded by the sandstone and clay bluff of Point Defiance in the hot summer evenings.
 :::
 
-![Thank you to all the friends that helped with this collection! And thank you to the anemones, for donating their bodies to science, we promise to treat you each with gentleness as we conduct our ecotoxicology experiments. ](field-pics/1/PXL_20240319_011553108.jpg)
+![Thank you to all the friends that helped with this collection! And thank you to the anemones, for donating their bodies to science, we promise to treat you each with gentleness as we conduct our ecotoxicology experiments.](field-pics/1/PXL_20240319_011553108.jpg)

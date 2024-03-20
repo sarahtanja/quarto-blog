@@ -109,7 +109,7 @@ pdp
 ::: {layout-ncols="2"}
 ![Michael showing off aggregate no. 3](field-pics/3/PXL_20240319_013251605.jpg)
 
-![...no comment](field-pics/3/PXL_20240319_013248468.jpg)
+![...yes, he is my husband](field-pics/3/PXL_20240319_013248468.jpg)
 :::
 
 ------------------------------------------------------------------------
@@ -135,11 +135,90 @@ pdp
 ### 6
 
 ::: {layout-ncols="2"}
-![Michael with aggregate no. 6](field-pics/6/PXL_20240319_015251255.jpg)
+![Michael picks out aggregate no. 6](field-pics/6/PXL_20240319_015251255.jpg)
 
-![Aggregate no. 6 at sunset](field-pics/6/PXL_20240319_015734571.jpg)
+![Michael and Miguel with aggregate no. 6 at sunset](field-pics/6/PXL_20240319_015734571.jpg)
 :::
 
 ------------------------------------------------------------------------
 
 ### 7
+
+![Aggregate no. 7 was unique in that it was formed directly on a clay deposit in the lower intertidal](field-pics/7/PXL_20240319_020739117.jpg)
+
+![There were many 'single' anemones in the clay, but this was the only 'aggregate' we found](field-pics/7/PXL_20240319_020753667.jpg)
+
+------------------------------------------------------------------------
+
+### 8
+
+![Aggregate no. 8 was actually the last one collected, and was found higher than the rest, but below a cave-like undercut of a boulder](field-pics/8/PXL_20240319_023825413.jpg)
+
+![](field-pics/8/PXL_20240319_023825413.jpg)
+
+![Don't forget to look under the rocks too](field-pics/8/PXL_20240319_023843094.jpg)
+
+![](field-pics/8/PXL_20240319_023843094.jpg)
+
+------------------------------------------------------------------------
+
+### 9
+
+![](field-pics/9/IMG_4790.jpg)
+
+------------------------------------------------------------------------
+
+### 10
+
+::: {layout-ncols="3"}
+![Sam and Miranda frolicking after a successful collection](field-pics/10/PXL_20240319_015218469.jpg)
+
+![This area had the greatest aabundance of large, visible aggregates](field-pics/10/IMG_4794.jpg)
+
+![Aggregate no. 10 collected on the rock pictured front and center](field-pics/10/PXL_20240319_015222906.jpg)
+:::
+
+------------------------------------------------------------------------
+
+### 11
+
+::: {layout-ncols="3"}
+![Sam and landscape perspective of no. 11](field-pics/11/IMG_4800.jpg)
+
+![](field-pics/11/IMG_4799.jpg)
+
+![](field-pics/11/IMG_4798.jpg)
+:::
+
+------------------------------------------------------------------------
+
+### 12
+
+![Sam poses with aggregate no. 12](field-pics/12/PXL_20240319_021738372.jpg)
+
+::: {layout-nrows="2"}
+![Sam and Miranda collecting at no. 12](field-pics/12/PXL_20240319_021748187.jpg)
+
+![It's useful to invert your perspective](field-pics/12/PXL_20240319_022158975.jpg)
+
+![](field-pics/12/PXL_20240319_022158975.jpg)
+
+![Many hands make light work](field-pics/12/PXL_20240319_022403631.jpg)
+:::
+
+## Takeaways
+
+-   **Include your friends in field work, science is for everybody!**
+-   *Anthopleura elegantissima* like wet shade, look for them at low tide, shaded parts of the beach, and under rocks and boulders.
+-   We found them to be most abundant on the northern beach of Point Defiance
+-   The metal scoopulas were the best tool for separating their pedal disc from substrate without causing any tissue tears
+-   It was easier to remove the anemones from rock than from clay (see aggregate no. 7...)
+-   All anemones are expected to be hosting the brown algae *Breviolium muscatinei*, since they are golden-brown in hue and were found in places that are often exposed to light (despite afternoon sun shading)
+-   Two of the anemones collected from deeply-shaded undercuts may be `aposymbiotic`, at least in appearance they are mostly white with pink tips
+-   The aggregates at Owens Beach are densest between aggregate 4 and 10 (and in fact a line of boulders perpindicular to the water between these aggregates are all covered in anemones!)
+
+::: callout-tip
+Why do we speculate we found them where we did, and not on the tip or south-facing sides of the point? I think because the north-facing beach is protected from the hot afternoon sun. In Washington summers, the hottest part of the day is usually around \~5PM, where we found the anemones, they would be shaded by the sandstone and clay bluff of Point Defiance in the hot summer evenings.
+:::
+
+![Thank you to all the friends that helped with this collection! And thank you to the anemones, for donating their bodies to science, we promise to treat you each with gentleness as we conduct our ecotoxicology experiments. ](field-pics/1/PXL_20240319_011553108.jpg)

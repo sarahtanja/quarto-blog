@@ -1,0 +1,1858 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Sarah Tanja">
+<meta name="dcterms.date" content="2024-02-22">
+
+<title>Sarah Tanja’s Open Lab Notebook - Daily Lab Log</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="../../site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="../../site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="../../site_libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="../../site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="../../site_libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="../../site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="../../site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="../../site_libs/leaflet-binding-2.2.1/leaflet.js"></script>
+<script src="../../site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
+<script src="../../site_libs/leaflet-providers-plugin-2.2.1/leaflet-providers-plugin.js"></script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="floating nav-fixed slimcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/binocs.png" alt="Self-portrait at Tracy Arm, watercolor artwork by Sarah Tanja" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Sarah Tanja’s Open Lab Notebook</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../projects.html">
+ <span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/sarah-tanja-595722146/"><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/sarahtanja"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:stanja@uw.edu"><i class="bi bi-envelope-heart" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Daily Lab Log</h1>
+            <p class="subtitle lead">Enter at your peril; This one is for me, not you</p>
+                                <div class="quarto-categories">
+                <div class="quarto-category">daily log</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Sarah Tanja </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 22, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
+   
+  <ul>
+  <li><a href="#february-2024" id="toc-february-2024" class="nav-link active" data-scroll-target="#february-2024">February 2024</a>
+  <ul>
+  <li><a href="#feb-2024" id="toc-feb-2024" class="nav-link" data-scroll-target="#feb-2024">22-FEB-2024</a></li>
+  <li><a href="#feb-2024-1" id="toc-feb-2024-1" class="nav-link" data-scroll-target="#feb-2024-1">21-FEB-2024</a></li>
+  <li><a href="#feb-2024-2" id="toc-feb-2024-2" class="nav-link" data-scroll-target="#feb-2024-2">20-FEB-2024</a></li>
+  <li><a href="#feb-2024-3" id="toc-feb-2024-3" class="nav-link" data-scroll-target="#feb-2024-3"><strong>02-FEB-2024</strong></a></li>
+  <li><a href="#feb-2024-4" id="toc-feb-2024-4" class="nav-link" data-scroll-target="#feb-2024-4">08-FEB-2024</a></li>
+  <li><a href="#feb-2024-5" id="toc-feb-2024-5" class="nav-link" data-scroll-target="#feb-2024-5">07-FEB-2024</a></li>
+  <li><a href="#feb-2024-6" id="toc-feb-2024-6" class="nav-link" data-scroll-target="#feb-2024-6">05-FEB-2024</a></li>
+  <li><a href="#january-2024" id="toc-january-2024" class="nav-link" data-scroll-target="#january-2024">January 2024</a></li>
+  <li><a href="#december-2023" id="toc-december-2023" class="nav-link" data-scroll-target="#december-2023">December 2023</a></li>
+  <li><a href="#november-2023" id="toc-november-2023" class="nav-link" data-scroll-target="#november-2023">November 2023</a>
+  <ul>
+  <li><a href="#nov-2023" id="toc-nov-2023" class="nav-link" data-scroll-target="#nov-2023">27-NOV-2023</a></li>
+  <li><a href="#nov-2023-1" id="toc-nov-2023-1" class="nav-link" data-scroll-target="#nov-2023-1"><strong>21-NOV-2023</strong></a></li>
+  <li><a href="#nov-2023-2" id="toc-nov-2023-2" class="nav-link" data-scroll-target="#nov-2023-2">11-NOV-2023</a></li>
+  <li><a href="#nov-2023-3" id="toc-nov-2023-3" class="nav-link" data-scroll-target="#nov-2023-3">10-NOV-2023</a></li>
+  <li><a href="#nov-2023-4" id="toc-nov-2023-4" class="nav-link" data-scroll-target="#nov-2023-4">09-NOV 2023</a></li>
+  <li><a href="#nov-2023-5" id="toc-nov-2023-5" class="nav-link" data-scroll-target="#nov-2023-5">08-NOV-2023</a></li>
+  <li><a href="#nov-2023-6" id="toc-nov-2023-6" class="nav-link" data-scroll-target="#nov-2023-6">05-NOV-2023</a></li>
+  <li><a href="#nov-2023-7" id="toc-nov-2023-7" class="nav-link" data-scroll-target="#nov-2023-7">03-NOV-2023</a></li>
+  <li><a href="#nov-2023-8" id="toc-nov-2023-8" class="nav-link" data-scroll-target="#nov-2023-8">02-NOV-2023</a></li>
+  <li><a href="#nov-2023-9" id="toc-nov-2023-9" class="nav-link" data-scroll-target="#nov-2023-9">01-NOV-2023</a></li>
+  </ul></li>
+  <li><a href="#october-2023" id="toc-october-2023" class="nav-link" data-scroll-target="#october-2023">October 2023</a>
+  <ul>
+  <li><a href="#oct-2023" id="toc-oct-2023" class="nav-link" data-scroll-target="#oct-2023"><strong>27-OCT-2023</strong></a></li>
+  <li><a href="#oct-2023-1" id="toc-oct-2023-1" class="nav-link" data-scroll-target="#oct-2023-1"><strong>26-OCT-2023</strong></a></li>
+  <li><a href="#oct-2023-2" id="toc-oct-2023-2" class="nav-link" data-scroll-target="#oct-2023-2">24-OCT-2023</a></li>
+  <li><a href="#oct-2023-3" id="toc-oct-2023-3" class="nav-link" data-scroll-target="#oct-2023-3">23-OCT-2023</a></li>
+  <li><a href="#oct-2023-4" id="toc-oct-2023-4" class="nav-link" data-scroll-target="#oct-2023-4">16-OCT-2023</a></li>
+  <li><a href="#oct-2023-5" id="toc-oct-2023-5" class="nav-link" data-scroll-target="#oct-2023-5">11-OCT-2023</a></li>
+  <li><a href="#oct-2023-6" id="toc-oct-2023-6" class="nav-link" data-scroll-target="#oct-2023-6">10-OCT-2023</a></li>
+  <li><a href="#oct-2023-7" id="toc-oct-2023-7" class="nav-link" data-scroll-target="#oct-2023-7">03-OCT-2023</a></li>
+  <li><a href="#oct-2023-8" id="toc-oct-2023-8" class="nav-link" data-scroll-target="#oct-2023-8">02-OCT-2023</a></li>
+  </ul></li>
+  <li><a href="#september-2023" id="toc-september-2023" class="nav-link" data-scroll-target="#september-2023">September 2023</a>
+  <ul>
+  <li><a href="#sep-2023" id="toc-sep-2023" class="nav-link" data-scroll-target="#sep-2023">20-SEP-2023</a></li>
+  <li><a href="#sep-2023-1" id="toc-sep-2023-1" class="nav-link" data-scroll-target="#sep-2023-1">05-SEP-2023</a></li>
+  <li><a href="#sep-2023-2" id="toc-sep-2023-2" class="nav-link" data-scroll-target="#sep-2023-2">01-SEP-2023</a></li>
+  </ul></li>
+  <li><a href="#august-2023" id="toc-august-2023" class="nav-link" data-scroll-target="#august-2023">August 2023</a>
+  <ul>
+  <li><a href="#aug-2023" id="toc-aug-2023" class="nav-link" data-scroll-target="#aug-2023">31-AUG-2023</a></li>
+  <li><a href="#aug-2023-1" id="toc-aug-2023-1" class="nav-link" data-scroll-target="#aug-2023-1">29-AUG-2023</a></li>
+  <li><a href="#aug-2023-2" id="toc-aug-2023-2" class="nav-link" data-scroll-target="#aug-2023-2">28-AUG-2023</a></li>
+  <li><a href="#aug-2023-3" id="toc-aug-2023-3" class="nav-link" data-scroll-target="#aug-2023-3">24-AUG-2023</a></li>
+  <li><a href="#aug-2023-4" id="toc-aug-2023-4" class="nav-link" data-scroll-target="#aug-2023-4">17-AUG-2023</a></li>
+  <li><a href="#aug-2023-5" id="toc-aug-2023-5" class="nav-link" data-scroll-target="#aug-2023-5">16-AUG-2023</a></li>
+  <li><a href="#aug-2023-6" id="toc-aug-2023-6" class="nav-link" data-scroll-target="#aug-2023-6">15-AUG-2023</a></li>
+  <li><a href="#aug-2023-7" id="toc-aug-2023-7" class="nav-link" data-scroll-target="#aug-2023-7">03-AUG-2023</a></li>
+  </ul></li>
+  <li><a href="#july-2023" id="toc-july-2023" class="nav-link" data-scroll-target="#july-2023">July 2023</a>
+  <ul>
+  <li><a href="#jul-2023" id="toc-jul-2023" class="nav-link" data-scroll-target="#jul-2023">20-JUL-2023</a></li>
+  <li><a href="#jul-2023-1" id="toc-jul-2023-1" class="nav-link" data-scroll-target="#jul-2023-1">19-JUL-2023</a></li>
+  </ul></li>
+  <li><a href="#june-2023" id="toc-june-2023" class="nav-link" data-scroll-target="#june-2023">June 2023</a>
+  <ul>
+  <li><a href="#jun-2023" id="toc-jun-2023" class="nav-link" data-scroll-target="#jun-2023">07-JUN-2023</a></li>
+  <li><a href="#jun-2023-1" id="toc-jun-2023-1" class="nav-link" data-scroll-target="#jun-2023-1">06-JUN-2023</a></li>
+  <li><a href="#jun-2023-2" id="toc-jun-2023-2" class="nav-link" data-scroll-target="#jun-2023-2">05-JUN-2023</a></li>
+  <li><a href="#jun-2023-3" id="toc-jun-2023-3" class="nav-link" data-scroll-target="#jun-2023-3">02-JUN-2023</a></li>
+  <li><a href="#jun-2023-4" id="toc-jun-2023-4" class="nav-link" data-scroll-target="#jun-2023-4">01-JUN-2023</a></li>
+  </ul></li>
+  <li><a href="#may-2023" id="toc-may-2023" class="nav-link" data-scroll-target="#may-2023">May 2023</a>
+  <ul>
+  <li><a href="#may-2023-1" id="toc-may-2023-1" class="nav-link" data-scroll-target="#may-2023-1">31-MAY-2023</a></li>
+  <li><a href="#may-2023-2" id="toc-may-2023-2" class="nav-link" data-scroll-target="#may-2023-2">29-MAY-2023</a></li>
+  <li><a href="#may-2023-3" id="toc-may-2023-3" class="nav-link" data-scroll-target="#may-2023-3">25-MAY-2023</a></li>
+  <li><a href="#may-2023-4" id="toc-may-2023-4" class="nav-link" data-scroll-target="#may-2023-4">24-MAY-2023</a></li>
+  <li><a href="#may-2023-5" id="toc-may-2023-5" class="nav-link" data-scroll-target="#may-2023-5">23-MAY-2023</a></li>
+  <li><a href="#may-2023-6" id="toc-may-2023-6" class="nav-link" data-scroll-target="#may-2023-6">19-MAY-2023</a></li>
+  <li><a href="#may-2023-7" id="toc-may-2023-7" class="nav-link" data-scroll-target="#may-2023-7">18-MAY-2023</a></li>
+  <li><a href="#may-2023-8" id="toc-may-2023-8" class="nav-link" data-scroll-target="#may-2023-8">04-MAY-2023</a></li>
+  </ul></li>
+  <li><a href="#april-2023" id="toc-april-2023" class="nav-link" data-scroll-target="#april-2023">April 2023</a>
+  <ul>
+  <li><a href="#apr-2023" id="toc-apr-2023" class="nav-link" data-scroll-target="#apr-2023">25-APR-2023</a></li>
+  <li><a href="#apr-2023-1" id="toc-apr-2023-1" class="nav-link" data-scroll-target="#apr-2023-1">24-APR-2023</a></li>
+  <li><a href="#apr-2023-2" id="toc-apr-2023-2" class="nav-link" data-scroll-target="#apr-2023-2">21-APR-2023</a></li>
+  <li><a href="#apr-2023-3" id="toc-apr-2023-3" class="nav-link" data-scroll-target="#apr-2023-3">20-APR-2023</a></li>
+  <li><a href="#apr-2023-4" id="toc-apr-2023-4" class="nav-link" data-scroll-target="#apr-2023-4">19-APR-2023</a></li>
+  <li><a href="#apr-2023-5" id="toc-apr-2023-5" class="nav-link" data-scroll-target="#apr-2023-5">18-APR-2023</a></li>
+  <li><a href="#apr-2023-6" id="toc-apr-2023-6" class="nav-link" data-scroll-target="#apr-2023-6">17-APR-2023</a></li>
+  <li><a href="#apr-2023-7" id="toc-apr-2023-7" class="nav-link" data-scroll-target="#apr-2023-7">14-APR-2023</a></li>
+  <li><a href="#apr-2023-8" id="toc-apr-2023-8" class="nav-link" data-scroll-target="#apr-2023-8">11-APR-2023</a></li>
+  <li><a href="#apr-2023-9" id="toc-apr-2023-9" class="nav-link" data-scroll-target="#apr-2023-9">10-APR-2023</a></li>
+  </ul></li>
+  <li><a href="#march-2023" id="toc-march-2023" class="nav-link" data-scroll-target="#march-2023">March 2023</a>
+  <ul>
+  <li><a href="#mar-2023" id="toc-mar-2023" class="nav-link" data-scroll-target="#mar-2023">29-MAR-2023</a></li>
+  <li><a href="#mar-2023-1" id="toc-mar-2023-1" class="nav-link" data-scroll-target="#mar-2023-1">28-MAR-2023</a></li>
+  <li><a href="#mar-2023-2" id="toc-mar-2023-2" class="nav-link" data-scroll-target="#mar-2023-2">27-MAR-2023</a>
+  <ul class="collapse">
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  </ul></li>
+  <li><a href="#mar-2023-3" id="toc-mar-2023-3" class="nav-link" data-scroll-target="#mar-2023-3">21-MAR-2023</a></li>
+  <li><a href="#mar-2023-4" id="toc-mar-2023-4" class="nav-link" data-scroll-target="#mar-2023-4">20-MAR-2023</a></li>
+  <li><a href="#mar-2023-5" id="toc-mar-2023-5" class="nav-link" data-scroll-target="#mar-2023-5">16-MAR-2023</a></li>
+  <li><a href="#mar-2023-6" id="toc-mar-2023-6" class="nav-link" data-scroll-target="#mar-2023-6">15-MAR-2023</a></li>
+  <li><a href="#mar-2023-7" id="toc-mar-2023-7" class="nav-link" data-scroll-target="#mar-2023-7">14-MAR-2023</a></li>
+  <li><a href="#mar-2023-8" id="toc-mar-2023-8" class="nav-link" data-scroll-target="#mar-2023-8">13-MAR-2023</a></li>
+  <li><a href="#mar-2023-9" id="toc-mar-2023-9" class="nav-link" data-scroll-target="#mar-2023-9">10-MAR-2023</a></li>
+  <li><a href="#mar-2023-10" id="toc-mar-2023-10" class="nav-link" data-scroll-target="#mar-2023-10">09-MAR-2023</a></li>
+  <li><a href="#mar-2023-11" id="toc-mar-2023-11" class="nav-link" data-scroll-target="#mar-2023-11">07-MAR-2023</a></li>
+  <li><a href="#mar-2023-12" id="toc-mar-2023-12" class="nav-link" data-scroll-target="#mar-2023-12">06-MAR-2023</a></li>
+  <li><a href="#mar-2023-13" id="toc-mar-2023-13" class="nav-link" data-scroll-target="#mar-2023-13">03-MAR-2023</a></li>
+  <li><a href="#mar-2023-14" id="toc-mar-2023-14" class="nav-link" data-scroll-target="#mar-2023-14">02-MAR-2023</a></li>
+  </ul></li>
+  <li><a href="#january-2023" id="toc-january-2023" class="nav-link" data-scroll-target="#january-2023">January 2023</a>
+  <ul>
+  <li><a href="#jan-2023" id="toc-jan-2023" class="nav-link" data-scroll-target="#jan-2023">31-JAN-2023</a></li>
+  <li><a href="#jan-2023-1" id="toc-jan-2023-1" class="nav-link" data-scroll-target="#jan-2023-1">20-JAN-2023</a></li>
+  <li><a href="#jan-2023-2" id="toc-jan-2023-2" class="nav-link" data-scroll-target="#jan-2023-2">19-JAN-2023</a></li>
+  <li><a href="#jan-2023-3" id="toc-jan-2023-3" class="nav-link" data-scroll-target="#jan-2023-3">18-JAN-2023</a></li>
+  <li><a href="#jan-2023-4" id="toc-jan-2023-4" class="nav-link" data-scroll-target="#jan-2023-4">17-JAN-2023</a></li>
+  <li><a href="#jan-2023-5" id="toc-jan-2023-5" class="nav-link" data-scroll-target="#jan-2023-5">13-JAN-2023</a></li>
+  <li><a href="#jan-2023-6" id="toc-jan-2023-6" class="nav-link" data-scroll-target="#jan-2023-6">12-JAN-2023</a></li>
+  <li><a href="#jan-2023-7" id="toc-jan-2023-7" class="nav-link" data-scroll-target="#jan-2023-7">09-JAN-2023</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block page-columns page-full column-body" id="quarto-document-content">
+
+
+
+
+<section id="february-2024" class="level1 page-columns page-full">
+<h1>February 2024</h1>
+<section id="feb-2024" class="level4">
+<h4 class="anchored" data-anchor-id="feb-2024">22-FEB-2024</h4>
+<ul>
+<li><p>Roberts Lab meeting, received feedback on anemone research proposal: suggested I do initial response curves to find at what temp A. elegantissima experience stress, at what microplastic leachate concentration do they experience stress? Measure response variables ‘quickly’ by respirometry and PAM. Can I make the single stress, multiple response variable, the first chapter of the Master’s thesis? Then, two stressors together with `omics response variables (once we find the inflection points of stress) can be the second chapter…. Ariana pointed out that the paper reviewers are going to want to know why I chose certain concentrations of microplastic leachate. I have to justify that by doing a response curve first. Learned about Roberts Lab pubathon.</p></li>
+<li><p>Took FireSting O2 to IT to try and get correct drivers on <code>mariscos</code> ruggedized laptop to run the program…</p></li>
+<li><p>pyroscience FireStingO2 deemed ‘dead’ by IT specialist Michael Shriver… the unit won’t connect. I sent the following to the Walz product support team Todd Kana (kana@bayinstruments.com) &amp; Erich Keim (ekeim@walz.com):</p>
+<blockquote class="blockquote">
+<p>Good afternoon&nbsp; Erich and Todd,&nbsp;</p>
+<p>I’m a graduate student researcher in the Padilla-Gamino Lab at the University of Washington, and I’m working with a Walz Mini PAM-II and FireStingO2 oxygen meter that our lab purchased from you as a set. The instrument was previously used by Miranda Roethler, who passed your contact information on to me.&nbsp;</p>
+<p>The FireStingO2 oxygen meter is not powering up, and won’t connect to any computer that we’ve tried it on. It was just with our IT specialist for the last few hours (he was attempting to get it to connect by downloading&nbsp;old drivers), and he shared that the laser-cut `FiresStingO2` light on the instrument would ‘pulse’ red and then remain off. He deemed the instrument ‘dead’...&nbsp;</p>
+<p>This instrument has only been used a handful of times, and it has been kept in good condition (not dropped, or been exposed/submerged in water etc.).&nbsp;</p>
+<p>Have you had this issue before? If so, are there any solutions you can help provide?</p>
+<p>Kindy,&nbsp;</p>
+<p>- Sarah Tanja&nbsp;</p>
+</blockquote></li>
+</ul>
+</section>
+<section id="feb-2024-1" class="level4">
+<h4 class="anchored" data-anchor-id="feb-2024-1">21-FEB-2024</h4>
+<ul>
+<li><p>pyroscience FireStingO2 only works on Windows 10!?</p></li>
+<li><p>Ammonia levels in PBB header tank are at 1ppm, something green is growing in there. When was the last time we checked that the UV sterilizer was working? I should change out all the filters on that seawater purification rig, and the reverse osmosis deionized water filter cascade.</p></li>
+<li><p>There is algae growing in the PBB header/holding tank</p></li>
+<li><p>Met with Kip, Added Kip to WDFW scientific collection permit</p></li>
+<li><p>9 permit locations!</p></li>
+<li><p>Messed around with mapping the collection sites, from R Graph Gallery, https://r-graph-gallery.com/180-change-background-in-leaflet-map.html</p></li>
+</ul>
+<p>Interactive Map with <code>leaflet</code></p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-1_e1273c0b08b52608eb720317ddcc903a">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## set CRAN mirror</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">repos =</span> <span class="fu">c</span>(<span class="at">CRAN =</span> <span class="st">"https://cran.r-project.org/"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-2_d526c3f902b4a91584ffc07aa8047cd0">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="do">## install packages</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">"tidyverse"</span>, <span class="at">character.only =</span> <span class="cn">TRUE</span>)) { <span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)}</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">"leaflet"</span>, <span class="at">character.only =</span> <span class="cn">TRUE</span>)){ <span class="fu">install.packages</span>(<span class="st">"leaflet"</span>)}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-3_eb341bdeb5f21714024db96a85221e2c">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="do">## load libraries</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># background 1: greyscale</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>grey <span class="ot">&lt;-</span> <span class="fu">leaflet</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">setView</span>( <span class="at">lng =</span> <span class="sc">-</span><span class="fl">122.8</span>, <span class="at">lat =</span> <span class="fl">47.9</span>, <span class="at">zoom =</span> <span class="dv">8</span> ) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">addProviderTiles</span>(<span class="st">"Esri.WorldGrayCanvas"</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>grey</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-30fccc70bfcd83eec2f6" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-30fccc70bfcd83eec2f6">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addProviderTiles","args":["Esri.WorldGrayCanvas",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]}],"setView":[[47.9,-122.8],8,[]]},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># background 2: terrain</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>terrain <span class="ot">&lt;-</span> <span class="fu">leaflet</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">setView</span>( <span class="at">lng =</span> <span class="sc">-</span><span class="fl">122.8</span>, <span class="at">lat =</span> <span class="fl">47.9</span>, <span class="at">zoom =</span> <span class="dv">8</span> ) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">addProviderTiles</span>(<span class="st">"Esri.WorldTerrain"</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>terrain</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-58d3b59560d2a434af12" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-58d3b59560d2a434af12">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addProviderTiles","args":["Esri.WorldTerrain",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]}],"setView":[[47.9,-122.8],8,[]]},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<ul>
+<li><p>emailed Hannah at Seattle Aquarium about seawater pickup for Friday FEB 23 from 10-4</p></li>
+<li><p>reserved SAFS Truck for seawater pickup</p></li>
+</ul>
+</section>
+<section id="feb-2024-2" class="level4">
+<h4 class="anchored" data-anchor-id="feb-2024-2">20-FEB-2024</h4>
+<ul>
+<li><p>Downloaded pyroscience FireStingO2 Pyro Oxygen Logger</p>
+<ul>
+<li><p>First tried on my computer Owl, USB was not recognizing, so we’re trying it on QuelpoToo</p></li>
+<li><p>The USB connection doesn’t connect to QuelpoToo either (is it the cable?)</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="feb-2024-3" class="level4">
+<h4 class="anchored" data-anchor-id="feb-2024-3"><strong>02-FEB-2024</strong></h4>
+<ul>
+<li><p>Follow-up with UW office of veterans affairs about debt</p></li>
+<li><p>Lab meeting notes:</p>
+<ul>
+<li>move shaker table to lab 242 hood</li>
+<li>move nitrogen needle lipid extractor to methanol/chloroform cabinet in 242</li>
+<li>ok to buy organizational bins for PBB, keep receipts &amp; get reimbursed</li>
+<li>respirometry chamber battery operation problematic… reduced flow, battery drain over time (30mins); Nuria left a plug-in chamber somewhere in PBB</li>
+<li></li>
+</ul></li>
+<li><p>Writing your resume for federal job webinar</p>
+<ul>
+<li><p>schedule A: disability accommodation</p></li>
+<li><p>Federal hiring resume, there is no page limit</p></li>
+<li><p>The resume gets you to the hiring manager, show in the resume that you qualify before it goes to a hiring manager</p></li>
+<li><p>hiring managers in Federal hiring do not click on links (github, linkedIn, etc.) they won’t be viewed…</p></li>
+<li><p>‘Your resume is the movie trailer…’ Highlight the level of complexity of your work</p></li>
+<li><p>Itemize how how manage something, on top of listing your role… you have to explain what you did in that role. The role ‘president of xx’ doesn’t translate to the person reviewing the resume knowing what you can do... leave nothing to the imagination. Be explicit.</p></li>
+<li><p>Spoken presentations: how many presentations you have given, what &amp; when</p></li>
+<li><p>The first person that looks at your resume is a human resources specialist, not a scientist!</p></li>
+<li><p>show that you are an ‘innovator’ and that when you see a problem, you take initiative to fix it.</p></li>
+<li><p>where you go, people are impacted positively, there is recognition, things change or improve, things get better, you save money, you meet deadlines, you bring about conflict resolution.</p></li>
+<li><p>the cover letter is not used to qualify you, ONLY THE RESUME!</p></li>
+<li><p>Vet team to assist navigating federal hiring process: fedshirevets@opm.gov</p></li>
+<li><p>You get shuttled into qualified, well-qualified, best-qualified. Qualifying doesn’t mean that you get referred to the hiring manager... you can qualify but not get referred to the hiring manager. You can be referred, but not get an interview.</p></li>
+<li><p>wrp workforce recruitment program</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="feb-2024-4" class="level4">
+<h4 class="anchored" data-anchor-id="feb-2024-4">08-FEB-2024</h4>
+<ul>
+<li><p>attended Roberts Lab meeting</p>
+<ul>
+<li>Will be presenting experiment design &amp; proposal on Feb 22nd</li>
+</ul></li>
+<li><p>worked on dropbox-uploader app in raven server to try and get data from dropbox directly to raven *not working</p></li>
+</ul>
+</section>
+<section id="feb-2024-5" class="level4">
+<h4 class="anchored" data-anchor-id="feb-2024-5">07-FEB-2024</h4>
+<ul>
+<li><p>Identified anemones from Alki Beach have <em>Symbiodinium muscatinei</em></p></li>
+<li><p>Identified anemones from Teddy Bear Cove have <em>Symbiodinium muscatinei</em></p></li>
+</ul>
+</section>
+<section id="feb-2024-6" class="level4">
+<h4 class="anchored" data-anchor-id="feb-2024-6">05-FEB-2024</h4>
+<ul>
+<li><p>Lab meeting cancelled</p></li>
+<li><p>emailed Francesco Saliu asking about sending their lab SPME fibers for analysis</p>
+<ul>
+<li>still no package or protocol, starting to think about plan B/C/D…etc</li>
+</ul></li>
+<li><p>found rnoaa package and zenodo by Wendell Raymond https://zenodo.org/records/6555076 from paper “<a href="https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecy.3798">Assessment of the impacts of an unprecedented heatwave on intertidal shellfish of the Salish Sea</a>” recommended by Bob Oxborrow</p>
+<ul>
+<li>explored rnoaa package</li>
+</ul></li>
+<li><p>13:30 - shadow fish 427 lab on photosynthesis and respiration with Miranda</p></li>
+</ul>
+<p>Goal for the week:</p>
+<ul>
+<li>Get PAM photosynthesis initial data</li>
+</ul>
+</section>
+<section id="january-2024" class="level2">
+<h2 class="anchored" data-anchor-id="january-2024">January 2024</h2>
+</section>
+<section id="december-2023" class="level2">
+<h2 class="anchored" data-anchor-id="december-2023">December 2023</h2>
+</section>
+<section id="november-2023" class="level2">
+<h2 class="anchored" data-anchor-id="november-2023">November 2023</h2>
+<section id="nov-2023" class="level4">
+<h4 class="anchored" data-anchor-id="nov-2023">27-NOV-2023</h4>
+<ul>
+<li>Lab Meeting:
+<ul>
+<li>Requested to order cultured abalone sea urchins</li>
+<li>Reminded JPG about meeting with Alison Gardell Tues Nov 28th at 1:30PM via Zoom</li>
+<li>JPG requested I put together slides for meeting with Alison Gardell</li>
+</ul></li>
+<li>Got seawater from Seattle Aquarium</li>
+<li>Met with Kip and got them setup with safety trainings</li>
+<li>Must order sea urchins on Mon Dec 11th for a Mon Dec 18th/Tues Dec 19th delivery</li>
+</ul>
+</section>
+<section id="nov-2023-1" class="level4">
+<h4 class="anchored" data-anchor-id="nov-2023-1"><strong>21-NOV-2023</strong></h4>
+<ul>
+<li><p><a href="../../posts/committee-2/index.html">2nd Master’s Thesis Committee Meeting</a></p>
+<ul>
+<li>Trying to come up with a solution to lack of solvent control.. how to move forward</li>
+</ul></li>
+</ul>
+</section>
+<section id="nov-2023-2" class="level4">
+<h4 class="anchored" data-anchor-id="nov-2023-2">11-NOV-2023</h4>
+<ul>
+<li>WSN day 4</li>
+</ul>
+</section>
+<section id="nov-2023-3" class="level4">
+<h4 class="anchored" data-anchor-id="nov-2023-3">10-NOV-2023</h4>
+<ul>
+<li>WSN day 3</li>
+</ul>
+</section>
+<section id="nov-2023-4" class="level4">
+<h4 class="anchored" data-anchor-id="nov-2023-4">09-NOV 2023</h4>
+<ul>
+<li>WSN day 2</li>
+</ul>
+</section>
+<section id="nov-2023-5" class="level4">
+<h4 class="anchored" data-anchor-id="nov-2023-5">08-NOV-2023</h4>
+<ul>
+<li>WSN day 1</li>
+</ul>
+</section>
+<section id="nov-2023-6" class="level4">
+<h4 class="anchored" data-anchor-id="nov-2023-6">05-NOV-2023</h4>
+<ul>
+<li><p>Undoing large file commit on coral-pae-temp for ~2hrs 🤬, tried to just undo the one commit, but couldn’t get it to work. Had to execute <code>git reset –hard origin/main</code></p></li>
+<li><p>Added the following to the <code>git/hooks/pre-commit</code> file:</p>
+<pre><code>#!/bin/bash
+
+echo "automatically ignoring large files"
+find . -size 5M | sed 's|^\./||g' &gt;&gt; .gitignore
+cat .gitignore | sort | uniq &gt; .gitignore
+
+git diff --exit-code .gitignore
+exit_status=$?
+if [ $exit_status -eq 1 ]
+then
+    set +e
+    for i in `cat .gitignore`
+    do
+    set +e
+        git rm --cached $i
+    done
+
+    git add .gitignore
+    git commit .gitignore --no-verify -m"ignoring large files"
+
+    echo "ignored new large files"
+fi</code></pre></li>
+</ul>
+</section>
+<section id="nov-2023-7" class="level4">
+<h4 class="anchored" data-anchor-id="nov-2023-7">03-NOV-2023</h4>
+<ul>
+<li><p>Finished extraction, nanodrop &amp; qubit for 12 samples</p>
+<ul>
+<li><p>6MH1a</p></li>
+<li><p>10OH1a - greenish, bad! no DNA/RNA, degraded!</p></li>
+<li><p>6PA2a</p></li>
+<li><p>5HH1a</p></li>
+<li><p>5HA1a</p></li>
+<li><p>9OA2a</p></li>
+<li><p>7HA1a</p></li>
+<li><p>3CA1a</p></li>
+<li><p>8CA1a</p></li>
+<li><p>2OA1a</p></li>
+<li><p>2MH1a</p></li>
+<li><p>5CA2a</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="nov-2023-8" class="level4">
+<h4 class="anchored" data-anchor-id="nov-2023-8">02-NOV-2023</h4>
+<ul>
+<li><p>Started extraction of 12 samples, paused after adding 350uL of DNA/RNA Lysis Buffer to 350uL of PK-Digested sample supernatent, and frozen in -80 freezer:</p>
+<ul>
+<li>6MH1a</li>
+<li>10OH1a - green</li>
+<li>6PA2a</li>
+<li>5HH1a</li>
+<li>5HA1a</li>
+<li>9OA2a</li>
+<li>7HA1a</li>
+<li>3CA1a</li>
+<li>8CA1a</li>
+<li>2OA1a</li>
+<li>2MH1a</li>
+<li>5CA2a - green</li>
+</ul></li>
+<li><p>Finished qubit of 10 samples:</p>
+<ul>
+<li><p>1MH2a</p></li>
+<li><p>2LA1a</p></li>
+<li><p>1MA1a</p></li>
+<li><p>1OH2a</p></li>
+<li><p>6PH2a</p></li>
+<li><p>10LH1a</p></li>
+<li><p>9LA2a</p></li>
+<li><p>8CH2a</p></li>
+<li><p>8OA1a</p></li>
+<li><p>5OH1a</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="nov-2023-9" class="level4">
+<h4 class="anchored" data-anchor-id="nov-2023-9">01-NOV-2023</h4>
+<ul>
+<li><p>Finished extraction &amp; nanodrop of 10 samples:</p>
+<ul>
+<li>1MH2a</li>
+<li>2LA1a</li>
+<li>1MA1a</li>
+<li>1OH2a</li>
+<li>6PH2a</li>
+<li>10LH1a</li>
+<li>9LA2a</li>
+<li>8CH2a</li>
+<li>8OA1a</li>
+<li>5OH1a</li>
+</ul></li>
+<li><p>GSS Presentation Design Workshop with Tim Essington</p>
+<ul>
+<li><p>Presentations should have ONE THING they are communicating: ‘Here’s a nugget’</p></li>
+<li><p>One Word Theme</p></li>
+<li><p>One Sentence Summary</p></li>
+<li><p>Add motion to a few slides to break things up visually</p></li>
+<li><p>Use a blank slide and pause at a key pivot in your story</p></li>
+<li><p>build the slide iteratively when you have a complex figure</p></li>
+<li><p>story arc:</p>
+<ul>
+<li><p>ordinary world</p></li>
+<li><p>challenge</p></li>
+<li><p>series of actions to overcome challenge</p></li>
+<li><p>resolution</p></li>
+<li><p>new world</p></li>
+</ul></li>
+<li><p>‘Lean into your ’buts’</p></li>
+<li><p>leave silence + space between story arcs</p></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="october-2023" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="october-2023">October 2023</h2>
+<section id="oct-2023" class="level4">
+<h4 class="anchored" data-anchor-id="oct-2023"><strong>27-OCT-2023</strong></h4>
+<ul>
+<li><p>QA/QC’d samples from 26-OCT-2023</p></li>
+<li><p>Met with Kip &amp; moved experiment setup to PBB</p></li>
+<li><p>Collected glycerol from Jon Bakker at Horticultural Center Merill Hall</p></li>
+</ul>
+</section>
+<section id="oct-2023-1" class="level4">
+<h4 class="anchored" data-anchor-id="oct-2023-1"><strong>26-OCT-2023</strong></h4>
+<ul>
+<li><p>extracted samples:</p>
+<ul>
+<li><p>6LH1a</p></li>
+<li><p>8LA2a</p></li>
+<li><p>10CH2a</p></li>
+<li><p>5CH2a</p></li>
+<li><p>4HA2a</p></li>
+<li><p>7OA2a</p></li>
+<li><p>2MA2a</p></li>
+<li><p>3LH1a</p></li>
+<li><p>5LA1a</p></li>
+<li><p>8MH2a</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="oct-2023-2" class="level4">
+<h4 class="anchored" data-anchor-id="oct-2023-2">24-OCT-2023</h4>
+<ul>
+<li>working on WSN presentation!</li>
+</ul>
+</section>
+<section id="oct-2023-3" class="level4">
+<h4 class="anchored" data-anchor-id="oct-2023-3">23-OCT-2023</h4>
+<ul>
+<li><p>JPG 1on1</p></li>
+<li><p>Bought Amtrak tickets to WSN (refundable)</p></li>
+</ul>
+</section>
+<section id="oct-2023-4" class="level4 page-columns page-full">
+<h4 class="anchored" data-anchor-id="oct-2023-4">16-OCT-2023</h4>
+<ul>
+<li>attended lab meeting via Zoom</li>
+</ul>
+<p>“Total RNA was extracted using the Duet DNA/RNA Miniprep Plus Kit (Zymo Research, Irvine, CA, USA, Cat #D7003) with modifications to the manufacturer’s sample preparation steps, as described here. Sterile clippers were used to remove an approximately 1-cm diameter region from the coral tissue. The tissue clipping was placed in 500&nbsp;μL of DNA/RNA shield (Zymo Cat #R1100-50) with 0.5&nbsp;mm glass beads (Fisher Scientific Cat #15-340-152) and homogenized by vortexing for 1&nbsp;minute. The supernatant (450&nbsp;μl) was transferred to a new tube and centrifuged at 9000&nbsp;rcf for 3&nbsp;min to remove any debris. The supernatant (300&nbsp;μl) was mixed with 30&nbsp;μl of Proteinase K (Zymo Cat #D3001-2-20) digestion buffer and 15&nbsp;μl of Proteinase K in a new tube using a brief vortex step. Equal volume of Zymo lysis buffer (Zymo Cat #D7001-1-200) was added (345&nbsp;μl) and extraction was completed as outlined in the manufacturer’s protocol. RNA concentration was quantified using the Qubit RNA Broad Range kit (Invitrogen Cat #Q10211) and integrity was assayed with an Agilent TapeStation 4200 system and the RNA Integrity Number (RIN) values ranged from 7.0–8.9. RNA libraries were prepared using the Zymo-Seq RiboFree Total RNA Library Kit (Zymo Cat #R3000) according to the manufacturer’s instructions, starting with 125&nbsp;ng of RNA as input. Prepared libraries were sent to Zymo Research Corporation for sequencing using the Illumina HiSeq for paired end sequencing (2&nbsp;×&nbsp;100&nbsp;base pairs [bp]).” - Wong &amp; Putnam 2022 <span class="citation" data-cites="wong2022">(<a href="#ref-wong2022" role="doc-biblioref">Wong and Putnam 2022</a>)</span></p>
+<div class="no-row-height column-margin column-container"><div id="ref-wong2022" class="csl-entry" role="doc-biblioentry">
+Wong, Kevin H., and Hollie M. Putnam. 2022. <span>“The Genome of the Mustard Hill Coral, Porites Astreoides.”</span> <em>Gigabyte</em> 2022 (July): 1–12. <a href="https://doi.org/10.46471/gigabyte.65">https://doi.org/10.46471/gigabyte.65</a>.
+</div></div></section>
+<section id="oct-2023-5" class="level4">
+<h4 class="anchored" data-anchor-id="oct-2023-5">11-OCT-2023</h4>
+<ul>
+<li><p>Attended <a href="https://isbscience.org/">ISB</a> workshop day 1</p>
+<ul>
+<li><p>Gibbons-Lab github repo: <a href="https://github.com/Gibbons-Lab/isb_course_2023/tree/main" class="uri">https://github.com/Gibbons-Lab/isb_course_2023/tree/main</a></p></li>
+<li><p>Course presentation slides: <a href="https://gibbons-lab.github.io/isb_course_2023/16S/" class="uri">https://gibbons-lab.github.io/isb_course_2023/16S/</a></p></li>
+<li><p>Multinomial Naive Bayes <code>qiime feature-classifier classify-sklearn</code> trained on V4 region of the 16S marker gene</p></li>
+<li><p>center log ratio transform abundance counts</p></li>
+<li><p>recommended papers:</p>
+<ul>
+<li><p><a href="https://www.nature.com/articles/s41467-022-28034-z"><strong>Microbiome differential abundance methods produce different results across 38 datasets</strong></a></p></li>
+<li><p><a href="https://www.futurelearn.com/info/courses/exploring-the-landscape-of-antibiotic-resistance-in-microbiomes/0/steps/272960#:~:text=PCoA%20and%20NMDS%20methods%20take,to%20fit%20a%20normal%20distribution"><strong>Beta diversity (or Ordination) analysis</strong></a>“PCoA and NMDS methods take the distance matrix as an input and are sensitive to distance method used. The PCoA maximises the linear correlation between samples, wherein NMDS maximises the rank-order correlation between samples. Additionally, in case of NMDS, data is not required to fit a normal distribution.” This link has some good visualizations: <a href="https://www.davidzeleny.net/anadat-r/doku.php/en:pcoa_nmds" class="uri">https://www.davidzeleny.net/anadat-r/doku.php/en:pcoa_nmds</a></p></li>
+<li><p>Why is the mean being used instead of the median or the modal? Bacteria distribution is not a normal distribution across populations…. This is a log ratio of (relative abundance/geometric mean). It’s a common method for transforming compositional data. For sequencing data normalization does not mean making anything normally distributed but rather putting samples on the same scale… Here’s a review on the topic: <a href="https://www.nature.com/articles/s41522-020-00160-w" class="uri">https://www.nature.com/articles/s41522-020-00160-w</a></p>
+<p><img src="https://slack-imgs.com/?c=1&amp;o1=wi32.he32.si&amp;url=https%253A%252F%252Fwww.nature.com%252Fstatic%252Fimages%252Ffavicons%252Fnature%252Fapple-touch-icon-f39cb19454.png" class="img-fluid" alt="Nature"><strong>Nature</strong></p>
+<p><a href="https://www.nature.com/articles/s41522-020-00160-w"><strong>Analysis of microbial compositions: a review of normalization and differential abundance analysis</strong></a></p></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="oct-2023-6" class="level4">
+<h4 class="anchored" data-anchor-id="oct-2023-6">10-OCT-2023</h4>
+<ul>
+<li>Bought WSN flights</li>
+<li>Sent list of 123 samples to UW mim_c for formal quote</li>
+<li>filled out GI Bill enrollment verification</li>
+<li>updated all extraction notebook posts from handwritten notes</li>
+</ul>
+</section>
+<section id="oct-2023-7" class="level4">
+<h4 class="anchored" data-anchor-id="oct-2023-7">03-OCT-2023</h4>
+<ul>
+<li>Submitted abstract to WSN, registered for conference!</li>
+</ul>
+</section>
+<section id="oct-2023-8" class="level4">
+<h4 class="anchored" data-anchor-id="oct-2023-8">02-OCT-2023</h4>
+<ul>
+<li><p>Abstratc accepted to SICB for Jan 3rd!</p></li>
+<li><div>
+<blockquote class="blockquote">
+<p>Your abstract Corals in a hot plastic ocean: How heat and phthalates shift a Montipora capitata coral microbiome has been accepted for the 2024 Annual Meeting in Seattle, WA,&nbsp;on&nbsp;2-6 January 2024. Your abstract id is 1230.<br>
+<br>
+You presentation is in the&nbsp;Response to anthropogenic environmental changes Concurrent session on&nbsp;Wednesday,&nbsp;January 03, 2024.</p>
+<p>The online program can be found <a href="https://urldefense.com/v3/__https://mandrillapp.com/track/click/30774040/www.xcdsystem.com?p=eyJzIjoiVHg1NGFGcEZRZmMyYWdNaEdPOTREWjRMcGQwIiwidiI6MSwicCI6IntcInVcIjozMDc3NDA0MCxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy54Y2RzeXN0ZW0uY29tXFxcL3NpY2JcXFwvcHJvZ3JhbVxcXC9JMUtyMjN0XFxcL2luZGV4LmNmbT9wZ2lkPTEzNDImUnVuUmVtb3ZlU2Vzc2lvbkZpbHRlcj0xXCIsXCJpZFwiOlwiZWZiNjZmNTg1MGQ2NDFjMzk1NjU5ZjQ2MjJjMmMzZTZcIixcInVybF9pZHNcIjpbXCI4MDZmOTNlZTNiZmY5ZTM3ODhhMDM1MmE4YzhkODkzMmM1OTFlOTgxXCJdfSJ9__;!!K-Hz7m0Vt54!h-p1pLv7irLQW3sPow2nFi6Q2BxoJRfyoVmE8uN9VbspkSR__iihdpN1iPfG-49elEJFsqnVnF5IW-lY$">HERE</a>. If you need to make a change to your abstract or cancel it you MUST fill out this <a href="https://urldefense.com/v3/__https://mandrillapp.com/track/click/30774040/docs.google.com?p=eyJzIjoiZ0VMSHdvazI5OGJDRWMyMV81NEtlcHZuMWgwIiwidiI6MSwicCI6IntcInVcIjozMDc3NDA0MCxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL2RvY3MuZ29vZ2xlLmNvbVxcXC9mb3Jtc1xcXC9kXFxcL2VcXFwvMUZBSXBRTFNkbmRxdTBwRERoLUhySVBZUXdIZUp6S29fYlRldzJsb2xVeEdSV1Q3STZ1ZWwwZndcXFwvdmlld2Zvcm1cIixcImlkXCI6XCJlZmI2NmY1ODUwZDY0MWMzOTU2NTlmNDYyMmMyYzNlNlwiLFwidXJsX2lkc1wiOltcIjNhOTc5YWRhMTZmM2RiNDliODQ4NDdlOTQ2ZmI2NDk5MzllZDY3MDNcIl19In0__;!!K-Hz7m0Vt54!h-p1pLv7irLQW3sPow2nFi6Q2BxoJRfyoVmE8uN9VbspkSR__iihdpN1iPfG-49elEJFsqnVnJHbFgyn$">FORM</a>.&nbsp; This is the only way changes and cancellations will be accepted.<br>
+<br>
+Information regarding presentations at the SICB meeting can be found <a href="https://urldefense.com/v3/__https://mandrillapp.com/track/click/30774040/www.xcdsystem.com?p=eyJzIjoiTjJ3UFUxQ25vcmR1RWZGN093bUtaZXpBU3l3IiwidiI6MSwicCI6IntcInVcIjozMDc3NDA0MCxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy54Y2RzeXN0ZW0uY29tXFxcL3NpY2JcXFwvcHJvZ3JhbVxcXC9JMUtyMjN0XFxcL2luZGV4LmNmbT9wZ2lkPTEzNjJcIixcImlkXCI6XCJlZmI2NmY1ODUwZDY0MWMzOTU2NTlmNDYyMmMyYzNlNlwiLFwidXJsX2lkc1wiOltcIjgwNmY5M2VlM2JmZjllMzc4OGEwMzUyYThjOGQ4OTMyYzU5MWU5ODFcIl19In0__;!!K-Hz7m0Vt54!h-p1pLv7irLQW3sPow2nFi6Q2BxoJRfyoVmE8uN9VbspkSR__iihdpN1iPfG-49elEJFsqnVnMuFu7ui$">HERE</a>.</p>
+<p>Please note that all presenters must register for the meeting by the presenter registration deadline of 1 November 2023, otherwise your talk may be cancelled. Click <a href="https://urldefense.com/v3/__https://mandrillapp.com/track/click/30774040/www.xcdsystem.com?p=eyJzIjoiaVNESXlTUjZ6anQ1Mi1FaS1Fa1dBZG50VjRJIiwidiI6MSwicCI6IntcInVcIjozMDc3NDA0MCxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy54Y2RzeXN0ZW0uY29tXFxcL3NpY2JcXFwvcHJvZ3JhbVxcXC81WDlPSWJVXFxcL2luZGV4LmNmbT9wZ2lkPTQ0OFwiLFwiaWRcIjpcImVmYjY2ZjU4NTBkNjQxYzM5NTY1OWY0NjIyYzJjM2U2XCIsXCJ1cmxfaWRzXCI6W1wiNzY1MmM2ZTg0NzcxMDQ3MWFiZmNiZDQ0MGE1OGQ2NTFkNTg5MTgyNFwiXX0ifQ__;!!K-Hz7m0Vt54!h-p1pLv7irLQW3sPow2nFi6Q2BxoJRfyoVmE8uN9VbspkSR__iihdpN1iPfG-49elEJFsqnVnACQAtql$">HERE</a> to register. Please visit the meeting web site for complete information on registering and conference activities. If you have registration questions email <a href="mailto:MScarbrough@burkinc.com">registration@sicb.org</a>, for meeting questions email <a href="mailto:lstrong@burkinc.com">lstrong@burkinc.com</a>.</p>
+</blockquote>
+</div></li>
+</ul>
+</section>
+</section>
+<section id="september-2023" class="level2">
+<h2 class="anchored" data-anchor-id="september-2023">September 2023</h2>
+<section id="sep-2023" class="level4">
+<h4 class="anchored" data-anchor-id="sep-2023">20-SEP-2023</h4>
+<ul>
+<li><a href="https://theconversation.com/the-importance-of-shining-a-light-on-hidden-toxic-histories-211657?utm_medium=email&amp;utm_campaign=Daily%20newsletter%20September%2014%202023&amp;utm_content=Daily%20newsletter%20September%2014%202023+CID_1c20b166b5da888ab34925d477cebf8d&amp;utm_source=campaign_monitor_us&amp;utm_term=the%20artists%20and%20activists%20who%20are%20calling%20attention%20to%20toxic%20legacies">Hidden Toxic Histories</a></li>
+</ul>
+</section>
+<section id="sep-2023-1" class="level4">
+<h4 class="anchored" data-anchor-id="sep-2023-1">05-SEP-2023</h4>
+<ul>
+<li><p>WSN newsletter says abstracts close Sep 29th 2023</p></li>
+<li><p>5 min lightning talk or 15 minute talk</p></li>
+<li><p><a href="https://www.wsn-online.org/presenter-guidelines/">WSN presenter guidelines</a></p></li>
+<li><p>Abstract Guidelines</p></li>
+</ul>
+<!-- -->
+<pre><code>The abstract should briefly introduce the project, the goals, the results, and the significance
+
+The presentation title should have no more than 130 characters max (including spaces) in ALL UPPERCASE
+
+The abstract should have no more than 1600 characters max (including spaces); use standard HTML tags for special formatting (e.g., \&lt;b\&gt;**bold text**\&lt;/b\&gt;, \&lt;i\&gt;*italic text*\&lt;/i\&gt;, etc.)</code></pre>
+</section>
+<section id="sep-2023-2" class="level4">
+<h4 class="anchored" data-anchor-id="sep-2023-2">01-SEP-2023</h4>
+<ul>
+<li><p>crashed my bike and badly injured my hands… can’t do lab work 😭</p></li>
+<li><p>met with UW mim_c Steven Salipantes</p>
+<ul>
+<li><p>I need to send him a sample list for a final quote, but should be $2K for ~100-120 samples (cost of sequencing lane + reagents) .. averages to ~$20/sample, much better than Mr.&nbsp;DNA ~$85/sample, plus no shipping charges.</p></li>
+<li><p>bring all 100-120 samples together</p></li>
+<li><p>1.5mL microcentrifuge tubes</p></li>
+<li><p>50uL volume , 20ng/uL quantity concentration</p></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="august-2023" class="level2">
+<h2 class="anchored" data-anchor-id="august-2023">August 2023</h2>
+<section id="aug-2023" class="level4">
+<h4 class="anchored" data-anchor-id="aug-2023">31-AUG-2023</h4>
+<ul>
+<li><p>purchased additional kits, qubit assays, tubes, etc. to spend down Hall Grant</p></li>
+<li><p>received Qubit and UV-C Sterilizer!</p></li>
+<li><p>extracted:</p>
+<ul>
+<li><p>mock</p></li>
+<li><p>blank</p></li>
+<li><p>4-LA2a</p></li>
+<li><p>1-HH2a</p></li>
+<li><p>2-HH2a</p></li>
+<li><p>3-HA2a</p></li>
+<li><p>3-MA2a</p></li>
+<li><p>1-Ha2a</p></li>
+<li><p>4-MA2a</p></li>
+<li><p>3-HA2a</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="aug-2023-1" class="level4">
+<h4 class="anchored" data-anchor-id="aug-2023-1">29-AUG-2023</h4>
+<ul>
+<li><p>submitted SICB abstract</p></li>
+<li><p>submitted Kip’s capstone proposal to Greg Jensen</p></li>
+</ul>
+</section>
+<section id="aug-2023-2" class="level4">
+<h4 class="anchored" data-anchor-id="aug-2023-2">28-AUG-2023</h4>
+<ul>
+<li><p>Look into the <a href="https://coast.noaa.gov/nerrs/research/davidson-fellowship.html">Margaret A. Davidson Graduate Fellowship</a></p></li>
+<li><p>Wrote abstract for <a href="https://sicb.org/">SICB</a> , Seattle Jan 2-6 … Deadline is Aug 29th!</p></li>
+<li><p>Met with UW mim_c Kyle Asfahl</p></li>
+<li><p>balanced Hall budget, have ~$5K left to spend</p></li>
+<li><p>Michael Shriever reset medusaFTIR and downloaded Nanodrop software to it</p></li>
+<li><p>Take Jeremy’s samples out of freezer to thaw at 4PM</p></li>
+</ul>
+</section>
+<section id="aug-2023-3" class="level4">
+<h4 class="anchored" data-anchor-id="aug-2023-3">24-AUG-2023</h4>
+<ul>
+<li>Trial with 2 ambient samples of modified extraction protocol and RNA Clean &amp; Concentrator. I did 2 samples because I had a kit that had 2 preps left over. Most of the time spent is in lab bench sterilizing, prepping, labelling, getting ice! Which takes literally a 30 minute hike across campus… But I started at 930AM and finished with Qubit in the FTR Roberts Lab by 4PM. With 2 samples! Extractions take ALL DAY.</li>
+</ul>
+</section>
+<section id="aug-2023-4" class="level4">
+<h4 class="anchored" data-anchor-id="aug-2023-4">17-AUG-2023</h4>
+<ul>
+<li><p>Are we sure we want to try TriZol for RNA? It isn’t a phenol-free kit like the Quick DNA/RNA Miniprep, and we have RNA, we just need to purify it. Tomorrow lets run all eluted RNA through RNA Clean &amp; Concentrator, and check it on Nanodrop! LFG.</p></li>
+<li><p><strong>THE BLANK HAD ‘TOO LOW’ DNA IN QUBIT!</strong></p></li>
+<li><p>Organized extraction notes (handwritten) for extractions 1-8</p></li>
+<li><p>Reserved 1 King Bed in Hotel Block for WSN</p></li>
+<li><p>Applied for WSN Student Travel Grant</p>
+<blockquote class="blockquote">
+<p><strong>How will attending the WSN meeting help you advance your career as a naturalist and/or scientist (75 words max)?</strong></p>
+<p>Attending WSN would be my first opportunity to share my Masters thesis with the scientific community. As an undergrad, I had a bad first conference experience where I was ridiculed for not having results in a methods poster. I hope to attend WSN because its reputation as a welcoming environment for early-career scientists is the kind of scientific community I wish to be a part of and perpetuate in my own career.</p>
+<p><strong>What are you working on to improve diversity, equity and inclusion in your community (75 words max)? (Examples may relate to personal identify, interest, experience, etc.)</strong></p>
+<p>I recently took part of the Identity, Belonging, and Inquiry in Science Program, and received special training to mentor students from diverse backgrounds. My mentee worked hard to complete research that she will present at the upcoming SACNAS conference, and I couldn’t be more proud. The training gave me confidence to take on another mentee, this time a Capstone student. Mentorship is a key part of DEI efforts that I find extremely rewarding.</p>
+</blockquote></li>
+</ul>
+</section>
+<section id="aug-2023-5" class="level4">
+<h4 class="anchored" data-anchor-id="aug-2023-5">16-AUG-2023</h4>
+<ul>
+<li><p>asked JPG to buy benchtop UV Sterilizer for me &amp; Callum, got approval! Purchased by Kat same day :D</p></li>
+<li><p>NMDS (non-metric multidimensional scaling) ordination plots</p></li>
+<li><p>walked with Callum, plan to ask JPG to buy Qubit too!</p></li>
+<li><p>Made some taxonomy bar plots and heatmap dendrograms… still working to understand what they mean but they don’t look like there is separation between treatments. Haven’t gotten any pvalues yet from the composition analyses…</p></li>
+<li><p>Wondering if I should break up the Notebook into diversity &amp; composition? It’s getting really long and overwhelming with all the analyses moshed together</p></li>
+<li><p>Still can’t <code>quarto render</code> in Jupyter Lab on raven server, need to figure out how to get those interactive jupyter plots in my notebook!</p></li>
+</ul>
+</section>
+<section id="aug-2023-6" class="level4">
+<h4 class="anchored" data-anchor-id="aug-2023-6">15-AUG-2023</h4>
+<ul>
+<li><p>met with Dr.&nbsp;Amy VanCise about microbiome analysis:</p>
+<ul>
+<li><p>Look into work by WHOI Amy Apprill, Laura Weber, Cynthia Becker</p></li>
+<li><p>Focus analysis on <strong>community composition</strong> over <strong>diversity</strong> statistics</p>
+<blockquote class="blockquote">
+<p>different sampling depths across different samples … subsample the counts without replacement so that each sample has the same number of features</p>
+</blockquote></li>
+<li><p>Differential abundance analysis on microbial community is similar to differential gene expression analysis!</p></li>
+<li><p>Sampling depth is normalizing between samples</p></li>
+<li><p>Look into getting a UV Sterilizer</p></li>
+<li><p>Do the analysis without blank, mock, &amp; env samples included… get a clean look at only treatments</p></li>
+<li><p>Look into R Vegan package</p></li>
+<li><p>Phred score: spatial, 30 (or 25) is good to keep</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="aug-2023-7" class="level4">
+<h4 class="anchored" data-anchor-id="aug-2023-7">03-AUG-2023</h4>
+<ul>
+<li><p>Received RNA samples back from UT GSAF</p></li>
+<li><p>Used PCR Inhibitor Removal Kit on five of the samples (see RNA Woes post <a href="https://sarahtanja.github.io/quarto-blog/posts/rna-woes/#:~:text=A260%20value.%E2%80%9D-,Zymo%20OneStep%20PCR%20Inhibitor%20Removal%20Kit,-I%20first%20tried">here</a>) :</p>
+<ul>
+<li><p>1-CA2a</p></li>
+<li><p>1-CH2a</p></li>
+<li><p>1-Ea</p></li>
+<li><p>1-PA2a</p></li>
+<li><p>1-PH1a</p></li>
+</ul></li>
+<li><p>PCR Inhibitor Removal Kit said to add 50-200uL of RNA, but I only could add 30uL. I took the 5 samples from the 96-well plate and augmented them with all the leftover diluted normalized RNA.</p></li>
+<li><p>Nanodrop note: blank should result in a spectrum that varies no more than 0.050A in the 1mm path. For this batch I used the Roberts Lab Nanodrop and the blank was -0.009/-0.008 10mm path.</p></li>
+</ul>
+</section>
+</section>
+<section id="july-2023" class="level2">
+<h2 class="anchored" data-anchor-id="july-2023">July 2023</h2>
+<section id="jul-2023" class="level4">
+<h4 class="anchored" data-anchor-id="jul-2023">20-JUL-2023</h4>
+<ul>
+<li><p><a href="https://forum.qiime2.org/t/tutorial-integrating-qiime2-and-r-for-data-visualization-and-analysis-using-qiime2r/4121">Integrating QIIME2 and R for data viz</a></p></li>
+<li><p>RStudio&gt;Project Options&gt; Python&gt; Python interpreter</p></li>
+<li><p><a href="https://support.posit.co/hc/en-us/articles/1500007929061-Using-Python-with-the-RStudio-IDE">Using Python with the RStudio IDE</a></p></li>
+</ul>
+</section>
+<section id="jul-2023-1" class="level4">
+<h4 class="anchored" data-anchor-id="jul-2023-1">19-JUL-2023</h4>
+<ul>
+<li><p>Emailed Jackie about getting another P1000</p></li>
+<li><p>Helped Bob Oxborrow with pipettes for stable isotope sample prep</p></li>
+<li><p>Downloaded QIIME2 to Roberts Lab Raven server for coral-pae-temp repo</p></li>
+<li><p>Shadowed Miranda to learn how to acid wash glassware in 10% HCl:</p>
+<ul>
+<li><p>Scrub and let soak 24hrs in Alconite bath</p></li>
+<li><p>Rinse 3X in Ultrapure water &amp; shift to 10% HCl bath, let soak for 24hrs</p></li>
+<li><p>Remove &amp; rinse 3X in Ultrapure water and let sit in Ultrapure water for 24hrs</p></li>
+<li><p>Remove &amp; let air dry, cover opening with foil</p></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="june-2023" class="level2">
+<h2 class="anchored" data-anchor-id="june-2023">June 2023</h2>
+<section id="jun-2023" class="level4">
+<h4 class="anchored" data-anchor-id="jun-2023">07-JUN-2023</h4>
+<ul>
+<li>Shipped DNA to Mr.&nbsp;DNA and RNA to UT GSAF!</li>
+</ul>
+</section>
+<section id="jun-2023-1" class="level4">
+<h4 class="anchored" data-anchor-id="jun-2023-1">06-JUN-2023</h4>
+<ul>
+<li>Normalized all 20 RNA samples</li>
+</ul>
+</section>
+<section id="jun-2023-2" class="level4">
+<h4 class="anchored" data-anchor-id="jun-2023-2">05-JUN-2023</h4>
+<ul>
+<li><p>Re-normalized 2-CA2a DNA and successfully got it to 19.5, 19.2 :D</p></li>
+<li><p>Worked all day to normalize RNA with mixed results. In the first batch, 7 out of 20 samples were ‘off’ of the target concentration of 25ng/uL by enough to make me want to redo them (one was way high at 230ng/uL, others were too low at ~10ng/uL)</p></li>
+<li><p>I first re-ran the qubit (2nd qubit run) and got really poor results, with all the rerun samples too-low, (even the one that was previously 230ng/uL!?)</p></li>
+<li><p>I then re-normalized the samples and ran them on qubit again (3rd qubit run). In this run 4-PH1b hit the target, the rest were still too low</p></li>
+<li><p>I re-normalized the samples for a third time (with some increasing concentration modifications) and ran them on qubit for a 4th time. In this run 4-PA2a hit the target, the rest were still too low, and 2-PH2a even got worse despite increasing concentration.</p></li>
+<li><p>Ended the day unsatisfied with the following samples too low for normalization despite 4 attempts:</p>
+<ul>
+<li><p>2-PH2a - too low</p></li>
+<li><p>2-CA2a - 15.0, 15.4</p></li>
+<li><p>1-PA2a - 10.2, 10.0</p></li>
+<li><p>1-PH1a - 17.6, 17.6</p></li>
+<li><p>3-CH2a - 15.0, 14.6</p></li>
+<li><p>4-CA1a - 14.0, 13.0</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="jun-2023-3" class="level4">
+<h4 class="anchored" data-anchor-id="jun-2023-3">02-JUN-2023</h4>
+<ul>
+<li>Normalized DNA (still have RNA left to do)</li>
+<li>Tested normalized DNA on Qubit BR DNA assay, results overall were good but a smidge lower than my goal</li>
+<li>blank + microbial standard extraction</li>
+</ul>
+</section>
+<section id="jun-2023-4" class="level4">
+<h4 class="anchored" data-anchor-id="jun-2023-4">01-JUN-2023</h4>
+<ul>
+<li>Presented Bioinformatics <a href="https://rpubs.com/sarah_tanja/1048844">final project for FISH 546</a></li>
+<li>Attended GSR Meeting</li>
+<li>Attended Seminar/TGIT</li>
+</ul>
+</section>
+</section>
+<section id="may-2023" class="level2">
+<h2 class="anchored" data-anchor-id="may-2023">May 2023</h2>
+<section id="may-2023-1" class="level4">
+<h4 class="anchored" data-anchor-id="may-2023-1">31-MAY-2023</h4>
+<ul>
+<li>wrote <code>dilute</code> function to normalize RNA &amp; DNA in <a href="https://github.com/sarahtanja/coral-DNA-RNA-lab-extractions/blob/main/code/03-normalizing.qmd">coral-DNA-RNA-lab-extractions</a> GitHub repo:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>dilute <span class="ot">&lt;-</span> <span class="cf">function</span>(C1, C2) {</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Initialize variables</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  n <span class="ot">&lt;-</span> <span class="fu">length</span>(C1)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  C1 <span class="ot">&lt;-</span> C1</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  V1 <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n)  <span class="co"># Initialize V1 vector</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  V2 <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n)  <span class="co"># Initialize V2 vector</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Loop through rows</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_along</span>(C1)) {</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Check for missing data</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (C1[i] <span class="sc">&lt;=</span> <span class="dv">0</span>) {</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>      <span class="fu">cat</span>(<span class="st">"Skipping row "</span>, i, <span class="st">": Invalid data</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>      <span class="cf">next</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Initialize V1 and V2 for the current row</span></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>    V1_row <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    V2_row <span class="ot">&lt;-</span> (C1[i] <span class="sc">*</span> V1_row) <span class="sc">/</span> C2</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Loop until conditions are satisfied</span></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (<span class="sc">!</span><span class="fu">is.na</span>(V1_row) <span class="sc">&amp;&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(V2_row) <span class="sc">&amp;&amp;</span> (V1_row <span class="sc">&lt;</span> <span class="dv">1</span> <span class="sc">||</span> V2_row <span class="sc">&lt;</span> <span class="dv">50</span>)) {</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>      V1_row <span class="ot">&lt;-</span> V1_row <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>      V2_row <span class="ot">&lt;-</span> (C1[i] <span class="sc">*</span> V1_row) <span class="sc">/</span> C2</span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Break the loop if V1 exceeds a threshold value</span></span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span>(V1_row <span class="sc">&gt;</span> <span class="dv">49</span>) {</span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>        <span class="fu">cat</span>(<span class="st">"Skipping row "</span>, i, <span class="st">": No valid solution found</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>        <span class="cf">next</span></span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Store optimized V1 and V2 values in the corresponding vectors</span></span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>    V1[i] <span class="ot">&lt;-</span> V1_row</span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>    V2[i] <span class="ot">&lt;-</span> V2_row</span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a data frame with C1 column</span></span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>  result <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">C1 =</span> C1)</span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a><span class="co"># Add V1 and V2 columns to the result data frame</span></span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>  result<span class="sc">$</span>V1 <span class="ot">&lt;-</span> V1</span>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>  result<span class="sc">$</span>V2 <span class="ot">&lt;-</span> V2</span>
+<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a>  result<span class="sc">$</span>C2 <span class="ot">&lt;-</span> C1<span class="sc">*</span>V1<span class="sc">/</span>V2</span>
+<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(result)</span>
+<span id="cb8-46"><a href="#cb8-46" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>SAFS Spring Picnic!</li>
+</ul>
+</section>
+<section id="may-2023-2" class="level4">
+<h4 class="anchored" data-anchor-id="may-2023-2">29-MAY-2023</h4>
+<ul>
+<li>Worked on Bioinformatics Final Project, RNA expression heat map with Gene Ontology Terms (Protein Functions)</li>
+<li>IBIS Celebration of <a href="https://norahess.quarto.pub/uw-lab-note-book/">Nora’s Blog</a>!</li>
+</ul>
+</section>
+<section id="may-2023-3" class="level4">
+<h4 class="anchored" data-anchor-id="may-2023-3">25-MAY-2023</h4>
+<ul>
+<li>Hosted Dr.&nbsp;Nicola Smith as the GSIS</li>
+</ul>
+</section>
+<section id="may-2023-4" class="level4">
+<h4 class="anchored" data-anchor-id="may-2023-4">24-MAY-2023</h4>
+<ul>
+<li><p>University of Texas at Austin <a href="https://wikis.utexas.edu/display/GSAF/Home+Page">Genomic Sequencing and Analysis Facility (GSAF)</a>:</p>
+<ul>
+<li><p><a href="https://wikis.utexas.edu/display/GSAF/Sample+Input+Guidelines">Sample Input Guidelines</a></p>
+<blockquote class="blockquote">
+<p>TagSeq: 25ng/ul concentration in greater than or equal to 25ul volume (submitting RNA as low as 10ng/ul or as high as 100ng/ul is acceptable BUT ALL samples MUST be submitted at the same or very similar concentrations)&nbsp;</p>
+</blockquote></li>
+<li><p><a href="https://lockbox-604.my.site.com/s/login/">GSAF Requester Portal Login</a></p></li>
+<li><p><a href="https://platform.login.illumina.com/platform-services-manager/?rURL=https://basespace.login.illumina.com/platform-home/&amp;redirectMethod=GET&amp;clientId=ps-home#/">Illumina BaseSpace Login</a></p></li>
+</ul></li>
+</ul>
+</section>
+<section id="may-2023-5" class="level4">
+<h4 class="anchored" data-anchor-id="may-2023-5">23-MAY-2023</h4>
+<ul>
+<li>completed UW driver safety training</li>
+<li>met with Steven Roberts, confirmed that no blank/standard is used for RNA-seq</li>
+<li>emailed with Jesse Zaneveld, learned about Zymo mock <a href="https://www.zymoresearch.com/collections/zymobiomics-microbial-community-standards/products/zymobiomics-microbial-community-standard">microbial community standard</a> and <a href="https://www.zymoresearch.com/collections/zymobiomics-microbial-community-standards/products/zymobiomics-microbial-community-dna-standard">microbial community DNA standards</a> to be used as positive controls for the extraction (community standard cells) and the PCR library prep and sequencing (community standard DNA) to assess bias in each process.</li>
+<li>Put both Zymo standards on purcahsing log, emailed Kat and she said she would buy them tonight with the pcard</li>
+<li>Met with Nora, she has made an <a href="https://norahess.quarto.pub/uw-lab-note-book/">awesome quarto blog</a> for the IBIS celebration to showcase what she has learned. We also talked a bit about stats and need to follow up with what to do when your data is not normally distributed (moving from paired T test to Wilcoxon paired-sample T test)</li>
+<li>Tried using <code>quarto publish gh-pages</code> command to publish blog</li>
+</ul>
+</section>
+<section id="may-2023-6" class="level4">
+<h4 class="anchored" data-anchor-id="may-2023-6">19-MAY-2023</h4>
+<ul>
+<li><p>Ran Qubit on ex7 samples</p></li>
+<li><p>Extraction #7 (the redo) on samples:</p>
+<ul>
+<li>3-Eb</li>
+<li>3-PH1b</li>
+<li>2-PA2b</li>
+<li>2-CH1b</li>
+<li>4-PH1b</li>
+<li>3-CA1b</li>
+</ul></li>
+<li><p>found out how to use quarto to do <a href="https://quarto.org/docs/blog/posts/2022-02-17-advanced-layout/#:~:text=.-,Margin%20References,-Footnotes%20and%20the">Margin References</a>!</p></li>
+<li><p>found cool article on <a href="https://themockup.blog/posts/2021-08-27-displaying-verbatim-code-chunks-in-xaringan-presentations/">Verbatim code chunks</a> in R (want to render the code chunk options and show what engine is being used?)</p></li>
+<li><p>dry-ice at biochem stockroom is low, have to check that there will be a replenishment next week so I have enough dry ice to ship samples!</p></li>
+</ul>
+</section>
+<section id="may-2023-7" class="level4">
+<h4 class="anchored" data-anchor-id="may-2023-7">18-MAY-2023</h4>
+<ul>
+<li>wrote script to normalize eluted RNA/DNA</li>
+</ul>
+</section>
+<section id="may-2023-8" class="level4">
+<h4 class="anchored" data-anchor-id="may-2023-8">04-MAY-2023</h4>
+<ul>
+<li>received Qubit DNA Broad Range (BR) Assay Kit!</li>
+<li>Gotta get P2 DNA/RNA free tips!</li>
+<li>ran qubit on DNA &amp; RNA, got great results!</li>
+</ul>
+</section>
+</section>
+<section id="april-2023" class="level2">
+<h2 class="anchored" data-anchor-id="april-2023">April 2023</h2>
+<section id="apr-2023" class="level4">
+<h4 class="anchored" data-anchor-id="apr-2023">25-APR-2023</h4>
+<ul>
+<li>sorted pipettes with Callum</li>
+<li>submitted Bioinformatics Assignment</li>
+<li>ordered Qubit DNA BR assay kit</li>
+<li>ordered film sealing plate roller</li>
+</ul>
+</section>
+<section id="apr-2023-1" class="level4">
+<h4 class="anchored" data-anchor-id="apr-2023-1">24-APR-2023</h4>
+<ul>
+<li><p>sent draft letter for NAH experiential learning fund to JPG on Monday April 24th</p></li>
+<li><p>found <a href="https://microbe.med.umich.edu/sites/default/files/downloads/2021_ConsolidatedShippingGuide_0.pdf">96-well PCR shipping guide</a></p></li>
+<li><p>emailed Mr.DNA about 20 16S samples</p></li>
+<li><p>read up on NanoDrop vs.&nbsp;Qubit</p></li>
+<li><p>reached out to Sam White about Ubuntu/Windows dual-boot computer in lab 236, which is connected to the Thermo NanoDrop 2000c Sam shared:</p>
+<blockquote class="blockquote">
+<p>FYI, if you’re solely using the NanoDrop for quantification (i.e.&nbsp;not worried about 260/280), then I’d highly recommend just relying on the Qubit, with both DNA and RNA. The reason for this is that the NanoDrop will almost always over-“calculate” your sample concentrations (both RNA and DNA). The reason for this is that the NanoDrop is a spectrophotometer and measures light absorbance. With almost all DNA/RNA isolations, there will be residual DNA or RNA in your sample. The NanoDrop cannot distinguish between the two molecules, because they’re both made up of the same material; nucleotides. Nucleotides, regardless of their of their origin will absorb light at an average wavelength of 260nm.Since the Qubit assays use molecule-specific dyes, the dye will only bind to DNA or only to RNA. The dyes will not bind to any carryover of other types of molecules in the sample, so the accuracy (and sensitivity) is much, much higher than the NanoDrop.</p>
+</blockquote></li>
+</ul>
+</section>
+<section id="apr-2023-2" class="level4">
+<h4 class="anchored" data-anchor-id="apr-2023-2">21-APR-2023</h4>
+<ul>
+<li><p>met with JPG April 1on1</p>
+<ul>
+<li>talked about travel from Sept.&nbsp;12 - Oct 9th, missing first 2 weeks of Autumn ’23 quarter, focusing that quarter on writing &amp; analysis</li>
+<li>GOAL: have all sequences (16S &amp; Transcriptomes) by September 1st 2023</li>
+<li>Initial 20 samples extracted &amp; sent for sequencing before FHL</li>
+<li>2nd committee meeting to be held once initial 20 samples are run through 1st analysis for 16S &amp; DGE, get advice on strategy for selecting remaining samples</li>
+<li>Follow-up samples extracted &amp; sent for sequencing in July/August</li>
+<li>Send draft letter for NAH experiential learning fund to JPG on Monday April 24th</li>
+</ul></li>
+<li><p>Initial test round 2 samples extracted!!!</p>
+<ul>
+<li><p>3-CA1a</p></li>
+<li><p>3-Ea</p>
+<ul>
+<li>Sampes selected from <a href="https://github.com/sarahtanja/coral-DNA-RNA-lab-extractions/blob/main/rand-sample-processing.Rmd">extr1</a> using a random number generator</li>
+<li>details can be found in the <a href="https://github.com/sarahtanja/coral-DNA-RNA-lab-extractions">coral-DNA-RNA-lab-extractions</a> repository</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="apr-2023-3" class="level4">
+<h4 class="anchored" data-anchor-id="apr-2023-3">20-APR-2023</h4>
+<ul>
+<li>downloaded fastq files for ‘fake data’ to continue script for bioinformatics workflow</li>
+<li>Received Mortexer! Whoo!</li>
+<li>Received cryo-gloves</li>
+<li>got 8lbs of dry-ice with NH</li>
+<li>re-organized cryo-vials to wax boxes, with all of the ‘a’ samples in 2 boxes labelled with green lab tape and ‘b’ samples in 2 boxes labelled with blue tape with NH</li>
+<li>setup lab bench for dry run dna/rna extraction with NH</li>
+<li>NH setup mortexer</li>
+<li>submitted 2-year extended warranty for mortexer s/n 22040448 via benchmark scientific in JPG’s name</li>
+<li>placed signage on lab 236 to lint roll and lab coat (because I forgot to and that was embarassing)</li>
+<li>submitted purchase for mortexer attachment head that will homogenize 12 1.5-2mL tubes at a time horizontal orientation (even better because closer to original lysis protocol for Zymo) Sadly, I should have looked for something like this earlier, but I saw it on the mortexer instruction manual when it was delivered and realized that was what I needed</li>
+</ul>
+</section>
+<section id="apr-2023-4" class="level4">
+<h4 class="anchored" data-anchor-id="apr-2023-4">19-APR-2023</h4>
+<ul>
+<li>continued draft application for ONeill-Quinn</li>
+<li>continued editing extraction protocol</li>
+<li>expected delivery of mortexer by end of day</li>
+</ul>
+</section>
+<section id="apr-2023-5" class="level4">
+<h4 class="anchored" data-anchor-id="apr-2023-5">18-APR-2023</h4>
+<ul>
+<li>Met with Nora, selected samples for processing using <a href="https://github.com/sarahtanja/coral-DNA-RNA-lab-extractions/blob/main/rand-sample-processing.Rmd">R script to randomize</a></li>
+<li>Setup workflow in Hyak</li>
+<li>added to extraction protocol</li>
+<li>waiting for mortexer delivery, expected by end of day, but FedEx package delivery delayed</li>
+<li>emailed asking for details about Neptune controller unit (it was returned after being sent away for RMA maintenance request, but nothing appears to have been done to it)</li>
+</ul>
+</section>
+<section id="apr-2023-6" class="level4">
+<h4 class="anchored" data-anchor-id="apr-2023-6">17-APR-2023</h4>
+<ul>
+<li>added to extraction protocol</li>
+<li>read about remote computing, Hyak Mox</li>
+<li>enabled Hyak account</li>
+</ul>
+</section>
+<section id="apr-2023-7" class="level4">
+<h4 class="anchored" data-anchor-id="apr-2023-7">14-APR-2023</h4>
+<ul>
+<li>attended Cat Fong chalk talk &amp; SAFS Cafe</li>
+<li>gave tour to Edith</li>
+</ul>
+</section>
+<section id="apr-2023-8" class="level4">
+<h4 class="anchored" data-anchor-id="apr-2023-8">11-APR-2023</h4>
+<ul>
+<li><p>NCBI SRA links downloading RNAseq fastq files</p></li>
+<li><p>Looking for ‘fake data’ for M. capitata</p>
+<ul>
+<li><p>DNA, ITS2 to measure symbiont to host cell ratios for ‘Patterns of bleaching and recovery of Montipora capitata in Kaneohe Bay’ hosted at zenodo <a href="https://zenodo.org/record/53231#.ZDWE0HbMKTQ">here</a> https://zenodo.org/record/53231#.ZDWE0HbMKTQ -RNAseq resources from A. Huffmeyer</p>
+<ul>
+<li>https://ahuffmyer.github.io/ASH_Putnam_Lab_Notebook/E5-Deep-Dive-RNAseq-Count-Matrix-Analysis/</li>
+<li>https://github.com/AHuffmyer/EarlyLifeHistory_Energetics &gt; Here is the spreadsheet of my NCBI accession numbers for my sequences: https://docs.google.com/spreadsheets/d/1qDGGpLFcmoO-fIFOPSUhPcxi4ErXIq2PkQbxvCCzI40/edit?pli=1#gid=457642286 If you look at the Mcapitata Ontogeny Timeseries tab it’ll have all the SRR numbers you will need to download the TagSeq files. Instead of downloading the full data set you could just pick like three lifestages for a test comparison - AH</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="apr-2023-9" class="level4">
+<h4 class="anchored" data-anchor-id="apr-2023-9">10-APR-2023</h4>
+<ul>
+<li>created script to randomize sample processing in <a href="https://github.com/sarahtanja/coral-DNA-RNA-lab-extractions">coral-DNA-RNA-lab-extractions</a> repo</li>
+<li>called Zymo and learned that ‘mix’ in protocol step can either mean pipette up and down 10-12 times, or briefly touch to vortex mixer for a pulse</li>
+<li>Zymo tech also shared that it’s best to follow protocol and add Lysis buffer to the sample supernatent in a separate rnase-free tube. If you do it in the filter tube some sample may start to percolate thru the filter before being fully buffered.</li>
+<li><a href="https://www.zymoresearch.com/products/horizontal-microtube-holder">Horizontal Microtube Holder</a></li>
+</ul>
+</section>
+</section>
+<section id="march-2023" class="level2">
+<h2 class="anchored" data-anchor-id="march-2023">March 2023</h2>
+<section id="mar-2023" class="level4">
+<h4 class="anchored" data-anchor-id="mar-2023">29-MAR-2023</h4>
+<ul>
+<li><p>started template for DNA/RNA data extraction sheet in new repo for extractions<br>
+</p></li>
+<li><p>organized notes for samples in metadata</p></li>
+<li><p>installed git on WSL via <a href="https://www.git-tower.com/blog/git-wsl/">this tutorial</a></p></li>
+<li><p>finished homework 1 for FISH546</p></li>
+<li><p>lab-meeting notes</p>
+<ul>
+<li><p>purchasing</p>
+<ul>
+<li><p>no purchases in June!</p>
+<blockquote class="blockquote">
+<p>The University of Washington is transitioning from their old DOS-based system to Workday Finance, with a Go Live date of July 5th, 2023. During the transition period, there will be some disruptions to normal operations, and the continuity of research and teaching and minimizing the impact on faculty, staff, and students is the priority. There will be Restrictive Periods during which no one will be able to process purchase orders or obtain reimbursements in ARIBA. Exceptions may be made for urgent or emergency purchases. Travel reimbursements and non-travel-related reimbursements should be submitted before June 9th, and processing will resume on July 5th. Blanket Purchase Orders that are expected to be active past June 30th, 2023, will not be automatically transferred to Workday, and all continuing BPOs must be manually reentered by the College of the Environment. Navigating the transition will require patience and close partnerships between research and administrative groups</p>
+</blockquote></li>
+<li><p>space survey</p>
+<ul>
+<li>% of time spent in spaces from July ’22 - March ’23</li>
+<li>2% 242</li>
+<li>8% 236</li>
+<li>30% HIMB</li>
+<li>60% 264, 264B</li>
+<li>undergrad Nora Hessen 2hrs per week in 264, 264B since January ’23</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="mar-2023-1" class="level4">
+<h4 class="anchored" data-anchor-id="mar-2023-1">28-MAR-2023</h4>
+<ul>
+<li><p>read papers:</p>
+<ul>
+<li><p><a href="https://www.annualreviews.org/doi/pdf/10.1146/annurev-micro-102215-095440">Bourne et al.&nbsp;2016</a></p></li>
+<li><p><a href="https://ami-journals.onlinelibrary.wiley.com/doi/epdf/10.1111/1758-2229.12541">Sogin et al.&nbsp;2017</a></p></li>
+<li><p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4104888/">Kelly et al.&nbsp;2014</a></p></li>
+</ul></li>
+<li><p>called Zymo tech Christian Camacho ccamacho@zymoresearch.com to get advice on working with coral samples and the Zymo DNA/RNA miniprep kit:</p>
+<ul>
+<li><p>bead bash for 40 minutes for microbes on mortexer vortex-mixer! This is still tested to result in good RNA, though there may be a trade-off between bead-bashing for lysis and RNA interity… see Zymo optimized lysis protocol</p></li>
+<li><p>benchmark mortexer is not a tested method for the kit.. but it’s closest to the vortex genie approved method for lysis</p>
+<ul>
+<li><a href="https://files.zymoresearch.com/documents/bead_beating_short_protocol_tables.pdf">optimized lysis protocols</a></li>
+</ul></li>
+<li><p>mortar &amp; pestle with liquid nitrogen, then add powder to bead bashing tube with RNA shield</p></li>
+<li><p>lyophilized (freeze-dried) proteinase K is stable at room temp, it should be stored in the -20 freezer only after resuspending in the buffer</p></li>
+<li><p>the DNAse 1 is similarly a lyophilized powder, but a very small amount, such that the vial looks empty</p></li>
+</ul></li>
+<li><p>Gathered lab supplies</p>
+<ul>
+<li>mortar &amp; pestles</li>
+<li>alcohol burner for use with denatured ethyl alcohol</li>
+<li>flint spark torch ignitor</li>
+<li>found expired RNA later</li>
+<li>DNAse away</li>
+<li>DEPC water (does that expire?)</li>
+<li>weigh papers (for powdered samples)</li>
+</ul>
+<p>NEED</p>
+<ul class="task-list">
+<li><input type="checkbox" disabled="">scoopulas (to scoop powder from mortar to weigh paper)</li>
+<li><input type="checkbox" disabled="">denatured ethyl alcohol (disinfect labware between samples)</li>
+</ul></li>
+</ul>
+</section>
+<section id="mar-2023-2" class="level4">
+<h4 class="anchored" data-anchor-id="mar-2023-2">27-MAR-2023</h4>
+<ul>
+<li><p>read papers:</p>
+<ul>
+<li>https://environmentalevidencejournal.biomedcentral.com/articles/10.1186/s13750-023-00298-y</li>
+</ul></li>
+<li><p>worked on coral collection report</p></li>
+</ul>
+<section id="section" class="level5">
+<h5 class="anchored" data-anchor-id="section"></h5>
+</section>
+</section>
+<section id="mar-2023-3" class="level4">
+<h4 class="anchored" data-anchor-id="mar-2023-3">21-MAR-2023</h4>
+<ul>
+<li>interviewed for WSG student assistant position</li>
+<li>began work on himb-2022 coral collection report</li>
+</ul>
+</section>
+<section id="mar-2023-4" class="level4">
+<h4 class="anchored" data-anchor-id="mar-2023-4">20-MAR-2023</h4>
+<ul>
+<li>installed Sophos anti-virus on Owl</li>
+<li>attended Robert’s Lab meeting</li>
+<li>checked out Qubit buffer + reagents in Roberts lab with Olivia &amp; Zach</li>
+<li>put mortexer, DEPC-treated water, Qubit assay kit, on purchase log</li>
+<li>wrote <a href="https://sarahtanja.github.io/lab-book/protocols/protocol-qbit/">Qubit RNA Broad Range Protocol</a> post</li>
+</ul>
+</section>
+<section id="mar-2023-5" class="level4">
+<h4 class="anchored" data-anchor-id="mar-2023-5">16-MAR-2023</h4>
+<ul>
+<li>finished SMEA/FISH 539 final paper</li>
+</ul>
+</section>
+<section id="mar-2023-6" class="level4">
+<h4 class="anchored" data-anchor-id="mar-2023-6">15-MAR-2023</h4>
+<ul>
+<li>out sick</li>
+<li>worked on SMEA/FISH 539 final paper</li>
+</ul>
+</section>
+<section id="mar-2023-7" class="level4">
+<h4 class="anchored" data-anchor-id="mar-2023-7">14-MAR-2023</h4>
+<ul>
+<li>out sick</li>
+<li>talked with Hailey Dockery about shadowing RNA extractions</li>
+</ul>
+</section>
+<section id="mar-2023-8" class="level4">
+<h4 class="anchored" data-anchor-id="mar-2023-8">13-MAR-2023</h4>
+<ul>
+<li>worked on SMEA/FISH 539 final paper</li>
+<li>updated R &amp; RStudio to latest versions</li>
+</ul>
+</section>
+<section id="mar-2023-9" class="level4">
+<h4 class="anchored" data-anchor-id="mar-2023-9">10-MAR-2023</h4>
+<ul>
+<li>finished SMEA/FISH 1page reflection</li>
+<li>worked on SMEA/FISH 539 final paper</li>
+<li>met with GSIS speaker on Zoom</li>
+<li>made hotel reservations for GSIS</li>
+</ul>
+</section>
+<section id="mar-2023-10" class="level4">
+<h4 class="anchored" data-anchor-id="mar-2023-10">09-MAR-2023</h4>
+<ul>
+<li><p>Attended Coastal Ecology candidate chalk talk</p></li>
+<li><p>Shadowed Grace for new RNA extraction protocol &amp; Qubit QC for RNA quality</p></li>
+<li><p>Met with Emma Strand about M cap DNA/RNA extractions… notes from Zoom chat:</p>
+<ul>
+<li>email Erin Chille <a href="mailto:eec72@scarletmail.rutgers.edu" class="email">eec72@scarletmail.rutgers.edu</a> about 16S extraction kit</li>
+<li>https://emmastrand.github.io/EmmaStrand_Notebook/Kbay-Bleaching-2019-DNA-RNA-Extractions/</li>
+<li>host DNA (looked at DNA methylation), symbiont DNA (ITS2), microbiome DNA (16S not so good), host RNA + symbiont RNA (Illumina Nova Seq RNAseq)</li>
+<li>coral issues- mucus clogging spin-column filter (avoid mucucs, avoid skeleton)</li>
+<li>how big of a fragment do I put in the bead tube? 1/3 bead, 1/3 coral, 1/3 shield – https://emmastrand.github.io/EmmaStrand_Notebook/Kbay-Bleaching-2019-DNA-RNA-Extractions/</li>
+<li>optimize time to vortex bead tube (2mins for m. cap) *vortex machine, holds 8 tubes at once</li>
+<li>https://www.southernlabware.com/mortexertm-vortex-mixer-115v.html?gclid=Cj0KCQiApKagBhC1ARIsAFc7Mc5LH-QjqtDR98g9ZgE9iAOs-y35m7X5rr7pHCqfPGRtTJVPEeQWbLYaAtCpEALw_wcB</li>
+<li>100uL total DNA material end product from kit</li>
+<li>12ng of input for ITS2 about 5uL</li>
+<li>aim for 10 - 70 ng/uL DNA quantity (Qubit)</li>
+<li>DNA quality (gel) *important for methylation studies, but may not be for 16S/ITS2</li>
+<li>100uL total RNA material end product, send 20-30uL for RNAseq</li>
+<li>https://github.com/hputnam/HI_Bleaching_Timeseries/blob/main/Dec-July-2019-analysis/data/Molecular-labwork.xlsx</li>
+<li>sample ID, use a separate extraction ID (in the event of multiple extractions from the same sample!)</li>
+</ul></li>
+</ul>
+</section>
+<section id="mar-2023-11" class="level4">
+<h4 class="anchored" data-anchor-id="mar-2023-11">07-MAR-2023</h4>
+<ul>
+<li>worked on SMEA/FISH 539 final paper</li>
+<li>met to make GSIS budget w/ Juliette</li>
+<li>met with Grace from Robert’s Lab to practice RNA extraction</li>
+<li>participated in SAC interview for ADDEI</li>
+</ul>
+</section>
+<section id="mar-2023-12" class="level4">
+<h4 class="anchored" data-anchor-id="mar-2023-12">06-MAR-2023</h4>
+<ul>
+<li>presented final group project in SMEA/FISH 539</li>
+<li>worked on SMEA/FISH 539 final paper</li>
+<li>attended Coastal Ecology faculty candidate seminar</li>
+</ul>
+</section>
+<section id="mar-2023-13" class="level4">
+<h4 class="anchored" data-anchor-id="mar-2023-13">03-MAR-2023</h4>
+<ul>
+<li>I swear I’ve done stuff since January / how has winter quarter gone by so fast?!</li>
+<li>submitted <a href="https://pcc.uw.edu/research/funding-opportunities/">PCC Climate Solutions</a> grant funding application this morning</li>
+<li>worked on FSMEA/FISH 539 final project + presentation</li>
+</ul>
+</section>
+<section id="mar-2023-14" class="level4">
+<h4 class="anchored" data-anchor-id="mar-2023-14">02-MAR-2023</h4>
+<ul>
+<li>submitted FHL TA application for summer A term marine botany</li>
+<li>helped interview ADDEI candidate</li>
+<li>attended Carter’s Coastal Ecology candidate chalk talk</li>
+<li>met with Steven on Zoom and got permission to use Bioanalyzer</li>
+<li>worked on sequencing quotes, DNA/RNA extraction protocol, reached out to Emma Strand and Grace</li>
+</ul>
+</section>
+</section>
+<section id="january-2023" class="level2">
+<h2 class="anchored" data-anchor-id="january-2023">January 2023</h2>
+<section id="jan-2023" class="level4">
+<h4 class="anchored" data-anchor-id="jan-2023">31-JAN-2023</h4>
+<ul>
+<li>prepared 1st committee meeting blog post</li>
+</ul>
+</section>
+<section id="jan-2023-1" class="level4">
+<h4 class="anchored" data-anchor-id="jan-2023-1">20-JAN-2023</h4>
+<ul>
+<li>cleaned PBB</li>
+<li>strategized chapter 1: Low Dose Effects &amp; chapter 2: Multiple Stressors for thesis</li>
+<li>arranged to meet with Miranda to talk about summer kelp gametophyte project</li>
+<li>completed lab safety trainings</li>
+</ul>
+</section>
+<section id="jan-2023-2" class="level4">
+<h4 class="anchored" data-anchor-id="jan-2023-2">19-JAN-2023</h4>
+<ul>
+<li><p>read <a href="https://ahuffmyer.github.io/ASH_Putnam_Lab_Notebook/">Ariana Huffmyer’s</a> lab posts on extraction protocols</p></li>
+<li><p>read <a href="https://www.nature.com/articles/ismej201539.pdf">Ainsworth et al 2015</a> &amp; <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/mec.15899">Brown et al 2021</a></p>
+<ul>
+<li>MarBio Plant DNA extraction Kit for whole coral holobiont 16S rRNA Bacteria</li>
+<li>Pure Link Plant Total DNA purification systems (Invitrogen) for 16S rRNA Bacteria</li>
+</ul></li>
+<li><p>attended JPG lab meeting and gave feedback on Eileen Bates’ pinto abalone presentation for Alaska Science Sympsosium</p></li>
+<li><p>designed graphical methods in Canva for pae-temp experiment</p></li>
+</ul>
+</section>
+<section id="jan-2023-3" class="level4">
+<h4 class="anchored" data-anchor-id="jan-2023-3">18-JAN-2023</h4>
+<ul>
+<li>worked with <a href="https://github.com/norahess">norahess</a> to setup collaboration on ibis repo!</li>
+<li>talking about setting up Aiptasia spawning tanks to run experiments with cnidarian model organism reproduction</li>
+</ul>
+</section>
+<section id="jan-2023-4" class="level4">
+<h4 class="anchored" data-anchor-id="jan-2023-4">17-JAN-2023</h4>
+<ul>
+<li>attended Roberts lab meeting, discussed curriculum development for Maritime Highschool</li>
+</ul>
+</section>
+<section id="jan-2023-5" class="level4">
+<h4 class="anchored" data-anchor-id="jan-2023-5">13-JAN-2023</h4>
+<ul>
+<li>Read up on ‘Omics’, started a post on definitions and basics of the study of DNA &amp; RNA</li>
+<li>Found <a href="https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/montipora%20capitata">whole genome for <em>M. capitata</em> on NCBI</a></li>
+<li>Helmkampf, M., Bellinger, M. R., Geib, S. M., Sim, S. B., &amp; Takabayashi, M. (2019). Draft Genome of the Rice Coral Montipora capitata Obtained from Linked-Read Sequencing. <em>Genome Biology and Evolution</em>, <em>11</em>(7), 2045–2054. https://doi.org/10.1093/gbe/evz135</li>
+<li>Williams, A., Pathmanathan, J. S., Stephens, T. G., Su, X., Chiles, E. N., Conetta, D., Putnam, H. M., &amp; Bhattacharya, D. (2021). Multi-omic characterization of the thermal stress phenome in the stony coral Montipora capitata. <em>PeerJ</em>, <em>9</em>, e12335. https://doi.org/10.7717/peerj.12335</li>
+<li>Shumaker, A., Putnam, H. M., Qiu, H., Price, D. C., Zelzion, E., Harel, A., Wagner, N. E., Gates, R. D., Yoon, H. S., &amp; Bhattacharya, D. (2019). Genome analysis of the rice coral Montipora capitata. <em>Scientific Reports</em>, <em>9</em>(1), 2571. https://doi.org/10.1038/s41598-019-39274-3</li>
+</ul>
+</section>
+<section id="jan-2023-6" class="level4">
+<h4 class="anchored" data-anchor-id="jan-2023-6">12-JAN-2023</h4>
+<ul>
+<li><p>Explored the use of purple sea urchin and/or Aiptasia for phthalate low-dose effect gametogenesis study (proposal brainstorming) for the <a href="https://environment.uw.edu/students/current-students/identity-belonging-and-inquiry-in-science-ibis-program/">IBIS research mentor program</a></p></li>
+<li><p>Created <a href="https://github.com/sarahtanja/ibis">ibis repo</a> to organize project</p></li>
+<li><p>Completed <a href="https://github.com/sarahtanja/ibis/blob/main/ehslabsafetytrainmatrix.pdf">lab safety training matrix</a> for myself and NH, identified required and recommended lab safety trainings</p></li>
+<li><p>Potential to use rack in PBB near interior door for Aiptasia spawning incubator, setup workflow with dissecting scope and camera all in PBB for IBIS project</p></li>
+<li><p>Inventoried equipment we have in lab 236 for molecular work:</p>
+<ul>
+<li>Beckman Coulter Allegra X-30R Centrifuge</li>
+<li>Thermo Scientific NanoDrop 2000c Spectrophotometer</li>
+<li>Fisherbrand Isotemp heat block</li>
+<li>Beckman Coulter Microfuge 16 Centrifuge</li>
+<li>Eppendorf Mastercycler nexus gradient</li>
+</ul></li>
+</ul>
+</section>
+<section id="jan-2023-7" class="level4">
+<h4 class="anchored" data-anchor-id="jan-2023-7">09-JAN-2023</h4>
+<ul>
+<li><p>Today I setup my GitHub ‘notebook’! This is the beginning of my exploration of using GitHub to jot down thoughts, record ‘daily bits’, and organize the procedures and methods I’ll use in my thesis research</p></li>
+<li><p><a href="https://github.com/zbengt">zbengt</a> introduced me to ‘<a href="https://elicit.org/">elicit</a>’, a lit review search AI. I searched “What is the role of endocrine signaling in cnidarian development” and found an exciting paper titled <a href="https://www.frontiersin.org/articles/10.3389/fgene.2021.793306/full"><strong>“Sea Anemones Responding to Sex Hormones, Oxybenzone, and Benzyl Butyl Phthalate: Transcriptional Profiling and <em>in Silico</em> Modelling Provide Clues to Decipher Endocrine Disruption in Cnidarians”</strong></a> authored by Morgan et al.&nbsp;in 2022</p></li>
+<li><p>I explored another AI, <a href="https://openai.com/blog/chatgpt/">ChatGPT</a>, and gave it the prompt “write me a poem about corals and oysters and mothers” and it returned:</p>
+<ul>
+<li><blockquote class="blockquote">
+<p>Coral reefs, a vibrant sea of life, A home for countless creatures, rife. Oysters, clams, and mussels too, All nestled safe, their shells in view.</p>
+<p>But danger lurks, the waters warm, The coral bleaches, it’s colors torn. Mother Nature’s wrath, a sight to see, But we can help, if only we believe.</p>
+<p>For mothers, fierce and loving beasts, Will do what it takes, to protect at least. Their young and home, with all their might, They’ll fight and strive, through day and night.</p>
+<p>So let us join, in their noble quest, To save the reefs, and all the rest. For oysters, corals, and mothers too, Deserve a chance, to make it through.</p>
+</blockquote></li>
+</ul></li>
+<li><p>I followed up with a ChatGPT prompt “what are examples of endocrine signaling in cnidarians?” and it returned:</p>
+<ul>
+<li><blockquote class="blockquote">
+<p>Endocrine signaling is the process of communicating information from one cell to another by releasing hormones into the circulatory system or through direct contact. In cnidarians, endocrine signaling can be used for a variety of functions, including the regulation of growth, development, and behavior.</p>
+<p>One example of endocrine signaling in cnidarians is the release of growth hormones, which stimulate the growth and development of cells and tissues. For example, in some species of cnidarians, the release of growth hormones is regulated by the action of a hormone called insulin-like growth factor (IGF).</p>
+<p>Another example of endocrine signaling in cnidarians is the regulation of reproductive function. In some species of cnidarians, hormones called gonadotropins are released by the endocrine cells of the gonads (sex organs) to stimulate the production and release of gametes (sex cells).</p>
+<p>Endocrine signaling is also involved in the regulation of behavior in cnidarians. For example, some species of cnidarians release hormones called neuropeptides that act on the nervous system to regulate behaviors such as feeding, movement, and response to stimuli.</p>
+<p>Overall, endocrine signaling plays a vital role in the regulation of various functions in cnidarians, including growth, development, and behavior.</p>
+</blockquote></li>
+</ul></li>
+</ul>
+<p>​**Is this is all true!? I’ll have to follow-up with my own dive into primary literature…</p>
+<ul>
+<li><p>Another ChatGPT AI response, when asked the same questions, but prompted to provide references:</p>
+<ul>
+<li><blockquote class="blockquote">
+<p>Examples of endocrine signaling in cnidarians include the release of hormones in response to stimuli such as touch, temperature changes, and changes in light intensity.</p>
+<p>For example, the hormone adenylate cyclase-activating polypeptide (ACAP) is released from cnidocytes in response to a variety of stimuli and activates adenylate cyclase, leading to the production of cyclic adenosine monophosphate (cAMP) and the regulation of various physiological processes.</p>
+<p>Other signaling molecules that have been identified in cnidarians include cyclic guanosine monophosphate (cGMP), inositol triphosphate (IP3), and Ca2+-dependent signaling pathways.</p>
+<p>References:</p>
+<p>Levitan, D. R., &amp; Kohn, A. B. (2001). The Endocrine System of Cnidarians. Annual Review of Physiology, 63(1), 319-344.</p>
+<p>Schmid, V., &amp; Pfründner, R. (1995). Adenylate cyclase-activating polypeptide in cnidarians: a new class of peptides with signal transducing properties. Regulatory Peptides, 61(2), 149-157.</p>
+</blockquote></li>
+</ul></li>
+</ul>
+<p>​</p>
+
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">This page is built using <a href="https://quarto.org/">Quarto</a>❤️</div>   
+  </div>
+</footer>
+
+
+
+</body></html>

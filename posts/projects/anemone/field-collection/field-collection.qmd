@@ -9,23 +9,35 @@ toc-title: Contents <i class="bi bi-bookmark-heart"></i>
 toc-depth: 5
 toc-location: left
 citation-location: margin
+reference-location: margin
+footnotes-hover: true
 link-external-icon: true
 link-external-newwindow: true
 ---
 
-```{r echo=TRUE}
+On Monday, March 18th, 2024 we collected *Anthopleura elegantissima* from Owen's Beach at Point Defiance Park in Tacoma, Washington under WDFW scientific collection permit `Tanja 24-010`. It was a beautiful day, and the 'Mountain was out', gowned in snowy white against a blue sky; not a single cloud. It was the kind of spring day that makes people of the 47th latitude giddy. The collections encompassed the low tide, between 18:27 and 19:40, corresponding to a +1ft MLLW to +0.9ft MLLW tide height (determined by [nearest tide station, 9446484](https://tidesandcurrents.noaa.gov/stationhome.html?id=9446484)) at time of collection. We collected 7 anemones from 12 distinct aggregates. The collections were done efficiently by hand using metal scoopulas[^1] to gently nudge under the pedal disc of an anemone, and further work under the pedal disc to loosen it from its' substrate. Once freed, the anemones were transferred in polypropylene mesh bags labelled with their aggregate number (1-12) to a cooler with seawater. One anemone from each aggregate was immediately snap-frozen in liquid nitrogen. This was done to preserve an environmental control with which to compare any microbiome changes that may occur due to the transfer from the intertidal zone to the lab. The remaining 6 anemones from each aggregate were transferred to individual 60mm petri dishes that had been acid-washed, and labelled with lab pressure tape and sharpie. The anemones, set in their new petri-dish homes, were placed in a recirculating seawater table in the Padilla-Gamino Lab located at the University of Washington in Seattle by 22:00, just 4 hours post collection. The frozen specimens were stored in the Padilla-Gamino Lab - 80 ^o^ C freezer for later processing.
+
+[^1]: This method was suggested to me by Dr. Alan Verde in personal communication, and I was thrilled by how well it worked! Thank you, Verde!
+
+The remainder of this post will provide tables and photos detailing the location of the collection sites and documenting the tremendous gift of friendship I have in those who were willing to 'come poke anemones with me'.
+
+![Michael and Miguel strike a pose with aggregate no. 3](field-pics/3/PXL_20240319_013300705.jpg){fig-align="center"}
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
 ## install packages
 if (!require("tidyverse", character.only = TRUE)) { install.packages("tidyverse")}
+if (!require("kableExtra", character.only = TRUE)) { install.packages("kableExtra")}
 if (!require("leaflet", character.only = TRUE)){ install.packages("leaflet")}
 ```
 
-```{r echo=TRUE}
+```{r echo=TRUE, message=FALSE, warning=FALSE}
 ## load libraries
 library(tidyverse)
+library(kableExtra)
 library(leaflet)
 ```
 
-# Data sheet
+## Data sheet
 
 ```{r}
 anemone_collection <- read_csv('anemone-collections.csv',
@@ -33,41 +45,33 @@ anemone_collection <- read_csv('anemone-collections.csv',
                                  date = col_date(format = "%m/%d/%Y"),
                                  timePST = col_time(format = "%H:%M"),
                                  site = col_character(),
-                                 rock = col_factor(),
+                                 aggregate = col_factor(),
                                  lat = col_double(),
                                  lon = col_double()
                                ))
 ```
 
 ```{r}
-head(anemone_collection)
-options(digits = 9)
-```
-
-```{r}
+anemone_collection %>%
+  kbl() %>%
+  kable_paper("hover", full_width = F)
 
 ```
 
-```{r}
-pdp <- leaflet() %>% # pdp stands for point defiance park 
-   addTiles() %>% 
-   setView( lng = -122.53, lat = 47.31, zoom = 14 ) %>% 
-   addProviderTiles("Esri.WorldImagery") #Esri World Imagery tiles
-pdp
-```
+## Collection map
 
 ```{r}
 
 # Prepare the text for the tooltip:
 mytext <- paste(
-   "Rock: ", anemone_collection$rock, "<br/>", 
+   "Aggregate: ", anemone_collection$aggregate, "<br/>", 
    "Date: ", anemone_collection$date) %>%
   lapply(htmltools::HTML)
 
 # Final Map
 pdp <- leaflet(anemone_collection) %>% 
   addTiles()  %>% 
-  setView( lng = -122.53, lat = 47.31, zoom = 14 ) %>% 
+  setView( lng = -122.539, lat = 47.318, zoom = 16 ) %>% 
   addProviderTiles("Esri.WorldImagery") %>% 
   addCircleMarkers(~lon, ~lat, 
     fillColor = "orange", fillOpacity = 0.7, color="white", radius=8, stroke=FALSE,
@@ -76,9 +80,66 @@ pdp <- leaflet(anemone_collection) %>%
   )
 
 pdp
-
-# save the widget in a html file if needed.
-# library(htmlwidgets)
-# saveWidget(m, file=paste0( getwd(), "/HtmlWidget/bubblemapQuakes.html"))
-
 ```
+
+## Aggregates (in detail)
+
+### 1
+
+::: {layout-ncol="2"}
+![](field-pics/1/PXL_20240319_011537349.jpg)
+
+<div>
+
+![A close-up of aggregate no. 1](field-pics/1/PXL_20240319_011533641.jpg)
+
+</div>
+:::
+
+------------------------------------------------------------------------
+
+### 2
+
+![Kip, Owen, & Chloe collect aggregate no. 2](field-pics/2/PXL_20240319_013050577.jpg)
+
+------------------------------------------------------------------------
+
+### 3
+
+::: {layout-ncols="2"}
+![Michael showing off aggregate no. 3](field-pics/3/PXL_20240319_013251605.jpg)
+
+![...no comment](field-pics/3/PXL_20240319_013248468.jpg)
+:::
+
+------------------------------------------------------------------------
+
+### 4
+
+![](field-pics/IMG_4098.jpg)
+
+\*need to find a better shot of aggregate no. 4...
+
+------------------------------------------------------------------------
+
+### 5
+
+::: {layout-ncols="2"}
+![This one is aggregate no. 5, because Kip is holding up 5 fingers](field-pics/5/PXL_20240319_015625041.jpg)
+
+![Kip, Owen & Chloe collecting from aggregate no. 5](field-pics/5/PXL_20240319_015630097.jpg)
+:::
+
+------------------------------------------------------------------------
+
+### 6
+
+::: {layout-ncols="2"}
+![Michael with aggregate no. 6](field-pics/6/PXL_20240319_015251255.jpg)
+
+![Aggregate no. 6 at sunset](field-pics/6/PXL_20240319_015734571.jpg)
+:::
+
+------------------------------------------------------------------------
+
+### 7

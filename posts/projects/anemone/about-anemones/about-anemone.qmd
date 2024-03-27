@@ -1,5 +1,6 @@
 ---
-title: "The aggregating anemone, Anthopleura elegantissima"
+title: "All about the aggregating anemone"
+subtitle: "What, where, who studies it, how, and why!"
 author: "Sarah Tanja"
 date: '05/02/2024'
 categories: [anemones]
@@ -15,13 +16,17 @@ link-external-newwindow: true
 bibliography: anemones.bib
 ---
 
-# *Anthopleura elegantissima*
-
-## Life history
+# *What are Anthopleura elegantissima?*
 
 Puget Sound Museum of Natural History article [here](https://www.pugetsound.edu/puget-sound-museum-natural-history/exhibits/marine-panel/aggregating-anemone)
 
 > "This anemone is an effective predator living in zooplankton-rich water, so one would not expect it to be as nutrient-limited, nor as dependent on algal photosynthetic productivity as its tropical symbiotic counterparts. It is also adapted to prolonged aerial exposure and greater temperature extremes; the animal feeds and its symbionts photosynthesize at temperatures approaching 5°C." - @mccloskey1996
+
+# Where are aggregating anemones found?
+
+# Who studies them?
+
+# How are they studied?
 
 ## Animal husbandry
 

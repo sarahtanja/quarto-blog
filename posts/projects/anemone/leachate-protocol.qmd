@@ -1,0 +1,93 @@
+---
+title: "Leachate preparation & dilution protocol"
+subtitle: "Modified from the lab protocol of Dr. Francesco Saliu and Valerio Isa"
+author: "Sarah Tanja"
+date: '03/26/2024'
+categories: [protocols]
+draft: false
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
+---
+
+In order to study the effects of `microplastic leachate` we have to be able to re-create it in a controlled and defined way. For this, I partnered with [Dr. Francesco Saliu](https://www.researchgate.net/profile/Francesco-Saliu) and his lab of environmental chemists at the [Universita degli studi di Milano-Bicocca](https://en.unimib.it/francesco-saliu) in Milan, Italy. Dr. Saliu has been actively using mass spectrometry and solid-phase micro-extraction to identify and characterize the chemical toxins and bioactive compounds associated with microplastic pollution.
+
+Dr. Saliu sent me 7 microplastic types that his lab used to create leachate that was later analyzed with mass spectrometry.
+
+
+So how do we use these microplastics to re-create the leachate solutions described above?
+
+First we need to gather materials & equipment:
+
+## Materials & equipment list 
+
+- Fume hood
+
+- Stir plate or [flocculator](https://www.velp.com/en-us/fc-s-series-flocculators-with-independent-positions.aspx) with rpm control 
+
+- American Standard for Testing and Materials (ASTM) D1141-98 salt for artificial seawater, sold by Lake Products Company, LLC (buy  [here](https://lakeproductscompanyshop.com/sea-salt-astm-d1141-98-20lb-pail/))
+
+- 1 500 mL erlenmeyer flask per leachate solution prep
+
+- 
+
+
+
+Then let's clean & prep our lab space:
+
+## Lab prep
+
+- Acid wash all glassware
+
+The leachate preparation protocol for each microplastic type is as follows:
+
+### Step 1. Make artificial seawater
+
+- Prepare artificial seawater according to [ASTM D1141-98 technical bulletin](https://drive.google.com/file/d/1QmkJYhUODVJLhCBcDb24XovCmirgV4Fc/view) (buy salt for artificial seawater [here](https://lakeproductscompanyshop.com/sea-salt-astm-d1141-98-20lb-pail/))
+
+- The ASTM D1141-98 `Sea-Salt mix` and resulting `Substitute Ocean Water solution` should have the following component breakdown:
+
+![](astm-seawater.png)
+
+- In a 1-liter erlenmeyer flask, dissolve 41.953 grams of ASTM D1141-98 `Sea-Salt` in deionized water with enough water added to make one-liter total solution
+
+- Stir to dissolve using any implement that isn't plastic or plastic/teflon coated (metal or glass stir-rods, or glass-coated magnetic stir-bars, etc.)
+
+> "After mixing, adjust pH to 8.2 using 0.1 N solution of sodium hydroxide or hydrochloric acid. The sea salt does include a small number of insoluble solids occurring naturally in some of the main components. This remaining residue can be strained or filtered out and disposed of without affecting the accuracy of the dissolved seawater mixture. Depending on the nature of the testing and the degree of accuracy needed we suggest mixing with Deionized (DI) or Distilled water. For a more highly accurate result we recommend using the ASTM Type II reagent grade deionized/distilled water."
+
+### Step 2. Mix seawater with microplastics (1 mg/mL in 250 mL)
+
+- Work under a ventilation fume hood so that microplastics are contained if there is a spill
+
+- Transfer 250 mL of artificial seawater to a 500 mL flask
+
+- Tare a foil weigh boat and measure out 250 mg of microplastic
+
+- Transfer 250 mg of microplastic to the 500 mL flask via foil weigh boat, and metal scoopula/funnel if necessary
+
+### Step 3. Let soak 
+
+- Setup stirring station under a hood where it can sit for 7 days (168 hours) in the dark at room temperature 
+
+- Set contents to stir at 90 rotations per minute (This can be achieved either in a [flocculator](https://www.velp.com/en-us/fc-s-series-flocculators-with-independent-positions.aspx) or a stir-plate with glass-coated stir rod, or other stirring mechanism with rpm control)
+
+- Cover lid of flask with parafilm or foil to prevent evaporation
+
+### Step 5. Filter
+
+> Estrazione Liquido-Liquido e Preparazione delle Vial
+>
+> Il contenuto delle beute, al termine del test di cessione, viene filtrato con un filtro di carta e inserito, mediante imbuto, all'interno di un imbuto separatore per l'estrazione liquido-liquido, dal volume di almeno 250 mL.
+>
+> Liquid-Liquid Extraction and Vial Preparation
+>
+> The contents of the flasks, at the end of the release test, are filtered with a filter paper and inserted, using a funnel, inside a separating funnel for extraction liquid-liquid, with a volume of at least 250 mL.
+
+- Filter the leachate solution through 35-45 μm pore size paper filter 
+
+- Store at 4°C for a maximum of 48h prior to use

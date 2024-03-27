@@ -5,11 +5,13 @@
       "/posts/projects/anemone.html",
       "/posts/projects/coral-pae-temp.html",
       "/posts/projects/anemone/about-anemones/about-anemone.html",
+      "/posts/projects/anemone/leachate-protocol.html",
       "/posts/projects/anemone/field-collection/field-collection.html",
       "/posts/daily-log/index.html",
       "/posts/projects/anemone/tanks/tanks.html",
       "/posts/projects/anemone/photosynth-pam/photosynth-pam.html",
       "/posts/rnoaa/index.html",
+      "/posts/projects/anemone/study-plan.docx",
       "/posts/projects/anemone/project-planning.html",
       "/posts/pseudoreplication/index.html",
       "/posts/quarto-blog-create/index.html",
@@ -33,9 +35,11 @@
     "listing": "/posts/projects/anemone.html",
     "items": [
       "/posts/projects/anemone/about-anemones/about-anemone.html",
+      "/posts/projects/anemone/leachate-protocol.html",
       "/posts/projects/anemone/field-collection/field-collection.html",
       "/posts/projects/anemone/tanks/tanks.html",
       "/posts/projects/anemone/photosynth-pam/photosynth-pam.html",
+      "/posts/projects/anemone/study-plan.docx",
       "/posts/projects/anemone/project-planning.html"
     ]
   },

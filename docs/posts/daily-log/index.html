@@ -252,7 +252,12 @@ div.csl-indent {
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#february-2024" id="toc-february-2024" class="nav-link active" data-scroll-target="#february-2024">February 2024</a>
+  <li><a href="#march-2024" id="toc-march-2024" class="nav-link active" data-scroll-target="#march-2024">March 2024</a>
+  <ul>
+  <li><a href="#mar-2024" id="toc-mar-2024" class="nav-link" data-scroll-target="#mar-2024">21-MAR-2024</a></li>
+  <li><a href="#mar-2024-1" id="toc-mar-2024-1" class="nav-link" data-scroll-target="#mar-2024-1">20-MAR-2024</a></li>
+  </ul></li>
+  <li><a href="#february-2024" id="toc-february-2024" class="nav-link" data-scroll-target="#february-2024">February 2024</a>
   <ul>
   <li><a href="#feb-2024" id="toc-feb-2024" class="nav-link" data-scroll-target="#feb-2024">22-FEB-2024</a></li>
   <li><a href="#feb-2024-1" id="toc-feb-2024-1" class="nav-link" data-scroll-target="#feb-2024-1">21-FEB-2024</a></li>
@@ -387,6 +392,47 @@ div.csl-indent {
 
 
 
+<section id="march-2024" class="level1">
+<h1>March 2024</h1>
+<section id="mar-2024" class="level4">
+<h4 class="anchored" data-anchor-id="mar-2024">21-MAR-2024</h4>
+<ul>
+<li><p>spent nearly all day drying an edge of each petri dish, and gluing bee-tags to them with superglue, then letting it dry by floating the petri dish on a floating rack in the seatable. Took all day..</p></li>
+<li><p>swapped anemones from upper seatable to lower, changed water in upper, and letting it come down to temp (when doing water changes, cannot do it directly, as header water is at room temp and seatables are at 10C…. How will I deal with this during the experiment when each anemone is in a 200mL jar and I’ll be doing water changes every other day</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 72 anemones each in 200mL volume... how much volume I will need to change every other day</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>ml <span class="ot">&lt;-</span> <span class="dv">72</span><span class="sc">*</span><span class="dv">200</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(ml)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 14400</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># how much of each treatment (seawater vs. leachate)</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>ml<span class="sc">/</span><span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 7200</code></pre>
+</div>
+</div>
+<p>The amount of microplastic may be our limiting factor for how long the exposure is.</p></li>
+</ul>
+<p>We have 3 grams of each microplastic type</p>
+<p>To make a batch of leachate according to the Saliu Lab protocol, we have 250 mg of microplastic.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 3 grams is 3000 mg, how many batches of leachate will each microplastic type make?</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="dv">3000</span><span class="sc">/</span><span class="dv">250</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 12</code></pre>
+</div>
+</div>
+<p>12 batches… that’s a lot, and should be plenty since it is a highly concentrated amount that will be diluted.</p>
+<p>How will it be diluted?</p>
+</section>
+<section id="mar-2024-1" class="level4">
+<h4 class="anchored" data-anchor-id="mar-2024-1">20-MAR-2024</h4>
+<ul>
+<li>cleaned anemones by picking rocks and debris from them, and squirting with chilled seawater from a lab squeezie bottle. Two were ‘escapees’, one was fully out of the petri dish! I popped it back in. The ones that are nudging around the edge/lip of the petri dish I use my finger to just push their pedal disc back inside the dish… not sure what I can use to deter them from escape that won’t expose them to more chemicals (i.e.&nbsp;tape ahdesive, etc.)</li>
+</ul>
+</section>
+</section>
 <section id="february-2024" class="level1 page-columns page-full">
 <h1>February 2024</h1>
 <section id="feb-2024" class="level4">
@@ -414,48 +460,92 @@ div.csl-indent {
 <li><p>There is algae growing in the PBB header/holding tank</p></li>
 <li><p>Met with Kip, Added Kip to WDFW scientific collection permit</p></li>
 <li><p>9 permit locations!</p></li>
-<li><p>Messed around with mapping the collection sites, from R Graph Gallery, https://r-graph-gallery.com/180-change-background-in-leaflet-map.html</p></li>
+<li><p>Messed around with mapping the collection sites, from R Graph Gallery, <a href="https://r-graph-gallery.com/180-change-background-in-leaflet-map.html" class="uri">https://r-graph-gallery.com/180-change-background-in-leaflet-map.html</a></p></li>
+<li><p>All map background by leaflet can be found here: <a href="https://leaflet-extras.github.io/leaflet-providers/preview/index.html" class="uri">https://leaflet-extras.github.io/leaflet-providers/preview/index.html</a></p></li>
 </ul>
 <p>Interactive Map with <code>leaflet</code></p>
-<div class="cell" data-hash="index_cache/html/unnamed-chunk-1_e1273c0b08b52608eb720317ddcc903a">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## set CRAN mirror</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">repos =</span> <span class="fu">c</span>(<span class="at">CRAN =</span> <span class="st">"https://cran.r-project.org/"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-3_e3f9acad94fd98ce3c02f61b906b274f">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="do">## set CRAN mirror</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">repos =</span> <span class="fu">c</span>(<span class="at">CRAN =</span> <span class="st">"https://cran.r-project.org/"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-hash="index_cache/html/unnamed-chunk-2_d526c3f902b4a91584ffc07aa8047cd0">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="do">## install packages</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">"tidyverse"</span>, <span class="at">character.only =</span> <span class="cn">TRUE</span>)) { <span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)}</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">"leaflet"</span>, <span class="at">character.only =</span> <span class="cn">TRUE</span>)){ <span class="fu">install.packages</span>(<span class="st">"leaflet"</span>)}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-4_06a0ac4919c33fd70febb1513c83d13f">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="do">## install packages</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">"tidyverse"</span>, <span class="at">character.only =</span> <span class="cn">TRUE</span>)) { <span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)}</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">"leaflet"</span>, <span class="at">character.only =</span> <span class="cn">TRUE</span>)){ <span class="fu">install.packages</span>(<span class="st">"leaflet"</span>)}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-hash="index_cache/html/unnamed-chunk-3_eb341bdeb5f21714024db96a85221e2c">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="do">## load libraries</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># background 1: greyscale</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>grey <span class="ot">&lt;-</span> <span class="fu">leaflet</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">setView</span>( <span class="at">lng =</span> <span class="sc">-</span><span class="fl">122.8</span>, <span class="at">lat =</span> <span class="fl">47.9</span>, <span class="at">zoom =</span> <span class="dv">8</span> ) <span class="sc">%&gt;%</span> </span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">addProviderTiles</span>(<span class="st">"Esri.WorldGrayCanvas"</span>)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>grey</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-30fccc70bfcd83eec2f6" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-30fccc70bfcd83eec2f6">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addProviderTiles","args":["Esri.WorldGrayCanvas",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]}],"setView":[[47.9,-122.8],8,[]]},"evals":[],"jsHooks":[]}</script>
-</div>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-5_df1e4fdef7415ac21e1061a506190c32">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="do">## load libraries</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># background 2: terrain</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>terrain <span class="ot">&lt;-</span> <span class="fu">leaflet</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">setView</span>( <span class="at">lng =</span> <span class="sc">-</span><span class="fl">122.8</span>, <span class="at">lat =</span> <span class="fl">47.9</span>, <span class="at">zoom =</span> <span class="dv">8</span> ) <span class="sc">%&gt;%</span> </span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">addProviderTiles</span>(<span class="st">"Esri.WorldTerrain"</span>)</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>terrain</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>grey <span class="ot">&lt;-</span> <span class="fu">leaflet</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">setView</span>( <span class="at">lng =</span> <span class="sc">-</span><span class="fl">122.8</span>, <span class="at">lat =</span> <span class="fl">47.9</span>, <span class="at">zoom =</span> <span class="dv">8</span> ) <span class="sc">%&gt;%</span> </span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">addProviderTiles</span>(<span class="st">"Esri.WorldGrayCanvas"</span>)</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>grey</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-58d3b59560d2a434af12" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-58d3b59560d2a434af12">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addProviderTiles","args":["Esri.WorldTerrain",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]}],"setView":[[47.9,-122.8],8,[]]},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-466bc69c246826319e5a" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-466bc69c246826319e5a">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addProviderTiles","args":["Esri.WorldGrayCanvas",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]}],"setView":[[47.9,-122.8],8,[]]},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>terrain <span class="ot">&lt;-</span> <span class="fu">leaflet</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">setView</span>( <span class="at">lng =</span> <span class="sc">-</span><span class="fl">122.8</span>, <span class="at">lat =</span> <span class="fl">47.9</span>, <span class="at">zoom =</span> <span class="dv">8</span> ) <span class="sc">%&gt;%</span> </span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">addProviderTiles</span>(<span class="st">"Esri.WorldTerrain"</span>)</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>terrain</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-cee42a1b3cd26b7a4032" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-cee42a1b3cd26b7a4032">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addProviderTiles","args":["Esri.WorldTerrain",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]}],"setView":[[47.9,-122.8],8,[]]},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>Stadia.AlidadeSmooth <span class="ot">&lt;-</span> <span class="fu">leaflet</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">setView</span>( <span class="at">lng =</span> <span class="sc">-</span><span class="fl">122.8</span>, <span class="at">lat =</span> <span class="fl">47.9</span>, <span class="at">zoom =</span> <span class="dv">8</span> ) <span class="sc">%&gt;%</span> </span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">addProviderTiles</span>(<span class="st">"Stadia.AlidadeSmooth"</span>)</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>Stadia.AlidadeSmooth</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-8eaf697cb08a10688806" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-8eaf697cb08a10688806">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addProviderTiles","args":["Stadia.AlidadeSmooth",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]}],"setView":[[47.9,-122.8],8,[]]},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>Stadia.OSMBright <span class="ot">&lt;-</span> <span class="fu">leaflet</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">setView</span>( <span class="at">lng =</span> <span class="sc">-</span><span class="fl">122.8</span>, <span class="at">lat =</span> <span class="fl">47.9</span>, <span class="at">zoom =</span> <span class="dv">8</span> ) <span class="sc">%&gt;%</span> </span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">addProviderTiles</span>(<span class="st">"Stadia.OSMBright"</span>)</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>Stadia.OSMBright</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-291deee5e724a6b16ac3" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-291deee5e724a6b16ac3">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addProviderTiles","args":["Stadia.OSMBright",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]}],"setView":[[47.9,-122.8],8,[]]},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>Jawg.Lagoon <span class="ot">&lt;-</span> <span class="fu">leaflet</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">setView</span>( <span class="at">lng =</span> <span class="sc">-</span><span class="fl">122.8</span>, <span class="at">lat =</span> <span class="fl">47.9</span>, <span class="at">zoom =</span> <span class="dv">8</span> ) <span class="sc">%&gt;%</span> </span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">addProviderTiles</span>(<span class="st">"Jawg.Lagoon"</span>)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>Jawg.Lagoon</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-980565eacbc7b60f0d40" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-980565eacbc7b60f0d40">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addProviderTiles","args":["Jawg.Lagoon",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]}],"setView":[[47.9,-122.8],8,[]]},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>Stadia.StamenWatercolor <span class="ot">&lt;-</span> <span class="fu">leaflet</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">setView</span>( <span class="at">lng =</span> <span class="sc">-</span><span class="fl">122.8</span>, <span class="at">lat =</span> <span class="fl">47.9</span>, <span class="at">zoom =</span> <span class="dv">8</span> ) <span class="sc">%&gt;%</span> </span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">addProviderTiles</span>(<span class="st">"Stadia.StamenWatercolor"</span>)</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>Stadia.StamenWatercolor</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-8f78210939e7ad08970c" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-8f78210939e7ad08970c">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addProviderTiles","args":["Stadia.StamenWatercolor",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]}],"setView":[[47.9,-122.8],8,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <ul>
+<li></li>
 <li><p>emailed Hannah at Seattle Aquarium about seawater pickup for Friday FEB 23 from 10-4</p></li>
 <li><p>reserved SAFS Truck for seawater pickup</p></li>
 </ul>
@@ -1045,52 +1135,52 @@ The abstract should have no more than 1600 characters max (including spaces); us
 <li>wrote <code>dilute</code> function to normalize RNA &amp; DNA in <a href="https://github.com/sarahtanja/coral-DNA-RNA-lab-extractions/blob/main/code/03-normalizing.qmd">coral-DNA-RNA-lab-extractions</a> GitHub repo:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>dilute <span class="ot">&lt;-</span> <span class="cf">function</span>(C1, C2) {</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Initialize variables</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  n <span class="ot">&lt;-</span> <span class="fu">length</span>(C1)</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  C1 <span class="ot">&lt;-</span> C1</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  V1 <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n)  <span class="co"># Initialize V1 vector</span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  V2 <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n)  <span class="co"># Initialize V2 vector</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Loop through rows</span></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_along</span>(C1)) {</span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Check for missing data</span></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (C1[i] <span class="sc">&lt;=</span> <span class="dv">0</span>) {</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>      <span class="fu">cat</span>(<span class="st">"Skipping row "</span>, i, <span class="st">": Invalid data</span><span class="sc">\n</span><span class="st">"</span>)</span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>      <span class="cf">next</span></span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Initialize V1 and V2 for the current row</span></span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>    V1_row <span class="ot">&lt;-</span> <span class="dv">1</span></span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    V2_row <span class="ot">&lt;-</span> (C1[i] <span class="sc">*</span> V1_row) <span class="sc">/</span> C2</span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Loop until conditions are satisfied</span></span>
-<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (<span class="sc">!</span><span class="fu">is.na</span>(V1_row) <span class="sc">&amp;&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(V2_row) <span class="sc">&amp;&amp;</span> (V1_row <span class="sc">&lt;</span> <span class="dv">1</span> <span class="sc">||</span> V2_row <span class="sc">&lt;</span> <span class="dv">50</span>)) {</span>
-<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>      V1_row <span class="ot">&lt;-</span> V1_row <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>      V2_row <span class="ot">&lt;-</span> (C1[i] <span class="sc">*</span> V1_row) <span class="sc">/</span> C2</span>
-<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>      </span>
-<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Break the loop if V1 exceeds a threshold value</span></span>
-<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span>(V1_row <span class="sc">&gt;</span> <span class="dv">49</span>) {</span>
-<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>        <span class="fu">cat</span>(<span class="st">"Skipping row "</span>, i, <span class="st">": No valid solution found</span><span class="sc">\n</span><span class="st">"</span>)</span>
-<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>        <span class="cf">next</span></span>
-<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>      }</span>
-<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Store optimized V1 and V2 values in the corresponding vectors</span></span>
-<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>    V1[i] <span class="ot">&lt;-</span> V1_row</span>
-<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>    V2[i] <span class="ot">&lt;-</span> V2_row</span>
-<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a data frame with C1 column</span></span>
-<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>  result <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">C1 =</span> C1)</span>
-<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a><span class="co"># Add V1 and V2 columns to the result data frame</span></span>
-<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>  result<span class="sc">$</span>V1 <span class="ot">&lt;-</span> V1</span>
-<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>  result<span class="sc">$</span>V2 <span class="ot">&lt;-</span> V2</span>
-<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a>  result<span class="sc">$</span>C2 <span class="ot">&lt;-</span> C1<span class="sc">*</span>V1<span class="sc">/</span>V2</span>
-<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(result)</span>
-<span id="cb8-46"><a href="#cb8-46" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>dilute <span class="ot">&lt;-</span> <span class="cf">function</span>(C1, C2) {</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Initialize variables</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  n <span class="ot">&lt;-</span> <span class="fu">length</span>(C1)</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  C1 <span class="ot">&lt;-</span> C1</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>  V1 <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n)  <span class="co"># Initialize V1 vector</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>  V2 <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n)  <span class="co"># Initialize V2 vector</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Loop through rows</span></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_along</span>(C1)) {</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Check for missing data</span></span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (C1[i] <span class="sc">&lt;=</span> <span class="dv">0</span>) {</span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>      <span class="fu">cat</span>(<span class="st">"Skipping row "</span>, i, <span class="st">": Invalid data</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>      <span class="cf">next</span></span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Initialize V1 and V2 for the current row</span></span>
+<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a>    V1_row <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb18-18"><a href="#cb18-18" aria-hidden="true" tabindex="-1"></a>    V2_row <span class="ot">&lt;-</span> (C1[i] <span class="sc">*</span> V1_row) <span class="sc">/</span> C2</span>
+<span id="cb18-19"><a href="#cb18-19" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb18-20"><a href="#cb18-20" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Loop until conditions are satisfied</span></span>
+<span id="cb18-21"><a href="#cb18-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (<span class="sc">!</span><span class="fu">is.na</span>(V1_row) <span class="sc">&amp;&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(V2_row) <span class="sc">&amp;&amp;</span> (V1_row <span class="sc">&lt;</span> <span class="dv">1</span> <span class="sc">||</span> V2_row <span class="sc">&lt;</span> <span class="dv">50</span>)) {</span>
+<span id="cb18-22"><a href="#cb18-22" aria-hidden="true" tabindex="-1"></a>      V1_row <span class="ot">&lt;-</span> V1_row <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb18-23"><a href="#cb18-23" aria-hidden="true" tabindex="-1"></a>      V2_row <span class="ot">&lt;-</span> (C1[i] <span class="sc">*</span> V1_row) <span class="sc">/</span> C2</span>
+<span id="cb18-24"><a href="#cb18-24" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb18-25"><a href="#cb18-25" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Break the loop if V1 exceeds a threshold value</span></span>
+<span id="cb18-26"><a href="#cb18-26" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span>(V1_row <span class="sc">&gt;</span> <span class="dv">49</span>) {</span>
+<span id="cb18-27"><a href="#cb18-27" aria-hidden="true" tabindex="-1"></a>        <span class="fu">cat</span>(<span class="st">"Skipping row "</span>, i, <span class="st">": No valid solution found</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb18-28"><a href="#cb18-28" aria-hidden="true" tabindex="-1"></a>        <span class="cf">next</span></span>
+<span id="cb18-29"><a href="#cb18-29" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb18-30"><a href="#cb18-30" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb18-31"><a href="#cb18-31" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb18-32"><a href="#cb18-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Store optimized V1 and V2 values in the corresponding vectors</span></span>
+<span id="cb18-33"><a href="#cb18-33" aria-hidden="true" tabindex="-1"></a>    V1[i] <span class="ot">&lt;-</span> V1_row</span>
+<span id="cb18-34"><a href="#cb18-34" aria-hidden="true" tabindex="-1"></a>    V2[i] <span class="ot">&lt;-</span> V2_row</span>
+<span id="cb18-35"><a href="#cb18-35" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb18-36"><a href="#cb18-36" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-37"><a href="#cb18-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a data frame with C1 column</span></span>
+<span id="cb18-38"><a href="#cb18-38" aria-hidden="true" tabindex="-1"></a>  result <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">C1 =</span> C1)</span>
+<span id="cb18-39"><a href="#cb18-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-40"><a href="#cb18-40" aria-hidden="true" tabindex="-1"></a><span class="co"># Add V1 and V2 columns to the result data frame</span></span>
+<span id="cb18-41"><a href="#cb18-41" aria-hidden="true" tabindex="-1"></a>  result<span class="sc">$</span>V1 <span class="ot">&lt;-</span> V1</span>
+<span id="cb18-42"><a href="#cb18-42" aria-hidden="true" tabindex="-1"></a>  result<span class="sc">$</span>V2 <span class="ot">&lt;-</span> V2</span>
+<span id="cb18-43"><a href="#cb18-43" aria-hidden="true" tabindex="-1"></a>  result<span class="sc">$</span>C2 <span class="ot">&lt;-</span> C1<span class="sc">*</span>V1<span class="sc">/</span>V2</span>
+<span id="cb18-44"><a href="#cb18-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-45"><a href="#cb18-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(result)</span>
+<span id="cb18-46"><a href="#cb18-46" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>SAFS Spring Picnic!</li>

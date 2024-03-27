@@ -14,6 +14,42 @@ bibliography: references.bib
 image: log.png
 ---
 
+# March 2024
+
+#### 21-MAR-2024
+
+-   spent nearly all day drying an edge of each petri dish, and gluing bee-tags to them with superglue, then letting it dry by floating the petri dish on a floating rack in the seatable. Took all day..
+
+-   swapped anemones from upper seatable to lower, changed water in upper, and letting it come down to temp (when doing water changes, cannot do it directly, as header water is at room temp and seatables are at 10C.... How will I deal with this during the experiment when each anemone is in a 200mL jar and I'll be doing water changes every other day
+
+    ```{r}
+    # 72 anemones each in 200mL volume... how much volume I will need to change every other day
+    ml <- 72*200
+    print(ml)
+
+    # how much of each treatment (seawater vs. leachate)
+    ml/2
+    ```
+
+    The amount of microplastic may be our limiting factor for how long the exposure is.
+
+We have 3 grams of each microplastic type
+
+To make a batch of leachate according to the Saliu Lab protocol, we have 250 mg of microplastic.
+
+```{r}
+# 3 grams is 3000 mg, how many batches of leachate will each microplastic type make?
+3000/250
+```
+
+12 batches... that's a lot, and should be plenty since it is a highly concentrated amount that will be diluted.
+
+How will it be diluted?
+
+#### 20-MAR-2024
+
+-   cleaned anemones by picking rocks and debris from them, and squirting with chilled seawater from a lab squeezie bottle. Two were 'escapees', one was fully out of the petri dish! I popped it back in. The ones that are nudging around the edge/lip of the petri dish I use my finger to just push their pedal disc back inside the dish... not sure what I can use to deter them from escape that won't expose them to more chemicals (i.e. tape ahdesive, etc.)
+
 # February 2024
 
 #### 22-FEB-2024

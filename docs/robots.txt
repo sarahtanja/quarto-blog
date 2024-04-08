@@ -1,1 +1,0 @@
-Sitemap: https://sarahtanja.github.io/quarto-blog/sitemap.xml

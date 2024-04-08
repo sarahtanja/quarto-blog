@@ -28,6 +28,8 @@ Dr. Saliu sent me 8 microplastic types that his lab used to create leachate that
 7.  PTSO, recycled, aged
 8.  PTSO, recycled, virgin
 
+Each microplastic leachate type has a unique thumbprint or 'signature' of chemical makeup created via the leaching process and UV photodegradation. The microplastic type I am most keen to study is PVC. ag
+
 So how do we use these microplastics to re-create the leachate solutions described above?
 
 First we need to gather materials & equipment:

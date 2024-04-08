@@ -16,6 +16,23 @@ image: log.png
 
 # March 2024
 
+#### 28-MAR-2024
+
+-   met with Kip and made calendar of assignments due
+
+-   changed out filters on seawater filter rack in PBB
+
+    > To measure impacts of microplastic exposure on anemone size, oral disk diameters were calculated using the average of two perpendicular measurements across the oral surface intersecting at the mouth. Measurements were made using Image J software (Rasband 19972018) with digital photographs of each anemone .... - Beck, 2022 WWU Dissertation
+
+-   How do we get scaled images of the oral disc?
+
+```{=html}
+<!-- -->
+```
+-   downloaded AmScope software for MU503B that is attached to the dissecting scope in PBB: <https://amscope.com/pages/software-downloads>
+
+-   downloaded AmScope manual: <https://storage.googleapis.com/software-download-d79bb.appspot.com/Manual%20Download%20Files/Manual%20Files/Cameras/MU_MD_Series_Camera_Software_Manual.pdf>
+
 #### 21-MAR-2024
 
 -   spent nearly all day drying an edge of each petri dish, and gluing bee-tags to them with superglue, then letting it dry by floating the petri dish on a floating rack in the seatable. Took all day..

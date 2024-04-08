@@ -13,16 +13,28 @@ reference-location: margin
 citation-location: margin
 link-external-icon: true
 link-external-newwindow: true
-bibliography: anemones.bib
+bibliography: ../anemone-leachate-heat.bib
 ---
 
 # *What are Anthopleura elegantissima?*
 
+[![This original description of what is now called Anthopleura elegantissima, but was originally 'Actinia elegantissima' was made by Johann-Friedrich Brandt in 1835. This description was published in latin, in a book titled 'Prodromus descriptionis animalium ab H. Mertensio observatorum : fascic. I. Polypos, Acalephas Discophoras et Siphonophoras, nec non Echinodermata continens' in St. Petersburg, Russia ](brandt1835.png)](https://www.biodiversitylibrary.org/page/10765502)
+
+World Register of Marine Species (WORMS) taxonomy details [here](https://www.marinespecies.org/aphia.php?p=taxdetails&id=283347)
+
 Puget Sound Museum of Natural History article [here](https://www.pugetsound.edu/puget-sound-museum-natural-history/exhibits/marine-panel/aggregating-anemone)
+
+Parasitized by ectoparasitic copepods [*Doridicola confinis* (Humes, 1982](https://www.marinespecies.org/aphia.php?p=taxdetails&id=358339#attributes) and [*Hamaticyclops ahni* (Kim I.H., 2015)](https://www.marinespecies.org/aphia.php?p=taxdetails&id=868985#attributes)
 
 > "This anemone is an effective predator living in zooplankton-rich water, so one would not expect it to be as nutrient-limited, nor as dependent on algal photosynthetic productivity as its tropical symbiotic counterparts. It is also adapted to prolonged aerial exposure and greater temperature extremes; the animal feeds and its symbionts photosynthesize at temperatures approaching 5°C." - @mccloskey1996
 
 # Where are aggregating anemones found?
+
+From Baja California to Southeast Alaska all along the Eastern Pacific Coast.
+
+[![Anthopleura elegantissima distribution from the WORMS database](WORMS_distribution.png)](https://www.marinespecies.org/aphia.php?p=taxdetails&id=283347#distributions)
+
+More specifically... in the rocky intertidal
 
 # Who studies them?
 
@@ -33,6 +45,20 @@ Puget Sound Museum of Natural History article [here](https://www.pugetsound.edu/
 In the paper by @mccloskey1996 the anemone's were fed every other day with \~30mg of freshly hatched *Artemia nauplii* and maintained for 22 days with a single anemone each in its own 100mL jar, with seawater replaced every other day at 14°C ±2°C.
 
 In the study by @dimond2017, anemones were housed in 200mL glass beakers in a seawater flow-through tank as a bath, with the water level just below the top of the beakers.
+
+### Irradiance of B. muscatinei hosting Anemones
+
+McFarland & Muller-Parker 1993 report greater photosynthetic productivity in the brown dinoflagellate (\*B. muscatinei\*) compared to the green chlorophyte, especially at higher irradiances. *B. muscatinei*
+
+For anemones hosting *B. muscatinei* :
+
+> -   Maximum midday irradiance usually exceeded $2,000 mu/ mol m^{-2} s^{-1}$ , where no photoinhibition was observed (Verde & McCloskey 1996)
+>
+> -   Under experimental manipulations in the laboratory, ZX photosynthetic rates were suppressed at 2,000 lmolÆm--2Æs--1, indicative of photoinhibition (see below). Photoinhibitory phenomena are often associated with damage to the photosynthetic apparatus. If so, the ZX would likely devote more energy and resources to damage control and repair; subsequently less energy and photosynthetic products would be available to support continued algal growth. Since ZX also displayed photoinhibition at 1,400 lmolÆm--2Æs--1, yet did not show a reduction in MI, the onset of the deleterious effects of damage repair would seem to occur at intensities above 1,400 lmolÆm--2Æ s--1. In contrast, anemone metabolic rates were elevated at 2,000 lmolÆm--2Æs--1; it may simply be that the host requires more energy and organic resources to meet its elevated respiratory demands, and the ZX symbiont provides both at the expense of its own growth @e.2002.
+>
+> -   Not light saturated up to $550 mu/ mol m^{-2} s^{-1}$ (Verde & McCloskey 1996)
+>
+> -   *B. muscatinei* peaked at \$800 mu/ mol m\^{-2} s\^{-1}\$ @e.2002 .
 
 ## Symbiosis
 

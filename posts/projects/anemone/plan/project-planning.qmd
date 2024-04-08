@@ -12,31 +12,56 @@ reference-location: margin
 citation-location: margin
 link-external-icon: true
 link-external-newwindow: true
+bibliography: ../anemone-leachate-heat.bib
 ---
 
 ## Conceptual planning
 
 ### Problem
 
--   Marine microplastics are just one of a long list of anthropogenic sources of pollution
+-   Marine microplastics are an emerging pollutant of concern that have only been widely 'in play' for the last 80 years
 
 -   They're more complicated than you might think, they are full of chemicals that are not covalently bound to them, and the chemicals leach out, we call this leachate
 
--   We don't know if/how microplastic leachate affects Cnidarians
-
--   We don't know if/how microplastic leachate affects Cnidarians in the context of a marine heatwave
+-   Very little is known about the impacts of this type of pollution because it's hard to study (plastics are everywhere!), and as stated previously, it's only been around for the last 80 years coinciding with increased plastic production and integration into consumer products
 
 ### Here's what we do know
 
-### Question(s)
+-   ***A. elegantissima*** **is very tolerant to a broad range of thermal exposures.** As an intertidal organism, *A. elegantissima* regularly experience large temperature shifts throughout the day coinciding with desiccation at low tide. They are found from Baja, California to Southeast Alaska, and in anemones hosting the brown alga *Breviolum muscatinei*, temperatures from 6^o^C to 24^o^C do not significantly affect their algal density, mitotic index, or total chlorophyll (a + c), but net photosynthesis and anemone respiration both increase with temperature [@Verde.2002].
 
--   Does chronic microplastic-associated leachate pollution reduce Cnidarians' resilience to marine heatwaves?
+-   ***A. elegantissima*** **gains symbionts through horizontal transmission** [@lajeunesse2000a]**. (Trench 1987)**
 
--   How do the combined stressors of marine microplastic leachate and thermal stress affect the physiology of the temperate coastal anemone *Anthopleura elegantissima*?
+### What we don't know
 
--   Does exposure to microplastic-associated leachate pollution disrupt the beneficial function of the Cnidarian microbiome community?
+-   We don't know if/how microplastic leachate affects Cnidarians
 
--   Is microbial community function disrupted more under added thermal stress?
+-   We don't know if/how microplastic leachate affects Cnidarians in the context of multiple stressors (i.e. a marine heatwave = thermal stress)
+
+-   We don't know if/how marine microplastic leachate affects the symbiotic relationship between Cnidarian hosts and their algal symbionts
+
+> Why do we care about filling in this knowledge gap? Why *should* we fuck around and find out?
+
+### Questions
+
+#### Overarching
+
+-   How do the combined stressors of [marine microplastic leachate]{.underline} and [thermal stress]{.underline} affect the physiology of the temperate coastal anemone *Anthopleura elegantissima*?
+
+-   Does [marine microplastic leachate]{.underline} reduce Cnidarians' capacity for resilience to [thermal stress]{.underline}?
+
+#### Microbiome
+
+-   Does exposure to **marine microplastic leachate** disrupt the function of the *A. elegantissima* microbiome community?
+
+-   Does exposure to **thermal stress** disrupt the function of the *A. elegantissima* microbiome community?
+
+-   Is exposure to the combined stressors of **marine microplastic leachate** and **thermal stress**
+
+#### Differential Gene Expression
+
+#### Respiration
+
+#### Photosynthesis
 
 ### Hypotheses
 

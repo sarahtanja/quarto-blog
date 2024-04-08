@@ -60,17 +60,28 @@ Lights will attempt to connect to Wi-Fi Network.... needed for firmware updates.
 
 ### Kessil lights
 
-Download the [Kessil App](https://kessil.com/products/app_wifi.php) [A360X Tuna Blue](https://kessil.com/products/saltwater_A360X.php) [WiFi Dongle](https://kessil.com/products/accessories_WifiDongle.php)
+Download the [Kessil App](https://kessil.com/products/app_wifi.php)
+
+We are using these two Kessil Products together:
+
+-   [A360X Tuna Blue](https://kessil.com/products/saltwater_A360X.php) / [manual](https://kessil.com/downloads/A360X/5870131_A5_User%20Manual%20for%20A360X_OL.pdf)
+-   [WiFi Dongle](https://kessil.com/products/accessories_WifiDongle.php) / [manual](https://kessil.com/downloads/accessories/5870137%20A2%20User%20Manual%20for%20Kessil%20WiFi%20Dongle.pdf)
 
 [Kessil WiFi app control user manual](https://kessil.com/downloads/accessories/kessilwifi_UserManual/wifi_user_manual.html)
 
-Connect all 4 lights to each other in a daisy-chain using the `k-link` usb-c cords. There will be one light with an open k-link port. Plug a Kessil WiFi Dongle into the open k-link port.
+[Kessil IOTA user guide](https://www.neptunesystems.com/downloads/docs/IoTa-Kessil_A360X_and_AP9X_User_Guide.pdf)
 
-The WiFi dongle will blink purple. In the Kessil App, select to connect `Through Wireless Router` where `Device can connect to internet & control AP9X/Dongle at the same time`and check the box that says `Apex Fusion control ONLY`.
+Connected 8 lights to each other in a daisy-chain using the `k-link` usb-c cords. There will be two lights with an open k-link port (at the beginning and end of the 'chain'). Plug a Kessil WiFi Dongle into one of the open k-link ports.
 
-The purple blinking light switched straight to green in this case, because it had been previously connected to the neptune Apex network.
+The WiFi dongle will blink purple. In the Kessil App, select to connect `Through Wireless Router` where `Device can connect to internet & control AP9X/Dongle at the same time` and **don't** check the box that says `Apex Fusion control ONLY`. Here, we want to use the Kessil app to control the lights (not Apex!). The Kessil app has much more control than Apex. Apex can only turn the outlet on or off, the Kessil app allows you to set the color and intensity of the light without having to fiddle with the potentiometers.
 
-Sign-in to Apex Fusion account, you'll notice you can control the on&off cycle of the lights through Apex!
+The purple blinking light may switch straight to green in this case, because the lights had been previously connected to the network in an earlier setup by Miranda Roethler.
+
+Open the app and select `Quick Reload`
+
+## Apex
+
+Sign-in to Apex Fusion account.
 
 The seatables are controlled by Apex controller `Rack6-Trays-1-2`
 
@@ -87,6 +98,8 @@ This controls 'on' and 'off'. It doesn't control the intensity or color, which h
 ![Seatable neptune light outlet settings 12hrs 'on' from 0600 PST to 1800 PST](TRY2_LT1.png){fig-align="center"}
 
 Because they're all linked with the k-links, when you adjust the light color or intensity it is mimicked with the other three. This way we can control that they go on and off in Neptune, and when they are on, they're all at the same intensity and color (so long as nobody touches the potentiometers!)
+
+What happens if you accidently touch the 'other' potentiometers? I'm asking because I did this, and now they are no longer linked to the 'main' potentiometer on the WiFi Dongle light...
 
 Let's measure the light level with the apogee light meter, apogee instruments Model MQ-510 serial \# 2116.
 

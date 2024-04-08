@@ -154,7 +154,7 @@ pdp
 
 ### 8
 
-::: {layout-ncol='2'}
+::: {layout-ncol="2"}
 ![Aggregate no. 8 was actually the last one collected, and was found higher than the rest, but below a cave-like undercut of a boulder](field-pics/8/PXL_20240319_023825413.jpg)
 
 ![Don't forget to look under the rocks too](field-pics/8/PXL_20240319_023843094.jpg)

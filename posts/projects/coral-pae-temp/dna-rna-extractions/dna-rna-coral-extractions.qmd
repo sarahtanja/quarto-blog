@@ -1,5 +1,5 @@
 ---
-title: "Dual DNA & RNA Extractions"
+title: "Dual DNA & RNA Extractions for Montipora capitata coral"
 author: "Sarah Tanja"
 date: '04/25/2023'
 categories: [lab records]

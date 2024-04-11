@@ -39,7 +39,7 @@ bibliography: ../anemone-leachate-heat.bib
 
 -   We don't know if/how marine microplastic leachate affects the symbiotic relationship between Cnidarian hosts and their algal symbionts
 
-> Why do we care about filling in this knowledge gap? Why *should* we fuck around and find out?
+> Why do we care about filling in this knowledge gap?
 
 ### Questions
 
@@ -85,12 +85,11 @@ bibliography: ../anemone-leachate-heat.bib
 
 ## Timeline
 
-#### Schedule detail:
-
 -   05-JAN-2024: submitted scientific collection permit
 -   26-FEB-2024: received scientific collection permit
 -   06-MAR-2024: SST & KH scouted collection site at Point Defiance
 -   08-MAR-2024: Seattle Aquarium seawater pickup
+-   10-APR-2024: Seattle Aquarium seawater pickup
 
 ## Equipment
 

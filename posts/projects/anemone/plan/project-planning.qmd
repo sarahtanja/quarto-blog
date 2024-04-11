@@ -17,19 +17,23 @@ bibliography: ../anemone-leachate-heat.bib
 
 ## Conceptual planning
 
-### Problem
+### Objective
+
+The objective of this study is to examine the combined effects of thermal stress and marine microplastic leachate on photosynthetic efficiency, microbiome community, and gene expression in the aggregating sea anemone *Anthopleura elegantissima* and the algal symbiont *Breviolum muscatinei*. In essence, this study is both a global change study examining impacts of thermal stress on marine intertidal invertebrates, and an ecotoxicological study that assesses impacts of marine microplastic leachate associated with marine plastic pollution on a cnidarian host and an algal symbiont. We've chosen *Anthopleura elegantissima* as our study species because it is a clonal cnidarian that can form symbiotic relationships, can be collected and studied locally in the Pacific Northwest, and has an annotated genome. *Anthopleura elegantissima* can form symbioses with either the chlorophyte *Elliptochloris marina* [@letsch2009] or the dinoflagellate *Breviolum muscatinei* [@lajeunesse2000]. In this study, we will only be working with the 'golden brown' anemones that are associated with the dinoflagellate *Breviolum muscatinei* in order to reduce variation in our response variables due to symbiont type. The golden brown anemones are also much easier to find and collect, as they are found in the mid to upper intertidal.
+
+### Problems
 
 -   Marine microplastics are an emerging pollutant of concern that have only been widely 'in play' for the last 80 years
 
--   They're more complicated than you might think, they are full of chemicals that are not covalently bound to them, and the chemicals leach out, we call this leachate
+-   Plastics in landfills, polyester microfibers from washing machine sewage, and non-source point plastic pollution caught in road runoff all have chemical additives and chemical degredation derivatives that leach out of them forming a cocktail of chemicals and compounds termed 'leachate' that pollutes the environment
 
--   Very little is known about the impacts of this type of pollution because it's hard to study (plastics are everywhere!), and as stated previously, it's only been around for the last 80 years coinciding with increased plastic production and integration into consumer products
+-   Urban coastal and intertidal environments are important habitats that support healthy oceans, healthy recreation, and healthy food security for the nation. The near coastal environment adjacent to urban centers may be one of the most exposed to marine microplastic leachate pollution
+
+-   Yet, very little is known about the impacts of this type of pollution because it's hard to study (plastics are everywhere!), and as stated previously, it's only been around for the last 80 years coinciding with increased plastic production and integration into consumer products
 
 ### Here's what we do know
 
--   ***A. elegantissima*** **is very tolerant to a broad range of thermal exposures.** As an intertidal organism, *A. elegantissima* regularly experience large temperature shifts throughout the day coinciding with desiccation at low tide. They are found from Baja, California to Southeast Alaska, and in anemones hosting the brown alga *Breviolum muscatinei*, temperatures from 6^o^C to 24^o^C do not significantly affect their algal density, mitotic index, or total chlorophyll (a + c), but net photosynthesis and anemone respiration both increase with temperature [@Verde.2002].
-
--   ***A. elegantissima*** **gains symbionts through horizontal transmission** [@lajeunesse2000a]**. (Trench 1987)**
+-   
 
 ### What we don't know
 
@@ -51,7 +55,7 @@ bibliography: ../anemone-leachate-heat.bib
 
 #### Microbiome
 
--   Does exposure to **marine microplastic leachate** disrupt the function of the *A. elegantissima* microbiome community?
+-   Does exposure to marine microplastic leachate disrupt the function of the *A. elegantissima* microbiome community?
 
 -   Does exposure to **thermal stress** disrupt the function of the *A. elegantissima* microbiome community?
 
@@ -75,13 +79,11 @@ bibliography: ../anemone-leachate-heat.bib
 
 -   The microbial community changes differently when exposed to microplastic stress as compared to thermal stress
 
-### Statistical analysis
-
-### Sample size
-
 ### Experimental design
 
-Phase 1. Response Curve
+[Equipment list](https://docs.google.com/spreadsheets/d/1U19bLRIR1PCuXxlcr5v33zAbFec1UUnc5c6CQ14r1qU/edit?usp=sharing)
+
+#### Phase 1. Response Curve
 
 Specimen collection
 
@@ -91,7 +93,7 @@ Acclimation
 
 Treatment preparation
 
-Phase 2. Multiple Stressor
+#### Phase 2. Multiple Stressor
 
 ## Timeline log
 
@@ -105,33 +107,11 @@ Phase 2. Multiple Stressor
 -   09-APR-2024: ASTM seasalt delivery received, pH & DO probes calibrated
 -   10-APR-2024: Seattle Aquarium seawater pickup
 
-## Equipment
-
-| item                          | purpose     | location             | status  |
-|-------------------------------|-------------|----------------------|---------|
-| 2 seatables                   | water baths | portage bay building | working |
-| 8 kessil 360 tuna blue lights |             |                      |         |
-|                               |             |                      |         |
-
-## Budget
-
-| item                               | quantity | cost | source |
-|------------------------------------|----------|------|--------|
-| 0.5 pint Kerr Wide Mouth Mason Jar | 60       |      |        |
-|                                    |          |      |        |
-|                                    |          |      |        |
-
 ## Permits
 
 Washington Department of Fish & Wildlife scientific collection permit (Tanja 24-010) was submitted on 05-JAN-2024 and the \$117 processing fee was paid from the lab's purchase card over the phone on 08-JAN-2024. WDFW scientific collection permits can take up to 3 months to be approved. The final permit was approved on 26-FEB-2024. The permit allows for 40 lethal-take and 40 non-lethal take anemones to be collected at each of the following sites: - Keystone Jetty, Island County - Pocket Beach, King County - Skyline Wall, Skagit County - Deadman Bay, San Juan County - Sunrise Beach Park, Pierce County - Chuckanut Bay, Whatcom County - Cone Island, Skagit County - Point Defiance Park, Pierce County - Constellation Park, King County
 
 ## Data & Code Organization
-
-## Study Plan
-
-### Objective
-
-The objective of this study is to examine the combined effects of thermal stress and plastic leachate on photosynthetic efficiency, microbiome community, and gene expression in the aggregating sea anemone *Anthopleura elegantissima*. In essence, this study is both a global change study examining impacts of thermal stress on marine intertidal invertebrates, and an ecotoxicological study that assesses impacts of chemical leachate associated with marine plastic pollution on a cnidarian host and an algal symbiont. We've chosen *Anthopleura elegantissima* as our study species because it is a clonal cnidarian that can form symbiotic relationships, can be collected and studied locally in the Pacific Northwest, and has an annotated genome. *Anthopleura elegantissima* can form symbioses with either the chlorophyte *Elliptochloris marina* [@letsch2009] or the dinoflagellate *Breviolum muscatinei* [@lajeunesse2000]. In this study, we will preferentially select 'golden brown morphs' that are associated with the dinoflagellate *Breviolum muscatinei* in order to reduce variation due to symbiont type, and to assess a symbiont genus commonly found in tropical reef building corals.
 
 ### Hypotheses
 
@@ -170,5 +150,3 @@ Flash frozen samples will be processed using the commercial Zymo Dual DNA/RNA Mi
 ### Merit
 
 This shotgun of stress response variables will serve to offer a holistic view of cnidarian host and algal symbiont physiological response to temperature and plastic pollution leachate stress. It is well known that ocean heat waves are becoming more frequent and intense. Simultaneously, marine plastic pollution is becoming more prevalent and the chemical additives associated with plastic have become ubiquitous in our environments. As plastics weather mechanically, they also weather chemically by leaching additives not covalently bonded to the plastic polymer resins [@hahladakis2018]. The most common plastic additives are a group of chemicals called plasticizers, also known as phthalates or phthlate acid esters (PAE). They are commonly added to PVC to increase flexibility and durability. However, phthlatates are known to mimic or interfere with hormones that control developmental, reproductive, and immune response in both humans and animals [@maqboolReviewEndocrineDisorders2016]. Previous research shows that plastic leachates experimentally added to plants, bacteria, and algae impair growth, reduce photosynthesis, and shift microbial communities in lab studies [@capolupo2020; @obrien2022; @tetu2019]. However, little is known about environmental concentrations of plastic leachate in the context of increasing ocean temperatures. Marine heatwaves, plastic manufacturing, and pollution are predicted to increase [@macleodGlobalThreatPlastic2021; @oliverMarineHeatwaves2021]. Therefore, it is urgent that we understand how thermal stress and plastic pollution interact and the effects they may have on coastal marine organisms, which are likely experiencing both the most extreme thermal stress and the highest amount of plastic pollution.
-
-### References

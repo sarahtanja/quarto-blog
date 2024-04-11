@@ -81,23 +81,37 @@ bibliography: ../anemone-leachate-heat.bib
 
 ### Experimental design
 
-### Controlling batch effects or confounding variables
+Phase 1. Response Curve
 
-## Timeline
+Specimen collection
+
+*Anthopleura elegantissima* will be collected from 12 distinct aggregates at Owens Beach, Point Defiance, Tacoma. From each distinct aggregate, we will collect 7 anemones
+
+Acclimation
+
+Treatment preparation
+
+Phase 2. Multiple Stressor
+
+## Timeline log
 
 -   05-JAN-2024: submitted scientific collection permit
 -   26-FEB-2024: received scientific collection permit
--   06-MAR-2024: SST & KH scouted collection site at Point Defiance
+-   06-MAR-2024: SST & KH scouted collection site at Owens Beach, Point Defiance
 -   08-MAR-2024: Seattle Aquarium seawater pickup
+-   18-MAR-2024: [Field collection at Owens Beach, Point Defiance](https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/field-collection/field-collection.html)
+-   28-MAR-2024: Seawater filter rig & UV sterilizer bulbs replaced
+-   30-MAR-2024: Field collection at Constellation Park, Alki
+-   09-APR-2024: ASTM seasalt delivery received, pH & DO probes calibrated
 -   10-APR-2024: Seattle Aquarium seawater pickup
 
 ## Equipment
 
-| item        | purpose     | location             | status  |
-|-------------|-------------|----------------------|---------|
-| 2 seatables | water baths | portage bay building | working |
-|             |             |                      |         |
-|             |             |                      |         |
+| item                          | purpose     | location             | status  |
+|-------------------------------|-------------|----------------------|---------|
+| 2 seatables                   | water baths | portage bay building | working |
+| 8 kessil 360 tuna blue lights |             |                      |         |
+|                               |             |                      |         |
 
 ## Budget
 

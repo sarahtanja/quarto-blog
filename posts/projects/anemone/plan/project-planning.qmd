@@ -37,47 +37,80 @@ The objective of this study is to examine the combined effects of thermal stress
 
 ### What we don't know
 
--   We don't know if/how microplastic leachate affects Cnidarians
+-   We don't know if/how marine microplastic leachate affects Cnidarians
 
--   We don't know if/how microplastic leachate affects Cnidarians in the context of multiple stressors (i.e. a marine heatwave = thermal stress)
+-   We don't know if/how marine microplastic leachate affects Cnidarians in the context of multiple stressors (i.e. a marine heatwave = thermal stress)
 
 -   We don't know if/how marine microplastic leachate affects the symbiotic relationship between Cnidarian hosts and their algal symbionts
 
 > Why do we care about filling in this knowledge gap?
 
-### Questions
+### Questions & Hypotheses
 
 #### Overarching
 
--   How do the combined stressors of [marine microplastic leachate]{.underline} and [thermal stress]{.underline} affect the physiology of the temperate coastal anemone *Anthopleura elegantissima*?
+::: {.callout-warning icon="false"}
+## Questions
 
--   Does [marine microplastic leachate]{.underline} reduce Cnidarians' capacity for resilience to [thermal stress]{.underline}?
+-   How do the combined stressors of marine microplastic leachate and thermal stress affect the physiology of the temperate coastal anemone *Anthopleura elegantissima*?
+-   Does marine microplastic leachate reduce Cnidarians' capacity for resilience to thermal stress?
+:::
+
+::: {.callout-tip icon="false"}
+## Hypotheses
+- Thermal stress alone will have no significant impact on anemone respiration
+- We expect that net photosynthesis will i 
+:::
 
 #### Microbiome
 
+::: {.callout-warning icon="false"}
+## Questions
+
 -   Does exposure to marine microplastic leachate disrupt the function of the *A. elegantissima* microbiome community?
+-   Does exposure to thermal stress disrupt the function of the *A. elegantissima* microbiome community?
+-   Is the microbial community composition and functional response to the combined stressors of marine microplastic leachate and thermal stress additive?
+:::
 
--   Does exposure to **thermal stress** disrupt the function of the *A. elegantissima* microbiome community?
+::: {.callout-tip icon="false"}
+## Hypotheses
 
--   Is exposure to the combined stressors of **marine microplastic leachate** and **thermal stress**
+-   Microbial community composition and function play a critical role in the stress response of Cnidarians
+-   Marine microplastic leachate exposure changes the microbial community
+-   Marine microplastic leachate exposure changes the microbial community in such a way that Cnidarians are more susceptible to thermal stress
+-   Marine microplastic leachate and thermal stress act synergistically to disrupt Cnidarian microbial communities
+-   The microbial community changes differently when exposed to microplastic stress as compared to thermal stress
+:::
 
 #### Differential Gene Expression
 
+::: {.callout-warning icon="false"}
+## Questions
+:::
+
+::: {.callout-tip icon="false"}
+## Hypotheses
+:::
+
 #### Respiration
+
+::: {.callout-warning icon="false"}
+## Questions
+:::
+
+::: {.callout-tip icon="false"}
+## Hypotheses
+:::
 
 #### Photosynthesis
 
-### Hypotheses
+::: {.callout-warning icon="false"}
+## Questions
+:::
 
--   Symbionts play a critical role in the stress response of Cnidarians to thermal stress
-
--   Microplastic leachate exposure changes the microbial community
-
--   Microplastic leachate exposure changes the microbial community in such a way that Cnidarians are more susceptible to thermal stress
-
--   Microplastic leachate and thermal stress act synergistically to disrupt Cnidarian microbial communities
-
--   The microbial community changes differently when exposed to microplastic stress as compared to thermal stress
+::: {.callout-tip icon="false"}
+## Hypotheses
+:::
 
 ### Experimental design
 

@@ -4,7 +4,7 @@ subtitle: "Modified from the lab protocol of Dr. Francesco Saliu and Valerio Isa
 author: "Sarah Tanja"
 date: '03/26/2024'
 categories: [protocols]
-draft: true
+draft: false
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>
 toc-depth: 5
@@ -28,7 +28,7 @@ Dr. Saliu sent me 8 microplastic types that his lab used to create leachate that
 7.  PTSO, recycled, aged
 8.  PTSO, recycled, virgin
 
-Each microplastic leachate type has a unique thumbprint or 'signature' of chemical makeup created via the leaching process and UV photodegradation. The microplastic type I am most keen to study is PVC. ag
+Each microplastic leachate type has a unique thumbprint or 'signature' of chemical makeup created via the leaching process and UV photodegradation. The microplastic type I am most keen to study is PVC.
 
 So how do we use these microplastics to re-create the leachate solutions described above?
 
@@ -62,11 +62,37 @@ The leachate preparation protocol for each microplastic type is as follows:
 
 ![](astm-seawater.png)
 
--   In a 1-liter erlenmeyer flask, dissolve 41.953 grams of ASTM D1141-98 `Sea-Salt` in deionized water with enough water added to make one-liter total solution
+-   In a 1-liter erlenmeyer flask, add 41.953 grams of ASTM D1141-98 `Sea-Salt`. Then add deionized water[^1] to the flask until you achieve a final 1-liter volume.
 
--   Stir to dissolve using any implement that isn't plastic or plastic/teflon coated (metal or glass stir-rods, or glass-coated magnetic stir-bars, etc.)
+-   Stir to dissolve the salt using any implement that isn't plastic or plastic/teflon coated (metal or glass stir-rods, or glass-coated magnetic stir-bars, etc.)
 
-> "After mixing, adjust pH to 8.2 using 0.1 N solution of sodium hydroxide or hydrochloric acid. The sea salt does include a small number of insoluble solids occurring naturally in some of the main components. This remaining residue can be strained or filtered out and disposed of without affecting the accuracy of the dissolved seawater mixture. Depending on the nature of the testing and the degree of accuracy needed we suggest mixing with Deionized (DI) or Distilled water. For a more highly accurate result we recommend using the ASTM Type II reagent grade deionized/distilled water."
+-   After mixing, adjust the pH to 8.2[^2]
+
+-   Measure initial pH using a calibrated pH meter
+
+[^1]: Depending on the nature of the testing and the degree of accuracy needed we suggest mixing with Deionized (DI) or Distilled water. For a more highly accurate result we recommend using the ASTM Type II reagent grade deionized/distilled water.
+
+[^2]: Some [useful background info](https://www.phadjustment.com/pH.html) on adjusting pH from phadjustment.com (in a wastewater treatment context)
+
+$$
+Acid + Base \longrightarrow Salt + Water 
+$$
+
+::: callout-note
+Pure water (H~2~O) is amphoteric, meaning it can act as both an acid and as a base
+:::
+
+-   If the pH is less than \<8.2, make it more alkaline using 0.1M sodium hydroxide[^3] (NaOH, 39.997g/mol)
+
+-   If the pH is more than \>8.2, make it more acidic using 0.1M hydrochloric acid\[\^4\] (HCl, 36.47 g/mol)
+
+-   Calculate the amount of NaOH needed to adjust the initial pH to 8.2
+
+-   Filter out any remaining solids[^4]
+
+[^3]: "The sea salt does include a small number of insoluble solids occurring naturally in some of the main components. This remaining residue can be strained or filtered out and disposed of without affecting the accuracy of the dissolved seawater mixture."
+
+[^4]: "The sea salt does include a small number of insoluble solids occurring naturally in some of the main components. This remaining residue can be strained or filtered out and disposed of without affecting the accuracy of the dissolved seawater mixture."
 
 ### Step 2. Mix seawater with microplastics (1 mg/mL in 250 mL)
 

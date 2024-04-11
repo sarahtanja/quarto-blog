@@ -1,6 +1,7 @@
 ---
 title: "Montipora capitata "
 subtitle: "Microbial community changes in Montipora capitata corals under EPA506 Phthalates Mix and thermal stress exposures"
+image: "himb-mcap-horizon.jpg"
 about:
   id: description
   template: trestles
@@ -24,7 +25,7 @@ format:
 ---
 
 ::: {#description}
-This project was a multiple-stressor mesocosm experiment I conducted in August 2022 at the Hawaii Institute of Marine Biology (HIMB) in Kaneohe Bay. 
+This project was a multiple-stressor mesocosm experiment I conducted in August 2022 at the Hawaii Institute of Marine Biology (HIMB) in Kaneohe Bay.
 
 In this experiment, I exposed coral fragments to a chemical mix of 6 common phthalate pollutants in methanol and thermal stress for 48 hours. **Unfortunately, in this pilot experiment, we lack a methanol solvent control. This means that we cannot differentiate the effects of the phthalate pollutants from the effects of the methanol on the microbial community changes when compared to the no-pollution controls.**
 

@@ -1,10 +1,11 @@
 ---
 title: "Anthopleura elegantissima"
-subtitle: "lets try again"
+subtitle: "A marine microplastic leachate & thermal stress test on a temperate clonal symbiotic cnidarian"
+image: "vancouver-aquarium-pink-tip-nems.jpg"
 about:
   id: description
   template: trestles
-  image: "Aggregating-anemone-Mesa-Schumacher.jpg"
+  image: "vancouver-aquarium-pink-tip-nems.jpg"
   links:
     - icon: github
       text: https://github.com/sarahtanja/anemone-leachate-heat
@@ -24,5 +25,5 @@ format:
 ---
 
 ::: {#description}
-This science experiment tests the photobiology, microbiome, and gene expression responses of the aggregating sea anemone to plastic pollutant derived leachate
+This experiment will test the photobiology, respiration, microbiome, and gene expression responses of the aggregating sea anemone (*Anthopleura elegantissima*) and it's symbiotic dinoflagellate alga *Breviolum muscatinei* to the multiple stressors of marine microplastic leachate and thermal stress.
 :::

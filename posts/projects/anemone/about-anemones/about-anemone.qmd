@@ -18,7 +18,7 @@ bibliography: ../anemone-leachate-heat.bib
 
 # *What are Anthopleura elegantissima?*
 
-[![This original description of what is now called Anthopleura elegantissima, but was originally 'Actinia elegantissima' was made by Johann-Friedrich Brandt in 1835. This description was published in latin, in a book titled 'Prodromus descriptionis animalium ab H. Mertensio observatorum : fascic. I. Polypos, Acalephas Discophoras et Siphonophoras, nec non Echinodermata continens' in St. Petersburg, Russia ](brandt1835.png)](https://www.biodiversitylibrary.org/page/10765502)
+[![This original description of what is now called Anthopleura elegantissima, but was originally 'Actinia elegantissima' was made by Johann-Friedrich Brandt in 1835. This description was published in latin, in a book titled 'Prodromus descriptionis animalium ab H. Mertensio observatorum : fascic. I. Polypos, Acalephas Discophoras et Siphonophoras, nec non Echinodermata continens' in St. Petersburg, Russia](brandt1835.png)](https://www.biodiversitylibrary.org/page/10765502)
 
 World Register of Marine Species (WORMS) taxonomy details [here](https://www.marinespecies.org/aphia.php?p=taxdetails&id=283347)
 

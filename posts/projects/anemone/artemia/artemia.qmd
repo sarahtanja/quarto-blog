@@ -132,3 +132,36 @@ Whoo! Cut coefficient of variation in half baby! I'll fuckking take it.
 So. 20uL to 4mL, multiply by 200! 27+/-4 nauplii in 20uL, then there will be anywhere from $24*200=4,800$ and $31*200=6,200$ nauplii fed to each anemone. Good enough. If I wanted it to be narrower I'd probably have to increase the volume and therefore the time and difficulty of counting. I could do a whole analysis on the ideal volume of shrimp counting to minimize coefficient of variation and make really pretty plots! But no... I shan't be tempted...
 
 I CAN COUNT SHRIMP.
+
+## 11-MAR-2024
+```{r}
+# Well plate counts of freshly hatched artemia nauplii
+# counts represent 20uL volumes
+A <- c(32,23,20,22,34,21)
+B <- c(33,40,21,22,30,31)
+C <- c(36,25,34,35,26,33)
+D <- c(36,34,22,24,32,32)
+
+naup <- data.frame(c(A, B, C, D)) %>%
+  rename(counts = 1)
+
+summary(naup)
+sd(naup$counts)
+
+# Calculate coefficient of variation
+cv <- sd(naup$counts) / mean(naup$counts) * 100
+
+# Print result
+print(cv)
+
+# Max number of artemia in 1mL
+(mean(naup$counts)+sd(naup$counts))*50
+
+# Min artemia in 1mL
+(mean(naup$counts)-sd(naup$counts))*50
+
+```
+So between ~1.7K and ~1.1k artemia each
+
+I think 4mL last time was too much...  This time we do 1mL each instead? When I gave them 4mL at this concentration them last time there was a lot of leftover dead nauplii that just fouled up the dishes...
+For this feeding I gave them 1mL each at 15:30 on Thursday April 11th, after lowering the water level to just below the jar lids. I left the water level low until ___

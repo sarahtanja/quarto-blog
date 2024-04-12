@@ -41,27 +41,41 @@ tribble(
 
 ## A deep dive in photosynthesis
 
-Photosynthesis is magic. Four proteins embedded in a delicate lipid membrane turn light into sugar. It's pure energy transformation! The original alchemy that sustains all aerobic life on earth. Let me repeat that: **Photosynthesis sustains all aerobic life on earth**. Photosynthesis takes water (H~2~O) and carbon dioxide (CO~2~) and converts it to oxygen (O~2~) that is released into the environment, making its way to the atmosphere and our lungs, and cells. Every bit of oxygen on the earth was produced through photosynthesis and the molecules that travel through our blood and bodies were made through cyanobacteria, algae, and plants. For how important this process is, it's so often overlooked or skimmed past. In this post, I will take a deep dive. So grab a cup of tea and a sketch pad and take a deep breath. We're going under!
+Photosynthesis is magic. Four proteins embedded in a delicate lipid membrane turn light into sugar. It's energy transformation! The process by which light energy is transformed into chemical energy (aka sugar energy!). Photosynthesis is the original tool that cyanobacteria used to start the [Great Oxygenation Event](https://en.wikipedia.org/wiki/Great_Oxidation_Event) 2.4 billion years ago.[^1] It is effectively the only source of molecular oxygen that supports higher life.
 
-Photosynthesis occurs in two out of three Domains of life: Bacteria (cyanobacteria, (a.k.a. blue-green algae) & Eukarya (red, brown, & green algae & plants!) Archaea, the third Domain, is made up of a group of single-celled microorganisms that do not photosynthesize. Here, I will focus mostly on the marine endosymbionts that are dinoflagellates from the brown algae, *Symbiodinium spp.* , and *Elliptochloris marina*, a green algae endosymbiont to the pacific northwest coastal sea anemone *Anthopleura elegantissima*.
+[^1]: #wedidn'tstartthefire
 
-### Primary endosymbiosis
+> "The most important thing as far as astrobiologists are concerned is the fact that *there are no known abiotic mechanisms of producing an O2-rich atmosphere*. If we find a planet with O2 in its atmosphere, would be forced to conclude that life was the cause. A remarkable 99.9999% of the oxygen in Earth's atmosphere was produced by life, the tiny remainder being a result of photodissociation of H2O \[4\]." - [New Worlds](https://newworlds.colorado.edu/search/o2.htm), University of Colorado, Boulder[@zotero-3402]
 
-Photosynthesis started in the cyanobacteria, and was transferred to the Eukarya phototrophs through primary and secondary endosymbiosis. Essentially, a cyanobacteria was eaten! Bacteria are prokaryotic, meaning they do not have a nuclear membrane separating their DNA from the cytoplasm.
+Photosynthesis takes water (H~2~O), carbon dioxide (CO~2~), and photons and converts it to glucose (C~6~H~12~O~6~), water and oxygen (O~2~).
 
-The evolution of the chloroplast can be traced back to when an alphaproteobacterium engulfed a cyanobacterium. This event is called the 'primary endosymbiosis' and is illustrated in the daigram below by a green pac-man shape (the alphaproteobacterium) engulfing a blue football-shaped cyanobacterium. Primary endosybiosis resulted in plastids (here plastids mean chloroplasts and mitochondria) that are bounded by two membranes. The lineage of primary endosymbiosis diverged into three: red algae, green algae, and glaucophytes.
+$$
+6CO_2 + 12H_2O + photons \longrightarrow C_6H_{12}O_6 + 6O_2 + 6H_2O
+$$
+
+The breathable molecular oxygen on Earth today is produced through photosynthesis. The oxygen and sugar molecules that travel through our blood were made by cyanobacteria, algae, and plants. For how important this process is, it's so often overlooked or skimmed past. In this post, I will take a deep dive. So grab a cup of tea and a sketch pad and take a deep breath. We're going under!
+
+Photosynthesis occurs in two out of three Domains of life: Bacteria (cyanobacteria, (a.k.a. blue-green algae) & Eukarya (red, brown, & green algae & plants!) Archaea, the third Domain, is made up of a group of single-celled microorganisms that do not photosynthesize. Here, I will focus mostly on the marine endosymbionts that form symbioses with marine invertebrates.
+
+### Primary endosymbiosis 
+
+The evolution of the chloroplast can be traced back to when an alphaproteobacterium engulfed a cyanobacterium. This event is called the 'primary endosymbiosis' and is illustrated in the diagram below by a green pac-man shape (the alphaproteobacterium) engulfing a blue football-shaped cyanobacterium. Primary endosymbiosis resulted in plastids (here plastids mean chloroplasts and mitochondria) that are bounded by two membranes. The lineage of primary endosymbiosis diverged into three: red algae, green algae, and glaucophytes.
 
 The green algae are thus products of primary endosymbiosis and are characterized by two layers of membranes around their plastids. This includes their chloroplasts.
 
-![Taken from P.J. Keeling , Figure 2. Diagram of primary, secondary, & tertiary endosymbiosis and explaining the origins of chloroplasts.](Keeling_fig2.png){fig-align="center"}
+![Screenshot from P.J. Keeling[@keeling2010] , Figure 2. Diagram of primary, secondary, & tertiary endosymbiosis and explaining the origins of chloroplasts.](Keeling_fig2.png){fig-align="center"}
 
-### An overview
+### Light-dependent reactions in oxygenic photosynthesis
 
-Photosynthesis works
+A brief [intro to photosynthesis](https://www.khanacademy.org/science/ap-biology/cellular-energetics/photosynthesis/a/intro-to-photosynthesis) by Khan Academy
 
-### The knitty-gritty
+[![The electron transport chain of the light-dependent reactions, figure by Khan Academy (click for link)](electron-transport-khan.png)](https://cdn.kastatic.org/ka-perseus-images/faeb1179a538a3a8106fa5f3b9bd90c92f9834a7.png)
 
 ![Fig. 1 From @shevela2023 : "Schematic representation of the light-induced electron (solid arrows) and proton (dashed arrows) transfer reactions driven by the photosynthetic protein complexes embedded in the thylakoid membrane of oxygenic organisms (plants, algae, and cyanobacteria)."](Shevala_fig1.png)
+
+### Cyclic electron flow
+
+Finally, cyclic electron flow may play a photoprotective role, preventing excess light from damaging photosystem proteins and promoting repair of light-induced damage
 
 ## How do we measure photosynthesis?
 

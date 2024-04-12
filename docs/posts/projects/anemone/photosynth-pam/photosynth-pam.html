@@ -146,6 +146,7 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../../../styles.css">
 </head>
@@ -245,11 +246,12 @@ div.csl-indent {
   <li><a href="#a-deep-dive-in-photosynthesis" id="toc-a-deep-dive-in-photosynthesis" class="nav-link active" data-scroll-target="#a-deep-dive-in-photosynthesis">A deep dive in photosynthesis</a>
   <ul>
   <li><a href="#primary-endosymbiosis" id="toc-primary-endosymbiosis" class="nav-link" data-scroll-target="#primary-endosymbiosis">Primary endosymbiosis</a></li>
-  <li><a href="#an-overview" id="toc-an-overview" class="nav-link" data-scroll-target="#an-overview">An overview</a></li>
-  <li><a href="#the-knitty-gritty" id="toc-the-knitty-gritty" class="nav-link" data-scroll-target="#the-knitty-gritty">The knitty-gritty</a></li>
+  <li><a href="#light-dependent-reactions-in-oxygenic-photosynthesis" id="toc-light-dependent-reactions-in-oxygenic-photosynthesis" class="nav-link" data-scroll-target="#light-dependent-reactions-in-oxygenic-photosynthesis">Light-dependent reactions in oxygenic photosynthesis</a></li>
+  <li><a href="#cyclic-electron-flow" id="toc-cyclic-electron-flow" class="nav-link" data-scroll-target="#cyclic-electron-flow">Cyclic electron flow</a></li>
   </ul></li>
   <li><a href="#how-do-we-measure-photosynthesis" id="toc-how-do-we-measure-photosynthesis" class="nav-link" data-scroll-target="#how-do-we-measure-photosynthesis">How do we measure photosynthesis?</a></li>
   <li><a href="#dont-forget-photosynthesizers-also-do-respiration" id="toc-dont-forget-photosynthesizers-also-do-respiration" class="nav-link" data-scroll-target="#dont-forget-photosynthesizers-also-do-respiration">Don’t forget, photosynthesizers also do respiration!</a></li>
+  <li><a href="#oxygen-measurement-with-oxygen-meter-firestingo2-fluorescense-with-mini-pam-ii" id="toc-oxygen-measurement-with-oxygen-meter-firestingo2-fluorescense-with-mini-pam-ii" class="nav-link" data-scroll-target="#oxygen-measurement-with-oxygen-meter-firestingo2-fluorescense-with-mini-pam-ii">Oxygen Measurement with Oxygen Meter FireStingO2 &amp; Fluorescense with MINI-PAM-II</a></li>
   </ul>
 </nav>
 </nav>
@@ -296,26 +298,40 @@ div.csl-indent {
 </div>
 <section id="a-deep-dive-in-photosynthesis" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="a-deep-dive-in-photosynthesis">A deep dive in photosynthesis</h2>
-<p>Photosynthesis is magic. Four proteins embedded in a delicate lipid membrane turn light into sugar. It’s pure energy transformation! The original alchemy that sustains all aerobic life on earth. Let me repeat that: <strong>Photosynthesis sustains all aerobic life on earth</strong>. Photosynthesis takes water (H<sub>2</sub>O) and carbon dioxide (CO<sub>2</sub>) and converts it to oxygen (O<sub>2</sub>) that is released into the environment, making its way to the atmosphere and our lungs, and cells. Every bit of oxygen on the earth was produced through photosynthesis and the molecules that travel through our blood and bodies were made through cyanobacteria, algae, and plants. For how important this process is, it’s so often overlooked or skimmed past. In this post, I will take a deep dive. So grab a cup of tea and a sketch pad and take a deep breath. We’re going under!</p>
-<p>Photosynthesis occurs in two out of three Domains of life: Bacteria (cyanobacteria, (a.k.a. blue-green algae) &amp; Eukarya (red, brown, &amp; green algae &amp; plants!) Archaea, the third Domain, is made up of a group of single-celled microorganisms that do not photosynthesize. Here, I will focus mostly on the marine endosymbionts that are dinoflagellates from the brown algae, <em>Symbiodinium spp.</em> , and <em>Elliptochloris marina</em>, a green algae endosymbiont to the pacific northwest coastal sea anemone <em>Anthopleura elegantissima</em>.</p>
-<section id="primary-endosymbiosis" class="level3">
+<div class="page-columns page-full"><p>Photosynthesis is magic. Four proteins embedded in a delicate lipid membrane turn light into sugar. It’s energy transformation! The process by which light energy is transformed into chemical energy (aka sugar energy!). Photosynthesis is the original tool that cyanobacteria used to start the <a href="https://en.wikipedia.org/wiki/Great_Oxidation_Event">Great Oxygenation Event</a> 2.4 billion years ago.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> It is effectively the only source of molecular oxygen that supports higher life.</p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;#wedidn’tstartthefire</p></li></div></div>
+<blockquote class="blockquote page-columns page-full">
+<p>“The most important thing as far as astrobiologists are concerned is the fact that&nbsp;<em>there are no known abiotic mechanisms of producing an O2-rich atmosphere</em>. If we find a planet with O2 in its atmosphere, would be forced to conclude that life was the cause. A remarkable 99.9999% of the oxygen in Earth’s atmosphere was produced by life, the tiny remainder being a result of photodissociation of H2O [4].” - <a href="https://newworlds.colorado.edu/search/o2.htm">New Worlds</a>, University of Colorado, Boulder<span class="citation" data-cites="zotero-3402">(<a href="#ref-zotero-3402" role="doc-biblioref"><span>“New <span>Worlds</span>”</span> n.d.</a>)</span></p>
+<div class="no-row-height column-margin column-container"><div id="ref-zotero-3402" class="csl-entry" role="doc-biblioentry">
+<span>“New <span>Worlds</span>.”</span> n.d. Accessed April 12, 2024. <a href="https://newworlds.colorado.edu/search/o2.htm">https://newworlds.colorado.edu/search/o2.htm</a>.
+</div></div></blockquote>
+<p>Photosynthesis takes water (H<sub>2</sub>O), carbon dioxide (CO<sub>2</sub>), and photons and converts it to glucose (C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>), water and oxygen (O<sub>2</sub>).</p>
+<p><span class="math display">\[
+6CO_2 + 12H_2O + photons \longrightarrow C_6H_{12}O_6 + 6O_2 + 6H_2O
+\]</span></p>
+<p>The breathable molecular oxygen on Earth today is produced through photosynthesis. The oxygen and sugar molecules that travel through our blood were made by cyanobacteria, algae, and plants. For how important this process is, it’s so often overlooked or skimmed past. In this post, I will take a deep dive. So grab a cup of tea and a sketch pad and take a deep breath. We’re going under!</p>
+<p>Photosynthesis occurs in two out of three Domains of life: Bacteria (cyanobacteria, (a.k.a. blue-green algae) &amp; Eukarya (red, brown, &amp; green algae &amp; plants!) Archaea, the third Domain, is made up of a group of single-celled microorganisms that do not photosynthesize. Here, I will focus mostly on the marine endosymbionts that form symbioses with marine invertebrates.</p>
+<section id="primary-endosymbiosis" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="primary-endosymbiosis">Primary endosymbiosis</h3>
-<p>Photosynthesis started in the cyanobacteria, and was transferred to the Eukarya phototrophs through primary and secondary endosymbiosis. Essentially, a cyanobacteria was eaten! Bacteria are prokaryotic, meaning they do not have a nuclear membrane separating their DNA from the cytoplasm.</p>
-<p>The evolution of the chloroplast can be traced back to when an alphaproteobacterium engulfed a cyanobacterium. This event is called the ‘primary endosymbiosis’ and is illustrated in the daigram below by a green pac-man shape (the alphaproteobacterium) engulfing a blue football-shaped cyanobacterium. Primary endosybiosis resulted in plastids (here plastids mean chloroplasts and mitochondria) that are bounded by two membranes. The lineage of primary endosymbiosis diverged into three: red algae, green algae, and glaucophytes.</p>
+<p>The evolution of the chloroplast can be traced back to when an alphaproteobacterium engulfed a cyanobacterium. This event is called the ‘primary endosymbiosis’ and is illustrated in the diagram below by a green pac-man shape (the alphaproteobacterium) engulfing a blue football-shaped cyanobacterium. Primary endosymbiosis resulted in plastids (here plastids mean chloroplasts and mitochondria) that are bounded by two membranes. The lineage of primary endosymbiosis diverged into three: red algae, green algae, and glaucophytes.</p>
 <p>The green algae are thus products of primary endosymbiosis and are characterized by two layers of membranes around their plastids. This includes their chloroplasts.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
 <p><img src="Keeling_fig2.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Taken from P.J. Keeling , Figure 2. Diagram of primary, secondary, &amp; tertiary endosymbiosis and explaining the origins of chloroplasts.</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Screenshot from P.J. Keeling<span class="citation" data-cites="keeling2010">(<a href="#ref-keeling2010" role="doc-biblioref">Keeling 2010</a>)</span> , Figure 2. Diagram of primary, secondary, &amp; tertiary endosymbiosis and explaining the origins of chloroplasts.</figcaption><div class="no-row-height column-margin column-container"><div id="ref-keeling2010" class="csl-entry" role="doc-biblioentry">
+Keeling, Patrick J. 2010. <span>“The Endosymbiotic Origin, Diversification and Fate of Plastids.”</span> <em>Philosophical Transactions of the Royal Society B: Biological Sciences</em> 365 (1541): 729–48. <a href="https://doi.org/10.1098/rstb.2009.0103">https://doi.org/10.1098/rstb.2009.0103</a>.
+</div></div><p></p>
 </figure>
 </div>
 </section>
-<section id="an-overview" class="level3">
-<h3 class="anchored" data-anchor-id="an-overview">An overview</h3>
-<p>Photosynthesis works</p>
-</section>
-<section id="the-knitty-gritty" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="the-knitty-gritty">The knitty-gritty</h3>
+<section id="light-dependent-reactions-in-oxygenic-photosynthesis" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="light-dependent-reactions-in-oxygenic-photosynthesis">Light-dependent reactions in oxygenic photosynthesis</h3>
+<p>A brief <a href="https://www.khanacademy.org/science/ap-biology/cellular-energetics/photosynthesis/a/intro-to-photosynthesis">intro to photosynthesis</a> by Khan Academy</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://cdn.kastatic.org/ka-perseus-images/faeb1179a538a3a8106fa5f3b9bd90c92f9834a7.png"><img src="electron-transport-khan.png" class="img-fluid figure-img"></a></p>
+<p></p><figcaption class="figure-caption">The electron transport chain of the light-dependent reactions, figure by Khan Academy (click for link)</figcaption><p></p>
+</figure>
+</div>
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="Shevala_fig1.png" class="img-fluid figure-img"></p>
@@ -324,6 +340,10 @@ Shevela, Dmitry, Jan F. Kern, Govindjee Govindjee, and Johannes Messinger. 2023.
 </div></div><p></p>
 </figure>
 </div>
+</section>
+<section id="cyclic-electron-flow" class="level3">
+<h3 class="anchored" data-anchor-id="cyclic-electron-flow">Cyclic electron flow</h3>
+<p>Finally, cyclic electron flow may play a photoprotective role, preventing excess light from damaging photosystem proteins and promoting repair of light-induced damage</p>
 </section>
 </section>
 <section id="how-do-we-measure-photosynthesis" class="level2 page-columns page-full">
@@ -344,10 +364,29 @@ Ralph, Peter J., and Rolf Gademann. 2005. <span>“Rapid Light Curves: <span>A</
 <section id="dont-forget-photosynthesizers-also-do-respiration" class="level2">
 <h2 class="anchored" data-anchor-id="dont-forget-photosynthesizers-also-do-respiration">Don’t forget, photosynthesizers also do respiration!</h2>
 <p>They don’t just produce oxygen, they also consume it and release carbon dioxide (CO<sub>2</sub>).</p>
+</section>
+<section id="oxygen-measurement-with-oxygen-meter-firestingo2-fluorescense-with-mini-pam-ii" class="level2">
+<h2 class="anchored" data-anchor-id="oxygen-measurement-with-oxygen-meter-firestingo2-fluorescense-with-mini-pam-ii">Oxygen Measurement with Oxygen Meter FireStingO2 &amp; Fluorescense with MINI-PAM-II</h2>
+<p>Download the Oxygen Logger software for the <a href="https://www.pyroscience.com/en/downloads/legacy">FireStingO2</a> at the legacy downloads site for PyroSciences.</p>
+<p>Before connecting the FireStingO2 to the Walz Mini-PAM II, you need to configure the software to the particular oxygen optode sensor used. Anytime you download new software, or switch sensors, you will need to do this step. For this, you only need the FireStingO2, the oxygen optode sensor you will be using, and the micro-USB cable that connects the FireStingO2 to a computer with <code>Oxygen Logger</code> software installed.</p>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The insertion of the <code>interface plug</code> disables USB communication via the Micro-USB port. To change settings of the <code>FireStingO2</code> oxymeter via USB connection by the <code>Oxygen Logger</code> software, the <code>interface plug</code> must be removed.</p>
+</div>
+</div>
 
 
 
 </section>
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

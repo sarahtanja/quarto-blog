@@ -34,7 +34,7 @@ From Baja California to Southeast Alaska all along the Eastern Pacific Coast.
 
 [![Anthopleura elegantissima distribution from the WORMS database](WORMS_distribution.png)](https://www.marinespecies.org/aphia.php?p=taxdetails&id=283347#distributions)
 
-More specifically... in the rocky intertidal
+***A. elegantissima*** **is very tolerant to a broad range of thermal exposures.** As an intertidal organism, *A. elegantissima* regularly experience large temperature shifts throughout the day coinciding with desiccation at low tide. They are found from Baja, California to Southeast Alaska, and in anemones hosting the brown alga *Breviolum muscatinei*, temperatures from 6^o^C to 24^o^C do not significantly affect their algal density, mitotic index, or total chlorophyll (a + c), but net photosynthesis and anemone respiration both increase with temperature [@Verde.2002].
 
 # Who studies them?
 
@@ -61,6 +61,8 @@ For anemones hosting *B. muscatinei* :
 > -   *B. muscatinei* peaked at \$800 mu/ mol m\^{-2} s\^{-1}\$ @e.2002 .
 
 ## Symbiosis
+
+***A. elegantissima*** **gains symbionts through horizontal transmission** [@lajeunesse2000a]**. (Trench 1987)**
 
 Normally, *A. elegantissima* expels symbionts from its coelenteron in a bolus of mucus and undigested material. Expulsion of symbionts should not be confused with "bleaching" phenomenon in reef corals, and may serve an ulterior purpose and undergo a different process. The anemones 'cull' or 'weed' the symbionts to maintain an optimal symbiont population density.
 

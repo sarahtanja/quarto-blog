@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,14 +19,15 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -40,8 +41,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -79,10 +79,12 @@ div.csl-indent {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../../../styles.css">
@@ -102,39 +104,39 @@ div.csl-indent {
     <span class="navbar-title">Sarah Tanja’s Open Lab Notebook</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../../about.html">
+    <a class="nav-link" href="../../../../about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../../projects.html">
+    <a class="nav-link" href="../../../../projects.html" rel="" target="">
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/sarah-tanja-595722146/"><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/sarah-tanja-595722146/" rel="" target=""><i class="bi bi-linkedin" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/sarahtanja"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/sarahtanja" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:stanja@uw.edu"><i class="bi bi-envelope-heart" role="img">
+    <a class="nav-link" href="mailto:stanja@uw.edu" rel="" target=""><i class="bi bi-envelope-heart" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div class="quarto-toggle-container">
-                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-              </div>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -173,17 +175,18 @@ div.csl-indent {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
   <li><a href="#conceptual-planning" id="toc-conceptual-planning" class="nav-link active" data-scroll-target="#conceptual-planning">Conceptual planning</a>
   <ul>
-  <li><a href="#problem" id="toc-problem" class="nav-link" data-scroll-target="#problem">Problem</a></li>
+  <li><a href="#objective" id="toc-objective" class="nav-link" data-scroll-target="#objective">Objective</a></li>
+  <li><a href="#problems" id="toc-problems" class="nav-link" data-scroll-target="#problems">Problems</a></li>
   <li><a href="#heres-what-we-do-know" id="toc-heres-what-we-do-know" class="nav-link" data-scroll-target="#heres-what-we-do-know">Here’s what we do know</a></li>
   <li><a href="#what-we-dont-know" id="toc-what-we-dont-know" class="nav-link" data-scroll-target="#what-we-dont-know">What we don’t know</a></li>
-  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a>
+  <li><a href="#questions-hypotheses" id="toc-questions-hypotheses" class="nav-link" data-scroll-target="#questions-hypotheses">Questions &amp; Hypotheses</a>
   <ul>
   <li><a href="#overarching" id="toc-overarching" class="nav-link" data-scroll-target="#overarching">Overarching</a></li>
   <li><a href="#microbiome" id="toc-microbiome" class="nav-link" data-scroll-target="#microbiome">Microbiome</a></li>
@@ -191,32 +194,28 @@ div.csl-indent {
   <li><a href="#respiration" id="toc-respiration" class="nav-link" data-scroll-target="#respiration">Respiration</a></li>
   <li><a href="#photosynthesis" id="toc-photosynthesis" class="nav-link" data-scroll-target="#photosynthesis">Photosynthesis</a></li>
   </ul></li>
-  <li><a href="#hypotheses" id="toc-hypotheses" class="nav-link" data-scroll-target="#hypotheses">Hypotheses</a></li>
-  <li><a href="#statistical-analysis" id="toc-statistical-analysis" class="nav-link" data-scroll-target="#statistical-analysis">Statistical analysis</a></li>
-  <li><a href="#sample-size" id="toc-sample-size" class="nav-link" data-scroll-target="#sample-size">Sample size</a></li>
-  <li><a href="#experimental-design" id="toc-experimental-design" class="nav-link" data-scroll-target="#experimental-design">Experimental design</a></li>
-  <li><a href="#controlling-batch-effects-or-confounding-variables" id="toc-controlling-batch-effects-or-confounding-variables" class="nav-link" data-scroll-target="#controlling-batch-effects-or-confounding-variables">Controlling batch effects or confounding variables</a></li>
-  </ul></li>
-  <li><a href="#timeline" id="toc-timeline" class="nav-link" data-scroll-target="#timeline">Timeline</a></li>
-  <li><a href="#equipment" id="toc-equipment" class="nav-link" data-scroll-target="#equipment">Equipment</a></li>
-  <li><a href="#budget" id="toc-budget" class="nav-link" data-scroll-target="#budget">Budget</a></li>
-  <li><a href="#permits" id="toc-permits" class="nav-link" data-scroll-target="#permits">Permits</a></li>
-  <li><a href="#data-code-organization" id="toc-data-code-organization" class="nav-link" data-scroll-target="#data-code-organization">Data &amp; Code Organization</a></li>
-  <li><a href="#study-plan" id="toc-study-plan" class="nav-link" data-scroll-target="#study-plan">Study Plan</a>
+  <li><a href="#experimental-design" id="toc-experimental-design" class="nav-link" data-scroll-target="#experimental-design">Experimental design</a>
   <ul>
-  <li><a href="#objective" id="toc-objective" class="nav-link" data-scroll-target="#objective">Objective</a></li>
-  <li><a href="#hypotheses-1" id="toc-hypotheses-1" class="nav-link" data-scroll-target="#hypotheses-1">Hypotheses</a></li>
+  <li><a href="#phase-1.-response-curve" id="toc-phase-1.-response-curve" class="nav-link" data-scroll-target="#phase-1.-response-curve">Phase 1. Response Curve</a></li>
+  <li><a href="#phase-2.-multiple-stressor" id="toc-phase-2.-multiple-stressor" class="nav-link" data-scroll-target="#phase-2.-multiple-stressor">Phase 2. Multiple Stressor</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#timeline-log" id="toc-timeline-log" class="nav-link" data-scroll-target="#timeline-log">Timeline log</a></li>
+  <li><a href="#permits" id="toc-permits" class="nav-link" data-scroll-target="#permits">Permits</a></li>
+  <li><a href="#data-code-organization" id="toc-data-code-organization" class="nav-link" data-scroll-target="#data-code-organization">Data &amp; Code Organization</a>
+  <ul>
+  <li><a href="#hypotheses-5" id="toc-hypotheses-5" class="nav-link" data-scroll-target="#hypotheses-5">Hypotheses</a></li>
   <li><a href="#specimen-collection" id="toc-specimen-collection" class="nav-link" data-scroll-target="#specimen-collection">Specimen collection</a></li>
   <li><a href="#specimen-housing-acclimation" id="toc-specimen-housing-acclimation" class="nav-link" data-scroll-target="#specimen-housing-acclimation">Specimen housing &amp; acclimation</a></li>
   <li><a href="#treatment-preparation" id="toc-treatment-preparation" class="nav-link" data-scroll-target="#treatment-preparation">Treatment preparation</a></li>
   <li><a href="#experiment" id="toc-experiment" class="nav-link" data-scroll-target="#experiment">Experiment</a></li>
   <li><a href="#sample-processing" id="toc-sample-processing" class="nav-link" data-scroll-target="#sample-processing">Sample Processing</a></li>
   <li><a href="#merit" id="toc-merit" class="nav-link" data-scroll-target="#merit">Merit</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul></li>
   </ul>
 </nav>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
@@ -226,177 +225,239 @@ div.csl-indent {
 
 
 
-<section id="conceptual-planning" class="level2 page-columns page-full">
+<section id="conceptual-planning" class="level2">
 <h2 class="anchored" data-anchor-id="conceptual-planning">Conceptual planning</h2>
-<section id="problem" class="level3">
-<h3 class="anchored" data-anchor-id="problem">Problem</h3>
+<section id="objective" class="level3">
+<h3 class="anchored" data-anchor-id="objective">Objective</h3>
+<p>The objective of this study is to examine the combined effects of thermal stress and marine microplastic leachate on photosynthetic efficiency, microbiome community, and gene expression in the aggregating sea anemone <em>Anthopleura elegantissima</em> and the algal symbiont <em>Breviolum muscatinei</em>. In essence, this study is both a global change study examining impacts of thermal stress on marine intertidal invertebrates, and an ecotoxicological study that assesses impacts of marine microplastic leachate associated with marine plastic pollution on a cnidarian host and an algal symbiont. We’ve chosen <em>Anthopleura elegantissima</em> as our study species because it is a clonal cnidarian that can form symbiotic relationships, can be collected and studied locally in the Pacific Northwest, and has an annotated genome. <em>Anthopleura elegantissima</em> can form symbioses with either the chlorophyte <em>Elliptochloris marina</em> <span class="citation" data-cites="letsch2009">(<a href="#ref-letsch2009" role="doc-biblioref"><strong>letsch2009?</strong></a>)</span> or the dinoflagellate <em>Breviolum muscatinei</em> <span class="citation" data-cites="lajeunesse2000">(<a href="#ref-lajeunesse2000" role="doc-biblioref"><strong>lajeunesse2000?</strong></a>)</span>. In this study, we will only be working with the ‘golden brown’ anemones that are associated with the dinoflagellate <em>Breviolum muscatinei</em> in order to reduce variation in our response variables due to symbiont type. The golden brown anemones are also much easier to find and collect, as they are found in the mid to upper intertidal.</p>
+</section>
+<section id="problems" class="level3">
+<h3 class="anchored" data-anchor-id="problems">Problems</h3>
 <ul>
 <li><p>Marine microplastics are an emerging pollutant of concern that have only been widely ‘in play’ for the last 80 years</p></li>
-<li><p>They’re more complicated than you might think, they are full of chemicals that are not covalently bound to them, and the chemicals leach out, we call this leachate</p></li>
-<li><p>Very little is known about the impacts of this type of pollution because it’s hard to study (plastics are everywhere!), and as stated previously, it’s only been around for the last 80 years coinciding with increased plastic production and integration into consumer products</p></li>
+<li><p>Plastics in landfills, polyester microfibers from washing machine sewage, and non-source point plastic pollution caught in road runoff all have chemical additives and chemical degredation derivatives that leach out of them forming a cocktail of chemicals and compounds termed ‘leachate’ that pollutes the environment</p></li>
+<li><p>Urban coastal and intertidal environments are important habitats that support healthy oceans, healthy recreation, and healthy food security for the nation. The near coastal environment adjacent to urban centers may be one of the most exposed to marine microplastic leachate pollution</p></li>
+<li><p>Yet, very little is known about the impacts of this type of pollution because it’s hard to study (plastics are everywhere!), and as stated previously, it’s only been around for the last 80 years coinciding with increased plastic production and integration into consumer products</p></li>
 </ul>
 </section>
-<section id="heres-what-we-do-know" class="level3 page-columns page-full">
+<section id="heres-what-we-do-know" class="level3">
 <h3 class="anchored" data-anchor-id="heres-what-we-do-know">Here’s what we do know</h3>
 <ul>
-<li><p><strong><em>A. elegantissima</em></strong> <strong>is very tolerant to a broad range of thermal exposures.</strong> As an intertidal organism, <em>A. elegantissima</em> regularly experience large temperature shifts throughout the day coinciding with desiccation at low tide. They are found from Baja, California to Southeast Alaska, and in anemones hosting the brown alga <em>Breviolum muscatinei</em>, temperatures from 6<sup>o</sup>C to 24<sup>o</sup>C do not significantly affect their algal density, mitotic index, or total chlorophyll (a + c), but net photosynthesis and anemone respiration both increase with temperature <span class="citation" data-cites="Verde.2002">(<a href="#ref-Verde.2002" role="doc-biblioref"><strong>Verde.2002?</strong></a>)</span>.</p></li>
-<li><p><strong><em>A. elegantissima</em></strong> <strong>gains symbionts through horizontal transmission</strong> <span class="citation" data-cites="lajeunesse2000a">(<a href="#ref-lajeunesse2000a" role="doc-biblioref">Lajeunesse and Trench 2000</a>)</span><strong>. (Trench 1987)</strong></p></li>
+<li></li>
 </ul>
-<div class="no-row-height column-margin column-container"><div id="ref-lajeunesse2000a" class="csl-entry" role="doc-biblioentry">
-Lajeunesse, Tc, and Rk Trench. 2000. <span>“Biogeography of Two Species of <span>Symbiodinium</span> (<span>Freudenthal</span>) Inhabiting the Intertidal Sea Anemone <span>Anthopleura</span> Elegantissima (<span>Brandt</span>).”</span> <em>The Biological Bulletin</em> 199 (2): 126–34. <a href="https://doi.org/10.2307/1542872">https://doi.org/10.2307/1542872</a>.
-</div></div></section>
+</section>
 <section id="what-we-dont-know" class="level3">
 <h3 class="anchored" data-anchor-id="what-we-dont-know">What we don’t know</h3>
 <ul>
-<li><p>We don’t know if/how microplastic leachate affects Cnidarians</p></li>
-<li><p>We don’t know if/how microplastic leachate affects Cnidarians in the context of multiple stressors (i.e.&nbsp;a marine heatwave = thermal stress)</p></li>
+<li><p>We don’t know if/how marine microplastic leachate affects Cnidarians</p></li>
+<li><p>We don’t know if/how marine microplastic leachate affects Cnidarians in the context of multiple stressors (i.e.&nbsp;a marine heatwave = thermal stress)</p></li>
 <li><p>We don’t know if/how marine microplastic leachate affects the symbiotic relationship between Cnidarian hosts and their algal symbionts</p></li>
 </ul>
 <blockquote class="blockquote">
 <p>Why do we care about filling in this knowledge gap?</p>
 </blockquote>
 </section>
-<section id="questions" class="level3">
-<h3 class="anchored" data-anchor-id="questions">Questions</h3>
+<section id="questions-hypotheses" class="level3">
+<h3 class="anchored" data-anchor-id="questions-hypotheses">Questions &amp; Hypotheses</h3>
 <section id="overarching" class="level4">
 <h4 class="anchored" data-anchor-id="overarching">Overarching</h4>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Questions
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
-<li><p>How do the combined stressors of <u>marine microplastic leachate</u> and <u>thermal stress</u> affect the physiology of the temperate coastal anemone <em>Anthopleura elegantissima</em>?</p></li>
-<li><p>Does <u>marine microplastic leachate</u> reduce Cnidarians’ capacity for resilience to <u>thermal stress</u>?</p></li>
+<li>How do the combined stressors of marine microplastic leachate and thermal stress affect the physiology of the temperate coastal anemone <em>Anthopleura elegantissima</em>?</li>
+<li>Does marine microplastic leachate reduce Cnidarians’ capacity for resilience to thermal stress?</li>
 </ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hypotheses
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Thermal stress alone will have no significant impact on anemone respiration</li>
+<li>We expect that net photosynthesis will i</li>
+</ul>
+</div>
+</div>
 </section>
 <section id="microbiome" class="level4">
 <h4 class="anchored" data-anchor-id="microbiome">Microbiome</h4>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Questions
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
-<li><p>Does exposure to <strong>marine microplastic leachate</strong> disrupt the function of the <em>A. elegantissima</em> microbiome community?</p></li>
-<li><p>Does exposure to <strong>thermal stress</strong> disrupt the function of the <em>A. elegantissima</em> microbiome community?</p></li>
-<li><p>Is exposure to the combined stressors of <strong>marine microplastic leachate</strong> and <strong>thermal stress</strong></p></li>
+<li>Does exposure to marine microplastic leachate disrupt the function of the <em>A. elegantissima</em> microbiome community?</li>
+<li>Does exposure to thermal stress disrupt the function of the <em>A. elegantissima</em> microbiome community?</li>
+<li>Is the microbial community composition and functional response to the combined stressors of marine microplastic leachate and thermal stress additive?</li>
 </ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hypotheses
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Microbial community composition and function play a critical role in the stress response of Cnidarians</li>
+<li>Marine microplastic leachate exposure changes the microbial community</li>
+<li>Marine microplastic leachate exposure changes the microbial community in such a way that Cnidarians are more susceptible to thermal stress</li>
+<li>Marine microplastic leachate and thermal stress act synergistically to disrupt Cnidarian microbial communities</li>
+<li>The microbial community changes differently when exposed to microplastic stress as compared to thermal stress</li>
+</ul>
+</div>
+</div>
 </section>
 <section id="differential-gene-expression" class="level4">
 <h4 class="anchored" data-anchor-id="differential-gene-expression">Differential Gene Expression</h4>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Questions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hypotheses
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
 </section>
 <section id="respiration" class="level4">
 <h4 class="anchored" data-anchor-id="respiration">Respiration</h4>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Questions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hypotheses
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
 </section>
 <section id="photosynthesis" class="level4">
 <h4 class="anchored" data-anchor-id="photosynthesis">Photosynthesis</h4>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Questions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hypotheses
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
 </section>
-</section>
-<section id="hypotheses" class="level3">
-<h3 class="anchored" data-anchor-id="hypotheses">Hypotheses</h3>
-<ul>
-<li><p>Symbionts play a critical role in the stress response of Cnidarians to thermal stress</p></li>
-<li><p>Microplastic leachate exposure changes the microbial community</p></li>
-<li><p>Microplastic leachate exposure changes the microbial community in such a way that Cnidarians are more susceptible to thermal stress</p></li>
-<li><p>Microplastic leachate and thermal stress act synergistically to disrupt Cnidarian microbial communities</p></li>
-<li><p>The microbial community changes differently when exposed to microplastic stress as compared to thermal stress</p></li>
-</ul>
-</section>
-<section id="statistical-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="statistical-analysis">Statistical analysis</h3>
-</section>
-<section id="sample-size" class="level3">
-<h3 class="anchored" data-anchor-id="sample-size">Sample size</h3>
 </section>
 <section id="experimental-design" class="level3">
 <h3 class="anchored" data-anchor-id="experimental-design">Experimental design</h3>
+<p><a href="https://docs.google.com/spreadsheets/d/1U19bLRIR1PCuXxlcr5v33zAbFec1UUnc5c6CQ14r1qU/edit?usp=sharing">Equipment list</a></p>
+<section id="phase-1.-response-curve" class="level4">
+<h4 class="anchored" data-anchor-id="phase-1.-response-curve">Phase 1. Response Curve</h4>
+<p>Specimen collection</p>
+<p><em>Anthopleura elegantissima</em> will be collected from 12 distinct aggregates at Owens Beach, Point Defiance, Tacoma. From each distinct aggregate, we will collect 7 anemones</p>
+<p>Acclimation</p>
+<p>Treatment preparation</p>
 </section>
-<section id="controlling-batch-effects-or-confounding-variables" class="level3">
-<h3 class="anchored" data-anchor-id="controlling-batch-effects-or-confounding-variables">Controlling batch effects or confounding variables</h3>
+<section id="phase-2.-multiple-stressor" class="level4">
+<h4 class="anchored" data-anchor-id="phase-2.-multiple-stressor">Phase 2. Multiple Stressor</h4>
 </section>
 </section>
-<section id="timeline" class="level2">
-<h2 class="anchored" data-anchor-id="timeline">Timeline</h2>
+</section>
+<section id="timeline-log" class="level2">
+<h2 class="anchored" data-anchor-id="timeline-log">Timeline log</h2>
 <ul>
 <li>05-JAN-2024: submitted scientific collection permit</li>
 <li>26-FEB-2024: received scientific collection permit</li>
-<li>06-MAR-2024: SST &amp; KH scouted collection site at Point Defiance</li>
+<li>06-MAR-2024: SST &amp; KH scouted collection site at Owens Beach, Point Defiance</li>
 <li>08-MAR-2024: Seattle Aquarium seawater pickup</li>
+<li>18-MAR-2024: <a href="https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/field-collection/field-collection.html">Field collection at Owens Beach, Point Defiance</a></li>
+<li>28-MAR-2024: Seawater filter rig &amp; UV sterilizer bulbs replaced</li>
+<li>30-MAR-2024: Field collection at Constellation Park, Alki</li>
+<li>09-APR-2024: ASTM seasalt delivery received, pH &amp; DO probes calibrated</li>
 <li>10-APR-2024: Seattle Aquarium seawater pickup</li>
 </ul>
-</section>
-<section id="equipment" class="level2">
-<h2 class="anchored" data-anchor-id="equipment">Equipment</h2>
-<table class="table">
-<thead>
-<tr class="header">
-<th>item</th>
-<th>purpose</th>
-<th>location</th>
-<th>status</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2 seatables</td>
-<td>water baths</td>
-<td>portage bay building</td>
-<td>working</td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="budget" class="level2">
-<h2 class="anchored" data-anchor-id="budget">Budget</h2>
-<table class="table">
-<thead>
-<tr class="header">
-<th>item</th>
-<th>quantity</th>
-<th>cost</th>
-<th>source</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>0.5 pint Kerr Wide Mouth Mason Jar</td>
-<td>60</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
 </section>
 <section id="permits" class="level2">
 <h2 class="anchored" data-anchor-id="permits">Permits</h2>
 <p>Washington Department of Fish &amp; Wildlife scientific collection permit (Tanja 24-010) was submitted on 05-JAN-2024 and the $117 processing fee was paid from the lab’s purchase card over the phone on 08-JAN-2024. WDFW scientific collection permits can take up to 3 months to be approved. The final permit was approved on 26-FEB-2024. The permit allows for 40 lethal-take and 40 non-lethal take anemones to be collected at each of the following sites: - Keystone Jetty, Island County - Pocket Beach, King County - Skyline Wall, Skagit County - Deadman Bay, San Juan County - Sunrise Beach Park, Pierce County - Chuckanut Bay, Whatcom County - Cone Island, Skagit County - Point Defiance Park, Pierce County - Constellation Park, King County</p>
 </section>
-<section id="data-code-organization" class="level2">
+<section id="data-code-organization" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="data-code-organization">Data &amp; Code Organization</h2>
-</section>
-<section id="study-plan" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="study-plan">Study Plan</h2>
-<section id="objective" class="level3">
-<h3 class="anchored" data-anchor-id="objective">Objective</h3>
-<p>The objective of this study is to examine the combined effects of thermal stress and plastic leachate on photosynthetic efficiency, microbiome community, and gene expression in the aggregating sea anemone <em>Anthopleura elegantissima</em>. In essence, this study is both a global change study examining impacts of thermal stress on marine intertidal invertebrates, and an ecotoxicological study that assesses impacts of chemical leachate associated with marine plastic pollution on a cnidarian host and an algal symbiont. We’ve chosen <em>Anthopleura elegantissima</em> as our study species because it is a clonal cnidarian that can form symbiotic relationships, can be collected and studied locally in the Pacific Northwest, and has an annotated genome. <em>Anthopleura elegantissima</em> can form symbioses with either the chlorophyte <em>Elliptochloris marina</em> <span class="citation" data-cites="letsch2009">(<a href="#ref-letsch2009" role="doc-biblioref"><strong>letsch2009?</strong></a>)</span> or the dinoflagellate <em>Breviolum muscatinei</em> <span class="citation" data-cites="lajeunesse2000">(<a href="#ref-lajeunesse2000" role="doc-biblioref"><strong>lajeunesse2000?</strong></a>)</span>. In this study, we will preferentially select ‘golden brown morphs’ that are associated with the dinoflagellate <em>Breviolum muscatinei</em> in order to reduce variation due to symbiont type, and to assess a symbiont genus commonly found in tropical reef building corals.</p>
-</section>
-<section id="hypotheses-1" class="level3">
-<h3 class="anchored" data-anchor-id="hypotheses-1">Hypotheses</h3>
+<section id="hypotheses-5" class="level3">
+<h3 class="anchored" data-anchor-id="hypotheses-5">Hypotheses</h3>
 <blockquote class="blockquote">
 <p>Symbionts play a critical role in the stress response of Cnidarians to thermal stress</p>
 </blockquote>
@@ -431,7 +492,7 @@ Lajeunesse, Tc, and Rk Trench. 2000. <span>“Biogeography of Two Species of <sp
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="aelegantissima-2x3.png" class="img-fluid figure-img" width="419"></p>
-<p></p><figcaption class="figure-caption">Figure 2. 2x3 Factorial experimental design in which 1 clonal genotype from each of 10 clonal mats will be exposed to 4 scenarios, thermal stress, plastic leachate pollution, multiple/combined thermal and leachate pollution stresses, and the control of ambient temp and filtered seawater.</figcaption><p></p>
+<figcaption class="figure-caption">Figure 2. 2x3 Factorial experimental design in which 1 clonal genotype from each of 10 clonal mats will be exposed to 4 scenarios, thermal stress, plastic leachate pollution, multiple/combined thermal and leachate pollution stresses, and the control of ambient temp and filtered seawater.</figcaption>
 </figure>
 </div>
 </section>
@@ -442,18 +503,15 @@ Lajeunesse, Tc, and Rk Trench. 2000. <span>“Biogeography of Two Species of <sp
 <section id="merit" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="merit">Merit</h3>
 <p>This shotgun of stress response variables will serve to offer a holistic view of cnidarian host and algal symbiont physiological response to temperature and plastic pollution leachate stress. It is well known that ocean heat waves are becoming more frequent and intense. Simultaneously, marine plastic pollution is becoming more prevalent and the chemical additives associated with plastic have become ubiquitous in our environments. As plastics weather mechanically, they also weather chemically by leaching additives not covalently bonded to the plastic polymer resins <span class="citation" data-cites="hahladakis2018">(<a href="#ref-hahladakis2018" role="doc-biblioref">Hahladakis et al. 2018</a>)</span>. The most common plastic additives are a group of chemicals called plasticizers, also known as phthalates or phthlate acid esters (PAE). They are commonly added to PVC to increase flexibility and durability. However, phthlatates are known to mimic or interfere with hormones that control developmental, reproductive, and immune response in both humans and animals <span class="citation" data-cites="maqboolReviewEndocrineDisorders2016">(<a href="#ref-maqboolReviewEndocrineDisorders2016" role="doc-biblioref"><strong>maqboolReviewEndocrineDisorders2016?</strong></a>)</span>. Previous research shows that plastic leachates experimentally added to plants, bacteria, and algae impair growth, reduce photosynthesis, and shift microbial communities in lab studies <span class="citation" data-cites="capolupo2020 obrien2022 tetu2019">(<a href="#ref-capolupo2020" role="doc-biblioref"><strong>capolupo2020?</strong></a>; <a href="#ref-obrien2022" role="doc-biblioref">O’Brien et al. 2022</a>; <a href="#ref-tetu2019" role="doc-biblioref">Tetu et al. 2019</a>)</span>. However, little is known about environmental concentrations of plastic leachate in the context of increasing ocean temperatures. Marine heatwaves, plastic manufacturing, and pollution are predicted to increase <span class="citation" data-cites="macleodGlobalThreatPlastic2021 oliverMarineHeatwaves2021">(<a href="#ref-macleodGlobalThreatPlastic2021" role="doc-biblioref"><strong>macleodGlobalThreatPlastic2021?</strong></a>; <a href="#ref-oliverMarineHeatwaves2021" role="doc-biblioref"><strong>oliverMarineHeatwaves2021?</strong></a>)</span>. Therefore, it is urgent that we understand how thermal stress and plastic pollution interact and the effects they may have on coastal marine organisms, which are likely experiencing both the most extreme thermal stress and the highest amount of plastic pollution.</p>
-<div class="no-row-height column-margin column-container"><div id="ref-hahladakis2018" class="csl-entry" role="doc-biblioentry">
+
+
+<div class="no-row-height column-margin column-container"><div id="ref-hahladakis2018" class="csl-entry" role="listitem">
 Hahladakis, John N., Costas A. Velis, Roland Weber, Eleni Iacovidou, and Phil Purnell. 2018. <span>“An Overview of Chemical Additives Present in Plastics: <span>Migration</span>, Release, Fate and Environmental Impact During Their Use, Disposal and Recycling.”</span> <em>Journal of Hazardous Materials</em> 344 (February): 179–99. <a href="https://doi.org/10.1016/j.jhazmat.2017.10.014">https://doi.org/10.1016/j.jhazmat.2017.10.014</a>.
-</div><div id="ref-obrien2022" class="csl-entry" role="doc-biblioentry">
+</div><div id="ref-obrien2022" class="csl-entry" role="listitem">
 O’Brien, Anna M., Tiago F. Lins, Yamin Yang, Megan E. Frederickson, David Sinton, and Chelsea M. Rochman. 2022. <span>“Microplastics Shift Impacts of Climate Change on a Plant-Microbe Mutualism: <span>Temperature</span>, <span>CO2</span>, and Tire Wear Particles.”</span> <em>Environmental Research</em> 203 (January): 111727. <a href="https://doi.org/10.1016/j.envres.2021.111727">https://doi.org/10.1016/j.envres.2021.111727</a>.
-</div><div id="ref-tetu2019" class="csl-entry" role="doc-biblioentry">
+</div><div id="ref-tetu2019" class="csl-entry" role="listitem">
 Tetu, Sasha G., Indrani Sarker, Verena Schrameyer, Russell Pickford, Liam D. H. Elbourne, Lisa R. Moore, and Ian T. Paulsen. 2019. <span>“Plastic Leachates Impair Growth and Oxygen Production in <span>Prochlorococcus</span>, the Ocean’s Most Abundant Photosynthetic Bacteria.”</span> <em>Communications Biology</em> 2 (May): 184. <a href="https://doi.org/10.1038/s42003-019-0410-x">https://doi.org/10.1038/s42003-019-0410-x</a>.
-</div></div></section>
-<section id="references" class="level3">
-<h3 class="anchored" data-anchor-id="references">References</h3>
-
-
-
+</div></div>
 </section>
 </section>
 
@@ -600,9 +658,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -667,6 +739,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -705,12 +863,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp(/https:\/\/sarahtanja\.github\.io\/quarto-blog\//);
+      var filterRegex = new RegExp("https:\/\/sarahtanja\.github\.io\/quarto-blog\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
-    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -726,6 +884,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">This page is built using <a href="https://quarto.org/">Quarto</a>❤️</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
   </div>
 </footer>
 

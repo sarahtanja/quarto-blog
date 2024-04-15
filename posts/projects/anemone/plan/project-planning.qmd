@@ -58,8 +58,9 @@ The objective of this study is to examine the combined effects of thermal stress
 
 ::: {.callout-tip icon="false"}
 ## Hypotheses
-- Thermal stress alone will have no significant impact on anemone respiration
-- We expect that net photosynthesis will i 
+
+-   Thermal stress alone will have no significant impact on anemone respiration
+-   We expect that net photosynthesis will i
 :::
 
 #### Microbiome
@@ -117,6 +118,12 @@ The objective of this study is to examine the combined effects of thermal stress
 [Equipment list](https://docs.google.com/spreadsheets/d/1U19bLRIR1PCuXxlcr5v33zAbFec1UUnc5c6CQ14r1qU/edit?usp=sharing)
 
 #### Phase 1. Response Curve
+
+```{r}
+40+(12*6)
+
+5*5
+```
 
 Specimen collection
 

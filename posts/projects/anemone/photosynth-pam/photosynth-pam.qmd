@@ -57,7 +57,7 @@ The breathable molecular oxygen on Earth today is produced through photosynthesi
 
 Photosynthesis occurs in two out of three Domains of life: Bacteria (cyanobacteria, (a.k.a. blue-green algae) & Eukarya (red, brown, & green algae & plants!) Archaea, the third Domain, is made up of a group of single-celled microorganisms that do not photosynthesize. Here, I will focus mostly on the marine endosymbionts that form symbioses with marine invertebrates.
 
-### Primary endosymbiosis 
+### Primary endosymbiosis
 
 The evolution of the chloroplast can be traced back to when an alphaproteobacterium engulfed a cyanobacterium. This event is called the 'primary endosymbiosis' and is illustrated in the diagram below by a green pac-man shape (the alphaproteobacterium) engulfing a blue football-shaped cyanobacterium. Primary endosymbiosis resulted in plastids (here plastids mean chloroplasts and mitochondria) that are bounded by two membranes. The lineage of primary endosymbiosis diverged into three: red algae, green algae, and glaucophytes.
 

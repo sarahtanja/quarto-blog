@@ -38,13 +38,39 @@ First we need to gather materials & equipment:
 
 -   Fume hood
 
--   Stir plate or [flocculator](https://www.velp.com/en-us/fc-s-series-flocculators-with-independent-positions.aspx) with rpm control
+-   Stir plate, shaker table, or [flocculator](https://www.velp.com/en-us/fc-s-series-flocculators-with-independent-positions.aspx) with rpm control (90 rpm) for leachate 'soak'
+
+-   Stir plate for dissolving salt in artificial seawater
+
+-   Ring stand
+
+-   Burette & burette clamp
+
+-   Glass funnels for burette and for erlenmeyer flask
 
 -   American Standard for Testing and Materials (ASTM) D1141-98 salt for artificial seawater, sold by Lake Products Company, LLC (buy [here](https://lakeproductscompanyshop.com/sea-salt-astm-d1141-98-20lb-pail/))
 
--   1 500 mL erlenmeyer flask per leachate solution prep
+-   1 400 mL flask or beaker per leachate solution prep
 
--   
+-   1 1000 mL erlenmeyer flask for making artifical seawater
+
+-   scale accurate to 0.001 grams
+
+-   Large weigh boats for \~41 gram volume
+
+-   Metal scoopulas/spatulas for transferring salts and microplastics
+
+-   pH meter
+
+-   0.1M hydrochloric acid (HCl)
+
+-   0.1M sodium hydroxide (NaOH)
+
+-   Deionized water
+
+-   45 μm filter paper
+
+-   Locally sourced & filtered seawater
 
 Then let's clean & prep our lab space:
 
@@ -114,14 +140,16 @@ Pure water (H~2~O) is amphoteric, meaning it can act as both an acid and as a ba
 
 ### Step 5. Filter
 
-> Estrazione Liquido-Liquido e Preparazione delle Vial
->
-> Il contenuto delle beute, al termine del test di cessione, viene filtrato con un filtro di carta e inserito, mediante imbuto, all'interno di un imbuto separatore per l'estrazione liquido-liquido, dal volume di almeno 250 mL.
->
-> Liquid-Liquid Extraction and Vial Preparation
->
-> The contents of the flasks, at the end of the release test, are filtered with a filter paper and inserted, using a funnel, inside a separating funnel for extraction liquid-liquid, with a volume of at least 250 mL.
-
--   Filter the leachate solution through 35-45 μm pore size paper filter
+-   Filter the leachate solution through 35-45 μm pore size paper filter to retain microplastic particles
 
 -   Store at 4°C for a maximum of 48h prior to use
+
+## Dilution
+
+> To prepare the leachate we put 250mg of material in 250 ml. At the end of the treatment you  will have 250ml corresponding to 1g/L of plastic ( PAEs approximately at 10% so 100 mg/L, other contaminants at  10-0.1 mg/L,  we will give you the exact concentration for each contaminant)
+>
+> By successive dilution you can therefore have 2L  in volume at 100 mg/L  and as much as you want in term of volume (more than 4L) at 10 -1 and 0.1  0.01  mg/L. with controls ( no plastic added)
+>
+> So  just in the case if you want to run test at 100 mg/L you have to reschedule the number of test with the limitited amount of material, but in my opinion this is  an extremely high and unrealistic concentration that does not replicate the real environmental exposure scenario. I think that 10 g/L is reasonable as the highest concentration to be tested.
+>
+> However in the literature you can find experiments with level of plastic particles at even 1g/L. Of course, at this concentration they report coral bleaching and mortality but in my opinion it is like to say that plastic is toxic to humans because cause asphyxia  when you put your head in a plastic bag.

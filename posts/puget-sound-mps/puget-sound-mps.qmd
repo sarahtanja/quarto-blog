@@ -1,0 +1,22 @@
+---
+title: "Puget Sound Microplastics"
+author: "Sarah Tanja"
+date: '04/15/2024'
+categories: [learning journey]
+draft: false
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
+bibliography: ../library.bib
+---
+
+::: {.callout-important icon="false"}
+## Learning Objective
+
+What are the commonly measured concentrations (g/L) of microplastics in Puget Sound, Washington? This goal of this objective is to understand the environmentally relevant range of this type of pollutant.
+:::

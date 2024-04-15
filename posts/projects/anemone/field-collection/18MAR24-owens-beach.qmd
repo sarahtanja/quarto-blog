@@ -2,7 +2,7 @@
 title: "Field collection at Owens Beach, Point Defiance Park, Tacoma"
 author: "Sarah Tanja"
 date: '03/18/2024'
-categories: [anemones]
+categories: [anemones, lab records]
 draft: false
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>
@@ -40,7 +40,7 @@ library(leaflet)
 ## Data sheet
 
 ```{r}
-anemone_collection <- read_csv('anemone-collections.csv',
+anemone_collection <- read_csv('18MAR24-anemone-collections.csv',
                                col_types = cols(
                                  date = col_date(format = "%m/%d/%Y"),
                                  timePST = col_time(format = "%H:%M"),

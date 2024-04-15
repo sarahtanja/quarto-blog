@@ -12,7 +12,7 @@ reference-location: margin
 citation-location: margin
 link-external-icon: true
 link-external-newwindow: true
-bibliography: ../library.bib
+bibliography: puget-sound-mps.bib
 ---
 
 ::: {.callout-important icon="false"}
@@ -20,3 +20,81 @@ bibliography: ../library.bib
 
 What are the commonly measured concentrations (g/L) of microplastics in Puget Sound, Washington? This goal of this objective is to understand the environmentally relevant range of this type of pollutant.
 :::
+
+> "Simply stated, we do not currently know levels of microplastics in the ocean (water, sediments, organisms), the spatial and temporal distribution of microplastics, the sources of these materials (either in absolute or relative terms), or the direct or indirect impacts microplastics may be having on marine life. From a basic understanding of the processes degrading plastic in the environment, it is likely that marine microplastics will persist in the ocean for very long times, and that levels of microplastics are likely accumulating world-wide (Thompson et al., 2004)." - [Center for Urban Waters, Sources and Distribution of Marine Microplastics](https://www.tacoma.uw.edu/cuw/sources-and-distribution-marine-microplastics)
+
+# Who monitors marine microplastics in Puget Sound and the Salish Sea, and what are they finding?
+
+### Seattle Aquarium
+
+[Seattle Aquarium,](https://www.seattleaquarium.org/conservation/research/plastics-marine-debris/) Seattle, Washington engages in long-term monitoring of plastics and marine debris collected from their seawater intake pump and off the side of the pier where they are located. They published some of their data taken from 2019-2020 in @harris2022, where they indicate they found between 0.0 and 0.64 microparticles sized between 330 μm to 5000 μm per liter of seawater sampled.
+
+> Only microparticles 330 to 5000 μm (length; Masura et al., 2015) were categorized and measured due to the resolution of the microscope and camera. - @harris2022, p. 919
+
+-   data from years 2019-2020
+
+-   data from 9m depth at Seattle Aquarium intake pump in downtown Seattle
+
+-   seawater matrix
+
+-   size class: 330 μm to 5000 μm
+
+### Puget Sound Ecosystem Monitoring Program (PSEMP)
+
+[2022 Toxics Monitoring Synthesis](https://www.eopugetsound.org/sites/default/files/features/resources/PSEMP_2022ToxicsMonitoringSynthesis_FINAL1.1.pdf)
+
+### Pollution Tracker
+
+Coast-wide Marine Pollution Monitoring Program in British Columbia, Canada
+
+Elizabeth Ruberg, Marie Noel, Kelsey Delisle (Ocean Wise, <https://pollutiontracker.org>)
+
+[Pollution Tracker, Microplastics](https://pollutiontracker.org/contaminants/microplastics/)
+
+-   Pollution Tracker Phase 1 (2015-2017) and Phase 2 (2018-2020) provide a high-quality coast wide baseline dataset
+
+-   During Phases 1 (2015-2017) and 2 (2018-2020), both legacy pollutants and emerging contaminants of concern were measured in sediment and mussels
+
+-   Microplastics were characterized in sediment and mussels
+
+-   Phase 1 results have been summarized in Noel et al. 2022 (under review) and will be posted once published. Key results include:
+
+    -   Microplastics averaged 32.6 ± 5.3 particles per kg in sediment and 0.38 ± 0.04 particles per individual mussel
+
+    -   Victoria Harbour and the North Coast were microplastics hotspots along the BC coast
+
+    -   Polyester and polyethylene dominated the polymer patterns in sediment and mussels
+
+    -   Analysis of Phase 2 microplastics samples and interpretation of results is in progress.
+
+### Frances Eshom-Arzadon, University of Washington School of Oceanography
+
+-   size class: 300 - 5000 um
+
+-   Eshom-Arzadon found between \~300-20 microplastic pieces per square meter across 12 sites
+
+-   used methods from Julie Masura
+
+> "As part of her [senior thesis](#0) project, Eshom-Arzadon visited each location once at the same time in the tidal cycle between November and February. She scraped sediment from an area just below the wrack line, the line of debris left by the high tide. She visited beaches from Tolmie State Park near Olympia, along the Seattle and Everett shorelines and as far out as Port Ludlow on the Olympic Peninsula, a control site far from populated areas." - [Hannah Hickey, UW News](#0)
+
+### Keely Hall, University of Washington School of Oceanography
+
+-   net tows through Commencement Bay
+
+-   seawater matrix
+
+-   data from UW Tacoma
+
+-   data from years 2017 - 2018
+
+-   63% fibers, 37% fragment in 2018
+
+-   100% fibers in 2017
+
+-   \~30-4 particles per liter in 2017
+
+-   \~4-12 particles per liter in 2018
+
+### [Julie Masura](https://www.tacoma.uw.edu/news/mud-bugs-andplastic), [UW Tacoma Teaching Professor](https://directory.tacoma.uw.edu/employee/jmasura?_gl=1*1795dne*_ga*MzY0NzA1ODYuMTY0MzgyNTE5MQ..*_ga_3T65WK0BM8*MTcxMzIxMjI0MS4yNS4xLjE3MTMyMTMyMzkuMC4wLjA.*_ga_JLHM9WH4JV*MTcxMzIxMjI0MS4yNS4xLjE3MTMyMTMyMzkuMC4wLjA.)
+
+### [Center for Urban Waters](https://www.tacoma.uw.edu/cuw/sources-and-distribution-marine-microplastics)

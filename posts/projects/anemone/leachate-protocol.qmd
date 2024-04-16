@@ -108,13 +108,11 @@ $$
 Pure water (H~2~O) is amphoteric, meaning it can act as both an acid and as a base
 :::
 
--   If the pH is less than \<8.2, make it more alkaline using 0.1M sodium hydroxide[^3] (NaOH, 39.997g/mol)
+-   If the pH is less than \<8.2, make it more alkaline using 0.1M sodium hydroxide[^3] (NaOH, 39.997g/mol) Slowly add via burette
 
 -   If the pH is more than \>8.2, make it more acidic using 0.1M hydrochloric acid\[\^4\] (HCl, 36.47 g/mol)
 
--   Calculate the amount of NaOH needed to adjust the initial pH to 8.2
-
--   Filter out any remaining solids[^4]
+-   Optional: filter out any remaining solids[^4]
 
 [^3]: "The sea salt does include a small number of insoluble solids occurring naturally in some of the main components. This remaining residue can be strained or filtered out and disposed of without affecting the accuracy of the dissolved seawater mixture."
 
@@ -122,13 +120,11 @@ Pure water (H~2~O) is amphoteric, meaning it can act as both an acid and as a ba
 
 ### Step 2. Mix seawater with microplastics (1 mg/mL in 250 mL)
 
--   Work under a ventilation fume hood so that microplastics are contained if there is a spill
+-   Tare a weigh boat and measure out 250 mg of microplastic
+
+-   Transfer 250 mg of microplastic to the 400 mL beaker via weigh boat
 
 -   Transfer 250 mL of artificial seawater to a 500 mL flask
-
--   Tare a foil weigh boat and measure out 250 mg of microplastic
-
--   Transfer 250 mg of microplastic to the 500 mL flask via foil weigh boat, and metal scoopula/funnel if necessary
 
 ### Step 3. Let soak
 
@@ -153,3 +149,9 @@ Pure water (H~2~O) is amphoteric, meaning it can act as both an acid and as a ba
 > So  just in the case if you want to run test at 100 mg/L you have to reschedule the number of test with the limitited amount of material, but in my opinion this is  an extremely high and unrealistic concentration that does not replicate the real environmental exposure scenario. I think that 10 g/L is reasonable as the highest concentration to be tested.
 >
 > However in the literature you can find experiments with level of plastic particles at even 1g/L. Of course, at this concentration they report coral bleaching and mortality but in my opinion it is like to say that plastic is toxic to humans because cause asphyxia  when you put your head in a plastic bag.
+
+-   The 100% leachate solution correlates to 1 gram of plastic per liter and 100mg/L ( 100,000 ug/L ) concentration of PAEs
+
+-   [Environmental concentrations of PAEs](../world-phthalates/index.qmd) have been reported to be between below limit of detection ( 0 ug/L ) and 168 ug/L
+
+-   [Environmental concentrations of plastics in Puget Sound](../../puget-sound-mps/puget-sound-mps.qmd) have been reported in numbers of particles per volume for seawater and numbers of particles per mass or area for sediment.

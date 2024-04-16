@@ -15,10 +15,18 @@ link-external-newwindow: true
 bibliography: puget-sound-mps.bib
 ---
 
+```{r message=FALSE, warning=FALSE}
+if ('tidyverse' %in% rownames(installed.packages()) == 'FALSE') install.packages('tidyverse')
+```
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+```
+
 ::: {.callout-important icon="false"}
 ## Learning Objective
 
-What are the commonly measured concentrations (g/L) of microplastics in Puget Sound, Washington? This goal of this objective is to understand the environmentally relevant range of this type of pollutant.
+What are the commonly measured concentrations of microplastics in Puget Sound, Washington? This goal of this objective is to understand the environmentally relevant range of this type of pollutant.
 :::
 
 > "Simply stated, we do not currently know levels of microplastics in the ocean (water, sediments, organisms), the spatial and temporal distribution of microplastics, the sources of these materials (either in absolute or relative terms), or the direct or indirect impacts microplastics may be having on marine life. From a basic understanding of the processes degrading plastic in the environment, it is likely that marine microplastics will persist in the ocean for very long times, and that levels of microplastics are likely accumulating world-wide (Thompson et al., 2004)." - [Center for Urban Waters, Sources and Distribution of Marine Microplastics](https://www.tacoma.uw.edu/cuw/sources-and-distribution-marine-microplastics)
@@ -69,13 +77,55 @@ Elizabeth Ruberg, Marie Noel, Kelsey Delisle (Ocean Wise, <https://pollutiontrac
 
 ### Frances Eshom-Arzadon, University of Washington School of Oceanography
 
+-   Undergrad senior thesis: [Concentration of Microplastics in Beach Sediments Surrounding Seattle, Washington in the Puget Sound Estuary](https://digital.lib.washington.edu/researchworks/handle/1773/39723)
+
 -   size class: 300 - 5000 um
 
--   Eshom-Arzadon found between \~300-20 microplastic pieces per square meter across 12 sites
+-   Eshom-Arzadon found between \~312-30 microplastic pieces per square meter across 12 sites
 
--   used methods from Julie Masura
+```{r}
+site <- c('alki', 'carkeek', 'goldengardens', 'howarth', 'mukilteo', 'dash', 'tolmie', 'elliot', 'discovery', 'shine', 'picnic', 'edmonds')
+
+microplastic_pieces <- c(249, 285, 135, 312, 30, 138, 111, 126, 135, 102, 114, 39)
+
+eshomarzadon <- tibble(
+  site = site, 
+  microplastic_pieces = microplastic_pieces
+  )
+
+mean(microplastic_pieces)
+sd(microplastic_pieces)
+```
+
+```{r}
+if ('hrbrthemes' %in% rownames(installed.packages()) == 'FALSE') install.packages('hrbrthemes')
+if ('viridis' %in% rownames(installed.packages()) == 'FALSE') install.packages('viridis')
+
+library(ggplot2)
+library(dplyr)
+library(hrbrthemes)
+library(viridis)
+
+eshomarzadon %>% 
+  ggplot(aes(x=site, y=microplastic_pieces)) +
+  geom_violin(width=1.4) +
+  geom_boxplot(width = 0.1, color = 'grey', alpha=0.2) +
+  scale_fill_viridis(discrete=TRUE) +
+  theme_ipsum()
+```
+
+-   followed NOAA Marine Debris Program lab manual methods
 
 > "As part of her [senior thesis](#0) project, Eshom-Arzadon visited each location once at the same time in the tidal cycle between November and February. She scraped sediment from an area just below the wrack line, the line of debris left by the high tide. She visited beaches from Tolmie State Park near Olympia, along the Seattle and Everett shorelines and as far out as Port Ludlow on the Olympic Peninsula, a control site far from populated areas." - [Hannah Hickey, UW News](#0)
+
+### Jessica Moats, University of Washington School of Oceanography, Vertical distribution of microplastics in Hood Canal and Main Basin, Puget Sound, Washington
+
+-   undergrad senior thesis
+-   mentored by Kathy Newell
+-   followed NOAA Marine Debris Program lab manual methods
+-   3.05x10-5 g/m3 average microplastic concentration across depths and sites
+-   1 cubic meter is 1000 liters
+-   So we're looking at 3.05X10-8 grams per liter in seawater
 
 ### Keely Hall, University of Washington School of Oceanography
 
@@ -98,3 +148,11 @@ Elizabeth Ruberg, Marie Noel, Kelsey Delisle (Ocean Wise, <https://pollutiontrac
 ### [Julie Masura](https://www.tacoma.uw.edu/news/mud-bugs-andplastic), [UW Tacoma Teaching Professor](https://directory.tacoma.uw.edu/employee/jmasura?_gl=1*1795dne*_ga*MzY0NzA1ODYuMTY0MzgyNTE5MQ..*_ga_3T65WK0BM8*MTcxMzIxMjI0MS4yNS4xLjE3MTMyMTMyMzkuMC4wLjA.*_ga_JLHM9WH4JV*MTcxMzIxMjI0MS4yNS4xLjE3MTMyMTMyMzkuMC4wLjA.)
 
 ### [Center for Urban Waters](https://www.tacoma.uw.edu/cuw/sources-and-distribution-marine-microplastics)
+
+[Puget Soundkeeper Microplastic Community Science Initiative](https://pugetsoundkeeper.org/maps/puget-sound-microplastic-community-science-initiative/)
+
+via EPA Microplastic Beach Sediment Protocol and [Marine Debris Tracker](https://debristracker.org/data)
+
+### [Pacific Northwest Consortium on Plastics](https://www.pnwmicroplastics.org/)
+
+Oceanography senior thesis archive, microplastics search: <https://digital.lib.washington.edu/researchworks/handle/1773/2306/discover>

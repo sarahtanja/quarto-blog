@@ -14,7 +14,6 @@ link-external-icon: true
 link-external-newwindow: true
 ---
 
-
 ```{r echo=TRUE, message=FALSE, warning=FALSE}
 ## install packages
 if (!require("tidyverse", character.only = TRUE)) { install.packages("tidyverse")}
@@ -27,28 +26,30 @@ library(tidyverse)
 library(kableExtra)
 ```
 
-# 27MAR2024
+## 18-APR-2024
 
-Nauplii counting
-
-Well-plate
+Kip added 5ul of betadine to each 'well bubble', but the betadine didn't seem to slow the nauplii down very much, and may have made counting harder because it made the background golden orange... the same color as the artemia nauplii! I think the glycerol did a better job of slowing them down. We also didn't have the light on right before harvesting 300mL... I think having the light on to super-concentrate the swimmers toward the stopcock is important to get consistent hatch numbers.
 
 ```{r}
 # Well plate counts of freshly hatched artemia nauplii
-A <- c(4,4,6,7,21,11)
-B <- c(3,6,8,7,5,9)
-C <- c(15,3,13,5,7,14)
-D <- c(8,13,8,16,12,5)
+# counts represent 20uL volumes
+A <- c(10.14,17,8,12,7)
+B <- c(10,18,15,8,10,11)
+C <- c(10,12,12,11,11,12)
+D <- c(10,15,11,13,13,16)
 
-# Sum each vector, and take the average
-ml_nauplii <- mean(c(sum(A), sum(B), sum(C), sum(D)))
-print(ml_nauplii)
-```
+naup <- data.frame(c(A, B, C, D)) %>%
+  rename(counts = 1)
 
-```{r}
-# Multiply it out by volume
-# Each anemone gets 4mL of nauplii
-ml_nauplii*4
+summary(naup)
+sd(naup$counts)
+
+# Calculate coefficient of variation
+cv <- sd(naup$counts) / mean(naup$counts) * 100
+
+# Print result
+print(cv)
+
 ```
 
 ## 29-MAR-2024
@@ -75,11 +76,11 @@ print(cv)
 
 ```
 
-So in 10uL we have 10 +/- 4 artemia... We have to multiply 10uL by 400 to get 4mL(4000uL) In 4mL we could have anywhere from $6*400 = 2,400$ to $10*400 = 4,000$ artemia So, not ideal... because that means some anemones would be possibly getting twice as much as others. Sigh. Fuck. Stats.
+So in 10uL we have 10 +/- 4 artemia... We have to multiply 10uL by 400 to get 4mL(4000uL) In 4mL we could have anywhere from $6*400 = 2,400$ to $10*400 = 4,000$ artemia So, not ideal... because that means some anemones would be possibly getting twice as much as others.
 
-So I need a better way to consistently count the artemia... so that I'm getting a more accurate count/method of distributing equal numbers. SHIT.
+So I need a better way to consistently count the artemia... so that I'm getting a more accurate count/method of distributing equal numbers.
 
-Ok going to use a stir plate and bar and try again
+Ok going to use a stir plate and bar and try again...
 
 ```{r}
 # Well plate counts of freshly hatched artemia nauplii
@@ -133,7 +134,22 @@ So. 20uL to 4mL, multiply by 200! 27+/-4 nauplii in 20uL, then there will be any
 
 I CAN COUNT SHRIMP.
 
+## 27MAR2024
+
+Nauplii counting
+
+Well-plate
+
+```{r} # Well plate counts of freshly hatched artemia nauplii A <- c(4,4,6,7,21,11) B <- c(3,6,8,7,5,9) C <- c(15,3,13,5,7,14) D <- c(8,13,8,16,12,5)  # Sum each vector, and take the average ml_nauplii <- mean(c(sum(A), sum(B), sum(C), sum(D))) print(ml_nauplii)}
+```
+
+```{r} # Multiply it out by volume # Each anemone gets 4mL of nauplii ml_nauplii*4}
+```
+
+## 
+
 ## 11-MAR-2024
+
 ```{r}
 # Well plate counts of freshly hatched artemia nauplii
 # counts represent 20uL volumes
@@ -161,7 +177,7 @@ print(cv)
 (mean(naup$counts)-sd(naup$counts))*50
 
 ```
-So between ~1.7K and ~1.1k artemia each
 
-I think 4mL last time was too much...  This time we do 1mL each instead? When I gave them 4mL at this concentration them last time there was a lot of leftover dead nauplii that just fouled up the dishes...
-For this feeding I gave them 1mL each at 15:30 on Thursday April 11th, after lowering the water level to just below the jar lids. I left the water level low until ___
+So between \~1.7K and \~1.1k artemia each
+
+I think 4mL last time was too much... This time we do 1mL each instead? When I gave them 4mL at this concentration them last time there was a lot of leftover dead nauplii that just fouled up the dishes... For this feeding I gave them 1mL each at 15:30 on Thursday April 11th, after lowering the water level to just below the jar lids. I left the water level low until \_\_\_

@@ -140,11 +140,9 @@ Nauplii counting
 
 Well-plate
 
-```{r} # Well plate counts of freshly hatched artemia nauplii A <- c(4,4,6,7,21,11) B <- c(3,6,8,7,5,9) C <- c(15,3,13,5,7,14) D <- c(8,13,8,16,12,5)  # Sum each vector, and take the average ml_nauplii <- mean(c(sum(A), sum(B), sum(C), sum(D))) print(ml_nauplii)}
-```
+`{r} # Well plate counts of freshly hatched artemia nauplii A <- c(4,4,6,7,21,11) B <- c(3,6,8,7,5,9) C <- c(15,3,13,5,7,14) D <- c(8,13,8,16,12,5)  # Sum each vector, and take the average ml_nauplii <- mean(c(sum(A), sum(B), sum(C), sum(D))) print(ml_nauplii)}`
 
-```{r} # Multiply it out by volume # Each anemone gets 4mL of nauplii ml_nauplii*4}
-```
+`{r} # Multiply it out by volume # Each anemone gets 4mL of nauplii ml_nauplii*4}`
 
 ## 
 

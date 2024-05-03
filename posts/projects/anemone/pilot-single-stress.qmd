@@ -1,0 +1,136 @@
+---
+title: "Single stressor leachate exposure summary"
+subtitle: "A 48 hour exposure to polyvinyl chloride (PVC) leachate and to aged polypropylene (PP) leachate"
+author: "Sarah Tanja"
+date: '05/03/2024'
+categories: [records]
+draft: false
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
+---
+
+# Specimen collection
+
+# Leachate preparation
+
+# Leachate dilution
+
+# Exposure
+
+# Response measurements
+
+# Initial results
+```{r}
+# Install packages
+if ("tidyverse" %in% rownames(installed.packages()) == 'FALSE') install.packages('tidyverse')
+if ("dplyr" %in% rownames(installed.packages()) == 'FALSE') install.packages('dplyr')
+if ("car" %in% rownames(installed.packages()) == 'FALSE') install.packages('car')
+
+# Load packages
+library(dplyr)
+library(tidyverse)
+library(car)
+```
+
+```{r}
+rates <- read_csv('rates.csv')
+```
+## Respiration
+
+### First glimpse of data
+```{r}
+ggplot(rates) +
+  aes(x = treatment, y = massnorm_resp_rate, color = treatment) +
+  geom_jitter() +
+  theme(legend.position = "none")
+```
+
+### Data normality
+```{r}
+resp_aov <-  aov(massnorm_resp_rate ~ treatment, data = rates)
+```
+
+```{r}
+par(mfrow = c(1, 2)) # combine plots
+
+# histogram
+hist(resp_aov$residuals)
+
+# QQ-plot
+qqPlot(resp_aov$residuals,
+  id = FALSE # id = FALSE to remove point identification
+)
+```
+### Boxplot
+```{r}
+ggplot(rates) +
+  aes(x = treatment, y = massnorm_resp_rate) +
+  geom_boxplot() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+### ANOVA
+```{r}
+resp_aov <- aov(massnorm_resp_rate ~ treatment,
+  data = rates
+)
+
+summary(resp_aov)
+```
+
+
+## Photosynthesis
+
+### First glimpse of data
+```{r}
+ggplot(rates) +
+  aes(x = treatment, y = massnorm_phot_rate, color = treatment) +
+  geom_jitter() +
+  theme(legend.position = "none")
+```
+
+### Data normality
+```{r}
+res_aov <-  aov(massnorm_phot_rate ~ treatment, data = rates)
+```
+
+```{r}
+par(mfrow = c(1, 2)) # combine plots
+
+# histogram
+hist(res_aov$residuals)
+
+# QQ-plot
+qqPlot(res_aov$residuals,
+  id = FALSE # id = FALSE to remove point identification
+)
+```
+
+### Boxplot
+```{r}
+ggplot(rates) +
+  aes(x = treatment, y = massnorm_phot_rate) +
+  geom_boxplot() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+### ANOVA
+```{r}
+phot_aov <- aov(massnorm_phot_rate ~ treatment,
+  data = rates
+)
+
+summary(phot_aov)
+```
+
+
+
+# Gaps & improvements
+
+- We still need to be able to  
+

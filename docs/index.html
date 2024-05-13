@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -60,7 +60,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script>
@@ -94,6 +95,7 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
@@ -113,39 +115,39 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Sarah Tanja’s Open Lab Notebook</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link" href="./about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html">
+    <a class="nav-link" href="./projects.html" rel="" target="">
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/sarah-tanja-595722146/"><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/sarah-tanja-595722146/" rel="" target=""><i class="bi bi-linkedin" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/sarahtanja"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/sarahtanja" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:stanja@uw.edu"><i class="bi bi-envelope-heart" role="img">
+    <a class="nav-link" href="mailto:stanja@uw.edu" rel="" target=""><i class="bi bi-envelope-heart" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div class="quarto-toggle-container">
-                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-              </div>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -172,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(28)</span></div><div class="category" data-category="anemones">anemones <span class="quarto-category-count">(6)</span></div><div class="category" data-category="code help">code help <span class="quarto-category-count">(1)</span></div><div class="category" data-category="committee">committee <span class="quarto-category-count">(3)</span></div><div class="category" data-category="daily log">daily log <span class="quarto-category-count">(1)</span></div><div class="category" data-category="lab records">lab records <span class="quarto-category-count">(6)</span></div><div class="category" data-category="learning journey">learning journey <span class="quarto-category-count">(10)</span></div><div class="category" data-category="protocols">protocols <span class="quarto-category-count">(5)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(29)</span></div><div class="category" data-category="anemones">anemones <span class="quarto-category-count">(6)</span></div><div class="category" data-category="code help">code help <span class="quarto-category-count">(1)</span></div><div class="category" data-category="committee">committee <span class="quarto-category-count">(3)</span></div><div class="category" data-category="daily log">daily log <span class="quarto-category-count">(1)</span></div><div class="category" data-category="lab records">lab records <span class="quarto-category-count">(6)</span></div><div class="category" data-category="learning journey">learning journey <span class="quarto-category-count">(10)</span></div><div class="category" data-category="protocols">protocols <span class="quarto-category-count">(5)</span></div><div class="category" data-category="records">records <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -185,9 +187,9 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1712793346121" data-listing-reading-time-sort="0.19">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1712859139530" data-listing-reading-time-sort="1">
 <div class="thumbnail">
-<p><a href="./posts/projects/anemone.html"> <img src="./posts/projects/vancouver-aquarium-pink-tip-nems.jpg" class="thumnail-image"> </a></p>
+<p><a href="./posts/projects/anemone.html"> <img src="./posts/projects/vancouver-aquarium-pink-tip-nems.jpg" class="thumbnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./posts/projects/anemone.html">
@@ -206,9 +208,9 @@ This experiment will test the photobiology, respiration, microbiome, and gene ex
 <a href="./posts/projects/anemone.html"> </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1712793160891" data-listing-reading-time-sort="0.685">
+<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1712859139545" data-listing-reading-time-sort="1">
 <div class="thumbnail">
-<p><a href="./posts/projects/coral-pae-temp.html"> <img src="./posts/projects/himb-mcap-horizon.jpg" class="thumnail-image"> </a></p>
+<p><a href="./posts/projects/coral-pae-temp.html"> <img src="./posts/projects/himb-mcap-horizon.jpg" class="thumbnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./posts/projects/coral-pae-temp.html">
@@ -227,9 +229,44 @@ This project was a multiple-stressor mesocosm experiment I conducted in August 2
 <a href="./posts/projects/coral-pae-temp.html"> </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="anemones" data-listing-date-sort="1714633200000" data-listing-file-modified-sort="1712936027643" data-listing-reading-time-sort="4.4">
+<div class="quarto-post image-right" data-index="2" data-categories="records" data-listing-date-sort="1714719600000" data-listing-file-modified-sort="1715008224278" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
 <div class="thumbnail">
-<p><a href="./posts/projects/anemone/about-anemones/about-anemone.html"> <img src="./posts/projects/anemone/about-anemones/brandt1835.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/projects/anemone/single-stress/pilot-single-stress.html"> <p class="card-img-top"><img src="posts\projects\anemone\single-stress\field-collection\field-pics\12\PXL_20240319_022405096.jpg"  class="thumbnail-image card-img"/></p> </a></p>
+</div>
+<div class="body">
+<a href="./posts/projects/anemone/single-stress/pilot-single-stress.html">
+<h3 class="no-anchor listing-title">
+Single stressor leachate exposure summary
+</h3>
+<div class="listing-subtitle">
+A 48 hour exposure to polyvinyl chloride (PVC) leachate and to aged polypropylene (PP) leachate
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('records'); return false;">
+records
+</div>
+</div>
+<a href="./posts/projects/anemone/single-stress/pilot-single-stress.html">
+<div class="listing-description">
+We collected anemones at Owens Beach Park in Tacoma and at Constellation Park in West Seattle.
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/projects/anemone/single-stress/pilot-single-stress.html">
+<div class="listing-date">
+May 3, 2024
+</div>
+<div class="listing-author">
+Sarah Tanja
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="anemones" data-listing-date-sort="1714633200000" data-listing-file-modified-sort="1712860994331" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<div class="thumbnail">
+<p><a href="./posts/projects/anemone/about-anemones/about-anemone.html"> <p class="card-img-top"><img src="posts\projects\anemone\about-anemones\brandt1835.png"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
 <a href="./posts/projects/anemone/about-anemones/about-anemone.html">
@@ -262,13 +299,9 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="learning journey" data-listing-date-sort="1713164400000" data-listing-file-modified-sort="1713823756501" data-listing-reading-time-sort="4.24">
+<div class="quarto-post image-right" data-index="4" data-categories="learning journey" data-listing-date-sort="1713164400000" data-listing-file-modified-sort="1714761848313" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
 <div class="thumbnail">
-<a href="./posts/puget-sound-mps/puget-sound-mps.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/puget-sound-mps/puget-sound-mps.html"></a></p>
+<p><a href="./posts/puget-sound-mps/puget-sound-mps.html"> <p class="card-img-top"><img src="posts\puget-sound-mps\puget-sound-mps_files\figure-html\unnamed-chunk-4-1.png"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
 <a href="./posts/puget-sound-mps/puget-sound-mps.html">
@@ -301,13 +334,9 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="anemones,lab records" data-listing-date-sort="1711782000000" data-listing-file-modified-sort="1713030408703" data-listing-reading-time-sort="3.025">
+<div class="quarto-post image-right" data-index="5" data-categories="anemones,lab records" data-listing-date-sort="1711782000000" data-listing-file-modified-sort="1714761848297" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
 <div class="thumbnail">
-<a href="./posts/projects/anemone/field-collection/30MAR24-alki.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/projects/anemone/field-collection/30MAR24-alki.html"></a></p>
+<p><a href="./posts/projects/anemone/field-collection/30MAR24-alki.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/projects/anemone/field-collection/30MAR24-alki.html">
@@ -343,9 +372,9 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="protocols" data-listing-date-sort="1711436400000" data-listing-file-modified-sort="1713469998561" data-listing-reading-time-sort="6.07">
+<div class="quarto-post image-right" data-index="6" data-categories="protocols" data-listing-date-sort="1711436400000" data-listing-file-modified-sort="1714761848299" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
 <div class="thumbnail">
-<p><a href="./posts/projects/anemone/leachate-protocol.html"> <img src="./posts/projects/anemone/astm-seawater.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/projects/anemone/leachate-protocol.html"> <p class="card-img-top"><img src="posts\projects\anemone\astm-seawater.png"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
 <a href="./posts/projects/anemone/leachate-protocol.html">
@@ -378,9 +407,9 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="anemones,lab records" data-listing-date-sort="1710745200000" data-listing-file-modified-sort="1712970410293" data-listing-reading-time-sort="6.26">
+<div class="quarto-post image-right" data-index="7" data-categories="anemones,lab records" data-listing-date-sort="1710745200000" data-listing-file-modified-sort="1714761848296" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
 <div class="thumbnail">
-<p><a href="./posts/projects/anemone/field-collection/18MAR24-owens-beach.html"> <img src="./posts/projects/anemone/field-collection/field-pics/3/PXL_20240319_013300705.jpg" class="thumnail-image"> </a></p>
+<p><a href="./posts/projects/anemone/field-collection/18MAR24-owens-beach.html"> <p class="card-img-top"><img src="posts\projects\anemone\field-collection\field-pics\3\PXL_20240319_013300705.jpg"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
 <a href="./posts/projects/anemone/field-collection/18MAR24-owens-beach.html">
@@ -416,9 +445,9 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="daily log" data-listing-date-sort="1708588800000" data-listing-file-modified-sort="1711987284965" data-listing-reading-time-sort="48.415">
+<div class="quarto-post image-right" data-index="8" data-categories="daily log" data-listing-date-sort="1708588800000" data-listing-file-modified-sort="1712852872012" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="49">
 <div class="thumbnail">
-<p><a href="./posts/daily-log/index.html"> <img src="./posts/daily-log/log.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/daily-log/index.html"> <img src="./posts/daily-log/log.png" class="thumbnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./posts/daily-log/index.html">
@@ -451,9 +480,9 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="protocols,anemones" data-listing-date-sort="1707465600000" data-listing-file-modified-sort="1712595347293" data-listing-reading-time-sort="2.625">
+<div class="quarto-post image-right" data-index="9" data-categories="protocols,anemones" data-listing-date-sort="1707465600000" data-listing-file-modified-sort="1712852873845" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
 <div class="thumbnail">
-<p><a href="./posts/projects/anemone/tanks/tanks.html"> <img src="./posts/projects/anemone/tanks/neptune-rack6.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/projects/anemone/tanks/tanks.html"> <p class="card-img-top"><img src="posts\projects\anemone\tanks\neptune-rack6.png"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
 <a href="./posts/projects/anemone/tanks/tanks.html">
@@ -489,9 +518,9 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="learning journey,anemones" data-listing-date-sort="1707120000000" data-listing-file-modified-sort="1713232461833" data-listing-reading-time-sort="3.98">
+<div class="quarto-post image-right" data-index="10" data-categories="learning journey,anemones" data-listing-date-sort="1707120000000" data-listing-file-modified-sort="1714761848310" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
 <div class="thumbnail">
-<p><a href="./posts/projects/anemone/photosynth-pam/photosynth-pam.html"> <img src="./posts/projects/anemone/photosynth-pam/thumbnail.jpg" class="thumnail-image"> </a></p>
+<p><a href="./posts/projects/anemone/photosynth-pam/photosynth-pam.html"> <img src="./posts/projects/anemone/photosynth-pam/thumbnail.jpg" class="thumbnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./posts/projects/anemone/photosynth-pam/photosynth-pam.html">
@@ -527,9 +556,9 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="learning journey" data-listing-date-sort="1707120000000" data-listing-file-modified-sort="1707163997057" data-listing-reading-time-sort="5.21">
+<div class="quarto-post image-right" data-index="11" data-categories="learning journey" data-listing-date-sort="1707120000000" data-listing-file-modified-sort="1709067654559" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
 <div class="thumbnail">
-<p><a href="./posts/rnoaa/index.html"> <img src="./posts/rnoaa/thumbnail.jpg" class="thumnail-image"> </a></p>
+<p><a href="./posts/rnoaa/index.html"> <img src="./posts/rnoaa/thumbnail.jpg" class="thumbnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./posts/rnoaa/index.html">
@@ -562,9 +591,9 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-categories="anemones" data-listing-date-sort="1704182400000" data-listing-file-modified-sort="1713208514349" data-listing-reading-time-sort="8.625">
+<div class="quarto-post image-right" data-index="12" data-categories="anemones" data-listing-date-sort="1704182400000" data-listing-file-modified-sort="1714761848311" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
 <div class="thumbnail">
-<p><a href="./posts/projects/anemone/plan/project-planning.html"> <img src="./posts/projects/anemone/plan/aelegantissima-2x3.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/projects/anemone/plan/project-planning.html"> <p class="card-img-top"><img src="posts\projects\anemone\plan\aelegantissima-2x3.png"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
 <a href="./posts/projects/anemone/plan/project-planning.html">
@@ -597,9 +626,9 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="12" data-categories="learning journey" data-listing-date-sort="1701849600000" data-listing-file-modified-sort="1706812104125" data-listing-reading-time-sort="2.53">
+<div class="quarto-post image-right" data-index="13" data-categories="learning journey" data-listing-date-sort="1701849600000" data-listing-file-modified-sort="1704323181275" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
 <div class="thumbnail">
-<p><a href="./posts/pseudoreplication/index.html"> <img src="./posts/pseudoreplication/thumbnail.jpg" class="thumnail-image"> </a></p>
+<p><a href="./posts/pseudoreplication/index.html"> <img src="./posts/pseudoreplication/thumbnail.jpg" class="thumbnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./posts/pseudoreplication/index.html">
@@ -632,9 +661,9 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="13" data-categories="learning journey" data-listing-date-sort="1701849600000" data-listing-file-modified-sort="1706918226240" data-listing-reading-time-sort="0.055">
+<div class="quarto-post image-right" data-index="14" data-categories="learning journey" data-listing-date-sort="1701849600000" data-listing-file-modified-sort="1709067654559" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="thumbnail">
-<p><a href="./posts/quarto-blog-create/index.html"> <img src="./posts/quarto-blog-create/thumbnail.jpg" class="thumnail-image"> </a></p>
+<p><a href="./posts/quarto-blog-create/index.html"> <img src="./posts/quarto-blog-create/thumbnail.jpg" class="thumbnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./posts/quarto-blog-create/index.html">
@@ -667,9 +696,9 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="14" data-categories="learning journey" data-listing-date-sort="1701244800000" data-listing-file-modified-sort="1713208639006" data-listing-reading-time-sort="8.015">
+<div class="quarto-post image-right" data-index="15" data-categories="learning journey" data-listing-date-sort="1701244800000" data-listing-file-modified-sort="1714761848315" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
 <div class="thumbnail">
-<p><a href="./posts/world-phthalates/index.html"> <img src="./posts/world-phthalates/thumbnail.jpg" class="thumnail-image"> </a></p>
+<p><a href="./posts/world-phthalates/index.html"> <img src="./posts/world-phthalates/thumbnail.jpg" class="thumbnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./posts/world-phthalates/index.html">
@@ -702,9 +731,9 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="15" data-categories="committee" data-listing-date-sort="1700380800000" data-listing-file-modified-sort="1701205122655" data-listing-reading-time-sort="34.95">
+<div class="quarto-post image-right" data-index="16" data-categories="committee" data-listing-date-sort="1700380800000" data-listing-file-modified-sort="1701206318516" data-listing-date-modified-sort="1701072000000" data-listing-reading-time-sort="35">
 <div class="thumbnail">
-<p><a href="./posts/committee-2/index.html"> <img src="./posts/committee-2/redo-with-solvent-exp.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/committee-2/index.html"> <p class="card-img-top"><img src="posts\committee-2\redo-with-solvent-exp.png"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
 <a href="./posts/committee-2/index.html">
@@ -737,13 +766,9 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="16" data-categories="learning journey,committee" data-listing-date-sort="1700380800000" data-listing-file-modified-sort="1706831995558" data-listing-reading-time-sort="10.12">
+<div class="quarto-post image-right" data-index="17" data-categories="learning journey,committee" data-listing-date-sort="1700380800000" data-listing-file-modified-sort="1709067654559" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11">
 <div class="thumbnail">
-<a href="./posts/thesis-progress/index.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/thesis-progress/index.html"></a></p>
+<p><a href="./posts/thesis-progress/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/thesis-progress/index.html">
@@ -779,13 +804,9 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="17" data-categories="protocols" data-listing-date-sort="1699948800000" data-listing-file-modified-sort="1701371999379" data-listing-reading-time-sort="4.745">
+<div class="quarto-post image-right" data-index="18" data-categories="protocols" data-listing-date-sort="1699948800000" data-listing-file-modified-sort="1701214715049" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
 <div class="thumbnail">
-<a href="./posts/pae-standard-control/index.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/pae-standard-control/index.html"></a></p>
+<p><a href="./posts/pae-standard-control/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/pae-standard-control/index.html">
@@ -818,13 +839,9 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="18" data-categories="code help" data-listing-date-sort="1699167600000" data-listing-file-modified-sort="1700590395117" data-listing-reading-time-sort="3.895">
+<div class="quarto-post image-right" data-index="19" data-categories="code help" data-listing-date-sort="1699167600000" data-listing-file-modified-sort="1700451347653" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
 <div class="thumbnail">
-<a href="./posts/git-reset/index.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/git-reset/index.html"></a></p>
+<p><a href="./posts/git-reset/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/git-reset/index.html">
@@ -857,9 +874,9 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="19" data-categories="protocols" data-listing-date-sort="1692774000000" data-listing-file-modified-sort="1713030412953" data-listing-reading-time-sort="20.235">
+<div class="quarto-post image-right" data-index="20" data-categories="protocols" data-listing-date-sort="1692774000000" data-listing-file-modified-sort="1696956813041" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="21">
 <div class="thumbnail">
-<p><a href="./posts/dna-rna-extraction-protocol/index.html"> <img src="./posts/dna-rna-extraction-protocol/fragment-cull.jpg" class="thumnail-image"> </a></p>
+<p><a href="./posts/dna-rna-extraction-protocol/index.html"> <p class="card-img-top"><img src="posts\dna-rna-extraction-protocol\fragment-cull.jpg"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
 <a href="./posts/dna-rna-extraction-protocol/index.html">
@@ -892,9 +909,9 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="20" data-categories="lab records" data-listing-date-sort="1692687600000" data-listing-file-modified-sort="1698348026737" data-listing-reading-time-sort="14.3">
+<div class="quarto-post image-right" data-index="21" data-categories="lab records" data-listing-date-sort="1692687600000" data-listing-file-modified-sort="1696967359746" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="15">
 <div class="thumbnail">
-<p><a href="./posts/rna-woes/index.html"> <img src="./posts/rna-woes/nanodrop_plot_03AUG23.jpg" class="thumnail-image"> </a></p>
+<p><a href="./posts/rna-woes/index.html"> <p class="card-img-top"><img src="posts\rna-woes\nanodrop_plot_03AUG23.jpg" alt="Nanodrop plot results"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
 <a href="./posts/rna-woes/index.html">
@@ -927,13 +944,9 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="21" data-categories="learning journey" data-listing-date-sort="1691650800000" data-listing-file-modified-sort="1692136827064" data-listing-reading-time-sort="5.425">
+<div class="quarto-post image-right" data-index="22" data-categories="learning journey" data-listing-date-sort="1691650800000" data-listing-file-modified-sort="1693329536684" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
 <div class="thumbnail">
-<a href="./posts/qiime-jupyter-start/index.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/qiime-jupyter-start/index.html"></a></p>
+<p><a href="./posts/qiime-jupyter-start/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/qiime-jupyter-start/index.html">
@@ -966,13 +979,9 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="22" data-categories="learning journey" data-listing-date-sort="1690441200000" data-listing-file-modified-sort="1691090111141" data-listing-reading-time-sort="1.165">
+<div class="quarto-post image-right" data-index="23" data-categories="learning journey" data-listing-date-sort="1690441200000" data-listing-file-modified-sort="1690917741157" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
 <div class="thumbnail">
-<a href="./posts/target-journals/index.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/target-journals/index.html"></a></p>
+<p><a href="./posts/target-journals/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/target-journals/index.html">
@@ -1005,13 +1014,9 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="23" data-categories="lab records,protocols" data-listing-date-sort="1687417200000" data-listing-file-modified-sort="1699997792400" data-listing-reading-time-sort="8.9">
+<div class="quarto-post image-right" data-index="24" data-categories="lab records,protocols" data-listing-date-sort="1687417200000" data-listing-file-modified-sort="1699996358929" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
 <div class="thumbnail">
-<a href="./posts/coral-pae-devo/index.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/coral-pae-devo/index.html"></a></p>
+<p><a href="./posts/coral-pae-devo/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/coral-pae-devo/index.html">
@@ -1047,13 +1052,9 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="24" data-categories="learning journey" data-listing-date-sort="1686207600000" data-listing-file-modified-sort="1692126376906" data-listing-reading-time-sort="1.965">
+<div class="quarto-post image-right" data-index="25" data-categories="learning journey" data-listing-date-sort="1686207600000" data-listing-file-modified-sort="1691796481202" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
 <div class="thumbnail">
-<a href="./posts/choosing-16S-primers/index.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/choosing-16S-primers/index.html"></a></p>
+<p><a href="./posts/choosing-16S-primers/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/choosing-16S-primers/index.html">
@@ -1086,13 +1087,9 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="25" data-categories="lab records" data-listing-date-sort="1684825200000" data-listing-file-modified-sort="1692126376912" data-listing-reading-time-sort="3.6">
+<div class="quarto-post image-right" data-index="26" data-categories="lab records" data-listing-date-sort="1684825200000" data-listing-file-modified-sort="1691796524531" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
 <div class="thumbnail">
-<a href="./posts/extractions-overview/index.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/extractions-overview/index.html"></a></p>
+<p><a href="./posts/extractions-overview/index.html"> <p class="card-img-top"><img data-src="posts\extractions-overview\index_files\figure-html\unnamed-chunk-6-1.png"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
 <a href="./posts/extractions-overview/index.html">
@@ -1125,9 +1122,9 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="26" data-categories="lab records" data-listing-date-sort="1682406000000" data-listing-file-modified-sort="1712858809790" data-listing-reading-time-sort="24.485">
+<div class="quarto-post image-right" data-index="27" data-categories="lab records" data-listing-date-sort="1682406000000" data-listing-file-modified-sort="1712859139547" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="25">
 <div class="thumbnail">
-<p><a href="./posts/projects/coral-pae-temp/dna-rna-extractions/dna-rna-coral-extractions.html"> <img data-src="./posts/projects/coral-pae-temp/dna-rna-extractions/PXL_20230421_213402619.jpg" class="thumnail-image"> </a></p>
+<p><a href="./posts/projects/coral-pae-temp/dna-rna-extractions/dna-rna-coral-extractions.html"> <p class="card-img-top"><img data-src="posts\projects\coral-pae-temp\dna-rna-extractions\PXL_20230421_213402619.jpg" alt="mortar and pestle with cryogloves"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
 <a href="./posts/projects/coral-pae-temp/dna-rna-extractions/dna-rna-coral-extractions.html">
@@ -1160,9 +1157,9 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="27" data-categories="committee" data-listing-date-sort="1675670400000" data-listing-file-modified-sort="1692144454413" data-listing-reading-time-sort="26.58">
+<div class="quarto-post image-right" data-index="28" data-categories="committee" data-listing-date-sort="1675670400000" data-listing-file-modified-sort="1693329536475" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="27">
 <div class="thumbnail">
-<p><a href="./posts/committee-1/index.html"> <img data-src="https://www.frontiersin.org/files/Articles/980705/fmars-09-980705-HTML/image_m/fmars-09-980705-g001.jpg" class="thumnail-image"> </a></p>
+<p><a href="./posts/committee-1/index.html"> <p class="card-img-top"><img data-src="https://www.frontiersin.org/files/Articles/980705/fmars-09-980705-HTML/image_m/fmars-09-980705-g001.jpg" alt="one-health"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
 <a href="./posts/committee-1/index.html">
@@ -1345,9 +1342,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -1412,6 +1423,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -1455,6 +1552,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">This page is built using <a href="https://quarto.org/">Quarto</a>❤️</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
   </div>
 </footer>
 

@@ -1,0 +1,219 @@
+---
+title: "Single stressor leachate exposure summary"
+subtitle: "A 48 hour exposure to polyvinyl chloride (PVC) leachate and to aged polypropylene (PP) leachate"
+author: "Sarah Tanja"
+date: '05/03/2024'
+categories: [records]
+draft: false
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
+---
+
+# Specimen collection
+
+We collected anemones at [Owens Beach Park](https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/field-collection/18MAR24-owens-beach.html) in Tacoma and at [Constellation Park](https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/field-collection/30MAR24-alki.html) in West Seattle.
+
+![](field-collection/field-pics/12/PXL_20240319_022405096.jpg)
+
+# Leachate preparation
+
+See [Leachate prepatation protocol](https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/leachate-protocol.html)
+
+We prepared leachate for PVC (\<500um) and for PP (aged)
+
+![](images/PXL_20240412_230820563.jpg)
+
+![](images/PXL_20240412_232609016.jpg)
+
+![](images/PXL_20240416_001441079.jpg)
+
+![](images/PXL_20240422_230547996.jpg)
+
+![](images/PXL_20240423_005801129.jpg)
+
+![](images/PXL_20240423_005933927.jpg)
+
+![](images/PXL_20240423_011215280.jpg)
+
+![](images/PXL_20240423_012640301.jpg)
+
+# Leachate dilution
+
+We performed a serial dilution on each prepared leachate to create leachate treatments that represent a mass of microplastic type to volume of water:
+
+-   100 mg/L
+-   10 mg/L
+-   1 mg/L
+-   0.1 mg/L
+-   0.01 mg/L
+
+For this we took 20mL of the 1000 mg/L leachate, and added it to 180mL of filtered seawater to make the 100mg/L concentration.
+
+We then serially diluted the remaining concentrations in a similar fashion.
+
+# Exposure
+
+We exposed individual anemones to the leachate treatments for 48 hours in closed-systems. For this, we used 0.5 pint mason jars set in a recirculating seawater bath temperature-controlled by a heat exchanger and the Neptune Apex aquarium controller system.
+
+![](images/PXL_20240424_190134501.RAW-02.ORIGINAL.jpg)
+
+The water bath was kept at 10C throughout the exposure.
+
+# Response measurements
+
+After 48 hours we measured:
+
+-   Rapid Light Curves using a Walz Diving II PAM ![](PXL_20240426_162505396.PORTRAIT.jpg)
+
+![](images/PXL_20240426_224927703.jpg)
+
+-   30 minutes of respirometry in the dark-adapted state (oxygen consumption, cellular respiration)
+
+-   30 minutes of respirometry in the light-saturated state (oxygen production, photosynthesis)
+
+-   wet weight 
+
+![](images/PXL_20240428_004714187.jpg)
+
+And then placed anemones in labelled 5mL centrifuge tubes and flash froze them in liquid-nitrogen
+
+# Initial results
+
+```{r}
+# Install packages
+if ("tidyverse" %in% rownames(installed.packages()) == 'FALSE') install.packages('tidyverse')
+if ("dplyr" %in% rownames(installed.packages()) == 'FALSE') install.packages('dplyr')
+if ("car" %in% rownames(installed.packages()) == 'FALSE') install.packages('car')
+
+# Load packages
+library(dplyr)
+library(tidyverse)
+library(car)
+```
+
+```{r}
+rates <- read_csv('rates.csv')
+```
+
+## Respiration
+
+
+![](images/PXL_20240426_191325446.jpg)
+
+![](images/PXL_20240426_191336067.jpg)
+
+### First glimpse of data
+
+```{r}
+ggplot(rates) +
+  aes(x = treatment, y = massnorm_resp_rate, color = treatment) +
+  geom_jitter() +
+  theme(legend.position = "none")
+```
+
+### Data normality
+
+```{r}
+resp_aov <-  aov(massnorm_resp_rate ~ treatment, data = rates)
+```
+
+```{r}
+par(mfrow = c(1, 2)) # combine plots
+
+# histogram
+hist(resp_aov$residuals)
+
+# QQ-plot
+qqPlot(resp_aov$residuals,
+  id = FALSE # id = FALSE to remove point identification
+)
+```
+
+### Boxplot
+
+```{r}
+ggplot(rates) +
+  aes(x = treatment, y = massnorm_resp_rate) +
+  geom_boxplot() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+### ANOVA
+
+```{r}
+resp_aov <- aov(massnorm_resp_rate ~ treatment,
+  data = rates
+)
+
+summary(resp_aov)
+```
+
+## Photosynthesis
+
+### First glimpse of data
+
+```{r}
+ggplot(rates) +
+  aes(x = treatment, y = massnorm_phot_rate, color = treatment) +
+  geom_jitter() +
+  theme(legend.position = "none")
+```
+
+### Data normality
+
+```{r}
+res_aov <-  aov(massnorm_phot_rate ~ treatment, data = rates)
+```
+
+```{r}
+par(mfrow = c(1, 2)) # combine plots
+
+# histogram
+hist(res_aov$residuals)
+
+# QQ-plot
+qqPlot(res_aov$residuals,
+  id = FALSE # id = FALSE to remove point identification
+)
+```
+
+### Boxplot
+
+```{r}
+ggplot(rates) +
+  aes(x = treatment, y = massnorm_phot_rate) +
+  geom_boxplot() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+### ANOVA
+
+```{r}
+phot_aov <- aov(massnorm_phot_rate ~ treatment,
+  data = rates
+)
+
+summary(phot_aov)
+```
+
+# Coming up next
+
+-   Start the PAM Rapid Light Curve analysis
+
+-   Extract RNA for gene expression of host anemone and symbiont dinoflagellate
+
+# Gaps & improvements
+
+::: callout-important
+We still need to be able to take the background `signature` of our filtered seawater using C18 SPME fiber extractions, preserve the fibers, and send them to the Saliu Lab for analysis
+:::
+
+::: callout-note
+We are limited to short exposures because of the 48 hour window we have to work with fresh leachate. We can get around this by making leachate in batches and doing water changes every 48 hours, but we will need larger stocks of microplastic with which to make the leachate if we want to pursue this
+:::

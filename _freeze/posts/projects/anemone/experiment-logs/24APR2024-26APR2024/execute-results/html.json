@@ -1,0 +1,14 @@
+{
+  "hash": "83781b3d7c8012a27d037c93c0fa57c2",
+  "result": {
+    "markdown": "---\ntitle: \"Kip's Capstone Round\"\nsubtitle: \"Our first attempt at generating response curves of anemone respiration & photosynthesis  to increasing levels of PVC and PP leachate\"\nauthor: \"Sarah Tanja\"\ndate: '04/24/2024'\ncategories: [anemones, records]\ndraft: false\ntoc: true\ntoc-title: Contents <i class=\"bi bi-bookmark-heart\"></i>\ntoc-depth: 5\ntoc-location: left\nreference-location: margin\ncitation-location: margin\nlink-external-icon: true\nlink-external-newwindow: true\nbibliography: ../anemone-leachate-heat.bib\n---\n\n\n## Tentacle snip\n\nFor an anemone muscle relaxant make 500mL of 0.3M MgCl~2~. The final muscle relaxant will be a 1:1 ratio of the 0.3M MgCl~2~ and filtered seawater, so this will give us a total of 1L of solution to use across the experiment.\n\nI used Fisher Chemical [Magnesium Chloride Hexahydrate](https://www.fishersci.com/shop/products/magnesium-chloride-hexahydrate-crystalline-certified-acs-fisher-chemical-2/M33500?gclid=CjwKCAjw26KxBhBDEiwAu6KXtxq6G-tMIxhF3_cyBB4bln-A5ZBd3e-x4zQmiUhtrWKL8hAWeDhDbhoCg1MQAvD_BwE&ef_id=CjwKCAjw26KxBhBDEiwAu6KXtxq6G-tMIxhF3_cyBB4bln-A5ZBd3e-x4zQmiUhtrWKL8hAWeDhDbhoCg1MQAvD_BwE:G:s&s_kwcid=AL!3652!3!380738286232!!!g!!&gad_source=1) , CAS 7791-18-6\n\nUse the molar mass[^1] of Magnesium Chloride Hexahydrate (203.33g) to calculate how much salt we need to add to DI water to make 500mL of 0.3M MgCl~2~\n\n[^1]: Learn how to calculate it yourself in this quick [youtube video](https://www.google.com/search?q=molar+mass+MgCl2+6H2O&rlz=1C1CHBF_enUS973US973&oq=molar+mass+MgCl2+6H2O&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigXSAQkyMjYwNmowajeoAgiwAgE&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:cf42848d,vid:p8RZ_f0e7Fc,st:3) or just believe the number given on the chemical bottle label (it's the same)\n\n> $$\n> n = Mv\n> $$ where:\n>\n> n = moles\n>\n> M = molar concentration\n>\n> v = volume in liters\n\nSo to find the recipe for 0.3M MgCl~2~\n\nCalculate how many moles are in 500mL (0.5L):\n\n$$\nn = 0.3M\\, \\text{MgCl}_{2}\\cdot0.5L \\\\\nn = 0.15\\, \\text{moles}\n$$\n\nAnd calculate how many grams are in 0.15 moles:\n\n\n::: {.cell}\n\n```{.r .cell-code}\n203.33*0.15\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 30.4995\n```\n:::\n:::\n\n\n$$\n\\text{mass}(g) = \\text{molar mass}\\,(g) \\cdot \\text{moles} \\\\\n\\text{mass}(g) = 203.33\\,(g) \\cdot 0.15\\, moles \\\\\n \\text{mass}(g) = 30.50\n$$\n\nSO we add 30.5 grams of MgCl~2~ to a 500mL reagent bottle, and then fill it until a total volume of 500mL is reached. *Voila!*\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

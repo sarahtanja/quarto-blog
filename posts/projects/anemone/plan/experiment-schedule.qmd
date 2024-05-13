@@ -1,0 +1,62 @@
+---
+title: "Anemone Experiment Recipe"
+author: "Sarah Tanja"
+date: '04/23/2024'
+categories: [anemones, protocols]
+draft: false
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
+bibliography: ../anemone-leachate-heat.bib
+---
+
+## Day 1
+
+-   Start leachate
+
+## Day 2
+
+-   Collect anemones
+
+-   Leachate at 24 hrs
+
+## Day 3
+
+-   Leachate at 42 hrs
+
+## Day 4
+
+-   Leachate at 72 hrs
+
+## Day 5
+
+-   Leachate at 96 hrs
+
+## Day 6
+
+-   Leachate at 120 hrs
+
+## Day 7
+
+-   Leachate at 144 hrs
+
+## Day 8
+
+-   Leachate at 168 hrs
+
+-   Harvest & filter leachate
+
+-   Dilute leachate to 10, 1, 0.1, & 0.01 mg/L concentrations
+
+-   Lower water level
+
+-   Apply leachate as treatment
+
+## Day 9
+
+## Day 10

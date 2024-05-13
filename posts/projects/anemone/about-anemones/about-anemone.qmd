@@ -40,6 +40,21 @@ From Baja California to Southeast Alaska all along the Eastern Pacific Coast.
 
 # How are they studied?
 
+## Wet weight, oral disc diameter and protein content
+
+In a paper @dimond2011, a year-long survey of *Anthopleura elegantissima* anemones to assess seasonality provides background information about the seasonal variation in anemone size and symbiosis. 
+
+> "Anemone biomass and symbiosis—All metrics of anemone size (Table 1) indicated significant seasonal variation (protein biomass, F3,286 5 12.9, p , 0.001; wet weight, F3,287 5 3.52, p 5 0.02; oral disk diameter, F3,287 5 9.60, p , 0.001). There were no significant shore height differences in any measure (protein biomass, F2,286 5 2.36, p 5 0.09; wet weight, F2,287 5 1.97, p 5 0.14; oral disk diameter, F2,287 5 1.35, p 5 0.26) and no significant interaction effects (protein biomass, F6,286 5 0.84, p 5 0.54; wet weight, F6,287 5 0.96, p 5 0.45; oral disk diameter, F6,287 5 1.24, p 5 0.29). Wet weight was a better predictor of protein biomass than was oral disk diameter (Table 1). However, although protein biomass was significantly higher in November than in all other months, wet weight was not significantly different among July, November, and February." - @dimond2011
+
+![Table 1. taken from Dimond et al. 2011](dimond2011_table1.png)
+
+$$
+Protein = 67.31e^{(0.3143wet weight)} \\
+r^{2} = 0.80
+$$
+
+[@dimond2011]
+
 ## Animal husbandry
 
 In the paper by @mccloskey1996 the anemone's were fed every other day with \~30mg of freshly hatched *Artemia nauplii* and maintained for 22 days with a single anemone each in its own 100mL jar, with seawater replaced every other day at 14°C ±2°C.

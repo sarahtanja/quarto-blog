@@ -1,9 +1,9 @@
 ---
-title: "How to make a respirometry chamber"
+title: "How to make a custom respirometry chamber"
 author: "Sarah Tanja"
 date: '04/22/2024'
 categories: [protocols, anemones]
-draft: true
+draft: false
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>
 toc-depth: 5
@@ -82,4 +82,4 @@ Modeled on SolidWorks and Fusion360, sliced on Ultimaker Software. Hot tip: find
 
 ## Key takeaways
 
--   When doing closed-system respirometry in
+-   When doing closed-system respirometry using Fibox 4 & dipper probes, the temp probes just need to be in the water bath! Not in the actual sealed chambers!

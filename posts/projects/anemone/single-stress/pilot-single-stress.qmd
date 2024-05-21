@@ -19,7 +19,7 @@ link-external-newwindow: true
 
 We collected anemones at [Owens Beach Park](https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/field-collection/18MAR24-owens-beach.html) in Tacoma and at [Constellation Park](https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/field-collection/30MAR24-alki.html) in West Seattle.
 
-![](field-collection/field-pics/12/PXL_20240319_022405096.jpg)
+![](../field-collection/field-pics/12/PXL_20240319_022405096.jpg)
 
 # Leachate preparation
 
@@ -77,7 +77,7 @@ After 48 hours we measured:
 
 -   30 minutes of respirometry in the light-saturated state (oxygen production, photosynthesis)
 
--   wet weight 
+-   wet weight
 
 ![](images/PXL_20240428_004714187.jpg)
 
@@ -102,7 +102,6 @@ rates <- read_csv('rates.csv')
 ```
 
 ## Respiration
-
 
 ![](images/PXL_20240426_191325446.jpg)
 

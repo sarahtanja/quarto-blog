@@ -126,12 +126,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script src="../../../../site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<script src="../../../../site_libs/plotly-binding-4.10.3/plotly.js"></script>
+<script src="../../../../site_libs/typedarray-0.1/typedarray.min.js"></script>
+<script src="../../../../site_libs/jquery-3.5.1/jquery.min.js"></script>
+<link href="../../../../site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+<script src="../../../../site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+<link href="../../../../site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="../../../../site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
 
 
 <link rel="stylesheet" href="../../../../styles.css">
 </head>
 
-<body class="floating nav-fixed">
+<body class="floating nav-fixed slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -185,7 +193,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-right">
+    <div class="quarto-title column-body">
       <h1 class="title">Single stressor leachate exposure summary</h1>
             <p class="subtitle lead">A 48 hour exposure to polyvinyl chloride (PVC) leachate and to aged polypropylene (PP) leachate</p>
                                 <div class="quarto-categories">
@@ -222,7 +230,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#specimen-collection" id="toc-specimen-collection" class="nav-link active" data-scroll-target="#specimen-collection">Specimen collection</a></li>
+  <li><a href="#specimen-collection-acclimation" id="toc-specimen-collection-acclimation" class="nav-link active" data-scroll-target="#specimen-collection-acclimation">Specimen collection &amp; acclimation</a></li>
   <li><a href="#leachate-preparation" id="toc-leachate-preparation" class="nav-link" data-scroll-target="#leachate-preparation">Leachate preparation</a></li>
   <li><a href="#leachate-dilution" id="toc-leachate-dilution" class="nav-link" data-scroll-target="#leachate-dilution">Leachate dilution</a></li>
   <li><a href="#exposure" id="toc-exposure" class="nav-link" data-scroll-target="#exposure">Exposure</a></li>
@@ -250,32 +258,109 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </nav>
 </nav>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content">
+<main class="content quarto-banner-title-block page-columns page-full column-body" id="quarto-document-content">
 
 
 
 
-<section id="specimen-collection" class="level1">
-<h1>Specimen collection</h1>
-<p>We collected anemones at <a href="https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/field-collection/18MAR24-owens-beach.html">Owens Beach Park</a> in Tacoma and at <a href="https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/field-collection/30MAR24-alki.html">Constellation Park</a> in West Seattle.</p>
-<p><img src="field-collection/field-pics/12/PXL_20240319_022405096.jpg" class="img-fluid"></p>
+<p>This summary serves as a broad overview and notes of the acute (48hour) single stressor polyvinyl chloride (PVC) and polypropylene (PP) leachate exposure to <em>Anthopleura elegantissima</em>.</p>
+<p>The following is a timeline overview of the experiment.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sample processing for Mitotic index, chlorophyll content, and DNA &amp; RNA sequencing still have to be done!</p>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-dcc5f98a0308faf04a1d" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-dcc5f98a0308faf04a1d">{"x":{"visdat":{"71102c3458b1":["function () ","plotlyVisDat"]},"cur_data":"71102c3458b1","attrs":{"71102c3458b1":{"mode":"lines","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"},"71102c3458b1.1":{"mode":"lines","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":["2024-04-15 00:00:00.000000","2024-04-22 00:00:00.000000"],"y":19,"line":{"color":"#8DD3C7","width":15},"showlegend":false,"hoverinfo":"text","text":"<b>Prep & Soak Leachate<\/b><br>from <b>2024-04-15<\/b> to <b>2024-04-22<\/b>","inherit":true},"71102c3458b1.2":{"mode":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":"2024-04-18 12:00:00.000000","y":19,"text":"Prep & Soak Leachate","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","inherit":true},"71102c3458b1.3":{"mode":"lines","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":["2024-03-30 00:00:00.000000","2024-04-24 00:00:00.000000"],"y":16,"line":{"color":"#FB8072","width":15},"showlegend":false,"hoverinfo":"text","text":"<b>Acclimate Owens Beach anemones to 10C<\/b><br>from <b>2024-03-30<\/b> to <b>2024-04-24<\/b>","inherit":true},"71102c3458b1.4":{"mode":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":"2024-04-11 12:00:00.000000","y":16,"text":"Acclimate Owens Beach anemones to 10C","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","inherit":true},"71102c3458b1.5":{"mode":"lines","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":["2024-03-18 00:00:00.000000","2024-04-24 00:00:00.000000"],"y":15,"line":{"color":"#80B1D3","width":15},"showlegend":false,"hoverinfo":"text","text":"<b>Acclimate Constellation Park anemones to 10C<\/b><br>from <b>2024-03-18<\/b> to <b>2024-04-24<\/b>","inherit":true},"71102c3458b1.6":{"mode":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":"2024-04-05 12:00:00.000000","y":15,"text":"Acclimate Constellation Park anemones to 10C","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","inherit":true},"71102c3458b1.7":{"mode":"lines","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":["2024-04-24 00:00:00.000000","2024-04-26 00:00:00.000000"],"y":13,"line":{"color":"#FDB462","width":15},"showlegend":false,"hoverinfo":"text","text":"<b>Leachate exposure<\/b><br>from <b>2024-04-24<\/b> to <b>2024-04-26<\/b>","inherit":true},"71102c3458b1.8":{"mode":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":"2024-04-25 00:00:00.000000","y":13,"text":"Leachate exposure","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","inherit":true},"71102c3458b1.9":{"mode":"lines","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":["2024-04-26 00:00:00.000000","2024-04-27 00:00:00.000000"],"y":10,"line":{"color":"#FCCDE5","width":15},"showlegend":false,"hoverinfo":"text","text":"<b>Respirometry & Photosynthesis data collection<\/b><br>from <b>2024-04-26<\/b> to <b>2024-04-27<\/b>","inherit":true},"71102c3458b1.10":{"mode":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":"2024-04-26 12:00:00.000000","y":10,"text":"Respirometry & Photosynthesis data collection","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","inherit":true},"71102c3458b1.11":{"mode":"lines","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":["2024-04-29 00:00:00.000000","2024-05-10 00:00:00.000000"],"y":6,"line":{"color":"#CCEBC5","width":15},"showlegend":false,"hoverinfo":"text","text":"<b>Respirometry & Photosynthesis data analysis<\/b><br>from <b>2024-04-29<\/b> to <b>2024-05-10<\/b>","inherit":true},"71102c3458b1.12":{"mode":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":"2024-05-04 12:00:00.000000","y":6,"text":"Respirometry & Photosynthesis data analysis","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","inherit":true},"71102c3458b1.13":{"mode":"lines","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":["2024-05-13 00:00:00.000000","2024-05-16 00:00:00.000000"],"y":5,"line":{"color":"#8DD3C7","width":15},"showlegend":false,"hoverinfo":"text","text":"<b>Rapid Light Curve data analysis<\/b><br>from <b>2024-05-13<\/b> to <b>2024-05-16<\/b>","inherit":true},"71102c3458b1.14":{"mode":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":"2024-05-14 12:00:00.000000","y":5,"text":"Rapid Light Curve data analysis","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","inherit":true},"71102c3458b1.15":{"mode":"lines","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":["2024-05-27 00:00:00.000000","2024-05-31 00:00:00.000000"],"y":3,"line":{"color":"#FFFFB3","width":15},"showlegend":false,"hoverinfo":"text","text":"<b>Mitotic Index labwork<\/b><br>from <b>2024-05-27<\/b> to <b>2024-05-31<\/b>","inherit":true},"71102c3458b1.16":{"mode":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":"2024-05-29 00:00:00.000000","y":3,"text":"Mitotic Index labwork","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","inherit":true},"71102c3458b1.17":{"mode":"lines","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":["2024-05-27 00:00:00.000000","2024-05-31 00:00:00.000000"],"y":2,"line":{"color":"#BEBADA","width":15},"showlegend":false,"hoverinfo":"text","text":"<b>Chlorophyll content labwork<\/b><br>from <b>2024-05-27<\/b> to <b>2024-05-31<\/b>","inherit":true},"71102c3458b1.18":{"mode":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":"2024-05-29 00:00:00.000000","y":2,"text":"Chlorophyll content labwork","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","inherit":true},"71102c3458b1.19":{"mode":"lines","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":["2024-05-27 00:00:00.000000","2024-05-31 00:00:00.000000"],"y":1,"line":{"color":"#FB8072","width":15},"showlegend":false,"hoverinfo":"text","text":"<b>DNA/RNA extractions<\/b><br>from <b>2024-05-27<\/b> to <b>2024-05-31<\/b>","inherit":true},"71102c3458b1.20":{"mode":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":"2024-05-29 00:00:00.000000","y":1,"text":"DNA/RNA extractions","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","inherit":true},"71102c3458b1.21":{"mode":"markers","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":["2024-03-18 00:00:00.000000","2024-03-30 00:00:00.000000","2024-04-26 00:00:00.000000","2024-04-27 00:00:00.000000","2024-04-27 00:00:00.000000"],"y":[18,17,11,9,8],"marker":{"color":["#FFFFB3","#BEBADA","#B3DE69","#D9D9D9","#BC80BD"],"size":10.5,"symbol":"circle","line":{"color":"black","width":1}},"showlegend":false,"hoverinfo":"text","text":["<b>Collect anemones, Owen's Beach: 2024-03-18<\/b>","<b>Collect anemones, Constellation Park: 2024-03-30<\/b>","<b>Rapid Light Curve data collection: 2024-04-26<\/b>","<b>Wet weight data collection: 2024-04-27<\/b>","<b>Frozen in LN2: 2024-04-27<\/b>"],"inherit":true},"71102c3458b1.22":{"mode":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":["2024-03-18 00:00:00.000000","2024-03-30 00:00:00.000000","2024-04-26 00:00:00.000000","2024-04-27 00:00:00.000000","2024-04-27 00:00:00.000000"],"y":[18.5,16.5,11.5,8.5,8.5],"text":["Collect anemones, Owen's Beach","Collect anemones, Constellation Park","Rapid Light Curve data collection","Wet weight data collection","Frozen in LN2"],"textfont":{"family":"Arial","size":14,"color":["rgba(0,0,0,1)","rgba(0,0,0,1)","rgba(0,0,0,1)","rgba(0,0,0,1)","rgba(0,0,0,1)"]},"textposition":"center","showlegend":false,"hoverinfo":"none","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"hovermode":"closest","plot_bgcolor":"#FCFCFC","title":"Timeline of single-stressor leachate experiment","shapes":[{"type":"line","x0":0,"x1":1,"xref":"paper","y0":4,"y1":4,"line":{"color":"grey65","width":0.5}},{"type":"line","x0":0,"x1":1,"xref":"paper","y0":7,"y1":7,"line":{"color":"grey65","width":0.5}},{"type":"line","x0":0,"x1":1,"xref":"paper","y0":12,"y1":12,"line":{"color":"grey65","width":0.5}},{"type":"line","x0":0,"x1":1,"xref":"paper","y0":14,"y1":14,"line":{"color":"grey65","width":0.5}}],"xaxis":{"domain":[0,1],"automargin":true,"linewidth":1,"mirror":true,"showgrid":true,"gridcolor":"grey90","title":""},"yaxis":{"domain":[0,1],"automargin":true,"linewidth":1,"mirror":true,"range":[0,20],"showgrid":false,"title":"","tickmode":"array","tickvals":[17,13,9.5,5.5,2],"ticktext":["Experiment preparation","Exposure","Data collection","Data analysis","Sample processing"]},"showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"mode":"lines","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"lines","type":"scatter","x":["2024-04-15 00:00:00.000000","2024-04-22 00:00:00.000000"],"y":[19,19],"line":{"color":"#8DD3C7","width":15},"showlegend":false,"hoverinfo":["text","text"],"text":["<b>Prep & Soak Leachate<\/b><br>from <b>2024-04-15<\/b> to <b>2024-04-22<\/b>","<b>Prep & Soak Leachate<\/b><br>from <b>2024-04-15<\/b> to <b>2024-04-22<\/b>"],"marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"text","type":"scatter","x":["2024-04-18 12:00:00.000000"],"y":[19],"text":"Prep & Soak Leachate","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"line":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"lines","type":"scatter","x":["2024-03-30 00:00:00.000000","2024-04-24 00:00:00.000000"],"y":[16,16],"line":{"color":"#FB8072","width":15},"showlegend":false,"hoverinfo":["text","text"],"text":["<b>Acclimate Owens Beach anemones to 10C<\/b><br>from <b>2024-03-30<\/b> to <b>2024-04-24<\/b>","<b>Acclimate Owens Beach anemones to 10C<\/b><br>from <b>2024-03-30<\/b> to <b>2024-04-24<\/b>"],"marker":{"color":"rgba(214,39,40,1)","line":{"color":"rgba(214,39,40,1)"}},"error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"text","type":"scatter","x":["2024-04-11 12:00:00.000000"],"y":[16],"text":"Acclimate Owens Beach anemones to 10C","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","marker":{"color":"rgba(148,103,189,1)","line":{"color":"rgba(148,103,189,1)"}},"error_y":{"color":"rgba(148,103,189,1)"},"error_x":{"color":"rgba(148,103,189,1)"},"line":{"color":"rgba(148,103,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"lines","type":"scatter","x":["2024-03-18 00:00:00.000000","2024-04-24 00:00:00.000000"],"y":[15,15],"line":{"color":"#80B1D3","width":15},"showlegend":false,"hoverinfo":["text","text"],"text":["<b>Acclimate Constellation Park anemones to 10C<\/b><br>from <b>2024-03-18<\/b> to <b>2024-04-24<\/b>","<b>Acclimate Constellation Park anemones to 10C<\/b><br>from <b>2024-03-18<\/b> to <b>2024-04-24<\/b>"],"marker":{"color":"rgba(140,86,75,1)","line":{"color":"rgba(140,86,75,1)"}},"error_y":{"color":"rgba(140,86,75,1)"},"error_x":{"color":"rgba(140,86,75,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"text","type":"scatter","x":["2024-04-05 12:00:00.000000"],"y":[15],"text":"Acclimate Constellation Park anemones to 10C","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","marker":{"color":"rgba(227,119,194,1)","line":{"color":"rgba(227,119,194,1)"}},"error_y":{"color":"rgba(227,119,194,1)"},"error_x":{"color":"rgba(227,119,194,1)"},"line":{"color":"rgba(227,119,194,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"lines","type":"scatter","x":["2024-04-24 00:00:00.000000","2024-04-26 00:00:00.000000"],"y":[13,13],"line":{"color":"#FDB462","width":15},"showlegend":false,"hoverinfo":["text","text"],"text":["<b>Leachate exposure<\/b><br>from <b>2024-04-24<\/b> to <b>2024-04-26<\/b>","<b>Leachate exposure<\/b><br>from <b>2024-04-24<\/b> to <b>2024-04-26<\/b>"],"marker":{"color":"rgba(127,127,127,1)","line":{"color":"rgba(127,127,127,1)"}},"error_y":{"color":"rgba(127,127,127,1)"},"error_x":{"color":"rgba(127,127,127,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"text","type":"scatter","x":["2024-04-25 00:00:00.000000"],"y":[13],"text":"Leachate exposure","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","marker":{"color":"rgba(188,189,34,1)","line":{"color":"rgba(188,189,34,1)"}},"error_y":{"color":"rgba(188,189,34,1)"},"error_x":{"color":"rgba(188,189,34,1)"},"line":{"color":"rgba(188,189,34,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"lines","type":"scatter","x":["2024-04-26 00:00:00.000000","2024-04-27 00:00:00.000000"],"y":[10,10],"line":{"color":"#FCCDE5","width":15},"showlegend":false,"hoverinfo":["text","text"],"text":["<b>Respirometry & Photosynthesis data collection<\/b><br>from <b>2024-04-26<\/b> to <b>2024-04-27<\/b>","<b>Respirometry & Photosynthesis data collection<\/b><br>from <b>2024-04-26<\/b> to <b>2024-04-27<\/b>"],"marker":{"color":"rgba(23,190,207,1)","line":{"color":"rgba(23,190,207,1)"}},"error_y":{"color":"rgba(23,190,207,1)"},"error_x":{"color":"rgba(23,190,207,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"text","type":"scatter","x":["2024-04-26 12:00:00.000000"],"y":[10],"text":"Respirometry & Photosynthesis data collection","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"lines","type":"scatter","x":["2024-04-29 00:00:00.000000","2024-05-10 00:00:00.000000"],"y":[6,6],"line":{"color":"#CCEBC5","width":15},"showlegend":false,"hoverinfo":["text","text"],"text":["<b>Respirometry & Photosynthesis data analysis<\/b><br>from <b>2024-04-29<\/b> to <b>2024-05-10<\/b>","<b>Respirometry & Photosynthesis data analysis<\/b><br>from <b>2024-04-29<\/b> to <b>2024-05-10<\/b>"],"marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"text","type":"scatter","x":["2024-05-04 12:00:00.000000"],"y":[6],"text":"Respirometry & Photosynthesis data analysis","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"line":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"lines","type":"scatter","x":["2024-05-13 00:00:00.000000","2024-05-16 00:00:00.000000"],"y":[5,5],"line":{"color":"#8DD3C7","width":15},"showlegend":false,"hoverinfo":["text","text"],"text":["<b>Rapid Light Curve data analysis<\/b><br>from <b>2024-05-13<\/b> to <b>2024-05-16<\/b>","<b>Rapid Light Curve data analysis<\/b><br>from <b>2024-05-13<\/b> to <b>2024-05-16<\/b>"],"marker":{"color":"rgba(214,39,40,1)","line":{"color":"rgba(214,39,40,1)"}},"error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"text","type":"scatter","x":["2024-05-14 12:00:00.000000"],"y":[5],"text":"Rapid Light Curve data analysis","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","marker":{"color":"rgba(148,103,189,1)","line":{"color":"rgba(148,103,189,1)"}},"error_y":{"color":"rgba(148,103,189,1)"},"error_x":{"color":"rgba(148,103,189,1)"},"line":{"color":"rgba(148,103,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"lines","type":"scatter","x":["2024-05-27 00:00:00.000000","2024-05-31 00:00:00.000000"],"y":[3,3],"line":{"color":"#FFFFB3","width":15},"showlegend":false,"hoverinfo":["text","text"],"text":["<b>Mitotic Index labwork<\/b><br>from <b>2024-05-27<\/b> to <b>2024-05-31<\/b>","<b>Mitotic Index labwork<\/b><br>from <b>2024-05-27<\/b> to <b>2024-05-31<\/b>"],"marker":{"color":"rgba(140,86,75,1)","line":{"color":"rgba(140,86,75,1)"}},"error_y":{"color":"rgba(140,86,75,1)"},"error_x":{"color":"rgba(140,86,75,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"text","type":"scatter","x":["2024-05-29 00:00:00.000000"],"y":[3],"text":"Mitotic Index labwork","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","marker":{"color":"rgba(227,119,194,1)","line":{"color":"rgba(227,119,194,1)"}},"error_y":{"color":"rgba(227,119,194,1)"},"error_x":{"color":"rgba(227,119,194,1)"},"line":{"color":"rgba(227,119,194,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"lines","type":"scatter","x":["2024-05-27 00:00:00.000000","2024-05-31 00:00:00.000000"],"y":[2,2],"line":{"color":"#BEBADA","width":15},"showlegend":false,"hoverinfo":["text","text"],"text":["<b>Chlorophyll content labwork<\/b><br>from <b>2024-05-27<\/b> to <b>2024-05-31<\/b>","<b>Chlorophyll content labwork<\/b><br>from <b>2024-05-27<\/b> to <b>2024-05-31<\/b>"],"marker":{"color":"rgba(127,127,127,1)","line":{"color":"rgba(127,127,127,1)"}},"error_y":{"color":"rgba(127,127,127,1)"},"error_x":{"color":"rgba(127,127,127,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"text","type":"scatter","x":["2024-05-29 00:00:00.000000"],"y":[2],"text":"Chlorophyll content labwork","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","marker":{"color":"rgba(188,189,34,1)","line":{"color":"rgba(188,189,34,1)"}},"error_y":{"color":"rgba(188,189,34,1)"},"error_x":{"color":"rgba(188,189,34,1)"},"line":{"color":"rgba(188,189,34,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"lines","type":"scatter","x":["2024-05-27 00:00:00.000000","2024-05-31 00:00:00.000000"],"y":[1,1],"line":{"color":"#FB8072","width":15},"showlegend":false,"hoverinfo":["text","text"],"text":["<b>DNA/RNA extractions<\/b><br>from <b>2024-05-27<\/b> to <b>2024-05-31<\/b>","<b>DNA/RNA extractions<\/b><br>from <b>2024-05-27<\/b> to <b>2024-05-31<\/b>"],"marker":{"color":"rgba(23,190,207,1)","line":{"color":"rgba(23,190,207,1)"}},"error_y":{"color":"rgba(23,190,207,1)"},"error_x":{"color":"rgba(23,190,207,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"text","type":"scatter","x":["2024-05-29 00:00:00.000000"],"y":[1],"text":"DNA/RNA extractions","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"markers","type":"scatter","x":["2024-03-18 00:00:00.000000","2024-03-30 00:00:00.000000","2024-04-26 00:00:00.000000","2024-04-27 00:00:00.000000","2024-04-27 00:00:00.000000"],"y":[18,17,11,9,8],"marker":{"color":["#FFFFB3","#BEBADA","#B3DE69","#D9D9D9","#BC80BD"],"size":10.5,"symbol":"circle","line":{"color":"black","width":1}},"showlegend":false,"hoverinfo":["text","text","text","text","text"],"text":["<b>Collect anemones, Owen's Beach: 2024-03-18<\/b>","<b>Collect anemones, Constellation Park: 2024-03-30<\/b>","<b>Rapid Light Curve data collection: 2024-04-26<\/b>","<b>Wet weight data collection: 2024-04-27<\/b>","<b>Frozen in LN2: 2024-04-27<\/b>"],"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"text","type":"scatter","x":["2024-03-18 00:00:00.000000","2024-03-30 00:00:00.000000","2024-04-26 00:00:00.000000","2024-04-27 00:00:00.000000","2024-04-27 00:00:00.000000"],"y":[18.5,16.5,11.5,8.5,8.5],"text":["Collect anemones, Owen's Beach","Collect anemones, Constellation Park","Rapid Light Curve data collection","Wet weight data collection","Frozen in LN2"],"textfont":{"family":"Arial","size":14,"color":["rgba(0,0,0,1)","rgba(0,0,0,1)","rgba(0,0,0,1)","rgba(0,0,0,1)","rgba(0,0,0,1)"]},"textposition":["center","center","center","center","center"],"showlegend":false,"hoverinfo":["none","none","none","none","none"],"marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"line":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="page-columns page-full"><p>This timeline was made using the <code>vistime</code><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> package</p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;Checkout the <code>vistime</code> package vignette <a href="https://cran.rstudio.com/web/packages/vistime/vignettes/vistime-vignette.html">here</a></p></li></div></div>
+<section id="specimen-collection-acclimation" class="level1">
+<h1>Specimen collection &amp; acclimation</h1>
+<p>We collected anemones under Washington Dept. of Fish &amp; Wildlife scientific collection permit <code>Tanja-010</code> at <a href="https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/field-collection/18MAR24-owens-beach.html">Owens Beach Park</a> in Tacoma on Monday March 18th and at <a href="https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/field-collection/30MAR24-alki.html">Constellation Park</a> in West Seattle on Saturday March 30th. After collection, each anemone was placed on a acid-washed 60mm glass petri dish to adhere and heal their pedal disc during an acclimation phase. All anemones were acclimated for at least 24 days in a recirculating seawater table at 10C prior to the start of the treatment exposure.</p>
 </section>
-<section id="leachate-preparation" class="level1">
+<section id="leachate-preparation" class="level1 page-columns page-full">
 <h1>Leachate preparation</h1>
-<p>See <a href="https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/leachate-protocol.html">Leachate prepatation protocol</a></p>
-<p>We prepared leachate for PVC (&lt;500um) and for PP (aged)</p>
-<p><img src="images/PXL_20240412_230820563.jpg" class="img-fluid"></p>
-<p><img src="images/PXL_20240412_232609016.jpg" class="img-fluid"></p>
-<p><img src="images/PXL_20240416_001441079.jpg" class="img-fluid"></p>
-<p><img src="images/PXL_20240422_230547996.jpg" class="img-fluid"></p>
-<p><img src="images/PXL_20240423_005801129.jpg" class="img-fluid"></p>
-<p><img src="images/PXL_20240423_005933927.jpg" class="img-fluid"></p>
-<p><img src="images/PXL_20240423_011215280.jpg" class="img-fluid"></p>
-<p><img src="images/PXL_20240423_012640301.jpg" class="img-fluid"></p>
-</section>
+<p>We prepared leachate for PVC (&lt;500um) and for PP (aged) according to the <a href="https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/leachate-protocol.html">leachate preparation protocol</a>.</p>
+<p>In short, we created 1L artificial seawater using salt and deionized water, and adjusted the pH down from ~8.5 to 8.2 by slowly, iteratively, adding a very small amount of 0.1M hydrochloric acid (HCl) via a burette.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/PXL_20240412_230820563.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Weighed out 41.953 grams of ASTM D1141-98 sea salt</figcaption>
+</figure>
+</div>
+</div></div><p>We then carefully measured out 250mg of each microplastic type, and added it to a dry flask.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/PXL_20240412_232609016.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Initial pH was ~8.4, we lowered it to ~8.2 using 0.1M HCl</figcaption>
+</figure>
+</div>
+</div></div><p>After, we transferred 250mL of the pH-adjusted artifical seawater to each flask, set them in a shaker plate rotating at 90 rotations per minute, and left them to ‘shake and soak’ for 7 days.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/PXL_20240416_001441079.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">250mL of artificial seawater and 250mg of aged polypropylene microplastic. Note that this microplastic is buoyant.</figcaption>
+</figure>
+</div>
+</div><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/PXL_20240422_230547996.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Flasks of seawater and microplastics were covered with foil to ensure no further photodegradation, and left to shake at 90rpm for 7 days</figcaption>
+</figure>
+</div>
+</div><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/PXL_20240423_005801129.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">After the 7 days were up, we filtered the microplastics from the seawater using 45micron filter paper.</figcaption>
+</figure>
+</div>
+</div><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/PXL_20240423_005933927.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Here we can see the microplastics accumulating on the filter as the leachate passes through the funnel.</figcaption>
+</figure>
+</div>
+</div></div>
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/PXL_20240423_011215280.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Leachate filtration was a simple gravity filtration process and didn’t require the use of vacuum filtration.</figcaption>
+</figure>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/PXL_20240423_012640301.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">After the leachate was filtered, we put it on ice and transported it to a 4C fridge where it was stored for 48 hours prior to dilution and application to the anemones.</figcaption>
+</figure>
+</div>
+</div></div></section>
 <section id="leachate-dilution" class="level1">
 <h1>Leachate dilution</h1>
 <p>We performed a serial dilution on each prepared leachate to create leachate treatments that represent a mass of microplastic type to volume of water:</p>
@@ -319,42 +404,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">"car"</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>()) <span class="sc">==</span> <span class="st">'FALSE'</span>) <span class="fu">install.packages</span>(<span class="st">'car'</span>)</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Load packages</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'dplyr' was built under R version 4.3.3</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'dplyr'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:stats':
-
-    filter, lag</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:base':
-
-    intersect, setdiff, setequal, union</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'stringr' was built under R version 4.3.3</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ forcats   1.0.0     ✔ readr     2.1.4
-✔ ggplot2   3.4.4     ✔ stringr   1.5.1
-✔ lubridate 1.9.3     ✔ tibble    3.2.1
-✔ purrr     1.0.2     ✔ tidyr     1.3.0</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(car)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(car)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: package 'car' was built under R version 4.3.3</code></pre>
 </div>
@@ -366,19 +418,21 @@ Attaching package: 'dplyr'</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>
-Attaching package: 'car'
-
-The following object is masked from 'package:purrr':
-
-    some
-
-The following object is masked from 'package:dplyr':
+Attaching package: 'car'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:dplyr':
 
     recode</code></pre>
 </div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:purrr':
+
+    some</code></pre>
+</div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>rates <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">'rates.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>rates <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">'rates.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Rows: 55 Columns: 17
 ── Column specification ────────────────────────────────────────────────────────
@@ -397,55 +451,55 @@ dbl (15): run, channel, auto_resp_rate, auto_resp_r2, resp_bg_adj.rate, resp...
 <section id="first-glimpse-of-data" class="level3">
 <h3 class="anchored" data-anchor-id="first-glimpse-of-data">First glimpse of data</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(rates) <span class="sc">+</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> treatment, <span class="at">y =</span> massnorm_resp_rate, <span class="at">color =</span> treatment) <span class="sc">+</span></span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>() <span class="sc">+</span></span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(rates) <span class="sc">+</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> treatment, <span class="at">y =</span> massnorm_resp_rate, <span class="at">color =</span> treatment) <span class="sc">+</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>() <span class="sc">+</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="pilot-single-stress_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+<p><img src="pilot-single-stress_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </section>
 <section id="data-normality" class="level3">
 <h3 class="anchored" data-anchor-id="data-normality">Data normality</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>resp_aov <span class="ot">&lt;-</span>  <span class="fu">aov</span>(massnorm_resp_rate <span class="sc">~</span> treatment, <span class="at">data =</span> rates)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>resp_aov <span class="ot">&lt;-</span>  <span class="fu">aov</span>(massnorm_resp_rate <span class="sc">~</span> treatment, <span class="at">data =</span> rates)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>)) <span class="co"># combine plots</span></span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="co"># histogram</span></span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(resp_aov<span class="sc">$</span>residuals)</span>
-<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="co"># QQ-plot</span></span>
-<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="fu">qqPlot</span>(resp_aov<span class="sc">$</span>residuals,</span>
-<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">id =</span> <span class="cn">FALSE</span> <span class="co"># id = FALSE to remove point identification</span></span>
-<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>)) <span class="co"># combine plots</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co"># histogram</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(resp_aov<span class="sc">$</span>residuals)</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="co"># QQ-plot</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="fu">qqPlot</span>(resp_aov<span class="sc">$</span>residuals,</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">id =</span> <span class="cn">FALSE</span> <span class="co"># id = FALSE to remove point identification</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="pilot-single-stress_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+<p><img src="pilot-single-stress_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </section>
 <section id="boxplot" class="level3">
 <h3 class="anchored" data-anchor-id="boxplot">Boxplot</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(rates) <span class="sc">+</span></span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> treatment, <span class="at">y =</span> massnorm_resp_rate) <span class="sc">+</span></span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
-<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(rates) <span class="sc">+</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> treatment, <span class="at">y =</span> massnorm_resp_rate) <span class="sc">+</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="pilot-single-stress_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+<p><img src="pilot-single-stress_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </section>
 <section id="anova" class="level3">
 <h3 class="anchored" data-anchor-id="anova">ANOVA</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>resp_aov <span class="ot">&lt;-</span> <span class="fu">aov</span>(massnorm_resp_rate <span class="sc">~</span> treatment,</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> rates</span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(resp_aov)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>resp_aov <span class="ot">&lt;-</span> <span class="fu">aov</span>(massnorm_resp_rate <span class="sc">~</span> treatment,</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> rates</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(resp_aov)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>            Df    Sum Sq   Mean Sq F value Pr(&gt;F)
 treatment   10 5.268e-10 5.268e-11   1.302  0.259
@@ -459,55 +513,55 @@ Residuals   44 1.780e-09 4.045e-11               </code></pre>
 <section id="first-glimpse-of-data-1" class="level3">
 <h3 class="anchored" data-anchor-id="first-glimpse-of-data-1">First glimpse of data</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(rates) <span class="sc">+</span></span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> treatment, <span class="at">y =</span> massnorm_phot_rate, <span class="at">color =</span> treatment) <span class="sc">+</span></span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>() <span class="sc">+</span></span>
-<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(rates) <span class="sc">+</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> treatment, <span class="at">y =</span> massnorm_phot_rate, <span class="at">color =</span> treatment) <span class="sc">+</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>() <span class="sc">+</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="pilot-single-stress_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
+<p><img src="pilot-single-stress_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </section>
 <section id="data-normality-1" class="level3">
 <h3 class="anchored" data-anchor-id="data-normality-1">Data normality</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>res_aov <span class="ot">&lt;-</span>  <span class="fu">aov</span>(massnorm_phot_rate <span class="sc">~</span> treatment, <span class="at">data =</span> rates)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>res_aov <span class="ot">&lt;-</span>  <span class="fu">aov</span>(massnorm_phot_rate <span class="sc">~</span> treatment, <span class="at">data =</span> rates)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>)) <span class="co"># combine plots</span></span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="co"># histogram</span></span>
-<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(res_aov<span class="sc">$</span>residuals)</span>
-<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a><span class="co"># QQ-plot</span></span>
-<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a><span class="fu">qqPlot</span>(res_aov<span class="sc">$</span>residuals,</span>
-<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">id =</span> <span class="cn">FALSE</span> <span class="co"># id = FALSE to remove point identification</span></span>
-<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>)) <span class="co"># combine plots</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="co"># histogram</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(res_aov<span class="sc">$</span>residuals)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="co"># QQ-plot</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="fu">qqPlot</span>(res_aov<span class="sc">$</span>residuals,</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">id =</span> <span class="cn">FALSE</span> <span class="co"># id = FALSE to remove point identification</span></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="pilot-single-stress_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid" width="672"></p>
+<p><img src="pilot-single-stress_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </section>
 <section id="boxplot-1" class="level3">
 <h3 class="anchored" data-anchor-id="boxplot-1">Boxplot</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(rates) <span class="sc">+</span></span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> treatment, <span class="at">y =</span> massnorm_phot_rate) <span class="sc">+</span></span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
-<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(rates) <span class="sc">+</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> treatment, <span class="at">y =</span> massnorm_phot_rate) <span class="sc">+</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="pilot-single-stress_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid" width="672"></p>
+<p><img src="pilot-single-stress_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </section>
 <section id="anova-1" class="level3">
 <h3 class="anchored" data-anchor-id="anova-1">ANOVA</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>phot_aov <span class="ot">&lt;-</span> <span class="fu">aov</span>(massnorm_phot_rate <span class="sc">~</span> treatment,</span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> rates</span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(phot_aov)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>phot_aov <span class="ot">&lt;-</span> <span class="fu">aov</span>(massnorm_phot_rate <span class="sc">~</span> treatment,</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> rates</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(phot_aov)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>            Df    Sum Sq   Mean Sq F value Pr(&gt;F)
 treatment   10 1.433e-10 1.433e-11   1.355  0.233
@@ -555,6 +609,7 @@ Note
 
 
 </section>
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

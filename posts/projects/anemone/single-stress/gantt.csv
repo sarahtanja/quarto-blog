@@ -1,0 +1,16 @@
+﻿task,start,end,phase
+Prep & Soak Leachate,4/15/2024,4/22/2024,Experiment preparation
+"Collect anemones, Owen's Beach",3/18/2024,3/18/2024,Experiment preparation
+"Collect anemones, Constellation Park",3/30/2024,3/30/2024,Experiment preparation
+Acclimate Owens Beach anemones to 10C,3/30/2024,4/24/2024,Experiment preparation
+Acclimate Constellation Park anemones to 10C,3/18/2024,4/24/2024,Experiment preparation
+Leachate exposure,4/24/2024,4/26/2024,Exposure
+Rapid Light Curve data collection,4/26/2024,4/26/2024,Data collection
+Respirometry & Photosynthesis data collection,4/26/2024,4/27/2024,Data collection
+Wet weight data collection,4/27/2024,4/27/2024,Data collection
+Frozen in LN2,4/27/2024,4/27/2024,Data collection
+Respirometry & Photosynthesis data analysis,4/29/2024,5/10/2024,Data analysis
+Rapid Light Curve data analysis,5/13/2024,5/16/2024,Data analysis
+Mitotic Index labwork,5/27/2024,5/31/2024,Sample processing
+Chlorophyll content labwork,5/27/2024,5/31/2024,Sample processing
+DNA/RNA extractions,5/27/2024,5/31/2024,Sample processing

@@ -189,8 +189,9 @@ div.csl-indent {
   <li><a href="#protein-quantification" id="toc-protein-quantification" class="nav-link" data-scroll-target="#protein-quantification">Protein quantification</a></li>
   <li><a href="#symbiont-counts" id="toc-symbiont-counts" class="nav-link" data-scroll-target="#symbiont-counts">Symbiont counts</a></li>
   <li><a href="#chlorophyll-extraction" id="toc-chlorophyll-extraction" class="nav-link" data-scroll-target="#chlorophyll-extraction">Chlorophyll extraction</a></li>
-  <li><a href="#spectrophotometric-analysis-using-a-nanodrop-2000c" id="toc-spectrophotometric-analysis-using-a-nanodrop-2000c" class="nav-link" data-scroll-target="#spectrophotometric-analysis-using-a-nanodrop-2000c">Spectrophotometric analysis using a NanoDrop 2000c</a></li>
+  <li><a href="#measure-absorbance-using-a-nanodrop-2000c-spectrophotometer" id="toc-measure-absorbance-using-a-nanodrop-2000c-spectrophotometer" class="nav-link" data-scroll-target="#measure-absorbance-using-a-nanodrop-2000c-spectrophotometer">Measure absorbance using a NanoDrop 2000c Spectrophotometer</a></li>
   </ul></li>
+  <li><a href="#calculate-concentrations" id="toc-calculate-concentrations" class="nav-link" data-scroll-target="#calculate-concentrations">Calculate concentrations</a></li>
   </ul>
 </nav>
 </nav>
@@ -215,25 +216,66 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body page-columns page-full">
-<p>This protocol draws <em>heavily</em> (and almost exclusively!) from the awesome method paper, <a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.710730/full"><em>“Its What’s on the Inside That Counts: An Effective, Efficient, and Streamlined Method for Quantification of Octocoral Symbiodiniaceae and Chlorophyll”</em></a> published by Rosemary Kate Steinberg, Emma L. Johnston, Teresa Bednarek, Katherine A. Dafforn and Tracy D. Ainsworth. <span class="citation" data-cites="steinberg2021">(<a href="#ref-steinberg2021" role="doc-biblioref">Steinberg et al. 2021</a>)</span></p>
+<p>This protocol draws <em>heavily</em> (and almost exclusively!) from the awesome method paper, <em>“Its What’s on the Inside That Counts: An Effective, Efficient, and Streamlined Method for Quantification of Octocoral Symbiodiniaceae and Chlorophyll”</em> published by Rosemary Kate Steinberg, Emma L. Johnston, Teresa Bednarek, Katherine A. Dafforn and Tracy D. Ainsworth. <span class="citation" data-cites="steinberg2021">(<a href="#ref-steinberg2021" role="doc-biblioref">Steinberg et al. 2021</a>)</span></p>
 <div class="no-row-height column-margin column-container"></div><p>THANK YOU to all the above listed authors for this amazingly clear methods paper. It is pure gold, and I wish more science was <em>actually reproducible</em> like this is.</p>
 </div>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="steinberg_fig4.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">This is from the Steinberg et a. 2021 paper, checkout more cool sci comm art from Melissa Pappas at <a href="https://www.emergingcreativesofscience.com/" class="uri">https://www.emergingcreativesofscience.com/</a></figcaption><p></p>
+</figure>
+</div>
 <p>Here I detail out the method I aim to use for extracting and measuring chlorophyll a and c2 of the <em>Anthopleura elegantissima</em> brown algal symbiont, <em>Breviolum muscatinei</em>, relative to cnidarian host wet weight and calculated protein content.</p>
 <p>What is chlorophyll a and c2?</p>
+<ul>
+<li><p>Chlorophyll</p>
+<ul>
+<li><p>a</p></li>
+<li><p>c2</p></li>
+</ul></li>
+</ul>
+<p>What about other pigments?</p>
+<ul>
+<li><p>xanthophylls : photoprotective xanthophyll cycle</p>
+<ul>
+<li><p>peridinin</p></li>
+<li><p>fucoxanthin</p></li>
+<li><p>diadinoxanthin (Dn)</p></li>
+<li><p>diatoxanthin (Dt)</p></li>
+<li><p>dinoxanthin &amp; alteration product diadinochrome</p></li>
+<li><p>phaeophytin a</p></li>
+</ul></li>
+<li><p>Carotenoids</p>
+<ul>
+<li><p>peridinin? Ambarsari et al 1997</p></li>
+<li><p>Dn? Ambarsari et al 1997</p></li>
+<li><p>B carotene</p></li>
+</ul></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="venn_table1.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">A. A. Venn et al., 2006, Table 1</figcaption><p></p>
+</figure>
+</div>
+<blockquote class="blockquote">
+<p>“Ambarsari et al.&nbsp;(1997) and Brown et al.&nbsp;(1999) obtained evidence of a functional xanthophyll cycle in Symbiodinium, thought to operate as part of non-photochemical quenching (NPQ), also observed in other marine algae (Demers et al.&nbsp;1991), and analogous to the photoprotective xanthophylls cycle in terrestrial plants.” (Venn et al., 2006, p.&nbsp;2134)</p>
+<p>“Xanthophyll cycling is likely to be one of several mechanisms that underpin the environmental tolerance of a coral–algal symbiosis. Symbiotic dinoflagellates, unlike free-living marine algae, exist in coral tissue equipped with additional photoprotective and thermoprotective mechanisms, for example, fluorescent proteins (Dove 2004) and heat shock proteins (Black, Voellmy &amp; Szmant 1995), which may complement or even surpass photoprotective mechanisms linked to the algal pigment profile and thus help maintain the integrity of the symbiosis (Brown et al.&nbsp;2002a).” (Venn et al., 2006, p.&nbsp;2140</p>
+</blockquote>
 <p>Why is chlorophyll content an important metric if we’ve already used the pulse-amplitude modulated (PAM) fluorometer to measure photosynthetic efficiency, quantum yield, etc.?</p>
 </section>
 <section id="materials-list" class="level1">
 <h1>Materials list</h1>
 <ul>
-<li><p>tissue homogenizer (like the <a href="https://us.omni-inc.com/omni-tissue-homogenizer-th.html">OMNI TH</a> with a 10mm stainless steel bit)</p></li>
-<li><p>vortex</p></li>
-<li><p>centrifuge</p></li>
-<li><p>10x <a href="https://www.sigmaaldrich.com/US/en/product/sigma/p7059?icid=sharepdp-clipboard-copy-productdetailpage">Phosphate-Buffered Saline (PBS)</a> (room temp storage)</p></li>
-<li><p>Milli-Q Water</p></li>
-<li><p>NanoDrop 2000c Spectrophotometer</p></li>
-<li><p>2 quartz-glass Nanodrop Spec cuvettes</p></li>
-<li><p><a href="https://www.emsdiasum.com/docs/technical/datasheet/68052-14">Neubauer Improved Heamocytometer</a></p></li>
+<li>tissue homogenizer (like the <a href="https://us.omni-inc.com/omni-tissue-homogenizer-th.html">OMNI TH</a> with a 10mm stainless steel bit)</li>
+<li>vortex</li>
+<li>centrifuge</li>
+<li>10x <a href="https://www.sigmaaldrich.com/US/en/product/sigma/p7059?icid=sharepdp-clipboard-copy-productdetailpage">Phosphate-Buffered Saline (PBS)</a> (room temp storage)</li>
+<li>Milli-Q Water</li>
+<li>NanoDrop 2000c Spectrophotometer</li>
+<li>2 quartz-glass Nanodrop Spec cuvettes</li>
+<li><a href="https://www.emsdiasum.com/docs/technical/datasheet/68052-14">Neubauer Improved Heamocytometer</a></li>
 </ul>
 </section>
 <section id="before-we-start" class="level1 page-columns page-full">
@@ -320,33 +362,19 @@ V_{1} = \frac{300}{10} = 30mL
 <section id="chlorophyll-extraction" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="chlorophyll-extraction">Chlorophyll extraction</h2>
 <ul>
-<li><p>remove 1mL from the resuspended symbiont tube, and place in a new labelled tube</p></li>
+<li><p>remove 1mL from the re-suspended symbiont tube, and place in a new labelled tube</p></li>
 <li><p>centrifuge for 10 minutes at 805 RCF</p></li>
 <li><p>remove supernatent &amp; discard</p></li>
 <li><p>add 5mL of 100% acetone</p></li>
-<li><p>vortex to resuspend symbiont pellet</p></li>
-<li><p>incubate in the dark at <span class="math inline">\(4^{\circ}C\)</span> for 48 hours<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></p></li>
+<li><p>vortex to re-suspend symbiont pellet</p></li>
+<li><p>incubate tubes in the dark at <span class="math inline">\(4^{\circ}C\)</span> for 48 hours<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></p></li>
 </ul>
 <div class="no-row-height column-margin column-container"><li id="fn7"><p><sup>7</sup>&nbsp;In the paper Steinberg et al., 2021, they compared a 24hr and a 48hr Chlorophyll extraction incubation period… they found that 24hrs was perfectly fine for Chl-a extraction, but that 48hrs was better for Chl-c2 extraction. See Figure 3. from the paper below!</p></li></div><div class="image-container" style="width: 150%;">
 <p><img src="steinberg_fig3.png" class="img-fluid"></p>
 </div>
-<ul>
-<li><p>after incubation, centrifuge for 10 minutes at 805 RCF</p></li>
-<li><p>transfer 2 2mL aliquots of extracted chlorophyll in acetone from each symbiont tube into two optical glass cuvettes</p></li>
-<li><p>measure absorbance at 630, 663, and 750nm using a spectrophotometer</p></li>
-<li><p>calculate concentrations of chlorophyll <span class="math inline">\(a\)</span> and <span class="math inline">\(c_2\)</span> in <span class="math inline">\(\mu g/mL\)</span> using the following equations from Jeffery and Humphrey (1975) for dinoflagellates:</p>
-<p><span class="math display">\[
-Chlorophyll a = 11.43E_{663} − 0.64E_{630}
-\]</span> <span class="math display">\[
-Chlorophyll c2 = 27.09E_{630} − 3.63E_{663}
-\]</span></p></li>
-</ul>
-<blockquote class="blockquote">
-<p>” As 1 ml of resuspended Symbiodiniaceae pellet was extracted in 5 ml of acetone, chlorophyll concentrations were multiplied by five. To calculate chlorophyll per μg protein, the following equation was used: 5 × chlorophyll ( μg ml ) 8 ×protein ( μg ml ).” (Steinberg et al., 2021, p.&nbsp;4)</p>
-</blockquote>
 </section>
-<section id="spectrophotometric-analysis-using-a-nanodrop-2000c" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="spectrophotometric-analysis-using-a-nanodrop-2000c">Spectrophotometric analysis using a NanoDrop 2000c</h2>
+<section id="measure-absorbance-using-a-nanodrop-2000c-spectrophotometer" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="measure-absorbance-using-a-nanodrop-2000c-spectrophotometer">Measure absorbance using a NanoDrop 2000c Spectrophotometer</h2>
 <div class="page-columns page-full"><p>I emailed<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> Thermo Fisher for some advice on this procedure and got the following instructions:</p><div class="no-row-height column-margin column-container"><li id="fn8"><p><sup>8</sup>&nbsp;Hello Sarah,&nbsp;<br>
 <br>
 Thank you for your email. Please see link to below to a protocol that we have published for measuring chlorophyll on the NanoDrop One. It is important to note that the pre-defined custom method mentioned in the document is only compatible with the NanoDrop One, and not with the NanoDrop 2000.<br>
@@ -377,17 +405,31 @@ Tel: +1 (302) 479-7707 | Toll Free: +1 (877) 724-7690 ext. 2400109 | Fax: +1 (30
 <p>Follow procedure from the <a href="https://assets.thermofisher.com/TFS-Assets/MSD/Application-Notes/quantify-chlorophyll-a-and-chlorophyll-b-with-custom-method-T141.pdf">NanoDrop One</a>, but note the following differences for accomplishing this on the NanoDrop 2000c:</p>
 <p>“Method Editor” application:&nbsp;</p>
 <ul>
-<li>Wavelength range Visible (350–850 nm)</li>
-<li>Extinction coefficient 74.8 g/L</li>
-<li>Analysis wavelength 666 nm</li>
-<li>Correction for analysis wavelength 750 nm</li>
-<li>Baseline correction 750 nm</li>
-<li>Automated pathlength On</li>
+<li><p>Wavelength range Visible (350–850 nm)</p></li>
+<li><p>Extinction coefficient 74.8 g/L</p></li>
+<li><p>Analysis wavelength 630 nm</p></li>
+<li><p>Analysis wavelength 663 nm</p></li>
+<li><p>Correction for analysis wavelength 750 nm</p></li>
+<li><p>Baseline correction 750 nm</p></li>
+<li><p>Automated pathlength On</p></li>
+<li><p>after the 48hr incubation, pull tubes out of the 4C fridge and centrifuge for 10 minutes at 805 RCF</p></li>
+<li><p>transfer 2 2mL aliquots of extracted chlorophyll in acetone from each symbiont tube into two optical glass cuvettes</p></li>
+<li><p>measure absorbance at 630, 663, and 750nm using the NanoDrop cuvettes</p></li>
 </ul>
-
-
-
 </section>
+</section>
+<section id="calculate-concentrations" class="level1">
+<h1>Calculate concentrations</h1>
+<ul>
+<li><p>calculate concentrations of chlorophyll <span class="math inline">\(a\)</span> and <span class="math inline">\(c_2\)</span> in <span class="math inline">\(\mu g/mL\)</span> using the following equations from Jeffery and Humphrey (1975) for dinoflagellates:</p>
+<p><span class="math display">\[ Chlorophyll a = 11.43E_{663} − 0.64E_{630} \]</span> <span class="math display">\[ Chlorophyll c2 = 27.09E_{630} − 3.63E_{663} \]</span></p></li>
+</ul>
+<blockquote class="blockquote">
+<p>” As 1 ml of resuspended Symbiodiniaceae pellet was extracted in 5 ml of acetone, chlorophyll concentrations were multiplied by five. To calculate chlorophyll per μg protein, the following equation was used: 5 × chlorophyll ( μg ml ) 8 ×protein ( μg ml ).” (Steinberg et al., 2021, p.&nbsp;4)</p>
+</blockquote>
+
+
+
 </section>
 
 

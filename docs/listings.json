@@ -4,6 +4,7 @@
     "items": [
       "/posts/projects/anemone.html",
       "/posts/projects/coral-pae-temp.html",
+      "/posts/projects/anemone/chlorophyll/chlorophyll.html",
       "/posts/projects/anemone/single-stress/pilot-single-stress.html",
       "/posts/projects/anemone/about-anemones/about-anemone.html",
       "/posts/projects/anemone/plan/experiment-schedule.html",
@@ -38,6 +39,7 @@
   {
     "listing": "/posts/projects/anemone.html",
     "items": [
+      "/posts/projects/anemone/chlorophyll/chlorophyll.html",
       "/posts/projects/anemone/single-stress/pilot-single-stress.html",
       "/posts/projects/anemone/about-anemones/about-anemone.html",
       "/posts/projects/anemone/plan/experiment-schedule.html",

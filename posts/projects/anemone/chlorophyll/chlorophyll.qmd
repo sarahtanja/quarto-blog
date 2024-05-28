@@ -1,0 +1,231 @@
+---
+title: "Extracting & measuring chlorophyll a & c2 concentrations"
+subtitle: "... from an anemone-hosted symbiotic dinoflagellate using a ThermoFischer Nanodrop 2000c"
+author: "Sarah Tanja"
+date: '05/23/2024'
+categories: [protocols, anemones]
+draft: false
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+bibliography: steinberg.bib
+reference-location: margin
+citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
+---
+
+# Overview
+
+::: callout-important
+This protocol draws *heavily* (and almost exclusively!) from the awesome method paper, [*"Its What’s on the Inside That Counts: An Effective, Efficient, and Streamlined Method for Quantification of Octocoral Symbiodiniaceae and Chlorophyll"*](https://www.frontiersin.org/articles/10.3389/fmars.2021.710730/full) published by Rosemary Kate Steinberg, Emma L. Johnston, Teresa Bednarek, Katherine A. Dafforn and Tracy D. Ainsworth. [@steinberg2021]
+
+THANK YOU to all the above listed authors for this amazingly clear methods paper. It is pure gold, and I wish more science was *actually reproducible* like this is.
+:::
+
+Here I detail out the method I aim to use for extracting and measuring chlorophyll a and c2 of the *Anthopleura elegantissima* brown algal symbiont, *Breviolum muscatinei*, relative to cnidarian host wet weight and calculated protein content.
+
+What is chlorophyll a and c2?
+
+Why is chlorophyll content an important metric if we've already used the pulse-amplitude modulated (PAM) fluorometer to measure photosynthetic efficiency, quantum yield, etc.?
+
+# Materials list
+
+-   tissue homogenizer (like the [OMNI TH](https://us.omni-inc.com/omni-tissue-homogenizer-th.html) with a 10mm stainless steel bit)
+
+-   vortex
+
+-   centrifuge
+
+-   10x [Phosphate-Buffered Saline (PBS)](https://www.sigmaaldrich.com/US/en/product/sigma/p7059?icid=sharepdp-clipboard-copy-productdetailpage) (room temp storage)
+
+-   Milli-Q Water
+
+-   NanoDrop 2000c Spectrophotometer
+
+-   2 quartz-glass Nanodrop Spec cuvettes
+
+-   [Neubauer Improved Heamocytometer](https://www.emsdiasum.com/docs/technical/datasheet/68052-14)
+
+# Before we start...
+
+From these samples we already have[^1]:
+
+[^1]: We also technically have respirometry data for oxygen consumption and production, however the duration of the respirometry run was not sufficiently long to
+
+-   wet weight
+-   calculated protein content
+-   PAM Rapid Light Curve data
+
+Our overarching goals with these samples are to potentially get the following from each sample:
+
+-   Symbiont DNA
+-   Symbiont RNA
+-   Host DNA
+-   Host RNA
+-   Host protein content
+-   Symbiont counts
+-   Chlorophyll a & c2 content
+
+Confirm that the wet weight range of the samples is within 0.17g to 0.75g
+
+> "... the method developed here requires very small sample sizes but can be used successfully for a range of weights (0.17–0.75 g wet weight)"[@steinberg2021]
+
+# Procedure
+
+## Separate symbiont & protein fractions
+
+-   thaw sample in 5mL tube
+
+-   fill each tube with reverse osmosis (RO) water
+
+-   homogenize using a tissue-tearer for 30 seconds
+
+-   vortex to remove air bubbles
+
+-   centrifuge at 160 relative centrifugal force (rcf) for 2 minutes[^2]
+
+-   remove supernatent with pipette[^3] & save in separate labelled tube[^4]
+
+-   refill tube with symbiont pellet with RO water
+
+-   vortex to resuspend symbiont cells
+
+-   centrifuge at 130 rcf for 2 minutes
+
+-   remove supernatent with pipette, add to previously separated tube
+
+-   top off symbiont pellet with 1ml of 3X[^5] [Phosphate-Buffered Saline (PBS)](https://www.sigmaaldrich.com/US/en/product/sigma/p7059?icid=sharepdp-clipboard-copy-productdetailpage)
+
+-   you may freeze both the symbiont and supernatent (aka protein) tubes until ready to use
+
+[^2]:
+    > “To separate Symbiodiniaceae from coral tissue in a centrifuge, we found that the ideal method was to use relatively low RPMs for a short time, as high RPMs or long times would cause protein to be pulled onto the Symbiodiniaceae pellet and would interfere with counting, as reported in the methods.” (Steinberg et al., 2021, p. 7)
+
+[^3]: The pellet is not very stable and therefore the supernatent must be carefully pipetted out instead of poured so as not to disturb the symbiont cell 'pellet' that is formed at the bottom of the tube
+
+[^4]: This tube is for running a protein assay!
+
+[^5]: [How to prepare](https://www.sigmaaldrich.com/US/en/support/calculators-and-apps/1x-phosphate-buffered-saline) 100mL of 3X PBS from 10X PBS stock solution: $$
+    C_{1}V_{1} = C_{2}V_{2} 
+    $$ $$
+    10xPBS \cdot V_{1} = 3xPBS \cdot 100mL
+    $$ $$
+    V_{1} = \frac{3xPBS \cdot 100mL}{10xPBS}
+    $$ $$
+    V_{1} = \frac{300}{10} = 30mL
+    $$ Therefore $30mL$ of `10xPBS` added to $70mL$ of `Milli-Q Water` will give a final concentration of `3xPBS` in a final volume of $100mL$.
+
+## Protein quantification
+
+-   defrost supernatent (protein tube)
+
+-   top up with RO water to standard volume
+
+-   quantify protein against a bovine albumin standard using the Thermo Scientific Coomasie Plus (Bradford) kit and protocol
+
+-   take all spectrophotometer measurements at $595nm$
+
+-   report units in $\mu g/mL$
+
+## Symbiont counts
+
+-   top up symbiont tube up to the 5mL mark using 3X PBS
+
+-   vortex to resuspend
+
+-   pipette out $200 \mu L$ subsample, and place on a Neubauer Improved heamocytometer
+
+-   place the heamocytometer slide on a microscope & count[^6]
+
+[^6]:
+    > “For ease and speed of counting, if there were more than 30 cells per square in the test sample, the entire treatment was diluted in separate Eppendorf tubes by either mixing 500 μl Symbiodiniaceae with 500 μl 3× PBS (2× dilution) or 250 μl Symbiodiniaceae with 750 μl of 3× PBS (4× dilution).” (Steinberg et al., 2021, p. 3)
+
+> “The final count was then multiplied by the dilution to attain correct counts. Each haemocytometer fill was considered a technical replicate, while the squares counted within the grid were considered a sub-replicate. Six technical replicates and 5 sub-replicates per technical replicate were performed, for a total of 30 replicates. Replicate numbers were chosen based on previous work in stony and octocorals and anemones (Brown et al., 1995; Hueerkamp et al., 2001; Hill and Scott, 2012; Hill et al., 2014; Pupier et al., 2018; Gierz et al., 2020).” (Steinberg et al., 2021, p. 3)
+>
+> “The number of Symbiodiniaceae cells was standardised to the total protein concentration of the supernatant. The dilution factor (DF) of the supernatant compared to the resuspended Symbiodiniaceae pellet must be considered when calculating Symbiodiniaceae concentrations. In this study, the supernatant had a volume of 40 ml and the resuspended Symbiodiniaceae had a volume of 5 ml, and as such the DF was 8. Symbiodiniaceae per ml was calculated using the following formula: count ×dilution 6.25 ×10−6 , where 6.25 × 10−6 is the volume of one haemocytometer grid square. Symbiodiniaceae per μg protein was calculated using the following formula: Symbiodiniceae ml DF ×protein( μg ml ) or count ×dilution 6.25 ×10−6 DF ×protein ( μg ml ).” (Steinberg et al., 2021, p. 3)
+
+## Chlorophyll extraction
+
+-   remove 1mL from the resuspended symbiont tube, and place in a new labelled tube
+
+-   centrifuge for 10 minutes at 805 RCF
+
+-   remove supernatent & discard
+
+-   add 5mL of 100% acetone
+
+-   vortex to resuspend symbiont pellet
+
+-   incubate in the dark at $4^{\circ}C$ for 48 hours[^7]
+
+[^7]: In the paper Steinberg et al., 2021, they compared a 24hr and a 48hr Chlorophyll extraction incubation period... they found that 24hrs was perfectly fine for Chl-a extraction, but that 48hrs was better for Chl-c2 extraction. See Figure 3. from the paper below!
+
+::: {.image-container style="width: 150%;"}
+![](steinberg_fig3.png)
+:::
+
+-   after incubation, centrifuge for 10 minutes at 805 RCF
+
+-   transfer 2 2mL aliquots of extracted chlorophyll in acetone from each symbiont tube into two optical glass cuvettes
+
+-   measure absorbance at 630, 663, and 750nm using a spectrophotometer
+
+-   calculate concentrations of chlorophyll $a$ and $c_2$ in $\mu g/mL$ using the following equations from Jeffery and Humphrey (1975) for dinoflagellates:
+
+    $$
+    Chlorophyll a = 11.43E_{663} − 0.64E_{630}
+    $$ $$
+    Chlorophyll c2 = 27.09E_{630} − 3.63E_{663}
+    $$
+
+> " As 1 ml of resuspended Symbiodiniaceae pellet was extracted in 5 ml of acetone, chlorophyll concentrations were multiplied by five. To calculate chlorophyll per μg protein, the following equation was used: 5 × chlorophyll ( μg ml ) 8 ×protein ( μg ml )." (Steinberg et al., 2021, p. 4)
+
+## Spectrophotometric analysis using a NanoDrop 2000c
+
+I emailed[^8] Thermo Fisher for some advice on this procedure and got the following instructions:
+
+[^8]: Hello Sarah, \
+    \
+    Thank you for your email. Please see link to below to a protocol that we have published for measuring chlorophyll on the NanoDrop One. It is important to note that the pre-defined custom method mentioned in the document is only compatible with the NanoDrop One, and not with the NanoDrop 2000.\
+    \
+    [quantify-chlorophyll-a-and-chlorophyll-b-with-custom-method-T141.pdf (thermofisher.com)](https://urldefense.com/v3/__https://assets.thermofisher.com/TFS-Assets/MSD/Application-Notes/quantify-chlorophyll-a-and-chlorophyll-b-with-custom-method-T141.pdf__;!!K-Hz7m0Vt54!l4t_v1Q2wbByHGjWD4zmlHTr0MMd4mW_xkGoPnXgzBrR7vofzzyK3trG-Kjumc3-HiSX3eYSacfPiQdwpSk$)\
+    \
+    You can replicate the Custom Method on your NanoDrop 2000 by following the attached protocol and using the below guidelines in the "Method Editor" application: 
+
+    -   Wavelength range Visible (350–850 nm)
+
+    -   Extinction coefficient 74.8 g/L
+
+    -   Analysis wavelength 666 nm
+
+    -   Correction for analysis wavelength 750 nm
+
+    -   Baseline correction 750 nm
+
+    -   Automated pathlength On
+
+    If you have any questions, please do not hesitate to contact me; it is my pleasure to assist you. I can best be reached by email at [nanodrop\@thermofisher.com](mailto:nanodrop@thermofisher.com), and typing Attention: Moira in the subject bar. If I am unavailable, any member of our Technical Support Team would be happy to assist you at 877-724-7690.\
+    \
+    Best,\
+    Moira Abbott\
+    Technical Application Specialist II\
+    Thermo Scientific NanoDrop Products\
+    \
+    Thermo Fisher Scientific\
+    [3411 Silverside Road](https://www.google.com/maps/search/3411+Silverside+Road?entry=gmail&source=g) \| Tatnall Building, Suite 100 \| Wilmington, DE 19810\
+    Tel: +1 (302) 479-7707 \| Toll Free: +1 (877) 724-7690 ext. 2400109 \| Fax: +1 (302) 792-7155\
+    [nanodrop\@thermofisher.com](mailto:nanodrop@thermofisher.com) \| [www.thermofisher.com/nanodrop](https://urldefense.com/v3/__http://www.thermofisher.com/nanodrop__;!!K-Hz7m0Vt54!l4t_v1Q2wbByHGjWD4zmlHTr0MMd4mW_xkGoPnXgzBrR7vofzzyK3trG-Kjumc3-HiSX3eYSacfPgBMP5QU$)\
+     
+
+Follow procedure from the [NanoDrop One](https://assets.thermofisher.com/TFS-Assets/MSD/Application-Notes/quantify-chlorophyll-a-and-chlorophyll-b-with-custom-method-T141.pdf), but note the following differences for accomplishing this on the NanoDrop 2000c:
+
+"Method Editor" application: 
+
+-   Wavelength range Visible (350–850 nm)
+-   Extinction coefficient 74.8 g/L
+-   Analysis wavelength 666 nm
+-   Correction for analysis wavelength 750 nm
+-   Baseline correction 750 nm
+-   Automated pathlength On

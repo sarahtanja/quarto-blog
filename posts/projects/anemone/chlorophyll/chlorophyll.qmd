@@ -70,14 +70,31 @@ Why is chlorophyll content an important metric if we've already used the pulse-a
 
 # Materials list
 
--   tissue homogenizer (like the [OMNI TH](https://us.omni-inc.com/omni-tissue-homogenizer-th.html) used by [@steinberg2021] with a 10mm stainless steel bit, we have a Biospec Products Tissue Tearor Model 985-370, a slightly older model to something like [this here](https://www.coleparmer.com/i/tissue-tearor-985370-07-homogenizer-120-vac-1-2-a/0475050?PubID=UX&persist=true&ip=no&gad_source=1&gclid=CjwKCAjwx-CyBhAqEiwAeOcTdU_POATJBTiINJzb41uUa_jdZx9EuYzIDbyWBoKMXQRaQdXV3SPlgBoCGr4QAvD_BwE))
+### Lab equipment
+
+-   tissue homogenizer (like the [OMNI TH](https://us.omni-inc.com/omni-tissue-homogenizer-th.html) used by [@steinberg2021] with a 10mm stainless steel bit, we have a Biospec Products Tissue Tearor Model 985-370, which is a slightly older model compared to [this here](https://www.coleparmer.com/i/tissue-tearor-985370-07-homogenizer-120-vac-1-2-a/0475050?PubID=UX&persist=true&ip=no&gad_source=1&gclid=CjwKCAjwx-CyBhAqEiwAeOcTdU_POATJBTiINJzb41uUa_jdZx9EuYzIDbyWBoKMXQRaQdXV3SPlgBoCGr4QAvD_BwE))
 -   vortex
 -   centrifuge
--   10x [Phosphate-Buffered Saline (PBS)](https://www.sigmaaldrich.com/US/en/product/sigma/p7059?icid=sharepdp-clipboard-copy-productdetailpage) (room temp storage)
--   Milli-Q Water
 -   NanoDrop 2000c Spectrophotometer
 -   2 quartz-glass Nanodrop Spec cuvettes
 -   [Neubauer Improved Heamocytometer](https://www.emsdiasum.com/docs/technical/datasheet/68052-14)
+-   Microscope or Dissecting scope
+
+### Lab consumables
+
+-   microcentrifuge tubes
+
+-   pipettes & tips
+
+-   nitrile gloves
+
+-   [ethanol-proof lab markers](https://www.simbalion.com/product/detail/A/A10/A10/No.800)
+
+### Chemicals & solvents
+
+-   Milli-Q Water
+-   10x [Phosphate-Buffered Saline (PBS)](https://www.sigmaaldrich.com/US/en/product/sigma/p7059?icid=sharepdp-clipboard-copy-productdetailpage) (room temp storage)
+-   100% Acetone
 
 # Objectives
 
@@ -106,11 +123,15 @@ Confirm that the wet weight range of the samples is within 0.17g to 0.75g
 
 ## Separate symbiont & protein fractions
 
--   thaw sample in 5mL tube
+-   label 15mL falcon tube with sampleID
 
--   fill each tube with reverse osmosis (RO) water
+-   add 5mL of `DNA/RNA Shield` to each labelled 15mL tube
 
--   homogenize using a tissue-tearor for 30 seconds
+-   transfer frozen anemone to labelled 15mL tube
+
+-   thaw sample in `DNA/RNA Shield` on ice
+
+-   once thawed, homogenize using a tissue-tearor for 30 seconds
 
 -   vortex to remove air bubbles
 
@@ -118,7 +139,7 @@ Confirm that the wet weight range of the samples is within 0.17g to 0.75g
 
 -   remove supernatent with pipette[^3] & save in separate labelled tube[^4]
 
--   refill tube with symbiont pellet with RO water
+-   refill symbiont pellet tube with `DNA/RNA Shield`
 
 -   vortex to re-suspend symbiont cells
 
@@ -126,9 +147,9 @@ Confirm that the wet weight range of the samples is within 0.17g to 0.75g
 
 -   remove supernatent with pipette, add to previously separated tube
 
--   top off symbiont pellet with 1ml of 3X[^5] [Phosphate-Buffered Saline (PBS)](https://www.sigmaaldrich.com/US/en/product/sigma/p7059?icid=sharepdp-clipboard-copy-productdetailpage)
+-   top off symbiont pellet with 1ml of `DNA/RNA Shield` // 3X[^5] [Phosphate-Buffered Saline (PBS)](https://www.sigmaaldrich.com/US/en/product/sigma/p7059?icid=sharepdp-clipboard-copy-productdetailpage)?
 
--   you may freeze both the symbiont and supernatent (aka protein) tubes until ready to use
+-   you may freeze both the symbiont and supernatent (aka anemone tissue/protein) tubes until ready to use downstream in DNA/RNA extraction, protein quantification, symbiont counts and mitotic index, and chlorophyll quantification.
 
 [^2]:
     > “To separate Symbiodiniaceae from coral tissue in a centrifuge, we found that the ideal method was to use relatively low RPMs for a short time, as high RPMs or long times would cause protein to be pulled onto the Symbiodiniaceae pellet and would interfere with counting, as reported in the methods.” (Steinberg et al., 2021, p. 7)
@@ -167,7 +188,9 @@ Confirm that the wet weight range of the samples is within 0.17g to 0.75g
 
 -   pipette out $200 \mu L$ subsample, and place on a Neubauer Improved heamocytometer
 
--   place the heamocytometer slide on a microscope & count[^6]
+-   place the heamocytometer slide on a microscope, focus & photograph[^6]
+
+-   repeat 6 times per sample! Oof... I need an undergrad for this.
 
 [^6]:
     > “For ease and speed of counting, if there were more than 30 cells per square in the test sample, the entire treatment was diluted in separate Eppendorf tubes by either mixing 500 μl Symbiodiniaceae with 500 μl 3× PBS (2× dilution) or 250 μl Symbiodiniaceae with 750 μl of 3× PBS (4× dilution).” (Steinberg et al., 2021, p. 3)
@@ -268,9 +291,8 @@ However, the extinction coefficients for 100% acetone are different for each typ
 
     ![](08_cuvette.PNG)
 
-```{=html}
-<!-- -->
-```
+### Measure cuvette blanks and samples
+
 6.  after the 48hr incubation, pull tubes out of the 4C fridge and centrifuge for 10 minutes at 805 RCF
 7.  transfer 2 2mL aliquots of extracted chlorophyll in acetone from each symbiont tube into two optical glass cuvettes
 8.  measure absorbance at 630, 663, and 750nm using the NanoDrop cuvettes

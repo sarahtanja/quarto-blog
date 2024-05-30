@@ -182,14 +182,17 @@ div.csl-indent {
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#materials-list" id="toc-materials-list" class="nav-link" data-scroll-target="#materials-list">Materials list</a></li>
-  <li><a href="#before-we-start" id="toc-before-we-start" class="nav-link" data-scroll-target="#before-we-start">Before we start…</a></li>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
   <li><a href="#procedure" id="toc-procedure" class="nav-link" data-scroll-target="#procedure">Procedure</a>
   <ul>
   <li><a href="#separate-symbiont-protein-fractions" id="toc-separate-symbiont-protein-fractions" class="nav-link" data-scroll-target="#separate-symbiont-protein-fractions">Separate symbiont &amp; protein fractions</a></li>
   <li><a href="#protein-quantification" id="toc-protein-quantification" class="nav-link" data-scroll-target="#protein-quantification">Protein quantification</a></li>
   <li><a href="#symbiont-counts" id="toc-symbiont-counts" class="nav-link" data-scroll-target="#symbiont-counts">Symbiont counts</a></li>
   <li><a href="#chlorophyll-extraction" id="toc-chlorophyll-extraction" class="nav-link" data-scroll-target="#chlorophyll-extraction">Chlorophyll extraction</a></li>
-  <li><a href="#measure-absorbance-using-a-nanodrop-2000c-spectrophotometer" id="toc-measure-absorbance-using-a-nanodrop-2000c-spectrophotometer" class="nav-link" data-scroll-target="#measure-absorbance-using-a-nanodrop-2000c-spectrophotometer">Measure absorbance using a NanoDrop 2000c Spectrophotometer</a></li>
+  <li><a href="#measure-absorbance-using-a-nanodrop-2000c-spectrophotometer" id="toc-measure-absorbance-using-a-nanodrop-2000c-spectrophotometer" class="nav-link" data-scroll-target="#measure-absorbance-using-a-nanodrop-2000c-spectrophotometer">Measure absorbance using a NanoDrop 2000c Spectrophotometer</a>
+  <ul>
+  <li><a href="#program-nanodrop-2000c-method-editor" id="toc-program-nanodrop-2000c-method-editor" class="nav-link" data-scroll-target="#program-nanodrop-2000c-method-editor">Program NanoDrop 2000c Method Editor</a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#calculate-concentrations" id="toc-calculate-concentrations" class="nav-link" data-scroll-target="#calculate-concentrations">Calculate concentrations</a></li>
   </ul>
@@ -265,10 +268,10 @@ Important
 </blockquote>
 <p>Why is chlorophyll content an important metric if we’ve already used the pulse-amplitude modulated (PAM) fluorometer to measure photosynthetic efficiency, quantum yield, etc.?</p>
 </section>
-<section id="materials-list" class="level1">
+<section id="materials-list" class="level1 page-columns page-full">
 <h1>Materials list</h1>
 <ul>
-<li>tissue homogenizer (like the <a href="https://us.omni-inc.com/omni-tissue-homogenizer-th.html">OMNI TH</a> with a 10mm stainless steel bit)</li>
+<li>tissue homogenizer (like the <a href="https://us.omni-inc.com/omni-tissue-homogenizer-th.html">OMNI TH</a> used by <span class="citation" data-cites="steinberg2021">(<a href="#ref-steinberg2021" role="doc-biblioref">Steinberg et al. 2021</a>)</span> with a 10mm stainless steel bit, we have a Biospec Products Tissue Tearor Model 985-370, a slightly older model to something like <a href="https://www.coleparmer.com/i/tissue-tearor-985370-07-homogenizer-120-vac-1-2-a/0475050?PubID=UX&amp;persist=true&amp;ip=no&amp;gad_source=1&amp;gclid=CjwKCAjwx-CyBhAqEiwAeOcTdU_POATJBTiINJzb41uUa_jdZx9EuYzIDbyWBoKMXQRaQdXV3SPlgBoCGr4QAvD_BwE">this here</a>)</li>
 <li>vortex</li>
 <li>centrifuge</li>
 <li>10x <a href="https://www.sigmaaldrich.com/US/en/product/sigma/p7059?icid=sharepdp-clipboard-copy-productdetailpage">Phosphate-Buffered Saline (PBS)</a> (room temp storage)</li>
@@ -277,9 +280,9 @@ Important
 <li>2 quartz-glass Nanodrop Spec cuvettes</li>
 <li><a href="https://www.emsdiasum.com/docs/technical/datasheet/68052-14">Neubauer Improved Heamocytometer</a></li>
 </ul>
-</section>
-<section id="before-we-start" class="level1 page-columns page-full">
-<h1>Before we start…</h1>
+<div class="no-row-height column-margin column-container"></div></section>
+<section id="objectives" class="level1 page-columns page-full">
+<h1>Objectives</h1>
 <div class="page-columns page-full"><p>From these samples we already have<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>:</p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;We also technically have respirometry data for oxygen consumption and production, however the duration of the respirometry run was not sufficiently long to</p></li></div></div>
 <ul>
 <li>wet weight</li>
@@ -288,10 +291,9 @@ Important
 </ul>
 <p>Our overarching goals with these samples are to potentially get the following from each sample:</p>
 <ul>
-<li>Symbiont DNA</li>
+<li>Microbial DNA</li>
 <li>Symbiont RNA</li>
-<li>Host DNA</li>
-<li>Host RNA</li>
+<li>Anemone RNA</li>
 <li>Host protein content</li>
 <li>Symbiont counts</li>
 <li>Chlorophyll a &amp; c2 content</li>
@@ -310,12 +312,12 @@ Steinberg, Rosemary Kate, Emma L. Johnston, Teresa Bednarek, Katherine A. Daffor
 <ul>
 <li><p>thaw sample in 5mL tube</p></li>
 <li><p>fill each tube with reverse osmosis (RO) water</p></li>
-<li><p>homogenize using a tissue-tearer for 30 seconds</p></li>
+<li><p>homogenize using a tissue-tearor for 30 seconds</p></li>
 <li><p>vortex to remove air bubbles</p></li>
 <li><p>centrifuge at 160 relative centrifugal force (rcf) for 2 minutes<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p></li>
 <li><p>remove supernatent with pipette<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> &amp; save in separate labelled tube<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p></li>
 <li><p>refill tube with symbiont pellet with RO water</p></li>
-<li><p>vortex to resuspend symbiont cells</p></li>
+<li><p>vortex to re-suspend symbiont cells</p></li>
 <li><p>centrifuge at 130 rcf for 2 minutes</p></li>
 <li><p>remove supernatent with pipette, add to previously separated tube</p></li>
 <li><p>top off symbiont pellet with 1ml of 3X<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> <a href="https://www.sigmaaldrich.com/US/en/product/sigma/p7059?icid=sharepdp-clipboard-copy-productdetailpage">Phosphate-Buffered Saline (PBS)</a></p></li>
@@ -375,6 +377,8 @@ V_{1} = \frac{300}{10} = 30mL
 </section>
 <section id="measure-absorbance-using-a-nanodrop-2000c-spectrophotometer" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="measure-absorbance-using-a-nanodrop-2000c-spectrophotometer">Measure absorbance using a NanoDrop 2000c Spectrophotometer</h2>
+<section id="program-nanodrop-2000c-method-editor" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="program-nanodrop-2000c-method-editor">Program NanoDrop 2000c Method Editor</h3>
 <div class="page-columns page-full"><p>I emailed<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> Thermo Fisher for some advice on this procedure and got the following instructions:</p><div class="no-row-height column-margin column-container"><li id="fn8"><p><sup>8</sup>&nbsp;Hello Sarah,&nbsp;<br>
 <br>
 Thank you for your email. Please see link to below to a protocol that we have published for measuring chlorophyll on the NanoDrop One. It is important to note that the pre-defined custom method mentioned in the document is only compatible with the NanoDrop One, and not with the NanoDrop 2000.<br>
@@ -403,28 +407,50 @@ Tel: +1 (302) 479-7707 | Toll Free: +1 (877) 724-7690 ext. 2400109 | Fax: +1 (30
 <a href="mailto:nanodrop@thermofisher.com">nanodrop@thermofisher.com</a> | <a href="https://urldefense.com/v3/__http://www.thermofisher.com/nanodrop__;!!K-Hz7m0Vt54!l4t_v1Q2wbByHGjWD4zmlHTr0MMd4mW_xkGoPnXgzBrR7vofzzyK3trG-Kjumc3-HiSX3eYSacfPgBMP5QU$">www.thermofisher.com/nanodrop</a><br>
 &nbsp;</p></li></div></div>
 <p>Follow procedure from the <a href="https://assets.thermofisher.com/TFS-Assets/MSD/Application-Notes/quantify-chlorophyll-a-and-chlorophyll-b-with-custom-method-T141.pdf">NanoDrop One</a>, but note the following differences for accomplishing this on the NanoDrop 2000c:</p>
-<p>“Method Editor” application:&nbsp;</p>
-<ul>
-<li><p>Wavelength range Visible (350–850 nm)</p></li>
-<li><p>Extinction coefficient 74.8 g/L</p></li>
-<li><p>Analysis wavelength 630 nm</p></li>
-<li><p>Analysis wavelength 663 nm</p></li>
-<li><p>Correction for analysis wavelength 750 nm</p></li>
-<li><p>Baseline correction 750 nm</p></li>
-<li><p>Automated pathlength On</p></li>
-<li><p>after the 48hr incubation, pull tubes out of the 4C fridge and centrifuge for 10 minutes at 805 RCF</p></li>
-<li><p>transfer 2 2mL aliquots of extracted chlorophyll in acetone from each symbiont tube into two optical glass cuvettes</p></li>
-<li><p>measure absorbance at 630, 663, and 750nm using the NanoDrop cuvettes</p></li>
-</ul>
+<ol type="1">
+<li>Open the NanoDrop 2000c desktop application</li>
+<li>Click on the “Method Editor” button</li>
+</ol>
+<p><img src="01_method-editor.PNG" class="img-fluid"></p>
+<ol start="2" type="1">
+<li><p>Name and describe the custom measurement method. Here, select <code>Manually enetered factor / extinction coefficient</code> for the <code>Method type</code>. Click <code>Next</code>.<img src="02_name-type.PNG" class="img-fluid"></p></li>
+<li><p>In this window type in the analysis wavelength in nanometers (nm) that you want to measure. Here we want to measure 630, 663, and 750. We want the extinction coefficient to be from <span class="citation" data-cites="jeffrey1975">Jeffrey and Humphrey (<a href="#ref-jeffrey1975" role="doc-biblioref">1975</a>)</span> table 2:</p></li>
+</ol>
+<div class="no-row-height column-margin column-container"></div><p><img src="jeffery_table2.png" class="img-fluid"></p>
+<p>However, the extinction coefficients for 100% acetone are different for each type of chlorophyll… If I want to measure both chlorophyll a and c2, does this mean I need a different method for each one?</p>
+<p><img src="03_measurement.PNG" class="img-fluid"></p>
+<ol start="4" type="1">
+<li>Correction for analysis wavelength should be 750 nm <em>and</em> a baseline correction of 750 nm. Click <code>Next</code>.</li>
+</ol>
+<p><img src="04_correction.PNG" class="img-fluid"></p>
+<ol start="5" type="1">
+<li>Optionally enter a formula table. Here I just want to absorbance at each of the following wavelengths: 630, 663, and 750. Click <code>Next</code>.</li>
+</ol>
+<p><img src="05_formula-table.PNG" class="img-fluid"></p>
+<ol start="6" type="1">
+<li><p>In instrument settings select the wavelength measurement range to Visible range (350nm- 840nm). Also check the box next to <code>Auto pathlength</code> indicating that it should be ‘On’. Click <code>Finish</code>.</p>
+<p><img src="06_settings.PNG" class="img-fluid"></p></li>
+<li><p>Load your blank cuvette…</p>
+<p><img src="08_cuvette.PNG" class="img-fluid"></p></li>
+</ol>
+<!-- -->
+<ol start="6" type="1">
+<li>after the 48hr incubation, pull tubes out of the 4C fridge and centrifuge for 10 minutes at 805 RCF</li>
+<li>transfer 2 2mL aliquots of extracted chlorophyll in acetone from each symbiont tube into two optical glass cuvettes</li>
+<li>measure absorbance at 630, 663, and 750nm using the NanoDrop cuvettes</li>
+</ol>
 </section>
 </section>
-<section id="calculate-concentrations" class="level1">
+</section>
+<section id="calculate-concentrations" class="level1 page-columns page-full">
 <h1>Calculate concentrations</h1>
 <ul>
-<li><p>calculate concentrations of chlorophyll <span class="math inline">\(a\)</span> and <span class="math inline">\(c_2\)</span> in <span class="math inline">\(\mu g/mL\)</span> using the following equations from Jeffery and Humphrey (1975) for dinoflagellates:</p>
+<li><p>calculate concentrations of chlorophyll <span class="math inline">\(a\)</span> and <span class="math inline">\(c_2\)</span> in <span class="math inline">\(\mu g/mL\)</span> using the following equations from <span class="citation" data-cites="jeffrey1975">(<a href="#ref-jeffrey1975" role="doc-biblioref">Jeffrey and Humphrey 1975</a>)</span> Jeffery and Humphrey (1975) for dinoflagellates:</p>
 <p><span class="math display">\[ Chlorophyll a = 11.43E_{663} − 0.64E_{630} \]</span> <span class="math display">\[ Chlorophyll c2 = 27.09E_{630} − 3.63E_{663} \]</span></p></li>
 </ul>
-<blockquote class="blockquote">
+<div class="no-row-height column-margin column-container"><div id="ref-jeffrey1975" class="csl-entry" role="doc-biblioentry">
+Jeffrey, S. W., and G. F. Humphrey. 1975. <span>“New Spectrophotometric Equations for Determining Chlorophylls <span><em>a</em></span>, <span><em>b</em></span>, <span><em>C</em></span>1 and <span><em>C</em></span>2 in Higher Plants, Algae and Natural Phytoplankton.”</span> <em>Biochemie Und Physiologie Der Pflanzen</em> 167 (2): 191–94. <a href="https://doi.org/10.1016/S0015-3796(17)30778-3">https://doi.org/10.1016/S0015-3796(17)30778-3</a>.
+</div></div><blockquote class="blockquote">
 <p>” As 1 ml of resuspended Symbiodiniaceae pellet was extracted in 5 ml of acetone, chlorophyll concentrations were multiplied by five. To calculate chlorophyll per μg protein, the following equation was used: 5 × chlorophyll ( μg ml ) 8 ×protein ( μg ml ).” (Steinberg et al., 2021, p.&nbsp;4)</p>
 </blockquote>
 

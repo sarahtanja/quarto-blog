@@ -37,39 +37,22 @@ First we need to gather materials & equipment:
 ## Materials & equipment list
 
 -   Fume hood
-
 -   Stir plate, shaker table, or [flocculator](https://www.velp.com/en-us/fc-s-series-flocculators-with-independent-positions.aspx) with rpm control (90 rpm) for leachate 'soak'
-
 -   Stir plate for dissolving salt in artificial seawater
-
 -   Ring stand
-
 -   Burette & burette clamp
-
 -   Glass funnels for burette and for erlenmeyer flask
-
 -   American Standard for Testing and Materials (ASTM) D1141-98 salt for artificial seawater, sold by Lake Products Company, LLC (buy [here](https://lakeproductscompanyshop.com/sea-salt-astm-d1141-98-20lb-pail/))
-
 -   1 400 mL flask or beaker per leachate solution prep
-
 -   1 1000 mL erlenmeyer flask for making artifical seawater
-
 -   scale accurate to 0.001 grams
-
 -   Large weigh boats for \~41 gram volume
-
 -   Metal scoopulas/spatulas for transferring salts and microplastics
-
 -   pH meter
-
 -   0.1M hydrochloric acid (HCl)
-
 -   0.1M sodium hydroxide (NaOH)
-
 -   Deionized water
-
--   45 μm filter paper
-
+-   1.2 um pore size glass fiber filters
 -   Locally sourced & filtered seawater
 
 Then let's clean & prep our lab space:

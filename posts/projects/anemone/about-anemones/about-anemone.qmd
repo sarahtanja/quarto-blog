@@ -53,11 +53,39 @@ From Baja California to Southeast Alaska all along the Eastern Pacific Coast.
 
 ***A. elegantissima*** **is very tolerant to a broad range of thermal exposures.** As an intertidal organism, *A. elegantissima* regularly experience large temperature shifts throughout the day coinciding with desiccation at low tide. They are found from Baja, California to Southeast Alaska, and in anemones hosting the brown alga *Breviolum muscatinei*, temperatures from 6^o^C to 24^o^C do not significantly affect their algal density, mitotic index, or total chlorophyll (a + c), but net photosynthesis and anemone respiration both increase with temperature [@Verde.2002].
 
-# Who studies them?
+# Who studies them in the PNW?
 
-# How are they studied?
+E. Alan Verde
 
-## Wet weight, oral disc diameter and protein content
+L.R. McClosky
+
+Brian Bingham
+
+Virginia Weiss
+
+James Dimond
+
+# What have they found?
+
+## They may have underappreciated importance as coastal primary producers
+
+> “The sea anemone Anthopleura elegantissima (BRANDT 1835) is an important member of many rocky intertidal communities along the west coast of North America, with extensive aggregations of these clonal animals stretching from high to low intertidal zones (Dayton 1971; Sebens 1982a). Even where they co-occur with spatially dominant mussels, densities of A. elegantissima can reach 500 individuals m2 (Sebens 1982b). Hosting symbiotic green chlorophytes (Elliptochloris marina LETSCH) and brown dinophytes (Symbiodinium spp.), members of A. elegantissima contribute significantly to intertidal productivity; in Southern California, their photosynthetic contribution is on par with that of intertidal seaweeds (Fitt et al. 1982).” ([@bingham2011], p. 291)
+
+## They have a broad (5-33.6C) thermal tolerance 
+
+> “Members of A. elegantissima can tolerate much higher temperatures, at least for short periods. Dayton (1971) monitored internal body temperatures of A. elegantissima in the field and found that anemones could survive body temperatures as high as 33.6°C with no apparent negative effect. Over 3 d of field study, with different levels of sunlight and wind, body temperatures of A. elegantissima in our treatments often exceeded 24°C, and reached 32°C in the most extreme cases. Although not lethal, temperatures in this range induce the production of heat shock proteins in A. elegantissima (Snyder & Rossi 2004), which may involve significant metabolic costs (Somero 2002).” ([@bingham2011], p. 296)
+
+@bingham2011 found that aggregated anemones remain cooler than isolated individuals. They posit that the anemones in an aggregate benefit from more thermal stability due to the 'extracorporeal' trapped water between indivudal polyps and reduced 'windage'.
+
+> “Seasonal surveys at our field site revealed larger aggregations of A. elegantissima in the high intertidal zone than at lower tidal elevations, but only in the summer when temperatures were highest (Fig. 5), suggesting that aggregation in high intertidal zones may be a behavioral response to desiccation and temperature stress.” ([@bingham2011], p. 298)
+
+> “In our field experiments, even in foggy emersion conditions, Anthopleura elegantissima body temperatures reached 8oC above ambient seawater. A. elegantissima body temperatures on sunny days reach values 17°C above that of ambient seawater, similar to that reported for emersed mussels (Mytilus sp.) and limpets (Patella vulgata) in temperate intertidal zones (Davies, 1970; Elvin and Gonor, 1979; Hofmann and Somero, 1995, 1996; Roberts et al., 1997; Helmuth, 1998).” [@snyder2004]
+
+## They have warriors at their aggregate boundaries
+
+> Although aggregation has clear benefits for offsetting temperature increases, the benefits may not be shared equally by all members of the group; anemones on the edges of the clone, with their more exposed body surfaces, experienced more extreme temperatures than did individuals inside the aggregation. Individuals on the edges of clonal aggregations of A. elegantissima function as warriors, developing large acrorhagi (specialized organs filled with nematocysts) to defend the boundaries of the clone (Francis 1976). The warriors are smaller, have lower fission rates, and lack gonads, presumably because energy is diverted to defensive activities (Francis 1976).”([@bingham2011], p. 298)
+
+## They have a linear relationship between wet weight, oral disc diameter and protein content
 
 In a paper @dimond2011, a year-long survey of *Anthopleura elegantissima* anemones to assess seasonality provides background information about the seasonal variation in anemone size and symbiosis.
 

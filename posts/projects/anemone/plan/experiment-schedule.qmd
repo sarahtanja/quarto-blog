@@ -1,5 +1,5 @@
 ---
-title: "Anemone Experiment Recipe"
+title: "Anemone Leachate Heat Experiment Recipe"
 author: "Sarah Tanja"
 date: '04/23/2024'
 categories: [anemones, protocols]

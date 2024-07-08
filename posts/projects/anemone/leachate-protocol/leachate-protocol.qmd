@@ -123,7 +123,7 @@ Pure water (H~2~O) is amphoteric, meaning it can act as both an acid and as a ba
 
 -   Store at 4°C for a maximum of 48h prior to use
 
-## Dilution
+## Serial Dilution
 
 > To prepare the leachate we put 250mg of material in 250 ml. At the end of the treatment you  will have 250ml corresponding to 1g/L of plastic ( PAEs approximately at 10% so 100 mg/L, other contaminants at  10-0.1 mg/L,  we will give you the exact concentration for each contaminant)
 >
@@ -151,4 +151,60 @@ So we are going to target the following microplastic concentrations:
 
 0 mg/L (control)
 
-To do this we will do a serial dilution:
+To do this we will do a serial dilution.
+
+1.  First make 400mL of each stock solution from the 1000 mg/L prepared leachate
+
+-   [ ] Make 10 mg/L stock:
+
+    1000 mg/L \* V1 = 10 mg/L \* 400mL
+
+    V1 = 4mL
+
+    400mL of 10mg/L stock = 4mL of 1000mg/L stock + 396mL of FSW
+
+-   [ ] Make 1mg/L stock:
+
+    10mg/L \* V1 = 1mg/L \* 400mL
+
+    V1 = 40mL
+
+    400mL of 1mg/L stock = 40mL of 10mg/L stock + 360mL of FSW
+
+-   [ ] Make 0.1 mg/L stock:
+
+    1mg/L \* V1 = 0.1mg/L \* 400mL
+
+    V1 = 40mL
+
+    400mL of 0.1mg/L stock = 40mL of 1mg/L stock + 360mL of FSW
+
+2.  Then dilute the stock to each treatment vial/jar
+
+### 20mL Scintillation vials
+
+For a 20mL scintillation vial for coral embryo experiments with a final target volume of 18mL:
+
+**1mg/L HIGH treatment**
+
+10mg/L \* V1 = 1mg/L \* 18mL
+
+V1 = 1.8mL
+
+18mL of 1mg/L leachate = 16.2mL of FSW + 1.8mL of 10mg/L stock
+
+**0.1 mg/L MID treatment**
+
+1mg/L \* V1 = 0.1mg/L \* 18mL
+
+V1 = 1.8mL
+
+18mL of 0.1mg/L leachate = 16.2mL of FSW + 1.8mL of 1mg/L stock
+
+**0.01 mg/L LOW treatment**
+
+0.1mg/L \* V1 = 0.01mg/L \* 18mL
+
+V1 = 1.8mL
+
+18mL of 0.01mg/L leachate = 16.2mL of FSW + 1.8mL of 0.1mg/L stock

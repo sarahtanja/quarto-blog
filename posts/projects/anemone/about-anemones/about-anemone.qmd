@@ -71,7 +71,7 @@ James Dimond
 
 > “The sea anemone Anthopleura elegantissima (BRANDT 1835) is an important member of many rocky intertidal communities along the west coast of North America, with extensive aggregations of these clonal animals stretching from high to low intertidal zones (Dayton 1971; Sebens 1982a). Even where they co-occur with spatially dominant mussels, densities of A. elegantissima can reach 500 individuals m2 (Sebens 1982b). Hosting symbiotic green chlorophytes (Elliptochloris marina LETSCH) and brown dinophytes (Symbiodinium spp.), members of A. elegantissima contribute significantly to intertidal productivity; in Southern California, their photosynthetic contribution is on par with that of intertidal seaweeds (Fitt et al. 1982).” ([@bingham2011], p. 291)
 
-## They have a broad (5-33.6C) thermal tolerance 
+## They have a broad (5-33.6C) thermal tolerance
 
 > “Members of A. elegantissima can tolerate much higher temperatures, at least for short periods. Dayton (1971) monitored internal body temperatures of A. elegantissima in the field and found that anemones could survive body temperatures as high as 33.6°C with no apparent negative effect. Over 3 d of field study, with different levels of sunlight and wind, body temperatures of A. elegantissima in our treatments often exceeded 24°C, and reached 32°C in the most extreme cases. Although not lethal, temperatures in this range induce the production of heat shock proteins in A. elegantissima (Snyder & Rossi 2004), which may involve significant metabolic costs (Somero 2002).” ([@bingham2011], p. 296)
 

@@ -2,142 +2,146 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/about.html</loc>
-    <lastmod>2024-06-06T01:02:46.191Z</lastmod>
+    <lastmod>2024-07-08T06:07:27.314Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/index.html</loc>
-    <lastmod>2024-06-06T01:02:51.749Z</lastmod>
+    <lastmod>2024-07-08T06:07:31.344Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/choosing-16S-primers/index.html</loc>
-    <lastmod>2024-06-06T01:02:53.551Z</lastmod>
+    <lastmod>2024-07-08T06:07:32.586Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/committee-1/index.html</loc>
-    <lastmod>2024-06-06T01:02:55.944Z</lastmod>
+    <lastmod>2024-07-08T06:07:34.156Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/committee-2/index.html</loc>
-    <lastmod>2024-06-06T01:02:58.830Z</lastmod>
+    <lastmod>2024-07-08T06:07:35.943Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/coral-pae-devo/index.html</loc>
-    <lastmod>2024-06-06T01:03:00.794Z</lastmod>
+    <lastmod>2024-07-08T06:07:37.267Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/daily-log/index.html</loc>
-    <lastmod>2024-06-06T01:03:08.717Z</lastmod>
+    <lastmod>2024-07-08T06:07:43.508Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/dna-rna-extraction-protocol/index.html</loc>
-    <lastmod>2024-06-06T01:03:11.363Z</lastmod>
+    <lastmod>2024-07-08T06:07:45.541Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/extractions-overview/index.html</loc>
-    <lastmod>2024-06-06T01:03:15.294Z</lastmod>
+    <lastmod>2024-07-08T06:07:48.014Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/git-reset/index.html</loc>
-    <lastmod>2024-06-06T01:03:17.267Z</lastmod>
+    <lastmod>2024-07-08T06:07:49.223Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/pae-standard-control/index.html</loc>
-    <lastmod>2024-06-06T01:03:22.445Z</lastmod>
+    <lastmod>2024-07-08T06:07:52.154Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/about-anemones/about-anemone.html</loc>
-    <lastmod>2024-06-06T01:03:26.101Z</lastmod>
+    <lastmod>2024-07-08T06:07:54.711Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/chlorophyll/chlorophyll.html</loc>
-    <lastmod>2024-06-06T01:03:31.817Z</lastmod>
+    <lastmod>2024-07-08T06:07:57.859Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/field-collection/18MAR24-owens-beach.html</loc>
-    <lastmod>2024-06-06T01:03:34.917Z</lastmod>
+    <lastmod>2024-07-08T06:07:59.635Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/field-collection/30MAR24-alki.html</loc>
-    <lastmod>2024-06-06T01:03:37.763Z</lastmod>
+    <lastmod>2024-07-08T06:08:01.184Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/heat-stress/heat-wave.html</loc>
+    <lastmod>2024-07-08T06:08:15.437Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/leachate-protocol/leachate-protocol.html</loc>
-    <lastmod>2024-06-06T01:03:39.511Z</lastmod>
+    <lastmod>2024-07-08T06:08:18.581Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/making-chambers/making-chambers.html</loc>
-    <lastmod>2024-06-06T01:03:41.227Z</lastmod>
+    <lastmod>2024-07-08T06:08:19.610Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/photosynth-pam/photosynth-pam.html</loc>
-    <lastmod>2024-06-06T01:03:44.501Z</lastmod>
+    <lastmod>2024-07-08T06:08:21.353Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/plan/experiment-schedule.html</loc>
-    <lastmod>2024-06-06T01:03:46.427Z</lastmod>
+    <lastmod>2024-07-08T06:08:22.293Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/plan/project-planning.html</loc>
-    <lastmod>2024-06-06T01:03:49.817Z</lastmod>
+    <lastmod>2024-07-08T06:08:24.242Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/single-stress/pilot-single-stress.html</loc>
-    <lastmod>2024-06-06T01:03:53.360Z</lastmod>
+    <lastmod>2024-07-08T06:08:26.104Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/tanks/tanks.html</loc>
-    <lastmod>2024-06-06T01:03:55.013Z</lastmod>
+    <lastmod>2024-07-08T06:08:27.004Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/projects/anemone.html</loc>
-    <lastmod>2024-06-06T01:03:57.353Z</lastmod>
+    <lastmod>2024-07-08T06:08:28.417Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-pae-temp/dna-rna-extractions/dna-rna-coral-extractions.html</loc>
-    <lastmod>2024-06-06T01:04:00.084Z</lastmod>
+    <lastmod>2024-07-08T06:08:29.846Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-pae-temp.html</loc>
-    <lastmod>2024-06-06T01:04:01.861Z</lastmod>
+    <lastmod>2024-07-08T06:08:30.815Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/pseudoreplication/index.html</loc>
-    <lastmod>2024-06-06T01:04:04.695Z</lastmod>
+    <lastmod>2024-07-08T06:08:32.247Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/puget-sound-mps/puget-sound-mps.html</loc>
-    <lastmod>2024-06-06T01:04:07.444Z</lastmod>
+    <lastmod>2024-07-08T06:08:33.836Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/qiime-jupyter-start/index.html</loc>
-    <lastmod>2024-06-06T01:04:15.669Z</lastmod>
+    <lastmod>2024-07-08T06:08:36.710Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/quarto-blog-create/index.html</loc>
-    <lastmod>2024-06-06T01:04:20.894Z</lastmod>
+    <lastmod>2024-07-08T06:08:39.491Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/rna-woes/index.html</loc>
-    <lastmod>2024-06-06T01:04:28.586Z</lastmod>
+    <lastmod>2024-07-08T06:08:43.453Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/rnoaa/index.html</loc>
-    <lastmod>2024-06-06T01:04:32.750Z</lastmod>
+    <lastmod>2024-07-08T06:08:45.334Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/target-journals/index.html</loc>
-    <lastmod>2024-06-06T01:04:36.761Z</lastmod>
+    <lastmod>2024-07-08T06:08:47.234Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/index.html</loc>
-    <lastmod>2024-06-06T01:04:41.448Z</lastmod>
+    <lastmod>2024-07-08T06:08:49.544Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/world-phthalates/index.html</loc>
-    <lastmod>2024-06-06T01:04:44.544Z</lastmod>
+    <lastmod>2024-07-08T06:08:51.214Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/projects.html</loc>
-    <lastmod>2024-06-06T01:04:46.800Z</lastmod>
+    <lastmod>2024-07-08T06:08:52.671Z</lastmod>
   </url>
 </urlset>

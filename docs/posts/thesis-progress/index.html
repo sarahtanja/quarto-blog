@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Sarah Tanja">
+<meta name="dcterms.date" content="2023-11-19">
 
-<title>Sarah Tanja’s Open Lab Notebook - Photophysiology of a coral symbiont under multiple stressors</title>
+<title>Sarah Tanja’s Open Lab Notebook - Master’s Thesis Progress</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,11 +33,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../images/favicon.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
@@ -62,42 +63,12 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-categories','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -149,98 +120,348 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">Photophysiology of a coral symbiont under multiple stressors</h1>
-            <p class="subtitle lead">Exploring Montipora capitata coral symbiont photosynthesis under PVC leachate and thermal stress exposures</p>
-                      </div>
+    <div class="quarto-title column-page-right">
+      <h1 class="title">Master’s Thesis Progress</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">learning journey</div>
+                <div class="quarto-category">committee</div>
+              </div>
+                  </div>
   </div>
+    
+  
   <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Sarah Tanja </p>
+            </div>
     </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">November 19, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
+   
+  <ul>
+  <li><a href="#sarahs-masters-thesis-progress" id="toc-sarahs-masters-thesis-progress" class="nav-link active" data-scroll-target="#sarahs-masters-thesis-progress">Sarah’s Master’s Thesis Progress:</a></li>
+  <li><a href="#completed-coursework" id="toc-completed-coursework" class="nav-link" data-scroll-target="#completed-coursework">Completed Coursework</a></li>
+  <li><a href="#audited-coursework" id="toc-audited-coursework" class="nav-link" data-scroll-target="#audited-coursework">Audited Coursework</a></li>
+  <li><a href="#in-progress-coursework" id="toc-in-progress-coursework" class="nav-link" data-scroll-target="#in-progress-coursework">In-Progress Coursework</a></li>
+  </ul>
+</nav>
+</nav>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content">
 
 
 
 
-<div class="quarto-about-trestles column-page">
-  <div class="about-entity">
-    <img src="himb-mcap-horizon.jpg" class="about-image
-  rounded " style="width: 20em;">
-
-    <div class="about-links">
-  <a href="https://github.com/sarahtanja/coral-leachate-heat" class="about-link">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">https://github.com/sarahtanja/coral-leachate-heat</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><div id="description">
-<div>
-<p>This project is a multiple-stressor experiment conducted in July 2024 at the Hawaii Institute of Marine Biology (HIMB) in Kaneohe Bay.</p>
-</div>
-<p>In this experiment, I exposed a total of 60 coral nubbins to PVC leachate and thermal stress for 96 hours. I measured the performance of the coral symbionts’ photosynthetic efficiency (Fv/Fm), and non-photochemical quenching (via quasi dark-adapted rapid light curves) daily with the Walz Diving PAM II during the exposure. At the end of the 96 hour exposure, I flash-froze whole nubbins in liquid nitrogen to conduct RNAseq analysis of the symbiont’s gene expression.</p>
-<p>The data and code files for this project are organized on GitHub at [https://github.com/sarahtanja/coral-leachate-heat]</p>
-</div></div>
-</div>
-
-
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-
-<table class="quarto-listing-table table">
+<section id="sarahs-masters-thesis-progress" class="level1">
+<h1>Sarah’s Master’s Thesis Progress:</h1>
+<table class="table">
 <thead>
-<tr>
-<th>
-Date
-</th>
-<th>
-Title
-</th>
-<th>
-Author
-</th>
-<th>
-Categories
-</th>
-<th>
-Reading Time
-</th>
+<tr class="header">
+<th>Milestone</th>
+<th>Expected</th>
+<th>Completed</th>
 </tr>
 </thead>
-<tbody class="list">
-<tr data-index="0" data-categories="coral" data-listing-date-sort="1720519200000" data-listing-file-modified-sort="1720577468688" data-listing-reading-time-sort="0.41" data-listing-title-sort="Experiment Log" data-listing-filename-sort="log.qmd">
-<td class="listing-date">
-Jul 9, 2024
-</td>
-<td class="listing-title">
-<a href="../../posts/projects/coral-leachate-heat/log.html" class="title">Experiment Log</a>
-</td>
-<td class="listing-author">
-Sarah Tanja
-</td>
-<td class="listing-categories">
-coral
-</td>
-<td class="listing-reading-time">
-0 min
-</td>
+<tbody>
+<tr class="odd">
+<td><a href="https://docs.google.com/forms/d/e/1FAIpQLSdMCg96RoRiT4yEIAMorzOPT6GqDYFRQcPp0Ttr0D22idJqYg/viewform">Form Committee</a></td>
+<td>[AU22] 16DEC22</td>
+<td>[WI23] 05JAN2023</td>
+</tr>
+<tr class="even">
+<td><a href="https://forms.gle/15siYRGdHKr5dX2B7">Submit Plan of Study</a></td>
+<td>[AU22] 16DEC22</td>
+<td>[WI23] 05JAN2023</td>
+</tr>
+<tr class="odd">
+<td><a href="https://docs.google.com/forms/d/e/1FAIpQLScL5Tp4GOxGUTxV2c1-kXW0orPTZEfuFeGtMF4eoJ9LHC9mcw/viewform">Submit Thesis Proposal</a></td>
+<td>[AU22] 16DEC22</td>
+<td>[WI23] <strong>Overdue</strong></td>
+</tr>
+<tr class="even">
+<td>End-of-Program Meeting with GPA</td>
+<td>[AU23] 01NOV23</td>
+<td>[WI24] 10JAN2024</td>
+</tr>
+<tr class="odd">
+<td>Submit Thesis Draft</td>
+<td>[WI24] 31JAN24</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Request Final Exam</td>
+<td>[WI24] 31JAN24</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Request Master’s Degree</td>
+<td>[WI24] 31JAN24</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Final Exam: Thesis Seminar + Oral Exam</td>
+<td>[SP24] 05APR24</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Submit Master’s Thesis</td>
+<td>[SP24] 31MAY24</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Commencement</td>
+<td>08JUN24</td>
+<td></td>
 </tr>
 </tbody>
-
 </table>
-<div class="listing-no-matching d-none">
-No matching items
+<p>Check Degree Audit for SAFS <a href="https://myplan.uw.edu/audit/#/degree?states=N4Ig7gDgziBcLADrgJYDsAmB7MAJApigOYAWALsrAMxUCctANMmOtmAApZQpkpZqUAjAFYALAF8Q4oA">here</a></p>
+</section>
+<section id="completed-coursework" class="level1">
+<h1>Completed Coursework</h1>
+<div class="callout-tip callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
 </div>
-</div></main> <!-- /main -->
+<div class="callout-body-container">
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Qtr</th>
+<th>Course</th>
+<th>Credits</th>
+<th>Grade</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">WI21</td>
+<td>OCEAN 518-Scientific Writing</td>
+<td>2.0</td>
+<td>CR</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SU21</td>
+<td>FHL 446-Marine Botany</td>
+<td>9.0</td>
+<td>4.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">AU21</td>
+<td>FISH 511-Topics: Evol&amp;Ecol Plastics Seminar</td>
+<td>2.0</td>
+<td>CR</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">AU21</td>
+<td>FISH 522-Hot Topics in AFS</td>
+<td>2.0</td>
+<td>CR</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">AU21</td>
+<td>FISH 552-Intro R Programming</td>
+<td>2.0</td>
+<td>CR</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">AU21</td>
+<td>FISH 553-ADV R Programming</td>
+<td>2.0</td>
+<td>CR</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">AU21</td>
+<td>QSCI 482-Statistical Inference in Ecol</td>
+<td>5.0</td>
+<td>3.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">WI22</td>
+<td>FISH 521-Research Proposal Writing</td>
+<td>4.0</td>
+<td>3.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">WI22</td>
+<td>FISH 700-Masters Thesis</td>
+<td>3.0</td>
+<td>CR</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">WI22</td>
+<td>OCEAN 531-Marine Phyto Biogeochem</td>
+<td>3.0</td>
+<td>3.9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">WI22</td>
+<td>FISH 700-Masters Thesis</td>
+<td>5.0</td>
+<td>CR</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">WI22</td>
+<td>FISH 541-Environmental Physiology</td>
+<td>5.0</td>
+<td>4.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SU22</td>
+<td>FISH 700-Masters Thesis</td>
+<td>10.0</td>
+<td>CR</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">AU22</td>
+<td>FISH 561-Resource Economics &amp; Policy</td>
+<td>4.0</td>
+<td>4.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">AU22</td>
+<td>SMEA 500-Human Dimensions of Global Change</td>
+<td>3.0</td>
+<td>4.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">AU22</td>
+<td>SMEA 521-Climate Change Governance</td>
+<td>3.0</td>
+<td>3.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">WI23</td>
+<td>FISH 539-US Fishery Management &amp; Policy</td>
+<td>3.0</td>
+<td>4.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">WI23</td>
+<td>FISH 700-Masters Thesis</td>
+<td>7.0</td>
+<td>CR</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SP23</td>
+<td>FISH 546-Bioinformatics</td>
+<td>3.0</td>
+<td>3.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SP23</td>
+<td>FISH 700-Masters Thesis</td>
+<td>7.0</td>
+<td>CR</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SU23</td>
+<td>FISH 700-Masters Thesis</td>
+<td>10.0</td>
+<td>CR</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="audited-coursework" class="level1">
+<h1>Audited Coursework</h1>
+<div class="callout-important callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Qtr</th>
+<th>Course</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">WI22</td>
+<td>B BIO 495 C-Investigative Biology</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">WI22</td>
+<td>FISH 427 A-Tropical Marine Biology</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="in-progress-coursework" class="level1">
+<h1>In-Progress Coursework</h1>
+<div class="callout-important callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Qtr</th>
+<th>Course</th>
+<th>Credits</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">AU23</td>
+<td>C ENV-Improv for Science Communication</td>
+<td>1.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">AU23</td>
+<td>FISH 510- Topics in Genetics &amp; Physiology</td>
+<td>2.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">AU23</td>
+<td>FISH 700-Masters Thesis</td>
+<td>7.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -376,6 +597,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const clipboard = new window.ClipboardJS('.code-copy-button', {
     target: function(trigger) {
       return trigger.previousElementSibling;
@@ -480,6 +708,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/https:\/\/sarahtanja\.github\.io\/quarto-blog\//);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->

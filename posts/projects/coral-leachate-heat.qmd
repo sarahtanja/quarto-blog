@@ -1,5 +1,5 @@
 ---
-title: "Embryonic development of Montipora capitata coralexposed to PVC leachate"
+title: "Embryonic development of Montipora capitata coral exposed to PVC leachate"
 subtitle: "An ecotoxicological assay of Montipora capitata coral embryo development and gene expression under increasing PVC leachate exposures"
 image: "night-spawn.jpg"
 about:

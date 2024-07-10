@@ -12,17 +12,19 @@ reference-location: margin
 citation-location: margin
 link-external-icon: true
 link-external-newwindow: true
-bibliography: ../anemone-leachate-heat.bib
 ---
 
 ### Thursday June 27th, 2024
-Kat and Callum collected 10 distinct *Montipora capitata* colonies from Kaneohe Bay, Hawaii 
+Kat and Callum collected 10 distinct *Montipora capitata* colonies of approximately 30cm in diameter from Kaneohe Bay, Hawaii under permit 
 
 ### Saturday June 29th, 2024
 All nubbins were shifted from the blue tanks to the black tanks at the Point Lab at 4PM
 
 ### Saturday July 6th, 2024
 Leachate was prepared according to the leachate protocol, and began stirring on a shaker plate at ~4AM 
+
+### Tuesday July 9th, 2024
+Rio 90 pumps borrowed from the Donohue Lab.
 
 ### Wednesday July 10th, 2024
 Start 3 day temp ramp

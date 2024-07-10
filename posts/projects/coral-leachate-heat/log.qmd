@@ -1,0 +1,28 @@
+---
+title: "Experiment Log"
+author: "Sarah Tanja"
+date: '07/09/2024'
+categories: [coral]
+draft: false
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
+bibliography: ../anemone-leachate-heat.bib
+---
+
+### Thursday June 27th, 2024
+Kat and Callum collected 10 distinct *Montipora capitata* colonies from Kaneohe Bay, Hawaii 
+
+### Saturday June 29th, 2024
+All nubbins were shifted from the blue tanks to the black tanks at the Point Lab at 4PM
+
+### Saturday July 6th, 2024
+Leachate was prepared according to the leachate protocol, and began stirring on a shaker plate at ~4AM 
+
+### Wednesday July 10th, 2024
+Start 3 day temp ramp

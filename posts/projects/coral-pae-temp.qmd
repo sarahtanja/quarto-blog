@@ -25,7 +25,11 @@ format:
 ---
 
 ::: {#description}
+<div>
+
 This project was a multiple-stressor mesocosm experiment I conducted in August 2022 at the Hawaii Institute of Marine Biology (HIMB) in Kaneohe Bay.
+
+</div>
 
 In this experiment, I exposed coral fragments to a chemical mix of 6 common phthalate pollutants in methanol and thermal stress for 48 hours. **Unfortunately, in this pilot experiment, we lack a methanol solvent control. This means that we cannot differentiate the effects of the phthalate pollutants from the effects of the methanol on the microbial community changes when compared to the no-pollution controls.**
 

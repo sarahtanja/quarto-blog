@@ -1,10 +1,9 @@
 ---
-title: "Measuring photosynthesis & respiration"
-subtitle: "Setup & Operation of the Walz Mini-PAM-II"
+title: "Measuring photosynthesis"
+subtitle: "Understanding & Operating the Walz Diving-PAM-II"
 author: "Sarah Tanja"
 date: '02/05/2024'
 categories: [learning journey, anemones]
-image: thumbnail.jpg
 draft: false
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>
@@ -65,7 +64,7 @@ The green algae are thus products of primary endosymbiosis and are characterized
 
 ![Screenshot from P.J. Keeling[@keeling2010] , Figure 2. Diagram of primary, secondary, & tertiary endosymbiosis and explaining the origins of chloroplasts.](Keeling_fig2.png){fig-align="center"}
 
-### Light-dependent reactions in oxygenic photosynthesis
+### Light-dependent reactions
 
 A brief [intro to photosynthesis](https://www.khanacademy.org/science/ap-biology/cellular-energetics/photosynthesis/a/intro-to-photosynthesis) by Khan Academy
 
@@ -73,15 +72,15 @@ A brief [intro to photosynthesis](https://www.khanacademy.org/science/ap-biology
 
 ![Fig. 1 From @shevela2023 : "Schematic representation of the light-induced electron (solid arrows) and proton (dashed arrows) transfer reactions driven by the photosynthetic protein complexes embedded in the thylakoid membrane of oxygenic organisms (plants, algae, and cyanobacteria)."](Shevala_fig1.png)
 
+### Light-independent reactions
+
 ### Cyclic electron flow
 
 Finally, cyclic electron flow may play a photoprotective role, preventing excess light from damaging photosystem proteins and promoting repair of light-induced damage
 
-## How do we measure photosynthesis?
+## How do we measure photosynthesis with a PAM fluorometer?
 
-PAM fluorescence measurements analyze the state and turnover of photosystem II reaction centers. Combined with oxygen consumption, we an assess the role of alternative oxygen-processing pathways.
-
-The MINI-PAM-II uses an oxygen optode, the sensor's responsive element is a luminescent dye whose light emission is quenched by oxygen. The optode measurement does not consume oxygen.
+PAM fluorometers measure fluorescence to analyze the state and turnover of photosystem II reaction centers.
 
 What is fluorescence?
 
@@ -95,16 +94,14 @@ Pulse Amplitude Modulation (PAM) Fluorometers use three different lights to trig
 
 [@ralph2005]
 
-## Don't forget, photosynthesizers also do respiration!
+## Fv/Fm is Maximum Quantum Yield
 
-They don't just produce oxygen, they also consume it and release carbon dioxide (CO~2~).
+## Rapid Light Curves (RLCs) are successive measurements of Fv/Fm under increased irradiance steps
 
-## Oxygen Measurement with Oxygen Meter FireStingO2 & Fluorescense with MINI-PAM-II
+## Y(II) is Effective Quantum Yield
 
-Download the Oxygen Logger software for the [FireStingO2](https://www.pyroscience.com/en/downloads/legacy) at the legacy downloads site for PyroSciences.
+## rETR~max~ is the maximum relative electron transport rate
 
-Before connecting the FireStingO2 to the Walz Mini-PAM II, you need to configure the software to the particular oxygen optode sensor used. Anytime you download new software, or switch sensors, you will need to do this step. For this, you only need the FireStingO2, the oxygen optode sensor you will be using, and the micro-USB cable that connects the FireStingO2 to a computer with `Oxygen Logger` software installed.
+## E~k~ is the minimum saturating irradiance
 
-::: callout-warning
-The insertion of the `interface plug` disables USB communication via the Micro-USB port. To change settings of the `FireStingO2` oxymeter via USB connection by the `Oxygen Logger` software, the `interface plug` must be removed.
-:::
+## Alpha ($\alpha$) is the efficiency of light-capture in the light-limited phase

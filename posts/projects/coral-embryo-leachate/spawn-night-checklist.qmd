@@ -3,11 +3,20 @@ title: "Spawn night protocol"
 subtitle: "For embryonic development of Montipora capitata rice corals"
 author: "Sarah Tanja"
 date: '07/09/2024'
+categories: [protocols]
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
 ---
 
 # Overview
 
-This spawn night checklist was used on July 5th, 6th and 7th 2024 at the Hawaiian Institute of Marine Biology (HIMB) on Moku o Loe in Kaneohe Bay, Oahu. The overarching goal was to have a comprehensive checklist for sleep-deprived scientists to follow after 3 days of pulling nearly all-nighters to collect Montipora capitata egg-sperm bundles, conduct bundle-bundle cross fertilizations in 20mL scintillation vials, and then subsequently "Fix and Freeze" the embryos at 4 hours post fertilization (hpf) when fertilized eggs should be reaching initial cleavage, 9hpf when embryos should be in the 'prawn chip' phase, and 14hpf when embryos should be in the early gastrula phase. The end goal is to see if low levels of PVC leachate (PVC having notably larger amounts of phthalates which are known endocrine disrupting chemicals) negatively impact fertilization success and embryonic development of *Montipora capitata* embryos.
+This spawn night checklist was used on July 5th, 6th and 7th 2024 at the Hawaiian Institute of Marine Biology (HIMB) on Moku o Loe in Kaneohe Bay, Oahu. The overarching goal was to have a comprehensive checklist for sleep-deprived scientists to follow after 3 days of pulling nearly all-nighters to collect **Montipora capitata** egg-sperm bundles, conduct bundle-bundle cross fertilizations in 20mL scintillation vials, and then subsequently "Fix and Freeze" the embryos at 4 hours post fertilization (`4hpf`) when fertilized eggs should be reaching initial cleavage, `9hpf` when embryos should be in the 'prawn chip' phase, and `14hpf` when embryos should be in the early gastrula phase. The end goal is to see if low levels of PVC leachate (PVC having notably larger amounts of phthalates which are known endocrine disrupting chemicals) negatively impact fertilization success and embryonic development of *Montipora capitata* embryos.
 
 # Prep
 

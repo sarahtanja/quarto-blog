@@ -14,7 +14,6 @@ reference-location: margin
 citation-location: margin
 link-external-icon: true
 link-external-newwindow: true
-bibliography: photophysiology.bib
 ---
 
 Don't forget, photosynthesizers also do respiration!

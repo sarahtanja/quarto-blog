@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Sarah Tanja">
+<meta name="dcterms.date" content="2024-05-03">
+
+<title>Sarah Tanja’s Open Lab Notebook - Single stressor leachate exposure summary</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<link href="../../../../images/favicon.png" rel="icon" type="image/png">
+<script src="../../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<link href="../../../../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="../../../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="../../../../site_libs/plotly-binding-4.10.4/plotly.js"></script>
+<script src="../../../../site_libs/typedarray-0.1/typedarray.min.js"></script>
+<script src="../../../../site_libs/jquery-3.5.1/jquery.min.js"></script>
+<link href="../../../../site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+<script src="../../../../site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+<link href="../../../../site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="../../../../site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
+
+<link rel="stylesheet" href="../../../../styles.css">
+</head>
+
+<body class="floating nav-fixed slimcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../../images/binocs.png" alt="Self-portrait at Tracy Arm, watercolor artwork by Sarah Tanja" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Sarah Tanja’s Open Lab Notebook</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../projects.html">
+ <span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/sarah-tanja-595722146/"><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/sarahtanja"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:stanja@uw.edu"><i class="bi bi-envelope-heart" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Single stressor leachate exposure summary</h1>
+            <p class="subtitle lead">A 48 hour exposure to polyvinyl chloride (PVC) leachate and to aged polypropylene (PP) leachate</p>
+                                <div class="quarto-categories">
+                <div class="quarto-category">lab records</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Sarah Tanja </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">May 3, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
+   
+  <ul>
+  <li><a href="#specimen-collection-acclimation" id="toc-specimen-collection-acclimation" class="nav-link active" data-scroll-target="#specimen-collection-acclimation">Specimen collection &amp; acclimation</a></li>
+  <li><a href="#leachate-preparation" id="toc-leachate-preparation" class="nav-link" data-scroll-target="#leachate-preparation">Leachate preparation</a></li>
+  <li><a href="#leachate-dilution" id="toc-leachate-dilution" class="nav-link" data-scroll-target="#leachate-dilution">Leachate dilution</a></li>
+  <li><a href="#exposure" id="toc-exposure" class="nav-link" data-scroll-target="#exposure">Exposure</a></li>
+  <li><a href="#response-measurements" id="toc-response-measurements" class="nav-link" data-scroll-target="#response-measurements">Response measurements</a></li>
+  <li><a href="#initial-results" id="toc-initial-results" class="nav-link" data-scroll-target="#initial-results">Initial results</a>
+  <ul>
+  <li><a href="#respiration" id="toc-respiration" class="nav-link" data-scroll-target="#respiration">Respiration</a>
+  <ul>
+  <li><a href="#first-glimpse-of-data" id="toc-first-glimpse-of-data" class="nav-link" data-scroll-target="#first-glimpse-of-data">First glimpse of data</a></li>
+  <li><a href="#data-normality" id="toc-data-normality" class="nav-link" data-scroll-target="#data-normality">Data normality</a></li>
+  <li><a href="#boxplot" id="toc-boxplot" class="nav-link" data-scroll-target="#boxplot">Boxplot</a></li>
+  <li><a href="#anova" id="toc-anova" class="nav-link" data-scroll-target="#anova">ANOVA</a></li>
+  </ul></li>
+  <li><a href="#photosynthesis" id="toc-photosynthesis" class="nav-link" data-scroll-target="#photosynthesis">Photosynthesis</a>
+  <ul>
+  <li><a href="#first-glimpse-of-data-1" id="toc-first-glimpse-of-data-1" class="nav-link" data-scroll-target="#first-glimpse-of-data-1">First glimpse of data</a></li>
+  <li><a href="#data-normality-1" id="toc-data-normality-1" class="nav-link" data-scroll-target="#data-normality-1">Data normality</a></li>
+  <li><a href="#boxplot-1" id="toc-boxplot-1" class="nav-link" data-scroll-target="#boxplot-1">Boxplot</a></li>
+  <li><a href="#anova-1" id="toc-anova-1" class="nav-link" data-scroll-target="#anova-1">ANOVA</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#coming-up-next" id="toc-coming-up-next" class="nav-link" data-scroll-target="#coming-up-next">Coming up next</a></li>
+  <li><a href="#gaps-improvements" id="toc-gaps-improvements" class="nav-link" data-scroll-target="#gaps-improvements">Gaps &amp; improvements</a></li>
+  </ul>
+</nav>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block page-columns page-full column-body" id="quarto-document-content">
+
+
+
+
+<p>This summary serves as a broad overview and notes of the acute (48hour) single stressor polyvinyl chloride (PVC) and polypropylene (PP) leachate exposure to <em>Anthopleura elegantissima</em>.</p>
+<p><img src="../field-collection/field-pics/12/PXL_20240319_022405096.jpg" class="img-fluid"></p>
+<p>The following is a timeline overview of the experiment.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sample processing for Mitotic index, chlorophyll content, and DNA &amp; RNA sequencing still have to be done!</p>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-4a16ec6906b575977835" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-4a16ec6906b575977835">{"x":{"visdat":{"4ef87fc81513":["function () ","plotlyVisDat"]},"cur_data":"4ef87fc81513","attrs":{"4ef87fc81513":{"mode":"lines","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"},"4ef87fc81513.1":{"mode":"lines","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":["2024-04-14 17:00:00.000000","2024-04-21 17:00:00.000000"],"y":19,"line":{"color":"#8DD3C7","width":15},"showlegend":false,"hoverinfo":"text","text":"<b>Prep & Soak Leachate<\/b><br>from <b>2024-04-14 17:00:00<\/b> to <b>2024-04-21 17:00:00<\/b>","inherit":true},"4ef87fc81513.2":{"mode":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":"2024-04-18 05:00:00.000000","y":19,"text":"Prep & Soak Leachate","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","inherit":true},"4ef87fc81513.3":{"mode":"lines","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":["2024-03-29 17:00:00.000000","2024-04-23 17:00:00.000000"],"y":16,"line":{"color":"#FB8072","width":15},"showlegend":false,"hoverinfo":"text","text":"<b>Acclimate Owens Beach anemones to 10C<\/b><br>from <b>2024-03-29 17:00:00<\/b> to <b>2024-04-23 17:00:00<\/b>","inherit":true},"4ef87fc81513.4":{"mode":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":"2024-04-11 05:00:00.000000","y":16,"text":"Acclimate Owens Beach anemones to 10C","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","inherit":true},"4ef87fc81513.5":{"mode":"lines","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":["2024-03-17 17:00:00.000000","2024-04-23 17:00:00.000000"],"y":15,"line":{"color":"#80B1D3","width":15},"showlegend":false,"hoverinfo":"text","text":"<b>Acclimate Constellation Park anemones to 10C<\/b><br>from <b>2024-03-17 17:00:00<\/b> to <b>2024-04-23 17:00:00<\/b>","inherit":true},"4ef87fc81513.6":{"mode":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":"2024-04-05 05:00:00.000000","y":15,"text":"Acclimate Constellation Park anemones to 10C","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","inherit":true},"4ef87fc81513.7":{"mode":"lines","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":["2024-04-23 17:00:00.000000","2024-04-25 17:00:00.000000"],"y":13,"line":{"color":"#FDB462","width":15},"showlegend":false,"hoverinfo":"text","text":"<b>Leachate exposure<\/b><br>from <b>2024-04-23 17:00:00<\/b> to <b>2024-04-25 17:00:00<\/b>","inherit":true},"4ef87fc81513.8":{"mode":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":"2024-04-24 17:00:00.000000","y":13,"text":"Leachate exposure","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","inherit":true},"4ef87fc81513.9":{"mode":"lines","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":["2024-04-25 17:00:00.000000","2024-04-26 17:00:00.000000"],"y":10,"line":{"color":"#FCCDE5","width":15},"showlegend":false,"hoverinfo":"text","text":"<b>Respirometry & Photosynthesis data collection<\/b><br>from <b>2024-04-25 17:00:00<\/b> to <b>2024-04-26 17:00:00<\/b>","inherit":true},"4ef87fc81513.10":{"mode":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":"2024-04-26 05:00:00.000000","y":10,"text":"Respirometry & Photosynthesis data collection","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","inherit":true},"4ef87fc81513.11":{"mode":"lines","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":["2024-04-28 17:00:00.000000","2024-05-09 17:00:00.000000"],"y":6,"line":{"color":"#CCEBC5","width":15},"showlegend":false,"hoverinfo":"text","text":"<b>Respirometry & Photosynthesis data analysis<\/b><br>from <b>2024-04-28 17:00:00<\/b> to <b>2024-05-09 17:00:00<\/b>","inherit":true},"4ef87fc81513.12":{"mode":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":"2024-05-04 05:00:00.000000","y":6,"text":"Respirometry & Photosynthesis data analysis","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","inherit":true},"4ef87fc81513.13":{"mode":"lines","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":["2024-05-12 17:00:00.000000","2024-05-15 17:00:00.000000"],"y":5,"line":{"color":"#8DD3C7","width":15},"showlegend":false,"hoverinfo":"text","text":"<b>Rapid Light Curve data analysis<\/b><br>from <b>2024-05-12 17:00:00<\/b> to <b>2024-05-15 17:00:00<\/b>","inherit":true},"4ef87fc81513.14":{"mode":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":"2024-05-14 05:00:00.000000","y":5,"text":"Rapid Light Curve data analysis","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","inherit":true},"4ef87fc81513.15":{"mode":"lines","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":["2024-05-26 17:00:00.000000","2024-05-30 17:00:00.000000"],"y":3,"line":{"color":"#FFFFB3","width":15},"showlegend":false,"hoverinfo":"text","text":"<b>Mitotic Index labwork<\/b><br>from <b>2024-05-26 17:00:00<\/b> to <b>2024-05-30 17:00:00<\/b>","inherit":true},"4ef87fc81513.16":{"mode":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":"2024-05-28 17:00:00.000000","y":3,"text":"Mitotic Index labwork","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","inherit":true},"4ef87fc81513.17":{"mode":"lines","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":["2024-05-26 17:00:00.000000","2024-05-30 17:00:00.000000"],"y":2,"line":{"color":"#BEBADA","width":15},"showlegend":false,"hoverinfo":"text","text":"<b>Chlorophyll content labwork<\/b><br>from <b>2024-05-26 17:00:00<\/b> to <b>2024-05-30 17:00:00<\/b>","inherit":true},"4ef87fc81513.18":{"mode":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":"2024-05-28 17:00:00.000000","y":2,"text":"Chlorophyll content labwork","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","inherit":true},"4ef87fc81513.19":{"mode":"lines","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":["2024-05-26 17:00:00.000000","2024-05-30 17:00:00.000000"],"y":1,"line":{"color":"#FB8072","width":15},"showlegend":false,"hoverinfo":"text","text":"<b>DNA/RNA extractions<\/b><br>from <b>2024-05-26 17:00:00<\/b> to <b>2024-05-30 17:00:00<\/b>","inherit":true},"4ef87fc81513.20":{"mode":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":"2024-05-28 17:00:00.000000","y":1,"text":"DNA/RNA extractions","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","inherit":true},"4ef87fc81513.21":{"mode":"markers","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":["2024-03-17 17:00:00.000000","2024-03-29 17:00:00.000000","2024-04-25 17:00:00.000000","2024-04-26 17:00:00.000000","2024-04-26 17:00:00.000000"],"y":[18,17,11,9,8],"marker":{"color":["#FFFFB3","#BEBADA","#B3DE69","#D9D9D9","#BC80BD"],"size":10.5,"symbol":"circle","line":{"color":"black","width":1}},"showlegend":false,"hoverinfo":"text","text":["<b>Collect anemones, Owen's Beach: 2024-03-17 17:00:00<\/b>","<b>Collect anemones, Constellation Park: 2024-03-29 17:00:00<\/b>","<b>Rapid Light Curve data collection: 2024-04-25 17:00:00<\/b>","<b>Wet weight data collection: 2024-04-26 17:00:00<\/b>","<b>Frozen in LN2: 2024-04-26 17:00:00<\/b>"],"inherit":true},"4ef87fc81513.22":{"mode":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","x":["2024-03-17 17:00:00.000000","2024-03-29 17:00:00.000000","2024-04-25 17:00:00.000000","2024-04-26 17:00:00.000000","2024-04-26 17:00:00.000000"],"y":[18.5,16.5,11.5,8.5,8.5],"text":["Collect anemones, Owen's Beach","Collect anemones, Constellation Park","Rapid Light Curve data collection","Wet weight data collection","Frozen in LN2"],"textfont":{"family":"Arial","size":14,"color":["rgba(0,0,0,1)","rgba(0,0,0,1)","rgba(0,0,0,1)","rgba(0,0,0,1)","rgba(0,0,0,1)"]},"textposition":"center","showlegend":false,"hoverinfo":"none","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"hovermode":"closest","plot_bgcolor":"#FCFCFC","title":"Timeline of single-stressor leachate experiment","shapes":[{"type":"line","x0":0,"x1":1,"xref":"paper","y0":4,"y1":4,"line":{"color":"grey65","width":0.5}},{"type":"line","x0":0,"x1":1,"xref":"paper","y0":7,"y1":7,"line":{"color":"grey65","width":0.5}},{"type":"line","x0":0,"x1":1,"xref":"paper","y0":12,"y1":12,"line":{"color":"grey65","width":0.5}},{"type":"line","x0":0,"x1":1,"xref":"paper","y0":14,"y1":14,"line":{"color":"grey65","width":0.5}}],"xaxis":{"domain":[0,1],"automargin":true,"linewidth":1,"mirror":true,"showgrid":true,"gridcolor":"grey90","title":""},"yaxis":{"domain":[0,1],"automargin":true,"linewidth":1,"mirror":true,"range":[0,20],"showgrid":false,"title":"","tickmode":"array","tickvals":[17,13,9.5,5.5,2],"ticktext":["Experiment preparation","Exposure","Data collection","Data analysis","Sample processing"]},"showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"mode":"lines","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"lines","type":"scatter","x":["2024-04-14 17:00:00.000000","2024-04-21 17:00:00.000000"],"y":[19,19],"line":{"color":"#8DD3C7","width":15},"showlegend":false,"hoverinfo":["text","text"],"text":["<b>Prep & Soak Leachate<\/b><br>from <b>2024-04-14 17:00:00<\/b> to <b>2024-04-21 17:00:00<\/b>","<b>Prep & Soak Leachate<\/b><br>from <b>2024-04-14 17:00:00<\/b> to <b>2024-04-21 17:00:00<\/b>"],"marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"text","type":"scatter","x":["2024-04-18 05:00:00.000000"],"y":[19],"text":"Prep & Soak Leachate","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"line":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"lines","type":"scatter","x":["2024-03-29 17:00:00.000000","2024-04-23 17:00:00.000000"],"y":[16,16],"line":{"color":"#FB8072","width":15},"showlegend":false,"hoverinfo":["text","text"],"text":["<b>Acclimate Owens Beach anemones to 10C<\/b><br>from <b>2024-03-29 17:00:00<\/b> to <b>2024-04-23 17:00:00<\/b>","<b>Acclimate Owens Beach anemones to 10C<\/b><br>from <b>2024-03-29 17:00:00<\/b> to <b>2024-04-23 17:00:00<\/b>"],"marker":{"color":"rgba(214,39,40,1)","line":{"color":"rgba(214,39,40,1)"}},"error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"text","type":"scatter","x":["2024-04-11 05:00:00.000000"],"y":[16],"text":"Acclimate Owens Beach anemones to 10C","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","marker":{"color":"rgba(148,103,189,1)","line":{"color":"rgba(148,103,189,1)"}},"error_y":{"color":"rgba(148,103,189,1)"},"error_x":{"color":"rgba(148,103,189,1)"},"line":{"color":"rgba(148,103,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"lines","type":"scatter","x":["2024-03-17 17:00:00.000000","2024-04-23 17:00:00.000000"],"y":[15,15],"line":{"color":"#80B1D3","width":15},"showlegend":false,"hoverinfo":["text","text"],"text":["<b>Acclimate Constellation Park anemones to 10C<\/b><br>from <b>2024-03-17 17:00:00<\/b> to <b>2024-04-23 17:00:00<\/b>","<b>Acclimate Constellation Park anemones to 10C<\/b><br>from <b>2024-03-17 17:00:00<\/b> to <b>2024-04-23 17:00:00<\/b>"],"marker":{"color":"rgba(140,86,75,1)","line":{"color":"rgba(140,86,75,1)"}},"error_y":{"color":"rgba(140,86,75,1)"},"error_x":{"color":"rgba(140,86,75,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"text","type":"scatter","x":["2024-04-05 05:00:00.000000"],"y":[15],"text":"Acclimate Constellation Park anemones to 10C","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","marker":{"color":"rgba(227,119,194,1)","line":{"color":"rgba(227,119,194,1)"}},"error_y":{"color":"rgba(227,119,194,1)"},"error_x":{"color":"rgba(227,119,194,1)"},"line":{"color":"rgba(227,119,194,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"lines","type":"scatter","x":["2024-04-23 17:00:00.000000","2024-04-25 17:00:00.000000"],"y":[13,13],"line":{"color":"#FDB462","width":15},"showlegend":false,"hoverinfo":["text","text"],"text":["<b>Leachate exposure<\/b><br>from <b>2024-04-23 17:00:00<\/b> to <b>2024-04-25 17:00:00<\/b>","<b>Leachate exposure<\/b><br>from <b>2024-04-23 17:00:00<\/b> to <b>2024-04-25 17:00:00<\/b>"],"marker":{"color":"rgba(127,127,127,1)","line":{"color":"rgba(127,127,127,1)"}},"error_y":{"color":"rgba(127,127,127,1)"},"error_x":{"color":"rgba(127,127,127,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"text","type":"scatter","x":["2024-04-24 17:00:00.000000"],"y":[13],"text":"Leachate exposure","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","marker":{"color":"rgba(188,189,34,1)","line":{"color":"rgba(188,189,34,1)"}},"error_y":{"color":"rgba(188,189,34,1)"},"error_x":{"color":"rgba(188,189,34,1)"},"line":{"color":"rgba(188,189,34,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"lines","type":"scatter","x":["2024-04-25 17:00:00.000000","2024-04-26 17:00:00.000000"],"y":[10,10],"line":{"color":"#FCCDE5","width":15},"showlegend":false,"hoverinfo":["text","text"],"text":["<b>Respirometry & Photosynthesis data collection<\/b><br>from <b>2024-04-25 17:00:00<\/b> to <b>2024-04-26 17:00:00<\/b>","<b>Respirometry & Photosynthesis data collection<\/b><br>from <b>2024-04-25 17:00:00<\/b> to <b>2024-04-26 17:00:00<\/b>"],"marker":{"color":"rgba(23,190,207,1)","line":{"color":"rgba(23,190,207,1)"}},"error_y":{"color":"rgba(23,190,207,1)"},"error_x":{"color":"rgba(23,190,207,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"text","type":"scatter","x":["2024-04-26 05:00:00.000000"],"y":[10],"text":"Respirometry & Photosynthesis data collection","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"lines","type":"scatter","x":["2024-04-28 17:00:00.000000","2024-05-09 17:00:00.000000"],"y":[6,6],"line":{"color":"#CCEBC5","width":15},"showlegend":false,"hoverinfo":["text","text"],"text":["<b>Respirometry & Photosynthesis data analysis<\/b><br>from <b>2024-04-28 17:00:00<\/b> to <b>2024-05-09 17:00:00<\/b>","<b>Respirometry & Photosynthesis data analysis<\/b><br>from <b>2024-04-28 17:00:00<\/b> to <b>2024-05-09 17:00:00<\/b>"],"marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"text","type":"scatter","x":["2024-05-04 05:00:00.000000"],"y":[6],"text":"Respirometry & Photosynthesis data analysis","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"line":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"lines","type":"scatter","x":["2024-05-12 17:00:00.000000","2024-05-15 17:00:00.000000"],"y":[5,5],"line":{"color":"#8DD3C7","width":15},"showlegend":false,"hoverinfo":["text","text"],"text":["<b>Rapid Light Curve data analysis<\/b><br>from <b>2024-05-12 17:00:00<\/b> to <b>2024-05-15 17:00:00<\/b>","<b>Rapid Light Curve data analysis<\/b><br>from <b>2024-05-12 17:00:00<\/b> to <b>2024-05-15 17:00:00<\/b>"],"marker":{"color":"rgba(214,39,40,1)","line":{"color":"rgba(214,39,40,1)"}},"error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"text","type":"scatter","x":["2024-05-14 05:00:00.000000"],"y":[5],"text":"Rapid Light Curve data analysis","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","marker":{"color":"rgba(148,103,189,1)","line":{"color":"rgba(148,103,189,1)"}},"error_y":{"color":"rgba(148,103,189,1)"},"error_x":{"color":"rgba(148,103,189,1)"},"line":{"color":"rgba(148,103,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"lines","type":"scatter","x":["2024-05-26 17:00:00.000000","2024-05-30 17:00:00.000000"],"y":[3,3],"line":{"color":"#FFFFB3","width":15},"showlegend":false,"hoverinfo":["text","text"],"text":["<b>Mitotic Index labwork<\/b><br>from <b>2024-05-26 17:00:00<\/b> to <b>2024-05-30 17:00:00<\/b>","<b>Mitotic Index labwork<\/b><br>from <b>2024-05-26 17:00:00<\/b> to <b>2024-05-30 17:00:00<\/b>"],"marker":{"color":"rgba(140,86,75,1)","line":{"color":"rgba(140,86,75,1)"}},"error_y":{"color":"rgba(140,86,75,1)"},"error_x":{"color":"rgba(140,86,75,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"text","type":"scatter","x":["2024-05-28 17:00:00.000000"],"y":[3],"text":"Mitotic Index labwork","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","marker":{"color":"rgba(227,119,194,1)","line":{"color":"rgba(227,119,194,1)"}},"error_y":{"color":"rgba(227,119,194,1)"},"error_x":{"color":"rgba(227,119,194,1)"},"line":{"color":"rgba(227,119,194,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"lines","type":"scatter","x":["2024-05-26 17:00:00.000000","2024-05-30 17:00:00.000000"],"y":[2,2],"line":{"color":"#BEBADA","width":15},"showlegend":false,"hoverinfo":["text","text"],"text":["<b>Chlorophyll content labwork<\/b><br>from <b>2024-05-26 17:00:00<\/b> to <b>2024-05-30 17:00:00<\/b>","<b>Chlorophyll content labwork<\/b><br>from <b>2024-05-26 17:00:00<\/b> to <b>2024-05-30 17:00:00<\/b>"],"marker":{"color":"rgba(127,127,127,1)","line":{"color":"rgba(127,127,127,1)"}},"error_y":{"color":"rgba(127,127,127,1)"},"error_x":{"color":"rgba(127,127,127,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"text","type":"scatter","x":["2024-05-28 17:00:00.000000"],"y":[2],"text":"Chlorophyll content labwork","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","marker":{"color":"rgba(188,189,34,1)","line":{"color":"rgba(188,189,34,1)"}},"error_y":{"color":"rgba(188,189,34,1)"},"error_x":{"color":"rgba(188,189,34,1)"},"line":{"color":"rgba(188,189,34,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"lines","type":"scatter","x":["2024-05-26 17:00:00.000000","2024-05-30 17:00:00.000000"],"y":[1,1],"line":{"color":"#FB8072","width":15},"showlegend":false,"hoverinfo":["text","text"],"text":["<b>DNA/RNA extractions<\/b><br>from <b>2024-05-26 17:00:00<\/b> to <b>2024-05-30 17:00:00<\/b>","<b>DNA/RNA extractions<\/b><br>from <b>2024-05-26 17:00:00<\/b> to <b>2024-05-30 17:00:00<\/b>"],"marker":{"color":"rgba(23,190,207,1)","line":{"color":"rgba(23,190,207,1)"}},"error_y":{"color":"rgba(23,190,207,1)"},"error_x":{"color":"rgba(23,190,207,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"text","type":"scatter","x":["2024-05-28 17:00:00.000000"],"y":[1],"text":"DNA/RNA extractions","textfont":{"family":"Arial","size":14,"color":"rgba(0,0,0,1)"},"textposition":"center","showlegend":false,"hoverinfo":"none","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"markers","type":"scatter","x":["2024-03-17 17:00:00.000000","2024-03-29 17:00:00.000000","2024-04-25 17:00:00.000000","2024-04-26 17:00:00.000000","2024-04-26 17:00:00.000000"],"y":[18,17,11,9,8],"marker":{"color":["#FFFFB3","#BEBADA","#B3DE69","#D9D9D9","#BC80BD"],"size":10.5,"symbol":"circle","line":{"color":"black","width":1}},"showlegend":false,"hoverinfo":["text","text","text","text","text"],"text":["<b>Collect anemones, Owen's Beach: 2024-03-17 17:00:00<\/b>","<b>Collect anemones, Constellation Park: 2024-03-29 17:00:00<\/b>","<b>Rapid Light Curve data collection: 2024-04-25 17:00:00<\/b>","<b>Wet weight data collection: 2024-04-26 17:00:00<\/b>","<b>Frozen in LN2: 2024-04-26 17:00:00<\/b>"],"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"mode":"text","type":"scatter","x":["2024-03-17 17:00:00.000000","2024-03-29 17:00:00.000000","2024-04-25 17:00:00.000000","2024-04-26 17:00:00.000000","2024-04-26 17:00:00.000000"],"y":[18.5,16.5,11.5,8.5,8.5],"text":["Collect anemones, Owen's Beach","Collect anemones, Constellation Park","Rapid Light Curve data collection","Wet weight data collection","Frozen in LN2"],"textfont":{"family":"Arial","size":14,"color":["rgba(0,0,0,1)","rgba(0,0,0,1)","rgba(0,0,0,1)","rgba(0,0,0,1)","rgba(0,0,0,1)"]},"textposition":["center","center","center","center","center"],"showlegend":false,"hoverinfo":["none","none","none","none","none"],"marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"line":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="page-columns page-full"><p>This timeline was made using the <code>vistime</code><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> package</p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;Checkout the <code>vistime</code> package vignette <a href="https://cran.rstudio.com/web/packages/vistime/vignettes/vistime-vignette.html">here</a></p></li></div></div>
+<section id="specimen-collection-acclimation" class="level1">
+<h1>Specimen collection &amp; acclimation</h1>
+<p>We collected anemones under Washington Dept. of Fish &amp; Wildlife scientific collection permit <code>Tanja-010</code> at <a href="https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/field-collection/18MAR24-owens-beach.html">Owens Beach Park</a> in Tacoma on Monday March 18th and at <a href="https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/field-collection/30MAR24-alki.html">Constellation Park</a> in West Seattle on Saturday March 30th. After collection, each anemone was placed on a acid-washed 60mm glass petri dish to adhere and heal their pedal disc during an acclimation phase. All anemones were acclimated for at least 24 days in a recirculating seawater table at 10C prior to the start of the treatment exposure.</p>
+</section>
+<section id="leachate-preparation" class="level1 page-columns page-full">
+<h1>Leachate preparation</h1>
+<p>We prepared leachate for PVC (&lt;500um) and for PP (aged) according to the <a href="https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/leachate-protocol.html">leachate preparation protocol</a>.</p>
+<p>In short, we created 1L artificial seawater using salt and deionized water, and adjusted the pH down from ~8.5 to 8.2 by slowly, iteratively, adding a very small amount of 0.1M hydrochloric acid (HCl) via a burette.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/PXL_20240412_230820563.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Weighed out 41.953 grams of ASTM D1141-98 sea salt</figcaption><p></p>
+</figure>
+</div>
+</div></div><p>We then carefully measured out 250mg of each microplastic type, and added it to a dry flask.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/PXL_20240412_232609016.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Initial pH was ~8.4, we lowered it to ~8.2 using 0.1M HCl</figcaption><p></p>
+</figure>
+</div>
+</div></div><p>After, we transferred 250mL of the pH-adjusted artifical seawater to each flask, set them in a shaker plate rotating at 90 rotations per minute, and left them to ‘shake and soak’ for 7 days.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/PXL_20240416_001441079.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">250mL of artificial seawater and 250mg of aged polypropylene microplastic. Note that this microplastic is buoyant.</figcaption><p></p>
+</figure>
+</div>
+</div><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/PXL_20240422_230547996.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Flasks of seawater and microplastics were covered with foil to ensure no further photodegradation, and left to shake at 90rpm for 7 days</figcaption><p></p>
+</figure>
+</div>
+</div><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/PXL_20240423_005801129.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">After the 7 days were up, we filtered the microplastics from the seawater using 45micron filter paper.</figcaption><p></p>
+</figure>
+</div>
+</div><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/PXL_20240423_005933927.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Here we can see the microplastics accumulating on the filter as the leachate passes through the funnel.</figcaption><p></p>
+</figure>
+</div>
+</div></div>
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/PXL_20240423_011215280.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Leachate filtration was a simple gravity filtration process and didn’t require the use of vacuum filtration.</figcaption><p></p>
+</figure>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/PXL_20240423_012640301.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">After the leachate was filtered, we put it on ice and transported it to a 4C fridge where it was stored for 48 hours prior to dilution and application to the anemones.</figcaption><p></p>
+</figure>
+</div>
+</div></div></section>
+<section id="leachate-dilution" class="level1">
+<h1>Leachate dilution</h1>
+<p>We performed a serial dilution on each prepared leachate to create leachate treatments that represent a mass of microplastic type to volume of water:</p>
+<ul>
+<li>100 mg/L</li>
+<li>10 mg/L</li>
+<li>1 mg/L</li>
+<li>0.1 mg/L</li>
+<li>0.01 mg/L</li>
+</ul>
+<p>For this we took 20mL of the 1000 mg/L leachate, and added it to 180mL of filtered seawater to make the 100mg/L concentration.</p>
+<p>We then serially diluted the remaining concentrations in a similar fashion.</p>
+</section>
+<section id="exposure" class="level1">
+<h1>Exposure</h1>
+<p>We exposed individual anemones to the leachate treatments for 48 hours in closed-systems. For this, we used 0.5 pint mason jars set in a recirculating seawater bath temperature-controlled by a heat exchanger and the Neptune Apex aquarium controller system.</p>
+<p><img src="images/PXL_20240424_190134501.RAW-02.ORIGINAL.jpg" class="img-fluid"></p>
+<p>The water bath was kept at 10C throughout the exposure.</p>
+</section>
+<section id="response-measurements" class="level1">
+<h1>Response measurements</h1>
+<p>After 48 hours we measured:</p>
+<ul>
+<li>Rapid Light Curves using a Walz Diving II PAM <img src="PXL_20240426_162505396.PORTRAIT.jpg" class="img-fluid"></li>
+</ul>
+<p><img src="images/PXL_20240426_224927703.jpg" class="img-fluid"></p>
+<ul>
+<li><p>30 minutes of respirometry in the dark-adapted state (oxygen consumption, cellular respiration)</p></li>
+<li><p>30 minutes of respirometry in the light-saturated state (oxygen production, photosynthesis)</p></li>
+<li><p>wet weight</p></li>
+</ul>
+<p><img src="images/PXL_20240428_004714187.jpg" class="img-fluid"></p>
+<p>And then placed anemones in labelled 5mL centrifuge tubes and flash froze them in liquid-nitrogen</p>
+</section>
+<section id="initial-results" class="level1">
+<h1>Initial results</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install packages</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">"tidyverse"</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>()) <span class="sc">==</span> <span class="st">'FALSE'</span>) <span class="fu">install.packages</span>(<span class="st">'tidyverse'</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">"dplyr"</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>()) <span class="sc">==</span> <span class="st">'FALSE'</span>) <span class="fu">install.packages</span>(<span class="st">'dplyr'</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">"car"</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>()) <span class="sc">==</span> <span class="st">'FALSE'</span>) <span class="fu">install.packages</span>(<span class="st">'car'</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Load packages</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(car)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'car' was built under R version 4.2.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: carData</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'carData' was built under R version 4.2.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'car'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:dplyr':
+
+    recode</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:purrr':
+
+    some</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>rates <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">'rates.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 55 Columns: 17
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr  (2): id, treatment
+dbl (15): run, channel, auto_resp_rate, auto_resp_r2, resp_bg_adj.rate, resp...
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+</div>
+<section id="respiration" class="level2">
+<h2 class="anchored" data-anchor-id="respiration">Respiration</h2>
+<p><img src="images/PXL_20240426_191325446.jpg" class="img-fluid"></p>
+<p><img src="images/PXL_20240426_191336067.jpg" class="img-fluid"></p>
+<section id="first-glimpse-of-data" class="level3">
+<h3 class="anchored" data-anchor-id="first-glimpse-of-data">First glimpse of data</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(rates) <span class="sc">+</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> treatment, <span class="at">y =</span> massnorm_resp_rate, <span class="at">color =</span> treatment) <span class="sc">+</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>() <span class="sc">+</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="pilot-single-stress_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="data-normality" class="level3">
+<h3 class="anchored" data-anchor-id="data-normality">Data normality</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>resp_aov <span class="ot">&lt;-</span>  <span class="fu">aov</span>(massnorm_resp_rate <span class="sc">~</span> treatment, <span class="at">data =</span> rates)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>)) <span class="co"># combine plots</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co"># histogram</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(resp_aov<span class="sc">$</span>residuals)</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="co"># QQ-plot</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="fu">qqPlot</span>(resp_aov<span class="sc">$</span>residuals,</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">id =</span> <span class="cn">FALSE</span> <span class="co"># id = FALSE to remove point identification</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="pilot-single-stress_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="boxplot" class="level3">
+<h3 class="anchored" data-anchor-id="boxplot">Boxplot</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(rates) <span class="sc">+</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> treatment, <span class="at">y =</span> massnorm_resp_rate) <span class="sc">+</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="pilot-single-stress_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="anova" class="level3">
+<h3 class="anchored" data-anchor-id="anova">ANOVA</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>resp_aov <span class="ot">&lt;-</span> <span class="fu">aov</span>(massnorm_resp_rate <span class="sc">~</span> treatment,</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> rates</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(resp_aov)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>            Df    Sum Sq   Mean Sq F value Pr(&gt;F)
+treatment   10 5.268e-10 5.268e-11   1.302  0.259
+Residuals   44 1.780e-09 4.045e-11               </code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="photosynthesis" class="level2">
+<h2 class="anchored" data-anchor-id="photosynthesis">Photosynthesis</h2>
+<section id="first-glimpse-of-data-1" class="level3">
+<h3 class="anchored" data-anchor-id="first-glimpse-of-data-1">First glimpse of data</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(rates) <span class="sc">+</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> treatment, <span class="at">y =</span> massnorm_phot_rate, <span class="at">color =</span> treatment) <span class="sc">+</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>() <span class="sc">+</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="pilot-single-stress_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="data-normality-1" class="level3">
+<h3 class="anchored" data-anchor-id="data-normality-1">Data normality</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>res_aov <span class="ot">&lt;-</span>  <span class="fu">aov</span>(massnorm_phot_rate <span class="sc">~</span> treatment, <span class="at">data =</span> rates)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>)) <span class="co"># combine plots</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="co"># histogram</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(res_aov<span class="sc">$</span>residuals)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="co"># QQ-plot</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="fu">qqPlot</span>(res_aov<span class="sc">$</span>residuals,</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">id =</span> <span class="cn">FALSE</span> <span class="co"># id = FALSE to remove point identification</span></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="pilot-single-stress_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="boxplot-1" class="level3">
+<h3 class="anchored" data-anchor-id="boxplot-1">Boxplot</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(rates) <span class="sc">+</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> treatment, <span class="at">y =</span> massnorm_phot_rate) <span class="sc">+</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="pilot-single-stress_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="anova-1" class="level3">
+<h3 class="anchored" data-anchor-id="anova-1">ANOVA</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>phot_aov <span class="ot">&lt;-</span> <span class="fu">aov</span>(massnorm_phot_rate <span class="sc">~</span> treatment,</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> rates</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(phot_aov)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>            Df    Sum Sq   Mean Sq F value Pr(&gt;F)
+treatment   10 1.433e-10 1.433e-11   1.355  0.233
+Residuals   44 4.652e-10 1.057e-11               </code></pre>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="coming-up-next" class="level1">
+<h1>Coming up next</h1>
+<ul>
+<li><p>Start the PAM Rapid Light Curve analysis</p></li>
+<li><p>Extract RNA for gene expression of host anemone and symbiont dinoflagellate</p></li>
+</ul>
+</section>
+<section id="gaps-improvements" class="level1">
+<h1>Gaps &amp; improvements</h1>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We still need to be able to take the background <code>signature</code> of our filtered seawater using C18 SPME fiber extractions, preserve the fibers, and send them to the Saliu Lab for analysis</p>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We are limited to short exposures because of the 48 hour window we have to work with fresh leachate. We can get around this by making leachate in batches and doing water changes every 48 hours, but we will need larger stocks of microplastic with which to make the leachate if we want to pursue this</p>
+</div>
+</div>
+
+
+</section>
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/https:\/\/sarahtanja\.github\.io\/quarto-blog\//);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">This page is built using <a href="https://quarto.org/">Quarto</a>❤️</div>   
+  </div>
+</footer>
+
+
+
+</body></html>

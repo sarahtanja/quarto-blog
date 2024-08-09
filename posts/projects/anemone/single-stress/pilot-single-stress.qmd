@@ -4,7 +4,7 @@ subtitle: "A 48 hour exposure to polyvinyl chloride (PVC) leachate and to aged p
 author: "Sarah Tanja"
 date: '05/03/2024'
 image: 'images/PXL_20240424_190134501.RAW-02.ORIGINAL.jpg'
-categories: [records]
+categories: [lab records]
 draft: false
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>
@@ -23,9 +23,7 @@ library(tidyverse)
 library(vistime)
 ```
 
-<<<<<<< HEAD
 ![](../field-collection/field-pics/12/PXL_20240319_022405096.jpg)
-=======
 ```{r include=FALSE}
 gantt <- read.csv('gantt.csv')
 
@@ -55,7 +53,6 @@ This timeline was made using the `vistime`[^1] package
 # Specimen collection & acclimation
 
 We collected anemones under Washington Dept. of Fish & Wildlife scientific collection permit `Tanja-010` at [Owens Beach Park](https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/field-collection/18MAR24-owens-beach.html) in Tacoma on Monday March 18th and at [Constellation Park](https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/field-collection/30MAR24-alki.html) in West Seattle on Saturday March 30th. After collection, each anemone was placed on a acid-washed 60mm glass petri dish to adhere and heal their pedal disc during an acclimation phase. All anemones were acclimated for at least 24 days in a recirculating seawater table at 10C prior to the start of the treatment exposure.
->>>>>>> e05ca6f (updates to single stressor summary)
 
 # Leachate preparation
 

@@ -14,10 +14,12 @@ link-external-icon: true
 link-external-newwindow: true
 ---
 
+SAFS Masters Thesis Milestones are laid out [here](https://fish.uw.edu/wp-content/uploads/sites/29/2021/08/SAFS-MS-Procedures-Checklist.pdf)
+
 # Sarah's Master's Thesis Progress:
 
 | Milestone                                                                                                                     | Expected         | Completed            |
-|-------------------------------------------------------------------------------------------------------------------------------|------------------|----------------------|
+|-----------------------------------------------|-------------|-------------|
 | [Form Committee](https://docs.google.com/forms/d/e/1FAIpQLSdMCg96RoRiT4yEIAMorzOPT6GqDYFRQcPp0Ttr0D22idJqYg/viewform)         | \[AU22\] 16DEC22 | \[WI23\] 05JAN2023   |
 | [Submit Plan of Study](https://forms.gle/15siYRGdHKr5dX2B7)                                                                   | \[AU22\] 16DEC22 | \[WI23\] 05JAN2023   |
 | [Submit Thesis Proposal](https://docs.google.com/forms/d/e/1FAIpQLScL5Tp4GOxGUTxV2c1-kXW0orPTZEfuFeGtMF4eoJ9LHC9mcw/viewform) | \[AU22\] 16DEC22 | \[WI23\] **Overdue** |

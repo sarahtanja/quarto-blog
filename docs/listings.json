@@ -6,6 +6,8 @@
       "/posts/projects/coral-embryo-leachate.html",
       "/posts/projects/coral-leachate-heat.html",
       "/posts/projects/coral-pae-temp.html",
+      "/posts/projects/coral-embryo-leachate/13aug2024-extraction/13aug2024-extraction.html",
+      "/posts/projects/coral-embryo-leachate/12aug2024-extraction/12aug2024-extraction.html",
       "/posts/projects/coral-embryo-leachate/embryo-extractions.html",
       "/posts/thesis-progress/goals-timeline.html",
       "/posts/projects/coral-embryo-leachate/spawn-night-checklist.html",
@@ -69,6 +71,8 @@
   {
     "listing": "/posts/projects/coral-leachate-heat.html",
     "items": [
+      "/posts/projects/coral-embryo-leachate/13aug2024-extraction/13aug2024-extraction.html",
+      "/posts/projects/coral-embryo-leachate/12aug2024-extraction/12aug2024-extraction.html",
       "/posts/projects/coral-embryo-leachate/embryo-extractions.html",
       "/posts/projects/coral-embryo-leachate/spawn-night-checklist.html"
     ]

@@ -15,9 +15,8 @@ link-external-icon: true
 link-external-newwindow: true
 ---
 
-::: {callout-important appearance="simple"} GOAL: To extract RNA for 180 samples of *Montipora capitata* embryos for total RNAseq. :::
 
-Checkout 
+For inspiration checkout: 
 
 - M.E. Schedl's [DNA/RNA Extraction Protocol for Coral Larvae](https://meschedl.github.io/MESPutnam_Open_Lab_Notebook/Larvae-Ex-Protocol/)
 

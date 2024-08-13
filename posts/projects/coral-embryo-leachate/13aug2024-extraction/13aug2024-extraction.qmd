@@ -27,6 +27,18 @@ link-external-newwindow: true
 
 -   1M9F, 2M9F, 3M9F = 123M9F
 
+    -   1 min of 1/3 of single Zymo BashingBead Lysis Tube split into microcentrifuge sample tubes
+
+# Summary
+
+::: callout-note
+Success! I pooled 3 samples together and this yielded enough RNA!
+:::
+
+::: callout-note
+I also tested 3 different lysing protocols, and all worked more or less the same. I skipped the Proteinase K digestion as per the 'cells' sample prep instruction in the kit manual. I think I can add this back in if I'm finding protein impurities in the eluted RNA.
+:::
+
 # Extraction Notes
 
 date: 13-AUG-2024
@@ -85,26 +97,23 @@ eluted DNA volume: 30uL in `Zymo DNase-RNase Free Water`
 
 eluted RNA volume: 30uL in `Zymo DNase-RNase Free Water`
 
-## Nanodrop
+# Nanodrop
 
 ### RNA
 
-| sample_id | ng/uL | A260 | A280 | 260/280 | 260/230 |
-|-----------|-------|------|------|---------|---------|
-|           |       |      |      |         |         |
-|           |       |      |      |         |         |
-|           |       |      |      |         |         |
-|           |       |      |      |         |         |
-|           |       |      |      |         |         |
-|           |       |      |      |         |         |
-|           |       |      |      |         |         |
-|           |       |      |      |         |         |
-|           |       |      |      |         |         |
-|           |       |      |      |         |         |
+| sample_id | ng/uL | A260  | A280   | 260/280 | 260/230 |
+|-----------|-------|-------|--------|---------|---------|
+| 123C9     | 17.8  | 0.446 | 0.24\` | 1.85    | 1.58    |
+| 123L9     | 41.5  | 1.038 | 0.666  | 1.56    | 0.68    |
+| 123M9     | 19.8  | 0.496 | 0.262  | 1.89    | 1.75    |
 
-: RNA Nanodrop
+![](nanodrop_13AUG2024.PNG)
 
-## Qubit
+::: callout-warning
+123L9 is showing contamination... There is no distinct peak at 260 (like is visible with the other samples).
+:::
+
+# Qubit
 
 Using the Invitrogen Thermo Fischer RNA High Sensitivity Assay Kit.
 
@@ -116,26 +125,19 @@ Qubit RNA HS Buffer = 199uL \* 5 = 995uL
 
 ### RNA
 
-standard 1:
+standard 1: 99.80
 
-standard 2:
+standard 2: 1366.59
 
-RunID:
+RunID: 2024-08-14_043136
 
 | sample_id | qubit_rna_1 | qubit_rna_2 |
 |-----------|-------------|-------------|
-|           |             |             |
-|           |             |             |
-|           |             |             |
-|           |             |             |
-|           |             |             |
-|           |             |             |
-|           |             |             |
-|           |             |             |
-|           |             |             |
-|           |             |             |
+| 123C9     | 20.8 ng/uL  | 20.6 ng/uL  |
+| 123L9     | 12.0 ng/uL  | 11.8 ng/uL  |
+| 123M9     | 25.6 ng/uL  | 25.4 ng/uL  |
 
-#### Storage Location
+# Storage Location
 
 RNA samples are stored in -80C 'Old Friedman' Sanyo freezer on shelf 1 in `coral-embryo-leachate RNA` wax freezer boxes with green label tape:
 

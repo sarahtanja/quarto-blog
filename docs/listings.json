@@ -6,6 +6,8 @@
       "/posts/projects/coral-embryo-leachate.html",
       "/posts/projects/coral-leachate-heat.html",
       "/posts/projects/coral-pae-temp.html",
+      "/posts/projects/coral-embryo-leachate/16aug2024-extractions/16aug2024-extraction.html",
+      "/posts/projects/coral-embryo-leachate/15aug2024-extraction/15aug2024-extraction.html",
       "/posts/projects/coral-embryo-leachate/14aug2024-extraction/14aug2024-extraction.html",
       "/posts/projects/coral-embryo-leachate/13aug2024-extraction/13aug2024-extraction.html",
       "/posts/projects/coral-embryo-leachate/12aug2024-extraction/12aug2024-extraction.html",
@@ -41,9 +43,9 @@
       "/posts/coral-pae-devo/index.html",
       "/posts/choosing-16S-primers/index.html",
       "/posts/extractions-overview/index.html",
+      "/posts/projects/coral-pae-temp/dna-rna-extractions/dna-rna-coral-extractions.html",
       "/posts/committee-1/index.html",
-      "/posts/projects/anemone/heat-stress/heat-wave.html",
-      "/posts/projects/coral-pae-temp/dna-rna-extractions/dna-rna-coral-extractions.html"
+      "/posts/projects/anemone/heat-stress/heat-wave.html"
     ]
   },
   {
@@ -72,6 +74,8 @@
   {
     "listing": "/posts/projects/coral-leachate-heat.html",
     "items": [
+      "/posts/projects/coral-embryo-leachate/16aug2024-extractions/16aug2024-extraction.html",
+      "/posts/projects/coral-embryo-leachate/15aug2024-extraction/15aug2024-extraction.html",
       "/posts/projects/coral-embryo-leachate/14aug2024-extraction/14aug2024-extraction.html",
       "/posts/projects/coral-embryo-leachate/13aug2024-extraction/13aug2024-extraction.html",
       "/posts/projects/coral-embryo-leachate/12aug2024-extraction/12aug2024-extraction.html",

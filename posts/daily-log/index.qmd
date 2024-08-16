@@ -14,6 +14,20 @@ bibliography: references.bib
 image: log.png
 ---
 
+# August 2024
+
+#### 15-AUG-2024
+
+-   Met with Jefferey Kim of Azenta GeneWiz
+
+    -   Got a quote for 60 TotalRNA-seq with PolyA selection, 20M reads per sample
+
+    -   For Total RNA in nuclease-free water on dry ice, need 100ng of Total RNA... so if I have 10ng/uL in 30 uL... that means there is 300 ng of Total RNA in that sample. Jeff said 10ng/uL is usually the cutoff. I can send Total eluted RNA in 30uL without normalizing or Nanodropping... they will run RIN scores when they receive the samples. I just have to extract and Qubit!
+
+    -   23-28 business days turnaround time
+
+    -   With discount, price per sample is \$98.50! Total cost is \$5,910.00 in quote :D
+
 # March 2024
 
 #### 28-MAR-2024
@@ -26,9 +40,8 @@ image: log.png
 
 -   How do we get scaled images of the oral disc?
 
-```{=html}
 <!-- -->
-```
+
 -   downloaded AmScope software for MU503B that is attached to the dissecting scope in PBB: <https://amscope.com/pages/software-downloads>
 
 -   downloaded AmScope manual: <https://storage.googleapis.com/software-download-d79bb.appspot.com/Manual%20Download%20Files/Manual%20Files/Cameras/MU_MD_Series_Camera_Software_Manual.pdf>
@@ -81,7 +94,7 @@ How will it be diluted?
     >
     > I'm a graduate student researcher in the Padilla-Gamino Lab at the University of Washington, and I'm working with a Walz Mini PAM-II and FireStingO2 oxygen meter that our lab purchased from you as a set. The instrument was previously used by Miranda Roethler, who passed your contact information on to me. 
     >
-    > The FireStingO2 oxygen meter is not powering up, and won't connect to any computer that we've tried it on. It was just with our IT specialist for the last few hours (he was attempting to get it to connect by downloading old drivers), and he shared that the laser-cut \`FiresStingO2\` light on the instrument would 'pulse' red and then remain off. He deemed the instrument 'dead'\... 
+    > The FireStingO2 oxygen meter is not powering up, and won't connect to any computer that we've tried it on. It was just with our IT specialist for the last few hours (he was attempting to get it to connect by downloading old drivers), and he shared that the laser-cut \`FiresStingO2\` light on the instrument would 'pulse' red and then remain off. He deemed the instrument 'dead'... 
     >
     > This instrument has only been used a handful of times, and it has been kept in good condition (not dropped, or been exposed/submerged in water etc.). 
     >
@@ -212,7 +225,7 @@ Stadia.StamenWatercolor
 
     -   'Your resume is the movie trailer...' Highlight the level of complexity of your work
 
-    -   Itemize how how manage something, on top of listing your role... you have to explain what you did in that role. The role 'president of xx' doesn't translate to the person reviewing the resume knowing what you can do\... leave nothing to the imagination. Be explicit.
+    -   Itemize how how manage something, on top of listing your role... you have to explain what you did in that role. The role 'president of xx' doesn't translate to the person reviewing the resume knowing what you can do... leave nothing to the imagination. Be explicit.
 
     -   Spoken presentations: how many presentations you have given, what & when
 
@@ -226,7 +239,7 @@ Stadia.StamenWatercolor
 
     -   Vet team to assist navigating federal hiring process: fedshirevets\@opm.gov
 
-    -   You get shuttled into qualified, well-qualified, best-qualified. Qualifying doesn't mean that you get referred to the hiring manager\... you can qualify but not get referred to the hiring manager. You can be referred, but not get an interview.
+    -   You get shuttled into qualified, well-qualified, best-qualified. Qualifying doesn't mean that you get referred to the hiring manager... you can qualify but not get referred to the hiring manager. You can be referred, but not get an interview.
 
     -   wrp workforce recruitment program
 

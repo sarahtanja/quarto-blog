@@ -1,0 +1,170 @@
+---
+title: "21-Aug-2024 Embryo RNA Extractions"
+author: "Sarah Tanja"
+date: '21/08/2024'
+categories: [lab records]
+draft: false
+toc: true
+toc-exand: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
+---
+
+# Samples
+
+-   1C14F, 2C14F, 3C14HF = 123C14
+
+-   8M9F, 9M9F = 89M9[^1]
+
+-   7H4F, 8H4F, 9H4F = 789H4
+
+-   10L14F, 11L14F, 12L14F = 101112L14
+
+-   10L4F, 11L4F, 12L4F = 101112L4
+
+-   10L9F, 11L9F, 12L9F = 101112L9
+
+-   13M4F, 14M4F, 15M4F = 131415M4
+
+-   13H9F, 14H9F, 15H9F = 131415H9
+
+[^1]: Sample 7M9F resulted in no surviving embryos and therefore we had no saved material for that vial
+
+# Summary
+
+::: callout-note
+:::
+
+# Extraction Notes
+
+kit: Zymo Quick-DNA/RNA Miniprep Plus Kit
+
+-   Thaw samples to room temp
+
+-   Transfer and pool samples to one Zymo BashingBead Tube
+
+-   Homogenize for 10 minutes
+
+    -   10 min Zymo BashingBead Tube
+
+        -   The 4hpf samples are hardier and take a little longer to lyse than the other embryonic phases
+
+-   Centrifuge at 16,000xg for 1 min to get rid of bubbles
+
+    -   Check for complete lysis of embryos
+    -   Supernatent is clear!
+
+-   Transfer 2 550uL aliquots of cleared supernatent to one new nuclease-free tube
+
+    -   89M9 had less volume available, transferred \~800uL total
+
+-   Centrifuge at 16,000xg for 1 min to pellet any beads
+
+-   Split cleared supernatent into two aliquots of 530uL & transfer each aliquot to a new nuclease-free tube
+
+    -   89M9 had less volume, transferred \~700uL total
+
+-   Add 530uL of DNA/RNA Lysis Buffer to each tube ( a total of 1060uL volume in each tube )
+
+    -   89M9 added 700uL of DNA/RNA Lysis Buffer, a total of 1400 in one tube
+
+-   Vortex to mix for 5 seconds
+
+    ---\> Proceed to purification
+
+-   Sequentially transfer each sample in aliquots of 700uL into yellow Spin-Away Filter in a Collection Tube and centrifuge for 30s at 16,000xg **SAVE THE FLOW THROUGH FOR RNA PURIFICATION by tipping flow through into spare collection tube (15mL Falcon Tube)**
+
+-   Doubled volume of 100% (200 proof) ethanol to the RNA flow through in a falcon tube and vortexed to mix. End volume of flow through + ethanol = 4.2mL
+
+    -   Except 89M9, end volume of flow through + ethanol = 2.8mL
+
+-   Sequentially transfer RNA flow-through + ethanol in volumes =\>700uL into the green Zymo Spin IIICG Column in a Collection Tube. This should take 6 'spins'
+
+-   Saved 1st 2 spins (1400uL) for protein tube. Once collected place in -20 freezer.
+
+-   Performed DNase I Treatment on green RNA spin column
+
+    ```{r}
+    DB = 75*8
+    print(DB)
+    Dnase = 5*8 
+    print(Dnase)
+    ```
+
+::: callout-note
+```         
+    I didn't invert to mix... I always lose some volume 'beads' in the lid when I do this. Instead I flicked the tube to mix it and kept all the volume down in the conical end of the tube. This worked well and I had a full 80uL of treatment per spin column to work with!
+```
+:::
+
+-   400uL of Prep Buffer
+-   700uL of DNA/RNA Wash Buffer
+-   400uL of DNA/RNA Wash Buffer, 2min
+-   Centrifuge 2min dry run
+-   Warmed Zymo DNase-RNase Free Water to 55C in heat block before elution, and slowly dripped 50uL of water directly over filter.
+
+# End Products
+
+eluted DNA volume: 50uL in `Zymo DNase-RNase Free Water`
+
+eluted RNA volume: 50uL in warmed (55C) `Zymo DNase-RNase Free Water`
+
+::: callout-important
+I upped the elution volume from 30 to 50 for RNA because I wanted to make sure the nuclease-free water volume was enough to saturate the whole filter and get the RNA from it... The minimum volume in the kit instructions is 50uL... And I do have an RNA Clean & Concentrator kit that allows me to reduce that if needed. As long as total RNA is at least 100ng, we're good. That means that qubit value (ng/uL) times the elution volume.
+:::
+
+# Qubit QAQC
+
+Using the Invitrogen Thermo Fischer RNA High Sensitivity Assay Kit.
+
+Prepared working solution for 6 samples and two standards (plus some extra) in a 5mL tube:
+
+```{r}
+buffer <- 199*10
+print(buffer)
+reagent <- 1*10
+print(reagent)
+```
+
+### RNA
+
+standard 1: 94.53
+
+standard 2: 1590.87
+
+RunID: 2024-08-22_062101[^2]
+
+[^2]: The Qubit date is ahead by 1 day (and I haven't figured out how to set it straight yet)
+
++---------------+-------------+-------------+
+| sample_id     | qubit_rna_1 | qubit_rna_2 |
++===============+=============+=============+
+| -   123C14    | 6.64 ng/uL  | 6.64 ng/uL  |
++---------------+-------------+-------------+
+| -   89M9      | 9.12 ng/uL  | 9.10 ng/uL  |
++---------------+-------------+-------------+
+| -   789H4     | 11.0 ng/uL  | 11.0 ng/uL  |
++---------------+-------------+-------------+
+| -   101112L14 | 7.22 ng/uL  | 7.08 ng/uL  |
++---------------+-------------+-------------+
+| -   101112L4  | 12.5 ng/uL  | 12.5 ng/uL  |
++---------------+-------------+-------------+
+| -   101112L9  | 11.4 ng/uL  | 11.4 ng/uL  |
++---------------+-------------+-------------+
+| -   131415M4  | 13.6 ng/uL  | 13.8 ng/uL  |
++---------------+-------------+-------------+
+| -   131415H9  | 10.6 ng/uL  | 10.5 ng/uL  |
++---------------+-------------+-------------+
+
+# Storage Location
+
+RNA samples are stored in -80C 'JPG Lab Thermo' freezer on shelf 1 (top shelf) in `coral-embryo-leachate RNA` wax freezer boxes with green label tape.
+
+DNA samples (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in `coral-embryo-leachate DNA` wax freezer box with yellow label tape.
+
+Protein flow-through (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in `coral-embryo-leachate PROTEIN` wax freezer box with blue label tape.

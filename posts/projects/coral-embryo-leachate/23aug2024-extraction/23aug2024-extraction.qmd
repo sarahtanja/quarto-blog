@@ -1,7 +1,9 @@
 ---
 title: "23-Aug-2024 Embryo RNA Extractions"
 author: "Sarah Tanja"
-date: '23/08/2024'
+date: 08/23/2024
+date-format: long
+date-modified: today
 categories: [lab records]
 draft: false
 toc: true

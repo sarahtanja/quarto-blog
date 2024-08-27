@@ -1,7 +1,7 @@
 ---
-title: "21-Aug-2024 Embryo RNA Extractions"
+title: "23-Aug-2024 Embryo RNA Extractions"
 author: "Sarah Tanja"
-date: '21/08/2024'
+date: '23/08/2024'
 categories: [lab records]
 draft: false
 toc: true
@@ -17,28 +17,32 @@ link-external-newwindow: true
 
 # Samples
 
--   1C14F, 2C14F, 3C14HF = 123C14
+-   4L14F, 5CL14F, 6L14HF = 456L14
 
--   8M9F, 9M9F = 89M9[^1]
+-   4M14F, 5M14F, 6M14F = 456M14
 
--   7H4F, 8H4F, 9H4F = 789H4
+-   7C4F, 8C4F, 9C4F = 789C4
 
--   10L14F, 11L14F, 12L14F = 101112L14
+-   7H9F, 8H9F, 9H9F = 789H9
 
--   10L4F, 11L4F, 12L4F = 101112L4
+-   8C14F, 9C14F = 89C14F[^1]
 
--   10L9F, 11L9F, 12L9F = 101112L9
+-   10M4F, 11M4F, 12M4F = 101112M4
 
--   13M4F, 14M4F, 15M4F = 131415M4
+-   10H4F, 11H4F, 12H4F = 101112H4
 
--   13H9F, 14H9F, 15H9F = 131415H9
+-   10M9F, 11M9F, 12M9F = 101112M9
 
-[^1]: Sample 7M9F resulted in no surviving embryos and therefore we had no saved material for that vial
+-   13H14F, 14H14F, 15H14F = 131415H14
+
+-   13L9F, 14L9F, 15L9F = 131415L9
+
+[^1]: No 7C14F sample
 
 # Summary
 
 ::: callout-note
-Overall success! Decent Total RNA from all samples, even the one that was only pooled with 2 instead of 3 crosses. Sample 89M9 had a smaller starting volume in DNA/RNA Shield and therefore fewer passes through each of the DNA and RNA filters. Total process with 8 samples takes about \~5 hours of bench time.
+Overall success! Even in 89C14, which pooled 2 crosses instead of 3. Here I added extra DNA/RNA Shield to 89C14 to make the volume in the Zymo BashingBead for all samples uniform. AND despite forgetting to first run DNA/RNA Wash Buffer through the RNA filter prior to DNase treatment.
 :::
 
 # Extraction Notes
@@ -49,6 +53,8 @@ This uses the Zymo Quick-DNA/RNA Miniprep Plus Kit and unless otherwise specifie
 
 -   Transfer and pool samples to one Zymo BashingBead Tube
 
+    -   89C14 I 'topped up' with DNA/RNA Shield so that it had 1.5mL volume same as the other samples
+
 -   Homogenize for 10 minutes
 
     -   10 min Zymo BashingBead Tube
@@ -58,38 +64,33 @@ This uses the Zymo Quick-DNA/RNA Miniprep Plus Kit and unless otherwise specifie
 -   Centrifuge for 1 min to get rid of bubbles
 
     -   Check for complete lysis of embryos
-
     -   Supernatent is clear!
 
 -   Transfer 2 550uL aliquots of cleared supernatent to one new nuclease-free tube
-
-    -   89M9 had less volume available, transferred \~800uL total
 
 -   Centrifuge for 1 min to pellet any beads
 
 -   Split cleared supernatent into two aliquots of 530uL & transfer each aliquot to a new nuclease-free tube
 
-    -   89M9 had less volume, transferred \~700uL total
-
 -   Add 530uL of DNA/RNA Lysis Buffer to each tube ( a total of 1060uL volume in each tube )
-
-    -   89M9 added 700uL of DNA/RNA Lysis Buffer, a total of 1400 in one tube
 
 -   Vortex to mix for 5 seconds
 
-    —\> Proceed to purification
+    ---\> Proceed to purification
 
--   Sequentially transfer each sample in aliquots of 700uL into yellow Spin-Away Filter in a Collection Tube and centrifuge for 30s. **SAVE THE FLOW THROUGH FOR RNA PURIFICATION by tipping flow through into spare collection tube (15mL Falcon Tube)**
+-   Sequentially transfer each sample in aliquots of 700uL into yellow Spin-Away Filter in a Collection Tube and centrifuge for 30s. **SAVE THE FLOW THROUGH FOR RNA PURIFICATION by tipping flow through into spare collection tube (15mL Falcon Tube). This will take 3 passes.**
 
--   Doubled volume of 100% (200 proof) ethanol to the RNA flow through in a falcon tube and vortexed to mix. End volume of flow through + ethanol = 4.2mL
+-   Doubled volume of 100% (200 proof) ethanol to the RNA flow through in a falcon tube and vortexed to mix. End volume of flow through 2.1mL + ethanol 2.1mL = 4.2mL
 
-    -   Except 89M9, end volume of flow through + ethanol = 2.8mL
-
--   Sequentially transfer RNA flow-through + ethanol in volumes =\>700uL into the green Zymo Spin IIICG Column in a Collection Tube. This should take 6 ‘spins’
+-   Sequentially transfer RNA flow-through + ethanol in volumes =\>700uL into the green Zymo Spin IIICG Column in a Collection Tube. This should take 6 'spins'
 
 -   Saved 1st 2 spins (1400uL) for protein tube. Once collected place in -20 freezer.
 
 -   Performed DNase I Treatment on green RNA spin column
+
+-   ::: callout-warning
+    Forgot to do DNA/RNA Wash 400uL prior to DNase Treatment :(
+    :::
 
     ```{r}
     DB = 75*10
@@ -135,33 +136,37 @@ print(reagent)
 
 ### RNA
 
-standard 1: 94.53
+standard 1: 96.18
 
-standard 2: 1590.87
+standard 2: 1912.96
 
-RunID: 2024-08-22_062101[^2]
+RunID: 2024-08-24_xxxxxx[^2]
 
 [^2]: The Qubit date is ahead by 1 day (and I haven't figured out how to set it straight yet)
 
-+---------------+-------------+-------------+
-| sample_id     | qubit_rna_1 | qubit_rna_2 |
-+===============+=============+=============+
-| -   123C14    | 6.64 ng/uL  | 6.64 ng/uL  |
-+---------------+-------------+-------------+
-| -   89M9      | 9.12 ng/uL  | 9.10 ng/uL  |
-+---------------+-------------+-------------+
-| -   789H4     | 11.0 ng/uL  | 11.0 ng/uL  |
-+---------------+-------------+-------------+
-| -   101112L14 | 7.22 ng/uL  | 7.08 ng/uL  |
-+---------------+-------------+-------------+
-| -   101112L4  | 12.5 ng/uL  | 12.5 ng/uL  |
-+---------------+-------------+-------------+
-| -   101112L9  | 11.4 ng/uL  | 11.4 ng/uL  |
-+---------------+-------------+-------------+
-| -   131415M4  | 13.6 ng/uL  | 13.8 ng/uL  |
-+---------------+-------------+-------------+
-| -   131415H9  | 10.6 ng/uL  | 10.5 ng/uL  |
-+---------------+-------------+-------------+
++-------------------+-------------+-------------+
+| sample_id         | qubit_rna_1 | qubit_rna_2 |
++===================+=============+=============+
+| -   456L14        | 5.20 ng/uL  | 5.22 ng/uL  |
++-------------------+-------------+-------------+
+| -   456M14        | 5.00 ng/uL  | 5.00 ng/uL  |
++-------------------+-------------+-------------+
+| -   789C4         | 7.52 ng/uL  | 7.60 ng/uL  |
++-------------------+-------------+-------------+
+| -   789H9         | 7.70 ng/uL  | 7.76 ng/uL  |
++-------------------+-------------+-------------+
+| -   89C14         | 5.06 ng/uL  | 5.02 ng/uL  |
++-------------------+-------------+-------------+
+| -   101112M4      | 12.5 ng/uL  | 12.6 ng/uL  |
++-------------------+-------------+-------------+
+| -   101112H4      | 8.00 ng/uL  | 8.10 ng/uL  |
++-------------------+-------------+-------------+
+| -   101112M9      | 7.60 ng/uL  | 7.62 ng/uL  |
++-------------------+-------------+-------------+
+| -   131415H14     | 6.12 ng/uL  | 6.22 ng/uL  |
++-------------------+-------------+-------------+
+| -   131415L9      | 9.70 ng/uL  | 9.70 ng/uL  |
++-------------------+-------------+-------------+
 
 # Storage Location
 

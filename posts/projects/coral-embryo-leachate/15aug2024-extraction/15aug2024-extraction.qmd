@@ -1,7 +1,9 @@
 ---
 title: "15-Aug-2024 Embryo RNA Extractions"
 author: "Sarah Tanja"
-date: '15/08/2024'
+date: 08/15/2024
+date-format: long
+date-modified: today
 categories: [lab records]
 draft: false
 toc: true
@@ -61,13 +63,13 @@ kit: Zymo Quick-DNA/RNA Miniprep Plus Kit
 
 -   Homogenize for 2 minutes
 
--   Centrifuge at 16,000xg for 1 minute to get rid of bubbles
+-   Centrifuge 1 minute to get rid of bubbles
 
-    -   Checked for complete lysis... still saw entact cells so I homogenized again for 1 minute with 1/3 of Zymo 0.1 & 0.5 mm glass beads poured in each tube. This resulted in complete lysis. Centrifuged again at 16,000xg for 1 minute
+    -   Checked for complete lysis... still saw entact cells so I homogenized again for 1 minute with 1/3 of Zymo 0.1 & 0.5 mm glass beads poured in each tube. This resulted in complete lysis. Centrifuged again for 1 minute
 
 -   Split into two aliquots of 500uL & transfered to two new nuclease-free tubes
 
--   Proteinase K Digestion
+-   Proteinase K Digestion for 40 minutes at 55C
 
 -   Added 700uL of DNA/RNA Lysis Buffer to each tube ( a total of 1400uL volume in each tube )
 
@@ -75,17 +77,9 @@ kit: Zymo Quick-DNA/RNA Miniprep Plus Kit
 
 -   Check to see that embryos have dissolved and liquid is clear
 
-    -   123C4, clear
-
-    -   123L14, clear
-
-    -   123M4, cell debris
-
-    -   123H14, clear
-
 ---\> Proceed to purification
 
--   Sequentially transfer 2800uL of each sample in aliquots of 700uL into yellow Spin-Away Filter in a Collection Tube and centrifuge for 30s at 16,000xg **SAVE THE FLOW THROUGH FOR RNA PURIFICATION by tipping flow through into falcon tube**
+-   Sequentially transfer 2800uL of each sample in aliquots of 700uL into yellow Spin-Away Filter in a Collection Tube and centrifuge for 30s. **SAVE THE FLOW THROUGH FOR RNA PURIFICATION by tipping flow through into falcon tube**
 
 -   Doubled volume of 100% (200 proof) ethanol to the RNA flow through in a falcon tube and vortexed to mix. End volume of flow through + ethanol = 5mL
 
@@ -114,21 +108,8 @@ eluted DNA volume: 30uL in `Zymo DNase-RNase Free Water`
 
 eluted RNA volume: 30uL in `Zymo DNase-RNase Free Water`
 
-# Nanodrop
-
-### RNA
-
-| sample_id | ng/uL | A260  | A280  | 260/280 | 260/230 |
-|-----------|-------|-------|-------|---------|---------|
-| 123C4     | 43.3  | 1.083 | 0.611 | 1.77    | 1.27    |
-| 123H14    | 7.8   | 0.195 | 0.060 | 3.25    | -0.94   |
-| 123M4     | 90.8  | 2.271 | 1.125 | 2.02    | 1.86    |
-| 123L14    | 16.0  | 0.399 | 0.196 | 2.04    | 1.99    |
-
-![](nanodrop_13AUG2024.PNG)
-
-::: callout-warning
-123L9 is showing contamination... There is no distinct peak at 260 (like is visible with the other samples).
+::: callout-important
+I spoke with Azenta rep on morning of 15-Aug-2024 and learned that they don't require a Nanodrop quality check, just a Qubit double-stranded quantity measurement by flourescence. The target is 100ng of total RNA, in a minimum of 20uL of buffer. So from here on out I'm just checking quantity using the Qubit and the Invitrogen High Sensitivity (HS) RNA assay.
 :::
 
 # Qubit
@@ -147,22 +128,24 @@ Qubit RNA HS Buffer = 199uL \* 5 = 1194uL
 
 ### RNA
 
-standard 1: 91.79
+standard 1: 94.63
 
-standard 2: calibration error (even after two attempts... I plan to rerun these after getting fresh assay reagents)
+standard 2: 1803.97
 
-RunID: 2024-08-14_043136
+RunID: 2024-08-16_074027
 
 | sample_id | qubit_rna_1 | qubit_rna_2 |
 |-----------|-------------|-------------|
-| 123C4     | 47.6 ng/uL  | 47.6 ng/uL  |
-| 123L14    | 19.6 ng/uL  | 19.7 ng/uL  |
-| 123M4     | 124 ng/uL   | 122 ng/uL   |
-| 123H14    | 27.6 ng/uL  | 27.6 ng/uL  |
+| 45C14     | 8.70 ng/uL  | 8.88 ng/uL  |
+| 456L4     | too low     | too low     |
+| 456M9     | too low     | too low     |
+| 456H4     | too low     | too low     |
+| 45C9      | too low     | too low     |
+| 456L9     | 8.34 ng/uL  | 8.22 ng/uL  |
 
 # Storage Location
 
-RNA samples are stored in -80C 'Old Friedman' Sanyo freezer on shelf 1 in `coral-embryo-leachate RNA` wax freezer boxes with green label tape:
+RNA samples are stored in -80C 'JPG Lab' Thermo freezer on shelf 1 in `coral-embryo-leachate RNA` wax freezer boxes with green label tape:
 
 DNA samples (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in `coral-embryo-leachate DNA` wax freezer box with yellow label tape:
 

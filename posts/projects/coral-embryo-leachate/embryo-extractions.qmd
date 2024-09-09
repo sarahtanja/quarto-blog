@@ -1,8 +1,10 @@
 ---
 title: "M. Capitata Embryo DNA/RNA Extractions Protocol"
 author: "Sarah Tanja"
-date: '09/08/2024'
-categories: [protocols]
+date: 08/09/2024
+date-format: long
+date-modified: today
+categories: [protocols, coral]
 draft: false
 toc: true
 toc-exand: true
@@ -15,14 +17,13 @@ link-external-icon: true
 link-external-newwindow: true
 ---
 
+For inspiration checkout:
 
-For inspiration checkout: 
+-   M.E. Schedl's [DNA/RNA Extraction Protocol for Coral Larvae](https://meschedl.github.io/MESPutnam_Open_Lab_Notebook/Larvae-Ex-Protocol/)
 
-- M.E. Schedl's [DNA/RNA Extraction Protocol for Coral Larvae](https://meschedl.github.io/MESPutnam_Open_Lab_Notebook/Larvae-Ex-Protocol/)
+And
 
-And 
-
-- Erin E. Chille's [Protocol for DNA/RNA Extractions of Montipora Coral Larvae Using Zymo-Duet Extraction Kit](https://echille.github.io/E.-Chille-Open-Lab-Notebook/Protocol-for-DNA-RNA-Extractions-of-Montipora-Coral-Larvae-Using-Zymo-Duet-Extraction-Kit/)
+-   Erin E. Chille's [Protocol for DNA/RNA Extractions of Montipora Coral Larvae Using Zymo-Duet Extraction Kit](https://echille.github.io/E.-Chille-Open-Lab-Notebook/Protocol-for-DNA-RNA-Extractions-of-Montipora-Coral-Larvae-Using-Zymo-Duet-Extraction-Kit/)
 
 This protocol follows the Zymo Research [*Quick*-DNA/RNA Mininprep Plus Kit Instruction Manual](https://files.zymoresearch.com/protocols/_d7003t_d7003_quick-dna-rna_miniprep_plus_kit.pdf), and will result in DNA, RNA, (and if desired, proteins for proteomics?) for each sample. This facilitates paired sample analysis, where each data point in one dataset is uniquely paired to a data point in the second dataset because we are making duplicate measurements on the *same sample*.
 
@@ -42,7 +43,7 @@ However, DNA and proteins are NOT the focus here. Those samples will be saved fo
 
 # Biological Sample Info
 
-The samples I am working with are frozen *Montipora capitata* coral embryos held at -80°C, with `Zymo DNA/RNA Shield`, in 0.5mL screw-cap cryovials. The samples are representative of 3 distinct phases of embryonic development: 1. Initial cleavage, or 4 hours post fertilization 2. Prawn chip, or 9 hours post fertilization 3. Early gastrula, or 14 hours post fertilization. Each vial of embryos may have anywhere from 10-25 teeny tiny embryos, which means we are working with a *very small amount of starting material*. 
+The samples I am working with are frozen *Montipora capitata* coral embryos held at -80°C, with `Zymo DNA/RNA Shield`, in 0.5mL screw-cap cryovials. The samples are representative of 3 distinct phases of embryonic development: 1. Initial cleavage, or 4 hours post fertilization 2. Prawn chip, or 9 hours post fertilization 3. Early gastrula, or 14 hours post fertilization. Each vial of embryos may have anywhere from 10-25 teeny tiny embryos, which means we are working with a *very small amount of starting material*.
 
 They have been exposed to either a filtered-seawater control or PVC leachate concentrations (Low 0.01mg/L, Mid 0.1mg/L, High 1mg/L) through bundle-bundle cross fertilization in 20mL scintillation vials, and left to incubate and develop according to the above cutoffs.
 
@@ -309,7 +310,7 @@ SST
 [^2]: Why do we transfer from the bead-bashing tube to two different nuclease-free tubes in this step? Jerry Yu from Zymo says:
 
     > "We are worried about the sample debris remaining in the tube, which should still contain protein. One of the reasons for Proteinase K treatment at this step is to break down protein in the solution to make it less viscous/sticky, so the column can process it without issue. By transferring the mixture out, the treatment could be more efficient."
-    
+
 # Purify DNA & RNA
 
 Transfer the buffered supernatent (should be a total of 700uL, which can be passed through the filter in one go) to yellow **`Spin-Away Filter`** in a **`Collection Tube`** and centrifuge at 16,000xg for 30 sec
@@ -346,11 +347,11 @@ Transfer the yellow **`Spin-Away Filter`** to a new **`Collection Tube`**
 
 -   Add 400uL **`DNA/RNA Prep Buffer`** to each column and centrifuge at 16,000xg for 30s, then discard the flow-through
 
--   Add 700uL of **`DNA/RNA Wash Buffer`** [^7]to each column and centrifuge at 16,000xg for 30s, then discard the flow-through
+-   Add 700uL of **`DNA/RNA Wash Buffer`** [^3]to each column and centrifuge at 16,000xg for 30s, then discard the flow-through
 
 -   Add 400uL of **`DNA/RNA Wash Buffer`** to each column and centrifuge at 16,000xg for 2mins to ensure complete removal of the wash buffer, then discard the flow-through
 
--   Conduct a dry spin and centrifuge at 16,000xg for 2mins to ensure complete removal of the wash buffer prior to elution[^8]
+-   Conduct a dry spin and centrifuge at 16,000xg for 2mins to ensure complete removal of the wash buffer prior to elution[^4]
 
 -   Carefully transfer the column into the nuclease-free tube labelled for containing the eluted DNA/RNA end products
 
@@ -358,11 +359,11 @@ Transfer the yellow **`Spin-Away Filter`** to a new **`Collection Tube`**
 
 -   Place eluted DNA/RNA tubes on ice to continue work, or store in the -80C freezer for later
 
-[^7]: Slowly dispense wash buffer along the sides of the filter like pouring a heady beer down the side of a pint glass. Jerry Yu from Zymo says:
+[^3]: Slowly dispense wash buffer along the sides of the filter like pouring a heady beer down the side of a pint glass. Jerry Yu from Zymo says:
 
     > "You are correct with the beer analogy. By slowly dispensing wash buffer along the inner radius of the column, you can rinse off salts/residuals from previous spins, so future spins will be cleaner."
 
-[^8]: Another tip from Zymo:
+[^4]: Another tip from Zymo:
 
     > The goal of rinsing and reducing the volume of wash buffer is to avoid residual buffer from previous washes to end up in the elution, which will reduce purity. If volume of the wash buffer is increased in the final wash step, make sure to also increase the centrifugation time (e.g., 2 minutes) or include a second spin without buffer (dry spin) to ensure complete removal of the buffer prior to elution.
 
@@ -411,4 +412,3 @@ Place these vials on ice and proceed with Nanodrop & Qubit quantification: - [Na
 OR, to continue lab-work later,
 
 Place them in a wax freezer box, label the box, and freeze them in the -80C.
-

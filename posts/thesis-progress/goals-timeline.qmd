@@ -2,7 +2,9 @@
 title: "Timeline & Goals Planning"
 author: "Sarah Tanja"
 date: '09/08/2024'
-categories: [commitee, goals]
+date-format: long
+date-modified: today
+categories: [committee, goals]
 draft: false
 toc: true
 toc-exand: true
@@ -15,10 +17,8 @@ link-external-icon: true
 link-external-newwindow: true
 ---
 
-This is a timeline of goals and progress made toward wrapping up my Master's Thesis at UW SAFS. 
+This is a timeline of goals and progress made toward wrapping up my Master's Thesis at UW SAFS.
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS-FltS0gz5v6VDqsQWJwW0jDbWHTP0Jkc9JmMBL4_0tbcKZqxzAEJp5i3mxbxD8DZ8RxsXmvY7P9X8/pubhtml?gid=0&single=true"
-        width="100%" 
-        height="1000px">
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS-FltS0gz5v6VDqsQWJwW0jDbWHTP0Jkc9JmMBL4_0tbcKZqxzAEJp5i3mxbxD8DZ8RxsXmvY7P9X8/pubhtml?gid=0&amp;single=true" width="100%" height="1000px">
 
 </iframe>

@@ -2,7 +2,9 @@
 title: "Daily Lab Log"
 subtitle: "Enter at your peril; This one is for me, not you"
 author: "Sarah Tanja"
-date: '02/22/2024'
+date: 02/22/2024
+date-format: long
+date-modified: today
 categories: [daily log]
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>
@@ -14,7 +16,31 @@ bibliography: references.bib
 image: log.png
 ---
 
+# September 2024
+
+#### 03-SEP-2024
+
+-   Received confirmation that RNA is in line for QAQC
+
+-   Read manual for Nikon compound scope, setup for making embryology preservation slides & taking photos
+
+#### 02-SEP-2024
+
+-   Submitted Sample Form to Azenta
+
+-   Writing & editing chapter 1 methods
+
 # August 2024
+
+#### 28-AUG-2024
+
+-   Received email confirmation of receipt of RNA at Azenta!
+
+#### 27-AUG-2024
+
+-   Shipped Total RNA to Azenta in 96 well plate on \~16lbs of dry ice, FedEx Priority Overnight from SeaTac FedEx Office Ship Center
+
+-   Tracking #: 278809181237
 
 #### 15-AUG-2024
 

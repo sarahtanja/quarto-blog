@@ -122,7 +122,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
+    <div class="quarto-title column-page-right">
       <h1 class="title">Statistics for embryo scope data</h1>
             <p class="subtitle lead">Exploring data from embryonic development of Montipora capitata rice corals exposed to PVC leachate</p>
                                 <div class="quarto-categories">
@@ -161,21 +161,85 @@ ul.task-list li input[type="checkbox"] {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
+   
+  <ul>
+  <li><a href="#how-do-we-assess-proportion-of-fertilization-success" id="toc-how-do-we-assess-proportion-of-fertilization-success" class="nav-link active" data-scroll-target="#how-do-we-assess-proportion-of-fertilization-success">How do we assess proportion of fertilization success?</a></li>
+  </ul>
+</nav>
+</nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content">
 
 
 
 
 <p>What information can we get from looking at the <em>Montipora capitata</em> embryos that were exposed to varying levels of PVC leachate (High: 1mg/L, Mid: 0.1mg/L, Low: 0.01mg/L)? This experiment allowed embryos to develop from a bundle-bundle cross (meaning one egg-sperm bundle from one parent colony was placed in a 20mL scintillation vial with another egg-sperm bundle from a different parent colony). Colonies are not known to be able to self-fertilize… meaning it’s important that each bundle came from a different parent colony. Each <em>Montipora capitata</em> egg sperm bundle contains a ‘bundle’ of eggs that are bound together around a ‘packet’ of sperm.</p>
-<p>Example: If you take pics of X random embryos for every cross, you can get: 1. Embryo size (unit: microns/mm, continuous variable) 2. Embryo stage (cell stage, ordinal categorical variable) 3. Abnormality (yes/no, binary categorical variable) 4. Proportion of abnormality per cross (ratios, continuous variable), which you can use to obtain % abnormality per treatment</p>
-<p>You can also assess 5. Fertilization success (yes/no per cross, binary categorical variable) 6. Fertilization success (proportion per treatment, ratios, continuous variable)</p>
+<table class="table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 29%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>variable</th>
+<th>unit/type</th>
+<th>statistical test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>embryo size</td>
+<td>microns, continuous variable</td>
+<td>One-Way ANOVA</td>
+</tr>
+<tr class="even">
+<td>embryo stage</td>
+<td>cell stage, ordinal categorical variable</td>
+<td>Chi-Square Goodness of Fit</td>
+</tr>
+<tr class="odd">
+<td>proportion of abnormality per cross</td>
+<td>ratio, continuous variable</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>proportion of abnormality per treatment</td>
+<td>ratio, continuous variable</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>proportion of fertilization success</td>
+<td>ratio, continuous variable</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote class="blockquote">
+<p>If you take pics of X random embryos for every cross, you can get:</p>
+<ol type="1">
+<li>Embryo size (unit: microns/mm, continuous variable)</li>
+<li>Embryo stage (cell stage, ordinal categorical variable)</li>
+<li>Abnormality (yes/no, binary categorical variable)</li>
+<li>Proportion of abnormality per cross (ratios, continuous variable), which you can use to obtain % abnormality per treatment</li>
+</ol>
+<p>You can also assess</p>
+<ol start="5" type="1">
+<li>Fertilization success (yes/no per cross, binary categorical variable)</li>
+<li>Fertilization success (proportion per treatment, ratios, continuous variable)</li>
+</ol>
+</blockquote>
+<section id="how-do-we-assess-proportion-of-fertilization-success" class="level1">
+<h1>How do we assess proportion of fertilization success?</h1>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -1,0 +1,33 @@
+---
+title: "Grants & Fellowships"
+subtitle: "A running list of grants and fellowships to keep an eye on"
+author: "Sarah Tanja"
+date: 09/09/2024
+date-format: long
+date-modified: today
+categories: [stats, coral]
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
+bibliography: "../coral-embryology.bib"
+---
+
+## [Caroline Gibson Scholarship in Marine Studies (Northwest Straits Foundation)](https://nwstraitsfoundation.org/get-involved/caroline-gibson-scholarship-fund/)
+
+### [**Smithsonian Institution Fellowship Program (SIFP)**](https://fellowships.si.edu/opportunity/smithsonian-institution-fellowship-program-sifp)
+
+Smithsonian fellowships are offered to individuals who design and develop proposals to conduct independent research.
+
+The Smithsonian Institution Fellowship Program offers opportunities for independent research or study related to Smithsonian collections, facilities, and/or research interests of the Institution and its staff. Fellowships are offered to graduate students, predoctoral students, and postdoctoral and senior researchers to conduct independent research and to utilize the resources of the Institution with members of the Smithsonian professional research staff serving as advisors and hosts. These fellowships are offered through the Smithsonian’s Office of Academic Appointments and Internships, and are administered under the charter of the Institution, 20 U.S. Code section 41 et seq.
+
+About [Smithsonian fellowship programs](https://fellowships.si.edu/fellowship-programs)
+
+- ten-week grad student independent research 
+- predoctoral fellowship for dissertation research
+- postdoc fellowship (up to 5 yrs beyond PhD)
+- senior fellowhsip (beyond 5 yrs after PhD)

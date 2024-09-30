@@ -44,7 +44,7 @@ Question #2: How should we treat fragmented embryos? I can tell by the cell stru
 :::
 
 | variable                                | unit/type                                | statistical test                                   |
-|---------------------------|---------------------|------------------------|
+|-----------------------------------------|------------------------------------------|----------------------------------------------------|
 | embryo size                             | microns, continuous variable             | One-Way ANOVA                                      |
 | embryo stage                            | cell stage, ordinal categorical variable | Chi-Square Goodness of Fit or Log-Likelihood Ratio |
 | proportion of abnormality per cross     | ratio, continuous variable               | Log-Likelihood Ratio                               |

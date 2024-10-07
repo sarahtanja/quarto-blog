@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,14 +19,15 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -40,8 +41,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -79,7 +79,8 @@ div.csl-indent {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -101,39 +102,39 @@ div.csl-indent {
     <span class="navbar-title">Sarah Tanja’s Open Lab Notebook</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html">
+    <a class="nav-link" href="../../about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../projects.html">
+    <a class="nav-link" href="../../projects.html" rel="" target="">
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/sarah-tanja-595722146/"><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/sarah-tanja-595722146/" rel="" target=""><i class="bi bi-linkedin" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/sarahtanja"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/sarahtanja" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:stanja@uw.edu"><i class="bi bi-envelope-heart" role="img">
+    <a class="nav-link" href="mailto:stanja@uw.edu" rel="" target=""><i class="bi bi-envelope-heart" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div class="quarto-toggle-container">
-                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-              </div>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -172,7 +173,7 @@ div.csl-indent {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
@@ -189,6 +190,7 @@ div.csl-indent {
   </ul>
 </nav>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
@@ -204,7 +206,7 @@ div.csl-indent {
 <h3 class="anchored" data-anchor-id="pratte-kellogg-2021"><a href="https://doi.org/10.3389/fmars.2021.684161">Pratte &amp; Kellogg 2021</a></h3>
 <blockquote class="blockquote page-columns page-full">
 <p>” Indeed&nbsp;<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B18">Cruaud et al.&nbsp;(2014)</a>&nbsp;and&nbsp;<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B23">Fouhy et al.&nbsp;(2016)</a>&nbsp;show that primer choice has a far deeper influence on microbial community than extraction method, although they did compare two bead-beating methods so the differences would be minimized. Primer choice is also particularly important, as some bacterial 16S primers are known to amplify coral mitochondrial DNA (<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B25">Galkiewicz and Kellogg, 2008</a>;&nbsp;<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B66">Weber et al., 2017</a>;&nbsp;<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B51">Pollock F. J. et al., 2018</a>;&nbsp;<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B47">Meyer et al., 2019</a>). As shown in our study, using the 515/806 V4 primers,&nbsp;<em>L. pertusa</em>&nbsp;may be particularly prone to mitochondrial amplification compared to the other coral species, resulting in fewer samples making it through quality control. This has also been reported for other coral species such as&nbsp;<em>Porites lobata</em>&nbsp;and&nbsp;<em>Pocillopora verrucosa</em>&nbsp;(<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B66">Weber et al., 2017</a>;&nbsp;<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B60">Sonett et al., 2021</a>). Thus far, the coral microbiology community has employed a variety of solutions to combat this molecular hurdle: (1) deeper sequencing, to allow for discarding the mitochondrial bycatch (<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B54">Rosales et al., 2019</a>); (2) agarose gel size separation of the 16S rRNA band from the coral mitochondrial band (<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B6">Apprill et al., 2016</a>); (3) alternative primer sets (<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B25">Galkiewicz and Kellogg, 2008</a>;&nbsp;<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B8">Bayer et al., 2013</a>;&nbsp;<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B41">Liang et al., 2017</a>); and (4) PNA clamps (<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B53">Reigel et al., 2020</a>). Further, the magnitude of under-annotation of coral mitochondria by existing bioinformatic taxonomies has recently been quantified and&nbsp;<em>in silico</em>&nbsp;improvements offered (<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B60">Sonett et al., 2021</a>). ” - <span class="citation" data-cites="pratte2021">(<a href="#ref-pratte2021" role="doc-biblioref">Pratte and Kellogg 2021</a>)</span></p>
-<div class="no-row-height column-margin column-container"><div id="ref-pratte2021" class="csl-entry" role="doc-biblioentry">
+<div class="no-row-height column-margin column-container"><div id="ref-pratte2021" class="csl-entry" role="listitem">
 Pratte, Zoe A., and Christina A. Kellogg. 2021. <span>“Comparison of <span>Preservation</span> and <span>Extraction Methods</span> on <span>Five Taxonomically Disparate Coral Microbiomes</span>.”</span> <em>Frontiers in Marine Science</em> 8. <a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.684161">https://www.frontiersin.org/articles/10.3389/fmars.2021.684161</a>.
 </div></div></blockquote>
 </section>
@@ -212,7 +214,7 @@ Pratte, Zoe A., and Christina A. Kellogg. 2021. <span>“Comparison of <span>Pre
 <h3 class="anchored" data-anchor-id="brown-et-al.-2021">Brown et al.&nbsp;2021</h3>
 <blockquote class="blockquote page-columns page-full">
 <p>” The V4 variable region of the 16S rRNA gene was amplified using the 515F (5′-­GTGCCAGCMGCCGCGGTAA-­3′) and 806R (5′-­GGACTACHVGGGTWTCTAAT-­3′) primer set (Caporaso et al.&nbsp;2011). ” - <span class="citation" data-cites="brown2021">(<a href="#ref-brown2021" role="doc-biblioref">Brown et al. 2021</a>)</span></p>
-<div class="no-row-height column-margin column-container"><div id="ref-brown2021" class="csl-entry" role="doc-biblioentry">
+<div class="no-row-height column-margin column-container"><div id="ref-brown2021" class="csl-entry" role="listitem">
 Brown, Tanya, Dylan Sonett, Jesse R. Zaneveld, and Jacqueline L. Padilla-Gamiño. 2021. <span>“Characterization of the Microbiome and Immune Response in Corals with Chronic <span>Montipora</span> White Syndrome.”</span> <em>Molecular Ecology</em> 30 (11): 2591–2606. <a href="https://doi.org/10.1111/mec.15899">https://doi.org/10.1111/mec.15899</a>.
 </div></div></blockquote>
 </section>
@@ -223,7 +225,7 @@ Brown, Tanya, Dylan Sonett, Jesse R. Zaneveld, and Jacqueline L. Padilla-Gamiño
 <h3 class="anchored" data-anchor-id="galkiewicz-kellog-2008">Galkiewicz &amp; Kellog 2008</h3>
 <blockquote class="blockquote page-columns page-full">
 <p>” The use of&nbsp;<em>Bacteria</em>-specific primer 63F (<a href="https://journals.asm.org/doi/10.1128/AEM.01303-08#core-R23">23</a>) and universal primer 1542R (<a href="https://journals.asm.org/doi/10.1128/AEM.01303-08#core-R24">24</a>) had several advantages. The sequence homology between the primers and coral DNA was low, with only 7 of 21 bp matching in 63F and 7 of 20 bp matching in 1542R (Fig.&nbsp;<a href="https://journals.asm.org/doi/10.1128/AEM.01303-08#F1">1</a>). With such low binding strength, limited coral DNA amplification was expected. In addition, any coral 18S rRNA gene that was amplified would result in an amplicon length of 0.6 kbp, whereas bacterial 16S rRNA genes would have an amplicon length of 1.5 kbp. Test results indicated that during PCR, coral rRNA genes were amplified and appeared as a distinct band on the gel (Fig.&nbsp;<a href="https://journals.asm.org/doi/10.1128/AEM.01303-08#F2">2</a>, lane 3). This clear separation between coral and bacterial DNA allowed the isolation of the bacterial rRNA genes for further analysis. ” - <span class="citation" data-cites="galkiewicz2008">(<a href="#ref-galkiewicz2008" role="doc-biblioref">Galkiewicz and Kellogg 2008</a>)</span></p>
-<div class="no-row-height column-margin column-container"><div id="ref-galkiewicz2008" class="csl-entry" role="doc-biblioentry">
+<div class="no-row-height column-margin column-container"><div id="ref-galkiewicz2008" class="csl-entry" role="listitem">
 Galkiewicz, Julia P., and Christina A. Kellogg. 2008. <span>“Cross-<span>Kingdom Amplification Using Bacteria-Specific Primers</span>: <span>Complications</span> for <span>Studies</span> of <span>Coral Microbial Ecology</span>.”</span> <em>Applied and Environmental Microbiology</em> 74 (24): 7828–31. <a href="https://doi.org/10.1128/AEM.01303-08">https://doi.org/10.1128/AEM.01303-08</a>.
 </div></div></blockquote>
 
@@ -375,9 +377,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -442,6 +458,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -485,6 +587,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">This page is built using <a href="https://quarto.org/">Quarto</a>❤️</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
   </div>
 </footer>
 

@@ -1,11 +1,54 @@
 [
   {
+    "listing": "/projects.html",
+    "items": [
+      "/posts/projects/anemone.html",
+      "/posts/projects/coral-leachate-heat.html",
+      "/posts/projects/coral-pae-temp.html",
+      "/posts/projects/coral-embryo-leachate.html"
+    ]
+  },
+  {
+    "listing": "/posts/projects/coral-pae-temp.html",
+    "items": [
+      "/posts/projects/coral-pae-temp/dna-rna-extractions/dna-rna-coral-extractions.html"
+    ]
+  },
+  {
+    "listing": "/posts/projects/coral-leachate-heat.html",
+    "items": [
+      "/posts/projects/coral-embryo-leachate/bioinformatics-pipeline/pipeline-overview.html",
+      "/posts/projects/coral-embryo-leachate/scope/annotate-scope-pics.html",
+      "/posts/projects/coral-embryo-leachate/scope/scope-stats.html",
+      "/posts/projects/coral-embryo-leachate/scope/nikon-scope.html",
+      "/posts/projects/coral-embryo-leachate/26aug2024-extraction/26aug2024-extraction.html",
+      "/posts/projects/coral-embryo-leachate/23aug2024-extraction/23aug2024-extraction.html",
+      "/posts/projects/coral-embryo-leachate/21aug2024-extraction/21aug2024-extraction.html",
+      "/posts/projects/coral-embryo-leachate/20aug2024-extraction/20aug2024-extraction.html",
+      "/posts/projects/coral-embryo-leachate/19aug2024-extraction/19aug2024-extraction.html",
+      "/posts/projects/coral-embryo-leachate/16aug2024-extraction/16aug2024-extraction.html",
+      "/posts/projects/coral-embryo-leachate/15aug2024-extraction/15aug2024-extraction.html",
+      "/posts/projects/coral-embryo-leachate/14aug2024-extraction/14aug2024-extraction.html",
+      "/posts/projects/coral-embryo-leachate/13aug2024-extraction/13aug2024-extraction.html",
+      "/posts/projects/coral-embryo-leachate/12aug2024-extraction/12aug2024-extraction.html",
+      "/posts/projects/coral-embryo-leachate/embryo-extractions.html",
+      "/posts/projects/coral-embryo-leachate/spawn-night-checklist.html"
+    ]
+  },
+  {
+    "listing": "/posts/projects/coral-embryo-leachate.html",
+    "items": [
+      "/posts/projects/coral-leachate-heat/log.html"
+    ]
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/posts/projects/anemone.html",
       "/posts/projects/coral-embryo-leachate.html",
       "/posts/projects/coral-leachate-heat.html",
       "/posts/projects/coral-pae-temp.html",
+      "/posts/projects/coral-embryo-leachate/bioinformatics-pipeline/pipeline-overview.html",
       "/posts/grants-fellowships/grants-fellowships.html",
       "/posts/projects/coral-embryo-leachate/scope/annotate-scope-pics.html",
       "/posts/thesis-progress/goals-timeline.html",
@@ -72,46 +115,6 @@
       "/posts/projects/anemone/tanks/tanks.html",
       "/posts/projects/anemone/photosynth-pam/photosynth-pam.html",
       "/posts/projects/anemone/plan/project-planning.html"
-    ]
-  },
-  {
-    "listing": "/posts/projects/coral-embryo-leachate.html",
-    "items": [
-      "/posts/projects/coral-leachate-heat/log.html"
-    ]
-  },
-  {
-    "listing": "/posts/projects/coral-leachate-heat.html",
-    "items": [
-      "/posts/projects/coral-embryo-leachate/scope/scope-stats.html",
-      "/posts/projects/coral-embryo-leachate/scope/nikon-scope.html",
-      "/posts/projects/coral-embryo-leachate/26aug2024-extraction/26aug2024-extraction.html",
-      "/posts/projects/coral-embryo-leachate/23aug2024-extraction/23aug2024-extraction.html",
-      "/posts/projects/coral-embryo-leachate/21aug2024-extraction/21aug2024-extraction.html",
-      "/posts/projects/coral-embryo-leachate/20aug2024-extraction/20aug2024-extraction.html",
-      "/posts/projects/coral-embryo-leachate/19aug2024-extraction/19aug2024-extraction.html",
-      "/posts/projects/coral-embryo-leachate/16aug2024-extraction/16aug2024-extraction.html",
-      "/posts/projects/coral-embryo-leachate/15aug2024-extraction/15aug2024-extraction.html",
-      "/posts/projects/coral-embryo-leachate/14aug2024-extraction/14aug2024-extraction.html",
-      "/posts/projects/coral-embryo-leachate/13aug2024-extraction/13aug2024-extraction.html",
-      "/posts/projects/coral-embryo-leachate/12aug2024-extraction/12aug2024-extraction.html",
-      "/posts/projects/coral-embryo-leachate/embryo-extractions.html",
-      "/posts/projects/coral-embryo-leachate/spawn-night-checklist.html"
-    ]
-  },
-  {
-    "listing": "/posts/projects/coral-pae-temp.html",
-    "items": [
-      "/posts/projects/coral-pae-temp/dna-rna-extractions/dna-rna-coral-extractions.html"
-    ]
-  },
-  {
-    "listing": "/projects.html",
-    "items": [
-      "/posts/projects/anemone.html",
-      "/posts/projects/coral-leachate-heat.html",
-      "/posts/projects/coral-pae-temp.html",
-      "/posts/projects/coral-embryo-leachate.html"
     ]
   }
 ]

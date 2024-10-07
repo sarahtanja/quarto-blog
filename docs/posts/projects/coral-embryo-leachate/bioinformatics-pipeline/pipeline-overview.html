@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Sarah Tanja">
-<meta name="dcterms.date" content="2024-03-30">
+<meta name="dcterms.date" content="2024-10-07">
 
-<title>Sarah Tanja’s Open Lab Notebook - Field collection at Constellation Park, Alki, West Seattle</title>
+<title>Sarah Tanja’s Open Lab Notebook - Bioinformatics Pipeline Roadmap</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,41 +22,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
 }
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
 }
-</style>
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -98,20 +83,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-
-<script src="../../../../site_libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="../../../../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
-<script src="../../../../site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
-<script src="../../../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<link href="../../../../site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
-<script src="../../../../site_libs/leaflet-1.3.1/leaflet.js"></script>
-<link href="../../../../site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
-<script src="../../../../site_libs/proj4-2.6.2/proj4.min.js"></script>
-<script src="../../../../site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
-<link href="../../../../site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
-<script src="../../../../site_libs/leaflet-binding-2.2.1/leaflet.js"></script>
-<script src="../../../../site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
-<script src="../../../../site_libs/leaflet-providers-plugin-2.2.1/leaflet-providers-plugin.js"></script>
 
 
 <link rel="stylesheet" href="../../../../styles.css">
@@ -172,10 +143,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Field collection at Constellation Park, Alki, West Seattle</h1>
+      <h1 class="title">Bioinformatics Pipeline Roadmap</h1>
+            <p class="subtitle lead">Transcriptomics analysis of RNA-seq data from embryonic development of Montipora capitata rice corals exposed to PVC leachate</p>
                                 <div class="quarto-categories">
-                <div class="quarto-category">anemones</div>
-                <div class="quarto-category">lab records</div>
+                <div class="quarto-category">code</div>
+                <div class="quarto-category">coral</div>
               </div>
                   </div>
   </div>
@@ -193,10 +165,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">March 30, 2024</p>
+        <p class="date">October 7, 2024</p>
       </div>
     </div>
     
+      <div>
+      <div class="quarto-title-meta-heading">Modified</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">October 7, 2024</p>
+      </div>
+    </div>
       
     </div>
     
@@ -208,8 +186,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#data-sheet" id="toc-data-sheet" class="nav-link active" data-scroll-target="#data-sheet">Data sheet</a></li>
-  <li><a href="#takeaways" id="toc-takeaways" class="nav-link" data-scroll-target="#takeaways">Takeaways</a></li>
+  <li><a href="#sequence-files-background" id="toc-sequence-files-background" class="nav-link active" data-scroll-target="#sequence-files-background">Sequence files background</a></li>
+  <li><a href="#coding-resources" id="toc-coding-resources" class="nav-link" data-scroll-target="#coding-resources">Coding resources</a></li>
+  <li><a href="#pipeline-birds-eye-view" id="toc-pipeline-birds-eye-view" class="nav-link" data-scroll-target="#pipeline-birds-eye-view">Pipeline birds-eye view</a>
+  <ul>
+  <li><a href="#receive-raw-fasta-files" id="toc-receive-raw-fasta-files" class="nav-link" data-scroll-target="#receive-raw-fasta-files">1. Receive raw FASTA files</a></li>
+  <li><a href="#qaqc-fasta-files" id="toc-qaqc-fasta-files" class="nav-link" data-scroll-target="#qaqc-fasta-files">2. QAQC FASTA files</a></li>
+  <li><a href="#align-to-reference-genome" id="toc-align-to-reference-genome" class="nav-link" data-scroll-target="#align-to-reference-genome">3. Align to reference genome</a></li>
+  <li><a href="#assemble" id="toc-assemble" class="nav-link" data-scroll-target="#assemble">4. Assemble</a></li>
+  <li><a href="#create-gene-expression-count-matrix" id="toc-create-gene-expression-count-matrix" class="nav-link" data-scroll-target="#create-gene-expression-count-matrix">5. Create gene expression count matrix</a></li>
+  <li><a href="#identify-differentially-expressed-genes-degs" id="toc-identify-differentially-expressed-genes-degs" class="nav-link" data-scroll-target="#identify-differentially-expressed-genes-degs">6. Identify differentially expressed genes (DEG)s</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">7.</a></li>
+  </ul></li>
   </ul>
 </nav>
 </nav>
@@ -223,125 +211,103 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>On Saturday, March 30th, 2024 Kip and I collected <em>Anthopleura elegantissima</em> from Constellation Park near Alki in West Seattle, Washington under WDFW scientific collection permit Tanja 24-010. At this site we collected 10 anemones from each of 4 aggregates, a total of 40 anemones. However, during this collection we didn’t bother with keeping track of the aggregates. These anemones were collected for use in the preliminary respiration and photosynthesis response curves, and we were not concerned with genotype since we wouldn’t be subjecting them to RNA extraction and differential gene expression analysis.</p>
-<p>We made the collections at 15:00, at a -0.4ft low tide. Thankfully, <em>Anthopleura elegantissima</em> are found higher in the intertidal zone. We used metal scoopulas to gently pry the anemones pedal disc from the rocky substrate, same as on <a href="../../../../posts/projects/anemone/field-collection/18MAR24-owens-beach.html">18MAR2024 at Owens Beach</a>.</p>
-
-<div class="no-row-height column-margin column-container"><div class="">
-
-</div></div><div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## install packages</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">"tidyverse"</span>, <span class="at">character.only =</span> <span class="cn">TRUE</span>)) { <span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)}</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">"kableExtra"</span>, <span class="at">character.only =</span> <span class="cn">TRUE</span>)) { <span class="fu">install.packages</span>(<span class="st">"kableExtra"</span>)}</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">"leaflet"</span>, <span class="at">character.only =</span> <span class="cn">TRUE</span>)){ <span class="fu">install.packages</span>(<span class="st">"leaflet"</span>)}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="do">## load libraries</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<section id="data-sheet" class="level2">
-<h2 class="anchored" data-anchor-id="data-sheet">Data sheet</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>anemone_collection <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">'30MAR24-anemone-collections.csv'</span>,</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>                               <span class="at">col_types =</span> <span class="fu">cols</span>(</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">date =</span> <span class="fu">col_date</span>(<span class="at">format =</span> <span class="st">"%m/%d/%Y"</span>),</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">timePST =</span> <span class="fu">col_time</span>(<span class="at">format =</span> <span class="st">"%H:%M"</span>),</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">site =</span> <span class="fu">col_character</span>(),</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">aggregate =</span> <span class="fu">col_factor</span>(),</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">lat =</span> <span class="fu">col_double</span>(),</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">lon =</span> <span class="fu">col_double</span>()</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>                               ))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>anemone_collection <span class="sc">%&gt;%</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_paper</span>(<span class="st">"hover"</span>, <span class="at">full_width =</span> F)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<table class="lightable-paper lightable-hover table table-sm table-striped small" data-quarto-postprocess="true">
-<thead>
-<tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">date</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">timePST</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">site</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">aggregate</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">lat</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">lon</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">2024-03-30</td>
-<td style="text-align: left;">15:01:00</td>
-<td style="text-align: left;">Alki</td>
-<td style="text-align: left;">1</td>
-<td style="text-align: right;">47.57214</td>
-<td style="text-align: right;">-122.4137</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2024-03-30</td>
-<td style="text-align: left;">15:04:00</td>
-<td style="text-align: left;">Alki</td>
-<td style="text-align: left;">2</td>
-<td style="text-align: right;">47.57199</td>
-<td style="text-align: right;">-122.4139</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2024-03-30</td>
-<td style="text-align: left;">15:22:00</td>
-<td style="text-align: left;">Alki</td>
-<td style="text-align: left;">3</td>
-<td style="text-align: right;">47.57148</td>
-<td style="text-align: right;">-122.4131</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2024-03-30</td>
-<td style="text-align: left;">15:31:00</td>
-<td style="text-align: left;">Alki</td>
-<td style="text-align: left;">4</td>
-<td style="text-align: right;">47.57160</td>
-<td style="text-align: right;">-122.4131</td>
-</tr>
-</tbody>
-</table>
-
-
-</div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Collection map</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Prepare the text for the tooltip:</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>mytext <span class="ot">&lt;-</span> <span class="fu">paste</span>(</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>   <span class="st">"Aggregate: "</span>, anemone_collection<span class="sc">$</span>aggregate, <span class="st">"&lt;br/&gt;"</span>, </span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>   <span class="st">"Date: "</span>, anemone_collection<span class="sc">$</span>date) <span class="sc">%&gt;%</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">lapply</span>(htmltools<span class="sc">::</span>HTML)</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Final Map</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>pdp <span class="ot">&lt;-</span> <span class="fu">leaflet</span>(anemone_collection) <span class="sc">%&gt;%</span> </span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>()  <span class="sc">%&gt;%</span> </span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">setView</span>( <span class="at">lng =</span> <span class="sc">-</span><span class="fl">122.4135</span>, <span class="at">lat =</span> <span class="fl">47.5719</span>, <span class="at">zoom =</span> <span class="dv">18</span> ) <span class="sc">%&gt;%</span> </span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addProviderTiles</span>(<span class="st">"Esri.WorldImagery"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addCircleMarkers</span>(<span class="sc">~</span>lon, <span class="sc">~</span>lat, </span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">fillColor =</span> <span class="st">"orange"</span>, <span class="at">fillOpacity =</span> <span class="fl">0.7</span>, <span class="at">color=</span><span class="st">"white"</span>, <span class="at">radius=</span><span class="dv">8</span>, <span class="at">stroke=</span><span class="cn">FALSE</span>,</span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">label =</span> mytext,</span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">labelOptions =</span> <span class="fu">labelOptions</span>( <span class="at">style =</span> <span class="fu">list</span>(<span class="st">"font-weight"</span> <span class="ot">=</span> <span class="st">"normal"</span>, <span class="at">padding =</span> <span class="st">"3px 8px"</span>), <span class="at">textsize =</span> <span class="st">"13px"</span>, <span class="at">direction =</span> <span class="st">"auto"</span>)</span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>pdp</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-8278b1d9b7b2146c2f4e" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-8278b1d9b7b2146c2f4e">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addCircleMarkers","args":[[47.5721422,47.5719906,47.571479,47.5715993],[-122.4137027,-122.4138904,-122.4131354,-122.4131307],8,null,null,{"interactive":true,"className":"","stroke":false,"color":"white","weight":5,"opacity":0.5,"fill":true,"fillColor":"orange","fillOpacity":0.7},null,null,null,null,["Aggregate:  1 <br/> Date:  2024-03-30","Aggregate:  2 <br/> Date:  2024-03-30","Aggregate:  3 <br/> Date:  2024-03-30","Aggregate:  4 <br/> Date:  2024-03-30"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"13px","textOnly":false,"style":{"font-weight":"normal","padding":"3px 8px"},"className":"","sticky":true},null]}],"setView":[[47.5719,-122.4135],18,[]],"limits":{"lat":[47.571479,47.5721422],"lng":[-122.4138904,-122.4131307]}},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
+<section id="sequence-files-background" class="level1">
+<h1>Sequence files background</h1>
+<p>We’ve extracted totalRNA and shipped it to Azenta for sequencing… so what happens next? How did we go from working with microcentrifuge tubes in the lab to large files on the computer?</p>
+<p>First they run the total RNA through quality assessment and quality control steps (QAQC) to make sure it is sufficient in quantity and quality to sequence. Here is the QAQC report from Azenta:</p>
+<p>The total RNA is then subjected to library prep, where the RNA is turned into cDNA.</p>
+<p>The cDNA is what is actually sequenced, with an Illumina sequencer, 20 million reads, Poly-A selection,</p>
+<p>The raw FASTA files come back <code>demultiplexed</code>.</p>
 </section>
-<section id="takeaways" class="level2">
-<h2 class="anchored" data-anchor-id="takeaways">Takeaways</h2>
+<section id="coding-resources" class="level1 page-columns page-full">
+<h1>Coding resources</h1>
+<p>This roadmap was built off the following resources and references from:</p>
 <ul>
-<li>We avoided collecting anemones in the sand, and those were more broadly scattered and not as easily defined as an ‘aggregate’.</li>
-<li>All anemones are expected to be hosting the brown algae <em>Breviolium muscatinei</em>, since they are golden-brown in hue and were found in places that are often exposed to light</li>
+<li><p>Erin Chille:</p>
+<ul>
+<li><a href="https://github.com/echille/Mcapitata_OA_Developmental_Gene_Expression_Timeseries">Mcapitata_OA_Developmental_Gene_Expression_Timeseries</a> github repository from the <span class="citation" data-cites="chille2022">(<a href="#ref-chille2022" role="doc-biblioref">Chille et al. 2022</a>)</span>paper</li>
+</ul></li>
+<li><p>Steven Roberts:</p>
+<ul>
+<li><a href="https://sr320.github.io/course-fish546-2023/schedule.html">Bioinformatics FISH 546</a> course at UW</li>
+<li><a href="https://robertslab.github.io/resources/">Lab Handbook</a></li>
+</ul></li>
+<li><p>Savanah Liedholt:</p>
+<ul>
+<li><a href="https://notion.so/Differentially-Expressed-Genes-From-Reference-Genome-35267b46f51d4383b4b70bb3796d28c9">Differentially Expressed Genes from a Reference Genome</a></li>
+<li><a href="https://www.notion.so/SmallRNA-processing-and-pipeline-for-viral-community-Analysis-1f7f48c35d9e482597685354222c1852">SmallRNA processing and pipeline for viral community Analysis</a></li>
+</ul></li>
+<li><p>Ariana Huffmyer:</p></li>
+<li><p>[EarlyLifeHistory_Energetics TagSeq] github repository</p></li>
+<li><p>Sarah Tanja:</p>
+<ul>
+<li><a href="https://rpubs.com/sarah_tanja/1048844">FISH 546 Compendium</a></li>
+</ul></li>
 </ul>
+<div class="no-row-height column-margin column-container"><div id="ref-chille2022" class="csl-entry" role="listitem">
+Chille, E. E., E. L. Strand, F. Scucchia, M. Neder, V. Schmidt, M. O. Sherman, T. Mass, and H. M. Putnam. 2022. <span>“Energetics, but Not Development, Is Impacted in Coral Embryos Exposed to Ocean Acidification.”</span> <em>Journal of Experimental Biology</em> 225 (19): jeb243187. <a href="https://doi.org/10.1242/jeb.243187">https://doi.org/10.1242/jeb.243187</a>.
+</div></div></section>
+<section id="pipeline-birds-eye-view" class="level1 page-columns page-full">
+<h1>Pipeline birds-eye view</h1>
+<section id="receive-raw-fasta-files" class="level2">
+<h2 class="anchored" data-anchor-id="receive-raw-fasta-files">1. Receive raw FASTA files</h2>
+<ul>
+<li><p>files are already <code>demultiplexed</code></p></li>
+<li><p>files have a <code>.fasta.gz</code> zipped format</p></li>
+<li><p>files must be unzipped and checked to make sure there were no errors in the unzip process (this is done with <code>md5sum</code> )</p></li>
+</ul>
+</section>
+<section id="qaqc-fasta-files" class="level2">
+<h2 class="anchored" data-anchor-id="qaqc-fasta-files">2. QAQC FASTA files</h2>
+<ul>
+<li><p>Quality check with <a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">FastQC</a> , <a href="https://multiqc.info/">MultiQC</a></p></li>
+<li><p>Quality trimming with <a href="https://github.com/OpenGene/fastp">Fastp</a></p></li>
+<li><p>Remove adapters using cutadapt</p></li>
+<li><p>Remove PhiX</p></li>
+<li><p>Remove polyA tails using <code>bbduk</code> bash script</p></li>
+</ul>
+</section>
+<section id="align-to-reference-genome" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="align-to-reference-genome">3. Align to reference genome</h2>
+<ul>
+<li>Obtain reference genome assembly &amp; GFF annotation file
+<ul>
+<li>Genome <a href="http://cyanophora.rutgers.edu/montipora/">Version 3</a> <span class="citation" data-cites="stephens2022">(<a href="#ref-stephens2022" role="doc-biblioref">Stephens et al. 2022</a>)</span></li>
+<li><a href="http://cyanophora.rutgers.edu/montipora/Montipora_capitata_HIv3.genes.gff3.gz">GFF</a> from Rutgers (or <a href="https://github.com/AHuffmyer/EarlyLifeHistory_Energetics/raw/master/Mcap2020/Data/TagSeq/Montipora_capitata_HIv3.genes_fixed.gff3.gz">GFF fixed</a> from AHuffmyer?)</li>
+<li><a href="https://robertslab.github.io/resources/Genomic-Resources/#montipora-capitata">genomes, indexes, &amp; feature tracks</a> from Roberts Lab Handbook</li>
+</ul></li>
+<li>Align sequences to genome
+<ul>
+<li>using <a href="https://daehwankimlab.github.io/hisat2/hisat-3n/">HISAT-3N</a> <span class="citation" data-cites="zhang_rapid_2021">(<a href="#ref-zhang_rapid_2021" role="doc-biblioref">Zhang et al. 2021</a>)</span></li>
+</ul></li>
+</ul>
+<div class="no-row-height column-margin column-container"><div id="ref-stephens2022" class="csl-entry" role="listitem">
+Stephens, Timothy G, JunMo Lee, YuJin Jeong, Hwan Su Yoon, Hollie M Putnam, Eva Majerová, and Debashish Bhattacharya. 2022. <span>“High-Quality Genome Assemblies from Key Hawaiian Coral Species.”</span> <em>GigaScience</em> 11 (January): giac098. <a href="https://doi.org/10.1093/gigascience/giac098">https://doi.org/10.1093/gigascience/giac098</a>.
+</div><div id="ref-zhang_rapid_2021" class="csl-entry" role="listitem">
+Zhang, Yun, Chanhee Park, Christopher Bennett, Micah Thornton, and Daehwan Kim. 2021. <span>“Rapid and Accurate Alignment of Nucleotide Conversion Sequencing Reads with <span>HISAT</span>-3N.”</span> <em>Genome Res.</em> 31 (7): 1290–95. <a href="https://doi.org/10.1101/gr.275193.120">https://doi.org/10.1101/gr.275193.120</a>.
+</div></div></section>
+<section id="assemble" class="level2">
+<h2 class="anchored" data-anchor-id="assemble">4. Assemble</h2>
+<ul>
+<li><code>StringTie 2</code></li>
+</ul>
+</section>
+<section id="create-gene-expression-count-matrix" class="level2">
+<h2 class="anchored" data-anchor-id="create-gene-expression-count-matrix">5. Create gene expression count matrix</h2>
+<ul>
+<li><code>Trinity</code></li>
+</ul>
+</section>
+<section id="identify-differentially-expressed-genes-degs" class="level2">
+<h2 class="anchored" data-anchor-id="identify-differentially-expressed-genes-degs">6. Identify differentially expressed genes (DEG)s</h2>
+<pre><code>-   using `DESeq-2`</code></pre>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section">7.</h2>
 
 
+
+</section>
 </section>
 
 </main> <!-- /main -->

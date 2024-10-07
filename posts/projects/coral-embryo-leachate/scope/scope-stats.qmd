@@ -14,7 +14,7 @@ reference-location: margin
 citation-location: margin
 link-external-icon: true
 link-external-newwindow: true
-bibliography: "../coral-embryology.bib
+bibliography: ../coral-embryology.bib
 ---
 
 What information can we get from looking at the *Montipora capitata* embryos that were exposed to varying levels of PVC leachate (High: 1mg/L, Mid: 0.1mg/L, Low: 0.01mg/L)? This experiment allowed embryos to develop from a bundle-bundle cross (meaning one egg-sperm bundle from one parent colony was placed in a 20mL scintillation vial with another egg-sperm bundle from a different parent colony). Colonies are not known to be able to self-fertilize... meaning it's important that each bundle came from a different parent colony. Each *Montipora capitata* egg sperm bundle contains a 'bundle' of eggs that are bound together around a 'packet' of sperm.
@@ -43,13 +43,13 @@ Answer: We will only assess fertilization success at the point of cleavage, wher
 Question #2: How should we treat fragmented embryos? I can tell by the cell structure that they made it to a certain phase... but I can't tell how many fragments make up one whole embryo (count data). Should we not the fragmented embryos? Are they fragmented, or are they deformed (abnormalities?)
 :::
 
-| variable                                | unit/type                                | statistical test                                   |
-|-----------------------------------------|------------------------------------------|----------------------------------------------------|
-| embryo size                             | microns, continuous variable             | One-Way ANOVA                                      |
-| embryo stage                            | cell stage, ordinal categorical variable | Chi-Square Goodness of Fit or Log-Likelihood Ratio |
-| proportion of abnormality per cross     | ratio, continuous variable               | Log-Likelihood Ratio                               |
-| proportion of abnormality per treatment | ratio, continuous variable               | Log-Likelihood Ratio                               |
-| proportion of fertilization success     | ratio, continuous variable               | Log-Likelihood Ratio                               |
+| variable | unit/type | statistical test |
+|------------------------|------------------------|------------------------|
+| embryo size | microns, continuous variable | One-Way ANOVA |
+| embryo stage | cell stage, ordinal categorical variable | Chi-Square Goodness of Fit or Log-Likelihood Ratio |
+| proportion of abnormality per cross | ratio, continuous variable | Log-Likelihood Ratio |
+| proportion of abnormality per treatment | ratio, continuous variable | Log-Likelihood Ratio |
+| proportion of fertilization success | ratio, continuous variable | Log-Likelihood Ratio |
 
 > If you take pics of X random embryos for every cross, you can get:
 >

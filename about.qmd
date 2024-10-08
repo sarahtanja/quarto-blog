@@ -6,7 +6,7 @@ reference-location: margin
 citation-location: margin
 about:
   id: hero-heading
-  template: marquee
+  template: broadside # jolla, trestles, solana, marquee, broadside
   #image-shape: round
   links:
     - icon: linkedin
@@ -20,21 +20,23 @@ about:
       href: mailto::stanja@uw.edu
 ---
 
-::: {hero-heading}
-I'm currently a Masters student in the [Padilla-Gamiño Lab](https://padilla-gaminolab.weebly.com/) and part of the [School of Aquatic and Fishery Sciences](https://fish.uw.edu/) at the University of Washington in Seattle.
+::: {#hero-heading}
+Hello! I'm currently a Masters student in the [Padilla-Gamiño Lab](https://padilla-gaminolab.weebly.com/) and part of the [School of Aquatic and Fishery Sciences](https://fish.uw.edu/) at the University of Washington in Seattle. Please reach out if you have any questions or are interested in connecting!
+:::
+
+# Research Interests
 
 My research focuses on the multiple stressor impacts of microplastic-associated pollution and heat stress on coastal primary producers.
 
-My main question is "Does pollution undermine climate resilience?"
+::: {.callout-note appearance="minimal" icon="false"}
+My overarching thesis explores the question "Does pollution undermine climate resilience?"
+:::
 
 I'm interested in exploring this question in the context of marine coastal habitat-forming organisms. These include scleractinian corals that form the structures of tropical coral reefs, soft-bodied anemones that cover the rocky intertidal habitats of the temperate coasts, and canopy-forming and understory kelps and seaweeds that provide habitat and organic carbon to various ecosystems.
 
 Other questions I like to explore are "Do microplastic-associated pollutants alter the beneficial microbiome in marine organisms?", "Do microplastic pollutants alter gene expression in marine organisms?", and "Do microplastic pollutants decrease photosynthetic efficiency in the ocean?".
-:::
 
-------------------------------------------------------------------------
-
-### Research Influences
+# Research Influences
 
 I first began circling the issue of plastic pollution and marine debris in 2012 as an [intern](https://www.adfg.alaska.gov/index.cfm?adfg=internexp.donohoe) with the Alaska Dept. of Fish & Game at a remote Steller sea lion rookery near Dixon Entrance. During population surveys, I photographed sea lions entangled in plastic trash, and later worked with the Pinniped Entanglement Group [(PEG)](https://pinnipedentanglementgroup.org/) to research biodegradable alternatives to plastic packing bands on fish boxes. I learned how difficult it is to amend a system reliant on plastic.
 
@@ -50,6 +52,6 @@ I became increasingly interested in studying these types of environmental pollut
 
 ![This is me measuring out some filtered seawater at the Hawaii Institute of Marine Biology (HIMB) in preparation for my pilot study on phthalate impacts on coral embryo development](images/sarah-pour.jpg)
 
-> "There is suffering in the world, in the work each of us is doing, we have chosen not to look away, but to do what is in our power to heal and repair, and I see that in every single one of you. My hope from what we've created here together, and in the affirmation that teaching and learning in communion with each other can be regenerative and transforming, so thank you." - Dr. Anne Beaudreau, SMEA 500 Autumn 2023
+> "There is suffering in the world, in the work each of us is doing, we have chosen not to look away, but to do what is in our power to heal and repair, and I see that in every single one of you." - Dr. Anne Beaudreau, SMEA 500 Autumn 2023
 
 ------------------------------------------------------------------------

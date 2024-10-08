@@ -6,14 +6,12 @@ listing:
     - posts/projects/coral-pae-temp.qmd
     - posts/projects/coral-leachate-heat.qmd
     - posts/projects/coral-embryo-leachate.qmd
-#  sort: false
+  sort: false
   type: grid
   grid-item-align: center
-  image-height: 500px
-#  categories: true
   sort-ui: false
   filter-ui: false
   fields: [image, title, subtitle]
 page-layout: full
-title-block-banner: true
+#title-block-banner: true
 ---

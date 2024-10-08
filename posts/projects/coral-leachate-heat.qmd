@@ -14,7 +14,7 @@ listing:
   contents: coral-leachate-heat
   sort: "date desc"
   type: table
-#  categories: true
+  categories: true
   sort-ui: false
   filter-ui: false
   fields: [date, title, author, categories, reading-time]
@@ -24,7 +24,7 @@ format:
   html
 ---
 
-::: {#description}
+:::: {#description}
 <div>
 
 This project is a multiple-stressor experiment conducted in July 2024 at the Hawaii Institute of Marine Biology (HIMB) in Kaneohe Bay.
@@ -33,5 +33,5 @@ This project is a multiple-stressor experiment conducted in July 2024 at the Haw
 
 In this experiment, I exposed a total of 60 coral nubbins to PVC leachate and thermal stress for 96 hours. I measured the performance of the coral symbionts' photosynthetic efficiency (Fv/Fm), and non-photochemical quenching (via quasi dark-adapted rapid light curves) daily with the Walz Diving PAM II during the exposure. At the end of the 96 hour exposure, I flash-froze whole nubbins in liquid nitrogen to conduct RNAseq analysis of the symbiont's gene expression.
 
-The data and code files for this project are organized on GitHub at \[https://github.com/sarahtanja/coral-leachate-heat\]
-:::
+The data and code files for this project are organized on GitHub at <https://github.com/sarahtanja/coral-leachate-heat>
+::::

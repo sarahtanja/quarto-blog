@@ -49,17 +49,18 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./posts.html" rel="prev">
 <link href="./images/favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -85,7 +86,7 @@ div.csl-indent {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar docked nav-fixed slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -105,29 +106,54 @@ div.csl-indent {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./about.html" rel="" target="" aria-current="page">
- <span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./projects.html" rel="" target="">
- <span class="menu-text">Projects</span></a>
-  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://www.linkedin.com/in/sarah-tanja-595722146/" rel="" target=""><i class="bi bi-linkedin" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/sarahtanja" rel="" target=""><i class="bi bi-github" role="img">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-github" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+      <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-github">    
+        <li>
+    <a class="dropdown-item" href="https://github.com/sarahtanja" rel="" target="">
+ <span class="dropdown-text">Sarah’s GitHub</span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="mailto:stanja@uw.edu" rel="" target=""><i class="bi bi-envelope-heart" role="img">
+        <li>
+    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-embryo-leachate" rel="" target="">
+ <span class="dropdown-text">Coral Embryology Project Repository</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-leachate-heat" rel="" target="">
+ <span class="dropdown-text">Coral Photophysiology Project Repository</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/sarahtanja/anemone-leachate-heat" rel="" target="">
+ <span class="dropdown-text">Anemone Photophysiology Project Repository</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-pae-temp" rel="" target="">
+ <span class="dropdown-text">Coral Microbiome Project Repository</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-envelope-paper" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+      <i class="bi bi-envelope-paper" role="img">
 </i> 
- <span class="menu-text"></span></a>
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-envelope-paper">    
+        <li class="dropdown-header">stanja@uw.edu</li>
+        <li>
+    <a class="dropdown-item" href="./contact.html" rel="" target="">
+ <span class="dropdown-text">Contact</span></a>
   </li>  
+    </ul>
+  </li>
 </ul>
             <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
@@ -135,43 +161,116 @@ div.csl-indent {
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./about.html">About</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projects</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Posts</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
+   
   <ul>
-  <li><a href="#research-influences" id="toc-research-influences" class="nav-link active" data-scroll-target="#research-influences">Research Influences</a></li>
+  <li><a href="#research-interests" id="toc-research-interests" class="nav-link active" data-scroll-target="#research-interests">Research Interests</a></li>
+  <li><a href="#research-influences" id="toc-research-influences" class="nav-link" data-scroll-target="#research-influences">Research Influences</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<div class="quarto-about-marquee page-columns page-full column-page-left">
-  <div class="about-image-container">
-    <img src="images/sarah-smile.jpg" class="about-image " style="width: 100%;">
-  </div>
-  <div class="about-contents page-columns page-full">
-    <header id="title-block-header" class="quarto-title-block default">
+<main class="content page-columns page-full column-body" id="quarto-document-content">
+
+
+
+<div class="quarto-about-broadside column-body">
+  <div class="about-main">
+    <div class="about-entity" style="background-image: url('images/sarah-smile.jpg')"></div>
+    <div class="about-contents"><header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Sarah Tanja</h1>
 </div>
 <div class="quarto-title-meta">
   </div>
-</header> <main class="content page-columns page-full column-page-left" id="quarto-document-content">
+</header><div id="hero-heading">
+<p>Hello! I’m currently a Masters student in the <a href="https://padilla-gaminolab.weebly.com/">Padilla-Gamiño Lab</a> and part of the <a href="https://fish.uw.edu/">School of Aquatic and Fishery Sciences</a> at the University of Washington in Seattle. Please reach out if you have any questions or are interested in connecting!</p>
+</div></div>
+  </div>
+  <div class="about-links">
+  <a href="https://www.linkedin.com/in/sarah-tanja-595722146/" class="about-link" rel="" target="">
+    <i class="bi bi-linkedin"></i>
+     <span class="about-link-text">LinkedIn</span>
+  </a>
+  <a href="https://github.com/sarahtanja" class="about-link" rel="" target="">
+    <i class="bi bi-github"></i>
+     <span class="about-link-text">Github</span>
+  </a>
+  <a href="mailto::stanja@uw.edu" class="about-link" rel="" target="">
+    <i class="bi bi-envelope-heart"></i>
+     <span class="about-link-text">Email Me</span>
+  </a>
+</div>
+</div>
 
-<div class="{hero-heading}">
-<p>I’m currently a Masters student in the <a href="https://padilla-gaminolab.weebly.com/">Padilla-Gamiño Lab</a> and part of the <a href="https://fish.uw.edu/">School of Aquatic and Fishery Sciences</a> at the University of Washington in Seattle.</p>
+<section id="research-interests" class="level1">
+<h1>Research Interests</h1>
 <p>My research focuses on the multiple stressor impacts of microplastic-associated pollution and heat stress on coastal primary producers.</p>
-<p>My main question is “Does pollution undermine climate resilience?”</p>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>My overarching thesis explores the question “Does pollution undermine climate resilience?”</p>
+</div>
+</div>
+</div>
 <p>I’m interested in exploring this question in the context of marine coastal habitat-forming organisms. These include scleractinian corals that form the structures of tropical coral reefs, soft-bodied anemones that cover the rocky intertidal habitats of the temperate coasts, and canopy-forming and understory kelps and seaweeds that provide habitat and organic carbon to various ecosystems.</p>
 <p>Other questions I like to explore are “Do microplastic-associated pollutants alter the beneficial microbiome in marine organisms?”, “Do microplastic pollutants alter gene expression in marine organisms?”, and “Do microplastic pollutants decrease photosynthetic efficiency in the ocean?”.</p>
-</div>
-<hr>
-<section id="research-influences" class="level3 page-columns page-full">
-<h3 data-anchor-id="research-influences">Research Influences</h3>
+</section>
+<section id="research-influences" class="level1 page-columns page-full">
+<h1>Research Influences</h1>
 <p>I first began circling the issue of plastic pollution and marine debris in 2012 as an <a href="https://www.adfg.alaska.gov/index.cfm?adfg=internexp.donohoe">intern</a> with the Alaska Dept. of Fish &amp; Game at a remote Steller sea lion rookery near Dixon Entrance. During population surveys, I photographed sea lions entangled in plastic trash, and later worked with the Pinniped Entanglement Group <a href="https://pinnipedentanglementgroup.org/">(PEG)</a> to research biodegradable alternatives to plastic packing bands on fish boxes. I learned how difficult it is to amend a system reliant on plastic.</p>
 <p>More recently, a seminar taught by my advisor <a href="https://fish.uw.edu/faculty/jacqueline-padilla-gamino/">Dr.&nbsp;Padilla-Gamiño</a> raised my awareness of the <a href="https://www.youtube.com/watch?v=iO3SA4YyEYU">links</a> between the fossil fuel industry, petrochemical-based plastics pollution, and the need for a plastics circular economy. Throughout the seminar, I was heavily influenced by a documentary titled, “<a href="https://www.youtube.com/show/SC2l9YPiNhgA1NwB2avpZwgw">The Story of Plastic</a>” and a number of papers, including: “Rethinking Microplastics as a Diverse Contaminant Suite” <span class="citation" data-cites="rochman_rethinking_2019">(<a href="#ref-rochman_rethinking_2019" role="doc-biblioref">Rochman et al. 2019</a>)</span>, and “Plastic leachates impair growth and oxygen production in Prochlorococcus, the ocean’s most abundant photosynthetic bacteria” <span class="citation" data-cites="tetu2019">(<a href="#ref-tetu2019" role="doc-biblioref">Tetu et al. 2019</a>)</span>.</p>
 <div class="no-row-height column-margin column-container"><div id="ref-rochman_rethinking_2019" class="csl-entry" role="listitem">
@@ -195,32 +294,16 @@ Liboiron, Max. 2021. <em>Pollution Is Colonialism</em>. Duke University Press. <
 </figure>
 </div>
 <blockquote class="blockquote">
-<p>“There is suffering in the world, in the work each of us is doing, we have chosen not to look away, but to do what is in our power to heal and repair, and I see that in every single one of you. My hope from what we’ve created here together, and in the affirmation that teaching and learning in communion with each other can be regenerative and transforming, so thank you.” - Dr.&nbsp;Anne Beaudreau, SMEA 500 Autumn 2023</p>
+<p>“There is suffering in the world, in the work each of us is doing, we have chosen not to look away, but to do what is in our power to heal and repair, and I see that in every single one of you.” - Dr.&nbsp;Anne Beaudreau, SMEA 500 Autumn 2023</p>
 </blockquote>
 <hr>
 
 
 
+
 </section>
-</main> 
-    <div class="about-footer"><div class="about-links">
-  <a href="https://www.linkedin.com/in/sarah-tanja-595722146/" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/sarahtanja" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-  <a href="mailto::stanja@uw.edu" class="about-link" rel="" target="">
-    <i class="bi bi-envelope-heart"></i>
-     <span class="about-link-text">Email Me</span>
-  </a>
-</div>
-</div>
-  </div>
-</div>
- <!-- /main -->
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -330,7 +413,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  let localAlternateSentinel = 'alternate';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
@@ -562,10 +645,19 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation column-body">
+  <div class="nav-page nav-page-previous">
+      <a href="./posts.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Posts</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">This page is built using <a href="https://quarto.org/">Quarto</a>❤️</div>   
+    <div class="nav-footer-left">This page is built using <a href="https://quarto.org/">Quarto</a>❤️ and many pages and posts are under active development</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>

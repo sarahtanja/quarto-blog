@@ -4,39 +4,57 @@ project:
 
 website:
   title: "Sarah Tanja's Open Lab Notebook"
-  favicon: "images/favicon.png"
+  favicon: images/favicon.png
   page-navigation: true
   description: "This Open Lab Notebook is a creative landing space for learning about Bioinformatics, Marine Botany, & Data Science. It's mostly for me, but also for you! 😘"
   site-url: https://sarahtanja.github.io/quarto-blog/
   repo-url: https://github.com/sarahtanja/quarto-blog
   
   navbar:
-    logo: "images/binocs.png"
+    logo: images/binocs.png
     logo-alt: "Self-portrait at Tracy Arm, watercolor artwork by Sarah Tanja"
     background: primary
     foreground: light
     search: true
     right: #align navbar items to right/left/center
-      - text: "About"
-        file: about.qmd
-      - text: "Projects"
-        file: projects.qmd
       - icon: linkedin #bootstrap icon
-        href: https://www.linkedin.com/in/sarah-tanja-595722146/
+        url: https://www.linkedin.com/in/sarah-tanja-595722146/
       - icon: github
-        href: https://github.com/sarahtanja
-      - icon: envelope-heart #bootstrap icon
-        href: mailto:stanja@uw.edu
-        
-  
+        menu:
+          - text: Sarah's GitHub
+            url:  https://github.com/sarahtanja
+          - text: Coral Embryology Project Repository
+            url: https://github.com/sarahtanja/coral-embryo-leachate
+          - text: Coral Photophysiology Project Repository
+            url: https://github.com/sarahtanja/coral-leachate-heat
+          - text: Anemone Photophysiology Project Repository
+            url: https://github.com/sarahtanja/anemone-leachate-heat
+          - text: Coral Microbiome Project Repository
+            url: https://github.com/sarahtanja/coral-pae-temp
+      - icon: envelope-paper #bootstrap icon
+        menu:
+          - text: stanja@uw.edu
+          - file: contact.qmd
+          
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+    - text: "Projects"
+      file: projects.qmd
+    - text: "Posts"
+      file: posts.qmd
+    - text: "About"
+      file: about.qmd
+   
   page-footer: 
-    left: "This page is built using [Quarto](https://quarto.org/)❤️" 
+    left: "This page is built using [Quarto](https://quarto.org/)❤️ and many pages and posts are under active development" 
 
 format:
   html:
     theme: 
-      light: journal
       dark: solar
+      light: journal
     css: styles.css
     page-layout: full
     code-background: true

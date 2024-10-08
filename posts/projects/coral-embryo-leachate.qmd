@@ -14,7 +14,7 @@ listing:
   contents: coral-embryo-leachate
   sort: "date desc"
   type: table
-#  categories: true
+  categories: true
   sort-ui: false
   filter-ui: false
   fields: [date, title, author, categories, reading-time]
@@ -24,7 +24,7 @@ format:
   html
 ---
 
-::: {#description}
+:::: {#description}
 <div>
 
 This project is a single-stressor ecotoxicology assay experiment conducted in July 2024 at the Hawaii Institute of Marine Biology (HIMB) in Kaneohe Bay.
@@ -33,6 +33,5 @@ This project is a single-stressor ecotoxicology assay experiment conducted in Ju
 
 In this experiment, I track differences in embryonic development of corals exposed to PVC leachate with microscopy and RNAseq gene expression.
 
-
-The data and code files for this project are organized on GitHub at \[https://github.com/sarahtanja/coral-embryo-leachate\]
-:::
+The data and code files for this project are organized on GitHub at <https://github.com/sarahtanja/coral-embryo-leachate>
+::::

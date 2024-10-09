@@ -3,7 +3,7 @@ title: "Getting Started with `QIIME2` and `Jupyter Lab`"
 subtitle: "Working from a Windows OS and connecting via VPN to a remote server"
 author: "Sarah Tanja"
 date: '08/10/2023'
-categories: [learning journey]
+categories: [code, learning journey]
 draft: false
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>

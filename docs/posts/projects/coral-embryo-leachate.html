@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Sarah Tanja’s Open Lab Notebook - Photophysiology of a coral symbiont under multiple stressors</title>
+<title>Sarah Tanja’s Open Lab Notebook - Embryonic development of Montipora capitata coral exposed to PVC leachate</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -38,11 +38,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -99,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -119,29 +119,54 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../about.html" rel="" target="">
- <span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../projects.html" rel="" target="">
- <span class="menu-text">Projects</span></a>
-  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://www.linkedin.com/in/sarah-tanja-595722146/" rel="" target=""><i class="bi bi-linkedin" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/sarahtanja" rel="" target=""><i class="bi bi-github" role="img">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-github" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+      <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-github">    
+        <li>
+    <a class="dropdown-item" href="https://github.com/sarahtanja" rel="" target="">
+ <span class="dropdown-text">Sarah’s GitHub</span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="mailto:stanja@uw.edu" rel="" target=""><i class="bi bi-envelope-heart" role="img">
+        <li>
+    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-embryo-leachate" rel="" target="">
+ <span class="dropdown-text">Coral Embryology Project Repository</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-leachate-heat" rel="" target="">
+ <span class="dropdown-text">Coral Photophysiology Project Repository</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/sarahtanja/anemone-leachate-heat" rel="" target="">
+ <span class="dropdown-text">Anemone Photophysiology Project Repository</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-pae-temp" rel="" target="">
+ <span class="dropdown-text">Coral Microbiome Project Repository</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-envelope-paper" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+      <i class="bi bi-envelope-paper" role="img">
 </i> 
- <span class="menu-text"></span></a>
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-envelope-paper">    
+        <li class="dropdown-header">stanja@uw.edu</li>
+        <li>
+    <a class="dropdown-item" href="../../contact.html" rel="" target="">
+ <span class="dropdown-text">Contact</span></a>
   </li>  
+    </ul>
+  </li>
 </ul>
             <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
@@ -149,45 +174,90 @@ ul.task-list li input[type="checkbox"] {
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Embryonic development of Montipora capitata coral exposed to PVC leachate</li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">Photophysiology of a coral symbiont under multiple stressors</h1>
-            <p class="subtitle lead">Exploring Montipora capitata coral symbiont photosynthesis under PVC leachate and thermal stress exposures</p>
+    <div class="quarto-title column-body">
+      <h1 class="title">Embryonic development of Montipora capitata coral exposed to PVC leachate</h1>
+            <p class="subtitle lead">An ecotoxicological assay of Montipora capitata coral embryo development and gene expression under increasing PVC leachate exposures</p>
                       </div>
   </div>
   <div class="quarto-title-meta">
     </div>
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projects</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Posts</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(16)</span></div><div class="category" data-category="code">code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="coral">coral <span class="quarto-category-count">(6)</span></div><div class="category" data-category="lab records">lab records <span class="quarto-category-count">(10)</span></div><div class="category" data-category="protocols">protocols <span class="quarto-category-count">(4)</span></div><div class="category" data-category="stats">stats <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-body" id="quarto-document-content">
 
 
 
 
-<div class="quarto-about-trestles column-page">
+<div class="quarto-about-trestles column-body">
   <div class="about-entity">
-    <img src="himb-mcap-horizon.jpg" class="about-image
+    <img src="night-spawn.jpg" class="about-image
   rounded " style="width: 20em;">
 
     <div class="about-links">
-  <a href="https://github.com/sarahtanja/coral-leachate-heat" class="about-link" rel="" target="">
+  <a href="https://github.com/sarahtanja/coral-embryo-leachate" class="about-link" rel="" target="">
     <i class="bi bi-github"></i>
-     <span class="about-link-text">https://github.com/sarahtanja/coral-leachate-heat</span>
+     <span class="about-link-text">https://github.com/sarahtanja/coral-embryo-leachate</span>
   </a>
 </div>
   </div>
   <div class="about-contents"><div id="description">
 <div>
-<p>This project is a multiple-stressor experiment conducted in July 2024 at the Hawaii Institute of Marine Biology (HIMB) in Kaneohe Bay.</p>
+<p>This project is a single-stressor ecotoxicology assay experiment conducted in July 2024 at the Hawaii Institute of Marine Biology (HIMB) in Kaneohe Bay.</p>
 </div>
-<p>In this experiment, I exposed a total of 60 coral nubbins to PVC leachate and thermal stress for 96 hours. I measured the performance of the coral symbionts’ photosynthetic efficiency (Fv/Fm), and non-photochemical quenching (via quasi dark-adapted rapid light curves) daily with the Walz Diving PAM II during the exposure. At the end of the 96 hour exposure, I flash-froze whole nubbins in liquid nitrogen to conduct RNAseq analysis of the symbiont’s gene expression.</p>
-<p>The data and code files for this project are organized on GitHub at [https://github.com/sarahtanja/coral-leachate-heat]</p>
+<p>In this experiment, I track differences in embryonic development of corals exposed to PVC leachate with microscopy and RNAseq gene expression.</p>
+<p>The data and code files for this project are organized on GitHub at <a href="https://github.com/sarahtanja/coral-embryo-leachate" class="uri">https://github.com/sarahtanja/coral-embryo-leachate</a></p>
 </div></div>
 </div>
 
@@ -219,21 +289,276 @@ Reading Time
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-categories="coral" data-listing-date-sort="1720508400000" data-listing-file-modified-sort="1725907104900" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Experiment Log" data-listing-filename-sort="log.qmd">
+<tr data-index="0" data-categories="code,coral" data-listing-date-sort="1728284400000" data-listing-file-modified-sort="1728340450147" data-listing-date-modified-sort="1728284400000" data-listing-reading-time-sort="2" data-listing-title-sort="Bioinformatics Pipeline Roadmap" data-listing-filename-sort="pipeline-overview.qmd">
 <td>
-<span class="listing-date">Jul 9, 2024</span>
+<span class="listing-date">Oct 7, 2024</span>
 </td>
 <td>
-<a href="../../posts/projects/coral-leachate-heat/log.html" class="title listing-title">Experiment Log</a>
+<a href="../../posts/projects/coral-embryo-leachate/bioinformatics-pipeline/pipeline-overview.html" class="title listing-title">Bioinformatics Pipeline Roadmap</a>
 </td>
 <td>
 <span class="listing-author">Sarah Tanja</span>
 </td>
 <td>
-<span class="listing-categories">coral</span>
+<span class="listing-categories">code,coral</span>
+</td>
+<td>
+<span class="listing-reading-time">2 min</span>
+</td>
+</tr>
+<tr data-index="1" data-categories="protocols,coral" data-listing-date-sort="1725865200000" data-listing-file-modified-sort="1725928656485" data-listing-date-modified-sort="1728284400000" data-listing-reading-time-sort="1" data-listing-title-sort="Nikon scope pictures annotation &amp; data collection" data-listing-filename-sort="annotate-scope-pics.qmd">
+<td>
+<span class="listing-date">Sep 9, 2024</span>
+</td>
+<td>
+<a href="../../posts/projects/coral-embryo-leachate/scope/annotate-scope-pics.html" class="title listing-title">Nikon scope pictures annotation &amp; data collection</a>
+</td>
+<td>
+<span class="listing-author">Sarah Tanja</span>
+</td>
+<td>
+<span class="listing-categories">protocols,coral</span>
 </td>
 <td>
 <span class="listing-reading-time">1 min</span>
+</td>
+</tr>
+<tr data-index="2" data-categories="stats,coral" data-listing-date-sort="1725606000000" data-listing-file-modified-sort="1728340450152" data-listing-date-modified-sort="1728284400000" data-listing-reading-time-sort="5" data-listing-title-sort="Statistics for embryo scope data" data-listing-filename-sort="scope-stats.qmd">
+<td>
+<span class="listing-date">Sep 6, 2024</span>
+</td>
+<td>
+<a href="../../posts/projects/coral-embryo-leachate/scope/scope-stats.html" class="title listing-title">Statistics for embryo scope data</a>
+</td>
+<td>
+<span class="listing-author">Sarah Tanja</span>
+</td>
+<td>
+<span class="listing-categories">stats,coral</span>
+</td>
+<td>
+<span class="listing-reading-time">5 min</span>
+</td>
+</tr>
+<tr data-index="3" data-categories="protocols,coral" data-listing-date-sort="1725346800000" data-listing-file-modified-sort="1725950261989" data-listing-date-modified-sort="1728284400000" data-listing-reading-time-sort="3" data-listing-title-sort="Nikon scope pictures &amp; slide preservation protocol" data-listing-filename-sort="nikon-scope.qmd">
+<td>
+<span class="listing-date">Sep 3, 2024</span>
+</td>
+<td>
+<a href="../../posts/projects/coral-embryo-leachate/scope/nikon-scope.html" class="title listing-title">Nikon scope pictures &amp; slide preservation protocol</a>
+</td>
+<td>
+<span class="listing-author">Sarah Tanja</span>
+</td>
+<td>
+<span class="listing-categories">protocols,coral</span>
+</td>
+<td>
+<span class="listing-reading-time">3 min</span>
+</td>
+</tr>
+<tr data-index="4" data-categories="lab records" data-listing-date-sort="1724655600000" data-listing-file-modified-sort="1725907104894" data-listing-date-modified-sort="1728284400000" data-listing-reading-time-sort="5" data-listing-title-sort="26-Aug-2024 Embryo RNA Extractions" data-listing-filename-sort="26aug2024-extraction.qmd">
+<td>
+<span class="listing-date">Aug 26, 2024</span>
+</td>
+<td>
+<a href="../../posts/projects/coral-embryo-leachate/26aug2024-extraction/26aug2024-extraction.html" class="title listing-title">26-Aug-2024 Embryo RNA Extractions</a>
+</td>
+<td>
+<span class="listing-author">Sarah Tanja</span>
+</td>
+<td>
+<span class="listing-categories">lab records</span>
+</td>
+<td>
+<span class="listing-reading-time">5 min</span>
+</td>
+</tr>
+<tr data-index="5" data-categories="lab records" data-listing-date-sort="1724396400000" data-listing-file-modified-sort="1725907104893" data-listing-date-modified-sort="1728284400000" data-listing-reading-time-sort="6" data-listing-title-sort="23-Aug-2024 Embryo RNA Extractions" data-listing-filename-sort="23aug2024-extraction.qmd">
+<td>
+<span class="listing-date">Aug 23, 2024</span>
+</td>
+<td>
+<a href="../../posts/projects/coral-embryo-leachate/23aug2024-extraction/23aug2024-extraction.html" class="title listing-title">23-Aug-2024 Embryo RNA Extractions</a>
+</td>
+<td>
+<span class="listing-author">Sarah Tanja</span>
+</td>
+<td>
+<span class="listing-categories">lab records</span>
+</td>
+<td>
+<span class="listing-reading-time">6 min</span>
+</td>
+</tr>
+<tr data-index="6" data-categories="lab records" data-listing-date-sort="1724223600000" data-listing-file-modified-sort="1725907104892" data-listing-date-modified-sort="1728284400000" data-listing-reading-time-sort="6" data-listing-title-sort="21-Aug-2024 Embryo RNA Extractions" data-listing-filename-sort="21aug2024-extraction.qmd">
+<td>
+<span class="listing-date">Aug 21, 2024</span>
+</td>
+<td>
+<a href="../../posts/projects/coral-embryo-leachate/21aug2024-extraction/21aug2024-extraction.html" class="title listing-title">21-Aug-2024 Embryo RNA Extractions</a>
+</td>
+<td>
+<span class="listing-author">Sarah Tanja</span>
+</td>
+<td>
+<span class="listing-categories">lab records</span>
+</td>
+<td>
+<span class="listing-reading-time">6 min</span>
+</td>
+</tr>
+<tr data-index="7" data-categories="lab records" data-listing-date-sort="1724137200000" data-listing-file-modified-sort="1725907104890" data-listing-date-modified-sort="1728284400000" data-listing-reading-time-sort="5" data-listing-title-sort="20-Aug-2024 Embryo RNA Extractions" data-listing-filename-sort="20aug2024-extraction.qmd">
+<td>
+<span class="listing-date">Aug 20, 2024</span>
+</td>
+<td>
+<a href="../../posts/projects/coral-embryo-leachate/20aug2024-extraction/20aug2024-extraction.html" class="title listing-title">20-Aug-2024 Embryo RNA Extractions</a>
+</td>
+<td>
+<span class="listing-author">Sarah Tanja</span>
+</td>
+<td>
+<span class="listing-categories">lab records</span>
+</td>
+<td>
+<span class="listing-reading-time">5 min</span>
+</td>
+</tr>
+<tr data-index="8" data-categories="lab records" data-listing-date-sort="1724050800000" data-listing-file-modified-sort="1725907104888" data-listing-date-modified-sort="1728284400000" data-listing-reading-time-sort="5" data-listing-title-sort="19-Aug-2024 Embryo RNA Extractions" data-listing-filename-sort="19aug2024-extraction.qmd">
+<td>
+<span class="listing-date">Aug 19, 2024</span>
+</td>
+<td>
+<a href="../../posts/projects/coral-embryo-leachate/19aug2024-extraction/19aug2024-extraction.html" class="title listing-title">19-Aug-2024 Embryo RNA Extractions</a>
+</td>
+<td>
+<span class="listing-author">Sarah Tanja</span>
+</td>
+<td>
+<span class="listing-categories">lab records</span>
+</td>
+<td>
+<span class="listing-reading-time">5 min</span>
+</td>
+</tr>
+<tr data-index="9" data-categories="lab records" data-listing-date-sort="1723791600000" data-listing-file-modified-sort="1725907104887" data-listing-date-modified-sort="1728284400000" data-listing-reading-time-sort="5" data-listing-title-sort="16-Aug-2024 Embryo RNA Extractions" data-listing-filename-sort="16aug2024-extraction.qmd">
+<td>
+<span class="listing-date">Aug 16, 2024</span>
+</td>
+<td>
+<a href="../../posts/projects/coral-embryo-leachate/16aug2024-extraction/16aug2024-extraction.html" class="title listing-title">16-Aug-2024 Embryo RNA Extractions</a>
+</td>
+<td>
+<span class="listing-author">Sarah Tanja</span>
+</td>
+<td>
+<span class="listing-categories">lab records</span>
+</td>
+<td>
+<span class="listing-reading-time">5 min</span>
+</td>
+</tr>
+<tr data-index="10" data-categories="lab records" data-listing-date-sort="1723705200000" data-listing-file-modified-sort="1725907104886" data-listing-date-modified-sort="1728284400000" data-listing-reading-time-sort="5" data-listing-title-sort="15-Aug-2024 Embryo RNA Extractions" data-listing-filename-sort="15aug2024-extraction.qmd">
+<td>
+<span class="listing-date">Aug 15, 2024</span>
+</td>
+<td>
+<a href="../../posts/projects/coral-embryo-leachate/15aug2024-extraction/15aug2024-extraction.html" class="title listing-title">15-Aug-2024 Embryo RNA Extractions</a>
+</td>
+<td>
+<span class="listing-author">Sarah Tanja</span>
+</td>
+<td>
+<span class="listing-categories">lab records</span>
+</td>
+<td>
+<span class="listing-reading-time">5 min</span>
+</td>
+</tr>
+<tr data-index="11" data-categories="lab records" data-listing-date-sort="1723618800000" data-listing-file-modified-sort="1725907104885" data-listing-date-modified-sort="1728284400000" data-listing-reading-time-sort="5" data-listing-title-sort="14-Aug-2024 Embryo RNA Extractions" data-listing-filename-sort="14aug2024-extraction.qmd">
+<td>
+<span class="listing-date">Aug 14, 2024</span>
+</td>
+<td>
+<a href="../../posts/projects/coral-embryo-leachate/14aug2024-extraction/14aug2024-extraction.html" class="title listing-title">14-Aug-2024 Embryo RNA Extractions</a>
+</td>
+<td>
+<span class="listing-author">Sarah Tanja</span>
+</td>
+<td>
+<span class="listing-categories">lab records</span>
+</td>
+<td>
+<span class="listing-reading-time">5 min</span>
+</td>
+</tr>
+<tr data-index="12" data-categories="lab records,coral" data-listing-date-sort="1723532400000" data-listing-file-modified-sort="1725907104880" data-listing-date-modified-sort="1728284400000" data-listing-reading-time-sort="6" data-listing-title-sort="13-Aug-2024 Embryo RNA Extractions" data-listing-filename-sort="13aug2024-extraction.qmd">
+<td>
+<span class="listing-date">Aug 13, 2024</span>
+</td>
+<td>
+<a href="../../posts/projects/coral-embryo-leachate/13aug2024-extraction/13aug2024-extraction.html" class="title listing-title">13-Aug-2024 Embryo RNA Extractions</a>
+</td>
+<td>
+<span class="listing-author">Sarah Tanja</span>
+</td>
+<td>
+<span class="listing-categories">lab records,coral</span>
+</td>
+<td>
+<span class="listing-reading-time">6 min</span>
+</td>
+</tr>
+<tr data-index="13" data-categories="lab records" data-listing-date-sort="1723446000000" data-listing-file-modified-sort="1725907104872" data-listing-date-modified-sort="1728284400000" data-listing-reading-time-sort="4" data-listing-title-sort="12-Aug-2024 Embryo RNA Extractions" data-listing-filename-sort="12aug2024-extraction.qmd">
+<td>
+<span class="listing-date">Aug 12, 2024</span>
+</td>
+<td>
+<a href="../../posts/projects/coral-embryo-leachate/12aug2024-extraction/12aug2024-extraction.html" class="title listing-title">12-Aug-2024 Embryo RNA Extractions</a>
+</td>
+<td>
+<span class="listing-author">Sarah Tanja</span>
+</td>
+<td>
+<span class="listing-categories">lab records</span>
+</td>
+<td>
+<span class="listing-reading-time">4 min</span>
+</td>
+</tr>
+<tr data-index="14" data-categories="protocols,coral" data-listing-date-sort="1723186800000" data-listing-file-modified-sort="1725907104895" data-listing-date-modified-sort="1728284400000" data-listing-reading-time-sort="16" data-listing-title-sort="M. Capitata Embryo DNA/RNA Extractions Protocol" data-listing-filename-sort="embryo-extractions.qmd">
+<td>
+<span class="listing-date">Aug 9, 2024</span>
+</td>
+<td>
+<a href="../../posts/projects/coral-embryo-leachate/embryo-extractions.html" class="title listing-title">M. Capitata Embryo DNA/RNA Extractions Protocol</a>
+</td>
+<td>
+<span class="listing-author">Sarah Tanja</span>
+</td>
+<td>
+<span class="listing-categories">protocols,coral</span>
+</td>
+<td>
+<span class="listing-reading-time">16 min</span>
+</td>
+</tr>
+<tr data-index="15" data-categories="protocols" data-listing-date-sort="1720508400000" data-listing-file-modified-sort="1725907104898" data-listing-date-modified-sort="1728284400000" data-listing-reading-time-sort="12" data-listing-title-sort="Spawn night protocol" data-listing-filename-sort="spawn-night-checklist.qmd">
+<td>
+<span class="listing-date">Jul 9, 2024</span>
+</td>
+<td>
+<a href="../../posts/projects/coral-embryo-leachate/spawn-night-checklist.html" class="title listing-title">Spawn night protocol</a>
+</td>
+<td>
+<span class="listing-author">Sarah Tanja</span>
+</td>
+<td>
+<span class="listing-categories">protocols</span>
+</td>
+<td>
+<span class="listing-reading-time">12 min</span>
 </td>
 </tr>
 </tbody>
@@ -352,7 +677,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  let localAlternateSentinel = 'alternate';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
@@ -587,7 +912,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">This page is built using <a href="https://quarto.org/">Quarto</a>❤️</div>   
+    <div class="nav-footer-left">This page is built using <a href="https://quarto.org/">Quarto</a>❤️ and many pages and posts are under active development</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>

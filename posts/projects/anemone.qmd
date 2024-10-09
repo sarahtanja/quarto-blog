@@ -14,7 +14,7 @@ listing:
   contents: anemone
   sort: "date desc"
   type: table
-#  categories: true
+  categories: true
   sort-ui: false
   filter-ui: false
   fields: [date, title, author, categories, reading-time]

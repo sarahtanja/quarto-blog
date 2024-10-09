@@ -3,7 +3,7 @@ title: "Git Reset"
 subtitle: "For all the times I accidentally commit a file that is too big"
 author: "Sarah Tanja"
 date: '11/05/2023'
-categories: [code help]
+categories: [code]
 draft: false
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>
@@ -77,7 +77,7 @@ echo "ignored new large files"
 Save the pre-commit file and make it executable by running the following
 command in Terminal from your base git directory:
 
-```
+```         
 chmod +x .git/hooks/pre-commit
 ```
 

@@ -2,7 +2,7 @@
 title: "How I created & maintain my open lab notebook using Quarto, Git & RStudio"
 author: "Sarah Tanja"
 date: '12/06/2023'
-categories: [learning journey]
+categories: [code, learning journey]
 image: thumbnail.jpg
 draft: false
 toc: true
@@ -15,6 +15,7 @@ link-external-icon: true
 link-external-newwindow: true
 bibliography: ../library.bib
 ---
-- follow happy git for the useR
+
+-   follow happy git for the useR
 
 -   download quarto

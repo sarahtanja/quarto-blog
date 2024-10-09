@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./posts.html" rel="next">
 <link href="./images/favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
@@ -39,11 +40,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -100,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -120,29 +121,54 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" rel="" target="" aria-current="page">
- <span class="menu-text">Projects</span></a>
-  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://www.linkedin.com/in/sarah-tanja-595722146/" rel="" target=""><i class="bi bi-linkedin" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/sarahtanja" rel="" target=""><i class="bi bi-github" role="img">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-github" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+      <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-github">    
+        <li>
+    <a class="dropdown-item" href="https://github.com/sarahtanja" rel="" target="">
+ <span class="dropdown-text">Sarah’s GitHub</span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="mailto:stanja@uw.edu" rel="" target=""><i class="bi bi-envelope-heart" role="img">
+        <li>
+    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-embryo-leachate" rel="" target="">
+ <span class="dropdown-text">Coral Embryology Project Repository</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-leachate-heat" rel="" target="">
+ <span class="dropdown-text">Coral Photophysiology Project Repository</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/sarahtanja/anemone-leachate-heat" rel="" target="">
+ <span class="dropdown-text">Anemone Photophysiology Project Repository</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-pae-temp" rel="" target="">
+ <span class="dropdown-text">Coral Microbiome Project Repository</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-envelope-paper" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+      <i class="bi bi-envelope-paper" role="img">
 </i> 
- <span class="menu-text"></span></a>
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-envelope-paper">    
+        <li class="dropdown-header">stanja@uw.edu</li>
+        <li>
+    <a class="dropdown-item" href="./contact.html" rel="" target="">
+ <span class="dropdown-text">Contact</span></a>
   </li>  
+    </ul>
+  </li>
 </ul>
             <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
@@ -150,35 +176,76 @@ ul.task-list li input[type="checkbox"] {
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./projects.html">Projects</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">Projects</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projects.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Projects</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Posts</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Projects</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
 
 
 
@@ -186,11 +253,11 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1725907104331" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1728346495414" data-listing-reading-time-sort="1">
 <a href="./posts/projects/anemone.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img src="./posts/projects/vancouver-aquarium-pink-tip-nems.jpg" class="thumbnail-image card-img" style="height: 500px;">
+<img src="./posts/projects/vancouver-aquarium-pink-tip-nems.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -203,28 +270,11 @@ A marine microplastic leachate &amp; thermal stress test on a temperate clonal s
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1725907104899" data-listing-reading-time-sort="1">
-<a href="./posts/projects/coral-leachate-heat.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img src="./posts/projects/night-spawn.jpg" class="thumbnail-image card-img" style="height: 500px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Embryonic development of Montipora capitata coral exposed to PVC leachate
-</h5>
-<div class="card-subtitle listing-subtitle">
-An ecotoxicological assay of Montipora capitata coral embryo development and gene expression under increasing PVC leachate exposures
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1725907104901" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1725907104901" data-listing-reading-time-sort="1">
 <a href="./posts/projects/coral-pae-temp.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img src="./posts/projects/himb-mcap-horizon.jpg" class="thumbnail-image card-img" style="height: 500px;">
+<img src="./posts/projects/himb-mcap-horizon.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -237,11 +287,11 @@ Microbial community changes in Montipora capitata corals under EPA506 Phthalates
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1725907104871" data-listing-reading-time-sort="1">
-<a href="./posts/projects/coral-embryo-leachate.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1728342553218" data-listing-reading-time-sort="1">
+<a href="./posts/projects/coral-leachate-heat.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img src="./posts/projects/himb-mcap-horizon.jpg" class="thumbnail-image card-img" style="height: 500px;">
+<img src="./posts/projects/himb-mcap-horizon.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -249,6 +299,23 @@ Photophysiology of a coral symbiont under multiple stressors
 </h5>
 <div class="card-subtitle listing-subtitle">
 Exploring Montipora capitata coral symbiont photosynthesis under PVC leachate and thermal stress exposures
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1728342513614" data-listing-reading-time-sort="1">
+<a href="./posts/projects/coral-embryo-leachate.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img src="./posts/projects/night-spawn.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Embryonic development of Montipora capitata coral exposed to PVC leachate
+</h5>
+<div class="card-subtitle listing-subtitle">
+An ecotoxicological assay of Montipora capitata coral embryo development and gene expression under increasing PVC leachate exposures
 </div>
 </div>
 </div>
@@ -368,7 +435,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  let localAlternateSentinel = 'alternate';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
@@ -607,10 +674,19 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation column-page-right">
+  <div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./posts.html" class="pagination-link">
+        <span class="nav-page-text">Posts</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">This page is built using <a href="https://quarto.org/">Quarto</a>❤️</div>   
+    <div class="nav-footer-left">This page is built using <a href="https://quarto.org/">Quarto</a>❤️ and many pages and posts are under active development</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>

@@ -1,0 +1,103 @@
+---
+title: "Bioinformatics Pipeline Roadmap"
+subtitle: "Transcriptomics analysis of RNA-seq data from embryonic development of Montipora capitata rice corals exposed to PVC leachate"
+author: "Sarah Tanja"
+date: 10/07/2024
+date-format: long
+date-modified: today
+categories: [code, coral]
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
+bibliography: ../coral-embryology.bib
+---
+
+# Sequence files background
+
+We've extracted totalRNA and shipped it to Azenta for sequencing... so what happens next? How did we go from working with microcentrifuge tubes in the lab to large files on the computer?
+
+First they run the total RNA through quality assessment and quality control steps (QAQC) to make sure it is sufficient in quantity and quality to sequence. Here is the QAQC report from Azenta:
+
+The total RNA is then subjected to library prep, where the RNA is turned into cDNA.
+
+The cDNA is what is actually sequenced, with an Illumina sequencer, 20 million reads, Poly-A selection,
+
+The raw FASTA files come back `demultiplexed`.
+
+# Coding resources
+
+This roadmap was built off the following resources and references from:
+
+-   Erin Chille:
+
+    -   [Mcapitata_OA_Developmental_Gene_Expression_Timeseries](https://github.com/echille/Mcapitata_OA_Developmental_Gene_Expression_Timeseries) github repository from the [@chille2022]paper
+
+-   Steven Roberts:
+
+    -   [Bioinformatics FISH 546](https://sr320.github.io/course-fish546-2023/schedule.html) course at UW
+    -   [Lab Handbook](https://robertslab.github.io/resources/)
+
+-   Savanah Liedholt:
+
+    -   [Differentially Expressed Genes from a Reference Genome](https://notion.so/Differentially-Expressed-Genes-From-Reference-Genome-35267b46f51d4383b4b70bb3796d28c9)
+    -   [SmallRNA processing and pipeline for viral community Analysis](https://www.notion.so/SmallRNA-processing-and-pipeline-for-viral-community-Analysis-1f7f48c35d9e482597685354222c1852)
+
+-   Ariana Huffmyer:
+
+-   \[EarlyLifeHistory_Energetics TagSeq\] github repository
+
+-   Sarah Tanja:
+
+    -   [FISH 546 Compendium](https://rpubs.com/sarah_tanja/1048844)
+
+# Pipeline birds-eye view
+
+## 1. Receive raw FASTA files
+
+-   files are already `demultiplexed`
+
+-   files have a `.fasta.gz` zipped format
+
+-   files must be unzipped and checked to make sure there were no errors in the unzip process (this is done with `md5sum` )
+
+## 2. QAQC FASTA files
+
+-   Quality check with [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) , [MultiQC](https://multiqc.info/)
+
+-   Quality trimming with [Fastp](https://github.com/OpenGene/fastp)
+
+-   Remove adapters using cutadapt
+
+-   Remove PhiX
+
+-   Remove polyA tails using `bbduk` bash script
+
+## 3. Align to reference genome
+
+-   Obtain reference genome assembly & GFF annotation file
+    -   Genome [Version 3](http://cyanophora.rutgers.edu/montipora/) [@stephens2022]
+    -   [GFF](http://cyanophora.rutgers.edu/montipora/Montipora_capitata_HIv3.genes.gff3.gz) from Rutgers (or [GFF fixed](https://github.com/AHuffmyer/EarlyLifeHistory_Energetics/raw/master/Mcap2020/Data/TagSeq/Montipora_capitata_HIv3.genes_fixed.gff3.gz) from AHuffmyer?)
+    -   [genomes, indexes, & feature tracks](https://robertslab.github.io/resources/Genomic-Resources/#montipora-capitata) from Roberts Lab Handbook
+-   Align sequences to genome
+    -   using [HISAT-3N](https://daehwankimlab.github.io/hisat2/hisat-3n/) [@zhang_rapid_2021]
+
+## 4. Assemble
+
+-   `StringTie 2`
+
+## 5. Create gene expression count matrix
+
+-   `Trinity`
+
+## 6. Identify differentially expressed genes (DEG)s
+
+```         
+-   using `DESeq-2`
+```
+
+## 7.

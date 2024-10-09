@@ -14,7 +14,6 @@ reference-location: margin
 citation-location: margin
 link-external-icon: true
 link-external-newwindow: true
-bibliography: "../coral-embryology.bib"
 ---
 
 ## [Caroline Gibson Scholarship in Marine Studies (Northwest Straits Foundation)](https://nwstraitsfoundation.org/get-involved/caroline-gibson-scholarship-fund/)

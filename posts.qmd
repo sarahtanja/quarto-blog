@@ -1,0 +1,17 @@
+---
+title: "Posts"
+#title-block-banner: true
+#toc: true
+page-layout: full # article, full, or custom
+listing:
+  contents: 
+   - "posts/**/*.qmd" # all posts in all subdirectories
+   - "!posts/projects/anemone.qmd" # except the project listing pages
+   - "!posts/projects/coral-embryo-leachate.qmd" 
+   - "!posts/projects/coral-leachate-heat.qmd"
+   - "!posts/projects/coral-pae-temp.qmd"
+  sort: "date desc" # Sorts the posts by date in descending order
+  type: default # `default`, `grid` or `table`
+  categories: true # allows you to sort posts by assigned categories 
+  feed: true # Allows for generating an RSS feed
+---

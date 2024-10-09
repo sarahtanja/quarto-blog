@@ -1,20 +1,20 @@
 ---
-title: "Photophysiology of a coral symbiont under multiple stressors"
-subtitle: "Exploring Montipora capitata coral symbiont photosynthesis under PVC leachate and thermal stress exposures"
-image: "himb-mcap-horizon.jpg"
+title: "Embryonic development of Montipora capitata coral exposed to PVC leachate"
+subtitle: "An ecotoxicological assay of Montipora capitata coral embryo development and gene expression under increasing PVC leachate exposures"
+image: "night-spawn.jpg"
 about:
   id: description
   template: trestles
-  image: "himb-mcap-horizon.jpg"
+  image: "night-spawn.jpg"
   links:
     - icon: github
-      text: https://github.com/sarahtanja/coral-leachate-heat
-      href: https://github.com/sarahtanja/coral-leachate-heat
+      text: https://github.com/sarahtanja/coral-embryo-leachate
+      href: https://github.com/sarahtanja/coral-embryo-leachate
 listing: 
-  contents: coral-leachate-heat
+  contents: coral-embryo-leachate
   sort: "date desc"
   type: table
-#  categories: true
+  categories: true
   sort-ui: false
   filter-ui: false
   fields: [date, title, author, categories, reading-time]
@@ -24,14 +24,14 @@ format:
   html
 ---
 
-::: {#description}
+:::: {#description}
 <div>
 
-This project is a multiple-stressor experiment conducted in July 2024 at the Hawaii Institute of Marine Biology (HIMB) in Kaneohe Bay.
+This project is a single-stressor ecotoxicology assay experiment conducted in July 2024 at the Hawaii Institute of Marine Biology (HIMB) in Kaneohe Bay.
 
 </div>
 
-In this experiment, I exposed a total of 60 coral nubbins to PVC leachate and thermal stress for 96 hours. I measured the performance of the coral symbionts' photosynthetic efficiency (Fv/Fm), and non-photochemical quenching (via quasi dark-adapted rapid light curves) daily with the Walz Diving PAM II during the exposure. At the end of the 96 hour exposure, I flash-froze whole nubbins in liquid nitrogen to conduct RNAseq analysis of the symbiont's gene expression.
+In this experiment, I track differences in embryonic development of corals exposed to PVC leachate with microscopy and RNAseq gene expression.
 
-The data and code files for this project are organized on GitHub at \[https://github.com/sarahtanja/coral-leachate-heat\]
-:::
+The data and code files for this project are organized on GitHub at <https://github.com/sarahtanja/coral-embryo-leachate>
+::::

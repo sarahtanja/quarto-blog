@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.433">
+<meta name="generator" content="quarto-1.2.335">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,10 +19,9 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -49,19 +48,48 @@ pre.numberSource code > span > a:first-child::before
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
     padding: 0 4px; width: 4em;
+    color: #aaaaaa;
   }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
   {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-/* CSS for citations */
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging-indent div.csl-entry {
+.hanging div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -75,7 +103,8 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}</style>
+}
+</style>
 
 
 <script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -113,12 +142,10 @@ div.csl-indent {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-submit-button-title": "Submit"
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../../../styles.css">
@@ -138,48 +165,47 @@ div.csl-indent {
     <span class="navbar-title">Sarah Tanja’s Open Lab Notebook</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/sarah-tanja-595722146/" rel="" target=""><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/sarah-tanja-595722146/"><i class="bi bi-linkedin" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-github" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-github" role="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-github">    
         <li>
-    <a class="dropdown-item" href="https://github.com/sarahtanja" rel="" target="">
+    <a class="dropdown-item" href="https://github.com/sarahtanja">
  <span class="dropdown-text">Sarah’s GitHub</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-embryo-leachate" rel="" target="">
+    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-embryo-leachate">
  <span class="dropdown-text">Coral Embryology Project Repository</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-leachate-heat" rel="" target="">
+    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-leachate-heat">
  <span class="dropdown-text">Coral Photophysiology Project Repository</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://github.com/sarahtanja/anemone-leachate-heat" rel="" target="">
+    <a class="dropdown-item" href="https://github.com/sarahtanja/anemone-leachate-heat">
  <span class="dropdown-text">Anemone Photophysiology Project Repository</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-pae-temp" rel="" target="">
+    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-pae-temp">
  <span class="dropdown-text">Coral Microbiome Project Repository</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-envelope-paper" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-envelope-paper" role="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="bi bi-envelope-paper" role="img">
 </i> 
  <span class="menu-text"></span>
@@ -187,28 +213,24 @@ div.csl-indent {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-envelope-paper">    
         <li class="dropdown-header">stanja@uw.edu</li>
         <li>
-    <a class="dropdown-item" href="../../../../contact.html" rel="" target="">
+    <a class="dropdown-item" href="../../../../contact.html">
  <span class="dropdown-text">Contact</span></a>
   </li>  
     </ul>
   </li>
 </ul>
-            <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-</div>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Anemone Project Planning</li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Anemone Project Planning</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
       </button>
     </div>
   </nav>
@@ -217,7 +239,7 @@ div.csl-indent {
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Anemone Project Planning</h1>
+      <h1 class="title d-none d-lg-block">Anemone Project Planning</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">anemones</div>
               </div>
@@ -247,30 +269,27 @@ div.csl-indent {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
-        <div class="mt-2 flex-shrink-0 align-items-center">
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+      <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-        </div>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../projects.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Projects</span></a>
+  <a href="../../../../projects.html" class="sidebar-item-text sidebar-link">Projects</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../posts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Posts</span></a>
+  <a href="../../../../posts.html" class="sidebar-item-text sidebar-link">Posts</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../about.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About</span></a>
+  <a href="../../../../about.html" class="sidebar-item-text sidebar-link">About</a>
   </div>
 </li>
     </ul>
@@ -314,7 +333,6 @@ div.csl-indent {
   </ul>
 </nav>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
@@ -360,12 +378,12 @@ div.csl-indent {
 <h3 class="anchored" data-anchor-id="questions-hypotheses">Questions &amp; Hypotheses</h3>
 <section id="overarching" class="level4">
 <h4 class="anchored" data-anchor-id="overarching">Overarching</h4>
-<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-warning callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Questions
 </div>
 </div>
@@ -376,12 +394,12 @@ Questions
 </ul>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-tip callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Hypotheses
 </div>
 </div>
@@ -395,12 +413,12 @@ Hypotheses
 </section>
 <section id="microbiome" class="level4">
 <h4 class="anchored" data-anchor-id="microbiome">Microbiome</h4>
-<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-warning callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Questions
 </div>
 </div>
@@ -412,12 +430,12 @@ Questions
 </ul>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-tip callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Hypotheses
 </div>
 </div>
@@ -434,12 +452,12 @@ Hypotheses
 </section>
 <section id="differential-gene-expression" class="level4">
 <h4 class="anchored" data-anchor-id="differential-gene-expression">Differential Gene Expression</h4>
-<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-warning callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Questions
 </div>
 </div>
@@ -447,12 +465,12 @@ Questions
 
 </div>
 </div>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-tip callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Hypotheses
 </div>
 </div>
@@ -463,12 +481,12 @@ Hypotheses
 </section>
 <section id="respiration" class="level4">
 <h4 class="anchored" data-anchor-id="respiration">Respiration</h4>
-<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-warning callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Questions
 </div>
 </div>
@@ -476,12 +494,12 @@ Questions
 
 </div>
 </div>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-tip callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Hypotheses
 </div>
 </div>
@@ -492,12 +510,12 @@ Hypotheses
 </section>
 <section id="photosynthesis" class="level4">
 <h4 class="anchored" data-anchor-id="photosynthesis">Photosynthesis</h4>
-<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-warning callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Questions
 </div>
 </div>
@@ -505,12 +523,12 @@ Questions
 
 </div>
 </div>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-tip callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Hypotheses
 </div>
 </div>
@@ -601,7 +619,7 @@ Hypotheses
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="aelegantissima-2x3.png" class="img-fluid figure-img" width="419"></p>
-<figcaption class="figure-caption">Figure 2. 2x3 Factorial experimental design in which 1 clonal genotype from each of 10 clonal mats will be exposed to 4 scenarios, thermal stress, plastic leachate pollution, multiple/combined thermal and leachate pollution stresses, and the control of ambient temp and filtered seawater.</figcaption>
+<p></p><figcaption class="figure-caption">Figure 2. 2x3 Factorial experimental design in which 1 clonal genotype from each of 10 clonal mats will be exposed to 4 scenarios, thermal stress, plastic leachate pollution, multiple/combined thermal and leachate pollution stresses, and the control of ambient temp and filtered seawater.</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -614,11 +632,11 @@ Hypotheses
 <p>This shotgun of stress response variables will serve to offer a holistic view of cnidarian host and algal symbiont physiological response to temperature and plastic pollution leachate stress. It is well known that ocean heat waves are becoming more frequent and intense. Simultaneously, marine plastic pollution is becoming more prevalent and the chemical additives associated with plastic have become ubiquitous in our environments. As plastics weather mechanically, they also weather chemically by leaching additives not covalently bonded to the plastic polymer resins <span class="citation" data-cites="hahladakis2018">(<a href="#ref-hahladakis2018" role="doc-biblioref">Hahladakis et al. 2018</a>)</span>. The most common plastic additives are a group of chemicals called plasticizers, also known as phthalates or phthlate acid esters (PAE). They are commonly added to PVC to increase flexibility and durability. However, phthlatates are known to mimic or interfere with hormones that control developmental, reproductive, and immune response in both humans and animals <span class="citation" data-cites="maqboolReviewEndocrineDisorders2016">(<a href="#ref-maqboolReviewEndocrineDisorders2016" role="doc-biblioref"><strong>maqboolReviewEndocrineDisorders2016?</strong></a>)</span>. Previous research shows that plastic leachates experimentally added to plants, bacteria, and algae impair growth, reduce photosynthesis, and shift microbial communities in lab studies <span class="citation" data-cites="capolupo2020 obrien2022 tetu2019">(<a href="#ref-capolupo2020" role="doc-biblioref"><strong>capolupo2020?</strong></a>; <a href="#ref-obrien2022" role="doc-biblioref">O’Brien et al. 2022</a>; <a href="#ref-tetu2019" role="doc-biblioref">Tetu et al. 2019</a>)</span>. However, little is known about environmental concentrations of plastic leachate in the context of increasing ocean temperatures. Marine heatwaves, plastic manufacturing, and pollution are predicted to increase <span class="citation" data-cites="macleodGlobalThreatPlastic2021 oliverMarineHeatwaves2021">(<a href="#ref-macleodGlobalThreatPlastic2021" role="doc-biblioref"><strong>macleodGlobalThreatPlastic2021?</strong></a>; <a href="#ref-oliverMarineHeatwaves2021" role="doc-biblioref"><strong>oliverMarineHeatwaves2021?</strong></a>)</span>. Therefore, it is urgent that we understand how thermal stress and plastic pollution interact and the effects they may have on coastal marine organisms, which are likely experiencing both the most extreme thermal stress and the highest amount of plastic pollution.</p>
 
 
-<div class="no-row-height column-margin column-container"><div id="ref-hahladakis2018" class="csl-entry" role="listitem">
+<div class="no-row-height column-margin column-container"><div id="ref-hahladakis2018" class="csl-entry" role="doc-biblioentry">
 Hahladakis, John N., Costas A. Velis, Roland Weber, Eleni Iacovidou, and Phil Purnell. 2018. <span>“An Overview of Chemical Additives Present in Plastics: <span>Migration</span>, Release, Fate and Environmental Impact During Their Use, Disposal and Recycling.”</span> <em>Journal of Hazardous Materials</em> 344 (February): 179–99. <a href="https://doi.org/10.1016/j.jhazmat.2017.10.014">https://doi.org/10.1016/j.jhazmat.2017.10.014</a>.
-</div><div id="ref-obrien2022" class="csl-entry" role="listitem">
+</div><div id="ref-obrien2022" class="csl-entry" role="doc-biblioentry">
 O’Brien, Anna M., Tiago F. Lins, Yamin Yang, Megan E. Frederickson, David Sinton, and Chelsea M. Rochman. 2022. <span>“Microplastics Shift Impacts of Climate Change on a Plant-Microbe Mutualism: <span>Temperature</span>, <span>CO2</span>, and Tire Wear Particles.”</span> <em>Environmental Research</em> 203 (January): 111727. <a href="https://doi.org/10.1016/j.envres.2021.111727">https://doi.org/10.1016/j.envres.2021.111727</a>.
-</div><div id="ref-tetu2019" class="csl-entry" role="listitem">
+</div><div id="ref-tetu2019" class="csl-entry" role="doc-biblioentry">
 Tetu, Sasha G., Indrani Sarker, Verena Schrameyer, Russell Pickford, Liam D. H. Elbourne, Lisa R. Moore, and Ian T. Paulsen. 2019. <span>“Plastic Leachates Impair Growth and Oxygen Production in <span>Prochlorococcus</span>, the Ocean’s Most Abundant Photosynthetic Bacteria.”</span> <em>Communications Biology</em> 2 (May): 184. <a href="https://doi.org/10.1038/s42003-019-0410-x">https://doi.org/10.1038/s42003-019-0410-x</a>.
 </div></div>
 </section>
@@ -767,23 +785,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
+    target: function(trigger) {
+      return trigger.previousElementSibling;
     }
   });
   clipboard.on('success', function(e) {
@@ -848,92 +852,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -972,12 +890,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp("https:\/\/sarahtanja\.github\.io\/quarto-blog\/");
+      var filterRegex = new RegExp(/https:\/\/sarahtanja\.github\.io\/quarto-blog\//);
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -993,12 +911,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">This page is built using <a href="https://quarto.org/">Quarto</a>❤️ and many pages and posts are under active development</div>   
-    <div class="nav-footer-center">
-      &nbsp;
-    </div>
-    <div class="nav-footer-right">
-      &nbsp;
-    </div>
   </div>
 </footer>
 

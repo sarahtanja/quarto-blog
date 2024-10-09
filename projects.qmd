@@ -4,18 +4,6 @@ page-layout: full
 title-block-banner: true
 toc: true
 listing: 
-<<<<<<< HEAD
-  contents: posts
-  sort: "date desc"
-  type: grid
-  grid-item-align: center
-  image-height: 500px
-  categories: true
-  sort-ui: false
-  filter-ui: false
-  fields: [image, title, subtitle]
-  feed: true
-=======
   contents: 
     - posts/projects/anemone.qmd
     - posts/projects/coral-pae-temp.qmd
@@ -29,5 +17,4 @@ listing:
   fields: [image, title, subtitle]
 page-layout: full
 #title-block-banner: true
->>>>>>> c836a18ceee7ac03720b0fa0f1a399a702831319
 ---

@@ -1,0 +1,43 @@
+---
+title: "Submitting NGS sequences to NCBI SRA"
+subtitle: "Backing up raw sequences from Azenta"
+author: "Sarah Tanja"
+date: 10/08/2024
+date-format: long
+date-modified: today
+categories: [learning journey, code]
+draft: false
+toc: true
+toc-expand: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
+---
+
+So you got an email from Azenta saying your files are ready for download! Exciting! It's the moment we've been waiting for. What next??
+
+# Background research
+
+-   Watch this 10min video tutorial: [How to Submit to SRA, A Beginner's Guide](https://www.youtube.com/watch?v=PTg9Ru68fc0)
+
+-   Read the [SRA Submission Wizard Help](https://www.ncbi.nlm.nih.gov/sra/docs/submitportal/) page
+
+# Log in to NCBI
+
+Navigate to the NCBI Submission Portal: <https://submit.ncbi.nlm.nih.gov/>
+
+Click on `SRA` to continue to the Sequence Read Archive (SRA) submission portal: <https://submit.ncbi.nlm.nih.gov/about/sra/>
+
+Log-in through a partner sign-in, or sign-up directly with NCBI to create an account.
+
+I signed in using my existing ORC-ID account, and authorized NCBI to access my ORCID record.
+
+![](ncbi-signin.png)
+
+Using my orcid, I created a new NCBI account.
+
+I was prompted to update my profile and confirm my primary email address in order to be able to submit to SRA.

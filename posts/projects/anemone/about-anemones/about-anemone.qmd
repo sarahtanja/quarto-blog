@@ -4,7 +4,7 @@ subtitle: "What, where, who studies it, how, and why!"
 author: "Sarah Tanja"
 date: '05/02/2024'
 image-height: "0"
-categories: [anemones]
+categories: [learning journey, anemones]
 draft: false
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>

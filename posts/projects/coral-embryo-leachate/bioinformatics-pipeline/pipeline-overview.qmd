@@ -14,7 +14,6 @@ reference-location: margin
 citation-location: margin
 link-external-icon: true
 link-external-newwindow: true
-bibliography: ../coral-embryology.bib
 ---
 
 # Sequence files background

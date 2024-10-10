@@ -30,9 +30,9 @@ So you got an email from Azenta saying your files are ready for download! Exciti
 
 Navigate to the NCBI Submission Portal: <https://submit.ncbi.nlm.nih.gov/>
 
-Click on `SRA` to continue to the Sequence Read Archive (SRA) submission portal: <https://submit.ncbi.nlm.nih.gov/about/sra/>
-
 Log-in through a partner sign-in, or sign-up directly with NCBI to create an account.
+
+![](ncbi-login.png)
 
 I signed in using my existing ORC-ID account, and authorized NCBI to access my ORCID record.
 
@@ -41,3 +41,20 @@ I signed in using my existing ORC-ID account, and authorized NCBI to access my O
 Using my orcid, I created a new NCBI account.
 
 I was prompted to update my profile and confirm my primary email address in order to be able to submit to SRA.
+
+Once at the Submission portal and logged-in, click on `SRA` to continue to the Sequence Read Archive (SRA) submission portal: <https://submit.ncbi.nlm.nih.gov/about/sra/>
+
+Click **SUBMIT** to start the submission process.
+
+Click **New Submission**
+
+There are 5 steps to submission:
+
+1.  Submitter contact info (fill this out)
+2.  General Info
+
+![](ncbi-general-info.png)
+
+Click **CONTINUE**
+
+3.  Project Info

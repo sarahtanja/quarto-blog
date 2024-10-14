@@ -32,6 +32,10 @@ The raw FASTA files come back `demultiplexed`.
 
 This roadmap was built off the following resources and references from:
 
+-   Babraham Bioinformatics Institute
+
+    -   [Training Courses](https://www.bioinformatics.babraham.ac.uk/training.html)
+
 -   Erin Chille:
 
     -   [Mcapitata_OA_Developmental_Gene_Expression_Timeseries](https://github.com/echille/Mcapitata_OA_Developmental_Gene_Expression_Timeseries) github repository from the [@chille2022]paper
@@ -48,7 +52,7 @@ This roadmap was built off the following resources and references from:
 
 -   Ariana Huffmyer:
 
--   \[EarlyLifeHistory_Energetics TagSeq\] github repository
+-   \[EarlyLifeHistory_Energetics TagSeq\]( github repository
 
 -   Sarah Tanja:
 
@@ -65,6 +69,8 @@ This roadmap was built off the following resources and references from:
 -   files must be unzipped and checked to make sure there were no errors in the unzip process (this is done with `md5sum` )
 
 ## 2. QAQC FASTA files
+
+<https://github.com/echille/Mcapitata_OA_Developmental_Gene_Expression_Timeseries/blob/main/2-QC-Align-Assemble/mcap_rnaseq_analysis.md>
 
 -   Quality check with [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) , [MultiQC](https://multiqc.info/)
 

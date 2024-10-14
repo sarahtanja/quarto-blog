@@ -31,12 +31,25 @@
 <section id="log-in-to-ncbi" class="level1">
 <h1>Log in to NCBI</h1>
 <p>Navigate to the NCBI Submission Portal: <a href="https://submit.ncbi.nlm.nih.gov/" class="uri">https://submit.ncbi.nlm.nih.gov/</a></p>
-<p>Click on <code>SRA</code> to continue to the Sequence Read Archive (SRA) submission portal: <a href="https://submit.ncbi.nlm.nih.gov/about/sra/" class="uri">https://submit.ncbi.nlm.nih.gov/about/sra/</a></p>
 <p>Log-in through a partner sign-in, or sign-up directly with NCBI to create an account.</p>
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi-login.png" class="img-fluid"></p>
 <p>I signed in using my existing ORC-ID account, and authorized NCBI to access my ORCID record.</p>
 <p><img src="https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi-signin.png" class="img-fluid"></p>
 <p>Using my orcid, I created a new NCBI account.</p>
 <p>I was prompted to update my profile and confirm my primary email address in order to be able to submit to SRA.</p>
+<p>Once at the Submission portal and logged-in, click on <code>SRA</code> to continue to the Sequence Read Archive (SRA) submission portal: <a href="https://submit.ncbi.nlm.nih.gov/about/sra/" class="uri">https://submit.ncbi.nlm.nih.gov/about/sra/</a></p>
+<p>Click <strong>SUBMIT</strong> to start the submission process.</p>
+<p>Click <strong>New Submission</strong></p>
+<p>There are 5 steps to submission:</p>
+<ol type="1">
+<li>Submitter contact info (fill this out)</li>
+<li>General Info</li>
+</ol>
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi-general-info.png" class="img-fluid"></p>
+<p>Click <strong>CONTINUE</strong></p>
+<ol start="3" type="1">
+<li>Project Info</li>
+</ol>
 
 
 </section>

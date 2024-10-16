@@ -32,7 +32,11 @@ The raw FASTA files come back `demultiplexed`.
 
 This roadmap was built off the following resources and references from:
 
--   Babraham Bioinformatics Institute
+-   Sam White
+
+    -   Notebook
+
+-   Babraham Bioinformatics Institute:
 
     -   [Training Courses](https://www.bioinformatics.babraham.ac.uk/training.html)
 
@@ -52,7 +56,7 @@ This roadmap was built off the following resources and references from:
 
 -   Ariana Huffmyer:
 
--   \[EarlyLifeHistory_Energetics TagSeq\]( github repository
+    -   [EarlyLifeHistory_Energetics TagSeq](https://github.com/AHuffmyer/EarlyLifeHistory_Energetics/tree/master) github repository
 
 -   Sarah Tanja:
 
@@ -66,21 +70,27 @@ This roadmap was built off the following resources and references from:
 
 -   files have a `.fasta.gz` zipped format
 
--   files must be unzipped and checked to make sure there were no errors in the unzip process (this is done with `md5sum` )
+-   files must checked to make sure there were no errors in the transfer process (this is done with `md5sum` )
 
 ## 2. QAQC FASTA files
 
-<https://github.com/echille/Mcapitata_OA_Developmental_Gene_Expression_Timeseries/blob/main/2-QC-Align-Assemble/mcap_rnaseq_analysis.md>
+::: {.callout-tip appearance="minimal"}
+Some great examples of previous QAQC scripts generated for *Montipora capitata* RNA-seq data by [E. Chille (QAQC Script)](https://github.com/echille/Mcapitata_OA_Developmental_Gene_Expression_Timeseries/blob/main/2-QC-Align-Assemble/mcap_rnaseq_analysis.md), [Sam White (Notebook post)](https://robertslab.github.io/sams-notebook/posts/2024/2024-10-05-FastQC-Trimming-and-QC---A.pulchra-RNA-seq-from-Azenta-Project-30-1047560508-Using-fastp/) and [A. Huffmyer (QAQC Script)](https://github.com/AHuffmyer/EarlyLifeHistory_Energetics/blob/master/Mcap2020/Scripts/TagSeq/Genome_V3/TagSeq_BioInf_genomeV3.md)
+:::
 
--   Quality check with [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) , [MultiQC](https://multiqc.info/)
+-   Quality check raw sequences with [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) , synthesize a report with [MultiQC](https://multiqc.info/)
 
--   Quality trimming with [Fastp](https://github.com/OpenGene/fastp)
+-   Clean up sequences with [Fastp](https://github.com/OpenGene/fastp)
 
--   Remove adapters using cutadapt
+    -   Trim sequence lengths
 
--   Remove PhiX
+    -   Filter out bad quality reads
 
--   Remove polyA tails using `bbduk` bash script
+    -   Remove adapters & polyA tails
+
+-   Check cleaned sequences with FastQC, synthesize a report with MultiQC
+
+-   Repeat cleaning steps if needed
 
 ## 3. Align to reference genome
 

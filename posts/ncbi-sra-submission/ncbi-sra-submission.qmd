@@ -50,11 +50,40 @@ Click **New Submission**
 
 There are 5 steps to submission:
 
-1.  Submitter contact info (fill this out)
-2.  General Info
+# 1. Submitter contact info (fill this out)
+
+# 2. General Info
 
 ![](ncbi-general-info.png)
 
 Click **CONTINUE**
 
-3.  Project Info
+# 3. Project Info
+
+-   Project Title
+
+-   Public description
+
+-   Grants
+
+# 4. Biosample Type
+
+-   Typed in *Montipora capitata*
+
+-   Under displayed NCBI packages I selected '**Invertebrate**'
+
+![](biosample-type.png)
+
+-   Clicked **CONTINUE**
+
+# 5. Biosample Attributes
+
+-   Use built-in table editor
+
+    The following are the columns:
+
+-   Sample Name
+
+-   Sample title
+
+# 6. SRA Metadata

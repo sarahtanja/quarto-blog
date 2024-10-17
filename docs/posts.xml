@@ -249,11 +249,16 @@ Connected to sftp.genewiz.com.</code></pre>
 <ul>
 <li><p>Sam White</p>
 <ul>
+<<<<<<< HEAD
 <li><a href="https://robertslab.github.io/sams-notebook/">Sam’s Notebook</a>
 <ul>
 <li><a href="https://robertslab.github.io/sams-notebook/posts/2024/2024-10-05-FastQC-Trimming-and-QC---A.pulchra-RNA-seq-from-Azenta-Project-30-1047560508-Using-fastp/">QAQC with FastQC, MultiQC &amp; Fastp</a></li>
 <li><a href="https://robertslab.github.io/sams-notebook/posts/2024/2024-10-08-RNA-seq-Alignment---A.pulchra-RNA-seq-Alignments-Using-HISAT2-and-StringTie-for-Azenta-Project-30-1047560508/index.html">Genome alignment with HISAT2</a></li>
 </ul></li>
+=======
+<li>Notebook</li>
+<li><a href="https://robertslab.github.io/sams-notebook/posts/2024/2024-10-05-FastQC-Trimming-and-QC---A.pulchra-RNA-seq-from-Azenta-Project-30-1047560508-Using-fastp/">QAQC post</a></li>
+>>>>>>> 53c082d (pipeline overview update rendered)
 </ul></li>
 <li><p>Babraham Bioinformatics Institute:</p>
 <ul>
@@ -293,9 +298,15 @@ Connected to sftp.genewiz.com.</code></pre>
 <li><p>files must checked to make sure there were no errors in the transfer process (this is done with <code>md5sum</code> )</p></li>
 </ul>
 </section>
+<<<<<<< HEAD
 <section id="g2.-qaqc-fasta-files" class="level2">
 <h2 class="anchored" data-anchor-id="g2.-qaqc-fasta-files">g2. QAQC FASTA files</h2>
 <div class="callout-tip callout callout-style-simple no-icon">
+=======
+<section id="qaqc-fasta-files" class="level2">
+<h2 class="anchored" data-anchor-id="qaqc-fasta-files">2. QAQC FASTA files</h2>
+<div class="callout callout-style-simple callout-tip no-icon">
+>>>>>>> 53c082d (pipeline overview update rendered)
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
@@ -665,7 +676,11 @@ Okubo, Nami, Takuma Mezaki, Yoko Nozawa, Yoshikatsu Nakano, Yi-Ting Lien, Hirono
 <p>Each egg-sperm bundle contains 15 +/- 5.1 oocytes (mean +/- SD, n = 214, from 26 colonies) <span class="citation" data-cites="padilla-gamino2011">(Padilla-Gamiño et al. 2011)</span></p>
 <div class="no-row-height column-margin column-container"><div id="ref-padilla-gamino2011" class="csl-entry">
 Padilla-Gamiño, J. L., T. M. Weatherby, R. G. Waller, and R. D. Gates. 2011. <span>“Formation and Structural Organization of the Egg–Sperm Bundle of the Scleractinian Coral <span>Montipora</span> Capitata.”</span> <em>Coral Reefs</em> 30 (2): 371–80. <a href="https://doi.org/10.1007/s00338-010-0700-8">https://doi.org/10.1007/s00338-010-0700-8</a>.
+<<<<<<< HEAD
 </div></div><div class="callout-note callout callout-style-default callout-captioned">
+=======
+</div></div><div class="callout callout-style-default callout-note callout-titled">
+>>>>>>> 53c082d (pipeline overview update rendered)
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>

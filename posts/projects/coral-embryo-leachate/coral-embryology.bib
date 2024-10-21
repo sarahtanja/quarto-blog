@@ -16,6 +16,24 @@
   keywords = {Animals,Anthozoa,Cell Nucleus,DNA-Binding Proteins,Expressed Sequence Tags,Gene Expression Regulation Developmental,Likelihood Functions,Models Biological,Phylogeny,Transcription Factors}
 }
 
+@article{chen2023,
+  title = {Ultrafast One-Pass {{FASTQ}} Data Preprocessing, Quality Control, and Deduplication Using Fastp},
+  author = {Chen, Shifu},
+  date = {2023},
+  journaltitle = {iMeta},
+  volume = {2},
+  number = {2},
+  pages = {e107},
+  issn = {2770-596X},
+  doi = {10.1002/imt2.107},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/imt2.107},
+  urldate = {2024-10-18},
+  abstract = {A large amount of sequencing data is generated and processed every day with the continuous evolution of sequencing technology and the expansion of sequencing applications. One consequence of such sequencing data explosion is the increasing cost and complexity of data processing. The preprocessing of FASTQ data, which means removing adapter contamination, filtering low-quality reads, and correcting wrongly represented bases, is an indispensable but resource intensive part of sequencing data analysis. Therefore, although a lot of software applications have been developed to solve this problem, bioinformatics scientists and engineers are still pursuing faster, simpler, and more energy-efficient software. Several years ago, the author developed fastp, which is an ultrafast all-in-one FASTQ data preprocessor with many modern features. This software has been approved by many bioinformatics users and has been continuously maintained and updated. Since the first publication on fastp, it has been greatly improved, making it even faster and more powerful. For instance, the duplication evaluation module has been improved, and a new deduplication module has been added. This study aimed to introduce the new features of fastp and demonstrate how it was designed and implemented.},
+  langid = {english},
+  keywords = {adapter,duplication,FASTQ,filtering,preprocessing,quality control},
+  file = {C\:\\Users\\ssdon\\Zotero\\storage\\Q9LEI958\\Chen - 2023 - Ultrafast one-pass FASTQ data preprocessing, quali.pdf;C\:\\Users\\ssdon\\Zotero\\storage\\L6R5BKH6\\imt2.html}
+}
+
 @article{chille2021,
   title = {Developmental Series of Gene Expression Clarifies Maternal {{mRNA}} Provisioning and Maternal-to-Zygotic Transition in a Reef-Building Coral},
   author = {Chille, Erin and Strand, Emma and Neder, Mayaan and Schmidt, Valeria and Sherman, Madeleine and Mass, Tali and Putnam, Hollie},
@@ -83,6 +101,23 @@
   file = {C:\Users\ssdon\Zotero\storage\C549JULA\Coleman et al. - 2020 - Restore or Redefine Future Trajectories for Resto.pdf}
 }
 
+@article{cribari-neto2010,
+  title = {Beta {{Regression}} in {{{\emph{R}}}}},
+  author = {Cribari-Neto, Francisco and Zeileis, Achim},
+  date = {2010},
+  journaltitle = {Journal of Statistical Software},
+  shortjournal = {J. Stat. Soft.},
+  volume = {34},
+  number = {2},
+  issn = {1548-7660},
+  doi = {10.18637/jss.v034.i02},
+  url = {http://www.jstatsoft.org/v34/i02/},
+  urldate = {2024-10-18},
+  abstract = {The class of beta regression models is commonly used by practitioners to model variables that assume values in the standard unit interval (0, 1). It is based on the assumption that the dependent variable is beta-distributed and that its mean is related to a set of regressors through a linear predictor with unknown coefficients and a link function. The model also includes a precision parameter which may be constant or depend on a (potentially different) set of regressors through a link function as well. This approach naturally incorporates features such as heteroskedasticity or skewness which are commonly observed in data taking values in the standard unit interval, such as rates or proportions. This paper describes the betareg package which provides the class of beta regressions in the R system for statistical computing. The underlying theory is briefly outlined, the implementation discussed and illustrated in various replication exercises.},
+  langid = {english},
+  file = {C:\Users\ssdon\Zotero\storage\UXASWC7L\Cribari-Neto and Zeileis - 2010 - Beta Regression in R.pdf}
+}
+
 @article{eddy2018,
   title = {Historical Baselines of Coral Cover on Tropical Reefs as Estimated by Expert Opinion},
   author = {Eddy, Tyler D. and Cheung, William W.L. and Bruno, John F.},
@@ -100,6 +135,27 @@
   abstract = {Coral reefs are important habitats that represent global marine biodiversity hotspots and provide important benefits to people in many tropical regions. However, coral reefs are becoming increasingly threatened by climate change, overfishing, habitat destruction, and pollution. Historical baselines of coral cover are important to understand how much coral cover has been lost, e.g., to avoid the ‘shifting baseline syndrome’. There are few quantitative observations of coral reef cover prior to the industrial revolution, and therefore baselines of coral reef cover are difficult to estimate. Here, we use expert and ocean-user opinion surveys to estimate baselines of global coral reef cover. The overall mean estimated baseline coral cover was 59\% (±19\% standard deviation), compared to an average of 58\% (±18\% standard deviation) estimated by professional scientists. We did not find evidence of the shifting baseline syndrome, whereby respondents who first observed coral reefs more recently report lower estimates of baseline coral cover. These estimates of historical coral reef baseline cover are important for scientists, policy makers, and managers to understand the extent to which coral reefs have become depleted and to set appropriate recovery targets.},
   pmcid = {PMC5786882},
   file = {C:\Users\ssdon\Zotero\storage\46IM9PLS\Eddy et al. - 2018 - Historical baselines of coral cover on tropical re.pdf}
+}
+
+@article{ewels2016,
+  title = {{{MultiQC}}: Summarize Analysis Results for Multiple Tools and Samples in a Single Report},
+  shorttitle = {{{MultiQC}}},
+  author = {Ewels, Philip and Magnusson, Måns and Lundin, Sverker and Käller, Max},
+  date = {2016-10-01},
+  journaltitle = {Bioinformatics (Oxford, England)},
+  shortjournal = {Bioinformatics},
+  volume = {32},
+  number = {19},
+  eprint = {27312411},
+  eprinttype = {pmid},
+  pages = {3047--3048},
+  issn = {1367-4811},
+  doi = {10.1093/bioinformatics/btw354},
+  abstract = {MOTIVATION: Fast and accurate quality control is essential for studies involving next-generation sequencing data. Whilst numerous tools exist to quantify QC metrics, there is no common approach to flexibly integrate these across tools and large sample sets. Assessing analysis results across an entire project can be time consuming and error prone; batch effects and outlier samples can easily be missed in the early stages of analysis. RESULTS: We present MultiQC, a tool to create a single report visualising output from multiple tools across many samples, enabling global trends and biases to be quickly identified. MultiQC can plot data from many common bioinformatics tools and is built to allow easy extension and customization. AVAILABILITY AND IMPLEMENTATION: MultiQC is available with an GNU GPLv3 license on GitHub, the Python Package Index and Bioconda. Documentation and example reports are available at http://multiqc.info CONTACT: phil.ewels@scilifelab.se.},
+  langid = {english},
+  pmcid = {PMC5039924},
+  keywords = {Computational Biology,High-Throughput Nucleotide Sequencing,Quality Control,Software},
+  file = {C:\Users\ssdon\Zotero\storage\46PLLRKA\Ewels et al. - 2016 - MultiQC summarize analysis results for multiple t.pdf}
 }
 
 @article{gambardella2024,
@@ -286,6 +342,57 @@
   file = {C:\Users\ssdon\Zotero\storage\5V3K2GMU\Isa et al. - 2024 - Physical and cellular impact of environmentally re.pdf}
 }
 
+@article{jimenez-guri2023,
+  title = {{{PVC}} Pellet Leachates Affect Adult Immune System and Embryonic Development but Not Reproductive Capacity in the Sea Urchin {{Paracentrotus}} Lividus},
+  author = {Jimenez-Guri, Eva and Murano, Carola and Paganos, Periklis and Arnone, Maria Ina},
+  date = {2023-11-01},
+  journaltitle = {Marine Pollution Bulletin},
+  shortjournal = {Marine Pollution Bulletin},
+  volume = {196},
+  pages = {115604},
+  issn = {0025-326X},
+  doi = {10.1016/j.marpolbul.2023.115604},
+  url = {https://www.sciencedirect.com/science/article/pii/S0025326X23010391},
+  urldate = {2023-10-16},
+  abstract = {Microplastic pollution is a major concern of our age, eliciting a range of effects on organisms including during embryonic development. Plastic preproduction pellets stunt the development of sea urchins through the leaching of teratogenic compounds. However, the effect of these leachates on adult sea urchins and their fertility is unknown. Here we investigate the effect of PVC leachates on the capacity to produce normal embryos, and demonstrate that adults kept in contaminated water still produce viable offspring. However, we observe a cumulative negative effect by continued exposure to highly polluted water: adult animals had lower counts and disturbed morphological profiles of immune cells, were under increased oxidative stress, and produced embryos less tolerant of contaminated environments. Our findings suggest that even in highly polluted areas, sea urchins are fertile, but that sublethal effects seen in the adults may lead to transgenerational effects that reduce developmental robustness of the embryos.},
+  keywords = {Immune cells,Leachates,Oxidative stress,PVC nurdles,Reproduction,Sea urchin},
+  file = {C\:\\Users\\ssdon\\Zotero\\storage\\DPEMH2NA\\Jimenez-Guri et al. - 2023 - PVC pellet leachates affect adult immune system an.pdf;C\:\\Users\\ssdon\\Zotero\\storage\\44RBHIPX\\S0025326X23010391.html}
+}
+
+@article{mincarelli2021,
+  title = {Consequences of Combined Exposure to Thermal Stress and the Plasticiser {{DEHP}} in {{Mytilus}} Spp. Differ by Sex},
+  author = {Mincarelli, Luana Fiorella and Rotchell, Jeanette M. and Chapman, Emma C. and Turner, Alexander P. and Wollenberg Valero, Katharina C.},
+  date = {2021-09},
+  journaltitle = {Marine Pollution Bulletin},
+  shortjournal = {Marine Pollution Bulletin},
+  volume = {170},
+  pages = {112624},
+  issn = {0025326X},
+  doi = {10.1016/j.marpolbul.2021.112624},
+  url = {https://linkinghub.elsevier.com/retrieve/pii/S0025326X21006585},
+  urldate = {2022-03-16},
+  abstract = {Little is known about the combined effect of environmental factors and contaminants on commercially important marine species, and whether this effect differs by sex. In this study, blue mussels were exposed for seven days to both single and combined stressors (i.e., +3 ◦C elevated temperature and two environmentally relevant con­ centrations of the plastic softener DEHP, 0.5 and 50 μg/l) in a factorial design. Males were observed to be more sensitive to high temperature, demonstrated by the significant increase in out-of-season spawning gonads and higher gene expression of the antioxidant catalase and the estrogen receptor genes. On the other hand, while the gametogenesis cycle in females was more resilient than in males, DEHP exposure altered the estrogen-related receptor gene expression.},
+  langid = {english},
+  file = {C\:\\Users\\ssdon\\Zotero\\storage\\9SVSIY5T\\Mincarelli et al. - 2021 - Consequences of combined exposure to thermal stres.pdf;C\:\\Users\\ssdon\\Zotero\\storage\\XACF2SAP\\Mincarelli et al. - 2021 - Consequences of combined exposure to thermal stres.pdf}
+}
+
+@article{montano2020,
+  title = {Spatial Variability of Phthalates Contamination in the Reef-Building Corals {{Porites}} Lutea, {{Pocillopora}} Verrucosa and {{Pavona}} Varians},
+  author = {Montano, Simone and Seveso, Davide and Maggioni, Davide and Galli, Paolo and Corsarini, Stefano and Saliu, Francesco},
+  date = {2020-06},
+  journaltitle = {Marine Pollution Bulletin},
+  shortjournal = {Marine Pollution Bulletin},
+  volume = {155},
+  pages = {111117},
+  issn = {0025326X},
+  doi = {10.1016/j.marpolbul.2020.111117},
+  url = {https://linkinghub.elsevier.com/retrieve/pii/S0025326X20302356},
+  urldate = {2022-01-20},
+  abstract = {Microplastic pollution represents a serious hazard for the marine environment, including coral reefs. Scleractinian corals can easily mistake microplastics with their natural preys, and ingest them and all the annexed plasticizer additives. Here we selectively searched on field for five phthalates esters (PAEs) namely dibutyl-phthalate (DBP), benzylbutyl-phthalate (BBzP), diethyl-phthalate (DEP), Bis(2-ethylhexyl)-phthalate (DEHP), and dimethyl-phthalate (DMP) in the coral species Pocillopora verrucosa, Porites lutea and Pavona varians. Our data reveal that {$>$} 95\% of corals sampled were contaminated, with a maximum of 172.4 ng/g, a value 7 time-fold higher than those found in a previous study. The Σ5 PAEs showed an average of about 30 ng/g per coral, but no differences in PAEs contamination was detected between species, depth or reef exposure. Despite their effects on coral physiology are not yet known, PAEs should be now considered as a novel, and ubiquitous, form of contamination in corals.},
+  langid = {english},
+  file = {C:\Users\ssdon\Zotero\storage\N3Y2UUIC\Montano et al. - 2020 - Spatial variability of phthalates contamination in.pdf}
+}
+
 @article{net2015a,
   title = {Reliable Quantification of Phthalates in Environmental Matrices (Air, Water, Sludge, Sediment and Soil): A Review},
   shorttitle = {Reliable Quantification of Phthalates in Environmental Matrices (Air, Water, Sludge, Sediment and Soil)},
@@ -418,6 +525,23 @@
   file = {C\:\\Users\\ssdon\\Zotero\\storage\\C64KA3JV\\Padilla-Gamiño and Gates - 2012 - Spawning dynamics in the Hawaiian reef-building co.pdf;C\:\\Users\\ssdon\\Zotero\\storage\\F34QBQJG\\Padilla-Gamiño and Gates - 2012 - Spawning dynamics in the Hawaiian reef-building co.pdf}
 }
 
+@article{rendell-bhatti2021,
+  title = {Developmental Toxicity of Plastic Leachates on the Sea Urchin {{Paracentrotus}} Lividus},
+  author = {Rendell-Bhatti, Flora and Paganos, Periklis and Pouch, Anna and Mitchell, Christopher and D’Aniello, Salvatore and Godley, Brendan J. and Pazdro, Ksenia and Arnone, Maria Ina and Jimenez-Guri, Eva},
+  date = {2021-01},
+  journaltitle = {Environmental Pollution},
+  shortjournal = {Environmental Pollution},
+  volume = {269},
+  pages = {115744},
+  issn = {02697491},
+  doi = {10.1016/j.envpol.2020.115744},
+  url = {https://linkinghub.elsevier.com/retrieve/pii/S0269749120364332},
+  urldate = {2023-08-11},
+  abstract = {Microplastic pollution has become ubiquitous, affecting a wide variety of biota. Although microplastics are known to alter the development of a range of marine invertebrates, no studies provide a detailed morphological characterisation of the developmental defects. Likewise, the developmental toxicity of chemicals leached from plastic particles is understudied. The consequences of these developmental effects are likely underestimated, and the effects on ecosystems are unknown. Using the sea urchin Paracentrotus lividus as a model, we studied the effects of leachates of three forms of plastic pellet: new industrial pre-production plastic nurdles, beached pre-production nurdles, and floating filters, known as biobeads, also retrieved from the environment. Our chemical analyses show that leachates from beached pellets (biobead and nurdle pellets) and highly plasticised industrial pellets (PVC) contain polycyclic aromatic hydrocarbons and polychlorinated biphenyls, which are known to be detrimental to development and other life stages of animals. We also demonstrate that these microplastic leachates elicit severe, consistent and treatment-specific developmental abnormalities in P. lividus at embryonic and larval stages. Those embryos exposed to virgin polyethylene leachates with no additives nor environmental contaminants developed normally, suggesting that the abnormalities observed are the result of exposure to either environmentally adsorbed contaminants or pre-existing industrial additives within the polymer matrix. In the light of the chemical contents of the leachates and other characteristics of the plastic particles used, we discuss the phenotypes observed during our study, which include abnormal gastrulation, impaired skeletogenesis, abnormal neurogenesis, redistribution of pigmented cells and embryo radialisation.},
+  langid = {english},
+  file = {C:\Users\ssdon\Zotero\storage\779TFPHV\Rendell-Bhatti et al. - 2021 - Developmental toxicity of plastic leachates on the.pdf}
+}
+
 @article{sanchez-avila2012,
   title = {Organic Micropollutants in Coastal Waters from {{NW Mediterranean Sea}}: {{Sources}} Distribution and Potential Risk},
   shorttitle = {Organic Micropollutants in Coastal Waters from {{NW Mediterranean Sea}}},
@@ -435,6 +559,27 @@
   langid = {english},
   keywords = {Animals,Benzhydryl Compounds,Decapoda,Environmental Monitoring,Fishes,Fresh Water,Gas Chromatography-Mass Spectrometry,Halogenated Diphenyl Ethers,Mediterranean Sea,Microalgae,Pesticides,Phenols,Phthalic Acids,Polychlorinated Biphenyls,Principal Component Analysis,Rivers,Seawater,Solid Phase Extraction,Tandem Mass Spectrometry,Waste Water,Water Pollutants Chemical,Zooplankton},
   file = {C:\Users\ssdon\Zotero\storage\5IWD3A2A\Sánchez-Avila et al. - 2012 - Organic micropollutants in coastal waters from NW .pdf}
+}
+
+@article{shumaker2019,
+  title = {Genome Analysis of the Rice Coral {{Montipora}} Capitata},
+  author = {Shumaker, Alexander and Putnam, Hollie M. and Qiu, Huan and Price, Dana C. and Zelzion, Ehud and Harel, Arye and Wagner, Nicole E. and Gates, Ruth D. and Yoon, Hwan Su and Bhattacharya, Debashish},
+  date = {2019-02-22},
+  journaltitle = {Scientific Reports},
+  shortjournal = {Sci Rep},
+  volume = {9},
+  number = {1},
+  pages = {2571},
+  publisher = {Nature Publishing Group},
+  issn = {2045-2322},
+  doi = {10.1038/s41598-019-39274-3},
+  url = {http://www.nature.com/articles/s41598-019-39274-3},
+  urldate = {2022-04-06},
+  abstract = {Corals comprise a biomineralizing cnidarian, dinoflagellate algal symbionts, and associated microbiome of prokaryotes and viruses. Ongoing efforts to conserve coral reefs by identifying the major stress response pathways and thereby laying the foundation to select resistant genotypes rely on a robust genomic foundation. Here we generated and analyzed a high quality long-read based \textasciitilde 886 Mbp nuclear genome assembly and transcriptome data from the dominant rice coral, Montipora capitata from Hawai’i. Our work provides insights into the architecture of coral genomes and shows how they differ in size and gene inventory, putatively due to population size variation. We describe a recent example of foreign gene acquisition via a bacterial gene transfer agent and illustrate the major pathways of stress response that can be used to predict regulatory components of the transcriptional networks in M. capitata. These genomic resources provide insights into the adaptive potential of these sessile, long-lived species in both natural and human influenced environments and facilitate functional and population genomic studies aimed at Hawaiian reef restoration and conservation.},
+  issue = {1},
+  langid = {english},
+  keywords = {Animals,Anthozoa,Genome,Genome evolution,Molecular evolution,Stress Physiological,Transcription Genetic},
+  file = {C\:\\Users\\ssdon\\Zotero\\storage\\KM6CISMC\\Shumaker et al. - 2019 - Genome analysis of the rice coral Montipora capita.pdf;C\:\\Users\\ssdon\\Zotero\\storage\\R4YRHB8S\\Shumaker et al. - 2019 - Genome analysis of the rice coral Montipora capita.pdf;C\:\\Users\\ssdon\\Zotero\\storage\\JN6MA8N5\\s41598-019-39274-3.html}
 }
 
 @article{sokolowski2024,

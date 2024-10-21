@@ -9,7 +9,7 @@ listing:
     - posts/projects/coral-pae-temp.qmd
     - posts/projects/coral-leachate-heat.qmd
     - posts/projects/coral-embryo-leachate.qmd
-  sort: false
+  sort: 'false'
   type: grid
   grid-item-align: center
   sort-ui: false

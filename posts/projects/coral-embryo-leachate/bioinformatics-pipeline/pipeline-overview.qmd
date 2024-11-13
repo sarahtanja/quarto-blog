@@ -117,8 +117,7 @@ Great example of previous HISAT2 RNA-seq alignment in Sam White's notebook [here
 
 ## 6. Identify differentially expressed genes (DEG)s
 
-```         
--   using `DESeq-2`
-```
+-   `DESeq-2` vignette found [here](https://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#standard-workflow)
+-   [Multifactorial DE Analysis](https://marineomics.github.io/DGE_comparison_v2.html)
 
 ## 7.

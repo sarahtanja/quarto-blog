@@ -1,0 +1,84 @@
+---
+title: "Backup your work"
+subtitle: "using `rsync`"
+author: "Sarah Tanja"
+date: 11/04/2024
+date-format: long
+date-modified: today
+categories: [code]
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
+---
+
+It's good practice to have an active work server that you push code to GitHub, and a backup server that you're not working in for the large files you generate. In case you somehow lock up your active work server, and need to delete it entirely for some unknown error... you have a backup of all the large files you've generated.
+
+I had to do this [here](https://github.com/RobertsLab/resources/issues/1998) , and so this is how to use `rsync` to regularly backup your project directory from one server to another.
+
+Basic `rsync` syntax is:
+
+```{r, eval=FALSE, echo=TRUE}
+rsync -avz /path/to/source user@remote_host:/path/to/destination
+```
+
+An example to backup a directory in raven to gannet:
+
+```{r, eval=FALSE, echo=TRUE}
+
+rsync -avz --progress /home/shared/8TB_HDD_01/stanja \
+--exclude='*.sam' \
+--exclude='tmp*' \
+stanja@gannet.fish.washington.edu:/volume2/web/stanja
+
+```
+
+-   `-a`: Archive mode, which preserves permissions, timestamps, symbolic links, etc.
+
+-   `-v`: Verbose, which provides detailed output of the sync process.
+
+-   `-z`: Compresses data during transfer, which can be helpful for speed, especially over slow networks.
+
+-   `--progress`: Shows progress of the file transfers.
+
+-   `--exclude='*.sam'`: Excludes all files with a `.sam` extension.
+
+-   `--exclude='tmp*'`: Excludes any files or directories that start with `tmp`.
+
+`rsync` is a powerful command-line tool for synchronizing files and directories between two locations on Unix-like systems (such as Linux and macOS). It's particularly useful for backups, mirroring directories, and transferring files over a network efficiently. Here’s an overview of `rsync` and what makes it so valuable:
+
+**Key Features of `rsync`**
+
+1.  **Incremental File Transfer:**
+
+    -   `rsync` transfers only the differences between the source and the destination files. This is done by comparing file changes based on timestamps and file size by default, making it much faster than copying entire files when only small changes were made.
+
+2.  **Compression:**
+
+    -   It can compress data during transfer (using the `-z` option), which is useful for large files and slower network connections.
+
+3.  **Synchronization Over Network with SSH:**
+
+    -   `rsync` supports transferring files over a network connection via SSH, ensuring secure, encrypted file transfers. This is especially important for syncing to remote servers.
+
+4.  **Flexible Exclusions and Inclusions:**
+
+    -   You can use `--exclude` and `--include` options to specify patterns for files and directories you want to exclude from or include in the transfer.
+
+5.  **Preservation of Permissions and Ownership:**
+
+    -   With the `-a` (archive) option, `rsync` can preserve file permissions, ownership, timestamps, and even symbolic links, so the file metadata remains intact between source and destination.
+
+6.  **Logging and Progress Reporting:**
+
+    -   It provides options to log the details of each transfer, and using `--progress` gives real-time feedback on the status of each file being transferred.
+
+::: callout-tip
+**Incomplete Transfers:**
+
+-   If transfers are interrupted, `rsync` can resume where it left off. Simply rerun the command, and it will pick up from the last successful transfer.
+:::

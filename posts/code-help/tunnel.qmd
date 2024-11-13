@@ -1,0 +1,72 @@
+---
+title: "Make a secret tunnel"
+subtitle: "use `.ssh/config` file to connect to a remote server"
+author: "Sarah Tanja"
+draft: true
+date: 11/04/2024
+date-format: long
+date-modified: today
+categories: [code]
+toc: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
+---
+
+## How to setup a 'tunnel' into the remote server
+
+Open a terminal ( I opened my WSL Ubuntu terminal 🐧) and make a .ssh directory in the home directory, and then open the nano text editor to write a config file in the .ssh folder:
+
+```{r, engine='bash', eval=FALSE, echo=TRUE}
+mkdir .ssh nano ~/.ssh/config
+```
+
+::: callout-tip
+The .ssh directory is hidden because it starts with a `.`, and you won't see it unless you run `ls -a`
+:::
+
+In the nano text editor I copied the following:
+
+```{r, engine='bash', eval=FALSE, echo=TRUE}
+# secret tunnel     
+Host <server>_tunnel         
+    HostName <123.45.678.90>         
+    User <username>         
+    ControlMaster auto         
+    ServerAliveInterval 30         
+    ServerAliveCountMax 1200         
+    ForwardX11 yes         
+    LocalForward localhost:9000 127.0.0.1:9000
+```
+
+where:
+
+-   **\<server\>** is the remote server name (make this short and sweet, since you will execute this as a command later on and must needs type it out)
+
+-   **\<123.45.678.90\>** is the remote server IP address in the HostName field
+
+-   **\<username**\> is the username setup for the remote server in the User field
+
+I saved the config file by writing it out (Ctrl+X) and pressing Enter.
+
+Next, I tested the tunnel by opening a new Linux Ubuntu terminal and running:
+
+```{r, engine='bash', eval=FALSE, echo=TRUE}
+ssh <server>_tunnel
+```
+
+In addition, you can test direct access to the remote server (not using the tunnel) with:
+
+```{r, engine='bash', eval=FALSE, echo=TRUE}
+ssh <username>@<IP-address>
+```
+
+The tunnel connected me to the remote server and prompted me to enter the password associated with my user on the remote server.
+
+::: callout-tip
+Once tunneled into the remote server you'll notice the \<username\>\@\<server\> in the terminal changes from your local computer to the remote server.
+:::

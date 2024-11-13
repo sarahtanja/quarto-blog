@@ -10,7 +10,89 @@
 <atom:link href="https://sarahtanja.github.io/quarto-blog/posts.xml" rel="self" type="application/rss+xml"/>
 <description>This Open Lab Notebook is a creative landing space for learning about Bioinformatics, Marine Botany, &amp; Data Science. It&#39;s mostly for me, but also for you! 😘</description>
 <generator>quarto-1.2.335</generator>
-<lastBuildDate>Tue, 08 Oct 2024 07:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 04 Nov 2024 08:00:00 GMT</lastBuildDate>
+<item>
+  <title>Backup your work</title>
+  <dc:creator>Sarah Tanja</dc:creator>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/code-help/backup.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>It’s good practice to have an active work server that you push code to GitHub, and a backup server that you’re not working in for the large files you generate. In case you somehow lock up your active work server, and need to delete it entirely for some unknown error… you have a backup of all the large files you’ve generated.</p>
+<p>I had to do this <a href="https://github.com/RobertsLab/resources/issues/1998">here</a> , and so this is how to use <code>rsync</code> to regularly backup your project directory from one server to another.</p>
+<p>Basic <code>rsync</code> syntax is:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">rsync <span class="sc" style="color: #5E5E5E;">-</span>avz <span class="sc" style="color: #5E5E5E;">/</span>path<span class="sc" style="color: #5E5E5E;">/</span>to<span class="sc" style="color: #5E5E5E;">/</span>source user<span class="sc" style="color: #5E5E5E;">@</span>remote_host<span class="sc" style="color: #5E5E5E;">:</span><span class="er" style="color: #AD0000;">/</span>path<span class="sc" style="color: #5E5E5E;">/</span>to<span class="sc" style="color: #5E5E5E;">/</span>destination</span></code></pre></div>
+</div>
+<p>An example to backup a directory in raven to gannet:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">rsync <span class="sc" style="color: #5E5E5E;">-</span>avz <span class="sc" style="color: #5E5E5E;">--</span>progress <span class="sc" style="color: #5E5E5E;">/</span>home<span class="sc" style="color: #5E5E5E;">/</span>shared<span class="sc" style="color: #5E5E5E;">/</span>8TB_HDD_01<span class="sc" style="color: #5E5E5E;">/</span>stanja \</span>
+<span id="cb2-2"><span class="sc" style="color: #5E5E5E;">--</span>exclude<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">'*.sam'</span> \</span>
+<span id="cb2-3"><span class="sc" style="color: #5E5E5E;">--</span>exclude<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">'tmp*'</span> \</span>
+<span id="cb2-4">stanja<span class="sc" style="color: #5E5E5E;">@</span>gannet.fish.washington.edu<span class="sc" style="color: #5E5E5E;">:</span><span class="er" style="color: #AD0000;">/</span>volume2<span class="sc" style="color: #5E5E5E;">/</span>web<span class="sc" style="color: #5E5E5E;">/</span>stanja</span></code></pre></div>
+</div>
+<ul>
+<li><p><code>-a</code>: Archive mode, which preserves permissions, timestamps, symbolic links, etc.</p></li>
+<li><p><code>-v</code>: Verbose, which provides detailed output of the sync process.</p></li>
+<li><p><code>-z</code>: Compresses data during transfer, which can be helpful for speed, especially over slow networks.</p></li>
+<li><p><code>--progress</code>: Shows progress of the file transfers.</p></li>
+<li><p><code>--exclude='*.sam'</code>: Excludes all files with a <code>.sam</code> extension.</p></li>
+<li><p><code>--exclude='tmp*'</code>: Excludes any files or directories that start with <code>tmp</code>.</p></li>
+</ul>
+<p><code>rsync</code> is a powerful command-line tool for synchronizing files and directories between two locations on Unix-like systems (such as Linux and macOS). It’s particularly useful for backups, mirroring directories, and transferring files over a network efficiently. Here’s an overview of <code>rsync</code> and what makes it so valuable:</p>
+<p><strong>Key Features of <code>rsync</code></strong></p>
+<ol type="1">
+<li><p><strong>Incremental File Transfer:</strong></p>
+<ul>
+<li><code>rsync</code> transfers only the differences between the source and the destination files. This is done by comparing file changes based on timestamps and file size by default, making it much faster than copying entire files when only small changes were made.</li>
+</ul></li>
+<li><p><strong>Compression:</strong></p>
+<ul>
+<li>It can compress data during transfer (using the <code>-z</code> option), which is useful for large files and slower network connections.</li>
+</ul></li>
+<li><p><strong>Synchronization Over Network with SSH:</strong></p>
+<ul>
+<li><code>rsync</code> supports transferring files over a network connection via SSH, ensuring secure, encrypted file transfers. This is especially important for syncing to remote servers.</li>
+</ul></li>
+<li><p><strong>Flexible Exclusions and Inclusions:</strong></p>
+<ul>
+<li>You can use <code>--exclude</code> and <code>--include</code> options to specify patterns for files and directories you want to exclude from or include in the transfer.</li>
+</ul></li>
+<li><p><strong>Preservation of Permissions and Ownership:</strong></p>
+<ul>
+<li>With the <code>-a</code> (archive) option, <code>rsync</code> can preserve file permissions, ownership, timestamps, and even symbolic links, so the file metadata remains intact between source and destination.</li>
+</ul></li>
+<li><p><strong>Logging and Progress Reporting:</strong></p>
+<ul>
+<li>It provides options to log the details of each transfer, and using <code>--progress</code> gives real-time feedback on the status of each file being transferred.</li>
+</ul></li>
+</ol>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Incomplete Transfers:</strong></p>
+<ul>
+<li>If transfers are interrupted, <code>rsync</code> can resume where it left off. Simply rerun the command, and it will pick up from the last successful transfer.</li>
+</ul>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <category>code</category>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/code-help/backup.html</guid>
+  <pubDate>Mon, 04 Nov 2024 08:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Submitting NGS sequences to NCBI SRA</title>
   <dc:creator>Sarah Tanja</dc:creator>
@@ -2879,156 +2961,6 @@ Warning
   <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/13aug2024-extraction/13aug2024-extraction.html</guid>
   <pubDate>Tue, 13 Aug 2024 07:00:00 GMT</pubDate>
   <media:content url="https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/13aug2024-extraction/nanodrop_13AUG2024.PNG" medium="image"/>
-</item>
-<item>
-  <title>12-Aug-2024 Embryo RNA Extractions</title>
-  <dc:creator>Sarah Tanja</dc:creator>
-  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/12aug2024-extraction/12aug2024-extraction.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="samples" class="level1">
-<h1>Samples</h1>
-<ul>
-<li><p>6C14F (single sample ~10 embryos)</p></li>
-<li><p>7C14F (single sample ~10 embryos)</p></li>
-<li><p>6C9F, 7C9F = 67C9F (pooled sample. ~20 embryos)</p></li>
-</ul>
-</section>
-<section id="summary" class="level1">
-<h1>Summary</h1>
-<p>No success with RNA quantity as measured by Nanodrop or Broad Range Qubit Assay.</p>
-<p>I think I should increase starting sample size, and look into alternative sample prep for delicate embryos (as compared with adult coral fragments).</p>
-<p>I can’t be sure that waiting too long during the DNase Treatment didn’t degrade all the RNA, next round be careful not to go over the 15 minute DNase I incubation time.</p>
-</section>
-<section id="extraction-notes" class="level1">
-<h1>Extraction Notes</h1>
-<p>date: 12-AUG-2024</p>
-<p>kit: Zymo Quick-DNA/RNA Miniprep Plus Kit</p>
-<p>Followed protocol according to my post [M. Capitata Embryo DNA/RNA Extractions Protocol] (https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/embryo-extractions.html#proteinase-k-digestion) with these changes:</p>
-<ul>
-<li><p>Lysed samples via Bead Bashing in a full 2mL Zymo BeadBashing (0.1 - 0.5mm glass bead) Tube with a total volume of 1mL of DNA/RNA Shield</p></li>
-<li><p>Transfered 500uL of cleared supernatent to a new nuclease-free tube, making sure not to disturb beads and debris at the bottom of the bead-bashing tube</p></li>
-<li><p>Conducted Proteinase K digestion as follows:</p>
-<ul>
-<li><p>Get the Proteinase K out of the -20 freezer &amp; set the heat-block to warm up to 55C for 30mins</p></li>
-<li><p>After bead bashing, tubes are ‘intensely bubbly’, to tamp down bubbles, centrifuge in the mini-centrifuge for 1min</p></li>
-<li><p>Transfer 500uL of supernatent to a new nuclease-free tube, making sure not to disturb beads and debris at the bottom of the bead-bashing tube2</p></li>
-<li><p>Add Proteinase K &amp; Buffer</p></li>
-<li><p>Add the appropriate volume of Pro K buffer and Proteinase K (Proteinase K is stored in the -20 after being reconstituted)</p></li>
-<li><p>(10:1 ratio of sample:digestion buffer) &amp; (2:1 ratio of digestion buffer:Proteinase K)</p></li>
-<li><p>For tubes with approximately 500uL of sample add:</p></li>
-<li><p>50ul pro K buffer 25ul proteinase K Vortex to mix</p></li>
-<li><p>Incubate in the heat-block for 30mins at 55C</p></li>
-<li><p>Vortex to mix &amp; centrifuge on max for 2mins to pellet any debris</p></li>
-<li><p>Transfer 350uL of the cleared supernatent to a new 1.5mL nuclease-free tube, making sure not to disturb any debris at the bottom of the tube</p></li>
-<li><p>Add 350uL of DNA/RNA Lysis Buffer to the supernatent(1:1) and vortex to mix</p></li>
-</ul></li>
-<li><p>I let DNase I treatment incubate at room temperature for 1 hour (instead of 15 minutes)</p></li>
-</ul>
-<p>eluted DNA volume: 30uL in <code>Zymo DNase-RNase Free Water</code></p>
-<p>eluted RNA volume: 30uL in <code>Zymo DNase-RNase Free Water</code></p>
-</section>
-<section id="nanodrop" class="level1">
-<h1>Nanodrop</h1>
-<section id="rna" class="level2">
-<h2 class="anchored" data-anchor-id="rna">RNA</h2>
-<table class="table">
-<thead>
-<tr class="header">
-<th>sample_id</th>
-<th>ng/uL</th>
-<th>A260</th>
-<th>A280</th>
-<th>260/280</th>
-<th>260/230</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>6C14F</td>
-<td>1.6</td>
-<td>0.039</td>
-<td>0.008</td>
-<td>5.12</td>
-<td>5.40</td>
-</tr>
-<tr class="even">
-<td>7C14F</td>
-<td>3.2</td>
-<td>0.081</td>
-<td>0.044</td>
-<td>1.82</td>
-<td>0.86</td>
-</tr>
-<tr class="odd">
-<td>67C9F</td>
-<td>1.0</td>
-<td>0.025</td>
-<td>0.002</td>
-<td>10.94</td>
-<td>1.12</td>
-</tr>
-</tbody>
-</table>
-<p><img src="https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/12aug2024-extraction/nanodrop_12AUG2024.png" class="img-fluid"></p>
-</section>
-</section>
-<section id="qubit" class="level1">
-<h1>Qubit</h1>
-<section id="rna-1" class="level2">
-<h2 class="anchored" data-anchor-id="rna-1">RNA</h2>
-<p>Using the Invitrogen Thermo Fischer RNA Broad Range Assay Kit.</p>
-<p>Prepared working solution for 3 samples and two standards:</p>
-<p>Qubit RNA BR reagent in DMSO = 1uL * 5 = 5uL</p>
-<p>Qubit RNA BR Buffer = 199uL * 5 = 995uL</p>
-<p>standard 1:</p>
-<p>standard 2:</p>
-<p>RunID: 2024-08-13_062825</p>
-<table class="table">
-<thead>
-<tr class="header">
-<th>sample_id</th>
-<th>qubit_rna_1</th>
-<th>qubit_rna_2</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>6C14F</td>
-<td>too low</td>
-<td>too low</td>
-</tr>
-<tr class="even">
-<td>7C14F</td>
-<td>too low</td>
-<td>too low</td>
-</tr>
-<tr class="odd">
-<td>67C9F</td>
-<td>too low</td>
-<td>too low</td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
-<section id="storage-location" class="level1">
-<h1>Storage Location</h1>
-<p>RNA samples are stored in -80C ‘Old Friedman’ Sanyo freezer on shelf 1 in <code>coral-embryo-leachate RNA</code> wax freezer boxes with green label tape.</p>
-<p>DNA samples (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate DNA</code> wax freezer box with yellow label tape.</p>
-<p>Protein flow-through (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate PROTEIN</code> wax freezer box with blue label tape.</p>
-
-
-</section>
-
- ]]></description>
-  <category>lab records</category>
-  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/12aug2024-extraction/12aug2024-extraction.html</guid>
-  <pubDate>Mon, 12 Aug 2024 07:00:00 GMT</pubDate>
-  <media:content url="https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/12aug2024-extraction/nanodrop_12AUG2024.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>

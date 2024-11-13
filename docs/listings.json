@@ -54,6 +54,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/code-help/backup.html",
       "/posts/ncbi-sra-submission/ncbi-sra-submission.html",
       "/posts/sftp-azenta/azenta-sftp.html",
       "/posts/projects/coral-embryo-leachate/bioinformatics-pipeline/pipeline-overview.html",
@@ -91,13 +92,13 @@
       "/posts/projects/anemone/photosynth-pam/photosynth-pam.html",
       "/posts/rnoaa/index.html",
       "/posts/projects/anemone/plan/project-planning.html",
+      "/posts/code-help/quarto-blog-create.html",
       "/posts/pseudoreplication/index.html",
-      "/posts/quarto-blog-create/index.html",
       "/posts/world-phthalates/index.html",
       "/posts/committee-2/index.html",
       "/posts/thesis-progress/thesis-progress.html",
       "/posts/pae-standard-control/index.html",
-      "/posts/git-reset/index.html",
+      "/posts/code-help/git-reset.html",
       "/posts/dna-rna-extraction-protocol/index.html",
       "/posts/rna-woes/index.html",
       "/posts/qiime-jupyter-start/index.html",

@@ -34,7 +34,7 @@ This guide is meant to illustrate the categories of embryonic development in *Mo
 
 Note that the phases in **bold** are the ones that we expect our embryos to be in based on hours post fertilization that they were preserved in 4% ZFIX. In this study, we conducted bundle-bundle crosses in 20mL of treatment solution (either a 0.22 micron filtered seawater `control`, or three increasing levels of PVC leachate derived from microplastics: 0.01 mg/L PVC leachate `low`, 0.1mg/L PVC leachate `mid`, or 1mg/L PVC leachate `high`).
 
-# 
+For a basic introduction to using NIS Elements Annotation & Measurement tool, check out [this elearning video](https://www.microscope.healthcare.nikon.com/resources/e-learning/annotations-and-measurements).
 
 # Oocyte
 

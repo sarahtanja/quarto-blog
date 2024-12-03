@@ -928,7 +928,7 @@
     "href": "posts/projects/coral-embryo-leachate/bioinformatics-pipeline/pipeline-overview.html#align-to-reference-genome",
     "title": "Bioinformatics Pipeline Roadmap",
     "section": "3. Align to reference genome",
-    "text": "3. Align to reference genome\n\n\n\n\n\n\nGreat example of previous HISAT2 RNA-seq alignment in Sam White’s notebook here\n\n\n\n\nObtain reference genome assembly & GFF annotation file\n\nGenome Version 3 [@stephens2022]\nGFF from Rutgers (or GFF fixed from AHuffmyer?)\ngenomes, indexes, & feature tracks from Roberts Lab Handbook\n\nAlign sequences to genome\n\nusing HISAT-2 [@zhang_rapid_2021]"
+    "text": "3. Align to reference genome\n\n\n\n\n\n\nGreat example of previous HISAT2 RNA-seq alignment in Sam White’s notebook here and Steven Robert’s examples here\n\n\n\n\nObtain reference genome assembly & GFF annotation file\n\nGenome Version 3 [@stephens2022]\nGFF from Rutgers (or GFF fixed from AHuffmyer?)\ngenomes, indexes, & feature tracks from Roberts Lab Handbook\n\nAlign sequences to genome\n\nusing HISAT-2 [@zhang_rapid_2021]"
   },
   {
     "objectID": "posts/projects/coral-embryo-leachate/bioinformatics-pipeline/pipeline-overview.html#assemble",
@@ -949,7 +949,7 @@
     "href": "posts/projects/coral-embryo-leachate/bioinformatics-pipeline/pipeline-overview.html#identify-differentially-expressed-genes-degs",
     "title": "Bioinformatics Pipeline Roadmap",
     "section": "6. Identify differentially expressed genes (DEG)s",
-    "text": "6. Identify differentially expressed genes (DEG)s\n-   using `DESeq-2`"
+    "text": "6. Identify differentially expressed genes (DEG)s\n\nDESeq-2 vignette found here\nMultifactorial DE Analysis"
   },
   {
     "objectID": "posts/projects/coral-embryo-leachate/bioinformatics-pipeline/pipeline-overview.html#section",

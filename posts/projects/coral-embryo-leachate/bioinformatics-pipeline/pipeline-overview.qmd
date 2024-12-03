@@ -97,7 +97,7 @@ Some great examples of previous QAQC scripts generated for *Montipora capitata* 
 ## 3. Align to reference genome
 
 ::: {.callout-note appearance="minimal"}
-Great example of previous HISAT2 RNA-seq alignment in Sam White's notebook [here](https://robertslab.github.io/sams-notebook/posts/2024/2024-10-08-RNA-seq-Alignment---A.pulchra-RNA-seq-Alignments-Using-HISAT2-and-StringTie-for-Azenta-Project-30-1047560508/index.html)
+Great example of previous HISAT2 RNA-seq alignment in Sam White's notebook [here](https://robertslab.github.io/sams-notebook/posts/2024/2024-10-08-RNA-seq-Alignment---A.pulchra-RNA-seq-Alignments-Using-HISAT2-and-StringTie-for-Azenta-Project-30-1047560508/index.html) and Steven Robert's examples [here](https://sr320.github.io/tumbling-oysters/#category=hisat)
 :::
 
 -   Obtain reference genome assembly & GFF annotation file

@@ -325,7 +325,7 @@ Connected to sftp.genewiz.com.</code></pre>
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Great example of previous HISAT2 RNA-seq alignment in Sam White’s notebook <a href="https://robertslab.github.io/sams-notebook/posts/2024/2024-10-08-RNA-seq-Alignment---A.pulchra-RNA-seq-Alignments-Using-HISAT2-and-StringTie-for-Azenta-Project-30-1047560508/index.html">here</a></p>
+<p>Great example of previous HISAT2 RNA-seq alignment in Sam White’s notebook <a href="https://robertslab.github.io/sams-notebook/posts/2024/2024-10-08-RNA-seq-Alignment---A.pulchra-RNA-seq-Alignments-Using-HISAT2-and-StringTie-for-Azenta-Project-30-1047560508/index.html">here</a> and Steven Robert’s examples <a href="https://sr320.github.io/tumbling-oysters/#category=hisat">here</a></p>
 </div>
 </div>
 </div>
@@ -356,7 +356,10 @@ Connected to sftp.genewiz.com.</code></pre>
 </section>
 <section id="identify-differentially-expressed-genes-degs" class="level2">
 <h2 class="anchored" data-anchor-id="identify-differentially-expressed-genes-degs">6. Identify differentially expressed genes (DEG)s</h2>
-<pre><code>-   using `DESeq-2`</code></pre>
+<ul>
+<li><code>DESeq-2</code> vignette found <a href="https://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#standard-workflow">here</a></li>
+<li><a href="https://marineomics.github.io/DGE_comparison_v2.html">Multifactorial DE Analysis</a></li>
+</ul>
 </section>
 <section id="section" class="level2">
 <h2 class="anchored" data-anchor-id="section">7.</h2>

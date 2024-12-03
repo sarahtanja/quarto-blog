@@ -113,8 +113,13 @@ Great example of previous HISAT2 RNA-seq alignment in Sam White's notebook [here
 ## 4. Create gene expression count matrix
 
 -   Python script `prepDE.py` from Steven's [Differentially Expressed Genes](https://sr320.github.io/tumbling-oysters/posts/sr320-15-coddeg/#5-stringtie) post
+-   Another example by Sam [here](https://robertslab.github.io/sams-notebook/posts/2024/2024-10-08-RNA-seq-Alignment---A.pulchra-RNA-seq-Alignments-Using-HISAT2-and-StringTie-for-Azenta-Project-30-1047560508/#generate-checksums) which uses `python3`
 
-## 5. Identify differentially expressed genes (DEG)s
+## 5. Data exploration using R & DESeq2
+
+-   `DESeq-2` vignette found [here](https://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#standard-workflow)
+
+## 6. Identify differentially expressed genes (DEG)s
 
 -   `DESeq-2` vignette found [here](https://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#standard-workflow)
 

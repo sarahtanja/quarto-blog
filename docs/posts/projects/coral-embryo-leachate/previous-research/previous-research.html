@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,14 +19,15 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -40,8 +41,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -79,7 +79,8 @@ div.csl-indent {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -101,47 +102,48 @@ div.csl-indent {
     <span class="navbar-title">Sarah Tanja’s Open Lab Notebook</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/sarah-tanja-595722146/"><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/sarah-tanja-595722146/" rel="" target=""><i class="bi bi-linkedin" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-github" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-github" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
       <i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-github">    
         <li>
-    <a class="dropdown-item" href="https://github.com/sarahtanja">
+    <a class="dropdown-item" href="https://github.com/sarahtanja" rel="" target="">
  <span class="dropdown-text">Sarah’s GitHub</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-embryo-leachate">
+    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-embryo-leachate" rel="" target="">
  <span class="dropdown-text">Coral Embryology Project Repository</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-leachate-heat">
+    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-leachate-heat" rel="" target="">
  <span class="dropdown-text">Coral Photophysiology Project Repository</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://github.com/sarahtanja/anemone-leachate-heat">
+    <a class="dropdown-item" href="https://github.com/sarahtanja/anemone-leachate-heat" rel="" target="">
  <span class="dropdown-text">Anemone Photophysiology Project Repository</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-pae-temp">
+    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-pae-temp" rel="" target="">
  <span class="dropdown-text">Coral Microbiome Project Repository</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-envelope-paper" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-envelope-paper" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
       <i class="bi bi-envelope-paper" role="img">
 </i> 
  <span class="menu-text"></span>
@@ -149,24 +151,28 @@ div.csl-indent {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-envelope-paper">    
         <li class="dropdown-header">stanja@uw.edu</li>
         <li>
-    <a class="dropdown-item" href="../../../../contact.html">
+    <a class="dropdown-item" href="../../../../contact.html" rel="" target="">
  <span class="dropdown-text">Contact</span></a>
   </li>  
     </ul>
   </li>
 </ul>
-              <div class="quarto-toggle-container">
-                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-              </div>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Summary of previous research on microplastic leachate exposure in marine invertebrate embryonic development</h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Summary of previous research on microplastic leachate exposure in marine invertebrate embryonic development</li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -175,7 +181,7 @@ div.csl-indent {
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title d-none d-lg-block">Summary of previous research on microplastic leachate exposure in marine invertebrate embryonic development</h1>
+      <h1 class="title">Summary of previous research on microplastic leachate exposure in marine invertebrate embryonic development</h1>
             <p class="subtitle lead">In sea urchin and mussel model organisms</p>
                                 <div class="quarto-categories">
                 <div class="quarto-category">learning journey</div>
@@ -204,7 +210,7 @@ div.csl-indent {
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">December 3, 2024</p>
+        <p class="date-modified">March 31, 2025</p>
       </div>
     </div>
       
@@ -213,27 +219,30 @@ div.csl-indent {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
-      <div class="mt-2 flex-shrink-0 align-items-center">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../projects.html" class="sidebar-item-text sidebar-link">Projects</a>
+  <a href="../../../../projects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projects</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../posts.html" class="sidebar-item-text sidebar-link">Posts</a>
+  <a href="../../../../posts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Posts</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../about.html" class="sidebar-item-text sidebar-link">About</a>
+  <a href="../../../../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
   </div>
 </li>
     </ul>
@@ -251,6 +260,7 @@ div.csl-indent {
   </ul>
 </nav>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
@@ -268,7 +278,7 @@ div.csl-indent {
 <li><p>Their 10% PVC leachate dose is 6.5g PVC pellets/100mL seawater, which is 65 grams of plastic in 1L of seawater… This compared to our 1mg/L ‘high’ dose is 65k times more highly concentrated!)</p></li>
 </ul>
 </li></div></div>
-<div class="no-row-height column-margin column-container"><div id="ref-jimenez-guri2023" class="csl-entry" role="doc-biblioentry">
+<div class="no-row-height column-margin column-container"><div id="ref-jimenez-guri2023" class="csl-entry" role="listitem">
 Jimenez-Guri, Eva, Carola Murano, Periklis Paganos, and Maria Ina Arnone. 2023. <span>“<span>PVC</span> Pellet Leachates Affect Adult Immune System and Embryonic Development but Not Reproductive Capacity in the Sea Urchin <span>Paracentrotus</span> Lividus.”</span> <em>Marine Pollution Bulletin</em> 196 (November): 115604. <a href="https://doi.org/10.1016/j.marpolbul.2023.115604">https://doi.org/10.1016/j.marpolbul.2023.115604</a>.
 </div></div><p>Embryos were culled at 24 and 48 hours and imaged and categorized as ‘developed’, ‘aberrant’, and ‘not developed’.</p>
 <blockquote class="blockquote">
@@ -280,7 +290,7 @@ Jimenez-Guri, Eva, Carola Murano, Periklis Paganos, and Maria Ina Arnone. 2023. 
 <p><strong>Developmental toxicity of plastic leachates on the sea urchin <em>Paracentrotus lividus</em></strong></p>
 <blockquote class="blockquote page-columns page-full">
 <p>Using the sea urchin Paracentrotus lividus as a model, we studied the effects of leachates of three forms of plastic pellet: new industrial pre-production plastic nurdles, beached pre-production nurdles, and floating filters, known as biobeads, also retrieved from the environment. Our chemical analyses show that leachates from beached pellets (biobead and nurdle pellets) and highly plasticised industrial pellets (PVC) contain polycyclic aromatic hydrocarbons and polychlorinated biphenyls, which are known to be detrimental to development and other life stages of animals. We also demonstrate that these microplastic leachates elicit severe, consistent and treatment-specific developmental abnormalities in P. lividus at embryonic and larval stages. Those embryos exposed to virgin polyethylene leachates with no additives nor environmental contaminants developed normally, suggesting that the abnormalities observed are the result of exposure to either environmentally adsorbed contaminants or pre-existing industrial additives within the polymer matrix. In the light of the chemical contents of the leachates and other characteristics of the plastic particles used, we discuss the phenotypes observed during our study, which include abnormal gastrulation, impaired skeletogenesis, abnormal neurogenesis, redistribution of pigmented cells and embryo radialisation <span class="citation" data-cites="rendell-bhatti2021">(<a href="#ref-rendell-bhatti2021" role="doc-biblioref">Rendell-Bhatti et al. 2021</a>)</span>.</p>
-<div class="no-row-height column-margin column-container"><div id="ref-rendell-bhatti2021" class="csl-entry" role="doc-biblioentry">
+<div class="no-row-height column-margin column-container"><div id="ref-rendell-bhatti2021" class="csl-entry" role="listitem">
 Rendell-Bhatti, Flora, Periklis Paganos, Anna Pouch, Christopher Mitchell, Salvatore D’Aniello, Brendan J. Godley, Ksenia Pazdro, Maria Ina Arnone, and Eva Jimenez-Guri. 2021. <span>“Developmental Toxicity of Plastic Leachates on the Sea Urchin <span>Paracentrotus</span> Lividus.”</span> <em>Environmental Pollution</em> 269 (January): 115744. <a href="https://doi.org/10.1016/j.envpol.2020.115744">https://doi.org/10.1016/j.envpol.2020.115744</a>.
 </div></div></blockquote>
 <p>This study used the same leachate preparation and concentrations as above.</p>
@@ -290,7 +300,7 @@ Rendell-Bhatti, Flora, Periklis Paganos, Anna Pouch, Christopher Mitchell, Salva
 <p><strong>High concentrations of phthalates affect the early development of the sea urchin <em>Paracentrotus lividus</em></strong></p>
 <blockquote class="blockquote page-columns page-full">
 <p>The toxicity of three phthalates (PAEs) - butylbenzyl phthalate (BBP), diethyl phthalate (DEP), and di-(2-ethylhexyl) phthalate (DEHP) - was tested on the Mediterranean sea urchin Paracentrotus lividus. Fertilized eggs were exposed to environmental and high PAE concentrations for 72 h. The potential toxic effects on larval development and any morphological anomalies were then assessed to estimate PAEs impact. Environmental concentrations never affected development, while high concentrations induced toxic effects in larvae exposed to BBP (EC50: 2.9 ×103 μg/L) and DEHP (EC50: 3.72 ×103 μg/L). High concentrations caused skeletal anomalies, with a slight to moderate impact for DEP/DEHP and BBP, respectively. PAE toxicity was: BBP&gt;DEHP&gt;DEP. In conclusion, the three PAEs at environmental concentrations do not pose a risk to sea urchins. However, PAE concentrations should be further monitored in order not to constitute a concern to marine species, especially at their early developmental stages. - <span class="citation" data-cites="gambardella2024">Gambardella et al. (<a href="#ref-gambardella2024" role="doc-biblioref">2024</a>)</span></p>
-<div class="no-row-height column-margin column-container"><div id="ref-gambardella2024" class="csl-entry" role="doc-biblioentry">
+<div class="no-row-height column-margin column-container"><div id="ref-gambardella2024" class="csl-entry" role="listitem">
 Gambardella, Chiara, Roberta Miroglio, Marina Prieto Amador, Filippo Castelli, Laura Castellano, Veronica Piazza, Marco Faimali, and Francesca Garaventa. 2024. <span>“High Concentrations of Phthalates Affect the Early Development of the Sea Urchin <span><em>Paracentrotus</em></span><span> <em>Lividus</em></span>.”</span> <em>Ecotoxicology and Environmental Safety</em> 279 (July): 116473. <a href="https://doi.org/10.1016/j.ecoenv.2024.116473">https://doi.org/10.1016/j.ecoenv.2024.116473</a>.
 </div></div></blockquote>
 </section>
@@ -299,7 +309,7 @@ Gambardella, Chiara, Roberta Miroglio, Marina Prieto Amador, Filippo Castelli, L
 <p><strong>Leachate from microplastics impairs larval development in brown mussels</strong></p>
 <blockquote class="blockquote page-columns page-full">
 <p>In this study, we conducted experiments to evaluate the toxicity of leachates from virgin and beached plastic pellets to embryo development of the brown mussel (Perna perna). We compared the efficiency of two test procedures, and evaluated the toxicity of beached pellets collected in a coastal marine protected area. We observed that mussel embryo is sensitive to leachate from both virgin and beached pellets. However, the toxicity of the leachate from beached pellets was much higher than that of virgin pellets. We suggest contaminants adsorbed onto the surface of beached pellets were responsible for the high toxicity of leachate from beached pellets, while the toxicity of leachate from virgin pellets was mainly due to plastic additives. Our results suggest microplastic debris may be harmful even if ingestion is not the only or main pathway of interaction of marine organisms with contaminated plastic debris. - <span class="citation" data-cites="gandaraesilva2016">Gandara e Silva et al. (<a href="#ref-gandaraesilva2016" role="doc-biblioref">2016</a>)</span></p>
-<div class="no-row-height column-margin column-container"><div id="ref-gandaraesilva2016" class="csl-entry" role="doc-biblioentry">
+<div class="no-row-height column-margin column-container"><div id="ref-gandaraesilva2016" class="csl-entry" role="listitem">
 Gandara e Silva, Pablo Pena, Caio Rodrigues Nobre, Pryscila Resaffe, Camilo Dias Seabra Pereira, and Felipe Gusmão. 2016. <span>“Leachate from Microplastics Impairs Larval Development in Brown Mussels.”</span> <em>Water Research</em> 106 (December): 364–70. <a href="https://doi.org/10.1016/j.watres.2016.10.016">https://doi.org/10.1016/j.watres.2016.10.016</a>.
 </div></div></blockquote>
 </section>
@@ -308,7 +318,7 @@ Gandara e Silva, Pablo Pena, Caio Rodrigues Nobre, Pryscila Resaffe, Camilo Dias
 <p><strong>Consequences of combined exposure to thermal stress and the plasticiser DEHP in <em>Mytilus spp.</em> differ by sex</strong></p>
 <blockquote class="blockquote page-columns page-full">
 <p>Little is known about the combined effect of environmental factors and contaminants on commercially important marine species, and whether this effect differs by sex. In this study, blue mussels were exposed for seven days to both single and combined stressors (i.e., +3 ◦C elevated temperature and two environmentally relevant concentrations of the plastic softener DEHP, 0.5 and 50 μg/l) in a factorial design. Males were observed to be more sensitive to high temperature, demonstrated by the significant increase in out-of-season spawning gonads and higher gene expression of the antioxidant catalase and the estrogen receptor genes. On the other hand, while the gametogenesis cycle in females was more resilient than in males, DEHP exposure altered the estrogen-related receptor gene expression. We show that the combined stressors DEHP and increased temperature, in environmentally relevant magnitudes, have different consequences in male and female mussels, with the potential to impact the timing and breeding season success in Mytilus spp. - <span class="citation" data-cites="mincarelli2021">Mincarelli et al. (<a href="#ref-mincarelli2021" role="doc-biblioref">2021</a>)</span></p>
-<div class="no-row-height column-margin column-container"><div id="ref-mincarelli2021" class="csl-entry" role="doc-biblioentry">
+<div class="no-row-height column-margin column-container"><div id="ref-mincarelli2021" class="csl-entry" role="listitem">
 Mincarelli, Luana Fiorella, Jeanette M. Rotchell, Emma C. Chapman, Alexander P. Turner, and Katharina C. Wollenberg Valero. 2021. <span>“Consequences of Combined Exposure to Thermal Stress and the Plasticiser <span>DEHP</span> in <span>Mytilus</span> Spp. Differ by Sex.”</span> <em>Marine Pollution Bulletin</em> 170 (September): 112624. <a href="https://doi.org/10.1016/j.marpolbul.2021.112624">https://doi.org/10.1016/j.marpolbul.2021.112624</a>.
 </div></div></blockquote>
 </section>
@@ -317,7 +327,7 @@ Mincarelli, Luana Fiorella, Jeanette M. Rotchell, Emma C. Chapman, Alexander P. 
 <p><strong>Plastic leachate-induced toxicity during sea urchin embryonic development: Insights into the molecular pathways affected by PVC</strong></p>
 <blockquote class="blockquote page-columns page-full">
 <p>ere we investigate the effects of leachates from new and beach-collected pellets on the embryonic and&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/larval-development" title="Learn more about larval development from ScienceDirect's AI-generated Topic Pages">larval development</a>&nbsp;of the&nbsp;<a href="https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/sea-urchin" title="Learn more about sea urchin from ScienceDirect's AI-generated Topic Pages">sea urchin</a>&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/strongylocentrotus-purpuratus" title="Learn more about Strongylocentrotus purpuratus from ScienceDirect's AI-generated Topic Pages">Strongylocentrotus purpuratus</a>&nbsp;and demonstrate that exposure of developing embryos to these leachates elicits severe, consistent and treatment-specific developmental abnormalities including radialisation of the embryo and&nbsp;<a href="https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/congenital-malformation" title="Learn more about malformation from ScienceDirect's AI-generated Topic Pages">malformation</a>&nbsp;of the&nbsp;<a href="https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/skeleton" title="Learn more about skeleton from ScienceDirect's AI-generated Topic Pages">skeleton</a>, neural and&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/immunocompetent-cell" title="Learn more about immune cells from ScienceDirect's AI-generated Topic Pages">immune cells</a>. Using a multi-omics approach we define the developmental pathways disturbed upon exposure to PVC leachates and provide a mechanistic view that pinpoints cellular&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/redox-stress" title="Learn more about redox stress from ScienceDirect's AI-generated Topic Pages">redox stress</a>&nbsp;and energy production as drivers of phenotypic abnormalities following exposure to PVC leachates. Analysis of leachates identified high concentrations of zinc that are the likely cause of these observed defects. Our findings point to clear and specific detrimental effects of marine&nbsp;<a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/plastic-pollution" title="Learn more about plastic pollution from ScienceDirect's AI-generated Topic Pages">plastic pollution</a>&nbsp;on the development of echinoderms, demonstrating that chemicals leached from plastic particles into sea water can produce strong developmental abnormalities via specific pathways, and therefore have the potential to impact on a wide range of organisms. -<span class="citation" data-cites="paganos2023a">Paganos et al. (<a href="#ref-paganos2023a" role="doc-biblioref">2023</a>)</span></p>
-<div class="no-row-height column-margin column-container"><div id="ref-paganos2023a" class="csl-entry" role="doc-biblioentry">
+<div class="no-row-height column-margin column-container"><div id="ref-paganos2023a" class="csl-entry" role="listitem">
 Paganos, Periklis, Clemens Vinzenz Ullmann, Daniela Gaglio, Marcella Bonanomi, Noemi Salmistraro, Maria Ina Arnone, and Eva Jimenez-Guri. 2023. <span>“Plastic Leachate-Induced Toxicity During Sea Urchin Embryonic Development: <span>Insights</span> into the Molecular Pathways Affected by <span>PVC</span>.”</span> <em>Science of The Total Environment</em> 864 (March): 160901. <a href="https://doi.org/10.1016/j.scitotenv.2022.160901">https://doi.org/10.1016/j.scitotenv.2022.160901</a>.
 </div></div></blockquote>
 
@@ -469,9 +479,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -536,6 +560,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -574,12 +684,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp(/https:\/\/sarahtanja\.github\.io\/quarto-blog\//);
+      var filterRegex = new RegExp("https:\/\/sarahtanja\.github\.io\/quarto-blog\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
-    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -595,6 +705,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">This page is built using <a href="https://quarto.org/">Quarto</a>❤️ and many pages and posts are under active development</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
   </div>
 </footer>
 

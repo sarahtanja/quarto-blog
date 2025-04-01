@@ -9,8 +9,190 @@
 <link>https://sarahtanja.github.io/quarto-blog/posts.html</link>
 <atom:link href="https://sarahtanja.github.io/quarto-blog/posts.xml" rel="self" type="application/rss+xml"/>
 <description>This Open Lab Notebook is a creative landing space for learning about Bioinformatics, Marine Botany, &amp; Data Science. It&#39;s mostly for me, but also for you! 😘</description>
-<generator>quarto-1.2.335</generator>
-<lastBuildDate>Mon, 04 Nov 2024 08:00:00 GMT</lastBuildDate>
+<generator>quarto-1.3.433</generator>
+<lastBuildDate>Fri, 13 Dec 2024 08:00:00 GMT</lastBuildDate>
+<item>
+  <title>Submitting NGS 16SrRNA sequences to NCBI SRA</title>
+  <dc:creator>Sarah Tanja</dc:creator>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi-sra-submission-16S.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="background-research" class="level1">
+<h1>Background research</h1>
+<ul>
+<li><p>Watch this 10min video tutorial: <a href="https://www.youtube.com/watch?v=PTg9Ru68fc0">How to Submit to SRA, A Beginner’s Guide</a></p></li>
+<li><p>Read the <a href="https://www.ncbi.nlm.nih.gov/sra/docs/submitportal/">SRA Submission Wizard Help</a> page</p></li>
+<li><p>Checkout info link on metadata for microbiome datasets <a href="https://www.ncbi.nlm.nih.gov/biosample/docs/organism/#metagenomes:~:text=An%20official%20website%20of%20the%20United%20States%20government,Metagenomes%20(Microbiomes),-We%20consider%20any">Metagenomes (Microbiomes)</a></p></li>
+</ul>
+</section>
+<section id="log-in-to-ncbi" class="level1">
+<h1>Log in to NCBI</h1>
+<p>Navigate to the NCBI Submission Portal: <a href="https://submit.ncbi.nlm.nih.gov/" class="uri">https://submit.ncbi.nlm.nih.gov/</a></p>
+<p>Log-in through a partner sign-in, or sign-up directly with NCBI to create an account.</p>
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi-login.png" class="img-fluid"></p>
+<p>I signed in using my existing ORC-ID account, and authorized NCBI to access my ORCID record.</p>
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi-signin.png" class="img-fluid"></p>
+<p>Using my orcid, I created a new NCBI account.</p>
+<p>I was prompted to update my profile and confirm my primary email address in order to be able to submit to SRA.</p>
+<p>Once at the Submission portal and logged-in, select your sequence type (16S rRNA, genome, ITS, SRA)…. For RNA-seq click on <code>SRA</code> to continue to the Sequence Read Archive (SRA) submission portal: <a href="https://submit.ncbi.nlm.nih.gov/about/sra/" class="uri">https://submit.ncbi.nlm.nih.gov/about/sra/</a></p>
+<p>Click <strong>SUBMIT</strong> to start the submission process.</p>
+<p>Click <strong>New Submission</strong></p>
+<p>There are 5 steps to submission:</p>
+</section>
+<section id="submitter-contact-info-fill-this-out" class="level1">
+<h1>1. Submitter contact info (fill this out)</h1>
+</section>
+<section id="general-info" class="level1">
+<h1>2. General Info</h1>
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi-general-info.png" class="img-fluid"></p>
+<p>Click <strong>CONTINUE</strong></p>
+</section>
+<section id="project-info" class="level1">
+<h1>3. Project Info</h1>
+<ul>
+<li><p>Project Title</p></li>
+<li><p>Public description</p></li>
+<li><p>Grants</p></li>
+</ul>
+</section>
+<section id="biosample-type" class="level1">
+<h1>4. Biosample Type</h1>
+<ul>
+<li><p>Typed in <em>Montipora capitata</em></p></li>
+<li><p>Under displayed NCBI packages I selected ‘<strong>Invertebrate</strong>’</p></li>
+</ul>
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/biosample-type.png" class="img-fluid"></p>
+<ul>
+<li>Clicked <strong>CONTINUE</strong></li>
+</ul>
+</section>
+<section id="biosample-attributes" class="level1">
+<h1>5. Biosample Attributes</h1>
+<ul>
+<li><p>Use built-in table editor</p>
+<p>The following are the columns:</p></li>
+<li><p>Sample Name</p>
+<ul>
+<li>Here I put the sample_id</li>
+</ul></li>
+<li><p>Sample title</p>
+<ul>
+<li>Same as Sample Name</li>
+</ul></li>
+<li><p>BioProject accession : left blank</p></li>
+<li><p>Organism</p>
+<ul>
+<li><p>See Organism information on <a href="https://www.ncbi.nlm.nih.gov/biosample/docs/organism/#metagenomes">Metagenome (Microbiome)</a></p></li>
+<li><p>I explored the list of NCBI existing taxonomy nodes of <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Tree&amp;id=410656&amp;lvl=3&amp;lin=f&amp;keep=1&amp;srchmode=1&amp;unlock">organismal metagenomes</a> and found <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&amp;id=496922&amp;lvl=3&amp;lin=f&amp;keep=1&amp;srchmode=1&amp;unlock">coral metagenome</a></p></li>
+<li><p>I put <code>coral metagenome</code> down under organism</p></li>
+</ul></li>
+<li><p>isolate : left blank</p></li>
+<li><p>breed : not applicable</p></li>
+<li><p>host</p>
+<ul>
+<li>Montipora capitata</li>
+</ul></li>
+<li><p>isolation source</p>
+<ul>
+<li>I put ‘developing coral embryos from (n) distinct bundle-bundle crosses’</li>
+</ul></li>
+<li><p>collection date</p>
+<ul>
+<li>date each cross was culled</li>
+</ul></li>
+<li><p>geographic location</p>
+<ul>
+<li>USA:Oahu, Kaneohe Bay</li>
+</ul></li>
+<li><p>tissue</p>
+<ul>
+<li>whole embryo</li>
+</ul></li>
+<li><p>age</p>
+<ul>
+<li>hours post fertilization (4, 9, 14)</li>
+</ul></li>
+<li><p>altitude : blank</p></li>
+<li><p>biomaterial provider</p>
+<ul>
+<li>Dr.&nbsp;Padilla-Gamiño, University of Washington, School of Aquatic and Fishery Sciences, Box 355020, Seattle, WA 98195</li>
+</ul></li>
+<li><p>collected by</p>
+<ul>
+<li>Sarah Tanja, Katherine Lasdin</li>
+</ul></li>
+<li><p>depth : blank</p></li>
+<li><p>development stage</p>
+<ul>
+<li>cleavage, prawn chip, or early gastrula</li>
+</ul></li>
+<li><p>broad-scale environmental contex</p>
+<ul>
+<li>coral reef biome</li>
+</ul></li>
+<li><p>host tissue sampled : blank</p></li>
+<li><p>identified by: blank</p></li>
+<li><p>latitude and longitude</p>
+<ul>
+<li>21.431972 N 157.787472 W</li>
+</ul></li>
+<li><p>sex : blank</p></li>
+<li><p>specimen voucher : blank</p></li>
+<li><p>temperature : blank</p></li>
+<li><p>sample description</p>
+<ul>
+<li>description of pooled samples</li>
+</ul></li>
+<li><p>PVC leachate treatment concentration level</p></li>
+<li><p>PVC leachate treatment concentration mg/L</p></li>
+<li><p>pooled crosses</p></li>
+</ul>
+<p>Click CONTINUE</p>
+</section>
+<section id="sra-metadata" class="level1">
+<h1>6. SRA Metadata</h1>
+<p>I provided metadata with the built-in table editor, and copied columns from my metadata google sheet into the NIH Submission Portal.</p>
+</section>
+<section id="file-upload" class="level1">
+<h1>7. File Upload</h1>
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/provide-files.png" class="img-fluid"></p>
+<p>SRA file transfer protocol directions <a href="https://www.ncbi.nlm.nih.gov/sra/docs/submitfiles/#file-transfer-protocol-ftp">here</a></p>
+<p>Expand the FTP instructions section to follow instuctions mput</p>
+<p>From the R terminal in the directory where the <code>fastq.gz</code> and <code>fastq.gz.md5</code> files are located…</p>
+<p>Start your FTP session:</p>
+<pre><code>`ftp ftp-private.ncbi.nlm.nih.gov`</code></pre>
+<p>Log in with your username and password provided in the FTP instructions drop-down</p>
+<p>cd into your uploads directory as described in the FTP instructions drop-down</p>
+<p>make a new directory for your upload (I use the same name as the git repo for the project)</p>
+<ul>
+<li><p>Disable the interactive prompt by typing:</p>
+<p><code>prompt</code></p></li>
+<li><p>Use <code>mput</code> to upload all files:</p>
+<p><code>mput *fastq*</code></p></li>
+<li><p>Each file will show <code>Transfer complete</code> as it is uploaded</p>
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/transfer-complete.png" class="img-fluid"></p></li>
+<li><p>When finished, exit the FTP session:</p>
+<p><code>bye</code></p></li>
+</ul>
+<p>Wait 10 minutes</p>
+<p>On the SRA webpage, Click <code>Select preload folder</code></p>
+<p>Click <code>Refresh folders</code></p>
+<p>If some files were not transferred…</p>
+<p>You can select specific files to transfer by using</p>
+<p><code>put filename</code></p>
+
+
+</section>
+
+ ]]></description>
+  <category>learning journey</category>
+  <category>code</category>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi-sra-submission-16S.html</guid>
+  <pubDate>Fri, 13 Dec 2024 08:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Backup your work</title>
   <dc:creator>Sarah Tanja</dc:creator>
@@ -24,14 +206,66 @@
 <p>I had to do this <a href="https://github.com/RobertsLab/resources/issues/1998">here</a> , and so this is how to use <code>rsync</code> to regularly backup your project directory from one server to another.</p>
 <p>Basic <code>rsync</code> syntax is:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">rsync <span class="sc" style="color: #5E5E5E;">-</span>avz <span class="sc" style="color: #5E5E5E;">/</span>path<span class="sc" style="color: #5E5E5E;">/</span>to<span class="sc" style="color: #5E5E5E;">/</span>source user<span class="sc" style="color: #5E5E5E;">@</span>remote_host<span class="sc" style="color: #5E5E5E;">:</span><span class="er" style="color: #AD0000;">/</span>path<span class="sc" style="color: #5E5E5E;">/</span>to<span class="sc" style="color: #5E5E5E;">/</span>destination</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">rsync <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>avz <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span>path<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span>to<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span>source user<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">@</span>remote_host<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="er" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">/</span>path<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span>to<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span>destination</span></code></pre></div>
 </div>
 <p>An example to backup a directory in raven to gannet:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">rsync <span class="sc" style="color: #5E5E5E;">-</span>avz <span class="sc" style="color: #5E5E5E;">--</span>progress <span class="sc" style="color: #5E5E5E;">/</span>home<span class="sc" style="color: #5E5E5E;">/</span>shared<span class="sc" style="color: #5E5E5E;">/</span>8TB_HDD_01<span class="sc" style="color: #5E5E5E;">/</span>stanja \</span>
-<span id="cb2-2"><span class="sc" style="color: #5E5E5E;">--</span>exclude<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">'*.sam'</span> \</span>
-<span id="cb2-3"><span class="sc" style="color: #5E5E5E;">--</span>exclude<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">'tmp*'</span> \</span>
-<span id="cb2-4">stanja<span class="sc" style="color: #5E5E5E;">@</span>gannet.fish.washington.edu<span class="sc" style="color: #5E5E5E;">:</span><span class="er" style="color: #AD0000;">/</span>volume2<span class="sc" style="color: #5E5E5E;">/</span>web<span class="sc" style="color: #5E5E5E;">/</span>stanja</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">rsync <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>avz <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">--</span>progress <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span>home<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span>shared<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span>8TB_HDD_01<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span>stanja \</span>
+<span id="cb2-2"><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">--</span>exclude<span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'*.sam'</span> \</span>
+<span id="cb2-3"><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">--</span>exclude<span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'tmp*'</span> \</span>
+<span id="cb2-4">stanja<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">@</span>gannet.fish.washington.edu<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="er" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">/</span>volume2<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span>web<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span>stanja</span></code></pre></div>
 </div>
 <ul>
 <li><p><code>-a</code>: Archive mode, which preserves permissions, timestamps, symbolic links, etc.</p></li>
@@ -69,12 +303,12 @@
 <li>It provides options to log the details of each transfer, and using <code>--progress</code> gives real-time feedback on the status of each file being transferred.</li>
 </ul></li>
 </ol>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Tip
 </div>
 </div>
@@ -171,7 +405,6 @@ Tip
   <category>code</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi-sra-submission.html</guid>
   <pubDate>Tue, 08 Oct 2024 07:00:00 GMT</pubDate>
-  <media:content url="https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi-login.png" medium="image" type="image/png" height="162" width="144"/>
 </item>
 <item>
   <title>Transfer data files from Azenta to a local server</title>
@@ -183,7 +416,7 @@ Tip
 
 
 <p>Azenta will email you to notify you that your project is complete and is being uploaded to your account on the Azenta sFTP server, where it will be available for download for 30 days.</p>
-<div class="callout-tip callout callout-style-simple no-icon">
+<div class="callout callout-style-simple callout-tip no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
@@ -224,7 +457,6 @@ Connected to sftp.genewiz.com.</code></pre>
   <category>code</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/sftp-azenta/azenta-sftp.html</guid>
   <pubDate>Tue, 08 Oct 2024 07:00:00 GMT</pubDate>
-  <media:content url="https://sarahtanja.github.io/quarto-blog/posts/sftp-azenta/terminal-rstudio.png" medium="image" type="image/png" height="46" width="144"/>
 </item>
 <item>
   <title>Bioinformatics Pipeline Roadmap</title>
@@ -296,7 +528,7 @@ Connected to sftp.genewiz.com.</code></pre>
 </section>
 <section id="qaqc-fasta-files" class="level2">
 <h2 class="anchored" data-anchor-id="qaqc-fasta-files">2. QAQC FASTA files</h2>
-<div class="callout-tip callout callout-style-simple no-icon">
+<div class="callout callout-style-simple callout-tip no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
@@ -320,7 +552,7 @@ Connected to sftp.genewiz.com.</code></pre>
 </section>
 <section id="align-to-reference-genome-assemble" class="level2">
 <h2 class="anchored" data-anchor-id="align-to-reference-genome-assemble">3. Align to reference genome &amp; assemble</h2>
-<div class="callout-note callout callout-style-simple no-icon">
+<div class="callout callout-style-simple callout-note no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
@@ -484,7 +716,6 @@ Okubo, Nami, Takuma Mezaki, Yoko Nozawa, Yoshikatsu Nakano, Yi-Ting Lien, Hirono
   <category>coral</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/ontogenetic-development/ontogenetic-development.html</guid>
   <pubDate>Mon, 30 Sep 2024 07:00:00 GMT</pubDate>
-  <media:content url="https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/ontogenetic-development/okubo2013_fig12.png" medium="image" type="image/png" height="69" width="144"/>
 </item>
 <item>
   <title>Grants &amp; Fellowships</title>
@@ -667,12 +898,12 @@ Okubo, Nami, Takuma Mezaki, Yoko Nozawa, Yoshikatsu Nakano, Yi-Ting Lien, Hirono
 <p>Each egg-sperm bundle contains 15 +/- 5.1 oocytes (mean +/- SD, n = 214, from 26 colonies) <span class="citation" data-cites="padilla-gamino2011">(Padilla-Gamiño et al. 2011)</span></p>
 <div class="no-row-height column-margin column-container"><div id="ref-padilla-gamino2011" class="csl-entry">
 Padilla-Gamiño, J. L., T. M. Weatherby, R. G. Waller, and R. D. Gates. 2011. <span>“Formation and Structural Organization of the Egg–Sperm Bundle of the Scleractinian Coral <span>Montipora</span> Capitata.”</span> <em>Coral Reefs</em> 30 (2): 371–80. <a href="https://doi.org/10.1007/s00338-010-0700-8">https://doi.org/10.1007/s00338-010-0700-8</a>.
-</div></div><div class="callout-note callout callout-style-default callout-captioned">
+</div></div><div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -690,7 +921,7 @@ Note
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/8M9_stitch_001_crop_r90.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">2x Nikon scope image of sample 8M9 | cross 8, Mid PVC treatment 0.1mg/L, 9 hours post fertilization (prawn chip phase)</figcaption><p></p>
+<figcaption class="figure-caption">2x Nikon scope image of sample 8M9 | cross 8, Mid PVC treatment 0.1mg/L, 9 hours post fertilization (prawn chip phase)</figcaption>
 </figure>
 </div>
 </section>
@@ -699,15 +930,15 @@ Note
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/6L14_stitch_001.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">4x Nikon scope image of sample 6L14 (cross 6, Low PVC treatment 0.01mg/L, 14 hours post fertilization (early gastrula phase))</figcaption><p></p>
+<figcaption class="figure-caption">4x Nikon scope image of sample 6L14 (cross 6, Low PVC treatment 0.01mg/L, 14 hours post fertilization (early gastrula phase))</figcaption>
 </figure>
 </div>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -807,7 +1038,6 @@ Chille, E. E., E. L. Strand, F. Scucchia, M. Neder, V. Schmidt, M. O. Sherman, T
   <category>coral</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/scope-stats.html</guid>
   <pubDate>Fri, 06 Sep 2024 07:00:00 GMT</pubDate>
-  <media:content url="https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/8M9_stitch_001_crop_r90.png" medium="image" type="image/png" height="46" width="144"/>
 </item>
 <item>
   <title>Nikon scope pictures &amp; slide preservation protocol</title>
@@ -821,13 +1051,13 @@ Chille, E. E., E. L. Strand, F. Scucchia, M. Neder, V. Schmidt, M. O. Sherman, T
 <section id="make-slides" class="level1">
 <h1>Make slides</h1>
 <p>Watch <a href="https://www.youtube.com/watch?v=4Nurc1hSN4o">’Mounting Your Specimen</a>’ by Dr.&nbsp;Terry Bruce on YouTube</p>
-<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
-Danger
+<div class="callout-title-container flex-fill">
+Caution
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -841,13 +1071,13 @@ Danger
 <li>use a transfer pipette to place a drop of glycerin mounting medium on your slide close enough to the seawater + 4% ZFIX drop such that they merge</li>
 <li>wait for 5 minutes before imaging for embryos to float together to the top of the combined drop</li>
 </ul>
-<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
-Danger
+<div class="callout-title-container flex-fill">
+Caution
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -920,12 +1150,12 @@ Danger
 <div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;7C9F used in Aug 12th test extraction</p></li></div></section>
 <section id="summary" class="level1">
 <h1>Summary</h1>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -969,23 +1199,43 @@ Note
 <li><p>Saved 1st 2 spins (1400uL) for protein tube. Once collected place in -20 freezer.</p></li>
 <li><p>Performed DNase I Treatment on green RNA spin column</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">DB <span class="ot" style="color: #003B4F;">=</span> <span class="dv" style="color: #AD0000;">75</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">10</span></span>
-<span id="cb1-2"><span class="fu" style="color: #4758AB;">print</span>(DB)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">DB <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">75</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span></span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(DB)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 750</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">Dnase <span class="ot" style="color: #003B4F;">=</span> <span class="dv" style="color: #AD0000;">5</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">10</span></span>
-<span id="cb3-2"><span class="fu" style="color: #4758AB;">print</span>(Dnase)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">Dnase <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span></span>
+<span id="cb3-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(Dnase)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 50</code></pre>
 </div>
 </div>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -1004,12 +1254,12 @@ Note
 <h1>End Products</h1>
 <p>eluted DNA volume: 50uL in <code>Zymo DNase-RNase Free Water</code></p>
 <p>eluted RNA volume: 50uL in warmed (55C) <code>Zymo DNase-RNase Free Water</code></p>
-<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Important
 </div>
 </div>
@@ -1023,13 +1273,33 @@ Important
 <p>Using the Invitrogen Thermo Fischer RNA High Sensitivity Assay Kit.</p>
 <p>Prepared working solution for 6 samples and two standards (plus some extra) in a 5mL tube:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1">buffer <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="dv" style="color: #AD0000;">199</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">15</span></span>
-<span id="cb5-2"><span class="fu" style="color: #4758AB;">print</span>(buffer)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1">buffer <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">199</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">15</span></span>
+<span id="cb5-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(buffer)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2985</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1">reagent <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="dv" style="color: #AD0000;">1</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">15</span></span>
-<span id="cb7-2"><span class="fu" style="color: #4758AB;">print</span>(reagent)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1">reagent <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">15</span></span>
+<span id="cb7-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 15</code></pre>
 </div>
@@ -1161,12 +1431,12 @@ Important
 <div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;No 7C14F sample</p></li></div></section>
 <section id="summary" class="level1">
 <h1>Summary</h1>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -1207,12 +1477,12 @@ Note
 <li><p>Sequentially transfer RNA flow-through + ethanol in volumes =&gt;700uL into the green Zymo Spin IIICG Column in a Collection Tube. This should take 6 ‘spins’</p></li>
 <li><p>Saved 1st 2 spins (1400uL) for protein tube. Once collected place in -20 freezer.</p></li>
 <li><p>Performed DNase I Treatment on green RNA spin column</p></li>
-<li><div class="callout-warning callout callout-style-default callout-captioned">
+<li><div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Warning
 </div>
 </div>
@@ -1221,24 +1491,44 @@ Warning
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">DB <span class="ot" style="color: #003B4F;">=</span> <span class="dv" style="color: #AD0000;">75</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">10</span></span>
-<span id="cb1-2"><span class="fu" style="color: #4758AB;">print</span>(DB)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">DB <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">75</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span></span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(DB)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 750</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">Dnase <span class="ot" style="color: #003B4F;">=</span> <span class="dv" style="color: #AD0000;">5</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">10</span> </span>
-<span id="cb3-2"><span class="fu" style="color: #4758AB;">print</span>(Dnase)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">Dnase <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span> </span>
+<span id="cb3-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(Dnase)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 50</code></pre>
 </div>
 </div></li>
 </ul>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -1258,12 +1548,12 @@ Note
 <h1>End Products</h1>
 <p>eluted DNA volume: 50uL in <code>Zymo DNase-RNase Free Water</code></p>
 <p>eluted RNA volume: 50uL in warmed (55C) <code>Zymo DNase-RNase Free Water</code></p>
-<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Important
 </div>
 </div>
@@ -1277,13 +1567,33 @@ Important
 <p>Using the Invitrogen Thermo Fischer RNA High Sensitivity Assay Kit.</p>
 <p>Prepared working solution for 6 samples and two standards (plus some extra) in a 5mL tube:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1">buffer <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="dv" style="color: #AD0000;">199</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">15</span></span>
-<span id="cb6-2"><span class="fu" style="color: #4758AB;">print</span>(buffer)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1">buffer <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">199</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">15</span></span>
+<span id="cb6-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(buffer)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2985</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1">reagent <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="dv" style="color: #AD0000;">1</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">15</span></span>
-<span id="cb8-2"><span class="fu" style="color: #4758AB;">print</span>(reagent)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1">reagent <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">15</span></span>
+<span id="cb8-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 15</code></pre>
 </div>
@@ -1420,12 +1730,12 @@ Important
 <div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;Sample 7M9F resulted in no surviving embryos and therefore we had no saved material for that vial</p></li></div></section>
 <section id="summary" class="level1">
 <h1>Summary</h1>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -1476,24 +1786,44 @@ Note
 <li><p>Saved 1st 2 spins (1400uL) for protein tube. Once collected place in -20 freezer.</p></li>
 <li><p>Performed DNase I Treatment on green RNA spin column</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">DB <span class="ot" style="color: #003B4F;">=</span> <span class="dv" style="color: #AD0000;">75</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">10</span></span>
-<span id="cb1-2"><span class="fu" style="color: #4758AB;">print</span>(DB)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">DB <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">75</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span></span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(DB)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 750</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">Dnase <span class="ot" style="color: #003B4F;">=</span> <span class="dv" style="color: #AD0000;">5</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">10</span> </span>
-<span id="cb3-2"><span class="fu" style="color: #4758AB;">print</span>(Dnase)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">Dnase <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span> </span>
+<span id="cb3-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(Dnase)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 50</code></pre>
 </div>
 </div></li>
 </ul>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -1513,12 +1843,12 @@ Note
 <h1>End Products</h1>
 <p>eluted DNA volume: 50uL in <code>Zymo DNase-RNase Free Water</code></p>
 <p>eluted RNA volume: 50uL in warmed (55C) <code>Zymo DNase-RNase Free Water</code></p>
-<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Important
 </div>
 </div>
@@ -1532,13 +1862,33 @@ Important
 <p>Using the Invitrogen Thermo Fischer RNA High Sensitivity Assay Kit.</p>
 <p>Prepared working solution for 6 samples and two standards (plus some extra) in a 5mL tube:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1">buffer <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="dv" style="color: #AD0000;">199</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">15</span></span>
-<span id="cb6-2"><span class="fu" style="color: #4758AB;">print</span>(buffer)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1">buffer <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">199</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">15</span></span>
+<span id="cb6-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(buffer)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2985</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1">reagent <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="dv" style="color: #AD0000;">1</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">15</span></span>
-<span id="cb8-2"><span class="fu" style="color: #4758AB;">print</span>(reagent)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1">reagent <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">15</span></span>
+<span id="cb8-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 15</code></pre>
 </div>
@@ -1661,12 +2011,12 @@ Important
 </section>
 <section id="summary" class="level1">
 <h1>Summary</h1>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -1705,24 +2055,44 @@ Note
 <li><p>Saved 1st 2 spins (1400uL) for protein tube. Once collected place in -20 freezer.</p></li>
 <li><p>Performed DNase I Treatment on green RNA spin column</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">DB <span class="ot" style="color: #003B4F;">=</span> <span class="dv" style="color: #AD0000;">75</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">8</span></span>
-<span id="cb1-2"><span class="fu" style="color: #4758AB;">print</span>(DB)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">DB <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">75</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">8</span></span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(DB)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 600</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">Dnase <span class="ot" style="color: #003B4F;">=</span> <span class="dv" style="color: #AD0000;">5</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">8</span> </span>
-<span id="cb3-2"><span class="fu" style="color: #4758AB;">print</span>(Dnase)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">Dnase <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">8</span> </span>
+<span id="cb3-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(Dnase)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 40</code></pre>
 </div>
 </div></li>
 </ul>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -1742,12 +2112,12 @@ Note
 <h1>End Products</h1>
 <p>eluted DNA volume: 50uL in <code>Zymo DNase-RNase Free Water</code></p>
 <p>eluted RNA volume: 50uL in warmed (55C) <code>Zymo DNase-RNase Free Water</code></p>
-<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Important
 </div>
 </div>
@@ -1761,13 +2131,33 @@ Important
 <p>Using the Invitrogen Thermo Fischer RNA High Sensitivity Assay Kit.</p>
 <p>Prepared working solution for 6 samples and two standards (plus some extra) in a 5mL tube:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1">buffer <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="dv" style="color: #AD0000;">199</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">10</span></span>
-<span id="cb6-2"><span class="fu" style="color: #4758AB;">print</span>(buffer)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1">buffer <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">199</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span></span>
+<span id="cb6-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(buffer)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 1990</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1">reagent <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="dv" style="color: #AD0000;">1</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">10</span></span>
-<span id="cb8-2"><span class="fu" style="color: #4758AB;">print</span>(reagent)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1">reagent <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span></span>
+<span id="cb8-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 10</code></pre>
 </div>
@@ -1887,12 +2277,12 @@ Important
 </section>
 <section id="summary" class="level1">
 <h1>Summary</h1>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -1937,24 +2327,44 @@ Note
 <li><p>Saved 1st 2 spins (1400uL) for protein tube. Once collected place in -20 freezer.</p></li>
 <li><p>Performed DNase I Treatment on green RNA spin column</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">DB <span class="ot" style="color: #003B4F;">=</span> <span class="dv" style="color: #AD0000;">75</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">6</span></span>
-<span id="cb1-2"><span class="fu" style="color: #4758AB;">print</span>(DB)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">DB <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">75</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span></span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(DB)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 450</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">Dnase <span class="ot" style="color: #003B4F;">=</span> <span class="dv" style="color: #AD0000;">5</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">6</span> </span>
-<span id="cb3-2"><span class="fu" style="color: #4758AB;">print</span>(Dnase)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">Dnase <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span> </span>
+<span id="cb3-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(Dnase)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 30</code></pre>
 </div>
 </div></li>
 </ul>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -1974,12 +2384,12 @@ Note
 <h1>End Products</h1>
 <p>eluted DNA volume: 50uL in <code>Zymo DNase-RNase Free Water</code></p>
 <p>eluted RNA volume: 50uL in warmed (55C) <code>Zymo DNase-RNase Free Water</code></p>
-<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Important
 </div>
 </div>
@@ -1993,13 +2403,33 @@ Important
 <p>Using the Invitrogen Thermo Fischer RNA High Sensitivity Assay Kit.</p>
 <p>Prepared working solution for 6 samples and two standards (plus some extra) in a 5mL tube:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1">buffer <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="dv" style="color: #AD0000;">199</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">10</span></span>
-<span id="cb6-2"><span class="fu" style="color: #4758AB;">print</span>(buffer)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1">buffer <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">199</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span></span>
+<span id="cb6-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(buffer)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 1990</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1">reagent <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="dv" style="color: #AD0000;">1</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">10</span></span>
-<span id="cb8-2"><span class="fu" style="color: #4758AB;">print</span>(reagent)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1">reagent <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span></span>
+<span id="cb8-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 10</code></pre>
 </div>
@@ -2123,12 +2553,12 @@ Important
 </section>
 <section id="summary" class="level1">
 <h1>Summary</h1>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -2164,13 +2594,13 @@ Note
 <li><p>Sequentially transfer RNA flow-through + ethanol in volumes =&gt;700uL into the green Zymo Spin IIICG Column in a Collection Tube. This should take 6 ‘spins’</p></li>
 <li><p>Saved 1st 2 spins (1400uL) for protein tube. Once collected place in -20 freezer.</p></li>
 <li><p>Performed DNase I Treatment on green RNA spin column</p>
-<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
-Danger
+<div class="callout-title-container flex-fill">
+Caution
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -2178,13 +2608,33 @@ Danger
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">DB <span class="ot" style="color: #003B4F;">=</span> <span class="dv" style="color: #AD0000;">75</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">6</span></span>
-<span id="cb1-2"><span class="fu" style="color: #4758AB;">print</span>(DB)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">DB <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">75</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span></span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(DB)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 450</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">Dnase <span class="ot" style="color: #003B4F;">=</span> <span class="dv" style="color: #AD0000;">5</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">6</span> </span>
-<span id="cb3-2"><span class="fu" style="color: #4758AB;">print</span>(Dnase)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">Dnase <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span> </span>
+<span id="cb3-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(Dnase)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 30</code></pre>
 </div>
@@ -2196,12 +2646,12 @@ Danger
 </ul>
 <p>eluted DNA volume: 30uL in <code>Zymo DNase-RNase Free Water</code></p>
 <p>eluted RNA volume: 50uL in warmed (55C) <code>Zymo DNase-RNase Free Water</code></p>
-<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Important
 </div>
 </div>
@@ -2215,13 +2665,33 @@ Important
 <p>Using the Invitrogen Thermo Fischer RNA High Sensitivity Assay Kit.</p>
 <p>Prepared working solution for 6 samples and two standards (plus some extra) in a 5mL tube:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1">buffer <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="dv" style="color: #AD0000;">199</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">10</span></span>
-<span id="cb5-2"><span class="fu" style="color: #4758AB;">print</span>(buffer)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1">buffer <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">199</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span></span>
+<span id="cb5-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(buffer)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 1990</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1">reagent <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="dv" style="color: #AD0000;">1</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">10</span></span>
-<span id="cb7-2"><span class="fu" style="color: #4758AB;">print</span>(reagent)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1">reagent <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span></span>
+<span id="cb7-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 10</code></pre>
 </div>
@@ -2328,13 +2798,13 @@ Important
 </section>
 <section id="summary" class="level1">
 <h1>Summary</h1>
-<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
-Danger
+<div class="callout-title-container flex-fill">
+Caution
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -2367,12 +2837,12 @@ Danger
 <li><p>Doubled volume of 100% (200 proof) ethanol to the RNA flow through in a falcon tube and vortexed to mix. End volume of flow through + ethanol = 5mL</p></li>
 <li><p>Sequentially transfer RNA flow-through + ethanol in volumes =&gt;700uL into the green Zymo Spin IIICG Column in a Collection Tube</p></li>
 <li><p>Saved 1st 1400uL for protein</p>
-<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Warning
 </div>
 </div>
@@ -2382,13 +2852,33 @@ Warning
 </div></li>
 <li><p>Performed DNase I Treatment on green RNA spin column</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">DB <span class="ot" style="color: #003B4F;">=</span> <span class="dv" style="color: #AD0000;">75</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">4</span></span>
-<span id="cb1-2"><span class="fu" style="color: #4758AB;">print</span>(DB)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">DB <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">75</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span></span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(DB)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 300</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">Dnase <span class="ot" style="color: #003B4F;">=</span> <span class="dv" style="color: #AD0000;">5</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">4</span> </span>
-<span id="cb3-2"><span class="fu" style="color: #4758AB;">print</span>(Dnase)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">Dnase <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span> </span>
+<span id="cb3-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(Dnase)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 20</code></pre>
 </div>
@@ -2400,12 +2890,12 @@ Warning
 </ul>
 <p>eluted DNA volume: 30uL in <code>Zymo DNase-RNase Free Water</code></p>
 <p>eluted RNA volume: 30uL in <code>Zymo DNase-RNase Free Water</code></p>
-<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Important
 </div>
 </div>
@@ -2419,7 +2909,13 @@ Important
 <p>Using the Invitrogen Thermo Fischer RNA High Sensitivity Assay Kit.</p>
 <p>Prepared working solution for 3 samples and two standards:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><span class="dv" style="color: #AD0000;">199</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">6</span></span></code></pre></div>
+<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">199</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span></span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 1194</code></pre>
 </div>
@@ -2520,12 +3016,12 @@ Important
 </section>
 <section id="summary" class="level1">
 <h1>Summary</h1>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -2533,12 +3029,12 @@ Note
 <p>Success! I pooled 3 samples together and this yielded enough RNA!</p>
 </div>
 </div>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -2579,12 +3075,12 @@ Note
 <li><p>Doubled volume of 100% (200 proof) ethanol to the RNA flow through in a falcon tube and vortexed to mix. End volume of flow through + ethanol = 5mL</p></li>
 <li><p>Sequentially transfer RNA flow-through + ethanol in volumes =&gt;700uL into the green Zymo Spin IIICG Column in a Collection Tube</p></li>
 <li><p>Saved 1st 1400uL for protein</p>
-<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Warning
 </div>
 </div>
@@ -2594,13 +3090,33 @@ Warning
 </div></li>
 <li><p>Performed DNase I Treatment on green RNA spin column</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">DB <span class="ot" style="color: #003B4F;">=</span> <span class="dv" style="color: #AD0000;">75</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">4</span></span>
-<span id="cb1-2"><span class="fu" style="color: #4758AB;">print</span>(DB)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">DB <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">75</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span></span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(DB)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 300</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">Dnase <span class="ot" style="color: #003B4F;">=</span> <span class="dv" style="color: #AD0000;">5</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">4</span> </span>
-<span id="cb3-2"><span class="fu" style="color: #4758AB;">print</span>(Dnase)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">Dnase <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span> </span>
+<span id="cb3-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(Dnase)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 20</code></pre>
 </div>
@@ -2664,12 +3180,12 @@ Warning
 </tbody>
 </table>
 <p><img src="https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/14aug2024-extraction/nanodrop_13AUG2024.PNG" class="img-fluid"></p>
-<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Warning
 </div>
 </div>
@@ -2684,7 +3200,13 @@ Warning
 <p>Using the Invitrogen Thermo Fischer RNA High Sensitivity Assay Kit.</p>
 <p>Prepared working solution for 3 samples and two standards:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><span class="dv" style="color: #AD0000;">199</span><span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">6</span></span></code></pre></div>
+<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">199</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span></span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 1194</code></pre>
 </div>
@@ -2742,227 +3264,6 @@ Warning
   <category>lab records</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/14aug2024-extraction/14aug2024-extraction.html</guid>
   <pubDate>Wed, 14 Aug 2024 07:00:00 GMT</pubDate>
-  <media:content url="https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/14aug2024-extraction/nanodrop_13AUG2024.PNG" medium="image"/>
-</item>
-<item>
-  <title>13-Aug-2024 Embryo RNA Extractions</title>
-  <dc:creator>Sarah Tanja</dc:creator>
-  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/13aug2024-extraction/13aug2024-extraction.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="samples" class="level1">
-<h1>Samples</h1>
-<ul>
-<li><p>1C9F, 2C9F, 3C9F = 123C9F</p>
-<ul>
-<li>2 min Qiagin Tissue Disruption Tubes</li>
-</ul></li>
-<li><p>1L9F, 2L9F, 3L9F = 123L9F</p>
-<ul>
-<li>2 min Zymo BashingBead Lysis Tubes</li>
-</ul></li>
-<li><p>1M9F, 2M9F, 3M9F = 123M9F</p>
-<ul>
-<li>1 min of 1/3 of single Zymo BashingBead Lysis Tube split into microcentrifuge sample tubes</li>
-</ul></li>
-</ul>
-</section>
-<section id="summary" class="level1">
-<h1>Summary</h1>
-<div class="callout-note callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Success! I pooled 3 samples together and this yielded enough RNA!</p>
-</div>
-</div>
-<div class="callout-note callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>I also tested 3 different lysing protocols, and all worked more or less the same. I skipped the Proteinase K digestion as per the ‘cells’ sample prep instruction in the kit manual. I think I can add this back in if I’m finding protein impurities in the eluted RNA.</p>
-</div>
-</div>
-</section>
-<section id="extraction-notes" class="level1">
-<h1>Extraction Notes</h1>
-<p>date: 13-AUG-2024</p>
-<p>kit: Zymo Quick-DNA/RNA Miniprep Plus Kit</p>
-<ul>
-<li><p>Thaw samples to room temp</p></li>
-<li><p>Vortex to mix</p></li>
-<li><p>Centrifuge at 500xg for 1 minute to get rid of any bubbles</p></li>
-<li><p>Remove 400uL of <code>DNA/RNA Shield</code> supernatent</p></li>
-<li><p>Add 400uL of DNA/RNA Lysis Buffer</p></li>
-<li><p>Vortex to mix for 5 seconds</p></li>
-<li><p>Check to see that embryos have dissolved</p>
-<ul>
-<li><p>Embryos weren’t totally lysed, and there was at least visible cell debris in each tube… I called Zymo and they suggested I try:</p>
-<ul>
-<li><p>Adding more DNA/RNA Lysis Buffer &amp; Mixing until supernatent is clear</p></li>
-<li><p>Using BeadBashing Tubes to ensure Lysis</p></li>
-<li><p>Trying PK Digestion without BeadBashing</p></li>
-</ul></li>
-</ul></li>
-</ul>
-<p>I ended up trying 3 different things:</p>
-<p>With 123C9 I transferred the 500uL of sample in DNA/RNA Shield and DNA/RNA Lysis Buffer to the Qiagin Tissue Disrupter Tube &amp; set it in the mortexer for 2 minutes. This created a clear supernatent, and didn’t involve adding any DNA/RNA Lysis Buffer volume. The Qiagin Tissue Disrupteer is also a solid single bead, so I didn’t need to worry about sucking up any tiny glass beads into the pipette when I did transfer the supernatent to the spin column.</p>
-<p>With 123L9 I transferred the 500uL of sample in Shield and Lysis Buffer to the Zymo 0.1-0.5mm BeadBashing Lysis Tubes, &amp; set in mortexer for 2 minutes, then centrifuged at 16,000xg for 1 minute. I then added 600uL more of DNA/RNA Lysis Buffer and centrifuged again at 16,000xg for 1 minute. I transferred 600uL of the cleared supernatent from each tube sequentially through the filter (being careful to leave ~500uL of volume in the tube so as not to disrupt/suck up the tiny glass beads</p>
-<p>For 123M9, I tried just increasing the DNA/RNA Lysis Buffer by 600uL and vortexing to see if that would clear up any debris. It didn’t.. SO I split 1 bead bashing tube into each of the three microcentrifuge tubes and set it in the mortexer for 1 minute.</p>
-<p>—&gt; Proceed to purification</p>
-<ul>
-<li><p>At this point, we have three cryovials for each spin column… each with varying volumes of sample. Sequentially transfer sample into yellow Spin-Away Filter in a Collection Tube and centrifuge for 30s at 16,000xg <strong>SAVE THE FLOW THROUGH FOR RNA PURIFICATION</strong></p></li>
-<li><p>Doubled volume of 100% (200 proof) ethanol to the RNA flow through in a falcon tube and vortexed to mix</p></li>
-<li><p>Sequentially transfer RNA flow-through + ethanol in volumes =&gt;700uL into the green Zymo Spin IIICG Column in a Collection Tube</p>
-<div class="callout-warning callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This was most difficult with the 123L9 and 123M9 samples because they had larger volumes to work with, meaning you have to pass it through the spin filter more, and there’s more flow-through you have to save. The volume of the saved flow-through exceeded that of the collection tube, so I had to start saving the flow through in a 15mL falcon tube. After doubling with 200-proof ethanol, I ended up with ~3mL for 123C9, ~4mL for 123L9, and ~5mL for 123M9 that all had to get passed through the RNA green spin column. This took awhile and was a bottle neck in the process… I’m also not thrilled about using the falcon tubes (they’re not DNase-RNase free…), So I want to find a way to do this where I can use the collection tubes provided.</p>
-</div>
-</div></li>
-<li><p>Performed DNase I Treatment on green RNA spin column</p>
-<ul>
-<li>I didn’t invert to mix… I always lose some volume ‘beads’ in the lid when I do this. Instead I flicked the tube to mix it and kept all the volume down in the cnical end of the tube. This worked well and I had a full 80uL of treatment per spin column to work with.</li>
-</ul></li>
-<li><p>Warmed Zymo DNase-RNase Free Water to 55C in heat block before elution, and slowly dripped water directly over filter.</p></li>
-</ul>
-<p>eluted DNA volume: 30uL in <code>Zymo DNase-RNase Free Water</code></p>
-<p>eluted RNA volume: 30uL in <code>Zymo DNase-RNase Free Water</code></p>
-</section>
-<section id="nanodrop" class="level1">
-<h1>Nanodrop</h1>
-<section id="rna" class="level3">
-<h3 class="anchored" data-anchor-id="rna">RNA</h3>
-<table class="table">
-<thead>
-<tr class="header">
-<th>sample_id</th>
-<th>ng/uL</th>
-<th>A260</th>
-<th>A280</th>
-<th>260/280</th>
-<th>260/230</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>123C9</td>
-<td>17.8</td>
-<td>0.446</td>
-<td>0.24`</td>
-<td>1.85</td>
-<td>1.58</td>
-</tr>
-<tr class="even">
-<td>123L9</td>
-<td>41.5</td>
-<td>1.038</td>
-<td>0.666</td>
-<td>1.56</td>
-<td>0.68</td>
-</tr>
-<tr class="odd">
-<td>123M9</td>
-<td>19.8</td>
-<td>0.496</td>
-<td>0.262</td>
-<td>1.89</td>
-<td>1.75</td>
-</tr>
-</tbody>
-</table>
-<p><img src="https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/13aug2024-extraction/nanodrop_13AUG2024.PNG" class="img-fluid"></p>
-<div class="callout-warning callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>123L9 is showing contamination… There is no distinct peak at 260 (like is visible with the other samples).</p>
-</div>
-</div>
-</section>
-</section>
-<section id="qubit" class="level1">
-<h1>Qubit</h1>
-<p>Using the Invitrogen Thermo Fischer RNA High Sensitivity Assay Kit.</p>
-<p>Prepared working solution for 3 samples and two standards:</p>
-<p>Qubit RNA HS reagent in DMSO = 1uL * 5 = 5uL</p>
-<p>Qubit RNA HS Buffer = 199uL * 5 = 995uL</p>
-<section id="rna-1" class="level3">
-<h3 class="anchored" data-anchor-id="rna-1">RNA</h3>
-<p>standard 1: 99.80</p>
-<p>standard 2: 1366.59</p>
-<p>RunID: 2024-08-14_043136</p>
-<table class="table">
-<thead>
-<tr class="header">
-<th>sample_id</th>
-<th>qubit_rna_1</th>
-<th>qubit_rna_2</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>123C9</td>
-<td>20.8 ng/uL</td>
-<td>20.6 ng/uL</td>
-</tr>
-<tr class="even">
-<td>123L9</td>
-<td>12.0 ng/uL</td>
-<td>11.8 ng/uL</td>
-</tr>
-<tr class="odd">
-<td>123M9</td>
-<td>25.6 ng/uL</td>
-<td>25.4 ng/uL</td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
-<section id="storage-location" class="level1">
-<h1>Storage Location</h1>
-<p>RNA samples are stored in -80C ‘Old Friedman’ Sanyo freezer on shelf 1 in <code>coral-embryo-leachate RNA</code> wax freezer boxes with green label tape:</p>
-<p>DNA samples (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate DNA</code> wax freezer box with yellow label tape:</p>
-<p>Protein flow-through (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate PROTEIN</code> wax freezer box with blue label tape:</p>
-
-
-</section>
-
- ]]></description>
-  <category>lab records</category>
-  <category>coral</category>
-  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/13aug2024-extraction/13aug2024-extraction.html</guid>
-  <pubDate>Tue, 13 Aug 2024 07:00:00 GMT</pubDate>
-  <media:content url="https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/13aug2024-extraction/nanodrop_13AUG2024.PNG" medium="image"/>
 </item>
 </channel>
 </rss>

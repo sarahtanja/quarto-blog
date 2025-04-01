@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Sarah Tanja">
-<meta name="dcterms.date" content="2024-07-09">
+<meta name="dcterms.date" content="2024-12-13">
 
-<title>Sarah Tanja’s Open Lab Notebook - Experiment Log</title>
+<title>Sarah Tanja’s Open Lab Notebook - Submitting NGS 16SrRNA sequences to NCBI SRA</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,25 +25,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../">
-<link href="../../../images/favicon.png" rel="icon" type="image/png">
-<script src="../../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -76,10 +76,10 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../images/binocs.png" alt="Self-portrait at Tracy Arm, watercolor artwork by Sarah Tanja" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/binocs.png" alt="Self-portrait at Tracy Arm, watercolor artwork by Sarah Tanja" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="../../../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Sarah Tanja’s Open Lab Notebook</span>
     </a>
   </div>
@@ -132,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-envelope-paper">    
         <li class="dropdown-header">stanja@uw.edu</li>
         <li>
-    <a class="dropdown-item" href="../../../contact.html" rel="" target="">
+    <a class="dropdown-item" href="../../contact.html" rel="" target="">
  <span class="dropdown-text">Contact</span></a>
   </li>  
     </ul>
@@ -149,7 +149,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Experiment Log</li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Submitting NGS 16SrRNA sequences to NCBI SRA</li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -162,9 +162,11 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-right">
-      <h1 class="title">Experiment Log</h1>
+      <h1 class="title">Submitting NGS 16SrRNA sequences to NCBI SRA</h1>
+            <p class="subtitle lead">Backing up raw sequences from mim_c</p>
                                 <div class="quarto-categories">
-                <div class="quarto-category">coral</div>
+                <div class="quarto-category">learning journey</div>
+                <div class="quarto-category">code</div>
               </div>
                   </div>
   </div>
@@ -182,10 +184,16 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">July 9, 2024</p>
+        <p class="date">December 13, 2024</p>
       </div>
     </div>
     
+      <div>
+      <div class="quarto-title-meta-heading">Modified</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">March 31, 2025</p>
+      </div>
+    </div>
       
     </div>
     
@@ -202,33 +210,37 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../projects.html" class="sidebar-item-text sidebar-link">
+  <a href="../../projects.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Projects</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../posts.html" class="sidebar-item-text sidebar-link">
+  <a href="../../posts.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Posts</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../about.html" class="sidebar-item-text sidebar-link">
+  <a href="../../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About</span></a>
   </div>
 </li>
     </ul>
     </div>
-    <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#thursday-june-27th-2024" id="toc-thursday-june-27th-2024" class="nav-link active" data-scroll-target="#thursday-june-27th-2024">Thursday June 27th, 2024</a></li>
-  <li><a href="#saturday-june-29th-2024" id="toc-saturday-june-29th-2024" class="nav-link" data-scroll-target="#saturday-june-29th-2024">Saturday June 29th, 2024</a></li>
-  <li><a href="#saturday-july-6th-2024" id="toc-saturday-july-6th-2024" class="nav-link" data-scroll-target="#saturday-july-6th-2024">Saturday July 6th, 2024</a></li>
-  <li><a href="#tuesday-july-9th-2024" id="toc-tuesday-july-9th-2024" class="nav-link" data-scroll-target="#tuesday-july-9th-2024">Tuesday July 9th, 2024</a></li>
-  <li><a href="#wednesday-july-10th-2024" id="toc-wednesday-july-10th-2024" class="nav-link" data-scroll-target="#wednesday-july-10th-2024">Wednesday July 10th, 2024</a></li>
+  <li><a href="#background-research" id="toc-background-research" class="nav-link active" data-scroll-target="#background-research">Background research</a></li>
+  <li><a href="#log-in-to-ncbi" id="toc-log-in-to-ncbi" class="nav-link" data-scroll-target="#log-in-to-ncbi">Log in to NCBI</a></li>
+  <li><a href="#submitter-contact-info-fill-this-out" id="toc-submitter-contact-info-fill-this-out" class="nav-link" data-scroll-target="#submitter-contact-info-fill-this-out">1. Submitter contact info (fill this out)</a></li>
+  <li><a href="#general-info" id="toc-general-info" class="nav-link" data-scroll-target="#general-info">2. General Info</a></li>
+  <li><a href="#project-info" id="toc-project-info" class="nav-link" data-scroll-target="#project-info">3. Project Info</a></li>
+  <li><a href="#biosample-type" id="toc-biosample-type" class="nav-link" data-scroll-target="#biosample-type">4. Biosample Type</a></li>
+  <li><a href="#biosample-attributes" id="toc-biosample-attributes" class="nav-link" data-scroll-target="#biosample-attributes">5. Biosample Attributes</a></li>
+  <li><a href="#sra-metadata" id="toc-sra-metadata" class="nav-link" data-scroll-target="#sra-metadata">6. SRA Metadata</a></li>
+  <li><a href="#file-upload" id="toc-file-upload" class="nav-link" data-scroll-target="#file-upload">7. File Upload</a></li>
   </ul>
 </nav>
 </nav>
@@ -242,25 +254,169 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="thursday-june-27th-2024" class="level3">
-<h3 class="anchored" data-anchor-id="thursday-june-27th-2024">Thursday June 27th, 2024</h3>
-<p>Kat and Callum collected 10 distinct <em>Montipora capitata</em> colonies of approximately 30cm in diameter from Kaneohe Bay, Hawaii under permit</p>
+<section id="background-research" class="level1">
+<h1>Background research</h1>
+<ul>
+<li><p>Watch this 10min video tutorial: <a href="https://www.youtube.com/watch?v=PTg9Ru68fc0">How to Submit to SRA, A Beginner’s Guide</a></p></li>
+<li><p>Read the <a href="https://www.ncbi.nlm.nih.gov/sra/docs/submitportal/">SRA Submission Wizard Help</a> page</p></li>
+<li><p>Checkout info link on metadata for microbiome datasets <a href="https://www.ncbi.nlm.nih.gov/biosample/docs/organism/#metagenomes:~:text=An%20official%20website%20of%20the%20United%20States%20government,Metagenomes%20(Microbiomes),-We%20consider%20any">Metagenomes (Microbiomes)</a></p></li>
+</ul>
 </section>
-<section id="saturday-june-29th-2024" class="level3">
-<h3 class="anchored" data-anchor-id="saturday-june-29th-2024">Saturday June 29th, 2024</h3>
-<p>All nubbins were shifted from the blue tanks to the black tanks at the Point Lab at 4PM</p>
+<section id="log-in-to-ncbi" class="level1">
+<h1>Log in to NCBI</h1>
+<p>Navigate to the NCBI Submission Portal: <a href="https://submit.ncbi.nlm.nih.gov/" class="uri">https://submit.ncbi.nlm.nih.gov/</a></p>
+<p>Log-in through a partner sign-in, or sign-up directly with NCBI to create an account.</p>
+<p><img src="ncbi-login.png" class="img-fluid"></p>
+<p>I signed in using my existing ORC-ID account, and authorized NCBI to access my ORCID record.</p>
+<p><img src="ncbi-signin.png" class="img-fluid"></p>
+<p>Using my orcid, I created a new NCBI account.</p>
+<p>I was prompted to update my profile and confirm my primary email address in order to be able to submit to SRA.</p>
+<p>Once at the Submission portal and logged-in, select your sequence type (16S rRNA, genome, ITS, SRA)…. For RNA-seq click on <code>SRA</code> to continue to the Sequence Read Archive (SRA) submission portal: <a href="https://submit.ncbi.nlm.nih.gov/about/sra/" class="uri">https://submit.ncbi.nlm.nih.gov/about/sra/</a></p>
+<p>Click <strong>SUBMIT</strong> to start the submission process.</p>
+<p>Click <strong>New Submission</strong></p>
+<p>There are 5 steps to submission:</p>
 </section>
-<section id="saturday-july-6th-2024" class="level3">
-<h3 class="anchored" data-anchor-id="saturday-july-6th-2024">Saturday July 6th, 2024</h3>
-<p>Leachate was prepared according to the leachate protocol, and began stirring on a shaker plate at ~4AM</p>
+<section id="submitter-contact-info-fill-this-out" class="level1">
+<h1>1. Submitter contact info (fill this out)</h1>
 </section>
-<section id="tuesday-july-9th-2024" class="level3">
-<h3 class="anchored" data-anchor-id="tuesday-july-9th-2024">Tuesday July 9th, 2024</h3>
-<p>Rio 90 pumps borrowed from the Donohue Lab.</p>
+<section id="general-info" class="level1">
+<h1>2. General Info</h1>
+<p><img src="ncbi-general-info.png" class="img-fluid"></p>
+<p>Click <strong>CONTINUE</strong></p>
 </section>
-<section id="wednesday-july-10th-2024" class="level3">
-<h3 class="anchored" data-anchor-id="wednesday-july-10th-2024">Wednesday July 10th, 2024</h3>
-<p>Start 3 day temp ramp</p>
+<section id="project-info" class="level1">
+<h1>3. Project Info</h1>
+<ul>
+<li><p>Project Title</p></li>
+<li><p>Public description</p></li>
+<li><p>Grants</p></li>
+</ul>
+</section>
+<section id="biosample-type" class="level1">
+<h1>4. Biosample Type</h1>
+<ul>
+<li><p>Typed in <em>Montipora capitata</em></p></li>
+<li><p>Under displayed NCBI packages I selected ‘<strong>Invertebrate</strong>’</p></li>
+</ul>
+<p><img src="biosample-type.png" class="img-fluid"></p>
+<ul>
+<li>Clicked <strong>CONTINUE</strong></li>
+</ul>
+</section>
+<section id="biosample-attributes" class="level1">
+<h1>5. Biosample Attributes</h1>
+<ul>
+<li><p>Use built-in table editor</p>
+<p>The following are the columns:</p></li>
+<li><p>Sample Name</p>
+<ul>
+<li>Here I put the sample_id</li>
+</ul></li>
+<li><p>Sample title</p>
+<ul>
+<li>Same as Sample Name</li>
+</ul></li>
+<li><p>BioProject accession : left blank</p></li>
+<li><p>Organism</p>
+<ul>
+<li><p>See Organism information on <a href="https://www.ncbi.nlm.nih.gov/biosample/docs/organism/#metagenomes">Metagenome (Microbiome)</a></p></li>
+<li><p>I explored the list of NCBI existing taxonomy nodes of <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Tree&amp;id=410656&amp;lvl=3&amp;lin=f&amp;keep=1&amp;srchmode=1&amp;unlock">organismal metagenomes</a> and found <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&amp;id=496922&amp;lvl=3&amp;lin=f&amp;keep=1&amp;srchmode=1&amp;unlock">coral metagenome</a></p></li>
+<li><p>I put <code>coral metagenome</code> down under organism</p></li>
+</ul></li>
+<li><p>isolate : left blank</p></li>
+<li><p>breed : not applicable</p></li>
+<li><p>host</p>
+<ul>
+<li>Montipora capitata</li>
+</ul></li>
+<li><p>isolation source</p>
+<ul>
+<li>I put ‘developing coral embryos from (n) distinct bundle-bundle crosses’</li>
+</ul></li>
+<li><p>collection date</p>
+<ul>
+<li>date each cross was culled</li>
+</ul></li>
+<li><p>geographic location</p>
+<ul>
+<li>USA:Oahu, Kaneohe Bay</li>
+</ul></li>
+<li><p>tissue</p>
+<ul>
+<li>whole embryo</li>
+</ul></li>
+<li><p>age</p>
+<ul>
+<li>hours post fertilization (4, 9, 14)</li>
+</ul></li>
+<li><p>altitude : blank</p></li>
+<li><p>biomaterial provider</p>
+<ul>
+<li>Dr.&nbsp;Padilla-Gamiño, University of Washington, School of Aquatic and Fishery Sciences, Box 355020, Seattle, WA 98195</li>
+</ul></li>
+<li><p>collected by</p>
+<ul>
+<li>Sarah Tanja, Katherine Lasdin</li>
+</ul></li>
+<li><p>depth : blank</p></li>
+<li><p>development stage</p>
+<ul>
+<li>cleavage, prawn chip, or early gastrula</li>
+</ul></li>
+<li><p>broad-scale environmental contex</p>
+<ul>
+<li>coral reef biome</li>
+</ul></li>
+<li><p>host tissue sampled : blank</p></li>
+<li><p>identified by: blank</p></li>
+<li><p>latitude and longitude</p>
+<ul>
+<li>21.431972 N 157.787472 W</li>
+</ul></li>
+<li><p>sex : blank</p></li>
+<li><p>specimen voucher : blank</p></li>
+<li><p>temperature : blank</p></li>
+<li><p>sample description</p>
+<ul>
+<li>description of pooled samples</li>
+</ul></li>
+<li><p>PVC leachate treatment concentration level</p></li>
+<li><p>PVC leachate treatment concentration mg/L</p></li>
+<li><p>pooled crosses</p></li>
+</ul>
+<p>Click CONTINUE</p>
+</section>
+<section id="sra-metadata" class="level1">
+<h1>6. SRA Metadata</h1>
+<p>I provided metadata with the built-in table editor, and copied columns from my metadata google sheet into the NIH Submission Portal.</p>
+</section>
+<section id="file-upload" class="level1">
+<h1>7. File Upload</h1>
+<p><img src="provide-files.png" class="img-fluid"></p>
+<p>SRA file transfer protocol directions <a href="https://www.ncbi.nlm.nih.gov/sra/docs/submitfiles/#file-transfer-protocol-ftp">here</a></p>
+<p>Expand the FTP instructions section to follow instuctions mput</p>
+<p>From the R terminal in the directory where the <code>fastq.gz</code> and <code>fastq.gz.md5</code> files are located…</p>
+<p>Start your FTP session:</p>
+<pre><code>`ftp ftp-private.ncbi.nlm.nih.gov`</code></pre>
+<p>Log in with your username and password provided in the FTP instructions drop-down</p>
+<p>cd into your uploads directory as described in the FTP instructions drop-down</p>
+<p>make a new directory for your upload (I use the same name as the git repo for the project)</p>
+<ul>
+<li><p>Disable the interactive prompt by typing:</p>
+<p><code>prompt</code></p></li>
+<li><p>Use <code>mput</code> to upload all files:</p>
+<p><code>mput *fastq*</code></p></li>
+<li><p>Each file will show <code>Transfer complete</code> as it is uploaded</p>
+<p><img src="transfer-complete.png" class="img-fluid"></p></li>
+<li><p>When finished, exit the FTP session:</p>
+<p><code>bye</code></p></li>
+</ul>
+<p>Wait 10 minutes</p>
+<p>On the SRA webpage, Click <code>Select preload folder</code></p>
+<p>Click <code>Refresh folders</code></p>
+<p>If some files were not transferred…</p>
+<p>You can select specific files to transfer by using</p>
+<p><code>put filename</code></p>
 
 
 </section>

@@ -227,3 +227,5 @@ If some files were not transferred...
 You can select specific files to transfer by using
 
 `put filename`
+
+Once all errors are corrected and files uploaded and they match your metadata, submission will go through a day of processing and you'll get a confirmation email with your PRJ ID to include in publication.

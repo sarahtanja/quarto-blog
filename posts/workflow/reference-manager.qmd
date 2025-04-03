@@ -1,0 +1,43 @@
+---
+title: "Reference management"
+subtitle: "Using Paperpile, paperpile-bot, Google Docs & Quarto"
+author: "Sarah Tanja"
+date: 04/02/2025
+date-format: long
+date-modified: today
+categories: [learning journey, workflow]
+---
+
+# Paperpile reference manager
+
+# Google docs
+
+# Quarto docs
+
+You can use **Quarto's project root referencing** to flexibly specify the bibliography file relative to your project directory, no matter where the Quarto document is located.
+
+**Solution: Use `{project}` in Your Path**
+
+Quarto allows you to reference files relative to the **project root** using `{project}`. If `references.bib` is in your project’s root directory (e.g., inside your Quarto blog repository), use this in your YAML:
+
+`bibliography: {project}/references.bib`
+
+**How It Works**
+
+-   `{project}` refers to the **root directory of your Quarto project**, which is usually where your `.qmd` or `_quarto.yml` file is located. This ensures that no matter where the `.qmd` file is located within subdirectories, it will always find `references.bib` at the project root.
+
+**Example Project Structure**
+
+`{C:\Users\Minerva\Documents\GitHub\quarto-blog\} │-- _quarto.yml │-- references.bib │-- index.qmd │-- posts\ │   ├── post1\ │   │   ├── analysis.qmd  <-- This can still find references.bib! │   ├── post2\ │-- styles\`
+
+Even if `analysis.qmd` is inside a nested folder (`posts/post1/`), using
+
+`bibliography: {project}/references.bib`
+
+will always point to `C:\Users\Minerva\Documents\GitHub\quarto-blog\references.bib`.
+
+**Why This Is Better**
+
+✅ No need for absolute paths\
+✅ Works across different systems (Windows, macOS, Linux)\
+✅ More flexible than using `../../` for relative paths

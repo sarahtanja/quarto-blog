@@ -37,7 +37,7 @@ CopyEdit
 
 `bibliography: {project}/references.bib`
 
-### **How It Works** 
+### **How It Works**
 
 -   `{project}` refers to the **root directory of your Quarto project**, which is usually where your `.qmd` or `_quarto.yml` file is located.
 

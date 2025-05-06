@@ -16,25 +16,93 @@ link-external-icon: true
 link-external-newwindow: true
 ---
 
-This guide is meant to illustrate the categories of embryonic development in *Montipora capitata* that we are characterizing in this study:
+# Annotation checklist
 
--   oocyte (unfertilized egg)
-
--   **cleavage** (3-4 hours post fertilization)
-
--   4-16 cell stage
-
--   32-64 cell stage
-
--   **prawn chip** (9 hours post fertilization)
-
--   **early gastrula** (14 hours post fertilization)
-
--   gastrula
-
-Note that the phases in **bold** are the ones that we expect our embryos to be in based on hours post fertilization that they were preserved in 4% ZFIX. In this study, we conducted bundle-bundle crosses in 20mL of treatment solution (either a 0.22 micron filtered seawater `control`, or three increasing levels of PVC leachate derived from microplastics: 0.01 mg/L PVC leachate `low`, 0.1mg/L PVC leachate `mid`, or 1mg/L PVC leachate `high`).
+This guide is meant to be a checklist for annotating categories of embryonic development in *Montipora capitata* using NIS-Elements BR.
 
 For a basic introduction to using NIS Elements Annotation & Measurement tool, check out [this elearning video](https://www.microscope.healthcare.nikon.com/resources/e-learning/annotations-and-measurements).
+
+1.  Open NIS-Elements BR
+
+2.  File\>Open...
+
+3.  Select sample folder
+
+4.  Open `*stitch*.nd2`
+
+5.  Show scale\> Burn scale...
+
+    1.  Select `No` in response to pop-up asking to convert to RGB
+
+6.  Select `Appending Labels` and click ont he three dots to change font color to white and background to transparent. Keep all other settings the same.
+
+    ![](labeltext.png)
+
+7.  Using the annotation & measurement tool, insert text to label via numbering 1-n each embryo at its upper left quadrant. Do not number debris.
+
+8.  Click on the taxonomy shape icon under `Count & Taxonomy`
+
+9.  Right click inside the table to access `Taxonomy Options`
+
+10. Set number of classes to 10
+
+    1.  egg
+
+    2.  cleavage
+
+    3.  4 to 16 cell
+
+    4.  32 to 64 cell
+
+    5.  prawn chip
+
+    6.  early gastrula
+
+    7.  debris
+
+    8.  malformed
+
+    9.  typical
+
+    10. torn
+
+        ![](taxonomy.png)
+
+11. Click on taxonomy label and label each embryo with a selection from phase (egg, cleavage, 4-16, 32-64, prawn chip, or early gastrula) and proper selection from status (debris, malformed, typical, torn)
+
+12. File \> Save
+
+    1.  This saves the annotation layer to the .nd2 file
+
+13. File \> Save As ... \> JPEG - JIFF Format (\*.jpg*; \**.jpeg)
+
+    1.  Filename `_scale` replaces `_00`
+
+        ![](scale.png)
+
+14. Close jpg, make sure you're working on the nd2 file with annotations showing
+
+15. Save again as JPG with `Burn Annotations` checked, and `anno` to replace `scale`
+
+16. Reopen .nd2 file with annotations showing
+
+17. Fill out google sheet
+
+18. Save Google Sheet
+
+19. egg (unfertilized oocyte)
+
+20. **cleavage** (3-4 hours post fertilization)
+
+21. 4-16 cell stage
+
+22. 32-64 cell stage
+
+23. **prawn chip** (9 hours post fertilization)
+
+24. **early gastrula** (14 hours post fertilization)
+
+Note that the phases in **bold** are the ones that we expect our embryos to be in based on hours post fertilization that they were preserved in 4% ZFIX. In this study, we conducted bundle-bundle crosses in 20mL of treatment solution (either a 0.22 micron filtered seawater `control`, or three increasing levels of PVC leachate derived from microplastics: 0.01 mg/L PVC leachate `low`, 0.1mg/L PVC leachate `mid`, or 1mg/L PVC leachate `high`).
 
 # Oocyte
 

@@ -189,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">Anthopleura elegantissima</h1>
@@ -228,11 +228,11 @@ ul.task-list li input[type="checkbox"] {
 </li>
     </ul>
     </div>
+    
 </nav>
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
     <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(12)</span></div><div class="category" data-category="anemones">anemones <span class="quarto-category-count">(9)</span></div><div class="category" data-category="lab records">lab records <span class="quarto-category-count">(3)</span></div><div class="category" data-category="learning journey">learning journey <span class="quarto-category-count">(2)</span></div><div class="category" data-category="protocols">protocols <span class="quarto-category-count">(5)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-body" id="quarto-document-content">
@@ -370,7 +370,7 @@ Reading Time
 <span class="listing-reading-time">5 min</span>
 </td>
 </tr>
-<tr data-index="5" data-categories="anemones,lab records" data-listing-date-sort="1711782000000" data-listing-file-modified-sort="1714761848297" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-title-sort="Field collection at Constellation Park, Alki, West Seattle" data-listing-filename-sort="30MAR24-alki.qmd">
+<tr data-index="5" data-categories="anemones,lab records" data-listing-date-sort="1711782000000" data-listing-file-modified-sort="1745520511751" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-title-sort="Field collection at Constellation Park, Alki, West Seattle" data-listing-filename-sort="30MAR24-alki.qmd">
 <td>
 <span class="listing-date">Mar 30, 2024</span>
 </td>
@@ -835,6 +835,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("https:\/\/sarahtanja\.github\.io\/quarto-blog\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->

@@ -19,10 +19,6 @@ On Saturday, March 30th, 2024 Kip and I collected *Anthopleura elegantissima* fr
 
 We made the collections at 15:00, at a -0.4ft low tide. Thankfully, *Anthopleura elegantissima* are found higher in the intertidal zone. We used metal scoopulas to gently pry the anemones pedal disc from the rocky substrate, same as on [18MAR2024 at Owens Beach](18MAR24-owens-beach.qmd).
 
-::: column-margin
-
-:::
-
 ```{r echo=TRUE, message=FALSE, warning=FALSE}
 ## install packages
 if (!require("tidyverse", character.only = TRUE)) { install.packages("tidyverse")}
@@ -51,17 +47,10 @@ anemone_collection <- read_csv('30MAR24-anemone-collections.csv',
                                ))
 ```
 
-
 ```{r}
 anemone_collection %>%
   kbl() %>%
   kable_paper("hover", full_width = F)
-
-
-
-## Collection map
-
-```{r}
 
 # Prepare the text for the tooltip:
 mytext <- paste(

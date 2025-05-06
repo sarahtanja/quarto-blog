@@ -10,7 +10,15 @@
 <atom:link href="https://sarahtanja.github.io/quarto-blog/posts.xml" rel="self" type="application/rss+xml"/>
 <description>This Open Lab Notebook is a creative landing space for learning about Bioinformatics, Marine Botany, &amp; Data Science. It&#39;s mostly for me, but also for you! 😘</description>
 <generator>quarto-1.3.433</generator>
-<lastBuildDate>Wed, 02 Apr 2025 07:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 05 Jun 2025 07:00:00 GMT</lastBuildDate>
+<item>
+  <title></title>
+  <dc:creator>Sarah Tanja</dc:creator>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/committee-3.html</link>
+  <description><![CDATA[ undefined ]]></description>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/committee-3.html</guid>
+  <pubDate>Thu, 05 Jun 2025 07:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Reference management</title>
   <dc:creator>Sarah Tanja</dc:creator>
@@ -539,7 +547,7 @@ Connected to sftp.genewiz.com.</code></pre>
 </ul></li>
 <li><p>Erin Chille:</p>
 <ul>
-<li><a href="https://github.com/echille/Mcapitata_OA_Developmental_Gene_Expression_Timeseries">Mcapitata_OA_Developmental_Gene_Expression_Timeseries</a> github repository from the <span class="citation" data-cites="chille2022">[@chille2022]</span>paper</li>
+<li><a href="https://github.com/echille/Mcapitata_OA_Developmental_Gene_Expression_Timeseries">Mcapitata_OA_Developmental_Gene_Expression_Timeseries</a> github repository from the <span class="citation" data-cites="chille2022">(<strong>chille2022?</strong>)</span>paper</li>
 </ul></li>
 <li><p>Steven Roberts:</p>
 <ul>
@@ -610,13 +618,13 @@ Connected to sftp.genewiz.com.</code></pre>
 <ul>
 <li>Obtain reference genome assembly &amp; GFF annotation file
 <ul>
-<li>Genome <a href="http://cyanophora.rutgers.edu/montipora/">Version 3</a> <span class="citation" data-cites="stephens2022">[@stephens2022]</span></li>
+<li>Genome <a href="http://cyanophora.rutgers.edu/montipora/">Version 3</a> <span class="citation" data-cites="stephens2022">(<strong>stephens2022?</strong>)</span></li>
 <li><a href="http://cyanophora.rutgers.edu/montipora/Montipora_capitata_HIv3.genes.gff3.gz">GFF</a> from Rutgers (or <a href="https://github.com/AHuffmyer/EarlyLifeHistory_Energetics/raw/master/Mcap2020/Data/TagSeq/Montipora_capitata_HIv3.genes_fixed.gff3.gz">GFF fixed</a> from AHuffmyer?)</li>
 <li><a href="https://robertslab.github.io/resources/Genomic-Resources/#montipora-capitata">genomes, indexes, &amp; feature tracks</a> from Roberts Lab Handbook</li>
 </ul></li>
 <li>Align sequences to genome
 <ul>
-<li>using <a href="https://daehwankimlab.github.io/hisat2">HISAT-2</a> <span class="citation" data-cites="zhang_rapid_2021">[@zhang_rapid_2021]</span></li>
+<li>using <a href="https://daehwankimlab.github.io/hisat2">HISAT-2</a> <span class="citation" data-cites="zhang_rapid_2021">(<strong>zhang_rapid_2021?</strong>)</span></li>
 </ul></li>
 <li><code>StringTie 2</code> , <code>samtools</code> ,</li>
 </ul>
@@ -847,18 +855,62 @@ Okubo, Nami, Takuma Mezaki, Yoko Nozawa, Yoshikatsu Nakano, Yi-Ting Lien, Hirono
 
 
 
-<p>This guide is meant to illustrate the categories of embryonic development in <em>Montipora capitata</em> that we are characterizing in this study:</p>
-<ul>
-<li><p>oocyte (unfertilized egg)</p></li>
+<section id="annotation-checklist" class="level1">
+<h1>Annotation checklist</h1>
+<p>This guide is meant to be a checklist for annotating categories of embryonic development in <em>Montipora capitata</em> using NIS-Elements BR.</p>
+<p>For a basic introduction to using NIS Elements Annotation &amp; Measurement tool, check out <a href="https://www.microscope.healthcare.nikon.com/resources/e-learning/annotations-and-measurements">this elearning video</a>.</p>
+<ol type="1">
+<li><p>Open NIS-Elements BR</p></li>
+<li><p>File&gt;Open…</p></li>
+<li><p>Select sample folder</p></li>
+<li><p>Open <code>*stitch*.nd2</code></p></li>
+<li><p>Show scale&gt; Burn scale…</p>
+<ol type="1">
+<li>Select <code>No</code> in response to pop-up asking to convert to RGB</li>
+</ol></li>
+<li><p>Select <code>Appending Labels</code> and click ont he three dots to change font color to white and background to transparent. Keep all other settings the same.</p>
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/labeltext.png" class="img-fluid"></p></li>
+<li><p>Using the annotation &amp; measurement tool, insert text to label via numbering 1-n each embryo at its upper left quadrant. Do not number debris.</p></li>
+<li><p>Click on the taxonomy shape icon under <code>Count &amp; Taxonomy</code></p></li>
+<li><p>Right click inside the table to access <code>Taxonomy Options</code></p></li>
+<li><p>Set number of classes to 10</p>
+<ol type="1">
+<li><p>egg</p></li>
+<li><p>cleavage</p></li>
+<li><p>4 to 16 cell</p></li>
+<li><p>32 to 64 cell</p></li>
+<li><p>prawn chip</p></li>
+<li><p>early gastrula</p></li>
+<li><p>debris</p></li>
+<li><p>malformed</p></li>
+<li><p>typical</p></li>
+<li><p>torn</p>
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/taxonomy.png" class="img-fluid"></p></li>
+</ol></li>
+<li><p>Click on taxonomy label and label each embryo with a selection from phase (egg, cleavage, 4-16, 32-64, prawn chip, or early gastrula) and proper selection from status (debris, malformed, typical, torn)</p></li>
+<li><p>File &gt; Save</p>
+<ol type="1">
+<li>This saves the annotation layer to the .nd2 file</li>
+</ol></li>
+<li><p>File &gt; Save As … &gt; JPEG - JIFF Format (*.jpg<em>; *</em>.jpeg)</p>
+<ol type="1">
+<li><p>Filename <code>_scale</code> replaces <code>_00</code></p>
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/scale.png" class="img-fluid"></p></li>
+</ol></li>
+<li><p>Close jpg, make sure you’re working on the nd2 file with annotations showing</p></li>
+<li><p>Save again as JPG with <code>Burn Annotations</code> checked, and <code>anno</code> to replace <code>scale</code></p></li>
+<li><p>Reopen .nd2 file with annotations showing</p></li>
+<li><p>Fill out google sheet</p></li>
+<li><p>Save Google Sheet</p></li>
+<li><p>egg (unfertilized oocyte)</p></li>
 <li><p><strong>cleavage</strong> (3-4 hours post fertilization)</p></li>
 <li><p>4-16 cell stage</p></li>
 <li><p>32-64 cell stage</p></li>
 <li><p><strong>prawn chip</strong> (9 hours post fertilization)</p></li>
 <li><p><strong>early gastrula</strong> (14 hours post fertilization)</p></li>
-<li><p>gastrula</p></li>
-</ul>
+</ol>
 <p>Note that the phases in <strong>bold</strong> are the ones that we expect our embryos to be in based on hours post fertilization that they were preserved in 4% ZFIX. In this study, we conducted bundle-bundle crosses in 20mL of treatment solution (either a 0.22 micron filtered seawater <code>control</code>, or three increasing levels of PVC leachate derived from microplastics: 0.01 mg/L PVC leachate <code>low</code>, 0.1mg/L PVC leachate <code>mid</code>, or 1mg/L PVC leachate <code>high</code>).</p>
-<p>For a basic introduction to using NIS Elements Annotation &amp; Measurement tool, check out <a href="https://www.microscope.healthcare.nikon.com/resources/e-learning/annotations-and-measurements">this elearning video</a>.</p>
+</section>
 <section id="oocyte" class="level1">
 <h1>Oocyte</h1>
 <section id="exemplar" class="level4">
@@ -2845,232 +2897,6 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
   <category>lab records</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/16aug2024-extraction/16aug2024-extraction.html</guid>
   <pubDate>Fri, 16 Aug 2024 07:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>15-Aug-2024 Embryo RNA Extractions</title>
-  <dc:creator>Sarah Tanja</dc:creator>
-  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/15aug2024-extraction/15aug2024-extraction.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="samples" class="level1">
-<h1>Samples</h1>
-<ul>
-<li><p>4C14F, 5C14F = 45C14</p>
-<ul>
-<li>2 min Qiagin Tissue Disruption Tubes</li>
-</ul></li>
-<li><p>4L4F, 5L4F, 6L4F = 456L4</p>
-<ul>
-<li>2 min Qiagin Tissue Disruption Tubes</li>
-</ul></li>
-<li><p>4M9F, 5M9F, 6M9F = 456M9</p>
-<ul>
-<li>2 min Qiagin Tissue Disruption Tubes</li>
-</ul></li>
-<li><p>4H4F, 5H4F, 6H4F = 456H4</p>
-<ul>
-<li>2 min Qiagin Tissue Disruption Tubes</li>
-</ul></li>
-<li><p>4C9F, 5C9F = 45C9</p>
-<ul>
-<li>2 min Qiagin Tissue Disruption Tubes</li>
-</ul></li>
-<li><p>4L9F, 5L9F, 6L9F = 456L9</p>
-<ul>
-<li>2 min Qiagin Tissue Disruption Tubes</li>
-</ul></li>
-</ul>
-</section>
-<section id="summary" class="level1">
-<h1>Summary</h1>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Caution
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This extraction was overall bad… The main difference was I re-introduced Proteinase K digestion (hoping to maintain RNA quality &amp; integrity… But RNA quantity suffered A LOT (And I’m not measuring RIN… just crossing my fingers and sending it to Azenta)</p>
-</div>
-</div>
-</section>
-<section id="extraction-notes" class="level1">
-<h1>Extraction Notes</h1>
-<p>date: 15-AUG-2024</p>
-<p>kit: Zymo Quick-DNA/RNA Miniprep Plus Kit</p>
-<ul>
-<li><p>Thaw samples to room temp</p></li>
-<li><p>Vortex to mix</p></li>
-<li><p>Transfer to Qiagin Tissue Disruption Tube</p></li>
-<li><p>Homogenize for 2 minutes</p></li>
-<li><p>Centrifuge 1 minute to get rid of bubbles</p>
-<ul>
-<li>Checked for complete lysis… still saw entact cells so I homogenized again for 1 minute with 1/3 of Zymo 0.1 &amp; 0.5 mm glass beads poured in each tube. This resulted in complete lysis. Centrifuged again for 1 minute</li>
-</ul></li>
-<li><p>Split into two aliquots of 500uL &amp; transfered to two new nuclease-free tubes</p></li>
-<li><p>Proteinase K Digestion for 40 minutes at 55C</p></li>
-<li><p>Added 700uL of DNA/RNA Lysis Buffer to each tube ( a total of 1400uL volume in each tube )</p></li>
-<li><p>Vortex to mix for 5 seconds</p></li>
-<li><p>Check to see that embryos have dissolved and liquid is clear</p></li>
-</ul>
-<p>—&gt; Proceed to purification</p>
-<ul>
-<li><p>Sequentially transfer 2800uL of each sample in aliquots of 700uL into yellow Spin-Away Filter in a Collection Tube and centrifuge for 30s. <strong>SAVE THE FLOW THROUGH FOR RNA PURIFICATION by tipping flow through into falcon tube</strong></p></li>
-<li><p>Doubled volume of 100% (200 proof) ethanol to the RNA flow through in a falcon tube and vortexed to mix. End volume of flow through + ethanol = 5mL</p></li>
-<li><p>Sequentially transfer RNA flow-through + ethanol in volumes =&gt;700uL into the green Zymo Spin IIICG Column in a Collection Tube</p></li>
-<li><p>Saved 1st 1400uL for protein</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This took 7 passes!</p>
-</div>
-</div></li>
-<li><p>Performed DNase I Treatment on green RNA spin column</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">DB <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">75</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">4</span></span>
-<span id="cb1-2"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">print</span>(DB)</span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 300</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">Dnase <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">5</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">4</span> </span>
-<span id="cb3-2"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">print</span>(Dnase)</span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 20</code></pre>
-</div>
-</div>
-<ul>
-<li>I didn’t invert to mix… I always lose some volume ‘beads’ in the lid when I do this. Instead I flicked the tube to mix it and kept all the volume down in the cnical end of the tube. This worked well and I had a full 80uL of treatment per spin column to work with.</li>
-</ul></li>
-<li><p>Warmed Zymo DNase-RNase Free Water to 55C in heat block before elution, and slowly dripped water directly over filter.</p></li>
-</ul>
-<p>eluted DNA volume: 30uL in <code>Zymo DNase-RNase Free Water</code></p>
-<p>eluted RNA volume: 30uL in <code>Zymo DNase-RNase Free Water</code></p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>I spoke with Azenta rep on morning of 15-Aug-2024 and learned that they don’t require a Nanodrop quality check, just a Qubit double-stranded quantity measurement by flourescence. The target is 100ng of total RNA, in a minimum of 20uL of buffer. So from here on out I’m just checking quantity using the Qubit and the Invitrogen High Sensitivity (HS) RNA assay.</p>
-</div>
-</div>
-</section>
-<section id="qubit" class="level1">
-<h1>Qubit</h1>
-<p>Using the Invitrogen Thermo Fischer RNA High Sensitivity Assay Kit.</p>
-<p>Prepared working solution for 3 samples and two standards:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">199</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">6</span></span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 1194</code></pre>
-</div>
-</div>
-<p>Qubit RNA HS reagent in DMSO = 1uL * 5 = 6uL</p>
-<p>Qubit RNA HS Buffer = 199uL * 5 = 1194uL</p>
-<section id="rna" class="level3">
-<h3 class="anchored" data-anchor-id="rna">RNA</h3>
-<p>standard 1: 94.63</p>
-<p>standard 2: 1803.97</p>
-<p>RunID: 2024-08-16_074027</p>
-<table class="table">
-<thead>
-<tr class="header">
-<th>sample_id</th>
-<th>qubit_rna_1</th>
-<th>qubit_rna_2</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>45C14</td>
-<td>8.70 ng/uL</td>
-<td>8.88 ng/uL</td>
-</tr>
-<tr class="even">
-<td>456L4</td>
-<td>too low</td>
-<td>too low</td>
-</tr>
-<tr class="odd">
-<td>456M9</td>
-<td>too low</td>
-<td>too low</td>
-</tr>
-<tr class="even">
-<td>456H4</td>
-<td>too low</td>
-<td>too low</td>
-</tr>
-<tr class="odd">
-<td>45C9</td>
-<td>too low</td>
-<td>too low</td>
-</tr>
-<tr class="even">
-<td>456L9</td>
-<td>8.34 ng/uL</td>
-<td>8.22 ng/uL</td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
-<section id="storage-location" class="level1">
-<h1>Storage Location</h1>
-<p>RNA samples are stored in -80C ‘JPG Lab’ Thermo freezer on shelf 1 in <code>coral-embryo-leachate RNA</code> wax freezer boxes with green label tape:</p>
-<p>DNA samples (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate DNA</code> wax freezer box with yellow label tape:</p>
-<p>Protein flow-through (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate PROTEIN</code> wax freezer box with blue label tape:</p>
-
-
-</section>
-
- ]]></description>
-  <category>lab records</category>
-  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/15aug2024-extraction/15aug2024-extraction.html</guid>
-  <pubDate>Thu, 15 Aug 2024 07:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

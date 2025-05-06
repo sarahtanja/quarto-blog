@@ -19,10 +19,15 @@ bibliography: ../library.bib
 ::: {.callout-important icon="false"}
 ## Learning Objective
 
-What are the common concentrations (g/L) of phthalates measured in seawater around the world? This goal of this objective is to understand the environmentally relevant range of this type of pollutant.
+What are the common concentrations (ug/L) of phthalates measured in seawater around the world? This goal of this objective is to understand the environmentally relevant range of this type of pollutant.
 :::
 
 > The toxicity of PAEs remains under debate because the debate is characterized by tension between the commercial importance of PAEs and their impact on human health and on the environment. - @net2015
+
+```{r}
+
+```
+
 
 ## What are phthalates?
 

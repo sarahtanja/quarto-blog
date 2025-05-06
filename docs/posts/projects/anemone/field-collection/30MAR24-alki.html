@@ -101,7 +101,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <script src="../../../../site_libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="../../../../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
-<script src="../../../../site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<link href="../../../../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="../../../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
 <script src="../../../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="../../../../site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
 <script src="../../../../site_libs/leaflet-1.3.1/leaflet.js"></script>
@@ -109,15 +110,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../../site_libs/proj4-2.6.2/proj4.min.js"></script>
 <script src="../../../../site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
 <link href="../../../../site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
-<script src="../../../../site_libs/leaflet-binding-2.2.1/leaflet.js"></script>
+<script src="../../../../site_libs/leaflet-binding-2.2.2/leaflet.js"></script>
 <script src="../../../../site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
-<script src="../../../../site_libs/leaflet-providers-plugin-2.2.1/leaflet-providers-plugin.js"></script>
+<script src="../../../../site_libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
 
 
 <link rel="stylesheet" href="../../../../styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed slimcontent">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -209,7 +210,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
+    <div class="quarto-title column-page-right">
       <h1 class="title">Field collection at Constellation Park, Alki, West Seattle</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">anemones</div>
@@ -280,20 +281,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block page-columns page-full column-body" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content">
 
 
 
 
 <p>On Saturday, March 30th, 2024 Kip and I collected <em>Anthopleura elegantissima</em> from Constellation Park near Alki in West Seattle, Washington under WDFW scientific collection permit Tanja 24-010. At this site we collected 10 anemones from each of 4 aggregates, a total of 40 anemones. However, during this collection we didn’t bother with keeping track of the aggregates. These anemones were collected for use in the preliminary respiration and photosynthesis response curves, and we were not concerned with genotype since we wouldn’t be subjecting them to RNA extraction and differential gene expression analysis.</p>
 <p>We made the collections at 15:00, at a -0.4ft low tide. Thankfully, <em>Anthopleura elegantissima</em> are found higher in the intertidal zone. We used metal scoopulas to gently pry the anemones pedal disc from the rocky substrate, same as on <a href="../../../../posts/projects/anemone/field-collection/18MAR24-owens-beach.html">18MAR2024 at Owens Beach</a>.</p>
-
-<div class="no-row-height column-margin column-container"><div class="">
-
-</div></div><div class="cell">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## install packages</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">"tidyverse"</span>, <span class="at">character.only =</span> <span class="cn">TRUE</span>)) { <span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)}</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">"kableExtra"</span>, <span class="at">character.only =</span> <span class="cn">TRUE</span>)) { <span class="fu">install.packages</span>(<span class="st">"kableExtra"</span>)}</span>
@@ -372,30 +370,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 </div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Collection map</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Prepare the text for the tooltip:</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>mytext <span class="ot">&lt;-</span> <span class="fu">paste</span>(</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>   <span class="st">"Aggregate: "</span>, anemone_collection<span class="sc">$</span>aggregate, <span class="st">"&lt;br/&gt;"</span>, </span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>   <span class="st">"Date: "</span>, anemone_collection<span class="sc">$</span>date) <span class="sc">%&gt;%</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">lapply</span>(htmltools<span class="sc">::</span>HTML)</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Final Map</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>pdp <span class="ot">&lt;-</span> <span class="fu">leaflet</span>(anemone_collection) <span class="sc">%&gt;%</span> </span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>()  <span class="sc">%&gt;%</span> </span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">setView</span>( <span class="at">lng =</span> <span class="sc">-</span><span class="fl">122.4135</span>, <span class="at">lat =</span> <span class="fl">47.5719</span>, <span class="at">zoom =</span> <span class="dv">18</span> ) <span class="sc">%&gt;%</span> </span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addProviderTiles</span>(<span class="st">"Esri.WorldImagery"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addCircleMarkers</span>(<span class="sc">~</span>lon, <span class="sc">~</span>lat, </span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">fillColor =</span> <span class="st">"orange"</span>, <span class="at">fillOpacity =</span> <span class="fl">0.7</span>, <span class="at">color=</span><span class="st">"white"</span>, <span class="at">radius=</span><span class="dv">8</span>, <span class="at">stroke=</span><span class="cn">FALSE</span>,</span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">label =</span> mytext,</span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">labelOptions =</span> <span class="fu">labelOptions</span>( <span class="at">style =</span> <span class="fu">list</span>(<span class="st">"font-weight"</span> <span class="ot">=</span> <span class="st">"normal"</span>, <span class="at">padding =</span> <span class="st">"3px 8px"</span>), <span class="at">textsize =</span> <span class="st">"13px"</span>, <span class="at">direction =</span> <span class="st">"auto"</span>)</span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>pdp</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Prepare the text for the tooltip:</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>mytext <span class="ot">&lt;-</span> <span class="fu">paste</span>(</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>   <span class="st">"Aggregate: "</span>, anemone_collection<span class="sc">$</span>aggregate, <span class="st">"&lt;br/&gt;"</span>, </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>   <span class="st">"Date: "</span>, anemone_collection<span class="sc">$</span>date) <span class="sc">%&gt;%</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">lapply</span>(htmltools<span class="sc">::</span>HTML)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Final Map</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>pdp <span class="ot">&lt;-</span> <span class="fu">leaflet</span>(anemone_collection) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>()  <span class="sc">%&gt;%</span> </span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">setView</span>( <span class="at">lng =</span> <span class="sc">-</span><span class="fl">122.4135</span>, <span class="at">lat =</span> <span class="fl">47.5719</span>, <span class="at">zoom =</span> <span class="dv">18</span> ) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addProviderTiles</span>(<span class="st">"Esri.WorldImagery"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addCircleMarkers</span>(<span class="sc">~</span>lon, <span class="sc">~</span>lat, </span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">fillColor =</span> <span class="st">"orange"</span>, <span class="at">fillOpacity =</span> <span class="fl">0.7</span>, <span class="at">color=</span><span class="st">"white"</span>, <span class="at">radius=</span><span class="dv">8</span>, <span class="at">stroke=</span><span class="cn">FALSE</span>,</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">label =</span> mytext,</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">labelOptions =</span> <span class="fu">labelOptions</span>( <span class="at">style =</span> <span class="fu">list</span>(<span class="st">"font-weight"</span> <span class="ot">=</span> <span class="st">"normal"</span>, <span class="at">padding =</span> <span class="st">"3px 8px"</span>), <span class="at">textsize =</span> <span class="st">"13px"</span>, <span class="at">direction =</span> <span class="st">"auto"</span>)</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>pdp</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-8278b1d9b7b2146c2f4e" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-8278b1d9b7b2146c2f4e">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addCircleMarkers","args":[[47.5721422,47.5719906,47.571479,47.5715993],[-122.4137027,-122.4138904,-122.4131354,-122.4131307],8,null,null,{"interactive":true,"className":"","stroke":false,"color":"white","weight":5,"opacity":0.5,"fill":true,"fillColor":"orange","fillOpacity":0.7},null,null,null,null,["Aggregate:  1 <br/> Date:  2024-03-30","Aggregate:  2 <br/> Date:  2024-03-30","Aggregate:  3 <br/> Date:  2024-03-30","Aggregate:  4 <br/> Date:  2024-03-30"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"13px","textOnly":false,"style":{"font-weight":"normal","padding":"3px 8px"},"className":"","sticky":true},null]}],"setView":[[47.5719,-122.4135],18,[]],"limits":{"lat":[47.571479,47.5721422],"lng":[-122.4138904,-122.4131307]}},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-76568ca0b490c3b916aa" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-76568ca0b490c3b916aa">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addCircleMarkers","args":[[47.5721422,47.5719906,47.571479,47.5715993],[-122.4137027,-122.4138904,-122.4131354,-122.4131307],8,null,null,{"interactive":true,"className":"","stroke":false,"color":"white","weight":5,"opacity":0.5,"fill":true,"fillColor":"orange","fillOpacity":0.7},null,null,null,null,["Aggregate:  1 <br/> Date:  2024-03-30","Aggregate:  2 <br/> Date:  2024-03-30","Aggregate:  3 <br/> Date:  2024-03-30","Aggregate:  4 <br/> Date:  2024-03-30"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"13px","textOnly":false,"style":{"font-weight":"normal","padding":"3px 8px"},"className":"","sticky":true},null]}],"setView":[[47.5719,-122.4135],18,[]],"limits":{"lat":[47.571479,47.5721422],"lng":[-122.4138904,-122.4131307]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>

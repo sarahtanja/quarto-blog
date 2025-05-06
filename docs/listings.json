@@ -9,6 +9,18 @@
     ]
   },
   {
+    "listing": "/posts/projects/coral-pae-temp.html",
+    "items": [
+      "/posts/projects/coral-pae-temp/dna-rna-extractions/dna-rna-coral-extractions.html"
+    ]
+  },
+  {
+    "listing": "/posts/projects/coral-leachate-heat.html",
+    "items": [
+      "/posts/projects/coral-leachate-heat/log.html"
+    ]
+  },
+  {
     "listing": "/posts/projects/coral-embryo-leachate.html",
     "items": [
       "/posts/projects/coral-embryo-leachate/bioinformatics-pipeline/pipeline-overview.html",
@@ -28,24 +40,31 @@
       "/posts/projects/coral-embryo-leachate/13aug2024-extraction/13aug2024-extraction.html",
       "/posts/projects/coral-embryo-leachate/12aug2024-extraction/12aug2024-extraction.html",
       "/posts/projects/coral-embryo-leachate/embryo-extractions.html",
+      "/posts/projects/coral-embryo-leachate/himb/collections_tanks.html",
       "/posts/projects/coral-embryo-leachate/spawn-night-checklist.html"
     ]
   },
   {
-    "listing": "/posts/projects/coral-leachate-heat.html",
+    "listing": "/posts/projects/anemone.html",
     "items": [
-      "/posts/projects/coral-leachate-heat/log.html"
-    ]
-  },
-  {
-    "listing": "/posts/projects/coral-pae-temp.html",
-    "items": [
-      "/posts/projects/coral-pae-temp/dna-rna-extractions/dna-rna-coral-extractions.html"
+      "/posts/projects/anemone/chlorophyll/chlorophyll.html",
+      "/posts/projects/anemone/single-stress/pilot-single-stress.html",
+      "/posts/projects/anemone/about-anemones/about-anemone.html",
+      "/posts/projects/anemone/plan/experiment-schedule.html",
+      "/posts/projects/anemone/making-chambers/making-chambers.html",
+      "/posts/projects/anemone/field-collection/30MAR24-alki.html",
+      "/posts/projects/anemone/field-collection/18MAR24-owens-beach.html",
+      "/posts/projects/anemone/heat-stress/heat-wave.html",
+      "/posts/projects/anemone/leachate-protocol/leachate-protocol.html",
+      "/posts/projects/anemone/tanks/tanks.html",
+      "/posts/projects/anemone/photosynth-pam/photosynth-pam.html",
+      "/posts/projects/anemone/plan/project-planning.html"
     ]
   },
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/thesis-progress/committee-3/committee-3.html",
       "/posts/workflow/reference-manager.html",
       "/posts/ncbi-sra-submission/ncbi-sra-submission-16S.html",
       "/posts/code-help/backup.html",
@@ -70,6 +89,7 @@
       "/posts/projects/coral-embryo-leachate/13aug2024-extraction/13aug2024-extraction.html",
       "/posts/projects/coral-embryo-leachate/12aug2024-extraction/12aug2024-extraction.html",
       "/posts/projects/coral-embryo-leachate/embryo-extractions.html",
+      "/posts/projects/coral-embryo-leachate/himb/collections_tanks.html",
       "/posts/projects/coral-embryo-leachate/spawn-night-checklist.html",
       "/posts/projects/coral-leachate-heat/log.html",
       "/posts/projects/anemone/chlorophyll/chlorophyll.html",
@@ -89,7 +109,7 @@
       "/posts/code-help/quarto-blog-create.html",
       "/posts/pseudoreplication/index.html",
       "/posts/world-phthalates/index.html",
-      "/posts/committee-2/index.html",
+      "/posts/thesis-progress/committee-2/index.html",
       "/posts/thesis-progress/thesis-progress.html",
       "/posts/pae-standard-control/index.html",
       "/posts/code-help/git-reset.html",
@@ -100,9 +120,9 @@
       "/posts/coral-pae-devo/index.html",
       "/posts/choosing-16S-primers/index.html",
       "/posts/extractions-overview/index.html",
+      "/posts/projects/anemone/heat-stress/heat-wave.html",
       "/posts/projects/coral-pae-temp/dna-rna-extractions/dna-rna-coral-extractions.html",
-      "/posts/committee-1/index.html",
-      "/posts/projects/anemone/heat-stress/heat-wave.html"
+      "/posts/thesis-progress/committee-1/index.html"
     ]
   }
 ]

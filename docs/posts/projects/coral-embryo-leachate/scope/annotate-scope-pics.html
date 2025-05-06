@@ -191,7 +191,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">April 2, 2025</p>
+        <p class="date-modified">May 6, 2025</p>
       </div>
     </div>
       
@@ -232,7 +232,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#oocyte" id="toc-oocyte" class="nav-link active" data-scroll-target="#oocyte">Oocyte</a>
+  <li><a href="#annotation-checklist" id="toc-annotation-checklist" class="nav-link active" data-scroll-target="#annotation-checklist">Annotation checklist</a></li>
+  <li><a href="#oocyte" id="toc-oocyte" class="nav-link" data-scroll-target="#oocyte">Oocyte</a>
   <ul>
   <li><a href="#exemplar" id="toc-exemplar" class="nav-link" data-scroll-target="#exemplar">exemplar</a></li>
   <li><a href="#fragmented" id="toc-fragmented" class="nav-link" data-scroll-target="#fragmented">fragmented</a></li>
@@ -287,18 +288,62 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>This guide is meant to illustrate the categories of embryonic development in <em>Montipora capitata</em> that we are characterizing in this study:</p>
-<ul>
-<li><p>oocyte (unfertilized egg)</p></li>
+<section id="annotation-checklist" class="level1">
+<h1>Annotation checklist</h1>
+<p>This guide is meant to be a checklist for annotating categories of embryonic development in <em>Montipora capitata</em> using NIS-Elements BR.</p>
+<p>For a basic introduction to using NIS Elements Annotation &amp; Measurement tool, check out <a href="https://www.microscope.healthcare.nikon.com/resources/e-learning/annotations-and-measurements">this elearning video</a>.</p>
+<ol type="1">
+<li><p>Open NIS-Elements BR</p></li>
+<li><p>File&gt;Open…</p></li>
+<li><p>Select sample folder</p></li>
+<li><p>Open <code>*stitch*.nd2</code></p></li>
+<li><p>Show scale&gt; Burn scale…</p>
+<ol type="1">
+<li>Select <code>No</code> in response to pop-up asking to convert to RGB</li>
+</ol></li>
+<li><p>Select <code>Appending Labels</code> and click ont he three dots to change font color to white and background to transparent. Keep all other settings the same.</p>
+<p><img src="labeltext.png" class="img-fluid"></p></li>
+<li><p>Using the annotation &amp; measurement tool, insert text to label via numbering 1-n each embryo at its upper left quadrant. Do not number debris.</p></li>
+<li><p>Click on the taxonomy shape icon under <code>Count &amp; Taxonomy</code></p></li>
+<li><p>Right click inside the table to access <code>Taxonomy Options</code></p></li>
+<li><p>Set number of classes to 10</p>
+<ol type="1">
+<li><p>egg</p></li>
+<li><p>cleavage</p></li>
+<li><p>4 to 16 cell</p></li>
+<li><p>32 to 64 cell</p></li>
+<li><p>prawn chip</p></li>
+<li><p>early gastrula</p></li>
+<li><p>debris</p></li>
+<li><p>malformed</p></li>
+<li><p>typical</p></li>
+<li><p>torn</p>
+<p><img src="taxonomy.png" class="img-fluid"></p></li>
+</ol></li>
+<li><p>Click on taxonomy label and label each embryo with a selection from phase (egg, cleavage, 4-16, 32-64, prawn chip, or early gastrula) and proper selection from status (debris, malformed, typical, torn)</p></li>
+<li><p>File &gt; Save</p>
+<ol type="1">
+<li>This saves the annotation layer to the .nd2 file</li>
+</ol></li>
+<li><p>File &gt; Save As … &gt; JPEG - JIFF Format (*.jpg<em>; *</em>.jpeg)</p>
+<ol type="1">
+<li><p>Filename <code>_scale</code> replaces <code>_00</code></p>
+<p><img src="scale.png" class="img-fluid"></p></li>
+</ol></li>
+<li><p>Close jpg, make sure you’re working on the nd2 file with annotations showing</p></li>
+<li><p>Save again as JPG with <code>Burn Annotations</code> checked, and <code>anno</code> to replace <code>scale</code></p></li>
+<li><p>Reopen .nd2 file with annotations showing</p></li>
+<li><p>Fill out google sheet</p></li>
+<li><p>Save Google Sheet</p></li>
+<li><p>egg (unfertilized oocyte)</p></li>
 <li><p><strong>cleavage</strong> (3-4 hours post fertilization)</p></li>
 <li><p>4-16 cell stage</p></li>
 <li><p>32-64 cell stage</p></li>
 <li><p><strong>prawn chip</strong> (9 hours post fertilization)</p></li>
 <li><p><strong>early gastrula</strong> (14 hours post fertilization)</p></li>
-<li><p>gastrula</p></li>
-</ul>
+</ol>
 <p>Note that the phases in <strong>bold</strong> are the ones that we expect our embryos to be in based on hours post fertilization that they were preserved in 4% ZFIX. In this study, we conducted bundle-bundle crosses in 20mL of treatment solution (either a 0.22 micron filtered seawater <code>control</code>, or three increasing levels of PVC leachate derived from microplastics: 0.01 mg/L PVC leachate <code>low</code>, 0.1mg/L PVC leachate <code>mid</code>, or 1mg/L PVC leachate <code>high</code>).</p>
-<p>For a basic introduction to using NIS Elements Annotation &amp; Measurement tool, check out <a href="https://www.microscope.healthcare.nikon.com/resources/e-learning/annotations-and-measurements">this elearning video</a>.</p>
+</section>
 <section id="oocyte" class="level1">
 <h1>Oocyte</h1>
 <section id="exemplar" class="level4">

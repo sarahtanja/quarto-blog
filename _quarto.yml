@@ -60,6 +60,9 @@ format:
     code-background: true
     code-copy: true
     toc: true 
+    df-print: kable
+    smooth-scroll: true
+    link-external-newwindow: true
 
 editor: visual
 

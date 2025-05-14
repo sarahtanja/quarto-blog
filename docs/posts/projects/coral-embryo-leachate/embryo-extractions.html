@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,7 +19,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -60,7 +60,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
@@ -68,6 +69,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-diagram/mermaid-init.js"></script>
 <link href="../../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../../styles.css">
@@ -87,47 +89,48 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Sarah Tanja’s Open Lab Notebook</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/sarah-tanja-595722146/"><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/sarah-tanja-595722146/" rel="" target=""><i class="bi bi-linkedin" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-github" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-github" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
       <i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-github">    
         <li>
-    <a class="dropdown-item" href="https://github.com/sarahtanja">
+    <a class="dropdown-item" href="https://github.com/sarahtanja" rel="" target="">
  <span class="dropdown-text">Sarah’s GitHub</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-embryo-leachate">
+    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-embryo-leachate" rel="" target="">
  <span class="dropdown-text">Coral Embryology Project Repository</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-leachate-heat">
+    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-leachate-heat" rel="" target="">
  <span class="dropdown-text">Coral Photophysiology Project Repository</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://github.com/sarahtanja/anemone-leachate-heat">
+    <a class="dropdown-item" href="https://github.com/sarahtanja/anemone-leachate-heat" rel="" target="">
  <span class="dropdown-text">Anemone Photophysiology Project Repository</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-pae-temp">
+    <a class="dropdown-item" href="https://github.com/sarahtanja/coral-pae-temp" rel="" target="">
  <span class="dropdown-text">Coral Microbiome Project Repository</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-envelope-paper" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-envelope-paper" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
       <i class="bi bi-envelope-paper" role="img">
 </i> 
  <span class="menu-text"></span>
@@ -135,24 +138,28 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-envelope-paper">    
         <li class="dropdown-header">stanja@uw.edu</li>
         <li>
-    <a class="dropdown-item" href="../../../contact.html">
+    <a class="dropdown-item" href="../../../contact.html" rel="" target="">
  <span class="dropdown-text">Contact</span></a>
   </li>  
     </ul>
   </li>
 </ul>
-              <div class="quarto-toggle-container">
-                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-              </div>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">M. Capitata Embryo DNA/RNA Extractions Protocol</h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">M. Capitata Embryo DNA/RNA Extractions Protocol</li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -161,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title d-none d-lg-block">M. Capitata Embryo DNA/RNA Extractions Protocol</h1>
+      <h1 class="title">M. Capitata Embryo DNA/RNA Extractions Protocol</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">protocols</div>
                 <div class="quarto-category">coral</div>
@@ -189,7 +196,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">May 6, 2025</p>
+        <p class="date-modified">May 14, 2025</p>
       </div>
     </div>
       
@@ -198,27 +205,30 @@ ul.task-list li input[type="checkbox"] {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
-      <div class="mt-2 flex-shrink-0 align-items-center">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../projects.html" class="sidebar-item-text sidebar-link">Projects</a>
+  <a href="../../../projects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projects</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../posts.html" class="sidebar-item-text sidebar-link">Posts</a>
+  <a href="../../../posts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Posts</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../about.html" class="sidebar-item-text sidebar-link">About</a>
+  <a href="../../../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
   </div>
 </li>
     </ul>
@@ -263,6 +273,7 @@ ul.task-list li input[type="checkbox"] {
   </ul>
 </nav>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
@@ -282,7 +293,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>This protocol follows the Zymo Research <a href="https://files.zymoresearch.com/protocols/_d7003t_d7003_quick-dna-rna_miniprep_plus_kit.pdf"><em>Quick</em>-DNA/RNA Mininprep Plus Kit Instruction Manual</a>, and will result in DNA, RNA, (and if desired, proteins for proteomics?) for each sample. This facilitates paired sample analysis, where each data point in one dataset is uniquely paired to a data point in the second dataset because we are making duplicate measurements on the <em>same sample</em>.</p>
 <p>However, DNA and proteins are NOT the focus here. Those samples will be saved for potential future work… but HERE, we are focusing on RNA!</p>
-<div class="callout-tip callout callout-style-simple">
+<div class="callout callout-style-simple callout-tip">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -292,7 +303,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div class="callout-tip callout callout-style-simple">
+<div class="callout callout-style-simple callout-tip">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -316,22 +327,22 @@ ul.task-list li input[type="checkbox"] {
 <section id="kits-tubes" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="kits-tubes"><em>Kits &amp; Tubes</em></h2>
 <ul class="task-list">
-<li><p><input type="checkbox" disabled="">Zymo Research <a href="https://www.zymoresearch.com/products/quick-dna-rna-miniprep-plus-kit">Quick-DNA/RNA Miniprep Plus Kit</a> (50 prep D7003, or 10 prep D7003T) <em>1 prep = 1 sample that results in DNA in one tube, and RNA in another</em></p></li>
-<li><p><input type="checkbox" disabled=""><a href="https://www.zymoresearch.com/collections/lysis-tubes/products/zr-bashingbead-lysis-tubes-0-1-0-5-mm">ZR BashingBead Lysis 2mL Tubes with 0.1 &amp; 0.5mm beads</a>, 1 per prep</p></li>
-<li><p><input type="checkbox" disabled=""><a href="https://www.zymoresearch.com/products/dnase-rnase-free-tubes">DNase/RNase-Free Tubes</a>, 4 per prep (plus extras)</p></li>
-<li><p><input type="checkbox" disabled=""><a href="https://www.zymoresearch.com/products/rna-clean-concentrator-5?gad=1&amp;gclid=Cj0KCQjw3JanBhCPARIsAJpXTx6_HqFIKQUjYO9E6qR9e9s4gPbpSk6wIvu14hZOfUxQJ3I6kISe2bgaAtTxEALw_wcB">RNA Clean &amp; Concentrator-5, DNase not Included</a><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p></li>
+<li><p><input type="checkbox">Zymo Research <a href="https://www.zymoresearch.com/products/quick-dna-rna-miniprep-plus-kit">Quick-DNA/RNA Miniprep Plus Kit</a> (50 prep D7003, or 10 prep D7003T) <em>1 prep = 1 sample that results in DNA in one tube, and RNA in another</em></p></li>
+<li><p><input type="checkbox"><a href="https://www.zymoresearch.com/collections/lysis-tubes/products/zr-bashingbead-lysis-tubes-0-1-0-5-mm">ZR BashingBead Lysis 2mL Tubes with 0.1 &amp; 0.5mm beads</a>, 1 per prep</p></li>
+<li><p><input type="checkbox"><a href="https://www.zymoresearch.com/products/dnase-rnase-free-tubes">DNase/RNase-Free Tubes</a>, 4 per prep (plus extras)</p></li>
+<li><p><input type="checkbox"><a href="https://www.zymoresearch.com/products/rna-clean-concentrator-5?gad=1&amp;gclid=Cj0KCQjw3JanBhCPARIsAJpXTx6_HqFIKQUjYO9E6qR9e9s4gPbpSk6wIvu14hZOfUxQJ3I6kISe2bgaAtTxEALw_wcB">RNA Clean &amp; Concentrator-5, DNase not Included</a><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p></li>
 </ul>
 <div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;<a href="https://urldefense.com/v3/__https://www.zymoresearch.com/products/rna-clean-concentrator-5__;!!K-Hz7m0Vt54!hR2-lkKEDNSp8jnMNOSVR-eH6FDvAmxFQ8SAc6nqkmfQy-HeMxMt7PXcmGztye4mcxtq1kbGQCmqcA$">RNA Clean &amp; Concentrator-5</a>&nbsp;is used to further clean-up and concentrate your extracted RNA samples of low purity readings</p></li></div></section>
 <section id="qubit-rna-broad-range-assay-kits-needed-for-rna-quantification" class="level2">
 <h2 class="anchored" data-anchor-id="qubit-rna-broad-range-assay-kits-needed-for-rna-quantification"><em>Qubit RNA Broad-Range Assay Kits (needed for RNA quantification!)</em></h2>
 <ul class="task-list">
-<li><p><input type="checkbox" disabled=""><a href="https://www.thermofisher.com/order/catalog/product/Q32856?gclid=CjwKCAjwuqiiBhBtEiwATgvixAYKxw1FwdqIxIiPSxZ-ngW738s6bl94L2cdLCFjXfosHgMX1hyAShoCv9cQAvD_BwE&amp;ef_id=CjwKCAjwuqiiBhBtEiwATgvixAYKxw1FwdqIxIiPSxZ-ngW738s6bl94L2cdLCFjXfosHgMX1hyAShoCv9cQAvD_BwE:G:s&amp;s_kwcid=AL!3652!3!529745253294!p!!g!!qubit%20tubes!7851124045!80648205054&amp;cid=bid_pca_aqb_r01_co_cp1359_pjt0000_bid00000_0se_gaw_bt_pur_con">Qubit® assay tubes</a>(Invitrogen Cat. no. Q32856, 500 tubes) or <a href="https://us.vwr.com/store/product?keyword=10011-830">Axygen PCR-05-C tubes</a>(VWR, part number 10011-830).</p></li>
-<li><p><input type="checkbox" disabled=""><a href="https://www.thermofisher.com/order/catalog/product/Q10210">Qubit™ RNA High Sensitivity (HS) or Broad Range (BR) Assay Kit</a></p></li>
+<li><p><input type="checkbox"><a href="https://www.thermofisher.com/order/catalog/product/Q32856?gclid=CjwKCAjwuqiiBhBtEiwATgvixAYKxw1FwdqIxIiPSxZ-ngW738s6bl94L2cdLCFjXfosHgMX1hyAShoCv9cQAvD_BwE&amp;ef_id=CjwKCAjwuqiiBhBtEiwATgvixAYKxw1FwdqIxIiPSxZ-ngW738s6bl94L2cdLCFjXfosHgMX1hyAShoCv9cQAvD_BwE:G:s&amp;s_kwcid=AL!3652!3!529745253294!p!!g!!qubit%20tubes!7851124045!80648205054&amp;cid=bid_pca_aqb_r01_co_cp1359_pjt0000_bid00000_0se_gaw_bt_pur_con">Qubit® assay tubes</a>(Invitrogen Cat. no. Q32856, 500 tubes) or <a href="https://us.vwr.com/store/product?keyword=10011-830">Axygen PCR-05-C tubes</a>(VWR, part number 10011-830).</p></li>
+<li><p><input type="checkbox"><a href="https://www.thermofisher.com/order/catalog/product/Q10210">Qubit™ RNA High Sensitivity (HS) or Broad Range (BR) Assay Kit</a></p></li>
 </ul>
 </section>
 <section id="reagents" class="level2">
 <h2 class="anchored" data-anchor-id="reagents"><em>Reagents</em></h2>
-<div class="callout-important callout callout-style-simple">
+<div class="callout callout-style-simple callout-important">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -345,22 +356,23 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <ul class="task-list">
-<li><input type="checkbox" disabled=""><a href="https://www.qiagen.com/us/products/discovery-and-translational-research/lab-essentials/buffers-reagents/nuclease-free-water">Qiagen nuclease-free water</a></li>
-<li><input type="checkbox" disabled="">99.5% (200 proof) molecular-grade ethanol</li>
+<li><input type="checkbox"><a href="https://www.qiagen.com/us/products/discovery-and-translational-research/lab-essentials/buffers-reagents/nuclease-free-water">Qiagen nuclease-free water</a></li>
+<li><input type="checkbox">99.5% (200 proof) molecular-grade ethanol</li>
 </ul>
 </section>
 <section id="ppe" class="level2">
 <h2 class="anchored" data-anchor-id="ppe"><em>PPE</em></h2>
 <ul class="task-list">
-<li><input type="checkbox" disabled="">nitrile gloves</li>
-<li><input type="checkbox" disabled="">lab coats</li>
+<li><input type="checkbox">nitrile gloves</li>
+<li><input type="checkbox">lab coats</li>
 </ul>
 </section>
 <section id="lab-equipment" class="level2">
 <h2 class="anchored" data-anchor-id="lab-equipment">Lab Equipment</h2>
 <ul class="task-list">
-<li><input type="checkbox" disabled=""><a href="https://www.beckman.com/landing/ppc/cent/benchtop/microcentrifuges?utm_source=google&amp;utm_medium=cpc&amp;utm_term=microcentrifuge&amp;gclid=CjwKCAjw586hBhBrEiwAQYEnHYq-F4WNopG5rWYG4Bb0YjPlfXL7pVCESNmTwqyT6Cgxty-Si8AAdhoC8I0QAvD_BwE">Beckman Coulter Microfuge 16</a></li>
-<li><input type="checkbox" disabled="">mortexer / homogenizer<ul>
+<li><input type="checkbox"><a href="https://www.beckman.com/landing/ppc/cent/benchtop/microcentrifuges?utm_source=google&amp;utm_medium=cpc&amp;utm_term=microcentrifuge&amp;gclid=CjwKCAjw586hBhBrEiwAQYEnHYq-F4WNopG5rWYG4Bb0YjPlfXL7pVCESNmTwqyT6Cgxty-Si8AAdhoC8I0QAvD_BwE">Beckman Coulter Microfuge 16</a></li>
+<li><input type="checkbox">mortexer / homogenizer
+<ul>
 <li><a href="https://www.southernlabware.com/mortexertm-vortex-mixer-115v.html?gclid=CjwKCAjw586hBhBrEiwAQYEnHZGNGUTMUHNWEHBx5r2Ig9BZSuRVSnvE2_OV6n0mGga5fqV8DPcjfRoCsNoQAvD_BwE">Mortexer Vortex Mixer</a> with …OR…</li>
 <li>Vortex Genie 2 with <a href="https://www.zymoresearch.com/products/horizontal-microtube-holder">Horizontal Microtube Holder</a> (recommended by <a href="https://files.zymoresearch.com/documents/bead_beating_short_protocol_tables.pdf">Zymo optimized lysis protocols</a>)</li>
 </ul></li>
@@ -369,26 +381,26 @@ ul.task-list li input[type="checkbox"] {
 <section id="sterilizing" class="level2">
 <h2 class="anchored" data-anchor-id="sterilizing"><em>Sterilizing</em></h2>
 <ul class="task-list">
-<li><input type="checkbox" disabled="">10% bleach in spray-bottle</li>
-<li><input type="checkbox" disabled="">70% ethanol in spray-bottle</li>
-<li><input type="checkbox" disabled="">DI water in spray-bottle</li>
-<li><input type="checkbox" disabled="">RNase away in spray-bottle</li>
-<li><input type="checkbox" disabled="">Kimwipes/paper towels</li>
+<li><input type="checkbox">10% bleach in spray-bottle</li>
+<li><input type="checkbox">70% ethanol in spray-bottle</li>
+<li><input type="checkbox">DI water in spray-bottle</li>
+<li><input type="checkbox">RNase away in spray-bottle</li>
+<li><input type="checkbox">Kimwipes/paper towels</li>
 </ul>
 </section>
 <section id="pipettes-tips" class="level2">
 <h2 class="anchored" data-anchor-id="pipettes-tips"><em>Pipettes &amp; Tips</em></h2>
 <ul class="task-list">
-<li><input type="checkbox" disabled="">P10 + filtered tips <em>DNase/RNase free</em></li>
-<li><input type="checkbox" disabled="">P100 + filtered tips <em>DNase/RNase free</em></li>
-<li><input type="checkbox" disabled="">P1000 + filtered tips <em>DNase/RNase free</em></li>
-<li><input type="checkbox" disabled="">P5000 + tips (for buffer prep)</li>
+<li><input type="checkbox">P10 + filtered tips <em>DNase/RNase free</em></li>
+<li><input type="checkbox">P100 + filtered tips <em>DNase/RNase free</em></li>
+<li><input type="checkbox">P1000 + filtered tips <em>DNase/RNase free</em></li>
+<li><input type="checkbox">P5000 + tips (for buffer prep)</li>
 </ul>
 </section>
 </section>
 <section id="randomize-sample-processing" class="level1">
 <h1>Randomize Sample Processing</h1>
-<div class="callout-tip callout callout-style-simple">
+<div class="callout callout-style-simple callout-tip">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -440,8 +452,8 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<p>
-</p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
   subgraph Lysing
   A[ice&lt;br&gt;  &lt;br&gt; bucket] --&gt; B[[lysing&lt;br&gt;  &lt;br&gt;tube&lt;br&gt;  &lt;br&gt;rack]]
   end
@@ -461,14 +473,11 @@ ul.task-list li input[type="checkbox"] {
      class B white
      class A grey
 </pre>
-<div id="mermaid-tooltip-1" class="mermaidTooltip">
-
-</div>
-<p></p>
 </div>
 </div>
 </div>
-<div class="callout-tip callout callout-style-simple">
+</div>
+<div class="callout callout-style-simple callout-tip">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -487,8 +496,8 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<p>
-</p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-2">flowchart LR
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
 
 C[[lysing&lt;br&gt;  &lt;br&gt;tube&lt;br&gt;  &lt;br&gt;rack]]
 C --&gt; D[[DNA&lt;br&gt;  &lt;br&gt;tube&lt;br&gt;  &lt;br&gt;rack]]
@@ -501,10 +510,7 @@ D --&gt; E[[RNA&lt;br&gt;  &lt;br&gt;tube&lt;br&gt;  &lt;br&gt;rack]]
      class D yellow
      class C purple
 </pre>
-<div id="mermaid-tooltip-2" class="mermaidTooltip">
-
 </div>
-<p></p>
 </div>
 </div>
 </div>
@@ -528,7 +534,7 @@ D --&gt; E[[RNA&lt;br&gt;  &lt;br&gt;tube&lt;br&gt;  &lt;br&gt;rack]]
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="~/github/quarto-blog/posts/dna-rna-extraction-protocol/tube-racks.jpg" class="img-fluid figure-img" alt="example of three microcentrifuge tube racks laid out with labelled tubes"></p>
-<p></p><figcaption class="figure-caption">Tubes should be laid out and labelled like this photo shown here ☝️</figcaption><p></p>
+<figcaption class="figure-caption">Tubes should be laid out and labelled like this photo shown here ☝️</figcaption>
 </figure>
 </div>
 </div><div class="">
@@ -541,7 +547,7 @@ D --&gt; E[[RNA&lt;br&gt;  &lt;br&gt;tube&lt;br&gt;  &lt;br&gt;rack]]
 RNA
 10APR23
 SST</code></pre>
-<div class="callout-important callout callout-style-simple">
+<div class="callout callout-style-simple callout-important">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -561,16 +567,19 @@ SST</code></pre>
 <section id="prepare-buffers" class="level1">
 <h1>Prepare Buffers</h1>
 <ul class="task-list">
-<li><p><input type="checkbox" disabled="">If using the 50-prep kit (D7003), add <code>96 ml 100% ethanol (104 ml 95% ethanol)</code> to the 24 ml DNA/RNA Wash Buffer concentrate.</p><p>​ <em>If using the 10-prep kit, DNA/RNA Wash Buffer (D7003T) is supplied ready-to-use and does not require the addition of ethanol.</em></p></li>
-<li><p><input type="checkbox" disabled="">Reconstitute <code>lyophilized DNase I</code> with <code>DNase/RNase-Free Water</code> and mix by gentle inversion. Use immediately or store frozen aliquots.</p><ul class="task-list">
-<li><input type="checkbox" disabled="">50-prep, add 275 µl water</li>
-<li><input type="checkbox" disabled="">10-prep, add 55 µl water</li>
+<li><p><input type="checkbox">If using the 50-prep kit (D7003), add <code>96 ml 100% ethanol (104 ml 95% ethanol)</code> to the 24 ml DNA/RNA Wash Buffer concentrate.</p>
+<p>​ <em>If using the 10-prep kit, DNA/RNA Wash Buffer (D7003T) is supplied ready-to-use and does not require the addition of ethanol.</em></p></li>
+<li><p><input type="checkbox">Reconstitute <code>lyophilized DNase I</code> with <code>DNase/RNase-Free Water</code> and mix by gentle inversion. Use immediately or store frozen aliquots.</p>
+<ul class="task-list">
+<li><input type="checkbox">50-prep, add 275 µl water</li>
+<li><input type="checkbox">10-prep, add 55 µl water</li>
 </ul></li>
-<li><p><input type="checkbox" disabled="">Reconstitute <code>lyophilized Proteinase K</code> at 20 mg/ml with <code>Proteinase K Storage Buffer</code> and mix by vortexing. Use immediately or store frozen aliquots.</p><ul class="task-list">
-<li><input type="checkbox" disabled="">50-prep, (60 mg), add 3.12 ml buffer</li>
-<li><input type="checkbox" disabled="">10-prep, (5 mg), add 0.26 ml (260 ul) buffer</li>
+<li><p><input type="checkbox">Reconstitute <code>lyophilized Proteinase K</code> at 20 mg/ml with <code>Proteinase K Storage Buffer</code> and mix by vortexing. Use immediately or store frozen aliquots.</p>
+<ul class="task-list">
+<li><input type="checkbox">50-prep, (60 mg), add 3.12 ml buffer</li>
+<li><input type="checkbox">10-prep, (5 mg), add 0.26 ml (260 ul) buffer</li>
 </ul></li>
-<li><p><input type="checkbox" disabled="">To prepare a 1X solution of <code>DNA/RNA Shield™</code>, add an equal volume (5mL for the whole solution) of <code>nuclease-free water</code> (not provided) to the <code>DNA/RNA Shield™</code> (2X concentrate) (1:1) and mix with a quick pulse on the vortexer.</p></li>
+<li><p><input type="checkbox">To prepare a 1X solution of <code>DNA/RNA Shield™</code>, add an equal volume (5mL for the whole solution) of <code>nuclease-free water</code> (not provided) to the <code>DNA/RNA Shield™</code> (2X concentrate) (1:1) and mix with a quick pulse on the vortexer.</p></li>
 </ul>
 </section>
 <section id="lyse-bead-bash-samples" class="level1 page-columns page-full">
@@ -617,7 +626,7 @@ SST</code></pre>
 <section id="purify-dna-rna" class="level1 page-columns page-full">
 <h1>Purify DNA &amp; RNA</h1>
 <p>Transfer the buffered supernatent (should be a total of 700uL, which can be passed through the filter in one go) to yellow <strong><code>Spin-Away Filter</code></strong> in a <strong><code>Collection Tube</code></strong> and centrifuge at 16,000xg for 30 sec</p>
-<div class="callout-warning callout callout-style-simple">
+<div class="callout callout-style-simple callout-warning">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -852,9 +861,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -919,6 +942,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -957,12 +1066,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp(/https:\/\/sarahtanja\.github\.io\/quarto-blog\//);
+      var filterRegex = new RegExp("https:\/\/sarahtanja\.github\.io\/quarto-blog\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
-    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -978,6 +1087,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">This page is built using <a href="https://quarto.org/">Quarto</a>❤️ and many pages and posts are under active development</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
   </div>
 </footer>
 

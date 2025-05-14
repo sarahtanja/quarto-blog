@@ -1,7 +1,8 @@
 ---
 title: "MS Committee Meeting"
 date: 2025-05-06
-author: "Sarah Tanja" 
+author: "Sarah Tanja"
+categories: [committee]
 format: 
   revealjs: 
     theme: solarized

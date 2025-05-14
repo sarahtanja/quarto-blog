@@ -12,10 +12,137 @@
 <generator>quarto-1.2.335</generator>
 <lastBuildDate>Tue, 06 May 2025 07:00:00 GMT</lastBuildDate>
 <item>
-  <title></title>
+  <title>MS Committee Meeting</title>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/committee-3.html</link>
-  <description><![CDATA[ undefined ]]></description>
+  <description><![CDATA[ 
+
+
+
+
+<section id="ms-thesis-proposal" class="level2">
+<h2 class="anchored" data-anchor-id="ms-thesis-proposal">MS Thesis Proposal</h2>
+<ul>
+<li>proposal is complete</li>
+<li>submitted signed proposal pdf to SAFS milestones</li>
+</ul>
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/proposal.jpg" class="img-fluid"></p>
+</section>
+<section id="clarifications-on-experiment" class="level2">
+<h2 class="anchored" data-anchor-id="clarifications-on-experiment">Clarifications on experiment</h2>
+<div class="notes">
+<p>The samples are vials in which I placed two egg-sperm bundles from genetically distinct parent colonies, resulting in ~30-15 embryos per sample (depending on fertilization &amp; survival). The microbiome and transcriptomics datasets are paired as the DNA/RNA were extracted from the same pooled samples.</p>
+</div>
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/Experimental_Assay_Design.jpeg" class="img-fluid"></p>
+<ul>
+<li>12 treatments across leachate exposure and developmental milestones (hpf)</li>
+<li>Microscopy n=9</li>
+<li>July 5th &amp; 6th</li>
+<li>Originally n=10, dropped 1 cross due to no fertilization</li>
+<li>Microbiome n=5 &amp; Transcriptomics n=5</li>
+<li>July 5th, 6th &amp; 7th</li>
+<li>Originally n=15, pooled samples (3 per) to have enough material to extract</li>
+</ul>
+</section>
+<section id="microscopy" class="level1">
+<h1>Microscopy</h1>
+<section id="annotations" class="level2">
+<h2 class="anchored" data-anchor-id="annotations">Annotations</h2>
+<p>7 Control 4, 9, &amp; 14 hpf</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/7C4_4xstitch_00_anno.jpg" class="img-fluid"> <img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/7C9_001_anno.jpg" class="img-fluid"></p>
+</div><div class="column" style="width:50%;">
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/7C14_000_anno.jpg" class="img-fluid"> <img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/scope_csv.jpg" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="direction-of-cell-division-from-2-to-4-proceeds-from-the-inside-out" class="level2">
+<h2 class="anchored" data-anchor-id="direction-of-cell-division-from-2-to-4-proceeds-from-the-inside-out">Direction of cell division from 2 to 4 proceeds from the inside out</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/10H4_8.jpg" class="img-fluid"> <img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/10H4_21.jpg" class="img-fluid"></p>
+</div><div class="column" style="width:50%;">
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/10H4_10.jpg" class="img-fluid"> <img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/10M4_23.jpg" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="initial-results" class="level2">
+<h2 class="anchored" data-anchor-id="initial-results">Initial results</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/density_viable.png" class="img-fluid"> <img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/counts_viable_boxplot.png" class="img-fluid"></p>
+</div><div class="column" style="width:50%;">
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/proportion_stage_stackedbar.png" class="img-fluid"> <img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/proportion_status_stackedbar.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="microbiome" class="level1">
+<h1>Microbiome</h1>
+<ul>
+<li>Partnered with mim_c for analysis</li>
+<li>Shannon diversity non-significant across features</li>
+</ul>
+<section id="taxa-barplot" class="level2">
+<h2 class="anchored" data-anchor-id="taxa-barplot">Taxa barplot</h2>
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/level-7-bars.svg" class="img-fluid"> <img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/level-7-legend.svg" class="img-fluid"></p>
+</section>
+<section id="maaslin2-significant-differential-features" class="level2">
+<h2 class="anchored" data-anchor-id="maaslin2-significant-differential-features">Maaslin2 significant differential features</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/leachate_1.png" class="img-fluid"> <img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/leachate_2.png" class="img-fluid"> <img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/leachate_3.png" class="img-fluid"></p>
+</div><div class="column" style="width:30%;">
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/leachate_4.png" class="img-fluid"> <img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/leachate_5.png" class="img-fluid"> <img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/leachate_6.png" class="img-fluid"></p>
+</div><div class="column" style="width:30%;">
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/leachate_7.png" class="img-fluid"> <img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/leachate_8.png" class="img-fluid"> <img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/leachate_9.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="transcriptomics" class="level1">
+<h1>Transcriptomics</h1>
+<section id="pca" class="level2">
+<h2 class="anchored" data-anchor-id="pca">PCA</h2>
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/deg_pca.png" class="img-fluid"></p>
+</section>
+<section id="heatmaps" class="level2">
+<h2 class="anchored" data-anchor-id="heatmaps">Heatmaps</h2>
+<div class="columns">
+<div class="{.column-width=&quot;50%&quot;}">
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/deg_simple_heat.png" class="img-fluid"></p>
+</div><div class="{.column-width=&quot;50%&quot;}">
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/deg_complex_heat.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="remaining-timeline" class="level2">
+<h2 class="anchored" data-anchor-id="remaining-timeline">Remaining timeline</h2>
+<ul>
+<li>SP25 Finish Analyses (focus on Results section)</li>
+<li>June 15th 2025 | deadline to apply for SAFS finishing fellowship for AU25</li>
+<li>On-Leave status for SU25 (no funding, GI Bill runs out at the end of SP25)</li>
+<li>Writing Results &amp; Discussion SU25</li>
+<li>Back again AU25<br>
+</li>
+<li>Sep 20th 2025 Submit Thesis Draft</li>
+<li>Nov 20th 2025 Final Exam</li>
+<li>Dec 12th 2025 Submit Thesis to UW</li>
+</ul>
+</section>
+<section id="links" class="level2">
+<h2 class="anchored" data-anchor-id="links">Links</h2>
+<p><a href="https://github.com/sarahtanja/coral-embryo-scope">coral-embryo-scope</a></p>
+<p><a href="https://github.com/sarahtanja/coral-embryo-microbiome">coral-embryo-microbiome</a></p>
+<p><a href="https://github.com/sarahtanja/coral-embryo-RNAseq">coral-embryo-RNAseq</a></p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>committee</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/committee-3.html</guid>
   <pubDate>Tue, 06 May 2025 07:00:00 GMT</pubDate>
   <media:content url="https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/proposal.jpg" medium="image" type="image/jpeg"/>
@@ -251,7 +378,7 @@
 <item>
   <title>Backup your work</title>
   <dc:creator>Sarah Tanja</dc:creator>
-  <link>https://sarahtanja.github.io/quarto-blog/posts/code-help/backup.html</link>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/workflow/backup.html</link>
   <description><![CDATA[ 
 
 
@@ -327,7 +454,7 @@ Tip
 
  ]]></description>
   <category>code</category>
-  <guid>https://sarahtanja.github.io/quarto-blog/posts/code-help/backup.html</guid>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/workflow/backup.html</guid>
   <pubDate>Mon, 04 Nov 2024 08:00:00 GMT</pubDate>
 </item>
 <item>

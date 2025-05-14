@@ -1,7 +1,9 @@
 ---
 title: "Post Template"
 author: "Sarah Tanja"
-date: '05/19/2023'
+date: 2023-01-01
+date-format: long
+date-modified: today
 categories: [lab records, protocols, committee, daily log, learning journey, code help]
 image: thumbnail.jpg
 draft: true

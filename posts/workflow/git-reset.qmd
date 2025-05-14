@@ -1,9 +1,11 @@
 ---
-title: "Git Reset"
+title: "Workflow with Git"
 subtitle: "For all the times I accidentally commit a file that is too big"
 author: "Sarah Tanja"
-date: '11/05/2023'
-categories: [code]
+date: 2023-11-05
+date-format: long
+date-modified: today
+categories: [workflow]
 draft: false
 toc: true
 toc-title: Contents <i class="bi bi-bookmark-heart"></i>
@@ -15,6 +17,40 @@ editor_options:
   markdown: 
     wrap: 72
 ---
+
+# Setup for .gitignore
+
+**`.gitignore` cannot filter files by size** — it only filters by **path
+patterns**, like filenames, extensions, or directory names. It doesn’t
+support dynamic criteria like file size, modification time, etc.
+
+# Normal routine for git push
+
+1.  `git status` : check on staged, not staged, and untracked files
+2.  `find . -type f -size -50M -exec git add {} +`
+    1.  `find .`: Starts the search from the current directory.
+    2.  `-type f`: Finds only files (not directories).
+    3.  `-size -50M`: Limits the size to files smaller than 50
+        megabytes.
+    4.  `-exec git add {} +`: Executes the `git add` command on all
+        found files, adding them to the Git staging area.
+3.  `git status` : run again to double check staged, not staged, and
+    untracked files
+4.  `git commit -m "your message here"`
+5.  `git pull` : merge if needed, see [Write & quit vim during a
+    merge](#write-quit-vim-during-a-merge)
+6.  `git push`
+
+# Write & quit vim during a merge {#write-quit-vim-during-a-merge}
+
+1.  Press `INS` key to insert text, write a short message about the
+    merge
+
+2.  Press `Esc` to make sure you're in **normal mode**.
+
+3.  Type `:` to enter **command mode**.
+
+4.  Then type `wq` and press `Enter`
 
 ## Setup git hooks to automatically gitignore large files
 

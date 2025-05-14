@@ -4,3 +4,6 @@
 .Ruserdata
 
 /.quarto/
+/docs/*
+!/docs/.nojekyll
+!/docs/index.html

@@ -1,0 +1,169 @@
+---
+title: "14-Aug-2024 Embryo RNA Extractions"
+author: "Sarah Tanja"
+date: 08/14/2024
+date-format: long
+date-modified: today
+categories: [lab records]
+draft: false
+toc: true
+toc-exand: true
+toc-title: Contents <i class="bi bi-bookmark-heart"></i>
+toc-depth: 5
+toc-location: left
+reference-location: margin
+citation-location: margin
+link-external-icon: true
+link-external-newwindow: true
+---
+
+# Samples
+
+-   1C4F, 2C4F, 3C4F = 123C4
+
+    -   1 min Qiagin Tissue Disruption Tubes
+
+-   1L14F, 2L14F, 3L14F = 123L14
+
+    -   1 min Qiagin Tissue Disruption Tubes
+
+-   1M4F, 2M4F, 3M4F = 123M4
+
+    -   1 min Qiagin Tissue Disruption Tubes
+
+-   1H14F, 2H14F, 3H14F = 123H14
+
+    -   1 min Qiagin Tissue Disruption Tubes
+
+# Summary
+
+::: callout-note
+Success! I pooled 3 samples together and this yielded enough RNA!
+:::
+
+::: callout-note
+I also tested 3 different lysing protocols, and all worked more or less the same. I skipped the Proteinase K digestion as per the 'cells' sample prep instruction in the kit manual. I think I can add this back in if I'm finding protein impurities in the eluted RNA.
+:::
+
+# Extraction Notes
+
+date: 13-AUG-2024
+
+kit: Zymo Quick-DNA/RNA Miniprep Plus Kit
+
+-   Thaw samples to room temp
+
+-   Vortex to mix
+
+-   Transfer to Qiagin Tissue Disruption Tube
+
+-   Homogenize for 1 minute
+
+-   Centrifuge at 16,000xg for 1 minute to get rid of bubbles
+
+    -   Checked for complete lysis... still saw entact cells so I homogenized again
+
+-   Honogenized for another 1 minute
+
+-   Split into two aliquots of 700uL & transfer to two new nuclease-free tubes
+
+-   Twizzled 123L14, 123 M4, and 123H14 for extra mechanical lysing
+
+-   Added 700uL of DNA/RNA Lysis Buffer to each tube ( a total of 1400uL volume in each tube )
+
+-   Vortex to mix for 5 seconds
+
+-   Check to see that embryos have dissolved and liquid is clear
+
+    -   123C4, clear
+
+    -   123L14, clear
+
+    -   123M4, cell debris
+
+    -   123H14, clear
+
+---\> Proceed to purification
+
+-   Sequentially transfer 2800uL of each sample in aliquots of 700uL into yellow Spin-Away Filter in a Collection Tube and centrifuge for 30s at 16,000xg **SAVE THE FLOW THROUGH FOR RNA PURIFICATION by tipping flow through into falcon tube**
+
+-   Doubled volume of 100% (200 proof) ethanol to the RNA flow through in a falcon tube and vortexed to mix. End volume of flow through + ethanol = 5mL
+
+-   Sequentially transfer RNA flow-through + ethanol in volumes =\>700uL into the green Zymo Spin IIICG Column in a Collection Tube
+
+-   Saved 1st 1400uL for protein
+
+    ::: callout-warning
+    This took 7 passes!
+    :::
+
+-   Performed DNase I Treatment on green RNA spin column
+
+    ```{r}
+    DB = 75*4
+    print(DB)
+    Dnase = 5*4 
+    print(Dnase)
+    ```
+
+    -   I didn't invert to mix... I always lose some volume 'beads' in the lid when I do this. Instead I flicked the tube to mix it and kept all the volume down in the cnical end of the tube. This worked well and I had a full 80uL of treatment per spin column to work with.
+
+-   Warmed Zymo DNase-RNase Free Water to 55C in heat block before elution, and slowly dripped water directly over filter.
+
+eluted DNA volume: 30uL in `Zymo DNase-RNase Free Water`
+
+eluted RNA volume: 30uL in `Zymo DNase-RNase Free Water`
+
+# Nanodrop
+
+### RNA
+
+| sample_id | ng/uL | A260  | A280  | 260/280 | 260/230 |
+|-----------|-------|-------|-------|---------|---------|
+| 123C4     | 43.3  | 1.083 | 0.611 | 1.77    | 1.27    |
+| 123H14    | 7.8   | 0.195 | 0.060 | 3.25    | -0.94   |
+| 123M4     | 90.8  | 2.271 | 1.125 | 2.02    | 1.86    |
+| 123L14    | 16.0  | 0.399 | 0.196 | 2.04    | 1.99    |
+
+![](nanodrop_13AUG2024.PNG)
+
+::: callout-warning
+123L9 is showing contamination... There is no distinct peak at 260 (like is visible with the other samples).
+:::
+
+# Qubit
+
+Using the Invitrogen Thermo Fischer RNA High Sensitivity Assay Kit.
+
+Prepared working solution for 3 samples and two standards:
+
+```{r}
+199*6
+```
+
+Qubit RNA HS reagent in DMSO = 1uL \* 5 = 6uL
+
+Qubit RNA HS Buffer = 199uL \* 5 = 1194uL
+
+### RNA
+
+standard 1: 91.79
+
+standard 2: calibration error (even after two attempts... I plan to rerun these after getting fresh assay reagents)
+
+RunID: 2024-08-14_043136
+
+| sample_id | qubit_rna_1 | qubit_rna_2 |
+|-----------|-------------|-------------|
+| 123C4     | 47.6 ng/uL  | 47.6 ng/uL  |
+| 123L14    | 19.6 ng/uL  | 19.7 ng/uL  |
+| 123M4     | 124 ng/uL   | 122 ng/uL   |
+| 123H14    | 27.6 ng/uL  | 27.6 ng/uL  |
+
+# Storage Location
+
+RNA samples are stored in -80C 'Old Friedman' Sanyo freezer on shelf 1 in `coral-embryo-leachate RNA` wax freezer boxes with green label tape:
+
+DNA samples (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in `coral-embryo-leachate DNA` wax freezer box with yellow label tape:
+
+Protein flow-through (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in `coral-embryo-leachate PROTEIN` wax freezer box with blue label tape:

@@ -2,10 +2,12 @@
 title: "Reference management"
 subtitle: "Using Paperpile, paperpile-bot, Google Docs & Quarto"
 author: "Sarah Tanja"
+image: "paperpilebot.png"
+draft: true
 date: 04/02/2025
 date-format: long
 date-modified: today
-categories: [learning journey, workflow]
+categories: [workflow]
 ---
 
 # Paperpile reference manager

@@ -1,0 +1,371 @@
+{
+  "about.qmd": {
+    "about.html": "d3b82a0c"
+  },
+  "index.qmd": {
+    "index.html": "e82138a4"
+  },
+  "posts/choosing-16S-primers/index.qmd": {
+    "index.html": "020aaaa5"
+  },
+  "posts/coral-pae-devo/index.qmd": {
+    "index.html": "95c19ef7"
+  },
+  "posts/daily-log/index.qmd": {
+    "index.html": "22c6b273"
+  },
+  "posts/dna-rna-ex1/index.qmd": {
+    "index.html": "f85487d3"
+  },
+  "posts/dna-rna-extraction-protocol/index.qmd": {
+    "index.html": "4ddde417"
+  },
+  "posts/extractions-overview/index.qmd": {
+    "index.html": "16e4876f"
+  },
+  "posts/normalize-rna-dna/index.qmd": {
+    "index.html": "aad8cb43"
+  },
+  "posts/pcc-grant-app/index.qmd": {
+    "index.html": "930124bb"
+  },
+  "posts/r-git-wsl/index.qmd": {
+    "index.html": "dfd16ec2"
+  },
+  "posts/shipping-rna-dna/index.qmd": {
+    "index.html": "e55edc52"
+  },
+  "posts/template-draft/index.qmd": {
+    "index.html": "0221bc68"
+  },
+  "posts/conda-jupyter-start/index.qmd": {
+    "index.html": "deec4f5e"
+  },
+  "posts/target-journals/index.qmd": {
+    "index.html": "08bbaeef"
+  },
+  "landing.qmd": {
+    "landing.html": "b847d0e7"
+  },
+  "posts/qiime-jupyter-start/index.qmd": {
+    "index.html": "901b6378"
+  },
+  "posts/committee-1/index.qmd": {
+    "index.html": "c56e0304"
+  },
+  "posts/dna-rna-extraction-template/index.qmd": {
+    "index.html": "fbe652e7"
+  },
+  "posts/dna-rna-extractions/index.qmd": {
+    "index.html": "ff31571f"
+  },
+  "posts/rna-woes/index.qmd": {
+    "index.html": "9907f85a"
+  },
+  "posts/chp1-15min-presentation/index.qmd": {
+    "index.html": "1088ab2a"
+  },
+  "posts/git-reset/index.qmd": {
+    "index.html": "48ee6692"
+  },
+  "posts/pae-standard-control/index.qmd": {
+    "index.html": "92091c38"
+  },
+  "posts/committee-2/index.qmd": {
+    "index.html": "1c00e32f"
+  },
+  "posts/thesis-progress/index.qmd": {
+    "index.html": "05c34faf"
+  },
+  "posts/projects/coral-pae-temp/dna-rna-extractions/index.qmd": {
+    "index.html": "2cbbef90"
+  },
+  "posts/projects/coral-pae-temp.qmd": {
+    "coral-pae-temp.html": "b0c2c79c"
+  },
+  "posts/pseudoreplication/index.qmd": {
+    "index.html": "c98c1c73"
+  },
+  "posts/world-phthalates/index.qmd": {
+    "index.html": "33bf412a"
+  },
+  "projects.qmd": {
+    "projects.html": "793ab8f0"
+  },
+  "posts/projects/anemone/about-anemones/about-anemone.qmd": {
+    "about-anemone.html": "91c66e62"
+  },
+  "posts/projects/anemone/photosynth-pam/photosynth-pam.qmd": {
+    "photosynth-pam.html": "f3159b88"
+  },
+  "posts/projects/anemone/project-planning.qmd": {
+    "project-planning.html": "d00c3172"
+  },
+  "posts/projects/anemone/tanks/tanks.qmd": {
+    "tanks.html": "1cbca68c"
+  },
+  "posts/projects/anemone.qmd": {
+    "anemone.html": "e92f20ab"
+  },
+  "posts/quarto-blog-create/index.qmd": {
+    "index.html": "8b38a161"
+  },
+  "posts/rnoaa/index.qmd": {
+    "index.html": "af06e5f1"
+  },
+  "posts/projects/anemone/artemia/artemia.qmd": {
+    "artemia.html": "069fca93"
+  },
+  "posts/projects/anemone/field-collection/field-collection.qmd": {
+    "field-collection.html": "afcc1e7d"
+  },
+  "posts/projects/anemone/leachate-protocol.qmd": {
+    "leachate-protocol.html": "dd607cb2"
+  },
+  "posts/projects/anemone/plan/project-planning.qmd": {
+    "project-planning.html": "0d6cf701"
+  },
+  "posts/projects/coral-pae-temp/dna-rna-extractions/dna-rna-coral-extractions.qmd": {
+    "dna-rna-coral-extractions.html": "61b7161b"
+  },
+  "posts/projects/anemone/field-collection/18MAR24-owens-beach.qmd": {
+    "18MAR24-owens-beach.html": "5fcaa4cc"
+  },
+  "posts/projects/anemone/field-collection/30MAR24-alki.qmd": {
+    "30MAR24-alki.html": "b15ecaad"
+  },
+  "posts/projects/anemone/making-chambers/making-chambers.qmd": {
+    "making-chambers.html": "3085667c"
+  },
+  "posts/projects/anemone/pilot-single-stress.qmd": {
+    "pilot-single-stress.html": "dac90e05"
+  },
+  "posts/puget-sound-mps/puget-sound-mps.qmd": {
+    "puget-sound-mps.html": "6c250dba"
+  },
+  "posts/projects/anemone/single-stress/pilot-single-stress.qmd": {
+    "pilot-single-stress.html": "db3f5c8e"
+  },
+  "posts/projects/anemone/chl-a/chl-a.qmd": {
+    "chl-a.html": "e4d5e154"
+  },
+  "posts/daily-log/daily-log.qmd": {
+    "daily-log.html": "75519a76"
+  },
+  "posts/projects/anemone/chlorophyll/chlorophyll.qmd": {
+    "chlorophyll.html": "f8e3888b"
+  },
+  "posts/projects/anemone/heat-stress/heat-wave.qmd": {
+    "heat-wave.html": "4ea29a13"
+  },
+  "posts/projects/anemone/leachate-protocol/leachate-protocol.qmd": {
+    "leachate-protocol.html": "473d03ca"
+  },
+  "posts/projects/anemone/oxygen-fire-sting.qmd": {
+    "oxygen-fire-sting.html": "28a4adb3"
+  },
+  "posts/projects/anemone/plan/experiment-schedule.qmd": {
+    "experiment-schedule.html": "14f95fe7"
+  },
+  "posts/projects/coral-embryo-leachate/12aug2024-extraction/12aug2024-extraction.qmd": {
+    "12aug2024-extraction.html": "3c7199ef"
+  },
+  "posts/projects/coral-embryo-leachate/13aug2024-extraction/13aug2024-extraction.qmd": {
+    "13aug2024-extraction.html": "340abe1f"
+  },
+  "posts/projects/coral-embryo-leachate/14aug2024-extraction/14aug2024-extraction.qmd": {
+    "14aug2024-extraction.html": "56ce9426"
+  },
+  "posts/projects/coral-embryo-leachate/15aug2024-extraction/15aug2024-extraction.qmd": {
+    "15aug2024-extraction.html": "fa84677e"
+  },
+  "posts/projects/coral-embryo-leachate/16aug2024-extraction/16aug2024-extraction.qmd": {
+    "16aug2024-extraction.html": "83c8384d"
+  },
+  "posts/projects/coral-embryo-leachate/19aug2024-extraction/19aug2024-extraction.qmd": {
+    "19aug2024-extraction.html": "60340fdc"
+  },
+  "posts/projects/coral-embryo-leachate/20aug2024-extraction/20aug2024-extraction.qmd": {
+    "20aug2024-extraction.html": "c4ef91a9"
+  },
+  "posts/projects/coral-embryo-leachate/21aug2024-extraction/21aug2024-extraction.qmd": {
+    "21aug2024-extraction.html": "bd6ddfaa"
+  },
+  "posts/projects/coral-embryo-leachate/23aug2024-extraction/23aug2024-extraction.qmd": {
+    "23aug2024-extraction.html": "1a6a0eac"
+  },
+  "posts/projects/coral-embryo-leachate/26aug2024-extraction/26aug2024-extraction.qmd": {
+    "26aug2024-extraction.html": "c59a0502"
+  },
+  "posts/projects/coral-embryo-leachate/embryo-extractions.qmd": {
+    "embryo-extractions.html": "9924a537"
+  },
+  "posts/projects/coral-embryo-leachate/scope/nikon-scope.qmd": {
+    "nikon-scope.html": "b98e431a"
+  },
+  "posts/projects/coral-embryo-leachate/scope/scope-stats.qmd": {
+    "scope-stats.html": "2b5ab6b2"
+  },
+  "posts/projects/coral-embryo-leachate/scope-stats.qmd": {
+    "scope-stats.html": "ea494756"
+  },
+  "posts/projects/coral-embryo-leachate/spawn-night-checklist.qmd": {
+    "spawn-night-checklist.html": "ea21f970"
+  },
+  "posts/projects/coral-embryo-leachate.qmd": {
+    "coral-embryo-leachate.html": "f62e6b51"
+  },
+  "posts/projects/coral-leachate-heat/log.qmd": {
+    "log.html": "b75fd80e"
+  },
+  "posts/projects/coral-leachate-heat.qmd": {
+    "coral-leachate-heat.html": "e49020c2"
+  },
+  "posts/thesis-progress/goals-timeline.qmd": {
+    "goals-timeline.html": "3a20bf25"
+  },
+  "posts/thesis-progress/thesis-progress.qmd": {
+    "thesis-progress.html": "ff343198"
+  },
+  "posts/grants-fellowships/grants-fellowships.qmd": {
+    "grants-fellowships.html": "54aa0904"
+  },
+  "posts/projects/coral-embryo-leachate/scope/annotate-scope-pics.qmd": {
+    "annotate-scope-pics.html": "0c3b232b"
+  },
+  "posts/projects/coral-embryo-leachate/bioinformatics-pipeline/pipeline-overview.qmd": {
+    "pipeline-overview.html": "e2dceaea"
+  },
+  "posts.qmd": {
+    "posts.html": "3b64eeb3"
+  },
+  "contact.qmd": {
+    "contact.html": "051d2c28"
+  },
+  "posts/ncbi-sra-submission/ncbi-sra-submission.qmd": {
+    "ncbi-sra-submission.html": "90c55823"
+  },
+  "posts/projects/coral-embryo-leachate/ontogenetic-development/ontogenetic-development.qmd": {
+    "ontogenetic-development.html": "44962579"
+  },
+  "posts/sftp-azenta/azenta-sftp.qmd": {
+    "azenta-sftp.html": "172a444d"
+  },
+  "posts/code-help/backup.qmd": {
+    "backup.html": "cd73edda"
+  },
+  "posts/code-help/git-reset.qmd": {
+    "git-reset.html": "2910892d"
+  },
+  "posts/code-help/quarto-blog-create.qmd": {
+    "quarto-blog-create.html": "e763c873"
+  },
+  "posts/code-help/r-git-wsl/r-git-wsl.qmd": {
+    "r-git-wsl.html": "2b05a495"
+  },
+  "posts/code-help/tunnel.qmd": {
+    "tunnel.html": "2831fa84"
+  },
+  "posts/projects/coral-embryo-leachate/previous-research/previous-research.qmd": {
+    "previous-research.html": "bad0f623"
+  },
+  "posts/ncbi-sra-submission/ncbi-sra-submission-16S.qmd": {
+    "ncbi-sra-submission-16S.html": "6138fd5a"
+  },
+  "posts/workflow/reference-manager.qmd": {
+    "reference-manager.html": "78f74483"
+  },
+  "posts/projects/coral-embryo-leachate/himb/collections_tanks.qmd": {
+    "collections_tanks.html": "3475a876"
+  },
+  "posts/thesis-progress/committee-1/index.qmd": {
+    "index.html": "d25d6c45"
+  },
+  "posts/thesis-progress/committee-2/index.qmd": {
+    "index.html": "6a8a0504"
+  },
+  "posts/thesis-progress/committee-3/committee-3.qmd": {
+    "committee-3.html": "4d34a344"
+  },
+  "committee-3/committee-3.qmd": {
+    "committee-3.html": "dfd7832d"
+  },
+  "posts/workflow/git-reset.qmd": {
+    "git-reset.html": "8e9db598"
+  },
+  "posts/workflow/backup.qmd": {
+    "backup.html": "a488ea9a"
+  },
+  "posts/workflow/quarto-blog-create.qmd": {
+    "quarto-blog-create.html": "ed98a99a"
+  },
+  "posts/workflow/r-git-wsl/r-git-wsl.qmd": {
+    "r-git-wsl.html": "dff110b3"
+  },
+  "posts/workflow/tunnel.qmd": {
+    "tunnel.html": "7f524154"
+  },
+  "posts/projects/coral-embryo-leachate/molecular-lab/12aug2024-extraction/12aug2024-extraction.qmd": {
+    "12aug2024-extraction.html": "84e4fd7c"
+  },
+  "posts/projects/coral-embryo-leachate/molecular-lab/13aug2024-extraction/13aug2024-extraction.qmd": {
+    "13aug2024-extraction.html": "e384acd6"
+  },
+  "posts/projects/coral-embryo-leachate/molecular-lab/14aug2024-extraction/14aug2024-extraction.qmd": {
+    "14aug2024-extraction.html": "1d304915"
+  },
+  "posts/projects/coral-embryo-leachate/molecular-lab/15aug2024-extraction/15aug2024-extraction.qmd": {
+    "15aug2024-extraction.html": "2e35705d"
+  },
+  "posts/projects/coral-embryo-leachate/molecular-lab/16aug2024-extraction/16aug2024-extraction.qmd": {
+    "16aug2024-extraction.html": "4a7c0968"
+  },
+  "posts/projects/coral-embryo-leachate/molecular-lab/19aug2024-extraction/19aug2024-extraction.qmd": {
+    "19aug2024-extraction.html": "c11ad47b"
+  },
+  "posts/projects/coral-embryo-leachate/molecular-lab/20aug2024-extraction/20aug2024-extraction.qmd": {
+    "20aug2024-extraction.html": "43ed5c67"
+  },
+  "posts/projects/coral-embryo-leachate/molecular-lab/21aug2024-extraction/21aug2024-extraction.qmd": {
+    "21aug2024-extraction.html": "420b4101"
+  },
+  "posts/projects/coral-embryo-leachate/molecular-lab/23aug2024-extraction/23aug2024-extraction.qmd": {
+    "23aug2024-extraction.html": "1b9fdff3"
+  },
+  "posts/projects/coral-embryo-leachate/molecular-lab/26aug2024-extraction/26aug2024-extraction.qmd": {
+    "26aug2024-extraction.html": "1e48fb34"
+  },
+  "posts/projects/coral-embryo-leachate/molecular-lab/embryo-extractions.qmd": {
+    "embryo-extractions.html": "5aa0a461"
+  },
+  "posts/projects/coral-embryo-leachate/scope/ontogenetic-development/ontogenetic-development.qmd": {
+    "ontogenetic-development.html": "06ec7b11"
+  },
+  "posts/projects/coral-embryo-leachate/transcriptomics/bioinformatics-pipeline/pipeline-overview.qmd": {
+    "pipeline-overview.html": "60b9b9a3"
+  },
+  "posts/projects/coral-embryo-leachate/transcriptomics/previous-research/previous-research.qmd": {
+    "previous-research.html": "18a3eed8"
+  },
+  "posts/projects/coral-embryo-leachate/wet-lab/collection-acclimation.qmd": {
+    "collection-acclimation.html": "87b8eb1f"
+  },
+  "posts/projects/coral-embryo-leachate/wet-lab/spawn-night.qmd": {
+    "spawn-night.html": "f78285d9"
+  },
+  "posts/thesis/committee-3/committee-3.qmd": {
+    "committee-3.html": "16e50b5c"
+  },
+  "posts/thesis/committee-1/index.qmd": {
+    "index.html": "6f171de3"
+  },
+  "posts/thesis/committee-2/index.qmd": {
+    "index.html": "b69af7e6"
+  },
+  "posts/thesis/goals-timeline.qmd": {
+    "goals-timeline.html": "32a02a39"
+  },
+  "posts/thesis/thesis-progress.qmd": {
+    "thesis-progress.html": "bbaea869"
+  }
+}

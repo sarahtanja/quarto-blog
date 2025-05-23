@@ -1,0 +1,29 @@
+{
+  "listingMap": {
+    "posts\\projects\\anemone.qmd": [
+      "anemone"
+    ],
+    "posts\\projects\\coral-embryo-leachate.qmd": [
+      "coral-embryo-leachate"
+    ],
+    "posts\\projects\\coral-leachate-heat.qmd": [
+      "coral-leachate-heat"
+    ],
+    "posts\\projects\\coral-pae-temp.qmd": [
+      "coral-pae-temp"
+    ],
+    "posts.qmd": [
+      "posts/**/*.qmd",
+      "!posts/projects/anemone.qmd",
+      "!posts/projects/coral-embryo-leachate.qmd",
+      "!posts/projects/coral-leachate-heat.qmd",
+      "!posts/projects/coral-pae-temp.qmd"
+    ],
+    "projects.qmd": [
+      "posts/projects/anemone.qmd",
+      "posts/projects/coral-pae-temp.qmd",
+      "posts/projects/coral-leachate-heat.qmd",
+      "posts/projects/coral-embryo-leachate.qmd"
+    ]
+  }
+}

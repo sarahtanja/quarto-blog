@@ -2,15 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/projects.html</loc>
-    <lastmod>2025-05-23T00:36:45.216Z</lastmod>
+    <lastmod>2025-05-23T01:03:24.722Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/world-phthalates/index.html</loc>
     <lastmod>2025-05-23T00:36:33.562Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sarahtanja.github.io/quarto-blog/posts/workflow/reference-manager.html</loc>
-    <lastmod>2025-05-23T00:36:29.217Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/workflow/quarto-blog-create.html</loc>
@@ -18,7 +14,7 @@
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/workflow/backup.html</loc>
-    <lastmod>2025-05-23T00:36:23.329Z</lastmod>
+    <lastmod>2025-05-23T01:09:56.594Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/thesis/goals-timeline.html</loc>
@@ -266,6 +262,6 @@
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts.html</loc>
-    <lastmod>2025-05-23T00:36:43.153Z</lastmod>
+    <lastmod>2025-05-23T01:09:48.689Z</lastmod>
   </url>
 </urlset>

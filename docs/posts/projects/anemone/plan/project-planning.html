@@ -92,11 +92,11 @@ div.csl-indent {
 <script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -122,7 +122,7 @@ div.csl-indent {
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../../../../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed slimcontent">
@@ -218,7 +218,7 @@ div.csl-indent {
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Anemone Project Planning</h1>
+      <div class="quarto-title-block"><div><h1 class="title">Anemone Project Planning</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
                                 <div class="quarto-categories">
                 <div class="quarto-category">anemones</div>
               </div>
@@ -615,6 +615,8 @@ Hypotheses
 <p>This shotgun of stress response variables will serve to offer a holistic view of cnidarian host and algal symbiont physiological response to temperature and plastic pollution leachate stress. It is well known that ocean heat waves are becoming more frequent and intense. Simultaneously, marine plastic pollution is becoming more prevalent and the chemical additives associated with plastic have become ubiquitous in our environments. As plastics weather mechanically, they also weather chemically by leaching additives not covalently bonded to the plastic polymer resins <span class="citation" data-cites="hahladakis2018">(<a href="#ref-hahladakis2018" role="doc-biblioref">Hahladakis et al. 2018</a>)</span>. The most common plastic additives are a group of chemicals called plasticizers, also known as phthalates or phthlate acid esters (PAE). They are commonly added to PVC to increase flexibility and durability. However, phthlatates are known to mimic or interfere with hormones that control developmental, reproductive, and immune response in both humans and animals <span class="citation" data-cites="maqboolReviewEndocrineDisorders2016">(<a href="#ref-maqboolReviewEndocrineDisorders2016" role="doc-biblioref"><strong>maqboolReviewEndocrineDisorders2016?</strong></a>)</span>. Previous research shows that plastic leachates experimentally added to plants, bacteria, and algae impair growth, reduce photosynthesis, and shift microbial communities in lab studies <span class="citation" data-cites="capolupo2020 obrien2022 tetu2019">(<a href="#ref-capolupo2020" role="doc-biblioref"><strong>capolupo2020?</strong></a>; <a href="#ref-obrien2022" role="doc-biblioref">O’Brien et al. 2022</a>; <a href="#ref-tetu2019" role="doc-biblioref">Tetu et al. 2019</a>)</span>. However, little is known about environmental concentrations of plastic leachate in the context of increasing ocean temperatures. Marine heatwaves, plastic manufacturing, and pollution are predicted to increase <span class="citation" data-cites="macleodGlobalThreatPlastic2021 oliverMarineHeatwaves2021">(<a href="#ref-macleodGlobalThreatPlastic2021" role="doc-biblioref"><strong>macleodGlobalThreatPlastic2021?</strong></a>; <a href="#ref-oliverMarineHeatwaves2021" role="doc-biblioref"><strong>oliverMarineHeatwaves2021?</strong></a>)</span>. Therefore, it is urgent that we understand how thermal stress and plastic pollution interact and the effects they may have on coastal marine organisms, which are likely experiencing both the most extreme thermal stress and the highest amount of plastic pollution.</p>
 
 
+<!-- -->
+
 <div class="no-row-height column-margin column-container"><div id="ref-hahladakis2018" class="csl-entry" role="listitem">
 Hahladakis, John N., Costas A. Velis, Roland Weber, Eleni Iacovidou, and Phil Purnell. 2018. <span>“An Overview of Chemical Additives Present in Plastics: <span>Migration</span>, Release, Fate and Environmental Impact During Their Use, Disposal and Recycling.”</span> <em>Journal of Hazardous Materials</em> 344 (February): 179–99. <a href="https://doi.org/10.1016/j.jhazmat.2017.10.014">https://doi.org/10.1016/j.jhazmat.2017.10.014</a>.
 </div><div id="ref-obrien2022" class="csl-entry" role="listitem">
@@ -735,7 +737,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'alternate';
+  let localAlternateSentinel = 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
@@ -820,6 +822,57 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
   function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
@@ -989,7 +1042,201 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
 });
-</script>
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb5" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Anemone Project Planning"</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Sarah Tanja"</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> '01/02/2024'</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [anemones]</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="an">draft:</span><span class="co"> false</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> true</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="an">toc-title:</span><span class="co"> Contents &lt;i class="bi bi-bookmark-heart"&gt;&lt;/i&gt;</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="an">toc-depth:</span><span class="co"> 5</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="an">toc-location:</span><span class="co"> left</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="an">reference-location:</span><span class="co"> margin</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="an">citation-location:</span><span class="co"> margin</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="an">link-external-icon:</span><span class="co"> true</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="an">link-external-newwindow:</span><span class="co"> true</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="an">bibliography:</span><span class="co"> ../anemone-leachate-heat.bib</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="fu">## Conceptual planning</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="fu">### Objective</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>The objective of this study is to examine the combined effects of thermal stress and marine microplastic leachate on photosynthetic efficiency, microbiome community, and gene expression in the aggregating sea anemone *Anthopleura elegantissima* and the algal symbiont *Breviolum muscatinei*. In essence, this study is both a global change study examining impacts of thermal stress on marine intertidal invertebrates, and an ecotoxicological study that assesses impacts of marine microplastic leachate associated with marine plastic pollution on a cnidarian host and an algal symbiont. We've chosen *Anthopleura elegantissima* as our study species because it is a clonal cnidarian that can form symbiotic relationships, can be collected and studied locally in the Pacific Northwest, and has an annotated genome. *Anthopleura elegantissima* can form symbioses with either the chlorophyte *Elliptochloris marina* [@letsch2009] or the dinoflagellate *Breviolum muscatinei* [@lajeunesse2000]. In this study, we will only be working with the 'golden brown' anemones that are associated with the dinoflagellate *Breviolum muscatinei* in order to reduce variation in our response variables due to symbiont type. The golden brown anemones are also much easier to find and collect, as they are found in the mid to upper intertidal.</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a><span class="fu">### Problems</span></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Marine microplastics are an emerging pollutant of concern that have only been widely 'in play' for the last 80 years</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Plastics in landfills, polyester microfibers from washing machine sewage, and non-source point plastic pollution caught in road runoff all have chemical additives and chemical degredation derivatives that leach out of them forming a cocktail of chemicals and compounds termed 'leachate' that pollutes the environment</span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Urban coastal and intertidal environments are important habitats that support healthy oceans, healthy recreation, and healthy food security for the nation. The near coastal environment adjacent to urban centers may be one of the most exposed to marine microplastic leachate pollution</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Yet, very little is known about the impacts of this type of pollution because it's hard to study (plastics are everywhere!), and as stated previously, it's only been around for the last 80 years coinciding with increased plastic production and integration into consumer products</span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a><span class="fu">### Here's what we do know</span></span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span></span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a><span class="fu">### What we don't know</span></span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>We don't know if/how marine microplastic leachate affects Cnidarians</span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>We don't know if/how marine microplastic leachate affects Cnidarians in the context of multiple stressors (i.e. a marine heatwave = thermal stress)</span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>We don't know if/how marine microplastic leachate affects the symbiotic relationship between Cnidarian hosts and their algal symbionts</span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Why do we care about filling in this knowledge gap?</span></span>
+<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a><span class="fu">### Questions &amp; Hypotheses</span></span>
+<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Overarching</span></span>
+<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning icon="false"}</span>
+<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a><span class="fu">## Questions</span></span>
+<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>How do the combined stressors of marine microplastic leachate and thermal stress affect the physiology of the temperate coastal anemone *Anthopleura elegantissima*?</span>
+<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Does marine microplastic leachate reduce Cnidarians' capacity for resilience to thermal stress?</span>
+<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-59"><a href="#cb5-59" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip icon="false"}</span>
+<span id="cb5-60"><a href="#cb5-60" aria-hidden="true" tabindex="-1"></a><span class="fu">## Hypotheses</span></span>
+<span id="cb5-61"><a href="#cb5-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Thermal stress alone will have no significant impact on anemone respiration</span>
+<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>We expect that net photosynthesis will i</span>
+<span id="cb5-64"><a href="#cb5-64" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-66"><a href="#cb5-66" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Microbiome</span></span>
+<span id="cb5-67"><a href="#cb5-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-68"><a href="#cb5-68" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning icon="false"}</span>
+<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a><span class="fu">## Questions</span></span>
+<span id="cb5-70"><a href="#cb5-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-71"><a href="#cb5-71" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Does exposure to marine microplastic leachate disrupt the function of the *A. elegantissima* microbiome community?</span>
+<span id="cb5-72"><a href="#cb5-72" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Does exposure to thermal stress disrupt the function of the *A. elegantissima* microbiome community?</span>
+<span id="cb5-73"><a href="#cb5-73" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Is the microbial community composition and functional response to the combined stressors of marine microplastic leachate and thermal stress additive?</span>
+<span id="cb5-74"><a href="#cb5-74" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-75"><a href="#cb5-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-76"><a href="#cb5-76" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip icon="false"}</span>
+<span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a><span class="fu">## Hypotheses</span></span>
+<span id="cb5-78"><a href="#cb5-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-79"><a href="#cb5-79" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Microbial community composition and function play a critical role in the stress response of Cnidarians</span>
+<span id="cb5-80"><a href="#cb5-80" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Marine microplastic leachate exposure changes the microbial community</span>
+<span id="cb5-81"><a href="#cb5-81" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Marine microplastic leachate exposure changes the microbial community in such a way that Cnidarians are more susceptible to thermal stress</span>
+<span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Marine microplastic leachate and thermal stress act synergistically to disrupt Cnidarian microbial communities</span>
+<span id="cb5-83"><a href="#cb5-83" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>The microbial community changes differently when exposed to microplastic stress as compared to thermal stress</span>
+<span id="cb5-84"><a href="#cb5-84" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-85"><a href="#cb5-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-86"><a href="#cb5-86" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Differential Gene Expression</span></span>
+<span id="cb5-87"><a href="#cb5-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-88"><a href="#cb5-88" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning icon="false"}</span>
+<span id="cb5-89"><a href="#cb5-89" aria-hidden="true" tabindex="-1"></a><span class="fu">## Questions</span></span>
+<span id="cb5-90"><a href="#cb5-90" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-91"><a href="#cb5-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-92"><a href="#cb5-92" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip icon="false"}</span>
+<span id="cb5-93"><a href="#cb5-93" aria-hidden="true" tabindex="-1"></a><span class="fu">## Hypotheses</span></span>
+<span id="cb5-94"><a href="#cb5-94" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-95"><a href="#cb5-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-96"><a href="#cb5-96" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Respiration</span></span>
+<span id="cb5-97"><a href="#cb5-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-98"><a href="#cb5-98" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning icon="false"}</span>
+<span id="cb5-99"><a href="#cb5-99" aria-hidden="true" tabindex="-1"></a><span class="fu">## Questions</span></span>
+<span id="cb5-100"><a href="#cb5-100" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-101"><a href="#cb5-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-102"><a href="#cb5-102" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip icon="false"}</span>
+<span id="cb5-103"><a href="#cb5-103" aria-hidden="true" tabindex="-1"></a><span class="fu">## Hypotheses</span></span>
+<span id="cb5-104"><a href="#cb5-104" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-105"><a href="#cb5-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-106"><a href="#cb5-106" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Photosynthesis</span></span>
+<span id="cb5-107"><a href="#cb5-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-108"><a href="#cb5-108" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning icon="false"}</span>
+<span id="cb5-109"><a href="#cb5-109" aria-hidden="true" tabindex="-1"></a><span class="fu">## Questions</span></span>
+<span id="cb5-110"><a href="#cb5-110" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-111"><a href="#cb5-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-112"><a href="#cb5-112" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip icon="false"}</span>
+<span id="cb5-113"><a href="#cb5-113" aria-hidden="true" tabindex="-1"></a><span class="fu">## Hypotheses</span></span>
+<span id="cb5-114"><a href="#cb5-114" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-115"><a href="#cb5-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-116"><a href="#cb5-116" aria-hidden="true" tabindex="-1"></a><span class="fu">### Experimental design</span></span>
+<span id="cb5-117"><a href="#cb5-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-118"><a href="#cb5-118" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Equipment list</span><span class="co">](https://docs.google.com/spreadsheets/d/1U19bLRIR1PCuXxlcr5v33zAbFec1UUnc5c6CQ14r1qU/edit?usp=sharing)</span></span>
+<span id="cb5-119"><a href="#cb5-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-120"><a href="#cb5-120" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Phase 1. Response Curve</span></span>
+<span id="cb5-121"><a href="#cb5-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-124"><a href="#cb5-124" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb5-125"><a href="#cb5-125" aria-hidden="true" tabindex="-1"></a><span class="dv">40</span><span class="sc">+</span>(<span class="dv">12</span><span class="sc">*</span><span class="dv">6</span>)</span>
+<span id="cb5-126"><a href="#cb5-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-127"><a href="#cb5-127" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span><span class="sc">*</span><span class="dv">5</span></span>
+<span id="cb5-128"><a href="#cb5-128" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-129"><a href="#cb5-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-130"><a href="#cb5-130" aria-hidden="true" tabindex="-1"></a>Specimen collection</span>
+<span id="cb5-131"><a href="#cb5-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-132"><a href="#cb5-132" aria-hidden="true" tabindex="-1"></a>*Anthopleura elegantissima* will be collected from 12 distinct aggregates at Owens Beach, Point Defiance, Tacoma. From each distinct aggregate, we will collect 7 anemones</span>
+<span id="cb5-133"><a href="#cb5-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-134"><a href="#cb5-134" aria-hidden="true" tabindex="-1"></a>Acclimation</span>
+<span id="cb5-135"><a href="#cb5-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-136"><a href="#cb5-136" aria-hidden="true" tabindex="-1"></a>Treatment preparation</span>
+<span id="cb5-137"><a href="#cb5-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-138"><a href="#cb5-138" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Phase 2. Multiple Stressor</span></span>
+<span id="cb5-139"><a href="#cb5-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-140"><a href="#cb5-140" aria-hidden="true" tabindex="-1"></a><span class="fu">## Timeline log</span></span>
+<span id="cb5-141"><a href="#cb5-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-142"><a href="#cb5-142" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>05-JAN-2024: submitted scientific collection permit</span>
+<span id="cb5-143"><a href="#cb5-143" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>26-FEB-2024: received scientific collection permit</span>
+<span id="cb5-144"><a href="#cb5-144" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>06-MAR-2024: SST &amp; KH scouted collection site at Owens Beach, Point Defiance</span>
+<span id="cb5-145"><a href="#cb5-145" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>08-MAR-2024: Seattle Aquarium seawater pickup</span>
+<span id="cb5-146"><a href="#cb5-146" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>18-MAR-2024: <span class="co">[</span><span class="ot">Field collection at Owens Beach, Point Defiance</span><span class="co">](https://sarahtanja.github.io/quarto-blog/posts/projects/anemone/field-collection/field-collection.html)</span></span>
+<span id="cb5-147"><a href="#cb5-147" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>28-MAR-2024: Seawater filter rig &amp; UV sterilizer bulbs replaced</span>
+<span id="cb5-148"><a href="#cb5-148" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>30-MAR-2024: Field collection at Constellation Park, Alki</span>
+<span id="cb5-149"><a href="#cb5-149" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>09-APR-2024: ASTM seasalt delivery received, pH &amp; DO probes calibrated</span>
+<span id="cb5-150"><a href="#cb5-150" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>10-APR-2024: Seattle Aquarium seawater pickup</span>
+<span id="cb5-151"><a href="#cb5-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-152"><a href="#cb5-152" aria-hidden="true" tabindex="-1"></a><span class="fu">## Permits</span></span>
+<span id="cb5-153"><a href="#cb5-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-154"><a href="#cb5-154" aria-hidden="true" tabindex="-1"></a>Washington Department of Fish &amp; Wildlife scientific collection permit (Tanja 24-010) was submitted on 05-JAN-2024 and the \$117 processing fee was paid from the lab's purchase card over the phone on 08-JAN-2024. WDFW scientific collection permits can take up to 3 months to be approved. The final permit was approved on 26-FEB-2024. The permit allows for 40 lethal-take and 40 non-lethal take anemones to be collected at each of the following sites: - Keystone Jetty, Island County - Pocket Beach, King County - Skyline Wall, Skagit County - Deadman Bay, San Juan County - Sunrise Beach Park, Pierce County - Chuckanut Bay, Whatcom County - Cone Island, Skagit County - Point Defiance Park, Pierce County - Constellation Park, King County. I requested an update to the permit on</span>
+<span id="cb5-155"><a href="#cb5-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-156"><a href="#cb5-156" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data &amp; Code Organization</span></span>
+<span id="cb5-157"><a href="#cb5-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-158"><a href="#cb5-158" aria-hidden="true" tabindex="-1"></a><span class="fu">### Hypotheses</span></span>
+<span id="cb5-159"><a href="#cb5-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-160"><a href="#cb5-160" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Symbionts play a critical role in the stress response of Cnidarians to thermal stress</span></span>
+<span id="cb5-161"><a href="#cb5-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-162"><a href="#cb5-162" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Microplastic leachate exposure changes the microbial community</span></span>
+<span id="cb5-163"><a href="#cb5-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-164"><a href="#cb5-164" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Microplastic leachate exposure changes the microbial community in such a way that Cnidarians are more susceptible to thermal stress</span></span>
+<span id="cb5-165"><a href="#cb5-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-166"><a href="#cb5-166" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Microplastic leachate and thermal stress act synergistically to disrupt Cnidarian microbial communities</span></span>
+<span id="cb5-167"><a href="#cb5-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-168"><a href="#cb5-168" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; The microbial community changes differently when exposed to microplastic stress as compared to thermal stress</span></span>
+<span id="cb5-169"><a href="#cb5-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-170"><a href="#cb5-170" aria-hidden="true" tabindex="-1"></a><span class="fu">### Specimen collection</span></span>
+<span id="cb5-171"><a href="#cb5-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-172"><a href="#cb5-172" aria-hidden="true" tabindex="-1"></a>We will collect 84 'golden brown' *Anthopleura elegantissima* from Owen's Beach at Point Defiance Park in Tacoma in the Salish Sea of Washington State. Individual anemones will be collected from each of 12 clonal aggregates by very gently scraping their pedal disc to separate it from their attached substrate. We will move 5 meters or more to what we can assume is a genetically distinct aggregate and repeat this, until we have 7 individuals from each of 12 clonal mats (a total of 84 individuals). One individual from each aggregate will be immediately flash-frozen in liquid nitrogen to serve as an environmental baseline control for both microbial and gene expression metrics. The remaining 72 anemones will be kept for experimentation.</span>
+<span id="cb5-173"><a href="#cb5-173" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-174"><a href="#cb5-174" aria-hidden="true" tabindex="-1"></a><span class="fu">### Specimen housing &amp; acclimation</span></span>
+<span id="cb5-175"><a href="#cb5-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-176"><a href="#cb5-176" aria-hidden="true" tabindex="-1"></a>The anemones will be transported in sea water from the collection site back to the University of Washington campus where they will be housed individually in labelled glass beakers that will be submerged in a recirculating seawater table and allowed to acclimate for at least 2 weeks to heal their pedal disc.</span>
+<span id="cb5-177"><a href="#cb5-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-178"><a href="#cb5-178" aria-hidden="true" tabindex="-1"></a><span class="fu">### Treatment preparation</span></span>
+<span id="cb5-179"><a href="#cb5-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-180"><a href="#cb5-180" aria-hidden="true" tabindex="-1"></a>We will prepare plastic leachate in seawater as a treatment by soaking 250mg of plastic in 250ml of seawater in a glass beaker for 1 week with a stir-bar or shaker table. The 100% leachate that is formed from this soak has a known phthalate acid ester (PAE) concentration of \~10%, equaling 100mg of PAE per 250ml of seawater. This highly concentrated leachate will be diluted 1:1000 in filtered seawater to get to an environmentally relevant concentration of 100ug of PAE per liter of seawater.</span>
+<span id="cb5-181"><a href="#cb5-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-182"><a href="#cb5-182" aria-hidden="true" tabindex="-1"></a><span class="fu">### Experiment</span></span>
+<span id="cb5-183"><a href="#cb5-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-184"><a href="#cb5-184" aria-hidden="true" tabindex="-1"></a>The experiment will be setup as a 2x3 factorial design to test thermal stress and plastic leachate. Two seawater tables will be used as temperature baths, one set at an elevated temperature of 20$^{\circ}$C and another at an ambient temperature of 10$^{\circ}$C. Temperature will be controlled by an Apex Neptune Aquarium controller coupled to heat exchangers and light level will be standardized using Kessil aquarium lights. 20 specimens (two of each clonal mat) will be randomly placed in one of each water temperature treatment bath. Seatable water volume level will be dropped to just below the lip of the specimen beakers, and specimen beakers will be filled with either filtered seawater or with the dilute plastic seawater leachate treatment. The exposure will last 48 hours, after which anemones will be flash frozen in liquid nitrogen.</span>
+<span id="cb5-185"><a href="#cb5-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-186"><a href="#cb5-186" aria-hidden="true" tabindex="-1"></a><span class="al">![Figure 2. 2x3 Factorial experimental design in which 1 clonal genotype from each of 10 clonal mats will be exposed to 4 scenarios, thermal stress, plastic leachate pollution, multiple/combined thermal and leachate pollution stresses, and the control of ambient temp and filtered seawater.](aelegantissima-2x3.png)</span>{width="419"}</span>
+<span id="cb5-187"><a href="#cb5-187" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-188"><a href="#cb5-188" aria-hidden="true" tabindex="-1"></a><span class="fu">### Sample Processing</span></span>
+<span id="cb5-189"><a href="#cb5-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-190"><a href="#cb5-190" aria-hidden="true" tabindex="-1"></a>Flash frozen samples will be processed using the commercial Zymo Dual DNA/RNA MiniPrep kit to extract microbial DNA and host and symbiont RNA. The microbial DNA data will be used to analyze if there are any discernible shifts in the microbiome related to the treatments. The RNA will help us identify molecular pathways that may be disrupted by heat, leachate, and/or the combined multiple stressors of both in a cnidarian and its algal symbiont.</span>
+<span id="cb5-191"><a href="#cb5-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-192"><a href="#cb5-192" aria-hidden="true" tabindex="-1"></a><span class="fu">### Merit</span></span>
+<span id="cb5-193"><a href="#cb5-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-194"><a href="#cb5-194" aria-hidden="true" tabindex="-1"></a>This shotgun of stress response variables will serve to offer a holistic view of cnidarian host and algal symbiont physiological response to temperature and plastic pollution leachate stress. It is well known that ocean heat waves are becoming more frequent and intense. Simultaneously, marine plastic pollution is becoming more prevalent and the chemical additives associated with plastic have become ubiquitous in our environments. As plastics weather mechanically, they also weather chemically by leaching additives not covalently bonded to the plastic polymer resins <span class="co">[</span><span class="ot">@hahladakis2018</span><span class="co">]</span>. The most common plastic additives are a group of chemicals called plasticizers, also known as phthalates or phthlate acid esters (PAE). They are commonly added to PVC to increase flexibility and durability. However, phthlatates are known to mimic or interfere with hormones that control developmental, reproductive, and immune response in both humans and animals <span class="co">[</span><span class="ot">@maqboolReviewEndocrineDisorders2016</span><span class="co">]</span>. Previous research shows that plastic leachates experimentally added to plants, bacteria, and algae impair growth, reduce photosynthesis, and shift microbial communities in lab studies <span class="co">[</span><span class="ot">@capolupo2020; @obrien2022; @tetu2019</span><span class="co">]</span>. However, little is known about environmental concentrations of plastic leachate in the context of increasing ocean temperatures. Marine heatwaves, plastic manufacturing, and pollution are predicted to increase <span class="co">[</span><span class="ot">@macleodGlobalThreatPlastic2021; @oliverMarineHeatwaves2021</span><span class="co">]</span>. Therefore, it is urgent that we understand how thermal stress and plastic pollution interact and the effects they may have on coastal marine organisms, which are likely experiencing both the most extreme thermal stress and the highest amount of plastic pollution.</span>
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
@@ -58,11 +92,11 @@ div.csl-indent {
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -86,7 +120,7 @@ div.csl-indent {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed slimcontent">
@@ -182,7 +216,7 @@ div.csl-indent {
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Choosing 16S Primers for <em>M. capitata</em> microbiome</h1>
+      <div class="quarto-title-block"><div><h1 class="title">Choosing 16S Primers for <em>M. capitata</em> microbiome</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
                                 <div class="quarto-categories">
                 <div class="quarto-category">learning journey</div>
               </div>
@@ -295,6 +329,8 @@ Brown, Tanya, Dylan Sonett, Jesse R. Zaneveld, and Jacqueline L. Padilla-Gamiño
 Galkiewicz, Julia P., and Christina A. Kellogg. 2008. <span>“Cross-<span>Kingdom Amplification Using Bacteria-Specific Primers</span>: <span>Complications</span> for <span>Studies</span> of <span>Coral Microbial Ecology</span>.”</span> <em>Applied and Environmental Microbiology</em> 74 (24): 7828–31. <a href="https://doi.org/10.1128/AEM.01303-08">https://doi.org/10.1128/AEM.01303-08</a>.
 </div></div></blockquote>
 
+
+<!-- -->
 
 
 </section>
@@ -410,7 +446,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'alternate';
+  let localAlternateSentinel = 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
@@ -495,6 +531,57 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
   function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
@@ -664,7 +751,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
 });
-</script>
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Choosing 16S Primers for *M. capitata* microbiome"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Sarah Tanja"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> '06/08/2023'</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [learning journey]</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">draft:</span><span class="co"> false</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> true</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="an">toc-title:</span><span class="co"> Contents &lt;i class="bi bi-bookmark-heart"&gt;&lt;/i&gt;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="an">toc-depth:</span><span class="co"> 5</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="an">toc-location:</span><span class="co"> left</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="an">reference-location:</span><span class="co"> margin</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="an">citation-location:</span><span class="co"> margin</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="an">bibliography:</span><span class="co"> choosing-16S-primers.bib</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## 515 &amp; 806 V4[@pratte2021]</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">### [Pratte &amp; Kellogg 2021](https://doi.org/10.3389/fmars.2021.684161)</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; " Indeed&nbsp;</span><span class="co">[</span><span class="ot">Cruaud et al. (2014)</span><span class="co">](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B18)</span><span class="at">&nbsp;and&nbsp;</span><span class="co">[</span><span class="ot">Fouhy et al. (2016)</span><span class="co">](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B23)</span><span class="at">&nbsp;show that primer choice has a far deeper influence on microbial community than extraction method, although they did compare two bead-beating methods so the differences would be minimized. Primer choice is also particularly important, as some bacterial 16S primers are known to amplify coral mitochondrial DNA (</span><span class="co">[</span><span class="ot">Galkiewicz and Kellogg, 2008</span><span class="co">](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B25)</span><span class="at">;&nbsp;</span><span class="co">[</span><span class="ot">Weber et al., 2017</span><span class="co">](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B66)</span><span class="at">;&nbsp;</span><span class="co">[</span><span class="ot">Pollock F. J. et al., 2018</span><span class="co">](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B51)</span><span class="at">;&nbsp;</span><span class="co">[</span><span class="ot">Meyer et al., 2019</span><span class="co">](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B47)</span><span class="at">). As shown in our study, using the 515/806 V4 primers,&nbsp;*L. pertusa*&nbsp;may be particularly prone to mitochondrial amplification compared to the other coral species, resulting in fewer samples making it through quality control. This has also been reported for other coral species such as&nbsp;*Porites lobata*&nbsp;and&nbsp;*Pocillopora verrucosa*&nbsp;([Weber et al., 2017](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B66);&nbsp;[Sonett et al., 2021](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B60)). Thus far, the coral microbiology community has employed a variety of solutions to combat this molecular hurdle: (1) deeper sequencing, to allow for discarding the mitochondrial bycatch ([Rosales et al., 2019](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B54)); (2) agarose gel size separation of the 16S rRNA band from the coral mitochondrial band ([Apprill et al., 2016](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B6)); (3) alternative primer sets ([Galkiewicz and Kellogg, 2008](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B25);&nbsp;[Bayer et al., 2013](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B8);&nbsp;[Liang et al., 2017](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B41)); and (4) PNA clamps ([Reigel et al., 2020](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B53)). Further, the magnitude of under-annotation of coral mitochondria by existing bioinformatic taxonomies has recently been quantified and&nbsp;*in silico*&nbsp;improvements offered (</span><span class="co">[</span><span class="ot">Sonett et al., 2021</span><span class="co">](https://www.frontiersin.org/articles/10.3389/fmars.2021.684161/full#B60)</span><span class="at">). " - </span><span class="co">[</span><span class="ot">@pratte2021</span><span class="co">]</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">### Brown et al. 2021</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; " The V4 variable region of the 16S rRNA gene was amplified using the 515F (5′-­GTGCCAGCMGCCGCGGTAA-­3′) and 806R (5′-­GGACTACHVGGGTWTCTAAT-­3′) primer set (Caporaso et al. 2011). " - </span><span class="co">[</span><span class="ot">@brown2021</span><span class="co">]</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="fu">## 63F and 1542R</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="fu">### Galkiewicz &amp; Kellog 2008</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; " The use of&nbsp;*Bacteria*-specific primer 63F (</span><span class="co">[</span><span class="ot">23</span><span class="co">](https://journals.asm.org/doi/10.1128/AEM.01303-08#core-R23)</span><span class="at">) and universal primer 1542R (</span><span class="co">[</span><span class="ot">24</span><span class="co">](https://journals.asm.org/doi/10.1128/AEM.01303-08#core-R24)</span><span class="at">) had several advantages. The sequence homology between the primers and coral DNA was low, with only 7 of 21 bp matching in 63F and 7 of 20 bp matching in 1542R (Fig.&nbsp;</span><span class="co">[</span><span class="ot">1</span><span class="co">](https://journals.asm.org/doi/10.1128/AEM.01303-08#F1)</span><span class="at">). With such low binding strength, limited coral DNA amplification was expected. In addition, any coral 18S rRNA gene that was amplified would result in an amplicon length of 0.6 kbp, whereas bacterial 16S rRNA genes would have an amplicon length of 1.5 kbp. Test results indicated that during PCR, coral rRNA genes were amplified and appeared as a distinct band on the gel (Fig.&nbsp;</span><span class="co">[</span><span class="ot">2</span><span class="co">](https://journals.asm.org/doi/10.1128/AEM.01303-08#F2)</span><span class="at">, lane 3). This clear separation between coral and bacterial DNA allowed the isolation of the bacterial rRNA genes for further analysis. " - </span><span class="co">[</span><span class="ot">@galkiewicz2008</span><span class="co">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

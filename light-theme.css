@@ -1,0 +1,38 @@
+/*-- scss:defaults --*/
+
+/* nav bar logo size*/
+.navbar-logo {
+  max-height: 200px;
+}
+
+/* Style actual images inside the thumbnail div */
+.thumbnail img {
+  width: 100%;
+  height: 200px;       /* fixed height */
+  object-fit: cover;   /* crop to fill */
+  border-radius: 20px;  /* optional for rounded corners */
+  display: block;
+}
+
+/* Style the placeholder div for posts with no image */
+.listing-item-img-placeholder {
+  width: 100%;
+  height: 200px;
+  background-color: #ddd;  /* light gray placeholder */
+  border-radius: 20px; /* optional for rounded corners */
+}
+
+/* Hide the listing preview text across all posts */
+.listing-description {
+  display: none;
+}
+
+/* Optional: transition for smooth mode changes */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+// Base document colors
+$body-bg: #FFFCF0; /*an off-white paper from flexoki*/
+$body-color: #12253B; /*the page text color is dark blue*/
+$code-block-bg: #FAEEC6; /*the code block background color is butter*/

@@ -73,11 +73,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -101,7 +101,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -197,7 +197,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-right">
-      <h1 class="title">Tides &amp; WX Station Data</h1>
+      <div class="quarto-title-block"><div><h1 class="title">Tides &amp; WX Station Data</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
             <p class="subtitle lead">How to use the rnoaa package</p>
                                 <div class="quarto-categories">
                 <div class="quarto-category">learning journey</div>
@@ -457,6 +457,8 @@ Done !</code></pre>
 </div>
 
 
+<!-- -->
+
 </section>
 
 </main> <!-- /main -->
@@ -569,7 +571,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'alternate';
+  let localAlternateSentinel = 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
@@ -654,6 +656,57 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
   function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
@@ -823,7 +876,118 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
 });
-</script>
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb41" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Tides &amp; WX Station Data"</span></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "How to use the rnoaa package"</span></span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Sarah Tanja"</span></span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> '02/05/2024'</span></span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [learning journey]</span></span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> thumbnail.jpg</span></span>
+<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a><span class="an">draft:</span><span class="co"> false</span></span>
+<span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> true</span></span>
+<span id="cb41-10"><a href="#cb41-10" aria-hidden="true" tabindex="-1"></a><span class="an">toc-title:</span><span class="co"> Contents &lt;i class="bi bi-bookmark-heart"&gt;&lt;/i&gt;</span></span>
+<span id="cb41-11"><a href="#cb41-11" aria-hidden="true" tabindex="-1"></a><span class="an">toc-depth:</span><span class="co"> 5</span></span>
+<span id="cb41-12"><a href="#cb41-12" aria-hidden="true" tabindex="-1"></a><span class="an">toc-location:</span><span class="co"> left</span></span>
+<span id="cb41-13"><a href="#cb41-13" aria-hidden="true" tabindex="-1"></a><span class="an">reference-location:</span><span class="co"> margin</span></span>
+<span id="cb41-14"><a href="#cb41-14" aria-hidden="true" tabindex="-1"></a><span class="an">citation-location:</span><span class="co"> margin</span></span>
+<span id="cb41-15"><a href="#cb41-15" aria-hidden="true" tabindex="-1"></a><span class="an">link-external-icon:</span><span class="co"> true</span></span>
+<span id="cb41-16"><a href="#cb41-16" aria-hidden="true" tabindex="-1"></a><span class="an">link-external-newwindow:</span><span class="co"> true</span></span>
+<span id="cb41-17"><a href="#cb41-17" aria-hidden="true" tabindex="-1"></a><span class="an">bibliography:</span><span class="co"> ../library.bib</span></span>
+<span id="cb41-18"><a href="#cb41-18" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb41-19"><a href="#cb41-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-20"><a href="#cb41-20" aria-hidden="true" tabindex="-1"></a>"Air temperature and tide data Air temperature and tide level data was obtained from various sources depending on the location. Hourly temperature and tide data for Toke Point and Port Townsend and tide data from Neah Bay and Budd Inlet was obtained from publically available National Oceanic and Atmospheric Administration (NOAA) tide station data using the 'rnoaa' package in R (Chamberlin et al. 2021, R Core Team 2021). Hourly temperature and tide data for Vancouver and tide data for Pruth Bay was obtained from publically available Department of Fisheries and Oceans (DFO) Canada tide station data. Air temperature data for Pruth Bay was obtained from the Hakai Institute weather station (Giesbrecht et al. 2021). Air temperature data for Neah Bay was obtained from a weather station on nearby Tatoosh Island, WA (C. Pfister and T. Wootton personal communication). Air temperature data for Budd Inlet was obtained from the nearby Evergreen State College weather station. If raw data was reported at time scale less than one hour, mean hourly temperature was calculated. These data can be accessed two ways, both of which are available (Raymond, 2022). There, static data files are archived as well as code to query and process them if necessary. Long term, 1991 -- 2020, air temperature data was obtained from the National Aeronautical and Space Agency (NASA) DAYMET surface temperature database using the 'daymetr' package in R (Hufkens 2021). We extracted maximum and minimum daily surface air temperatures from 2° latitude by 2° longitude grids. Grids were selected by the location of the hourly temperatures/tide stations above. These are Toke Point 46.7499° N -124.0250°W, Budd Inlet 47.0643°N -122.9106°W, Neah Bay 48.3770°N -124.6897°W, Port Townsend and Vancouver 48.1172°N -122.7890°W, and Pruth Bay 51.6271°N -127.6450°W. From this raw daily data, long term daily mean high and low temperatures were calculated. Code to obtain and processes these data in the R environment are available (Raymond, 2022)."</span>
+<span id="cb41-21"><a href="#cb41-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-22"><a href="#cb41-22" aria-hidden="true" tabindex="-1"></a>archived in Zenodo https://zenodo.org/records/6555076</span>
+<span id="cb41-23"><a href="#cb41-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-24"><a href="#cb41-24" aria-hidden="true" tabindex="-1"></a>https://github.com/wraymond/Ecology_heatwave-salish-sea-shellfish/tree/v1.0</span>
+<span id="cb41-25"><a href="#cb41-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-26"><a href="#cb41-26" aria-hidden="true" tabindex="-1"></a><span class="fu">### Install packages</span></span>
+<span id="cb41-27"><a href="#cb41-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-30"><a href="#cb41-30" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb41-31"><a href="#cb41-31" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">'tidyverse'</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>()) <span class="sc">==</span> <span class="st">'FALSE'</span>) <span class="fu">install.packages</span>(<span class="st">'tidyverse'</span>)</span>
+<span id="cb41-32"><a href="#cb41-32" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">'noaaoceans'</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>()) <span class="sc">==</span> <span class="st">'FALSE'</span>) <span class="fu">install.packages</span>(<span class="st">'noaaoceans'</span>)</span>
+<span id="cb41-33"><a href="#cb41-33" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">'cowplot'</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>()) <span class="sc">==</span> <span class="st">'FALSE'</span>) <span class="fu">install.packages</span>(<span class="st">'cowplot'</span>)</span>
+<span id="cb41-34"><a href="#cb41-34" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">'lubridate'</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>()) <span class="sc">==</span> <span class="st">'FALSE'</span>) <span class="fu">install.packages</span>(<span class="st">'lubridate'</span>)</span>
+<span id="cb41-35"><a href="#cb41-35" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">'rnoaa'</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>()) <span class="sc">==</span> <span class="st">'FALSE'</span>) <span class="fu">install.packages</span>(<span class="st">'rnoaa'</span>)</span>
+<span id="cb41-36"><a href="#cb41-36" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">'daymetr'</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>()) <span class="sc">==</span> <span class="st">'FALSE'</span>) <span class="fu">install.packages</span>(<span class="st">'daymetr'</span>)</span>
+<span id="cb41-37"><a href="#cb41-37" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">'heatwaveR'</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>()) <span class="sc">==</span><span class="st">'FALSE'</span>) <span class="fu">install.packages</span>(<span class="st">'heatwaveR'</span>)</span>
+<span id="cb41-38"><a href="#cb41-38" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">'tiff'</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>()) <span class="sc">==</span> <span class="st">'FALSE'</span>) <span class="fu">install.packages</span>(<span class="st">'tiff'</span>)</span>
+<span id="cb41-39"><a href="#cb41-39" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-40"><a href="#cb41-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-41"><a href="#cb41-41" aria-hidden="true" tabindex="-1"></a><span class="fu">### Load libraries</span></span>
+<span id="cb41-42"><a href="#cb41-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-43"><a href="#cb41-43" aria-hidden="true" tabindex="-1"></a><span class="in">```{r libraries}</span></span>
+<span id="cb41-44"><a href="#cb41-44" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(noaaoceans)</span>
+<span id="cb41-45"><a href="#cb41-45" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb41-46"><a href="#cb41-46" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(cowplot)</span>
+<span id="cb41-47"><a href="#cb41-47" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb41-48"><a href="#cb41-48" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rnoaa)</span>
+<span id="cb41-49"><a href="#cb41-49" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(daymetr)</span>
+<span id="cb41-50"><a href="#cb41-50" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(heatwaveR)</span>
+<span id="cb41-51"><a href="#cb41-51" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tiff)</span>
+<span id="cb41-52"><a href="#cb41-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-53"><a href="#cb41-53" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_set</span>(<span class="fu">theme_classic</span>())</span>
+<span id="cb41-54"><a href="#cb41-54" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-55"><a href="#cb41-55" aria-hidden="true" tabindex="-1"></a><span class="fu">### Load Data</span></span>
+<span id="cb41-56"><a href="#cb41-56" aria-hidden="true" tabindex="-1"></a>Import NOAA tide and weather station data</span>
+<span id="cb41-57"><a href="#cb41-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-60"><a href="#cb41-60" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb41-61"><a href="#cb41-61" aria-hidden="true" tabindex="-1"></a><span class="co"># NOAA Air temp data from Toke Point, Port Townsend #</span></span>
+<span id="cb41-62"><a href="#cb41-62" aria-hidden="true" tabindex="-1"></a>noaa.air.stations <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"9440910"</span>, <span class="st">"9444900"</span>)</span>
+<span id="cb41-63"><a href="#cb41-63" aria-hidden="true" tabindex="-1"></a>air.temp <span class="ot">&lt;-</span> <span class="fu">data.frame</span>()</span>
+<span id="cb41-64"><a href="#cb41-64" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> noaa.air.stations) {</span>
+<span id="cb41-65"><a href="#cb41-65" aria-hidden="true" tabindex="-1"></a>    query.df2 <span class="ot">&lt;-</span> <span class="fu">query_coops_data</span>(<span class="at">station_id =</span> i,</span>
+<span id="cb41-66"><a href="#cb41-66" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">start_date =</span> <span class="st">'20210624'</span>,</span>
+<span id="cb41-67"><a href="#cb41-67" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">end_date =</span> <span class="st">'20210701'</span>,</span>
+<span id="cb41-68"><a href="#cb41-68" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">data_product =</span> <span class="st">'air_temperature'</span>,</span>
+<span id="cb41-69"><a href="#cb41-69" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">units =</span> <span class="st">"metric"</span>, </span>
+<span id="cb41-70"><a href="#cb41-70" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">time_zone =</span> <span class="st">"lst_ldt"</span>,</span>
+<span id="cb41-71"><a href="#cb41-71" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">interval =</span> <span class="st">'h'</span>) </span>
+<span id="cb41-72"><a href="#cb41-72" aria-hidden="true" tabindex="-1"></a>    air.temp <span class="ot">&lt;-</span> air.temp <span class="sc">%&gt;%</span> <span class="fu">bind_rows</span>(., query.df2)</span>
+<span id="cb41-73"><a href="#cb41-73" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb41-74"><a href="#cb41-74" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-75"><a href="#cb41-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-78"><a href="#cb41-78" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb41-79"><a href="#cb41-79" aria-hidden="true" tabindex="-1"></a><span class="do">## Water Levels ##</span></span>
+<span id="cb41-80"><a href="#cb41-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-81"><a href="#cb41-81" aria-hidden="true" tabindex="-1"></a><span class="co"># NOAA Water levels from Toke Point, Port Townsend, Neah Bay, and Budd Inlet #</span></span>
+<span id="cb41-82"><a href="#cb41-82" aria-hidden="true" tabindex="-1"></a>noaa.tide.stations <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"9440910"</span>, <span class="st">"9444900"</span>, <span class="st">"9443090"</span>, <span class="st">"9446807"</span>)</span>
+<span id="cb41-83"><a href="#cb41-83" aria-hidden="true" tabindex="-1"></a>water.level <span class="ot">&lt;-</span> <span class="fu">data.frame</span>()</span>
+<span id="cb41-84"><a href="#cb41-84" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> noaa.tide.stations) {</span>
+<span id="cb41-85"><a href="#cb41-85" aria-hidden="true" tabindex="-1"></a>    query.df3 <span class="ot">&lt;-</span> <span class="fu">query_coops_data</span>(<span class="at">station_id =</span> i,</span>
+<span id="cb41-86"><a href="#cb41-86" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">start_date =</span> <span class="st">'20210624'</span>,</span>
+<span id="cb41-87"><a href="#cb41-87" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">end_date =</span> <span class="st">'20210701'</span>,</span>
+<span id="cb41-88"><a href="#cb41-88" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">data_product =</span> <span class="st">'predictions'</span>,</span>
+<span id="cb41-89"><a href="#cb41-89" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">units =</span> <span class="st">"metric"</span>,</span>
+<span id="cb41-90"><a href="#cb41-90" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">datum =</span> <span class="st">"MLLW"</span>,</span>
+<span id="cb41-91"><a href="#cb41-91" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">interval =</span> <span class="st">"h"</span>,</span>
+<span id="cb41-92"><a href="#cb41-92" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">time_zone =</span> <span class="st">"lst_ldt"</span>) </span>
+<span id="cb41-93"><a href="#cb41-93" aria-hidden="true" tabindex="-1"></a>    water.level <span class="ot">&lt;-</span> water.level <span class="sc">%&gt;%</span> <span class="fu">bind_rows</span>(., query.df3)</span>
+<span id="cb41-94"><a href="#cb41-94" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb41-95"><a href="#cb41-95" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-96"><a href="#cb41-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-97"><a href="#cb41-97" aria-hidden="true" tabindex="-1"></a><span class="fu">### Load Gridded climate data</span></span>
+<span id="cb41-98"><a href="#cb41-98" aria-hidden="true" tabindex="-1"></a>Pull from Daymet 2 X 2 degree surface grid. https://daymet.ornl.gov/getdata</span>
+<span id="cb41-99"><a href="#cb41-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-100"><a href="#cb41-100" aria-hidden="true" tabindex="-1"></a><span class="in">```{r gridded}</span></span>
+<span id="cb41-101"><a href="#cb41-101" aria-hidden="true" tabindex="-1"></a><span class="do">## Olympia ##</span></span>
+<span id="cb41-102"><a href="#cb41-102" aria-hidden="true" tabindex="-1"></a>oly.grid <span class="ot">&lt;-</span> <span class="fu">download_daymet</span>(<span class="at">site =</span> <span class="st">"olympia"</span>, <span class="at">lat =</span> <span class="fl">47.064316</span>, <span class="at">lon =</span> <span class="sc">-</span><span class="fl">122.910577</span>, <span class="at">start =</span> <span class="dv">1991</span>, <span class="at">end =</span> <span class="dv">2020</span>, <span class="at">internal =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb41-103"><a href="#cb41-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-104"><a href="#cb41-104" aria-hidden="true" tabindex="-1"></a><span class="do">## Port Townsend + Vancouver BC ##</span></span>
+<span id="cb41-105"><a href="#cb41-105" aria-hidden="true" tabindex="-1"></a>ptv.grid <span class="ot">&lt;-</span> <span class="fu">download_daymet</span>(<span class="at">site =</span> <span class="st">"port_townsend"</span>, <span class="at">lat =</span> <span class="fl">48.1172</span>, <span class="at">lon =</span> <span class="sc">-</span><span class="fl">122.789</span>, <span class="at">start =</span> <span class="dv">1991</span>, <span class="at">end =</span> <span class="dv">2020</span>, <span class="at">internal =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb41-106"><a href="#cb41-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-107"><a href="#cb41-107" aria-hidden="true" tabindex="-1"></a><span class="do">## Neah Bay ##</span></span>
+<span id="cb41-108"><a href="#cb41-108" aria-hidden="true" tabindex="-1"></a>nhb.grid <span class="ot">&lt;-</span> <span class="fu">download_daymet</span>(<span class="at">site =</span> <span class="st">"neah_bay"</span>, <span class="at">lat =</span> <span class="fl">48.377</span>, <span class="at">lon =</span> <span class="sc">-</span><span class="fl">124.6897</span>, <span class="at">start =</span> <span class="dv">1991</span>, <span class="at">end =</span> <span class="dv">2020</span>, <span class="at">internal =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb41-109"><a href="#cb41-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-110"><a href="#cb41-110" aria-hidden="true" tabindex="-1"></a><span class="do">## Toke Point ##</span></span>
+<span id="cb41-111"><a href="#cb41-111" aria-hidden="true" tabindex="-1"></a>tkp.grid <span class="ot">&lt;-</span> <span class="fu">download_daymet</span>(<span class="at">site =</span> <span class="st">"toke_point"</span>, <span class="at">lat =</span> <span class="fl">46.7499</span>, <span class="at">lon =</span> <span class="sc">-</span><span class="fl">124.025</span>, <span class="at">start =</span> <span class="dv">1991</span>, <span class="at">end =</span> <span class="dv">2020</span>, <span class="at">internal =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb41-112"><a href="#cb41-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-113"><a href="#cb41-113" aria-hidden="true" tabindex="-1"></a><span class="do">## Calvert Island ##</span></span>
+<span id="cb41-114"><a href="#cb41-114" aria-hidden="true" tabindex="-1"></a>cvi.grid <span class="ot">&lt;-</span> <span class="fu">download_daymet</span>(<span class="at">site =</span> <span class="st">"calvert_island"</span>, <span class="at">lat =</span> <span class="fl">51.6271</span>, <span class="at">lon =</span> <span class="sc">-</span><span class="fl">127.645</span>, <span class="at">start =</span> <span class="dv">1991</span>, <span class="at">end =</span> <span class="dv">2020</span>, <span class="at">internal =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb41-115"><a href="#cb41-115" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

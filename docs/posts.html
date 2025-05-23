@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -41,11 +75,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -229,13 +263,13 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(59)</span></div><div class="category" data-category="anemones">anemones <span class="quarto-category-count">(9)</span></div><div class="category" data-category="code">code <span class="quarto-category-count">(7)</span></div><div class="category" data-category="committee">committee <span class="quarto-category-count">(5)</span></div><div class="category" data-category="coral">coral <span class="quarto-category-count">(10)</span></div><div class="category" data-category="daily log">daily log <span class="quarto-category-count">(1)</span></div><div class="category" data-category="goals">goals <span class="quarto-category-count">(1)</span></div><div class="category" data-category="lab records">lab records <span class="quarto-category-count">(17)</span></div><div class="category" data-category="learning journey">learning journey <span class="quarto-category-count">(17)</span></div><div class="category" data-category="protocols">protocols <span class="quarto-category-count">(13)</span></div><div class="category" data-category="stats">stats <span class="quarto-category-count">(2)</span></div><div class="category" data-category="workflow">workflow <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(59)</span></div><div class="category" data-category="anemones">anemones <span class="quarto-category-count">(9)</span></div><div class="category" data-category="code">code <span class="quarto-category-count">(6)</span></div><div class="category" data-category="committee">committee <span class="quarto-category-count">(5)</span></div><div class="category" data-category="coral">coral <span class="quarto-category-count">(10)</span></div><div class="category" data-category="daily log">daily log <span class="quarto-category-count">(1)</span></div><div class="category" data-category="goals">goals <span class="quarto-category-count">(1)</span></div><div class="category" data-category="lab records">lab records <span class="quarto-category-count">(17)</span></div><div class="category" data-category="learning journey">learning journey <span class="quarto-category-count">(17)</span></div><div class="category" data-category="presentations">presentations <span class="quarto-category-count">(1)</span></div><div class="category" data-category="protocols">protocols <span class="quarto-category-count">(13)</span></div><div class="category" data-category="stats">stats <span class="quarto-category-count">(2)</span></div><div class="category" data-category="workflow">workflow <span class="quarto-category-count">(3)</span></div></div></div>
 <!-- main -->
 <main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Posts</h1>
+<div class="quarto-title-block"><div><h1 class="title">Posts</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
@@ -253,35 +287,40 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<!-- -->
+
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="committee" data-listing-date-sort="1746514800000" data-listing-file-modified-sort="1747262278062" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="0" data-categories="committee,presentations" data-listing-date-sort="1746514800000" data-listing-file-modified-sort="1747947720420" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
 <div class="thumbnail">
-<p><a href="./posts/thesis-progress/committee-3/committee-3.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/thesis/committee-3/committee-3.html"> <img src="./posts/thesis/committee-3/counts_viable_boxplot.png" class="thumbnail-image"> </a></p>
 </div>
 <div class="body">
-<a href="./posts/thesis-progress/committee-3/committee-3.html">
+<a href="./posts/thesis/committee-3/committee-3.html">
 <h3 class="no-anchor listing-title">
-MS Committee Meeting
+Master’s Thesis Committee Meeting #3
 </h3>
 <div class="listing-subtitle">
-
+Progress check-in on analyses
 </div>
 </a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('committee'); return false;">
 committee
 </div>
+<div class="listing-category" onclick="window.quartoListingCategory('presentations'); return false;">
+presentations
 </div>
-<a href="./posts/thesis-progress/committee-3/committee-3.html">
+</div>
+<a href="./posts/thesis/committee-3/committee-3.html">
 <div class="listing-description">
 
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/thesis-progress/committee-3/committee-3.html">
+<a href="./posts/thesis/committee-3/committee-3.html">
 <div class="listing-date">
 May 6, 2025
 </div>
@@ -291,7 +330,7 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="learning journey,workflow" data-listing-date-sort="1743577200000" data-listing-file-modified-sort="1743659925156" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="1" data-categories="learning journey,workflow" data-listing-date-sort="1743577200000" data-listing-file-modified-sort="1743659925156" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="1">
 <div class="thumbnail">
 <p><a href="./posts/workflow/reference-manager.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
@@ -329,7 +368,7 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="learning journey,code" data-listing-date-sort="1734076800000" data-listing-file-modified-sort="1743623143239" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="2" data-categories="learning journey,code" data-listing-date-sort="1734076800000" data-listing-file-modified-sort="1743623143239" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="4">
 <div class="thumbnail">
 <p><a href="./posts/ncbi-sra-submission/ncbi-sra-submission-16S.html"> <p class="card-img-top"><img src="posts\ncbi-sra-submission\ncbi-login.png"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
@@ -367,7 +406,7 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="code" data-listing-date-sort="1730707200000" data-listing-file-modified-sort="1747262278063" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="3" data-categories="workflow" data-listing-date-sort="1730707200000" data-listing-file-modified-sort="1747946576670" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="3">
 <div class="thumbnail">
 <p><a href="./posts/workflow/backup.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
@@ -381,8 +420,8 @@ using <code>rsync</code>
 </div>
 </a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
+<div class="listing-category" onclick="window.quartoListingCategory('workflow'); return false;">
+workflow
 </div>
 </div>
 <a href="./posts/workflow/backup.html">
@@ -402,7 +441,7 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="learning journey,code" data-listing-date-sort="1728370800000" data-listing-file-modified-sort="1729097378298" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="4" data-categories="learning journey,code" data-listing-date-sort="1728370800000" data-listing-file-modified-sort="1729097378298" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="2">
 <div class="thumbnail">
 <p><a href="./posts/ncbi-sra-submission/ncbi-sra-submission.html"> <p class="card-img-top"><img src="posts\ncbi-sra-submission\ncbi-login.png"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
@@ -440,7 +479,7 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="learning journey,code" data-listing-date-sort="1728370800000" data-listing-file-modified-sort="1728503307710" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="5" data-categories="learning journey,code" data-listing-date-sort="1728370800000" data-listing-file-modified-sort="1728503307710" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="2">
 <div class="thumbnail">
 <p><a href="./posts/sftp-azenta/azenta-sftp.html"> <p class="card-img-top"><img src="posts\sftp-azenta\terminal-rstudio.png"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
@@ -478,12 +517,12 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="code,coral" data-listing-date-sort="1728284400000" data-listing-file-modified-sort="1733940169883" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="6" data-categories="code,coral" data-listing-date-sort="1728284400000" data-listing-file-modified-sort="1733940169883" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="3">
 <div class="thumbnail">
-<p><a href="./posts/projects/coral-embryo-leachate/bioinformatics-pipeline/pipeline-overview.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/projects/coral-embryo-leachate/transcriptomics/bioinformatics-pipeline/pipeline-overview.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
-<a href="./posts/projects/coral-embryo-leachate/bioinformatics-pipeline/pipeline-overview.html">
+<a href="./posts/projects/coral-embryo-leachate/transcriptomics/bioinformatics-pipeline/pipeline-overview.html">
 <h3 class="no-anchor listing-title">
 Bioinformatics Pipeline Roadmap
 </h3>
@@ -499,14 +538,14 @@ code
 coral
 </div>
 </div>
-<a href="./posts/projects/coral-embryo-leachate/bioinformatics-pipeline/pipeline-overview.html">
+<a href="./posts/projects/coral-embryo-leachate/transcriptomics/bioinformatics-pipeline/pipeline-overview.html">
 <div class="listing-description">
 We’ve…
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/projects/coral-embryo-leachate/bioinformatics-pipeline/pipeline-overview.html">
+<a href="./posts/projects/coral-embryo-leachate/transcriptomics/bioinformatics-pipeline/pipeline-overview.html">
 <div class="listing-date">
 Oct 7, 2024
 </div>
@@ -516,12 +555,12 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="learning journey,coral" data-listing-date-sort="1728284400000" data-listing-file-modified-sort="1743659925154" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="12">
+<div class="quarto-post image-right" data-index="7" data-categories="learning journey,coral" data-listing-date-sort="1728284400000" data-listing-file-modified-sort="1743659925154" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="12">
 <div class="thumbnail">
-<p><a href="./posts/projects/coral-embryo-leachate/previous-research/previous-research.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/projects/coral-embryo-leachate/transcriptomics/previous-research/previous-research.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
-<a href="./posts/projects/coral-embryo-leachate/previous-research/previous-research.html">
+<a href="./posts/projects/coral-embryo-leachate/transcriptomics/previous-research/previous-research.html">
 <h3 class="no-anchor listing-title">
 Summary of previous research on microplastic leachate exposure in marine invertebrate embryonic development
 </h3>
@@ -537,14 +576,14 @@ learning journey
 coral
 </div>
 </div>
-<a href="./posts/projects/coral-embryo-leachate/previous-research/previous-research.html">
+<a href="./posts/projects/coral-embryo-leachate/transcriptomics/previous-research/previous-research.html">
 <div class="listing-description">
 <span class="citation" data-cites="jimenez-guri2023">(<strong>jimenez-guri2023?</strong>)</span> either exposed adult sea urchins <em>Paracentrotus lividus</em> to excessively high<sup>1</sup> levels of PVC leachate or filtered seawater control for 2 weeks, and then force-spawned twice (once at the end of week 1 and once at the end of week 2) where embryos from…
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/projects/coral-embryo-leachate/previous-research/previous-research.html">
+<a href="./posts/projects/coral-embryo-leachate/transcriptomics/previous-research/previous-research.html">
 <div class="listing-date">
 Oct 7, 2024
 </div>
@@ -554,12 +593,12 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="learning journey,coral" data-listing-date-sort="1727679600000" data-listing-file-modified-sort="1728503307694" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="8" data-categories="learning journey,coral" data-listing-date-sort="1727679600000" data-listing-file-modified-sort="1747940090162" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="1">
 <div class="thumbnail">
-<p><a href="./posts/projects/coral-embryo-leachate/ontogenetic-development/ontogenetic-development.html"> <p class="card-img-top"><img src="posts\projects\coral-embryo-leachate\ontogenetic-development\okubo2013_fig12.png" alt="Figure 12. Taken from Okubo et al. 2013"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/projects/coral-embryo-leachate/scope/ontogenetic-development/ontogenetic-development.html"> <p class="card-img-top"><img src="posts\projects\coral-embryo-leachate\scope\ontogenetic-development\okubo2013_fig12.png" alt="Figure 12. Taken from Okubo et al. 2013"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
-<a href="./posts/projects/coral-embryo-leachate/ontogenetic-development/ontogenetic-development.html">
+<a href="./posts/projects/coral-embryo-leachate/scope/ontogenetic-development/ontogenetic-development.html">
 <h3 class="no-anchor listing-title">
 Ontogenetic Development of Montipora capitata
 </h3>
@@ -575,14 +614,14 @@ learning journey
 coral
 </div>
 </div>
-<a href="./posts/projects/coral-embryo-leachate/ontogenetic-development/ontogenetic-development.html">
+<a href="./posts/projects/coral-embryo-leachate/scope/ontogenetic-development/ontogenetic-development.html">
 <div class="listing-description">
 <em>Montipora capitata</em> cora…<em></em><em></em>
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/projects/coral-embryo-leachate/ontogenetic-development/ontogenetic-development.html">
+<a href="./posts/projects/coral-embryo-leachate/scope/ontogenetic-development/ontogenetic-development.html">
 <div class="listing-date">
 Sep 30, 2024
 </div>
@@ -592,7 +631,7 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="stats,coral" data-listing-date-sort="1725865200000" data-listing-file-modified-sort="1728340450142" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="9" data-categories="stats,coral" data-listing-date-sort="1725865200000" data-listing-file-modified-sort="1728340450142" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="1">
 <div class="thumbnail">
 <p><a href="./posts/grants-fellowships/grants-fellowships.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
@@ -630,7 +669,7 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="protocols,coral" data-listing-date-sort="1725865200000" data-listing-file-modified-sort="1746515578084" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="10" data-categories="protocols,coral" data-listing-date-sort="1725865200000" data-listing-file-modified-sort="1746515578084" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="3">
 <div class="thumbnail">
 <p><a href="./posts/projects/coral-embryo-leachate/scope/annotate-scope-pics.html"> <p class="card-img-top"><img src="posts\projects\coral-embryo-leachate\scope\labeltext.png"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
@@ -668,12 +707,12 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-categories="committee,goals" data-listing-date-sort="1725778800000" data-listing-file-modified-sort="1725907104913" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="11" data-categories="committee,goals" data-listing-date-sort="1725778800000" data-listing-file-modified-sort="1725907104913" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="1">
 <div class="thumbnail">
-<p><a href="./posts/thesis-progress/goals-timeline.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/thesis/goals-timeline.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
-<a href="./posts/thesis-progress/goals-timeline.html">
+<a href="./posts/thesis/goals-timeline.html">
 <h3 class="no-anchor listing-title">
 Timeline &amp; Goals Planning
 </h3>
@@ -689,14 +728,14 @@ committee
 goals
 </div>
 </div>
-<a href="./posts/thesis-progress/goals-timeline.html">
+<a href="./posts/thesis/goals-timeline.html">
 <div class="listing-description">
 This is a timeline of goals and progress made toward wrapping up my Master’s Thesis at UW SAFS.
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/thesis-progress/goals-timeline.html">
+<a href="./posts/thesis/goals-timeline.html">
 <div class="listing-date">
 Sep 8, 2024
 </div>
@@ -706,7 +745,7 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="12" data-categories="stats,coral" data-listing-date-sort="1725606000000" data-listing-file-modified-sort="1728340450152" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="5">
+<div class="quarto-post image-right" data-index="12" data-categories="stats,coral" data-listing-date-sort="1725606000000" data-listing-file-modified-sort="1728340450152" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="5">
 <div class="thumbnail">
 <p><a href="./posts/projects/coral-embryo-leachate/scope/scope-stats.html"> <p class="card-img-top"><img src="posts\projects\coral-embryo-leachate\scope\8M9_stitch_001_crop_r90.png"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
@@ -744,7 +783,7 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="13" data-categories="protocols,coral" data-listing-date-sort="1725346800000" data-listing-file-modified-sort="1725950261989" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="13" data-categories="protocols,coral" data-listing-date-sort="1725346800000" data-listing-file-modified-sort="1725950261989" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="3">
 <div class="thumbnail">
 <p><a href="./posts/projects/coral-embryo-leachate/scope/nikon-scope.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
@@ -782,12 +821,12 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="14" data-categories="lab records" data-listing-date-sort="1724655600000" data-listing-file-modified-sort="1725907104894" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="5">
+<div class="quarto-post image-right" data-index="14" data-categories="lab records" data-listing-date-sort="1724655600000" data-listing-file-modified-sort="1725907104894" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="5">
 <div class="thumbnail">
-<p><a href="./posts/projects/coral-embryo-leachate/26aug2024-extraction/26aug2024-extraction.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/projects/coral-embryo-leachate/molecular-lab/26aug2024-extraction/26aug2024-extraction.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
-<a href="./posts/projects/coral-embryo-leachate/26aug2024-extraction/26aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/26aug2024-extraction/26aug2024-extraction.html">
 <h3 class="no-anchor listing-title">
 26-Aug-2024 Embryo RNA Extractions
 </h3>
@@ -800,14 +839,14 @@ Sarah Tanja
 lab records
 </div>
 </div>
-<a href="./posts/projects/coral-embryo-leachate/26aug2024-extraction/26aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/26aug2024-extraction/26aug2024-extraction.html">
 <div class="listing-description">
 8C9F, 9C9F = 89C9<sup>1</sup>
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/projects/coral-embryo-leachate/26aug2024-extraction/26aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/26aug2024-extraction/26aug2024-extraction.html">
 <div class="listing-date">
 Aug 26, 2024
 </div>
@@ -817,12 +856,12 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="15" data-categories="lab records" data-listing-date-sort="1724396400000" data-listing-file-modified-sort="1725907104893" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="6">
+<div class="quarto-post image-right" data-index="15" data-categories="lab records" data-listing-date-sort="1724396400000" data-listing-file-modified-sort="1725907104893" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="6">
 <div class="thumbnail">
-<p><a href="./posts/projects/coral-embryo-leachate/23aug2024-extraction/23aug2024-extraction.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/projects/coral-embryo-leachate/molecular-lab/23aug2024-extraction/23aug2024-extraction.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
-<a href="./posts/projects/coral-embryo-leachate/23aug2024-extraction/23aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/23aug2024-extraction/23aug2024-extraction.html">
 <h3 class="no-anchor listing-title">
 23-Aug-2024 Embryo RNA Extractions
 </h3>
@@ -835,14 +874,14 @@ Sarah Tanja
 lab records
 </div>
 </div>
-<a href="./posts/projects/coral-embryo-leachate/23aug2024-extraction/23aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/23aug2024-extraction/23aug2024-extraction.html">
 <div class="listing-description">
 4L14F, 5CL14F, 6L14HF = 456L14
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/projects/coral-embryo-leachate/23aug2024-extraction/23aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/23aug2024-extraction/23aug2024-extraction.html">
 <div class="listing-date">
 Aug 23, 2024
 </div>
@@ -852,12 +891,12 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="16" data-categories="lab records" data-listing-date-sort="1724223600000" data-listing-file-modified-sort="1725907104892" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="6">
+<div class="quarto-post image-right" data-index="16" data-categories="lab records" data-listing-date-sort="1724223600000" data-listing-file-modified-sort="1725907104892" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="6">
 <div class="thumbnail">
-<p><a href="./posts/projects/coral-embryo-leachate/21aug2024-extraction/21aug2024-extraction.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/projects/coral-embryo-leachate/molecular-lab/21aug2024-extraction/21aug2024-extraction.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
-<a href="./posts/projects/coral-embryo-leachate/21aug2024-extraction/21aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/21aug2024-extraction/21aug2024-extraction.html">
 <h3 class="no-anchor listing-title">
 21-Aug-2024 Embryo RNA Extractions
 </h3>
@@ -870,14 +909,14 @@ Sarah Tanja
 lab records
 </div>
 </div>
-<a href="./posts/projects/coral-embryo-leachate/21aug2024-extraction/21aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/21aug2024-extraction/21aug2024-extraction.html">
 <div class="listing-description">
 1C14F, 2C14F, 3C14HF = 123C14
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/projects/coral-embryo-leachate/21aug2024-extraction/21aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/21aug2024-extraction/21aug2024-extraction.html">
 <div class="listing-date">
 Aug 21, 2024
 </div>
@@ -887,12 +926,12 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="17" data-categories="lab records" data-listing-date-sort="1724137200000" data-listing-file-modified-sort="1725907104890" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="5">
+<div class="quarto-post image-right" data-index="17" data-categories="lab records" data-listing-date-sort="1724137200000" data-listing-file-modified-sort="1725907104890" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="5">
 <div class="thumbnail">
-<p><a href="./posts/projects/coral-embryo-leachate/20aug2024-extraction/20aug2024-extraction.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/projects/coral-embryo-leachate/molecular-lab/20aug2024-extraction/20aug2024-extraction.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
-<a href="./posts/projects/coral-embryo-leachate/20aug2024-extraction/20aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/20aug2024-extraction/20aug2024-extraction.html">
 <h3 class="no-anchor listing-title">
 20-Aug-2024 Embryo RNA Extractions
 </h3>
@@ -905,14 +944,14 @@ Sarah Tanja
 lab records
 </div>
 </div>
-<a href="./posts/projects/coral-embryo-leachate/20aug2024-extraction/20aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/20aug2024-extraction/20aug2024-extraction.html">
 <div class="listing-description">
 1H9F, 2H9F, 3H9F = 123H9
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/projects/coral-embryo-leachate/20aug2024-extraction/20aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/20aug2024-extraction/20aug2024-extraction.html">
 <div class="listing-date">
 Aug 20, 2024
 </div>
@@ -922,12 +961,12 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="18" data-categories="lab records" data-listing-date-sort="1724050800000" data-listing-file-modified-sort="1725907104888" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="5">
+<div class="quarto-post image-right" data-index="18" data-categories="lab records" data-listing-date-sort="1724050800000" data-listing-file-modified-sort="1725907104888" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="5">
 <div class="thumbnail">
-<p><a href="./posts/projects/coral-embryo-leachate/19aug2024-extraction/19aug2024-extraction.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/projects/coral-embryo-leachate/molecular-lab/19aug2024-extraction/19aug2024-extraction.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
-<a href="./posts/projects/coral-embryo-leachate/19aug2024-extraction/19aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/19aug2024-extraction/19aug2024-extraction.html">
 <h3 class="no-anchor listing-title">
 19-Aug-2024 Embryo RNA Extractions
 </h3>
@@ -940,14 +979,14 @@ Sarah Tanja
 lab records
 </div>
 </div>
-<a href="./posts/projects/coral-embryo-leachate/19aug2024-extraction/19aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/19aug2024-extraction/19aug2024-extraction.html">
 <div class="listing-description">
 4H9F, 5H9F, 6H9F = 456H9
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/projects/coral-embryo-leachate/19aug2024-extraction/19aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/19aug2024-extraction/19aug2024-extraction.html">
 <div class="listing-date">
 Aug 19, 2024
 </div>
@@ -957,12 +996,12 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="19" data-categories="lab records" data-listing-date-sort="1723791600000" data-listing-file-modified-sort="1725907104887" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="5">
+<div class="quarto-post image-right" data-index="19" data-categories="lab records" data-listing-date-sort="1723791600000" data-listing-file-modified-sort="1725907104887" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="5">
 <div class="thumbnail">
-<p><a href="./posts/projects/coral-embryo-leachate/16aug2024-extraction/16aug2024-extraction.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/projects/coral-embryo-leachate/molecular-lab/16aug2024-extraction/16aug2024-extraction.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
-<a href="./posts/projects/coral-embryo-leachate/16aug2024-extraction/16aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/16aug2024-extraction/16aug2024-extraction.html">
 <h3 class="no-anchor listing-title">
 16-Aug-2024 Embryo RNA Extractions
 </h3>
@@ -975,14 +1014,14 @@ Sarah Tanja
 lab records
 </div>
 </div>
-<a href="./posts/projects/coral-embryo-leachate/16aug2024-extraction/16aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/16aug2024-extraction/16aug2024-extraction.html">
 <div class="listing-description">
 1L4F, 2L4F, 3L4F = 123L4
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/projects/coral-embryo-leachate/16aug2024-extraction/16aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/16aug2024-extraction/16aug2024-extraction.html">
 <div class="listing-date">
 Aug 16, 2024
 </div>
@@ -992,12 +1031,12 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="20" data-categories="lab records" data-listing-date-sort="1723705200000" data-listing-file-modified-sort="1725907104886" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="5">
+<div class="quarto-post image-right" data-index="20" data-categories="lab records" data-listing-date-sort="1723705200000" data-listing-file-modified-sort="1725907104886" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="5">
 <div class="thumbnail">
-<p><a href="./posts/projects/coral-embryo-leachate/15aug2024-extraction/15aug2024-extraction.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/projects/coral-embryo-leachate/molecular-lab/15aug2024-extraction/15aug2024-extraction.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
-<a href="./posts/projects/coral-embryo-leachate/15aug2024-extraction/15aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/15aug2024-extraction/15aug2024-extraction.html">
 <h3 class="no-anchor listing-title">
 15-Aug-2024 Embryo RNA Extractions
 </h3>
@@ -1010,14 +1049,14 @@ Sarah Tanja
 lab records
 </div>
 </div>
-<a href="./posts/projects/coral-embryo-leachate/15aug2024-extraction/15aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/15aug2024-extraction/15aug2024-extraction.html">
 <div class="listing-description">
 4C14F, 5C14F = 45C14
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/projects/coral-embryo-leachate/15aug2024-extraction/15aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/15aug2024-extraction/15aug2024-extraction.html">
 <div class="listing-date">
 Aug 15, 2024
 </div>
@@ -1027,12 +1066,12 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="21" data-categories="lab records" data-listing-date-sort="1723618800000" data-listing-file-modified-sort="1725907104885" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="5">
+<div class="quarto-post image-right" data-index="21" data-categories="lab records" data-listing-date-sort="1723618800000" data-listing-file-modified-sort="1725907104885" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="5">
 <div class="thumbnail">
-<p><a href="./posts/projects/coral-embryo-leachate/14aug2024-extraction/14aug2024-extraction.html"> <p class="card-img-top"><img src="posts\projects\coral-embryo-leachate\14aug2024-extraction\nanodrop_13AUG2024.PNG"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/projects/coral-embryo-leachate/molecular-lab/14aug2024-extraction/14aug2024-extraction.html"> <p class="card-img-top"><img src="posts\projects\coral-embryo-leachate\molecular-lab\14aug2024-extraction\nanodrop_13AUG2024.PNG"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
-<a href="./posts/projects/coral-embryo-leachate/14aug2024-extraction/14aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/14aug2024-extraction/14aug2024-extraction.html">
 <h3 class="no-anchor listing-title">
 14-Aug-2024 Embryo RNA Extractions
 </h3>
@@ -1045,14 +1084,14 @@ Sarah Tanja
 lab records
 </div>
 </div>
-<a href="./posts/projects/coral-embryo-leachate/14aug2024-extraction/14aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/14aug2024-extraction/14aug2024-extraction.html">
 <div class="listing-description">
 1C4F, 2C4F, 3C4F = 123C4
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/projects/coral-embryo-leachate/14aug2024-extraction/14aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/14aug2024-extraction/14aug2024-extraction.html">
 <div class="listing-date">
 Aug 14, 2024
 </div>
@@ -1062,12 +1101,12 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="22" data-categories="lab records,coral" data-listing-date-sort="1723532400000" data-listing-file-modified-sort="1725907104880" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="6">
+<div class="quarto-post image-right" data-index="22" data-categories="lab records,coral" data-listing-date-sort="1723532400000" data-listing-file-modified-sort="1725907104880" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="6">
 <div class="thumbnail">
-<p><a href="./posts/projects/coral-embryo-leachate/13aug2024-extraction/13aug2024-extraction.html"> <p class="card-img-top"><img src="posts\projects\coral-embryo-leachate\13aug2024-extraction\nanodrop_13AUG2024.PNG"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/projects/coral-embryo-leachate/molecular-lab/13aug2024-extraction/13aug2024-extraction.html"> <p class="card-img-top"><img src="posts\projects\coral-embryo-leachate\molecular-lab\13aug2024-extraction\nanodrop_13AUG2024.PNG"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
-<a href="./posts/projects/coral-embryo-leachate/13aug2024-extraction/13aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/13aug2024-extraction/13aug2024-extraction.html">
 <h3 class="no-anchor listing-title">
 13-Aug-2024 Embryo RNA Extractions
 </h3>
@@ -1083,14 +1122,14 @@ lab records
 coral
 </div>
 </div>
-<a href="./posts/projects/coral-embryo-leachate/13aug2024-extraction/13aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/13aug2024-extraction/13aug2024-extraction.html">
 <div class="listing-description">
 1C9F, 2C9F, 3C9F = 123C9F
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/projects/coral-embryo-leachate/13aug2024-extraction/13aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/13aug2024-extraction/13aug2024-extraction.html">
 <div class="listing-date">
 Aug 13, 2024
 </div>
@@ -1100,12 +1139,12 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="23" data-categories="lab records" data-listing-date-sort="1723446000000" data-listing-file-modified-sort="1725907104872" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="23" data-categories="lab records" data-listing-date-sort="1723446000000" data-listing-file-modified-sort="1725907104872" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="4">
 <div class="thumbnail">
-<p><a href="./posts/projects/coral-embryo-leachate/12aug2024-extraction/12aug2024-extraction.html"> <p class="card-img-top"><img src="posts\projects\coral-embryo-leachate\12aug2024-extraction\nanodrop_12AUG2024.png"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/projects/coral-embryo-leachate/molecular-lab/12aug2024-extraction/12aug2024-extraction.html"> <p class="card-img-top"><img src="posts\projects\coral-embryo-leachate\molecular-lab\12aug2024-extraction\nanodrop_12AUG2024.png"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
-<a href="./posts/projects/coral-embryo-leachate/12aug2024-extraction/12aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/12aug2024-extraction/12aug2024-extraction.html">
 <h3 class="no-anchor listing-title">
 12-Aug-2024 Embryo RNA Extractions
 </h3>
@@ -1118,14 +1157,14 @@ Sarah Tanja
 lab records
 </div>
 </div>
-<a href="./posts/projects/coral-embryo-leachate/12aug2024-extraction/12aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/12aug2024-extraction/12aug2024-extraction.html">
 <div class="listing-description">
 6C14F (single sample ~10 embryos)
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/projects/coral-embryo-leachate/12aug2024-extraction/12aug2024-extraction.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/12aug2024-extraction/12aug2024-extraction.html">
 <div class="listing-date">
 Aug 12, 2024
 </div>
@@ -1135,12 +1174,12 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="24" data-categories="protocols,coral" data-listing-date-sort="1723186800000" data-listing-file-modified-sort="1725907104895" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="16">
+<div class="quarto-post image-right" data-index="24" data-categories="protocols,coral" data-listing-date-sort="1723186800000" data-listing-file-modified-sort="1725907104895" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="16">
 <div class="thumbnail">
-<p><a href="./posts/projects/coral-embryo-leachate/embryo-extractions.html"> <p class="card-img-top"><img src="posts\projects\coral-embryo-leachate\~\github\quarto-blog\posts\dna-rna-extraction-protocol\tube-racks.jpg" alt="example of three microcentrifuge tube racks laid out with labelled tubes"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/projects/coral-embryo-leachate/molecular-lab/embryo-extractions.html"> <p class="card-img-top"><img src="posts\projects\coral-embryo-leachate\molecular-lab\~\github\quarto-blog\posts\dna-rna-extraction-protocol\tube-racks.jpg" alt="example of three microcentrifuge tube racks laid out with labelled tubes"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
-<a href="./posts/projects/coral-embryo-leachate/embryo-extractions.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/embryo-extractions.html">
 <h3 class="no-anchor listing-title">
 M. Capitata Embryo DNA/RNA Extractions Protocol
 </h3>
@@ -1156,14 +1195,14 @@ protocols
 coral
 </div>
 </div>
-<a href="./posts/projects/coral-embryo-leachate/embryo-extractions.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/embryo-extractions.html">
 <div class="listing-description">
 For inspiration checkout:
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/projects/coral-embryo-leachate/embryo-extractions.html">
+<a href="./posts/projects/coral-embryo-leachate/molecular-lab/embryo-extractions.html">
 <div class="listing-date">
 Aug 9, 2024
 </div>
@@ -1173,14 +1212,14 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="25" data-categories="protocols" data-listing-date-sort="1720508400000" data-listing-file-modified-sort="1745612568266" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="25" data-categories="protocols" data-listing-date-sort="1720508400000" data-listing-file-modified-sort="1747944380737" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="4">
 <div class="thumbnail">
-<p><a href="./posts/projects/coral-embryo-leachate/himb/collections_tanks.html"> <p class="card-img-top"><img data-src="posts\projects\coral-embryo-leachate\himb\Lagoon surrounding HIMB 21.431215°N, -157.787347°W.png"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/projects/coral-embryo-leachate/wet-lab/collection-acclimation.html"> <p class="card-img-top"><img data-src="posts\projects\coral-embryo-leachate\wet-lab\Lagoon surrounding HIMB 21.431215°N, -157.787347°W.png"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
-<a href="./posts/projects/coral-embryo-leachate/himb/collections_tanks.html">
+<a href="./posts/projects/coral-embryo-leachate/wet-lab/collection-acclimation.html">
 <h3 class="no-anchor listing-title">
-Coral collections &amp; tank acclimation
+Coral collections &amp; tank acclimation protocol
 </h3>
 <div class="listing-subtitle">
 For spawning of Montipora capitata rice corals
@@ -1191,14 +1230,14 @@ For spawning of Montipora capitata rice corals
 protocols
 </div>
 </div>
-<a href="./posts/projects/coral-embryo-leachate/himb/collections_tanks.html">
+<a href="./posts/projects/coral-embryo-leachate/wet-lab/collection-acclimation.html">
 <div class="listing-description">
-In inches the tank dimensions are 48in W x 55in L x 18in D. The water height was variable, and…
+Describe the <em>Montipora capitata</em>…
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/projects/coral-embryo-leachate/himb/collections_tanks.html">
+<a href="./posts/projects/coral-embryo-leachate/wet-lab/collection-acclimation.html">
 <div class="listing-date">
 Jul 9, 2024
 </div>
@@ -1208,12 +1247,12 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="26" data-categories="protocols" data-listing-date-sort="1720508400000" data-listing-file-modified-sort="1725907104898" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="12">
+<div class="quarto-post image-right" data-index="26" data-categories="protocols" data-listing-date-sort="1720508400000" data-listing-file-modified-sort="1725907104898" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="12">
 <div class="thumbnail">
-<p><a href="./posts/projects/coral-embryo-leachate/spawn-night-checklist.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/projects/coral-embryo-leachate/wet-lab/spawn-night.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
-<a href="./posts/projects/coral-embryo-leachate/spawn-night-checklist.html">
+<a href="./posts/projects/coral-embryo-leachate/wet-lab/spawn-night.html">
 <h3 class="no-anchor listing-title">
 Spawn night protocol
 </h3>
@@ -1226,14 +1265,14 @@ For embryonic development of Montipora capitata rice corals
 protocols
 </div>
 </div>
-<a href="./posts/projects/coral-embryo-leachate/spawn-night-checklist.html">
+<a href="./posts/projects/coral-embryo-leachate/wet-lab/spawn-night.html">
 <div class="listing-description">
 This spawn night checklist was used on July 5th, 6th and 7th 2024 at the Hawaiian Institute of Marine Biology (HIMB) on Moku o Loe…<strong></strong><code></code><code></code><code></code><em></em>
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/projects/coral-embryo-leachate/spawn-night-checklist.html">
+<a href="./posts/projects/coral-embryo-leachate/wet-lab/spawn-night.html">
 <div class="listing-date">
 Jul 9, 2024
 </div>
@@ -1611,7 +1650,7 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="37" data-categories="daily log" data-listing-date-sort="1708588800000" data-listing-file-modified-sort="1746515578080" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="51">
+<div class="quarto-post image-right" data-index="37" data-categories="daily log" data-listing-date-sort="1708588800000" data-listing-file-modified-sort="1746515578080" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="51">
 <div class="thumbnail">
 <p><a href="./posts/daily-log/daily-log.html"> <img data-src="./posts/daily-log/log.png" class="thumbnail-image"> </a></p>
 </div>
@@ -1902,10 +1941,10 @@ Sarah Tanja
 </div>
 <div class="quarto-post image-right" data-index="45" data-categories="committee" data-listing-date-sort="1700380800000" data-listing-file-modified-sort="1746515936510" data-listing-date-modified-sort="1701072000000" data-listing-reading-time-sort="13">
 <div class="thumbnail">
-<p><a href="./posts/thesis-progress/committee-2/index.html"> <p class="card-img-top"><img data-src="posts\thesis-progress\committee-2\redo-with-solvent-exp.png"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/thesis/committee-2/index.html"> <p class="card-img-top"><img data-src="posts\thesis\committee-2\redo-with-solvent-exp.png"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
-<a href="./posts/thesis-progress/committee-2/index.html">
+<a href="./posts/thesis/committee-2/index.html">
 <h3 class="no-anchor listing-title">
 Master’s Thesis Committee Meeting #2
 </h3>
@@ -1918,14 +1957,14 @@ Options for addressing the need for a solvent control
 committee
 </div>
 </div>
-<a href="./posts/thesis-progress/committee-2/index.html">
+<a href="./posts/thesis/committee-2/index.html">
 <div class="listing-description">
 Introduce issue with lack of solvent control in experimental design - 5 mins
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/thesis-progress/committee-2/index.html">
+<a href="./posts/thesis/committee-2/index.html">
 <div class="listing-date">
 Nov 19, 2023
 </div>
@@ -1937,10 +1976,10 @@ Sarah Tanja
 </div>
 <div class="quarto-post image-right" data-index="46" data-categories="learning journey,committee" data-listing-date-sort="1700380800000" data-listing-file-modified-sort="1746515578088" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
 <div class="thumbnail">
-<p><a href="./posts/thesis-progress/thesis-progress.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/thesis/thesis-progress.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
-<a href="./posts/thesis-progress/thesis-progress.html">
+<a href="./posts/thesis/thesis-progress.html">
 <h3 class="no-anchor listing-title">
 Master’s Thesis Progress
 </h3>
@@ -1956,14 +1995,14 @@ learning journey
 committee
 </div>
 </div>
-<a href="./posts/thesis-progress/thesis-progress.html">
+<a href="./posts/thesis/thesis-progress.html">
 <div class="listing-description">
 SAFS Masters Thesis Milestones are laid out here
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/thesis-progress/thesis-progress.html">
+<a href="./posts/thesis/thesis-progress.html">
 <div class="listing-date">
 Nov 19, 2023
 </div>
@@ -2008,7 +2047,7 @@ Sarah Tanja
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="48" data-categories="workflow" data-listing-date-sort="1699167600000" data-listing-file-modified-sort="1747262564590" data-listing-date-modified-sort="1747206000000" data-listing-reading-time-sort="6">
+<div class="quarto-post image-right" data-index="48" data-categories="workflow" data-listing-date-sort="1699167600000" data-listing-file-modified-sort="1747939797771" data-listing-date-modified-sort="1747897200000" data-listing-reading-time-sort="6">
 <div class="thumbnail">
 <p><a href="./posts/workflow/git-reset.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
@@ -2359,10 +2398,10 @@ Sarah Tanja
 </div>
 <div class="quarto-post image-right" data-index="58" data-categories="committee" data-listing-date-sort="1675670400000" data-listing-file-modified-sort="1746469816515" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20">
 <div class="thumbnail">
-<p><a href="./posts/thesis-progress/committee-1/index.html"> <p class="card-img-top"><img data-src="https://www.frontiersin.org/files/Articles/980705/fmars-09-980705-HTML/image_m/fmars-09-980705-g001.jpg" alt="one-health"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/thesis/committee-1/index.html"> <p class="card-img-top"><img data-src="https://www.frontiersin.org/files/Articles/980705/fmars-09-980705-HTML/image_m/fmars-09-980705-g001.jpg" alt="one-health"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
-<a href="./posts/thesis-progress/committee-1/index.html">
+<a href="./posts/thesis/committee-1/index.html">
 <h3 class="no-anchor listing-title">
 Master’s Thesis Committee Meeting #1
 </h3>
@@ -2375,14 +2414,14 @@ Master’s Thesis Committee Meeting #1
 committee
 </div>
 </div>
-<a href="./posts/thesis-progress/committee-1/index.html">
+<a href="./posts/thesis/committee-1/index.html">
 <div class="listing-description">
 Introduction - 5 mins
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/thesis-progress/committee-1/index.html">
+<a href="./posts/thesis/committee-1/index.html">
 <div class="listing-date">
 Feb 6, 2023
 </div>
@@ -2509,7 +2548,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'alternate';
+  let localAlternateSentinel = 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
@@ -2594,6 +2633,57 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
   function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
@@ -2775,7 +2865,25 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         <span class="nav-page-text">About</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
-</nav>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Posts"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#title-block-banner: true</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#toc: true</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">page-layout:</span><span class="co"> full # article, full, or custom</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">listing:</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">  contents: </span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">   - "posts/**/*.qmd" # all posts in all subdirectories</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">   - "!posts/projects/anemone.qmd" # except the project listing pages</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">   - "!posts/projects/coral-embryo-leachate.qmd" </span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">   - "!posts/projects/coral-leachate-heat.qmd"</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">   - "!posts/projects/coral-pae-temp.qmd"</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">  sort: "date desc" # Sorts the posts by date in descending order</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">  type: default # `default`, `grid` or `table`</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">  categories: true # allows you to sort posts by assigned categories </span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">  feed: true # Allows for generating an RSS feed</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

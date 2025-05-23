@@ -14,11 +14,13 @@
 <item>
   <title></title>
   <dc:creator>Sarah Tanja</dc:creator>
-  <link>https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/committee-3.html</link>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/thesis/committee-3/committee-3.html</link>
   <description><![CDATA[ undefined ]]></description>
   <category>committee</category>
-  <guid>https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/committee-3/committee-3.html</guid>
+  <category>presentations</category>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/thesis/committee-3/committee-3.html</guid>
   <pubDate>Tue, 06 May 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://sarahtanja.github.io/quarto-blog/posts/thesis/committee-3/counts_viable_boxplot.png" medium="image" type="image/png" height="108" width="144"/>
 </item>
 <item>
   <title>Reference management</title>
@@ -55,6 +57,8 @@
 ✅ Works across different systems (Windows, macOS, Linux)<br>
 ✅ More flexible than using <code>../../</code> for relative paths</p>
 
+
+<!-- -->
 
 </section>
 
@@ -239,6 +243,8 @@
 <p>Once all errors are corrected and files uploaded and they match your metadata, submission will go through a day of processing and you’ll get a confirmation email with your PRJ ID to include in publication.</p>
 
 
+<!-- -->
+
 </section>
 
  ]]></description>
@@ -375,9 +381,11 @@ Tip
 </div>
 
 
+<!-- -->
+
 
  ]]></description>
-  <category>code</category>
+  <category>workflow</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/workflow/backup.html</guid>
   <pubDate>Mon, 04 Nov 2024 08:00:00 GMT</pubDate>
 </item>
@@ -452,6 +460,8 @@ Tip
 <h1>6. SRA Metadata</h1>
 
 
+<!-- -->
+
 </section>
 
  ]]></description>
@@ -504,6 +514,8 @@ Connected to sftp.genewiz.com.</code></pre>
 </ul>
 
 
+<!-- -->
+
 
 
  ]]></description>
@@ -515,7 +527,7 @@ Connected to sftp.genewiz.com.</code></pre>
 <item>
   <title>Bioinformatics Pipeline Roadmap</title>
   <dc:creator>Sarah Tanja</dc:creator>
-  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/bioinformatics-pipeline/pipeline-overview.html</link>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/transcriptomics/bioinformatics-pipeline/pipeline-overview.html</link>
   <description><![CDATA[ 
 
 
@@ -652,19 +664,21 @@ Connected to sftp.genewiz.com.</code></pre>
 </ul>
 
 
+<!-- -->
+
 </section>
 </section>
 
  ]]></description>
   <category>code</category>
   <category>coral</category>
-  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/bioinformatics-pipeline/pipeline-overview.html</guid>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/transcriptomics/bioinformatics-pipeline/pipeline-overview.html</guid>
   <pubDate>Mon, 07 Oct 2024 07:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Summary of previous research on microplastic leachate exposure in marine invertebrate embryonic development</title>
   <dc:creator>Sarah Tanja</dc:creator>
-  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/previous-research/previous-research.html</link>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/transcriptomics/previous-research/previous-research.html</link>
   <description><![CDATA[ 
 
 
@@ -775,6 +789,8 @@ Connected to sftp.genewiz.com.</code></pre>
 </blockquote>
 
 
+<!-- -->
+
 </section>
 </section>
 
@@ -782,13 +798,13 @@ Connected to sftp.genewiz.com.</code></pre>
  ]]></description>
   <category>learning journey</category>
   <category>coral</category>
-  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/previous-research/previous-research.html</guid>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/transcriptomics/previous-research/previous-research.html</guid>
   <pubDate>Mon, 07 Oct 2024 07:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Ontogenetic Development of Montipora capitata</title>
   <dc:creator>Sarah Tanja</dc:creator>
-  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/ontogenetic-development/ontogenetic-development.html</link>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/ontogenetic-development/ontogenetic-development.html</link>
   <description><![CDATA[ 
 
 
@@ -801,8 +817,10 @@ Connected to sftp.genewiz.com.</code></pre>
 <div class="no-row-height column-margin column-container"><div id="ref-veron1989" class="csl-entry">
 Veron, J E N, and Gregor Hodgson. 1989. <span>“Annotated <span>Checklist</span> of the <span>Hermatypic Corals</span> of the <span>Philippines</span>!”</span> <em>PACIFIC SCIENCE</em> 43.
 </div></div><p>Their life history is described as a ‘complex coral’ which forms two germ layers from a ‘prawn chip’ and becomes a spherical ‘gastrula’ with a visible ‘blastopore’<span class="citation" data-cites="okub02013">(<strong>okub02013?</strong>)</span>.</p>
-<p><img src="https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/ontogenetic-development/okubo2013_fig12.png" class="img-fluid" alt="Figure 12. Taken from Okubo et al.&nbsp;2013"><span class="citation" data-cites="okubo2013">(Okubo et al. 2013)</span></p>
+<p><img src="https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/ontogenetic-development/okubo2013_fig12.png" class="img-fluid" alt="Figure 12. Taken from Okubo et al.&nbsp;2013"><span class="citation" data-cites="okubo2013">(Okubo et al. 2013)</span></p>
 
+
+<!-- -->
 
 <div class="no-row-height column-margin column-container"><div id="ref-okubo2013" class="csl-entry">
 Okubo, Nami, Takuma Mezaki, Yoko Nozawa, Yoshikatsu Nakano, Yi-Ting Lien, Hironobu Fukami, David C. Hayward, and Eldon E. Ball. 2013. <span>“Comparative <span>Embryology</span> of <span>Eleven Species</span> of <span>Stony Corals</span> (<span>Scleractinia</span>).”</span> Edited by Mónica Medina. <em>PLoS ONE</em> 8 (12): e84115. <a href="https://doi.org/10.1371/journal.pone.0084115">https://doi.org/10.1371/journal.pone.0084115</a>.
@@ -811,7 +829,7 @@ Okubo, Nami, Takuma Mezaki, Yoko Nozawa, Yoshikatsu Nakano, Yi-Ting Lien, Hirono
  ]]></description>
   <category>learning journey</category>
   <category>coral</category>
-  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/ontogenetic-development/ontogenetic-development.html</guid>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/ontogenetic-development/ontogenetic-development.html</guid>
   <pubDate>Mon, 30 Sep 2024 07:00:00 GMT</pubDate>
 </item>
 <item>
@@ -837,6 +855,8 @@ Okubo, Nami, Takuma Mezaki, Yoko Nozawa, Yoshikatsu Nakano, Yi-Ting Lien, Hirono
 <li>senior fellowhsip (beyond 5 yrs after PhD)</li>
 </ul>
 
+
+<!-- -->
 
 </section>
 </section>
@@ -996,6 +1016,8 @@ Okubo, Nami, Takuma Mezaki, Yoko Nozawa, Yoshikatsu Nakano, Yi-Ting Lien, Hirono
 <h4 class="anchored" data-anchor-id="deformed-6">deformed</h4>
 
 
+<!-- -->
+
 </section>
 </section>
 
@@ -1008,7 +1030,7 @@ Okubo, Nami, Takuma Mezaki, Yoko Nozawa, Yoshikatsu Nakano, Yi-Ting Lien, Hirono
 <item>
   <title>Timeline &amp; Goals Planning</title>
   <dc:creator>Sarah Tanja</dc:creator>
-  <link>https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/goals-timeline.html</link>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/thesis/goals-timeline.html</link>
   <description><![CDATA[ 
 
 
@@ -1019,11 +1041,13 @@ Okubo, Nami, Takuma Mezaki, Yoko Nozawa, Yoshikatsu Nakano, Yi-Ting Lien, Hirono
 </iframe>
 
 
+<!-- -->
+
 
  ]]></description>
   <category>committee</category>
   <category>goals</category>
-  <guid>https://sarahtanja.github.io/quarto-blog/posts/thesis-progress/goals-timeline.html</guid>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/thesis/goals-timeline.html</guid>
   <pubDate>Sun, 08 Sep 2024 07:00:00 GMT</pubDate>
 </item>
 <item>
@@ -1170,6 +1194,8 @@ Chille, E. E., E. L. Strand, F. Scucchia, M. Neder, V. Schmidt, M. O. Sherman, T
 </blockquote>
 
 
+<!-- -->
+
 
 </section>
 </section>
@@ -1258,6 +1284,8 @@ Caution
 </ul>
 
 
+<!-- -->
+
 </section>
 
  ]]></description>
@@ -1269,7 +1297,7 @@ Caution
 <item>
   <title>26-Aug-2024 Embryo RNA Extractions</title>
   <dc:creator>Sarah Tanja</dc:creator>
-  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/26aug2024-extraction/26aug2024-extraction.html</link>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/26aug2024-extraction/26aug2024-extraction.html</link>
   <description><![CDATA[ 
 
 
@@ -1538,18 +1566,20 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <p>Protein flow-through (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate PROTEIN</code> wax freezer box with blue label tape.</p>
 
 
+<!-- -->
+
 </section>
 
 
  ]]></description>
   <category>lab records</category>
-  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/26aug2024-extraction/26aug2024-extraction.html</guid>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/26aug2024-extraction/26aug2024-extraction.html</guid>
   <pubDate>Mon, 26 Aug 2024 07:00:00 GMT</pubDate>
 </item>
 <item>
   <title>23-Aug-2024 Embryo RNA Extractions</title>
   <dc:creator>Sarah Tanja</dc:creator>
-  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/23aug2024-extraction/23aug2024-extraction.html</link>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/23aug2024-extraction/23aug2024-extraction.html</link>
   <description><![CDATA[ 
 
 
@@ -1746,7 +1776,7 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <div class="page-columns page-full"><p>RunID: 2024-08-24_xxxxxx<sup>2</sup></p><div class="no-row-height column-margin column-container"><li id="fn2"><p><sup>2</sup>&nbsp;The Qubit date is ahead by 1 day (and I haven’t figured out how to set it straight yet)</p></li></div></div>
 <table class="table">
 <colgroup>
-<col style="width: 27%">
+<col style="width: 22%">
 <col style="width: 19%">
 <col style="width: 19%">
 </colgroup>
@@ -1839,18 +1869,20 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <p>Protein flow-through (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate PROTEIN</code> wax freezer box with blue label tape.</p>
 
 
+<!-- -->
+
 </section>
 
 
  ]]></description>
   <category>lab records</category>
-  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/23aug2024-extraction/23aug2024-extraction.html</guid>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/23aug2024-extraction/23aug2024-extraction.html</guid>
   <pubDate>Fri, 23 Aug 2024 07:00:00 GMT</pubDate>
 </item>
 <item>
   <title>21-Aug-2024 Embryo RNA Extractions</title>
   <dc:creator>Sarah Tanja</dc:creator>
-  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/21aug2024-extraction/21aug2024-extraction.html</link>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/21aug2024-extraction/21aug2024-extraction.html</link>
   <description><![CDATA[ 
 
 
@@ -2120,18 +2152,20 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <p>Protein flow-through (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate PROTEIN</code> wax freezer box with blue label tape.</p>
 
 
+<!-- -->
+
 </section>
 
 
  ]]></description>
   <category>lab records</category>
-  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/21aug2024-extraction/21aug2024-extraction.html</guid>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/21aug2024-extraction/21aug2024-extraction.html</guid>
   <pubDate>Wed, 21 Aug 2024 07:00:00 GMT</pubDate>
 </item>
 <item>
   <title>20-Aug-2024 Embryo RNA Extractions</title>
   <dc:creator>Sarah Tanja</dc:creator>
-  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/20aug2024-extraction/20aug2024-extraction.html</link>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/20aug2024-extraction/20aug2024-extraction.html</link>
   <description><![CDATA[ 
 
 
@@ -2389,17 +2423,19 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <p>Protein flow-through (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate PROTEIN</code> wax freezer box with blue label tape:</p>
 
 
+<!-- -->
+
 </section>
 
  ]]></description>
   <category>lab records</category>
-  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/20aug2024-extraction/20aug2024-extraction.html</guid>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/20aug2024-extraction/20aug2024-extraction.html</guid>
   <pubDate>Tue, 20 Aug 2024 07:00:00 GMT</pubDate>
 </item>
 <item>
   <title>19-Aug-2024 Embryo RNA Extractions</title>
   <dc:creator>Sarah Tanja</dc:creator>
-  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/19aug2024-extraction/19aug2024-extraction.html</link>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/19aug2024-extraction/19aug2024-extraction.html</link>
   <description><![CDATA[ 
 
 
@@ -2647,17 +2683,19 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <p>Protein flow-through (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate PROTEIN</code> wax freezer box with blue label tape:</p>
 
 
+<!-- -->
+
 </section>
 
  ]]></description>
   <category>lab records</category>
-  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/19aug2024-extraction/19aug2024-extraction.html</guid>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/19aug2024-extraction/19aug2024-extraction.html</guid>
   <pubDate>Mon, 19 Aug 2024 07:00:00 GMT</pubDate>
 </item>
 <item>
   <title>16-Aug-2024 Embryo RNA Extractions</title>
   <dc:creator>Sarah Tanja</dc:creator>
-  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/16aug2024-extraction/16aug2024-extraction.html</link>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/16aug2024-extraction/16aug2024-extraction.html</link>
   <description><![CDATA[ 
 
 
@@ -2892,11 +2930,13 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <p>Protein flow-through (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate PROTEIN</code> wax freezer box with blue label tape:</p>
 
 
+<!-- -->
+
 </section>
 
  ]]></description>
   <category>lab records</category>
-  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/16aug2024-extraction/16aug2024-extraction.html</guid>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/16aug2024-extraction/16aug2024-extraction.html</guid>
   <pubDate>Fri, 16 Aug 2024 07:00:00 GMT</pubDate>
 </item>
 </channel>

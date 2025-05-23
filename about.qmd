@@ -44,8 +44,6 @@ More recently, a seminar taught by my advisor [Dr. Padilla-Gamiño](https://fish
 
 The release of Rachel Carson's book Silent Spring in the early 1960s publicly unified two distinct branches of science, ecology and toxicology, into a new area called "ecotoxicology."
 
-> "The definition and starting point of ecotoxicology as a formal and independent branch of science can be attributed to Professor Truhaut, who defined it in 1969 as "the branch of Toxicology concerned with the study of toxic effects, caused by natural or synthetic pollutants, to the constituents of ecosystems, animal (including human), vegetable and microbial"" (Tincani et al., 2017, p. 2868) [@tincani2017]
-
 Phthalates are known endocrine-disrupting chemicals, which can have strong effects even at very low doses. This ecotoxicology concept is referred to as 'low-dose effects' and 'non-monotonic' response and was introduced to me by [Dr. Alison Gardell](https://directory.tacoma.uw.edu/employee/agardell) as a guest-lecturer to a course in Integrated Environmental Physiology taught by [Dr. Steven Roberts](https://fish.uw.edu/faculty/steven-roberts/) at the University of Washington in Seattle.
 
 I became increasingly interested in studying these types of environmental pollutants because they challenge the concept of 'acceptable levels of pollution'. A book by [Dr. Max Liboiron](https://maxliboiron.com/), titled [*Pollution is Colonialism*](https://www.dukeupress.edu/pollution-is-colonialism), [@liboiron2021]taught me that 'acceptable levels of pollution' assumes settler and colonial access to Indigenous land and is not, in fact, acceptable.

@@ -52,28 +52,29 @@ website:
 
 format:
   html:
+    respect-user-color-scheme: true
     theme: 
-      dark: solar
-      light: journal
+      light: [solar, light-theme.css]
+      dark: [solar, dark-theme.css]
     css: styles.css
     page-layout: full
     code-background: true
-    code-copy: true
-    toc: true 
+    code-tools: 
+      source: true
+      toggle: true
+    toc: true
+    toc-title: "Contents <i class='bi bi-bookmark-heart'></i>"
+    toc-depth: 5
+    toc-location: left
     df-print: kable
     smooth-scroll: true
+    link-external-icon: true
     link-external-newwindow: true
+    reference-location: margin
+    citation-location: margin
+    highlight-style: github
+    repo-actions: [edit, issue]
 
 editor: visual
-
-toc: true
-toc-title: Contents <i class="bi bi-bookmark-heart"></i>
-toc-depth: 5
-toc-location: left
-reference-location: margin
-citation-location: margin
-link-external-icon: true
-link-external-newwindow: true
-
 bibliography: references.bib
 

@@ -2,8 +2,3 @@
 .Rhistory
 .RData
 .Ruserdata
-
-/.quarto/
-/docs/*
-!/docs/.nojekyll
-!/docs/index.html

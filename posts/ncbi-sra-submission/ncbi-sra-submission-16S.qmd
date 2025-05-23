@@ -1,21 +1,12 @@
 ---
-title: "Submitting NGS 16SrRNA sequences to NCBI SRA"
+title: "Submitted NGS 16SrRNA sequences to NCBI SRA"
 subtitle: "Backing up raw sequences from mim_c"
 author: "Sarah Tanja"
-date: 12/13/2024
+date: 2024-12-13
+image: "ncbi.jpg"
 date-format: long
 date-modified: today
-categories: [learning journey, code]
-draft: false
-toc: true
-toc-expand: true
-toc-title: Contents <i class="bi bi-bookmark-heart"></i>
-toc-depth: 5
-toc-location: left
-reference-location: margin
-citation-location: margin
-link-external-icon: true
-link-external-newwindow: true
+categories: [lab records, code]
 ---
 
 # Background research

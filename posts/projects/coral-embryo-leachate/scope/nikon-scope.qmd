@@ -5,20 +5,14 @@ author: "Sarah Tanja"
 date: 09/03/2024
 date-format: long
 date-modified: today
-categories: [protocols, coral]
-toc: true
-toc-title: Contents <i class="bi bi-bookmark-heart"></i>
-toc-depth: 5
-toc-location: left
-reference-location: margin
-citation-location: margin
-link-external-icon: true
-link-external-newwindow: true
+categories: [protocols]
 ---
 
 # Make slides
 
-Watch ['Mounting Your Specimen](https://www.youtube.com/watch?v=4Nurc1hSN4o)' by Dr. Terry Bruce on YouTube
+Watch ['Mounting Your Specimen](https://www.youtube.com/watch?v=4Nurc1hSN4o)' by Dr. Terry Bruce of Clemson University on YouTube
+
+{{< video https://www.youtube.com/watch?v=4Nurc1hSN4o >}}
 
 ::: callout-caution
 The following steps should be performed in a fume hood wearing nitrile gloves since the samples are preserved in 4% ZFIX (zinc-buffered formalin)

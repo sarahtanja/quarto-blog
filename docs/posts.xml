@@ -9,7 +9,7 @@
 <link>https://sarahtanja.github.io/quarto-blog/posts.html</link>
 <atom:link href="https://sarahtanja.github.io/quarto-blog/posts.xml" rel="self" type="application/rss+xml"/>
 <description>This Open Lab Notebook is a creative landing space for learning about Bioinformatics, Marine Botany, &amp; Data Science. It&#39;s mostly for me, but also for you! 😘</description>
-<generator>quarto-1.3.433</generator>
+<generator>quarto-1.7.31</generator>
 <lastBuildDate>Tue, 06 May 2025 07:00:00 GMT</lastBuildDate>
 <item>
   <title></title>
@@ -23,10 +23,12 @@
   <media:content url="https://sarahtanja.github.io/quarto-blog/posts/thesis/committee-3/counts_viable_boxplot.png" medium="image" type="image/png" height="108" width="144"/>
 </item>
 <item>
-  <title>Submitting NGS 16SrRNA sequences to NCBI SRA</title>
+  <title>Submitted NGS 16SrRNA sequences to NCBI SRA</title>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi-sra-submission-16S.html</link>
   <description><![CDATA[ 
+
+
 
 
 
@@ -202,16 +204,19 @@
 </section>
 
  ]]></description>
-  <category>learning journey</category>
+  <category>lab records</category>
   <category>code</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi-sra-submission-16S.html</guid>
   <pubDate>Fri, 13 Dec 2024 08:00:00 GMT</pubDate>
+  <media:content url="https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Backup your work</title>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/workflow/backup.html</link>
   <description><![CDATA[ 
+
+
 
 
 
@@ -252,7 +257,9 @@ font-style: inherit;">/</span>home<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">/</span>shared<span class="sc" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">/</span>8TB_HDD_01<span class="sc" style="color: #5E5E5E;
+font-style: inherit;">/</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">8</span>TB_HDD_01<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">/</span>stanja \</span>
 <span id="cb2-2"><span class="sc" style="color: #5E5E5E;
@@ -353,6 +360,8 @@ Tip
 
 
 
+
+
 <p>So you got an email from Azenta saying your files are ready for download! Exciting! It’s the moment we’ve been waiting for. What next??</p>
 <section id="background-research" class="level1">
 <h1>Background research</h1>
@@ -434,6 +443,8 @@ Tip
 
 
 
+
+
 <p>Azenta will email you to notify you that your project is complete and is being uploaded to your account on the Azenta sFTP server, where it will be available for download for 30 days.</p>
 <div class="callout callout-style-simple callout-tip no-icon">
 <div class="callout-body d-flex">
@@ -455,8 +466,8 @@ Tip
 <p>I then make or navigate to a folder where I want the raw fastq files to live within my project directory.</p>
 <p>It will look like this:</p>
 <p><img src="https://sarahtanja.github.io/quarto-blog/posts/sftp-azenta/terminal-rstudio.png" class="img-fluid"></p>
-<div class="page-columns page-full"><p>At this point I attempted to run the command <code>sftp user.name@sftp.genewiz.com</code> and got a strange error saying that the <code>.ssh/config</code> file had an error at line 9. I opened my <code>.ssh/config</code> file in the RStudio and found some errors in the syntax of a previous host entry (thanks to chatgpt). I corrected the errors<sup>1</sup> , added an entry for Azenta, saved the file, and re-attempted the <code>sftp</code> command with success. The RSA host key was permanently added to the list of known hosts.</p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;The correct config file in the .ssh directory looks like this: <img src="https://sarahtanja.github.io/quarto-blog/posts/sftp-azenta/config.png" class="img-fluid"></p></li></div></div>
-<pre><code>(base) stanja@raven:~/sarahtanja/coral-embryo-leachate/rawfastq$ sftp stanja_uw@sftp.genewiz.com
+<p>At this point I attempted to run the command <code>sftp user.name@sftp.genewiz.com</code> and got a strange error saying that the <code>.ssh/config</code> file had an error at line 9. I opened my <code>.ssh/config</code> file in the RStudio and found some errors in the syntax of a previous host entry (thanks to chatgpt). I corrected the errors<sup>1</sup> , added an entry for Azenta, saved the file, and re-attempted the <code>sftp</code> command with success. The RSA host key was permanently added to the list of known hosts.</p>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;The correct config file in the .ssh directory looks like this: <img src="https://sarahtanja.github.io/quarto-blog/posts/sftp-azenta/config.png" class="img-fluid"></p></div></div><pre><code>(base) stanja@raven:~/sarahtanja/coral-embryo-leachate/rawfastq$ sftp stanja_uw@sftp.genewiz.com
 The authenticity of host 'sftp.genewiz.com (3.223.11.252)' can't be established.
 RSA key fingerprint is &lt;redacted&gt;.
 Are you sure you want to continue connecting (yes/no)? yes
@@ -484,6 +495,8 @@ Connected to sftp.genewiz.com.</code></pre>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/transcriptomics/bioinformatics-pipeline/pipeline-overview.html</link>
   <description><![CDATA[ 
+
+
 
 
 
@@ -639,16 +652,18 @@ Connected to sftp.genewiz.com.</code></pre>
 
 
 
+
+
 <section id="jimenez-guri-et-al.-2023" class="level1 page-columns page-full">
 <h1>Jimenez-Guri et al., 2023</h1>
 <section id="pvc-pellet-leachates-affect-adult-immune-system-and-embryonic-development-but-not-reproductive-capacity-in-the-sea-urchin-paracentrotus-lividus" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="pvc-pellet-leachates-affect-adult-immune-system-and-embryonic-development-but-not-reproductive-capacity-in-the-sea-urchin-paracentrotus-lividus"><strong>PVC pellet leachates affect adult immune system and embryonic development but not reproductive capacity in the sea urchin <em>Paracentrotus lividus</em></strong></h2>
-<div class="page-columns page-full"><p><span class="citation" data-cites="jimenez-guri2023">(<strong>jimenez-guri2023?</strong>)</span> either exposed adult sea urchins <em>Paracentrotus lividus</em> to excessively high<sup>1</sup> levels of PVC leachate or filtered seawater control for 2 weeks, and then force-spawned twice (once at the end of week 1 and once at the end of week 2) where embryos from control and exposed adults were split and incubated for development in either a filtered seawater control or a 65g/L PVC leachate (they call this 10% PVC leachate) treatment.</p><div class="no-row-height column-margin column-container"><li id="fn1"><ul><sup>1</sup>&nbsp;
+<p><span class="citation" data-cites="jimenez-guri2023">(<strong>jimenez-guri2023?</strong>)</span> either exposed adult sea urchins <em>Paracentrotus lividus</em> to excessively high<sup>1</sup> levels of PVC leachate or filtered seawater control for 2 weeks, and then force-spawned twice (once at the end of week 1 and once at the end of week 2) where embryos from control and exposed adults were split and incubated for development in either a filtered seawater control or a 65g/L PVC leachate (they call this 10% PVC leachate) treatment.</p>
+<div class="no-row-height column-margin column-container"><div id="fn1"><ul><sup>1</sup>&nbsp;
 <li><p>1000X higher than environmental measurements in the meditereanean (Middag et al., 2022)</p></li>
 <li><p>Their 10% PVC leachate dose is 6.5g PVC pellets/100mL seawater, which is 65 grams of plastic in 1L of seawater… This compared to our 1mg/L ‘high’ dose is 65k times more highly concentrated!)</p></li>
 </ul>
-</li></div></div>
-<p>Embryos were culled at 24 and 48 hours and imaged and categorized as ‘developed’, ‘aberrant’, and ‘not developed’.</p>
+</div></div><p>Embryos were culled at 24 and 48 hours and imaged and categorized as ‘developed’, ‘aberrant’, and ‘not developed’.</p>
 <blockquote class="blockquote">
 <p>Intracellular levels of reactive oxygen species (ROS) and reactive nitrogen species (RNS) as well as total antioxidant capacity (TAC) was measured by spectrofluorometry</p>
 </blockquote>
@@ -696,13 +711,13 @@ Connected to sftp.genewiz.com.</code></pre>
 <section id="plastic-leachate-induced-toxicity-during-sea-urchin-embryonic-development-insights-into-the-molecular-pathways-affected-by-pvc" class="level2">
 <h2 class="anchored" data-anchor-id="plastic-leachate-induced-toxicity-during-sea-urchin-embryonic-development-insights-into-the-molecular-pathways-affected-by-pvc"><strong>Plastic leachate-induced toxicity during sea urchin embryonic development: Insights into the molecular pathways affected by PVC</strong></h2>
 <blockquote class="blockquote">
-<p>Here we investigate the effects of leachates from new and beach-collected pellets on the embryonic and&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/larval-development" title="Learn more about larval development from ScienceDirect's AI-generated Topic Pages">larval development</a>&nbsp;of the&nbsp;<a href="https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/sea-urchin" title="Learn more about sea urchin from ScienceDirect's AI-generated Topic Pages">sea urchin</a>&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/strongylocentrotus-purpuratus" title="Learn more about Strongylocentrotus purpuratus from ScienceDirect's AI-generated Topic Pages">Strongylocentrotus purpuratus</a>&nbsp;and demonstrate that exposure of developing embryos to these leachates elicits severe, consistent and treatment-specific developmental abnormalities including radialisation of the embryo and&nbsp;<a href="https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/congenital-malformation" title="Learn more about malformation from ScienceDirect's AI-generated Topic Pages">malformation</a>&nbsp;of the&nbsp;<a href="https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/skeleton" title="Learn more about skeleton from ScienceDirect's AI-generated Topic Pages">skeleton</a>, neural and&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/immunocompetent-cell" title="Learn more about immune cells from ScienceDirect's AI-generated Topic Pages">immune cells</a>. Using a multi-omics approach we define the developmental pathways disturbed upon exposure to PVC leachates and provide a mechanistic view that pinpoints cellular&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/redox-stress" title="Learn more about redox stress from ScienceDirect's AI-generated Topic Pages">redox stress</a>&nbsp;and energy production as drivers of phenotypic abnormalities following exposure to PVC leachates. Analysis of leachates identified high concentrations of zinc that are the likely cause of these observed defects. Our findings point to clear and specific detrimental effects of marine&nbsp;<a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/plastic-pollution" title="Learn more about plastic pollution from ScienceDirect's AI-generated Topic Pages">plastic pollution</a>&nbsp;on the development of echinoderms, demonstrating that chemicals leached from plastic particles into sea water can produce strong developmental abnormalities via specific pathways, and therefore have the potential to impact on a wide range of organisms. -<span class="citation" data-cites="paganos2023a">(<strong>paganos2023a?</strong>)</span> (Abstract)</p>
+<p>Here we investigate the effects of leachates from new and beach-collected pellets on the embryonic and&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/larval-development" title="Learn more about larval development from ScienceDirect's AI-generated Topic Pages">larval development</a>&nbsp;of the&nbsp;<a href="https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/sea-urchin" title="Learn more about sea urchin from ScienceDirect's AI-generated Topic Pages">sea urchin</a>&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/strongylocentrotus-purpuratus" title="Learn more about Strongylocentrotus purpuratus from ScienceDirect's AI-generated Topic Pages">Strongylocentrotus purpuratus</a>&nbsp;and demonstrate that exposure of developing embryos to these leachates elicits severe, consistent and treatment-specific developmental abnormalities including radialisation of the embryo and&nbsp;<a href="https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/congenital-malformation" title="Learn more about malformation from ScienceDirect's AI-generated Topic Pages">malformation</a>&nbsp;of the&nbsp;<a href="https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/skeleton" title="Learn more about skeleton from ScienceDirect's AI-generated Topic Pages">skeleton</a>, neural and&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/immunocompetent-cell" title="Learn more about immune cells from ScienceDirect's AI-generated Topic Pages">immune cells</a>. Using a multi-omics approach we define the developmental pathways disturbed upon exposure to PVC leachates and provide a mechanistic view that pinpoints cellular&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/redox-stress" title="Learn more about redox stress from ScienceDirect's AI-generated Topic Pages">redox stress</a>&nbsp;and energy production as drivers of phenotypic abnormalities following exposure to PVC leachates. Analysis of leachates identified high concentrations of zinc that are the likely cause of these observed defects. Our findings point to clear and specific detrimental effects of marine&nbsp;<a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/plastic-pollution" title="Learn more about plastic pollution from ScienceDirect's AI-generated Topic Pages">plastic pollution</a>&nbsp;on the development of echinoderms, demonstrating that chemicals leached from plastic particles into sea water can produce strong developmental abnormalities via specific pathways, and therefore have the potential to impact on a wide range of organisms. <span class="citation" data-cites="paganos2023a">(<strong>paganos2023a?</strong>)</span> (Abstract)</p>
 </blockquote>
 <ul>
 <li>used nurdle beach pellets collected from Cornwall, UK &amp; pre-production commercial PVC nurdles</li>
 </ul>
 <blockquote class="blockquote">
-<p>These results are consistent with those observed previously in P. lividus, where beached and PVC pellet leachates elicited changes including abnormal gastrulation, impaired skeletogenesis, abnormal neurogenesis and embryo radialisation (Rendell-Bhatti et al., 2020), indicating that these types of developmental abnormalities may not be species-specific but affect the whole clade similarly. The PVC treatment-induced phenotype was of particular interest as it clearly resembles the one obtained when the specification of the secondary axis of the sea urchin embryo (oral-aboral) is disturbed. Similar to our P. lividus data (Rendell-Bhatti et al., 2020), <strong>embryos exposed to PVC leachates are unable to produce a proper skeleton.</strong> In normal gastrula embryos, skeletogenic cells are spatially organised around the archenteron, forming a syncytium to which biominerals are deposited (Fig. 2. E). At the pluteus stage, the larval skeleton consists of different skeletal rods that are responsible for the characteristic shape of the larvae (Fig. 2. F). PVC leachate-treated S. purpuratus gastrulae seem to be missing differentiated skeletogenic cells as indicated by the absence of the skeletal marker MSP130 immunoreactivity (Fig. 2. I), while the same marker at 72 hpf reveals the presence of radialised syncytium of differentiated skeletogenic cells (Fig. 2. J). Another visible abnormality of the treated larvae is the absence of a well-formed ciliary band, an observation confirmed by the β-tubulin staining showing a reduced ciliary surface when compared to controls (Fig. 2. G, H). <strong>Esophageal muscles originate from myoblasts that at gastrula stage populate the tip of the embryonic foregut and at the pluteus stage they differentiate towards circumesophageal muscles controlling the contraction of the sea urchin esophageal region and therefore feeding</strong> (Andrikou et al., 2013, 2015). Immunohistochemical staining for the esophageal muscles marker Sp-MHC revealed that <strong>exogastrulated larvae are lacking any muscular structure</strong> suggesting that exogastrulation impaired muscle development (Fig. 2. K, L). In the Rendell-Bhatti et al.&nbsp;(2020) study we found PCB and PAH in the leachates of environmental samples, and PAH and HCB in PVC leachates, which we suggested were the possible causes of the malformations observed (Rendell-Bhatti et al., 2020). We had not observed exogastrulas before, but another study had found otherwise well-formed P. lividus pluteus larvae with everted gut rudiments when exposed to micronized plastic toys (Oliviero et al., 2019). However, <strong>the phenotypes here observed in the PVC treatments clearly mirror phenotypes from classical and new experiments exposing S. purpuratus and other sea urchins to heavy metals</strong> (Mitsunaga and Yasumasu, 1984; Kobayashi and Okamura, 2004; Cunningham et al., 2020), as well as to <strong>oral-aboral axis formation disorganisation</strong> (Duboc et al., 2004). Indeed, we see radialised/oralised embryos similar to those described when the developmental pathways involved in oral/aboral (O/A) and left/right (L/R) axis formation are disrupted (Duboc et al., 2004, 2008). These results prompted us to investigate what transcriptomic changes were taking place in the embryos to be able to identify the mechanisms by which the plastic leachates were affecting development. -<span class="citation" data-cites="paganos2023a">(<strong>paganos2023a?</strong>)</span></p>
+<p>These results are consistent with those observed previously in P. lividus, where beached and PVC pellet leachates elicited changes including abnormal gastrulation, impaired skeletogenesis, abnormal neurogenesis and embryo radialisation (Rendell-Bhatti et al., 2020), indicating that these types of developmental abnormalities may not be species-specific but affect the whole clade similarly. The PVC treatment-induced phenotype was of particular interest as it clearly resembles the one obtained when the specification of the secondary axis of the sea urchin embryo (oral-aboral) is disturbed. Similar to our P. lividus data (Rendell-Bhatti et al., 2020), <strong>embryos exposed to PVC leachates are unable to produce a proper skeleton.</strong> In normal gastrula embryos, skeletogenic cells are spatially organised around the archenteron, forming a syncytium to which biominerals are deposited (Fig. 2. E). At the pluteus stage, the larval skeleton consists of different skeletal rods that are responsible for the characteristic shape of the larvae (Fig. 2. F). PVC leachate-treated S. purpuratus gastrulae seem to be missing differentiated skeletogenic cells as indicated by the absence of the skeletal marker MSP130 immunoreactivity (Fig. 2. I), while the same marker at 72 hpf reveals the presence of radialised syncytium of differentiated skeletogenic cells (Fig. 2. J). Another visible abnormality of the treated larvae is the absence of a well-formed ciliary band, an observation confirmed by the β-tubulin staining showing a reduced ciliary surface when compared to controls (Fig. 2. G, H). <strong>Esophageal muscles originate from myoblasts that at gastrula stage populate the tip of the embryonic foregut and at the pluteus stage they differentiate towards circumesophageal muscles controlling the contraction of the sea urchin esophageal region and therefore feeding</strong> (Andrikou et al., 2013, 2015). Immunohistochemical staining for the esophageal muscles marker Sp-MHC revealed that <strong>exogastrulated larvae are lacking any muscular structure</strong> suggesting that exogastrulation impaired muscle development (Fig. 2. K, L). In the Rendell-Bhatti et al.&nbsp;(2020) study we found PCB and PAH in the leachates of environmental samples, and PAH and HCB in PVC leachates, which we suggested were the possible causes of the malformations observed (Rendell-Bhatti et al., 2020). We had not observed exogastrulas before, but another study had found otherwise well-formed P. lividus pluteus larvae with everted gut rudiments when exposed to micronized plastic toys (Oliviero et al., 2019). However, <strong>the phenotypes here observed in the PVC treatments clearly mirror phenotypes from classical and new experiments exposing S. purpuratus and other sea urchins to heavy metals</strong> (Mitsunaga and Yasumasu, 1984; Kobayashi and Okamura, 2004; Cunningham et al., 2020), as well as to <strong>oral-aboral axis formation disorganisation</strong> (Duboc et al., 2004). Indeed, we see radialised/oralised embryos similar to those described when the developmental pathways involved in oral/aboral (O/A) and left/right (L/R) axis formation are disrupted (Duboc et al., 2004, 2008). These results prompted us to investigate what transcriptomic changes were taking place in the embryos to be able to identify the mechanisms by which the plastic leachates were affecting development. <span class="citation" data-cites="paganos2023a">(<strong>paganos2023a?</strong>)</span></p>
 </blockquote>
 <ul>
 <li><p>disturbs differentiation of skeletogenic cells</p></li>
@@ -711,10 +726,10 @@ Connected to sftp.genewiz.com.</code></pre>
 <li><p>mirrors effects of exposure to heavy metal, esp.&nbsp;zinc</p></li>
 </ul>
 <blockquote class="blockquote">
-<p>“down-regulated genes represented &gt;75 % of the differentially expressed genes (86 % at 48 hpf and 77 % at 72 hpf) suggesting that the effect by PVC leachates is of repressive nature, leading to a developmental program failure” -<span class="citation" data-cites="paganos2023a">(<strong>paganos2023a?</strong>)</span></p>
+<p>“down-regulated genes represented &gt;75 % of the differentially expressed genes (86 % at 48 hpf and 77 % at 72 hpf) suggesting that the effect by PVC leachates is of repressive nature, leading to a developmental program failure” <span class="citation" data-cites="paganos2023a">(<strong>paganos2023a?</strong>)</span></p>
 </blockquote>
 <blockquote class="blockquote">
-<p>To analyse what type of processes are altered in the treated embryos we performed a gene ontology (GO) enrichment analysis using ShinyGO 0.76 platform (Ge et al., 2020) followed by REVIGO (Supek et al., 2011) to reduce redundant terms and visualise the data, separately for up- and down-regulated genes and each time point. -<span class="citation" data-cites="paganos2023a">(<strong>paganos2023a?</strong>)</span></p>
+<p>To analyse what type of processes are altered in the treated embryos we performed a gene ontology (GO) enrichment analysis using ShinyGO 0.76 platform (Ge et al., 2020) followed by REVIGO (Supek et al., 2011) to reduce redundant terms and visualise the data, separately for up- and down-regulated genes and each time point. <span class="citation" data-cites="paganos2023a">(<strong>paganos2023a?</strong>)</span></p>
 </blockquote>
 <ul>
 <li>More downregulated genes than upregulated</li>
@@ -730,7 +745,7 @@ Connected to sftp.genewiz.com.</code></pre>
 <p>- metabolic processes</p>
 <p>- regulation and development</p>
 <blockquote class="blockquote">
-<p>Moreover, for up-regulated genes we see response to external stimuli and cell organisation GO terms overrepresented, while for down-regulated genes we find signaling pathways and transport overrepresented. -<span class="citation" data-cites="paganos2023a">(<strong>paganos2023a?</strong>)</span></p>
+<p>Moreover, for up-regulated genes we see response to external stimuli and cell organisation GO terms overrepresented, while for down-regulated genes we find signaling pathways and transport overrepresented. <span class="citation" data-cites="paganos2023a">(<strong>paganos2023a?</strong>)</span></p>
 </blockquote>
 </section>
 </section>
@@ -761,6 +776,8 @@ Connected to sftp.genewiz.com.</code></pre>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/ontogenetic-development/ontogenetic-development.html</link>
   <description><![CDATA[ 
+
+
 
 
 
@@ -796,6 +813,8 @@ Okubo, Nami, Takuma Mezaki, Yoko Nozawa, Yoshikatsu Nakano, Yi-Ting Lien, Hirono
 
 
 
+
+
 <section id="caroline-gibson-scholarship-in-marine-studies-northwest-straits-foundation" class="level2">
 <h2 class="anchored" data-anchor-id="caroline-gibson-scholarship-in-marine-studies-northwest-straits-foundation"><a href="https://nwstraitsfoundation.org/get-involved/caroline-gibson-scholarship-fund/">Caroline Gibson Scholarship in Marine Studies (Northwest Straits Foundation)</a></h2>
 <section id="smithsonian-institution-fellowship-program-sifp" class="level3">
@@ -827,6 +846,8 @@ Okubo, Nami, Takuma Mezaki, Yoko Nozawa, Yoshikatsu Nakano, Yi-Ting Lien, Hirono
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/annotate-scope-pics.html</link>
   <description><![CDATA[ 
+
+
 
 
 
@@ -991,6 +1012,8 @@ Okubo, Nami, Takuma Mezaki, Yoko Nozawa, Yoshikatsu Nakano, Yi-Ting Lien, Hirono
 
 
 
+
+
 <p>This is a timeline of goals and progress made toward wrapping up my Master’s Thesis at UW SAFS.</p>
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS-FltS0gz5v6VDqsQWJwW0jDbWHTP0Jkc9JmMBL4_0tbcKZqxzAEJp5i3mxbxD8DZ8RxsXmvY7P9X8/pubhtml?gid=0&amp;single=true" width="100%" height="1000px">
 </iframe>
@@ -1010,6 +1033,8 @@ Okubo, Nami, Takuma Mezaki, Yoko Nozawa, Yoshikatsu Nakano, Yi-Ting Lien, Hirono
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/scope-stats.html</link>
   <description><![CDATA[ 
+
+
 
 
 
@@ -1041,7 +1066,7 @@ Note
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/8M9_stitch_001_crop_r90.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">2x Nikon scope image of sample 8M9 | cross 8, Mid PVC treatment 0.1mg/L, 9 hours post fertilization (prawn chip phase)</figcaption>
+<figcaption>2x Nikon scope image of sample 8M9 | cross 8, Mid PVC treatment 0.1mg/L, 9 hours post fertilization (prawn chip phase)</figcaption>
 </figure>
 </div>
 </section>
@@ -1050,7 +1075,7 @@ Note
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/6L14_stitch_001.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">4x Nikon scope image of sample 6L14 (cross 6, Low PVC treatment 0.01mg/L, 14 hours post fertilization (early gastrula phase))</figcaption>
+<figcaption>4x Nikon scope image of sample 6L14 (cross 6, Low PVC treatment 0.01mg/L, 14 hours post fertilization (early gastrula phase))</figcaption>
 </figure>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -1066,7 +1091,7 @@ Note
 <p>Question #2: How should we treat fragmented embryos? I can tell by the cell structure that they made it to a certain phase… but I can’t tell how many fragments make up one whole embryo (count data). Should we not the fragmented embryos? Are they fragmented, or are they deformed (abnormalities?)</p>
 </div>
 </div>
-<table class="table">
+<table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
 <col style="width: 33%">
@@ -1170,9 +1195,12 @@ Chille, E. E., E. L. Strand, F. Scucchia, M. Neder, V. Schmidt, M. O. Sherman, T
 
 
 
+
+
 <section id="make-slides" class="level1">
 <h1>Make slides</h1>
-<p>Watch <a href="https://www.youtube.com/watch?v=4Nurc1hSN4o">’Mounting Your Specimen</a>’ by Dr.&nbsp;Terry Bruce on YouTube</p>
+<p>Watch <a href="https://www.youtube.com/watch?v=4Nurc1hSN4o">’Mounting Your Specimen</a>’ by Dr.&nbsp;Terry Bruce of Clemson University on YouTube</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/4Nurc1hSN4o" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1245,7 +1273,6 @@ Caution
 
  ]]></description>
   <category>protocols</category>
-  <category>coral</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/nikon-scope.html</guid>
   <pubDate>Tue, 03 Sep 2024 07:00:00 GMT</pubDate>
 </item>
@@ -1254,6 +1281,8 @@ Caution
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/26aug2024-extraction/26aug2024-extraction.html</link>
   <description><![CDATA[ 
+
+
 
 
 
@@ -1271,7 +1300,7 @@ Caution
 <li><p>4H14F, 5H14F = 45H14</p></li>
 <li><p>7M4F, 8M4F, 9M4F = 789M4</p></li>
 </ul>
-<div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;7C9F used in Aug 12th test extraction</p></li></div></section>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;7C9F used in Aug 12th test extraction</p></div></div></section>
 <section id="summary" class="level1">
 <h1>Summary</h1>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -1432,8 +1461,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <h3 class="anchored" data-anchor-id="rna">RNA</h3>
 <p>standard 1: 92.47</p>
 <p>standard 2: 1889.51</p>
-<div class="page-columns page-full"><p>RunID: 2024-08-27_054059<sup>2</sup></p><div class="no-row-height column-margin column-container"><li id="fn2"><p><sup>2</sup>&nbsp;The Qubit date is ahead by 1 day (and I haven’t figured out how to set it straight yet)</p></li></div></div>
-<table class="table">
+<p>RunID: 2024-08-27_054059<sup>2</sup></p>
+<div class="no-row-height column-margin column-container"><div id="fn2"><p><sup>2</sup>&nbsp;The Qubit date is ahead by 1 day (and I haven’t figured out how to set it straight yet)</p></div></div><table class="caption-top table">
 <colgroup>
 <col style="width: 22%">
 <col style="width: 19%">
@@ -1540,6 +1569,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 
 
 
+
+
 <section id="samples" class="level1 page-columns page-full">
 <h1>Samples</h1>
 <ul>
@@ -1554,7 +1585,7 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <li><p>13H14F, 14H14F, 15H14F = 131415H14</p></li>
 <li><p>13L9F, 14L9F, 15L9F = 131415L9</p></li>
 </ul>
-<div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;No 7C14F sample</p></li></div></section>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;No 7C14F sample</p></div></div></section>
 <section id="summary" class="level1">
 <h1>Summary</h1>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -1728,8 +1759,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <h3 class="anchored" data-anchor-id="rna">RNA</h3>
 <p>standard 1: 96.18</p>
 <p>standard 2: 1912.96</p>
-<div class="page-columns page-full"><p>RunID: 2024-08-24_xxxxxx<sup>2</sup></p><div class="no-row-height column-margin column-container"><li id="fn2"><p><sup>2</sup>&nbsp;The Qubit date is ahead by 1 day (and I haven’t figured out how to set it straight yet)</p></li></div></div>
-<table class="table">
+<p>RunID: 2024-08-24_xxxxxx<sup>2</sup></p>
+<div class="no-row-height column-margin column-container"><div id="fn2"><p><sup>2</sup>&nbsp;The Qubit date is ahead by 1 day (and I haven’t figured out how to set it straight yet)</p></div></div><table class="caption-top table">
 <colgroup>
 <col style="width: 22%">
 <col style="width: 19%">
@@ -1843,6 +1874,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 
 
 
+
+
 <section id="samples" class="level1 page-columns page-full">
 <h1>Samples</h1>
 <ul>
@@ -1855,7 +1888,7 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <li><p>13M4F, 14M4F, 15M4F = 131415M4</p></li>
 <li><p>13H9F, 14H9F, 15H9F = 131415H9</p></li>
 </ul>
-<div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;Sample 7M9F resulted in no surviving embryos and therefore we had no saved material for that vial</p></li></div></section>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;Sample 7M9F resulted in no surviving embryos and therefore we had no saved material for that vial</p></div></div></section>
 <section id="summary" class="level1">
 <h1>Summary</h1>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -2025,8 +2058,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <h3 class="anchored" data-anchor-id="rna">RNA</h3>
 <p>standard 1: 94.53</p>
 <p>standard 2: 1590.87</p>
-<div class="page-columns page-full"><p>RunID: 2024-08-22_062101<sup>2</sup></p><div class="no-row-height column-margin column-container"><li id="fn2"><p><sup>2</sup>&nbsp;The Qubit date is ahead by 1 day (and I haven’t figured out how to set it straight yet)</p></li></div></div>
-<table class="table">
+<p>RunID: 2024-08-22_062101<sup>2</sup></p>
+<div class="no-row-height column-margin column-container"><div id="fn2"><p><sup>2</sup>&nbsp;The Qubit date is ahead by 1 day (and I haven’t figured out how to set it straight yet)</p></div></div><table class="caption-top table">
 <colgroup>
 <col style="width: 22%">
 <col style="width: 19%">
@@ -2122,6 +2155,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/20aug2024-extraction/20aug2024-extraction.html</link>
   <description><![CDATA[ 
+
+
 
 
 
@@ -2297,7 +2332,7 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <p>standard 1: 92.70</p>
 <p>standard 2: 1770.25</p>
 <p>RunID: 2024-08-21_054905</p>
-<table class="table">
+<table class="caption-top table">
 <colgroup>
 <col style="width: 22%">
 <col style="width: 19%">
@@ -2392,6 +2427,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/19aug2024-extraction/19aug2024-extraction.html</link>
   <description><![CDATA[ 
+
+
 
 
 
@@ -2571,7 +2608,7 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <p>standard 1: 105.99</p>
 <p>standard 2: 1962.49</p>
 <p>RunID: 2024-08-20_060012</p>
-<table class="table">
+<table class="caption-top table">
 <colgroup>
 <col style="width: 22%">
 <col style="width: 19%">
@@ -2652,6 +2689,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/16aug2024-extraction/16aug2024-extraction.html</link>
   <description><![CDATA[ 
+
+
 
 
 
@@ -2835,7 +2874,7 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <p>standard 1: 96.43</p>
 <p>standard 2: Error… re-run cal standards? No…</p>
 <p>RunID: 2024-08-17_045016</p>
-<table class="table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th>sample_id</th>
@@ -2899,6 +2938,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/15aug2024-extraction/15aug2024-extraction.html</link>
   <description><![CDATA[ 
+
+
 
 
 
@@ -3063,7 +3104,7 @@ font-style: inherit;">6</span></span></code></pre></div>
 <p>standard 1: 94.63</p>
 <p>standard 2: 1803.97</p>
 <p>RunID: 2024-08-16_074027</p>
-<table class="table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th>sample_id</th>

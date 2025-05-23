@@ -5,6 +5,7 @@ project:
 website:
   title: "Sarah Tanja's Open Lab Notebook"
   favicon: images/favicon.png
+  open-graph: true
   page-navigation: true
   description: "This Open Lab Notebook is a creative landing space for learning about Bioinformatics, Marine Botany, & Data Science. It's mostly for me, but also for you! 😘"
   site-url: https://sarahtanja.github.io/quarto-blog/

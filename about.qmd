@@ -1,6 +1,6 @@
 ---
 title: "Sarah Tanja"
-image: images/sarah-smile.jpg
+image: images/kelp-queen.jpg
 bibliography: about.bib
 reference-location: margin
 citation-location: margin
@@ -23,6 +23,8 @@ about:
 ::: {#hero-heading}
 Hello! I'm currently a Masters student in the [Padilla-Gamiño Lab](https://padilla-gaminolab.weebly.com/) and part of the [School of Aquatic and Fishery Sciences](https://fish.uw.edu/) at the University of Washington in Seattle. Please reach out if you have any questions or are interested in connecting!
 :::
+
+{{< video video-clips/DavisPoint.mp4 >}}
 
 # Research Interests
 
@@ -51,5 +53,3 @@ I became increasingly interested in studying these types of environmental pollut
 ![This is me measuring out some filtered seawater at the Hawaii Institute of Marine Biology (HIMB) in preparation for my pilot study on phthalate impacts on coral embryo development](images/sarah-pour.jpg)
 
 > "There is suffering in the world, in the work each of us is doing, we have chosen not to look away, but to do what is in our power to heal and repair, and I see that in every single one of you." - Dr. Anne Beaudreau, SMEA 500 Autumn 2023
-
-------------------------------------------------------------------------

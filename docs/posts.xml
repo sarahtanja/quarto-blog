@@ -213,7 +213,7 @@
 <item>
   <title>Backup your work</title>
   <dc:creator>Sarah Tanja</dc:creator>
-  <link>https://sarahtanja.github.io/quarto-blog/posts/workflow/backup.html</link>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/workflow/rsync.html</link>
   <description><![CDATA[ 
 
 
@@ -347,7 +347,7 @@ Tip
 
  ]]></description>
   <category>workflow</category>
-  <guid>https://sarahtanja.github.io/quarto-blog/posts/workflow/backup.html</guid>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/workflow/rsync.html</guid>
   <pubDate>Mon, 04 Nov 2024 08:00:00 GMT</pubDate>
   <media:content url="https://sarahtanja.github.io/quarto-blog/posts/workflow/Newrsynclogo.png" medium="image" type="image/png" height="70" width="144"/>
 </item>

@@ -367,5 +367,11 @@
   },
   "posts/thesis/thesis-progress.qmd": {
     "thesis-progress.html": "bbaea869"
+  },
+  "posts/workflow/git.qmd": {
+    "git.html": "5bf9d585"
+  },
+  "posts/workflow/rsync.qmd": {
+    "rsync.html": "295dfdc1"
   }
 }

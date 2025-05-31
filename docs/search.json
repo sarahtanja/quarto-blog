@@ -45,18 +45,32 @@
     "text": "Quantifying phthalates\nSurvey of Phthalates in Washington State Waterbodies, 2021 (Mathieu and Bednarek 2022)\n\nMathieu, C, and J Bednarek. 2022. “Survey of Phthalates in Washington State Waterbodies, 2021.” 22-03-027. Washington State Department of Ecology, Olympia. https://apps.ecology.wa.gov/publications/documents/2203027.pdf.\n\nanalytes:\nmatrix: freshwater\nSample Prep: EPA 3541\nSample Clean-up: EPA 3620C florisil\nAnalytical method: EPA 8270E (GC/MS)\nLab: Manchester Environmental Laboratory\n\nPlastic-derived contaminants in Aleutian Archipelago seabirds with varied foraging strategies (Padula et al. 2020)\n\nPadula, Veronica, Anne H. Beaudreau, Birgit Hagedorn, and Douglas Causey. 2020. “Plastic-Derived Contaminants in Aleutian Archipelago Seabirds with Varied Foraging Strategies.” Marine Pollution Bulletin 158 (September): 111435. https://doi.org/10.1016/j.marpolbul.2020.111435.\n\nanalytes: DMP (dimethyl phthalate), DEP (diethyl phthalate), BBP (benzyl-butyl phthalate), DBP (dibutyl phthalate), DEHP (diethyl hexyl phthalate), DnOP (di-n-ocytl phthalate)\nmatrix: seabird tissue\nSample Prep:\n\n“We followed best practices and removed plastic materials from the area of the lab where phthalate analyses were performed and checked potential sources for system contamination such as solvents, instrument blanks, air, and laboratory glassware. We washed glassware with hexane and acetone and ashed it at 440 °C for 2 h before use (Fankhauser-Noti and Grob, 2007). For each individual bird, 3–6 g of muscle sample were homogenized and stored in a glass vial. A Quencher method with primary secondary amine (PSA), Supelclean (Sigma-Aldrich 52738-U), magnesium sulfate, and sodium chloride was used for extracting phthalates from animal tissue. Samples were weighed into 10-mL Kimax glass centrifuge tubes together with a mixture of MgSO4 and NaCl (Martins et al., 2016). One hundred nanograms of the surrogates DMP-d4 and DEHP-d4 and 2 mL of acetonitrile were added to the samples. DMP-d4 and DEHP-d4 are deuterated analogs of two of the targeted compounds in this study, and were utilized as internal standards to maintain precise quantification of phthalates (Net et al., 2015). Samples were then vortexed for 1 min and placed in an ultrasonic bath for 20 min and kept at 4 °C for 24 h to complete the extraction. Next, samples were vortexed for 5 min and centrifuged. The liquid was siphoned off and placed in a second glass culture tube that had been previously filled with MgSO4 and PSA sorbent resin to remove other organic compounds. The mixture was vortexed for 3 min and centrifuged. Next, 0.5 mL of the supernatant liquid was filtered and transferred to a 2-mL autosampler vial with Teflon septa, and internal standards DBP-d4 and DnOP-d4 were added at a concentration of 50 ng/mL.”\n\nAnalytical Method:\n\nHPLC (Agilent 1200) connected to a tandem mass spectrometer (Agilent 6410B) equipped with an ESI source.\nPhase separation was achieved with a Zorbax SB-C18 2.1 to 30 mm, 3.5 mm analytical column and XDB-C18 4.6 to 12.5, 5 mm guard column.\nMobile phases were water (A) and methanol (B) with 10 mM formic acid (B = 25–85% in 5 min, 85–90% in 9 min; B = 90% for 9 min; mass spectrometer settings: gas temperature = 300 °C; gas flow = 6 L/ min; nebulizer = 15 psi; capillary voltage = 4000 V).\nQuality control samples, method blanks, extraction blanks, solvent blanks, instrument blanks, and continuous calibration verification standards were analyzed every 10th sample and sample duplicates were analyzed with every extraction batch (approximately 20 samples).\nIn addition, spiked samples and blanks were carried through the entire extraction procedure to determine method recovery.\nPhthalate concentration was determined using external seven-level calibration using ratios of internal standards and recovery of surrogate was recorded to assure extraction recovery.\nLimit of detection (LOD) was calculated from seven-level calibrations following Harris (2010)\n\nLab: Applied Science, Engineering & Technology (ASET) laboratory, University of Alaska Anchorage\n\nWA Dept. of Ecology Analytical Lab Search\n\nACZ Laboratories, Inc., Steamboat Springs, CO\nGEL Laboratories, LLC., Charleston, SC\nKing County Environmental Laboratory, Seattle, WA\nTacoma Environmental Services Laboratory, Tacoma, WA\nManchester Environmental Laboratories"
   },
   {
-    "objectID": "posts/workflow/quarto-blog-create.html",
-    "href": "posts/workflow/quarto-blog-create.html",
-    "title": "How I created & maintain my open lab notebook using Quarto, Git & RStudio",
-    "section": "",
-    "text": "follow happy git for the useR\ndownload quarto"
-  },
-  {
-    "objectID": "posts/workflow/backup.html",
-    "href": "posts/workflow/backup.html",
+    "objectID": "posts/workflow/rsync.html",
+    "href": "posts/workflow/rsync.html",
     "title": "Backup your work",
     "section": "",
     "text": "It’s good practice to have an active work server that you push code to GitHub, and a backup server that you’re not working in for the large files you generate. In case you somehow lock up your active work server, and need to delete it entirely for some unknown error… you have a backup of all the large files you’ve generated.\nI had to do this here , and so this is how to use rsync to regularly backup your project directory from one server to another.\nBasic rsync syntax is:\n\nrsync -avz /path/to/source user@remote_host:/path/to/destination\n\nAn example to backup a directory in raven to gannet:\n\nrsync -avz --progress /home/shared/8TB_HDD_01/stanja \\\n--exclude='*.sam' \\\n--exclude='tmp*' \\\nstanja@gannet.fish.washington.edu:/volume2/web/stanja\n\n\n-a: Archive mode, which preserves permissions, timestamps, symbolic links, etc.\n-v: Verbose, which provides detailed output of the sync process.\n-z: Compresses data during transfer, which can be helpful for speed, especially over slow networks.\n--progress: Shows progress of the file transfers.\n--exclude='*.sam': Excludes all files with a .sam extension.\n--exclude='tmp*': Excludes any files or directories that start with tmp.\n\nrsync is a powerful command-line tool for synchronizing files and directories between two locations on Unix-like systems (such as Linux and macOS). It’s particularly useful for backups, mirroring directories, and transferring files over a network efficiently. Here’s an overview of rsync and what makes it so valuable:\nKey Features of rsync\n\nIncremental File Transfer:\n\nrsync transfers only the differences between the source and the destination files. This is done by comparing file changes based on timestamps and file size by default, making it much faster than copying entire files when only small changes were made.\n\nCompression:\n\nIt can compress data during transfer (using the -z option), which is useful for large files and slower network connections.\n\nSynchronization Over Network with SSH:\n\nrsync supports transferring files over a network connection via SSH, ensuring secure, encrypted file transfers. This is especially important for syncing to remote servers.\n\nFlexible Exclusions and Inclusions:\n\nYou can use --exclude and --include options to specify patterns for files and directories you want to exclude from or include in the transfer.\n\nPreservation of Permissions and Ownership:\n\nWith the -a (archive) option, rsync can preserve file permissions, ownership, timestamps, and even symbolic links, so the file metadata remains intact between source and destination.\n\nLogging and Progress Reporting:\n\nIt provides options to log the details of each transfer, and using --progress gives real-time feedback on the status of each file being transferred.\n\n\n\n\n\n\n\n\nTip\n\n\n\nIncomplete Transfers:\n\nIf transfers are interrupted, rsync can resume where it left off. Simply rerun the command, and it will pick up from the last successful transfer."
+  },
+  {
+    "objectID": "posts/workflow/git.html",
+    "href": "posts/workflow/git.html",
+    "title": "Workflow with Git",
+    "section": "",
+    "text": ".gitignore cannot filter files by size — it only filters by path patterns, like filenames, extensions, or directory names. It doesn’t support dynamic criteria like file size, modification time, etc.\nAn example template for a .gitignore while working with large bioinformatics files:\n.Rproj.user \n.Rhistory \n.RData \n.Ruserdata \n.bashvars \n*.bam\n*.sam \n*.fastq\n*.fq\n*.fastq.gz\n*.fq.gz \n*.fasta\n*.fa \n*.gff3"
+  },
+  {
+    "objectID": "posts/workflow/git.html#using-git-revert",
+    "href": "posts/workflow/git.html#using-git-revert",
+    "title": "Workflow with Git",
+    "section": "Using git revert:",
+    "text": "Using git revert:\n-   Open your terminal or command prompt.\n\n-   Navigate to the repository directory using the **`cd`** command.\n\n-   Execute the following command to revert the most recent commit:\n\n    `git revert HEAD`\n\n-   Git will create a new commit that undoes the changes introduced by the previous commit. A text editor will open for you to provide a commit message. Save and close the editor to complete the revert process."
+  },
+  {
+    "objectID": "posts/workflow/git.html#using-git-reset",
+    "href": "posts/workflow/git.html#using-git-reset",
+    "title": "Workflow with Git",
+    "section": "Using git reset",
+    "text": "Using git reset\n-   Open your terminal or command prompt.\n\n-   Navigate to the repository directory using the **`cd`** command.\n\n-   Execute the following command to reset the repository to the commit before the most recent one:\n\n    `git reset HEAD~1`\n\n    This command moves the branch pointer to the commit before the most recent one, effectively undoing the last commit.\n\n-   Note that the changes introduced in the undone commit will still be present in your working directory. You can then modify or discard them as needed.\nPlease exercise caution when using these commands, as they modify the Git history. If you have already pushed the commit you want to undo to a remote repository, it’s generally not recommended to modify the history, as it can cause conflicts for other team members. In that case, it may be better to consider reverting the changes in a new commit and pushing that instead."
   },
   {
     "objectID": "posts/thesis/goals-timeline.html",
@@ -1861,46 +1875,11 @@
     "text": "SAFS Masters Thesis Milestones are laid out here\n\nSarah’s Master’s Thesis Progress:\n\n\n\nMilestone\nExpected\nCompleted\n\n\n\n\nForm Committee\n[AU22] 16DEC22\n[WI23] 05JAN2023\n\n\nSubmit Plan of Study\n[AU22] 16DEC22\n[WI23] 05JAN2023\n\n\nSubmit Thesis Proposal\n[AU22] 16DEC22\n01MAY2025\n\n\nEnd-of-Program Meeting with GPA\n[AU23] 01NOV23\n[WI24] 10JAN2024\n\n\nSubmit Thesis Draft\n[WI24] 31JAN24\n\n\n\nRequest Final Exam\n[WI24] 31JAN24\n\n\n\nRequest Master’s Degree\n[WI24] 31JAN24\n\n\n\nFinal Exam: Thesis Seminar + Oral Exam\n[SP24] 05APR24\n\n\n\nSubmit Master’s Thesis\n[SP24] 31MAY24\n\n\n\nCommencement\n08JUN24\n\n\n\n\nCheck Degree Audit for SAFS here\n\n\nCompleted Coursework\n\n\n\n\n\n\n\n\n\nQtr\nCourse\nCredits\nGrade\n\n\n\n\nWI21\nOCEAN 518-Scientific Writing\n2.0\nCR\n\n\nSU21\nFHL 446-Marine Botany\n9.0\n4.0\n\n\nAU21\nFISH 511-Topics: Evol&Ecol Plastics Seminar\n2.0\nCR\n\n\nAU21\nFISH 522-Hot Topics in AFS\n2.0\nCR\n\n\nAU21\nFISH 552-Intro R Programming\n2.0\nCR\n\n\nAU21\nFISH 553-ADV R Programming\n2.0\nCR\n\n\nAU21\nQSCI 482-Statistical Inference in Ecol\n5.0\n3.8\n\n\nWI22\nFISH 521-Research Proposal Writing\n4.0\n3.7\n\n\nWI22\nFISH 700-Masters Thesis\n3.0\nCR\n\n\nWI22\nOCEAN 531-Marine Phyto Biogeochem\n3.0\n3.9\n\n\nWI22\nFISH 700-Masters Thesis\n5.0\nCR\n\n\nWI22\nFISH 541-Environmental Physiology\n5.0\n4.0\n\n\nSU22\nFISH 700-Masters Thesis\n10.0\nCR\n\n\nAU22\nFISH 561-Resource Economics & Policy\n4.0\n4.0\n\n\nAU22\nSMEA 500-Human Dimensions of Global Change\n3.0\n4.0\n\n\nAU22\nSMEA 521-Climate Change Governance\n3.0\n3.7\n\n\nWI23\nFISH 539-US Fishery Management & Policy\n3.0\n4.0\n\n\nWI23\nFISH 700-Masters Thesis\n7.0\nCR\n\n\nSP23\nFISH 546-Bioinformatics\n3.0\n3.8\n\n\nSP23\nFISH 700-Masters Thesis\n7.0\nCR\n\n\nSU23\nFISH 700-Masters Thesis\n10.0\nCR\n\n\n\n\n\n\n\n\nAudited Coursework\n\n\n\n\n\n\n\n\n\nQtr\nCourse\n\n\n\n\nWI22\nB BIO 495 C-Investigative Biology\n\n\nWI22\nFISH 427 A-Tropical Marine Biology\n\n\n\n\n\n\n\n\nIn-Progress Coursework\n\n\n\n\n\n\n\n\n\nQtr\nCourse\nCredits\n\n\n\n\nAU23\nC ENV-Improv for Science Communication\n1.0\n\n\nAU23\nFISH 510- Topics in Genetics & Physiology\n2.0\n\n\nAU23\nFISH 700-Masters Thesis\n7.0"
   },
   {
-    "objectID": "posts/workflow/git-reset.html",
-    "href": "posts/workflow/git-reset.html",
-    "title": "Workflow with Git",
+    "objectID": "posts/workflow/quarto-blog-create.html",
+    "href": "posts/workflow/quarto-blog-create.html",
+    "title": "How I created & maintain my open lab notebook using Quarto, Git & RStudio",
     "section": "",
-    "text": ".gitignore cannot filter files by size — it only filters by path patterns, like filenames, extensions, or directory names. It doesn’t support dynamic criteria like file size, modification time, etc."
-  },
-  {
-    "objectID": "posts/workflow/git-reset.html#setup-git-hooks-to-automatically-gitignore-large-files",
-    "href": "posts/workflow/git-reset.html#setup-git-hooks-to-automatically-gitignore-large-files",
-    "title": "Workflow with Git",
-    "section": "Setup git hooks to automatically gitignore large files",
-    "text": "Setup git hooks to automatically gitignore large files\nIn this assignment we’re dealing with large files that will end up in the ../data and ../output directories. To prevent those large files from clogging up our ability to ‘git push’, we can use built-in hooks to automatically ignore files larger than 100 MB (no matter the directory or file name!). Here are the steps to follow:\n\nCreate a new text file in the .git/hooks/ directory of your repository called pre-commit\n\nSelect the More tab with the gear icon under the RStudio Files navigator bar and select ‘show hidden files’ to see the .git folder.\n\nAdd the following text to the .git/hooks/pre-commit file:\n\n#!/bin/sh\n\n# Maximum file size (in bytes)\nmax_file_size=104857600\n\n# Find all files larger than max_file_size and add them to the .gitignore file\nfind . -type f -size +$max_file_size -exec echo \"{}\" &gt;&gt; .gitignore \\;\n\nThis code sets the max_file_size variable to 100 MB and then uses the find command to locate all files in the repository that are larger than the specified max_file_size. The exec option of the find command appends the name of each file that matches the criteria to the .gitignore file.\n\nor\n#!/bin/bash\necho “automatically ignoring large files” find . -size 5M | sed ‘s|^./||g’ &gt;&gt; .gitignore cat .gitignore | sort | uniq &gt; .gitignore\ngit diff –exit-code .gitignore exit_status=$? if [ $exit_status -eq 1 ] then set +e for i in cat .gitignore do set +e git rm –cached $i done\ngit add .gitignore\ngit commit .gitignore --no-verify -m\"ignoring large files\"\n\necho \"ignored new large files\"\n\nIt is pretty brute force and the downside is that in case there were new large files added by the git hook, the origin commit fails because the state (hash) changed. So you need to execute another commit to actually commit what you have staged. Consider this as a feature telling you that new large files were detected ;-)\n\nSave the pre-commit file and make it executable by running the following command in Terminal from your base git directory:\nchmod +x .git/hooks/pre-commit\nWith these changes, whenever you run a git commit command, Git will first execute the pre-commit hook, which will automatically add any files larger than 100 MB to the .gitignore file. This will prevent Git from tracking these files in the repository going forward."
-  },
-  {
-    "objectID": "posts/workflow/git-reset.html#manually-execute-code-to-find-and-add-files-1g-to-.gitignore-before-committing",
-    "href": "posts/workflow/git-reset.html#manually-execute-code-to-find-and-add-files-1g-to-.gitignore-before-committing",
-    "title": "Workflow with Git",
-    "section": "Manually execute code to find and add files >1G to .gitignore before committing",
-    "text": "Manually execute code to find and add files &gt;1G to .gitignore before committing\nUse the following code as a bash terminal command to find and add files &gt;1G from repo to .gitignore find . -size +1G | sed 's|^./||g' | cat &gt;&gt; .gitignore from THIS Robert’s Lab Course Issue"
-  },
-  {
-    "objectID": "posts/workflow/git-reset.html#using-git-revert",
-    "href": "posts/workflow/git-reset.html#using-git-revert",
-    "title": "Workflow with Git",
-    "section": "Using git revert:",
-    "text": "Using git revert:\n-   Open your terminal or command prompt.\n\n-   Navigate to the repository directory using the **`cd`** command.\n\n-   Execute the following command to revert the most recent commit:\n\n    `git revert HEAD`\n\n-   Git will create a new commit that undoes the changes introduced by the previous commit. A text editor will open for you to provide a commit message. Save and close the editor to complete the revert process."
-  },
-  {
-    "objectID": "posts/workflow/git-reset.html#using-git-reset",
-    "href": "posts/workflow/git-reset.html#using-git-reset",
-    "title": "Workflow with Git",
-    "section": "Using git reset",
-    "text": "Using git reset\n-   Open your terminal or command prompt.\n\n-   Navigate to the repository directory using the **`cd`** command.\n\n-   Execute the following command to reset the repository to the commit before the most recent one:\n\n    `git reset HEAD~1`\n\n    This command moves the branch pointer to the commit before the most recent one, effectively undoing the last commit.\n\n-   Note that the changes introduced in the undone commit will still be present in your working directory. You can then modify or discard them as needed.\nPlease exercise caution when using these commands, as they modify the Git history. If you have already pushed the commit you want to undo to a remote repository, it’s generally not recommended to modify the history, as it can cause conflicts for other team members. In that case, it may be better to consider reverting the changes in a new commit and pushing that instead."
-  },
-  {
-    "objectID": "posts/workflow/git-reset.html#last-resort-burn-it-down",
-    "href": "posts/workflow/git-reset.html#last-resort-burn-it-down",
-    "title": "Workflow with Git",
-    "section": "Last Resort… Burn it down",
-    "text": "Last Resort… Burn it down\n\nIn the event that you accidentally committed a big file (&gt;100MB), you can reset to the last successful git master branch push\n\n\n\n\n\n\n\nWarning\n\n\n\n⚠️warning this will overwrite any changes you made after your last successful push⚠️\n\n\n\nIf you still want to continue, you can un-comment the code and follow this instruction:\nFirst, update all origin/&lt;branch&gt; refs to latest:\n\n#git fetch --all\n\nBackup your current branch (e.g. master):\n\n#git branch backup-branch\n\nJump to the latest commit on origin/master :\n\n#git reset --hard origin/main"
+    "text": "follow happy git for the useR\ndownload quarto"
   },
   {
     "objectID": "posts.html",
@@ -1911,33 +1890,5 @@
     "crumbs": [
       "Posts"
     ]
-  },
-  {
-    "objectID": "posts/workflow/git.html",
-    "href": "posts/workflow/git.html",
-    "title": "Workflow with Git",
-    "section": "",
-    "text": ".gitignore cannot filter files by size — it only filters by path patterns, like filenames, extensions, or directory names. It doesn’t support dynamic criteria like file size, modification time, etc.\nAn example template for a .gitignore while working with large bioinformatics files:\n.Rproj.user \n.Rhistory \n.RData \n.Ruserdata \n.bashvars \n*.bam\n*.sam \n*.fastq\n*.fq\n*.fastq.gz\n*.fq.gz \n*.fasta\n*.fa \n*.gff3"
-  },
-  {
-    "objectID": "posts/workflow/git.html#using-git-revert",
-    "href": "posts/workflow/git.html#using-git-revert",
-    "title": "Workflow with Git",
-    "section": "Using git revert:",
-    "text": "Using git revert:\n-   Open your terminal or command prompt.\n\n-   Navigate to the repository directory using the **`cd`** command.\n\n-   Execute the following command to revert the most recent commit:\n\n    `git revert HEAD`\n\n-   Git will create a new commit that undoes the changes introduced by the previous commit. A text editor will open for you to provide a commit message. Save and close the editor to complete the revert process."
-  },
-  {
-    "objectID": "posts/workflow/git.html#using-git-reset",
-    "href": "posts/workflow/git.html#using-git-reset",
-    "title": "Workflow with Git",
-    "section": "Using git reset",
-    "text": "Using git reset\n-   Open your terminal or command prompt.\n\n-   Navigate to the repository directory using the **`cd`** command.\n\n-   Execute the following command to reset the repository to the commit before the most recent one:\n\n    `git reset HEAD~1`\n\n    This command moves the branch pointer to the commit before the most recent one, effectively undoing the last commit.\n\n-   Note that the changes introduced in the undone commit will still be present in your working directory. You can then modify or discard them as needed.\nPlease exercise caution when using these commands, as they modify the Git history. If you have already pushed the commit you want to undo to a remote repository, it’s generally not recommended to modify the history, as it can cause conflicts for other team members. In that case, it may be better to consider reverting the changes in a new commit and pushing that instead."
-  },
-  {
-    "objectID": "posts/workflow/rsync.html",
-    "href": "posts/workflow/rsync.html",
-    "title": "Backup your work",
-    "section": "",
-    "text": "It’s good practice to have an active work server that you push code to GitHub, and a backup server that you’re not working in for the large files you generate. In case you somehow lock up your active work server, and need to delete it entirely for some unknown error… you have a backup of all the large files you’ve generated.\nI had to do this here , and so this is how to use rsync to regularly backup your project directory from one server to another.\nBasic rsync syntax is:\n\nrsync -avz /path/to/source user@remote_host:/path/to/destination\n\nAn example to backup a directory in raven to gannet:\n\nrsync -avz --progress /home/shared/8TB_HDD_01/stanja \\\n--exclude='*.sam' \\\n--exclude='tmp*' \\\nstanja@gannet.fish.washington.edu:/volume2/web/stanja\n\n\n-a: Archive mode, which preserves permissions, timestamps, symbolic links, etc.\n-v: Verbose, which provides detailed output of the sync process.\n-z: Compresses data during transfer, which can be helpful for speed, especially over slow networks.\n--progress: Shows progress of the file transfers.\n--exclude='*.sam': Excludes all files with a .sam extension.\n--exclude='tmp*': Excludes any files or directories that start with tmp.\n\nrsync is a powerful command-line tool for synchronizing files and directories between two locations on Unix-like systems (such as Linux and macOS). It’s particularly useful for backups, mirroring directories, and transferring files over a network efficiently. Here’s an overview of rsync and what makes it so valuable:\nKey Features of rsync\n\nIncremental File Transfer:\n\nrsync transfers only the differences between the source and the destination files. This is done by comparing file changes based on timestamps and file size by default, making it much faster than copying entire files when only small changes were made.\n\nCompression:\n\nIt can compress data during transfer (using the -z option), which is useful for large files and slower network connections.\n\nSynchronization Over Network with SSH:\n\nrsync supports transferring files over a network connection via SSH, ensuring secure, encrypted file transfers. This is especially important for syncing to remote servers.\n\nFlexible Exclusions and Inclusions:\n\nYou can use --exclude and --include options to specify patterns for files and directories you want to exclude from or include in the transfer.\n\nPreservation of Permissions and Ownership:\n\nWith the -a (archive) option, rsync can preserve file permissions, ownership, timestamps, and even symbolic links, so the file metadata remains intact between source and destination.\n\nLogging and Progress Reporting:\n\nIt provides options to log the details of each transfer, and using --progress gives real-time feedback on the status of each file being transferred.\n\n\n\n\n\n\n\n\nTip\n\n\n\nIncomplete Transfers:\n\nIf transfers are interrupted, rsync can resume where it left off. Simply rerun the command, and it will pick up from the last successful transfer."
   }
 ]

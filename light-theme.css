@@ -18,7 +18,7 @@
 .listing-item-img-placeholder {
   width: 100%;
   height: 200px;
-  background-color: #ddd;  /* light gray placeholder */
+  background-color: #FFFCF0;  /* off-white paper placeholder */
   border-radius: 20px; /* optional for rounded corners */
 }
 

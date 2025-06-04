@@ -1,20 +1,12 @@
 ---
 title: "M. Capitata Embryo DNA/RNA Extractions Protocol"
 author: "Sarah Tanja"
-date: 08/09/2024
+date: 2024-08-09
 date-format: long
 date-modified: today
 categories: [protocols, coral]
 draft: false
-toc: true
-toc-exand: true
-toc-title: Contents <i class="bi bi-bookmark-heart"></i>
-toc-depth: 5
-toc-location: left
-reference-location: margin
-citation-location: margin
-link-external-icon: true
-link-external-newwindow: true
+image: "whiteboard-flow.jpg"
 ---
 
 For inspiration checkout:

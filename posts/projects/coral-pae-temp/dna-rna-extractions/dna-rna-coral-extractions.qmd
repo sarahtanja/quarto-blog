@@ -4,12 +4,7 @@ author: "Sarah Tanja"
 date: '04/25/2023'
 categories: [lab records]
 draft: false
-toc: true
-toc-title: Contents <i class="bi bi-bookmark-heart"></i>
-toc-depth: 5
-toc-location: left
-reference-location: margin
-citation-location: margin
+image: "steel-cold-funnel.png"
 ---
 
 ::: {.callout-note appearance="simple" icon="false"}

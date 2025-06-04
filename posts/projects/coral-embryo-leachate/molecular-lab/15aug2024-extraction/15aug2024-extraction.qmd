@@ -1,20 +1,12 @@
 ---
 title: "15-Aug-2024 Embryo RNA Extractions"
 author: "Sarah Tanja"
-date: 08/15/2024
+date: 2024-08-15
 date-format: long
 date-modified: today
 categories: [lab records]
 draft: false
-toc: true
-toc-exand: true
-toc-title: Contents <i class="bi bi-bookmark-heart"></i>
-toc-depth: 5
-toc-location: left
-reference-location: margin
-citation-location: margin
-link-external-icon: true
-link-external-newwindow: true
+image: "samples-in-rack.jpg"
 ---
 
 # Samples

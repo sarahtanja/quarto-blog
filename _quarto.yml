@@ -57,7 +57,9 @@ format:
     theme: 
       light: [solar, light-theme.css]
       dark: [solar, dark-theme.css]
-    css: styles.css
+    highlight-style:
+      light: github
+      dark: github-dark
     page-layout: full
     code-background: true
     code-tools: 
@@ -73,8 +75,8 @@ format:
     link-external-newwindow: true
     reference-location: margin
     citation-location: margin
-    highlight-style: github
     repo-actions: [edit, issue]
+
 
 editor: visual
 bibliography: references.bib

@@ -4,7 +4,7 @@ subtitle: "Using Paperpile, paperpile-bot, Google Docs & Quarto"
 author: "Sarah Tanja"
 image: "paperpilebot.png"
 draft: true
-date: 04/02/2025
+date: 2025-04-02
 date-format: long
 date-modified: today
 categories: [workflow]

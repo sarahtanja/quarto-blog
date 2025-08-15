@@ -373,5 +373,8 @@
   },
   "posts/workflow/rsync.qmd": {
     "rsync.html": "295dfdc1"
+  },
+  "home.qmd": {
+    "home.html": "663c9c03"
   }
 }

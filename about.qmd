@@ -7,7 +7,6 @@ citation-location: margin
 about:
   id: hero-heading
   template: broadside # jolla, trestles, solana, marquee, broadside
-  #image-shape: round
   links:
     - icon: linkedin
       text: LinkedIn
@@ -22,9 +21,6 @@ about:
 
 ::: {#hero-heading}
 Hello! I'm currently a Masters student in the [Padilla-Gamiño Lab](https://padilla-gaminolab.weebly.com/) and part of the [School of Aquatic and Fishery Sciences](https://fish.uw.edu/) at the University of Washington in Seattle. Please reach out if you have any questions or are interested in connecting!
-:::
-
-{{< video video-clips/DavisPoint.mp4 >}}
 
 # Research Interests
 
@@ -37,6 +33,7 @@ My overarching thesis explores the question "Does pollution undermine climate re
 I'm interested in exploring this question in the context of marine coastal habitat-forming organisms. These include scleractinian corals that form the structures of tropical coral reefs, soft-bodied anemones that cover the rocky intertidal habitats of the temperate coasts, and canopy-forming and understory kelps and seaweeds that provide habitat and organic carbon to various ecosystems.
 
 Other questions I like to explore are "Do microplastic-associated pollutants alter the beneficial microbiome in marine organisms?", "Do microplastic pollutants alter gene expression in marine organisms?", and "Do microplastic pollutants decrease photosynthetic efficiency in the ocean?".
+:::
 
 # Research Influences
 

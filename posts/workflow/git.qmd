@@ -154,7 +154,7 @@ If you've made lots of changes along with the large file commit that you don't w
 
     `rsync -av --progress --exclude='.git/' git-repo-BU/ git-repo/`
 
-4.  
+4.  Add large file to `.gitignore` , and run `git add .gitignore`
 
 # Burn it down with `git reset –hard`
 

@@ -36,3 +36,26 @@ body {
 $body-bg: #FFFCF0; /*an off-white paper from flexoki*/
 $body-color: #12253B; /*the page text color is dark blue*/
 $code-block-bg: #FAEEC6; /*the code block background color is butter*/
+
+
+/* Change dropdown menu background */
+.navbar .dropdown-menu {
+  background-color: #FFFCF0 !important; /* light background */
+}
+
+/* Change dropdown menu text */
+.navbar .dropdown-menu .dropdown-item {
+  color: #12253B !important; /* dark text */
+}
+
+/* Change hover color for dropdown items */
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #FAEEC6 !important; /* slightly darker hover */
+  color: #12253B !important;
+}
+
+#hero-heading .broadside-background {
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+}

@@ -9,6 +9,19 @@
     ]
   },
   {
+    "listing": "/posts/projects/coral-pae-temp.html",
+    "items": [
+      "/posts/projects/coral-pae-temp/dna-rna-extractions/dna-rna-coral-extractions.html"
+    ]
+  },
+  {
+    "listing": "/posts/projects/coral-leachate-heat.html",
+    "items": [
+      "/posts/projects/coral-leachate-heat/hobo-calibrations/hobo-calibrations.html",
+      "/posts/projects/coral-leachate-heat/log.html"
+    ]
+  },
+  {
     "listing": "/posts/projects/anemone.html",
     "items": [
       "/posts/projects/anemone/chlorophyll/chlorophyll.html",
@@ -45,20 +58,9 @@
       "/posts/projects/coral-embryo-leachate/molecular-lab/13aug2024-extraction/13aug2024-extraction.html",
       "/posts/projects/coral-embryo-leachate/molecular-lab/12aug2024-extraction/12aug2024-extraction.html",
       "/posts/projects/coral-embryo-leachate/molecular-lab/embryo-extractions.html",
+      "/posts/projects/coral-embryo-leachate/wet-lab/bench-incubation.html",
       "/posts/projects/coral-embryo-leachate/wet-lab/collection-acclimation.html",
       "/posts/projects/coral-embryo-leachate/wet-lab/spawn-night.html"
-    ]
-  },
-  {
-    "listing": "/posts/projects/coral-leachate-heat.html",
-    "items": [
-      "/posts/projects/coral-leachate-heat/log.html"
-    ]
-  },
-  {
-    "listing": "/posts/projects/coral-pae-temp.html",
-    "items": [
-      "/posts/projects/coral-pae-temp/dna-rna-extractions/dna-rna-coral-extractions.html"
     ]
   },
   {
@@ -88,6 +90,8 @@
       "/posts/projects/coral-embryo-leachate/molecular-lab/13aug2024-extraction/13aug2024-extraction.html",
       "/posts/projects/coral-embryo-leachate/molecular-lab/12aug2024-extraction/12aug2024-extraction.html",
       "/posts/projects/coral-embryo-leachate/molecular-lab/embryo-extractions.html",
+      "/posts/projects/coral-leachate-heat/hobo-calibrations/hobo-calibrations.html",
+      "/posts/projects/coral-embryo-leachate/wet-lab/bench-incubation.html",
       "/posts/projects/coral-embryo-leachate/wet-lab/collection-acclimation.html",
       "/posts/projects/coral-embryo-leachate/wet-lab/spawn-night.html",
       "/posts/projects/coral-leachate-heat/log.html",

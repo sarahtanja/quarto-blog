@@ -376,5 +376,14 @@
   },
   "home.qmd": {
     "home.html": "663c9c03"
+  },
+  "posts/post-template.qmd": {
+    "post-template.html": "a932cb87"
+  },
+  "posts/projects/coral-embryo-leachate/wet-lab/bench-incubation.qmd": {
+    "bench-incubation.html": "4e44a79f"
+  },
+  "posts/projects/coral-leachate-heat/hobo-calibrations/hobo-calibrations.qmd": {
+    "hobo-calibrations.html": "aa5bac3a"
   }
 }

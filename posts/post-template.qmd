@@ -1,0 +1,43 @@
+---
+title: ""
+subtitle: ""
+date: 07/09/2024
+categories: [protocols, records, committee, log, learning, code, stats, workflow, presentations, anemones, coral]
+draft: true
+---
+
+# Background
+
+## Inputs
+
+## Outputs
+
+# Setup
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  fig.width = 12,
+  fig.height = 8,
+  fig.align = "center",
+  dpi = 600,
+  echo = TRUE,         # Display code chunks
+  eval = TRUE,        # Evaluate code chunks
+  warning = FALSE,     # Hide warnings
+  message = FALSE,     # Hide messages
+  comment = ""         # Prevents appending '##' to beginning of lines in code output
+)
+```
+
+## Install packages
+
+```{r, eval=FALSE}
+if ("tidyverse" %in% rownames(installed.packages()) == 'FALSE') install.packages('tidyverse')
+```
+
+## Load packages
+
+```{r}
+library(tidyverse)
+```
+
+# Summary

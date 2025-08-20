@@ -48,6 +48,9 @@ website:
 
 format:
   html:
+    author: "Sarah Tanja"
+    date-format: long
+    date-modified: today
     respect-user-color-scheme: true
     theme: 
       light: [solar, light-theme.css]
@@ -62,7 +65,7 @@ format:
       toggle: true
     toc: true
     toc-title: "Contents <i class='bi bi-bookmark-heart'></i>"
-    toc-depth: 5
+    toc-depth: 2
     toc-location: left
     df-print: kable
     smooth-scroll: true

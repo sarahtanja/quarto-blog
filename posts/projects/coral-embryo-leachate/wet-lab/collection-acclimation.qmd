@@ -5,7 +5,7 @@ author: "Sarah Tanja"
 date: 2024-07-09
 date-format: long
 date-modified: today
-categories: [protocols]
+categories: [protocols, records]
 ---
 
 # Goals

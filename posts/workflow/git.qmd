@@ -1,12 +1,8 @@
 ---
 title: "Workflow with Git"
 subtitle: "For all the times I accidentally commit a file that is too big"
-author: "Sarah Tanja"
 date: 2023-11-05
-date-format: long
-date-modified: today
 categories: [workflow]
-draft: false
 ---
 
 # Setup for .gitignore

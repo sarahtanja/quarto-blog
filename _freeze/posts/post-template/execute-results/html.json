@@ -1,0 +1,15 @@
+{
+  "hash": "5e8d349f0e39b422ed1b0fd97860f18d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"\"\nsubtitle: \"\"\ndate: 07/09/2024\ncategories: [protocols, records, committee, log, learning, code, stats, workflow, presentations, anemones, coral]\ndraft: true\n---\n# Background\n## Inputs\n## Outputs\n# Setup\n\n\n## Install packages\n\n::: {.cell layout-align=\"center\"}\n\n```{.r .cell-code}\nif (\"tidyverse\" %in% rownames(installed.packages()) == 'FALSE') install.packages('tidyverse')\n```\n:::\n\n\n## Load packages\n\n::: {.cell layout-align=\"center\"}\n\n```{.r .cell-code}\nlibrary(tidyverse)\n```\n:::\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

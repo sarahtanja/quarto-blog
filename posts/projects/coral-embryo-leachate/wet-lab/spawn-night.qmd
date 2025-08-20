@@ -4,16 +4,7 @@ subtitle: "For embryonic development of Montipora capitata rice corals"
 author: "Sarah Tanja"
 date: 07/09/2024
 date-format: long
-date-modified: today
 categories: [protocols]
-toc: true
-toc-title: Contents <i class="bi bi-bookmark-heart"></i>
-toc-depth: 5
-toc-location: left
-reference-location: margin
-citation-location: margin
-link-external-icon: true
-link-external-newwindow: true
 ---
 
 # Overview

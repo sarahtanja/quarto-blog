@@ -7,23 +7,24 @@ categories: [protocols, records]
 
 # Background
 
-On July 10th I calibrated the HOBO logs to a Kessler NIST K750 RTD Thermometer and an apogee instruments underwater quantum flux PAR meter.
+On July 10th I calibrated the HOBO pendent (temp + lux) loggers to a Kessler NIST K750 RTD Thermometer and an apogee instruments underwater quantum flux PAR meter.
 
 Each was a 2 point calibration matching time-stamp to reference instrument read-out.
 
-NIST temp & time
-27.03 , 07/10/2024 10:40:00
-27.26, 07/10/2024 11:00:00
+NIST temp & time:
+- 27.03 , 07/10/2024 10:40:00
+- 27.26, 07/10/2024 11:00:00
 
-Apogee par & time
-1600, 07/10/2024 11:10:00
-760, 07/10/2024 11:40:00
+Apogee par & time:
+- 1600, 07/10/2024 11:10:00 
+- 760, 07/10/2024 11:40:00
 
-## Inputs 
+## Inputs
 
 ## Outputs
 
 # Setup
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
   fig.width = 12,
@@ -39,30 +40,44 @@ knitr::opts_chunk$set(
 ```
 
 ## Install packages
-```{r, eval=FALSE} 
+
+```{r, eval=FALSE}
 if ("tidyverse" %in% rownames(installed.packages()) == 'FALSE') install.packages('tidyverse')
 if ("broom" %in% rownames(installed.packages()) == 'FALSE') install.packages('broom')
 ```
 
 ## Load libraries
+
 ```{r}
 library(tidyverse)
 library(broom) # for tidy()
 ```
 
-## Load HOBO logs
+## Load HOBO calibration logs
 ```{r}
-amb1_blue <- read.csv("Amb1_blue 2024-07-10 13_10_13 HST (Data HST).csv")
-amb1_bluegreen <- read.csv("Amb1_bluegreen 2024-07-10 13_10_51 HST (Data HST).csv")
-amb2_orangepink <- read.csv("Amb2_orangepink 2024-07-10 11_47_18 HST (Data HST).csv")
-amb2_pink <- read.csv("Amb2_pink 2024-07-10 11_48_03 HST (Data HST).csv")
-hot1_black <- read.csv("Hot1_black 2024-07-10 13_09_24 HST (Data HST).csv")
-hot1_green <- read.csv("Hot1_green 2024-07-10 13_08_26 HST (Data HST).csv")
-hot2_orange <- read.csv("Hot2_orange 2024-07-10 11_44_18 HST (Data HST).csv")
-hot2_yellow <- read.csv("Hot2_yellow 2024-07-10 11_46_08 HST (Data HST).csv")
+cal_amb1_blue <- read.csv("calibrations/Amb1_blue 2024-07-10 13_10_13 HST (Data HST).csv")
+cal_amb1_bluegreen <- read.csv("calibrations/Amb1_bluegreen 2024-07-10 13_10_51 HST (Data HST).csv")
+cal_amb2_orangepink <- read.csv("calibrations/Amb2_orangepink 2024-07-10 11_47_18 HST (Data HST).csv")
+cal_amb2_pink <- read.csv("calibrations/Amb2_pink 2024-07-10 11_48_03 HST (Data HST).csv")
+cal_hot1_black <- read.csv("calibrations/Hot1_black 2024-07-10 13_09_24 HST (Data HST).csv")
+cal_hot1_green <- read.csv("calibrations/Hot1_green 2024-07-10 13_08_26 HST (Data HST).csv")
+cal_hot2_orange <- read.csv("calibrations/Hot2_orange 2024-07-10 11_44_18 HST (Data HST).csv")
+cal_hot2_yellow <- read.csv("calibrations/Hot2_yellow 2024-07-10 11_46_08 HST (Data HST).csv")
 ```
 
+## Load HOBO experiment logs
+```{r}
+exp_amb1_blue <- read.csv("experiment/Amb1_blue 2024-07-18 10_39_10 HST (Data HST).csv")
+exp_amb1_bluegreen <- read.csv("experiment/Amb1_bluegreen 2024-07-18 10_40_19 HST (Data HST).csv")
+exp_amb2_orangepink <- read.csv("experiment/Amb2_orangepink 2024-07-18 10_36_23 HST (Data HST).csv")
+exp_amb2_pink <- read.csv("experiment/Amb2_pink 2024-07-18 10_35_38 HST (Data HST).csv")
+exp_hot1_black <- read.csv("experiment/Hot1_black 2024-07-18 10_38_17 HST (Data HST).csv")
+exp_hot1_green <- read.csv("experiment/Hot1_green 2024-07-18 10_37_19 HST (Data HST).csv")
+exp_hot2_orange <- read.csv("experiment/Hot2_orange 2024-07-18 10_33_21 HST (Data HST).csv")
+exp_hot2_yellow <- read.csv("experiment/Hot2_yellow 2024-07-18 10_34_56 HST (Data HST).csv")
+```
 # References
+
 ```{r}
 # Example inputs for temperature calibration
 ref_temp <- c(27.03, 27.26)  # NIST temperatures
@@ -82,11 +97,12 @@ cal_table <- tibble::tibble(
 )
 ```
 
+# Format calibration logs
 
-# Format logs
-1. amb1_blue 
+1.  amb1_blue
+
 ```{r}
-amb1_blue <- amb1_blue %>% 
+cal_amb1_blue <- cal_amb1_blue %>% 
   rename(datetime = Date.Time..HST.,
          temp = Temperature.....C.,
          lux = Light....lux.) %>%
@@ -96,9 +112,10 @@ amb1_blue <- amb1_blue %>%
   filter(datetime %in% c(ref_time_temp, ref_time_par))
 ```
 
-2. amb1_bluegreen
+2.  amb1_bluegreen
+
 ```{r}
-amb1_bluegreen <- amb1_bluegreen %>% 
+cal_amb1_bluegreen <- cal_amb1_bluegreen %>% 
   rename(datetime = Date.Time..HST.,
          temp = Temperature.....C.,
          lux = Light....lux.) %>%
@@ -108,9 +125,10 @@ amb1_bluegreen <- amb1_bluegreen %>%
   filter(datetime %in% c(ref_time_temp, ref_time_par))
 ```
 
-3. amb2_orangepink
+3.  amb2_orangepink
+
 ```{r}
-amb2_orangepink <- amb2_orangepink %>% 
+cal_amb2_orangepink <- cal_amb2_orangepink %>% 
   rename(datetime = Date.Time..HST.,
          temp = Temperature.....C.,
          lux = Light....lux.) %>%
@@ -120,9 +138,10 @@ amb2_orangepink <- amb2_orangepink %>%
   filter(datetime %in% c(ref_time_temp, ref_time_par))
 ```
 
-4. amb2_pink
+4.  amb2_pink
+
 ```{r}
-amb2_pink <- amb2_pink %>% 
+cal_amb2_pink <- cal_amb2_pink %>% 
   rename(datetime = Date.Time..HST.,
          temp = Temperature.....C.,
          lux = Light....lux.) %>%
@@ -132,9 +151,10 @@ amb2_pink <- amb2_pink %>%
   filter(datetime %in% c(ref_time_temp, ref_time_par))
 ```
 
-5. hot1_black
+5.  hot1_black
+
 ```{r}
-hot1_black <- hot1_black %>% 
+cal_hot1_black <- cal_hot1_black %>% 
   rename(datetime = Date.Time..HST.,
          temp = Temperature.....C.,
          lux = Light....lux.) %>%
@@ -144,9 +164,10 @@ hot1_black <- hot1_black %>%
   filter(datetime %in% c(ref_time_temp, ref_time_par))
 ```
 
-6. hot1_green
+6.  hot1_green
+
 ```{r}
-hot1_green <- hot1_green %>% 
+cal_hot1_green <- cal_hot1_green %>% 
   rename(datetime = Date.Time..HST.,
          temp = Temperature.....C.,
          lux = Light....lux.) %>%
@@ -156,9 +177,10 @@ hot1_green <- hot1_green %>%
   filter(datetime %in% c(ref_time_temp, ref_time_par))
 ```
 
-7. hot2_orange
+7.  hot2_orange
+
 ```{r}
-hot2_orange <- hot2_orange %>% 
+cal_hot2_orange <- cal_hot2_orange %>% 
   rename(datetime = Date.Time..HST.,
          temp = Temperature.....C.,
          lux = Light....lux.) %>%
@@ -168,9 +190,10 @@ hot2_orange <- hot2_orange %>%
   filter(datetime %in% c(ref_time_temp, ref_time_par))
 ```
 
-8. hot2_yellow
+8.  hot2_yellow
+
 ```{r}
-hot2_yellow <- hot2_yellow %>% 
+cal_hot2_yellow <- cal_hot2_yellow %>% 
   rename(datetime = Date.Time..HST.,
          temp = Temperature.....C.,
          lux = Light....lux.) %>%
@@ -180,22 +203,25 @@ hot2_yellow <- hot2_yellow %>%
   filter(datetime %in% c(ref_time_temp, ref_time_par))
 ```
 
-Bind logs 
+Bind logs
+
 ```{r}
-cal_logs <- rbind(amb1_blue,
-                  amb1_bluegreen,
-                  amb2_orangepink,
-                  amb2_pink,
-                  hot1_black,
-                  hot1_green,
-                  hot2_orange,
-                  hot2_yellow)
+cal_logs <- rbind(cal_amb1_blue,
+                  cal_amb1_bluegreen,
+                  cal_amb2_orangepink,
+                  cal_amb2_pink,
+                  cal_hot1_black,
+                  cal_hot1_green,
+                  cal_hot2_orange,
+                  cal_hot2_yellow)
 ```
 
-
 # Create calibrations
+
 ## Temp
+
 For each sensor, calculate slope and intercept using the two point calibration
+
 ```{r}
 # Define your calibration temperature reference times
 cal_temp_times <- as.POSIXct(c("2024-07-10 10:40:00", "2024-07-10 11:00:00"))
@@ -220,22 +246,25 @@ temp_fit_results <- temp_cal_points %>%
   unnest(coef) %>%
   select(pendent, term, estimate) %>%
   pivot_wider(names_from = term, values_from = estimate) %>%
-  rename(intercept = `(Intercept)`, slope = temp)
+  rename(temp_intercept = `(Intercept)`, temp_slope = temp)
 
 # fit_results now contains one row per sensor with slope and intercept ready to use
 print(temp_fit_results)
 ```
+
 Average temp calibration
+
 ```{r}
 avg_temp <- temp_fit_results %>%
   summarize(
-    avg_temp_intercept = mean(intercept),
-    avg_temp_slope = mean(slope))
+    avg_temp_intercept = mean(temp_intercept),
+    avg_temp_slope = mean(temp_slope))
 
 avg_temp
 ```
 
 ## PAR
+
 ```{r}
 # Define your calibration PAR reference times
 cal_par_times <- as.POSIXct(c("2024-07-10 11:10:00", "2024-07-10 11:40:00"))
@@ -260,29 +289,181 @@ par_fit_results <- par_cal_points %>%
   unnest(coef) %>%
   select(pendent, term, estimate) %>%
   pivot_wider(names_from = term, values_from = estimate) %>%
-  rename(intercept = `(Intercept)`, slope = lux)
+  rename(lux_intercept = `(Intercept)`, lux_slope = lux)
 
 # fit_results now contains one row per sensor with slope and intercept ready to use
 print(par_fit_results)
 ```
+:::callout-caution
+amb2_pink sensor seems way off compared to the rest
+:::
+
 Average PAR calibration
+
 ```{r}
 avg_par <- par_fit_results %>%
   summarize(
-    avg_par_intercept = mean(intercept),
-    avg_par_slope = mean(slope))
+    avg_par_intercept = mean(lux_intercept),
+    avg_par_slope = mean(lux_slope))
 
 avg_par
 ```
 
 
+
+# Format experiment logs
+1.  amb1_blue
+
+```{r}
+exp_amb1_blue <- exp_amb1_blue %>% 
+  rename(datetime = Date.Time..HST.,
+         temp = Temperature.....C.,
+         lux = Light....lux.) %>%
+  mutate(datetime = as.POSIXct(datetime, format = "%m/%d/%Y %H:%M:%S")) %>% 
+  mutate(pendent = "amb1_blue") %>% 
+  select(datetime, temp, lux, pendent)
+```
+
+2.  amb1_bluegreen
+
+```{r}
+exp_amb1_bluegreen <- exp_amb1_bluegreen %>% 
+  rename(datetime = Date.Time..HST.,
+         temp = Temperature.....C.,
+         lux = Light....lux.) %>%
+  mutate(datetime = as.POSIXct(datetime, format = "%m/%d/%Y %H:%M:%S")) %>% 
+  mutate(pendent = "amb1_bluegreen") %>% 
+  select(datetime, temp, lux, pendent) 
+```
+
+3.  amb2_orangepink
+
+```{r}
+exp_amb2_orangepink <- exp_amb2_orangepink %>% 
+  rename(datetime = Date.Time..HST.,
+         temp = Temperature.....C.,
+         lux = Light....lux.) %>%
+  mutate(datetime = as.POSIXct(datetime, format = "%m/%d/%Y %H:%M:%S")) %>% 
+  mutate(pendent = "amb2_orangepink") %>% 
+  select(datetime, temp, lux, pendent)
+```
+
+4.  amb2_pink
+
+```{r}
+exp_amb2_pink <- exp_amb2_pink %>% 
+  rename(datetime = Date.Time..HST.,
+         temp = Temperature.....C.,
+         lux = Light....lux.) %>%
+  mutate(datetime = as.POSIXct(datetime, format = "%m/%d/%Y %H:%M:%S")) %>% 
+  mutate(pendent = "amb2_pink") %>% 
+  select(datetime, temp, lux, pendent)
+```
+
+5.  hot1_black
+
+```{r}
+exp_hot1_black <- exp_hot1_black %>% 
+  rename(datetime = Date.Time..HST.,
+         temp = Temperature.....C.,
+         lux = Light....lux.) %>%
+  mutate(datetime = as.POSIXct(datetime, format = "%m/%d/%Y %H:%M:%S")) %>% 
+  mutate(pendent = "hot1_black") %>% 
+  select(datetime, temp, lux, pendent)
+```
+
+6.  hot1_green
+
+```{r}
+exp_hot1_green <- exp_hot1_green %>% 
+  rename(datetime = Date.Time..HST.,
+         temp = Temperature.....C.,
+         lux = Light....lux.) %>%
+  mutate(datetime = as.POSIXct(datetime, format = "%m/%d/%Y %H:%M:%S")) %>% 
+  mutate(pendent = "hot1_green") %>% 
+  select(datetime, temp, lux, pendent)
+```
+
+7.  hot2_orange
+
+```{r}
+exp_hot2_orange <- exp_hot2_orange %>% 
+  rename(datetime = Date.Time..HST.,
+         temp = Temperature.....C.,
+         lux = Light....lux.) %>%
+  mutate(datetime = as.POSIXct(datetime, format = "%m/%d/%Y %H:%M:%S")) %>% 
+  mutate(pendent = "hot2_orange") %>% 
+  select(datetime, temp, lux, pendent)
+```
+
+8.  hot2_yellow
+
+```{r}
+exp_hot2_yellow <- exp_hot2_yellow %>% 
+  rename(datetime = Date.Time..HST.,
+         temp = Temperature.....C.,
+         lux = Light....lux.) %>%
+  mutate(datetime = as.POSIXct(datetime, format = "%m/%d/%Y %H:%M:%S")) %>% 
+  mutate(pendent = "hot2_yellow") %>% 
+  select(datetime, temp, lux, pendent)
+```
+
+Bind experiment logs together
+```{r}
+exp_logs <- rbind(exp_amb1_blue,
+                  exp_amb1_bluegreen,
+                  exp_amb2_orangepink,
+                  exp_amb2_pink,
+                  exp_hot1_black,
+                  exp_hot1_green,
+                  exp_hot2_orange,
+                  exp_hot2_yellow)
+```
+
+Join to calibrations (& remove NAs)
+```{r}
+exp_logs <- exp_logs %>% 
+  left_join(temp_fit_results) %>% 
+  left_join(par_fit_results) %>% 
+  drop_na(temp, lux)
+```
+
 # Apply calibrations
 
-To apply the intercept and slope from your linear regression calibration to raw data and generate calibrated values, you use the formula:
+To apply the intercept and slope from a linear regression calibration to raw data and generate calibrated values, we can use the formula:
 
 $$
 \text{Calibrated value} = (\text{slope} \times \text{raw value}) + \text{intercept}
 $$
+```{r}
+exp_logs <- exp_logs %>% 
+  rename(raw_temp = temp) %>% 
+  mutate(
+    cal_temp = (temp_slope * raw_temp) + temp_intercept,
+    par = (lux_slope * lux) + lux_intercept)
+```
 
+# Visualize thermal environment
+```{r}
+ggplot(exp_logs, aes(x = datetime, y = cal_temp, color = pendent))+
+  geom_point()+
+  geom_smooth()+
+  ggtitle("Calibrated temperatures across hot and ambient water baths")+
+  labs(x = "Date-time", y = "Temperature (°C)", color = "HOBO Sensor") 
+```
+# Visualize PAR environment
+```{r}
+ggplot(exp_logs, aes(x = datetime, y = par, color = pendent))+
+  geom_point()+
+  geom_smooth()+
+  ggtitle("Calibrated PAR across hot and ambient water baths")+
+  labs(x = "Date-time", y = "PAR (umol/m2)", color = "HOBO Sensor") 
+```
+::: callout-caution
+amb2_pink sensor may have had a bad calibration (it was way off from the others)
+:::
 
 # Summary
+In summary, our temp baths hot and ambient separated consistently and our PAR conditions were roughly the same; which was the intent of the experimental setup. amb2_pink PAR calibration may be off, however amb2_orangepink sensor was also in the ambient 2 bath, and shows expected PAR values (the reason we had redundancy in our sensors was in case one went off)
+
+

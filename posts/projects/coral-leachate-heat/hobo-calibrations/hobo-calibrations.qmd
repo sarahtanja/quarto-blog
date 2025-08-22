@@ -9,6 +9,12 @@ categories: [protocols, records]
 
 On July 10th I calibrated the HOBO pendent (temp + lux) loggers to a Kessler NIST K750 RTD Thermometer and an apogee instruments underwater quantum flux PAR meter.
 
+Typical examples of lux levels:
+- Full daylight: about 10,000 to 25,000 lux
+- Overcast daylight: about 1,000 lux
+- Typical office lighting: about 300 to 500 lux
+- Moonlight: about 1 lux
+
 Each was a 2 point calibration matching time-stamp to reference instrument read-out.
 
 NIST temp & time:
@@ -76,8 +82,8 @@ exp_hot1_green <- read.csv("experiment/Hot1_green 2024-07-18 10_37_19 HST (Data 
 exp_hot2_orange <- read.csv("experiment/Hot2_orange 2024-07-18 10_33_21 HST (Data HST).csv")
 exp_hot2_yellow <- read.csv("experiment/Hot2_yellow 2024-07-18 10_34_56 HST (Data HST).csv")
 ```
-# References
 
+# Calibration references
 ```{r}
 # Example inputs for temperature calibration
 ref_temp <- c(27.03, 27.26)  # NIST temperatures
@@ -261,6 +267,8 @@ avg_temp <- temp_fit_results %>%
     avg_temp_slope = mean(temp_slope))
 
 avg_temp
+
+write.csv(avg_temp, "output/avg_temp.csv", row.names=FALSE)
 ```
 
 ## PAR
@@ -298,15 +306,24 @@ print(par_fit_results)
 amb2_pink sensor seems way off compared to the rest
 :::
 
+Remove amb2_pink
+```{r}
+par_fit_avg <- par_fit_results %>% 
+  filter(pendent != c("amb2_pink", "amb2_orangepink")) #select all rows except amb2 from pendent column
+```
+
+
 Average PAR calibration
 
 ```{r}
-avg_par <- par_fit_results %>%
+avg_par <- par_fit_avg %>%
   summarize(
     avg_par_intercept = mean(lux_intercept),
     avg_par_slope = mean(lux_slope))
 
 avg_par
+
+write.csv(avg_par, "output/avg_par.csv", row.names = FALSE)
 ```
 
 
@@ -436,16 +453,17 @@ $$
 \text{Calibrated value} = (\text{slope} \times \text{raw value}) + \text{intercept}
 $$
 ```{r}
-exp_logs <- exp_logs %>% 
+exp_logs_postcal <- exp_logs %>% 
   rename(raw_temp = temp) %>% 
   mutate(
     cal_temp = (temp_slope * raw_temp) + temp_intercept,
-    par = (lux_slope * lux) + lux_intercept)
+    par0 = (lux_slope * lux) + lux_intercept,
+    par = pmax(par0, 0)  ) # PAR cannot be negative
 ```
 
 # Visualize thermal environment
 ```{r}
-ggplot(exp_logs, aes(x = datetime, y = cal_temp, color = pendent))+
+ggplot(exp_logs_postcal, aes(x = datetime, y = cal_temp, color = pendent, alpha = 0.4))+
   geom_point()+
   geom_smooth()+
   ggtitle("Calibrated temperatures across hot and ambient water baths")+
@@ -453,9 +471,11 @@ ggplot(exp_logs, aes(x = datetime, y = cal_temp, color = pendent))+
 ```
 # Visualize PAR environment
 ```{r}
-ggplot(exp_logs, aes(x = datetime, y = par, color = pendent))+
+ggplot(exp_logs_postcal, aes(x = datetime, y = par, color = pendent, alpha = 0.4))+
   geom_point()+
-  geom_smooth()+
+  geom_jitter()+
+  #geom_smooth()+
+  ylim(0, 500)+
   ggtitle("Calibrated PAR across hot and ambient water baths")+
   labs(x = "Date-time", y = "PAR (umol/m2)", color = "HOBO Sensor") 
 ```

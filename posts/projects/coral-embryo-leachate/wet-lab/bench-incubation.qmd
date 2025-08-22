@@ -14,13 +14,15 @@ We left a HOBO logger out on the lab bench, in the lab hood, and in an ambient f
 ## Inputs
 
 -   HOBO data logs
+-   average Temp calibration factors
+-   average PAR calibration factors
 
 ## Outputs
 
 -   Visualizations comparing the lab bench conditions to the ambient seawater at HIMB around the July *Montipora capitata* spawning event in 2024.
-- Hypothesis testing results comparing lab conditions across spawn night and stage
-- Average conditions for manuscript methods section 
-- Tables of conditions for manuscript supplemental materials
+-   Hypothesis testing results comparing lab conditions across spawn night and stage
+-   Average conditions for manuscript methods section
+-   Tables of conditions for manuscript supplemental materials
 
 # Setup
 
@@ -70,7 +72,14 @@ tank2 <- read.csv("Holding tank  2024-07-08 08_32_55 HST (Data HST).csv")
 tank3 <- read.csv("AmbientTemp2 2024-07-08 08_32_20 HST (Data HST).csv")
 ```
 
-# Format HOBO logs 
+## Load HOBO calibration factors
+
+```{r}
+par_cal <- read.csv("avg_par.csv")
+temp_cal <- read.csv("avg_temp.csv")   
+```
+
+# Format HOBO logs
 
 ```{r}
 bench <- bench %>% 
@@ -115,13 +124,31 @@ all <-  rbind(bench, hood, tank1, tank2, tank3)
 all$datetime <- as.POSIXct(all$datetime, format = "%m/%d/%Y %H:%M:%S")
 ```
 
-# Plot overlapping logs
+## Apply calibrations to HOBO logs
+
+To apply the intercept and slope from a linear regression calibration to raw data and generate calibrated values, we can use the formula:
+
+$$
+\text{Calibrated value} = (\text{slope} \times \text{raw value}) + \text{intercept}
+$$
+
+The calibration slopes and intercepts for `temp` and `lux ➡️PAR` are:
 
 ```{r}
-
-long <- melt(all, id.vars=c("datetime", "location"), measure.vars=c("temp", "lux"))
-
+print(par_cal)
+print(temp_cal)
 ```
+
+```{r}
+all <- all %>% 
+  mutate(raw_temp = temp) %>% 
+  mutate(
+    cal_temp = (temp_cal$avg_temp_slope * raw_temp) + temp_cal$avg_temp_intercept,
+    par = (par_cal$avg_par_slope * lux) + par_cal$avg_par_intercept,
+    par_adj = par + 1500)
+```
+
+# Plot overlapping logs
 
 The incubation windows were:
 
@@ -144,28 +171,58 @@ incubation_windows <- data.frame(
 
 ```
 
-```{r}
-# Calculate scaling factor for the secondary (lux) axis
-lux_scale <- max(all$temp, na.rm = TRUE) / max(all$lux, na.rm = TRUE)
+Clip plot to just experimental incubations (07/05/2024 21:20:00 - 07/08/2024 13:30:00)
 
-ggplot(all, aes(x = datetime)) +
-  # Highlight windows
+```{r}
+# Define start and end of all three spawning nights
+start <- as.POSIXct("07/05/2024 21:20:00", format = "%m/%d/%Y %H:%M:%S")
+end <- as.POSIXct("07/08/2024 13:30:00", format = "%m/%d/%Y %H:%M:%S")
+
+# Filter rows where datetime is within the window
+all_inc <- all %>%
+  filter(datetime >= start & datetime <= end)
+```
+
+```{r}
+ggplot(all_inc, aes(x = datetime)) +
   geom_rect(
     data = incubation_windows,
     aes(xmin = start, xmax = end),
-    ymin = -Inf, ymax = Inf, fill = "yellow", alpha = 0.2, inherit.aes = FALSE
+    ymin = -Inf, ymax = Inf,
+    fill = "yellow", alpha = 0.2,
+    inherit.aes = FALSE
   ) +
-  # Plot temp
-  geom_line(aes(y = temp, color = location), size = 1, alpha = 0.5) +
-  # Plot scaled lux
-  geom_line(aes(y = lux * lux_scale, color = location), linetype = "dashed") +
-  # Dual y-axis
-  scale_y_continuous(
-    name = "Temperature",
-    sec.axis = sec_axis(~ . / lux_scale, name = "Lux")
-  ) +
+  geom_line(aes(y = cal_temp, color = location), size = 1, alpha = 0.5)+
+scale_y_continuous(
+  name = "Temperature (°C)",
+  limits = c(26, 28))
   theme_minimal() +
-  labs(color = "Location", title = "Temperature and Lux by Datetime with Incubation Highlights")
+  labs(
+    color = "Location",
+    title = "Temperature by Datetime with Incubation Windows Highlighted"
+  )
+
+
+```
+
+```{r}
+ggplot(all_inc, aes(x = datetime)) +
+  geom_rect(
+    data = incubation_windows,
+    aes(xmin = start, xmax = end),
+    ymin = -Inf, ymax = Inf,
+    fill = "yellow", alpha = 0.2,
+    inherit.aes = FALSE
+  ) +
+  geom_line(aes(y = par_adj, color = location), size = 1, alpha = 0.5)+
+scale_y_continuous(
+  name = "PAR",
+  limits = c(-100, 2000))
+  theme_minimal() +
+  labs(
+    color = "Location",
+    title = "PAR by Datetime with Incubation Windows Highlighted"
+  )
 ```
 
 ::: callout-caution
@@ -198,10 +255,10 @@ avg_sd <- all_incubation %>%
   filter(location %in% c("bench", "hood" ,"tank2", "tank3")) %>%
   group_by(location) %>%
   summarize(
-    avg_temp = mean(temp, na.rm = TRUE),
-    sd_temp = sd(temp, na.rm = TRUE), 
-    avg_lux = mean(lux, na.rm = TRUE),
-    sd_lux = sd(lux, na.rm = TRUE))
+    avg_temp = mean(cal_temp, na.rm = TRUE),
+    sd_temp = sd(cal_temp, na.rm = TRUE), 
+    avg_par = mean(par, na.rm = TRUE),
+    sd_par = sd(par, na.rm = TRUE))
 
 avg_sd
 ```
@@ -217,15 +274,16 @@ ggplot(avg_sd, aes(x = location, y = avg_temp, color = location)) +
 
 ```
 
-Plot average lux
+Plot average par
 
 ```{r}
-ggplot(avg_sd, aes(x = location, y = avg_lux, color = location)) +
+ggplot(avg_sd, aes(x = location, y = avg_par, color = location)) +
   geom_point(size = 3) +                                           # mean temps as points
-  geom_errorbar(aes(ymin = avg_lux - sd_lux, ymax = avg_lux + sd_lux), width = 0.2) +  # std dev error bars
-  labs(x = "Location", y = "Lux", title = "Average lux with Standard Deviation") +
+  geom_errorbar(aes(ymin = avg_par - sd_par, ymax = avg_par + sd_par), width = 0.2) +  # std dev error bars
+  labs(x = "Location", y = "PAR", title = "Average PAR with Standard Deviation") +
   theme_minimal()
 ```
+
 ```{r}
 all_incubation <- all_incubation %>% 
   mutate(
@@ -242,29 +300,28 @@ avg_sd <- all_incubation %>%
   filter(space %in% c("lab", "ambient")) %>%
   group_by(space) %>%
   summarize(
-    avg_temp = mean(temp, na.rm = TRUE),
-    sd_temp = sd(temp, na.rm = TRUE),
-    min_temp = min(temp, na.rm = TRUE),
-    max_temp = max(temp, na.rm = TRUE),
-    avg_lux = mean(lux, na.rm = TRUE),
-    sd_lux = sd(lux, na.rm = TRUE),
-    min_lux = min (lux, na.rm=TRUE),
-    max_lux = max(lux, na.rm=TRUE))
+    avg_temp = mean(cal_temp, na.rm = TRUE),
+    sd_temp = sd(cal_temp, na.rm = TRUE),
+    min_temp = min(cal_temp, na.rm = TRUE),
+    max_temp = max(cal_temp, na.rm = TRUE),
+    avg_par = mean(par, na.rm = TRUE),
+    sd_par = sd(par, na.rm = TRUE),
+    min_par = min (par, na.rm=TRUE),
+    max_par = max(par, na.rm=TRUE))
 
 avg_sd
 ```
 
-
 ::: callout-caution
 The incubation temperature conditions were:
 
-- ambient 26.34 +/- 0.31 C (min 25.95, max 27.37)
-- lab 26.87 +/- 0.38 C (min 25.91, max 27.84) 
+-   ambient 26.34 +/- 0.31 C (min 25.95, max 27.37)
+-   lab 26.87 +/- 0.38 C (min 25.91, max 27.84)
 
 The incubation lux conditions were:
 
-- ambient 2350.85 +/- 5289.27 lux (min 0, max 31733.76)
-- lab 167.61 +/- 371.69 lux (min 0, max 8069.12)
+-   ambient 2350.85 +/- 5289.27 lux (min 0, max 31733.76)
+-   lab 167.61 +/- 371.69 lux (min 0, max 8069.12)
 :::
 
 # Hyopthesis testing
@@ -273,22 +330,24 @@ The incubation lux conditions were:
 
 ```{r}
 # Check homogeneity of variance
-leveneTest(temp ~ location, data = all_incubation)
+leveneTest(cal_temp ~ location, data = all_incubation)
 ```
+
 ::: callout-caution
 Our data has unequal variances (Levene's test pvalue = 0.002314) so we use Welch's t-test for ANOVA
 :::
 
 ```{r}
 # Welch's ANOVA comparing temperature by stage
-welch_anova <- oneway.test(temp ~ location, data = all_incubation, var.equal = FALSE)
+welch_anova <- oneway.test(cal_temp ~ location, data = all_incubation, var.equal = FALSE)
 print(welch_anova)
 ```
+
 Follow up the Welch's t-test with a post-hoc test
 
 ```{r}
 pairwise_results <- pairwise.t.test(
-  x = all_incubation$temp,
+  x = all_incubation$cal_temp,
   g = all_incubation$location,
   p.adjust.method = "bonferroni",
   pool.sd = FALSE
@@ -297,16 +356,15 @@ print(pairwise_results)
 
 ```
 
-
 ::: callout-caution
-Pairwise comparisons of temperature across locations using Welch’s t-tests with Bonferroni-adjusted p-values revealed no significant difference between bench and hood (p = 1) or between tank2 and tank3 (p = 1). There is a significant difference (p<0.001) between the lab spaces (the bench and the hood) and the ambient spaces (The lab spaces are significantly different from the ambient spaces (tank2 and tank3). 
+Pairwise comparisons of temperature across locations using Welch’s t-tests with Bonferroni-adjusted p-values revealed no significant difference between bench and hood (p = 1) or between tank2 and tank3 (p = 1). There is a significant difference (p\<0.001) between the lab spaces (the bench and the hood) and the ambient spaces (The lab spaces are significantly different from the ambient spaces (tank2 and tank3).
 :::
 
 ## Is temp different across space?
 
 ```{r}
 # Check homogeneity of variance
-leveneTest(temp ~ space, data = all_incubation)
+leveneTest(cal_temp ~ space, data = all_incubation)
 ```
 
 ::: callout-caution
@@ -315,7 +373,7 @@ Our data has unequal variances so we use Welch's t-test for ANOVA
 
 ```{r}
 # Welch's ANOVA comparing temperature by stage
-welch_anova <- oneway.test(temp ~ space, data = all_incubation, var.equal = FALSE)
+welch_anova <- oneway.test(cal_temp ~ space, data = all_incubation, var.equal = FALSE)
 print(welch_anova)
 
 ```
@@ -324,7 +382,7 @@ Follow up the Welch's t-test with a post-hoc test
 
 ```{r}
 pairwise_results <- pairwise.t.test(
-  x = all_incubation$temp,
+  x = all_incubation$cal_temp,
   g = all_incubation$space,
   p.adjust.method = "bonferroni",
   pool.sd = FALSE
@@ -336,6 +394,7 @@ print(pairwise_results)
 ## Is lab temp different across stage?
 
 Add a column that indicates the duration of exposure by stage
+
 ```{r}
 all_incubation <- all_incubation %>%
   mutate(
@@ -356,30 +415,31 @@ bench_by_stage <- all_incubation %>%
   filter(space == "lab") %>% 
   group_by(stage) %>%
   summarize(
-    avg_temp = mean(temp, na.rm = TRUE),
-    sd_temp = sd(temp, na.rm = TRUE),
-    min_temp = min(temp, na.rm = TRUE),
-    max_temp = max(temp, na.rm = TRUE),
-    avg_lux = mean(lux, na.rm = TRUE),
-    sd_lux = sd(lux, na.rm = TRUE),
-    min_lux = min(lux, na.rm = TRUE),
-    max_lux = max(lux, na.rm = TRUE)
+    avg_temp = mean(cal_temp, na.rm = TRUE),
+    sd_temp = sd(cal_temp, na.rm = TRUE),
+    min_temp = min(cal_temp, na.rm = TRUE),
+    max_temp = max(cal_temp, na.rm = TRUE),
+    avg_par = mean(par, na.rm = TRUE),
+    sd_par = sd(par, na.rm = TRUE),
+    min_par = min(par, na.rm = TRUE),
+    max_par = max(par, na.rm = TRUE)
   )
 
 bench_by_stage
 ```
+
 ::: callout-caution
 The lab incubation temperature conditions were:
 
-- cleavage 26.87 +/- 0.23 C (min 26.08, max 27.24)
-- prawnchip 26.79 +/- 0.36 C (min 26.17, max 27.84) 
-- early gastrula 26.94 +/- 0.51 C (min 25.91, max 27.71)
+-   cleavage 26.87 +/- 0.23 C (min 26.08, max 27.24)
+-   prawnchip 26.79 +/- 0.36 C (min 26.17, max 27.84)
+-   early gastrula 26.94 +/- 0.51 C (min 25.91, max 27.71)
 
 The lab incubation lux conditions were:
 
-- cleavage 151.7127 +/- 161.39 lux (min 0, max 409.28)
-- prawnchip 154.35 +/- 619.07 lux (min 0, max 8069.12)
-- early gastrula 201.01 +/- 187.54 (min 0.81, max 613.60)
+-   cleavage 151.7127 +/- 161.39 lux (min 0, max 409.28)
+-   prawnchip 154.35 +/- 619.07 lux (min 0, max 8069.12)
+-   early gastrula 201.01 +/- 187.54 (min 0.81, max 613.60)
 :::
 
 ```{r}
@@ -390,6 +450,7 @@ lab_incubation <- all_incubation %>%
 # Check homogeneity of variance
 leveneTest(temp ~ stage, data = lab_incubation)
 ```
+
 ::: callout-caution
 Our data has unequal variances so we use Welch's t-test for ANOVA
 :::
@@ -399,6 +460,7 @@ Our data has unequal variances so we use Welch's t-test for ANOVA
 welch_anova <- oneway.test(temp ~ stage, data = lab_incubation, var.equal = FALSE)
 print(welch_anova)
 ```
+
 Follow up the Welch's t-test with a post-hoc test
 
 ```{r}
@@ -413,11 +475,13 @@ print(pairwise_results)
 ```
 
 ::: callout-caution
-Pairwise comparisons of temperature across stage using Welch’s t-tests with Bonferroni-adjusted p-values revealed the temperatures experienced during the latest embryonic stage (early gastrula) are significantly different from the prawnchip stage (p<0.05). **HOWEVER, the actual temperature range experienced across embryonic development (26.79-26.94) is within the ambient seawater range and is ecologically parallel to the natural sea surface temp fluctuations experienced in a diurnal cycle.**
+Pairwise comparisons of temperature across stage using Welch’s t-tests with Bonferroni-adjusted p-values revealed the temperatures experienced during the latest embryonic stage (early gastrula) are significantly different from the prawnchip stage (p\<0.05). **HOWEVER, the actual temperature range experienced across embryonic development (26.79-26.94) is within the ambient seawater range and is ecologically parallel to the natural sea surface temp fluctuations experienced in a diurnal cycle.**
 :::
 
 ## Is lab temp different across spawn night?
+
 Add a column that indicates the spawn night (1, 2, or 3)
+
 ```{r}
 lab_incubation <- lab_incubation %>%
   mutate(
@@ -429,6 +493,7 @@ lab_incubation <- lab_incubation %>%
     )
   )
 ```
+
 Print a table of temps and lux by spawn night
 
 ```{r}
@@ -447,6 +512,7 @@ by_spawn <- lab_incubation %>%
 
 by_spawn
 ```
+
 ```{r}
 lab_incubation <- lab_incubation %>% 
   mutate(spawn = factor(spawn, levels = c(1, 2, 3), 
@@ -454,6 +520,7 @@ lab_incubation <- lab_incubation %>%
 # Check homogeneity of variance
 leveneTest(temp ~ spawn, data = lab_incubation)
 ```
+
 ::: callout-caution
 Our data has unequal variances so we use Welch's t-test for ANOVA
 :::
@@ -463,6 +530,7 @@ Our data has unequal variances so we use Welch's t-test for ANOVA
 welch_anova <- oneway.test(temp ~ spawn, data = lab_incubation, var.equal = FALSE)
 print(welch_anova)
 ```
+
 Follow up the Welch's t-test with a post-hoc test
 
 ```{r}
@@ -475,12 +543,17 @@ pairwise_results <- pairwise.t.test(
 print(pairwise_results)
 
 ```
+
 ::: callout-caution
-Pairwise comparisons of temperature across spawn night using Welch’s t-tests with Bonferroni-adjusted p-values revealed that each night is significantly different (p<2.2e-16). **HOWEVER the actual range of temps across all three spawn nights is 26.5 to 27.2 (less than 1C), and is an ecological parallel to actual fluctuations in sea surface temp that occur across nights of spawning.**
+Pairwise comparisons of temperature across spawn night using Welch’s t-tests with Bonferroni-adjusted p-values revealed that each night is significantly different (p\<2.2e-16). **HOWEVER the actual range of temps across all three spawn nights is 26.5 to 27.2 (less than 1C), and is an ecological parallel to actual fluctuations in sea surface temp that occur across nights of spawning.**
 :::
 
 # Summary
+
 **Temperature**
+
 Although statistically significant differences in temperature were detected across both spawn nights (with temperatures generally decreasing over the three nights) and developmental stage (with the lowest temperatures observed just before dawn during the prawnchip stage, but no significant difference between the cleavage and early gastrula stages), the magnitude of these differences was small and remained within the normal range of ambient seawater temperature fluctuations observed during a spawning event. Therefore, while temperature varied somewhat across the experimental assay, this variation is minor and unlikely to confound our results, as embryos in nature develop under similar thermal conditions.
 
 **Light**
+
+PAR inside the lab conditions was essentially zero (no light for photosynthesis) across the entirety of each incubation. This is important for us to know to be able to discuss and interpret the gene ontology results from our differential expression analysis (Which genes responded to leachate treatments, and what they do, in the context that photosynthesis of the *Symbiodiniaceae* cells already in the *M. cap* embryos were not photosynthesizing and therefore likey not transferring photosynthates to embryos for metabolic processing.

@@ -97,9 +97,9 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -305,8 +305,7 @@ div.csl-indent {
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -319,14 +318,6 @@ div.csl-indent {
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -450,7 +441,7 @@ div.csl-indent {
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -464,144 +455,144 @@ div.csl-indent {
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#september-2024" id="toc-september-2024" class="nav-link active" data-scroll-target="#september-2024">September 2024</a>
+  <li><a href="#september-2024" id="toc-september-2024" class="nav-link active" data-scroll-target="#september-2024"><span class="header-section-number">1</span> September 2024</a>
   <ul>
-  <li><a href="#sep-2024" id="toc-sep-2024" class="nav-link" data-scroll-target="#sep-2024">03-SEP-2024</a></li>
-  <li><a href="#sep-2024-1" id="toc-sep-2024-1" class="nav-link" data-scroll-target="#sep-2024-1">02-SEP-2024</a></li>
+  <li><a href="#sep-2024" id="toc-sep-2024" class="nav-link" data-scroll-target="#sep-2024"><span class="header-section-number">1.0.0.1</span> 03-SEP-2024</a></li>
+  <li><a href="#sep-2024-1" id="toc-sep-2024-1" class="nav-link" data-scroll-target="#sep-2024-1"><span class="header-section-number">1.0.0.2</span> 02-SEP-2024</a></li>
   </ul></li>
-  <li><a href="#august-2024" id="toc-august-2024" class="nav-link" data-scroll-target="#august-2024">August 2024</a>
+  <li><a href="#august-2024" id="toc-august-2024" class="nav-link" data-scroll-target="#august-2024"><span class="header-section-number">2</span> August 2024</a>
   <ul>
-  <li><a href="#aug-2024" id="toc-aug-2024" class="nav-link" data-scroll-target="#aug-2024">28-AUG-2024</a></li>
-  <li><a href="#aug-2024-1" id="toc-aug-2024-1" class="nav-link" data-scroll-target="#aug-2024-1">27-AUG-2024</a></li>
-  <li><a href="#aug-2024-2" id="toc-aug-2024-2" class="nav-link" data-scroll-target="#aug-2024-2">15-AUG-2024</a></li>
+  <li><a href="#aug-2024" id="toc-aug-2024" class="nav-link" data-scroll-target="#aug-2024"><span class="header-section-number">2.0.0.1</span> 28-AUG-2024</a></li>
+  <li><a href="#aug-2024-1" id="toc-aug-2024-1" class="nav-link" data-scroll-target="#aug-2024-1"><span class="header-section-number">2.0.0.2</span> 27-AUG-2024</a></li>
+  <li><a href="#aug-2024-2" id="toc-aug-2024-2" class="nav-link" data-scroll-target="#aug-2024-2"><span class="header-section-number">2.0.0.3</span> 15-AUG-2024</a></li>
   </ul></li>
-  <li><a href="#march-2024" id="toc-march-2024" class="nav-link" data-scroll-target="#march-2024">March 2024</a>
+  <li><a href="#march-2024" id="toc-march-2024" class="nav-link" data-scroll-target="#march-2024"><span class="header-section-number">3</span> March 2024</a>
   <ul>
-  <li><a href="#mar-2024" id="toc-mar-2024" class="nav-link" data-scroll-target="#mar-2024">28-MAR-2024</a></li>
-  <li><a href="#mar-2024-1" id="toc-mar-2024-1" class="nav-link" data-scroll-target="#mar-2024-1">21-MAR-2024</a></li>
-  <li><a href="#mar-2024-2" id="toc-mar-2024-2" class="nav-link" data-scroll-target="#mar-2024-2">20-MAR-2024</a></li>
+  <li><a href="#mar-2024" id="toc-mar-2024" class="nav-link" data-scroll-target="#mar-2024"><span class="header-section-number">3.0.0.1</span> 28-MAR-2024</a></li>
+  <li><a href="#mar-2024-1" id="toc-mar-2024-1" class="nav-link" data-scroll-target="#mar-2024-1"><span class="header-section-number">3.0.0.2</span> 21-MAR-2024</a></li>
+  <li><a href="#mar-2024-2" id="toc-mar-2024-2" class="nav-link" data-scroll-target="#mar-2024-2"><span class="header-section-number">3.0.0.3</span> 20-MAR-2024</a></li>
   </ul></li>
-  <li><a href="#february-2024" id="toc-february-2024" class="nav-link" data-scroll-target="#february-2024">February 2024</a>
+  <li><a href="#february-2024" id="toc-february-2024" class="nav-link" data-scroll-target="#february-2024"><span class="header-section-number">4</span> February 2024</a>
   <ul>
-  <li><a href="#feb-2024" id="toc-feb-2024" class="nav-link" data-scroll-target="#feb-2024">22-FEB-2024</a></li>
-  <li><a href="#feb-2024-1" id="toc-feb-2024-1" class="nav-link" data-scroll-target="#feb-2024-1">21-FEB-2024</a></li>
-  <li><a href="#feb-2024-2" id="toc-feb-2024-2" class="nav-link" data-scroll-target="#feb-2024-2">20-FEB-2024</a></li>
-  <li><a href="#feb-2024-3" id="toc-feb-2024-3" class="nav-link" data-scroll-target="#feb-2024-3"><strong>02-FEB-2024</strong></a></li>
-  <li><a href="#feb-2024-4" id="toc-feb-2024-4" class="nav-link" data-scroll-target="#feb-2024-4">08-FEB-2024</a></li>
-  <li><a href="#feb-2024-5" id="toc-feb-2024-5" class="nav-link" data-scroll-target="#feb-2024-5">07-FEB-2024</a></li>
-  <li><a href="#feb-2024-6" id="toc-feb-2024-6" class="nav-link" data-scroll-target="#feb-2024-6">05-FEB-2024</a></li>
-  <li><a href="#january-2024" id="toc-january-2024" class="nav-link" data-scroll-target="#january-2024">January 2024</a></li>
-  <li><a href="#december-2023" id="toc-december-2023" class="nav-link" data-scroll-target="#december-2023">December 2023</a></li>
-  <li><a href="#november-2023" id="toc-november-2023" class="nav-link" data-scroll-target="#november-2023">November 2023</a>
+  <li><a href="#feb-2024" id="toc-feb-2024" class="nav-link" data-scroll-target="#feb-2024"><span class="header-section-number">4.0.0.1</span> 22-FEB-2024</a></li>
+  <li><a href="#feb-2024-1" id="toc-feb-2024-1" class="nav-link" data-scroll-target="#feb-2024-1"><span class="header-section-number">4.0.0.2</span> 21-FEB-2024</a></li>
+  <li><a href="#feb-2024-2" id="toc-feb-2024-2" class="nav-link" data-scroll-target="#feb-2024-2"><span class="header-section-number">4.0.0.3</span> 20-FEB-2024</a></li>
+  <li><a href="#feb-2024-3" id="toc-feb-2024-3" class="nav-link" data-scroll-target="#feb-2024-3"><span class="header-section-number">4.0.0.4</span> <strong>02-FEB-2024</strong></a></li>
+  <li><a href="#feb-2024-4" id="toc-feb-2024-4" class="nav-link" data-scroll-target="#feb-2024-4"><span class="header-section-number">4.0.0.5</span> 08-FEB-2024</a></li>
+  <li><a href="#feb-2024-5" id="toc-feb-2024-5" class="nav-link" data-scroll-target="#feb-2024-5"><span class="header-section-number">4.0.0.6</span> 07-FEB-2024</a></li>
+  <li><a href="#feb-2024-6" id="toc-feb-2024-6" class="nav-link" data-scroll-target="#feb-2024-6"><span class="header-section-number">4.0.0.7</span> 05-FEB-2024</a></li>
+  <li><a href="#january-2024" id="toc-january-2024" class="nav-link" data-scroll-target="#january-2024"><span class="header-section-number">4.1</span> January 2024</a></li>
+  <li><a href="#december-2023" id="toc-december-2023" class="nav-link" data-scroll-target="#december-2023"><span class="header-section-number">4.2</span> December 2023</a></li>
+  <li><a href="#november-2023" id="toc-november-2023" class="nav-link" data-scroll-target="#november-2023"><span class="header-section-number">4.3</span> November 2023</a>
   <ul>
-  <li><a href="#nov-2023" id="toc-nov-2023" class="nav-link" data-scroll-target="#nov-2023">27-NOV-2023</a></li>
-  <li><a href="#nov-2023-1" id="toc-nov-2023-1" class="nav-link" data-scroll-target="#nov-2023-1"><strong>21-NOV-2023</strong></a></li>
-  <li><a href="#nov-2023-2" id="toc-nov-2023-2" class="nav-link" data-scroll-target="#nov-2023-2">11-NOV-2023</a></li>
-  <li><a href="#nov-2023-3" id="toc-nov-2023-3" class="nav-link" data-scroll-target="#nov-2023-3">10-NOV-2023</a></li>
-  <li><a href="#nov-2023-4" id="toc-nov-2023-4" class="nav-link" data-scroll-target="#nov-2023-4">09-NOV 2023</a></li>
-  <li><a href="#nov-2023-5" id="toc-nov-2023-5" class="nav-link" data-scroll-target="#nov-2023-5">08-NOV-2023</a></li>
-  <li><a href="#nov-2023-6" id="toc-nov-2023-6" class="nav-link" data-scroll-target="#nov-2023-6">05-NOV-2023</a></li>
-  <li><a href="#nov-2023-7" id="toc-nov-2023-7" class="nav-link" data-scroll-target="#nov-2023-7">03-NOV-2023</a></li>
-  <li><a href="#nov-2023-8" id="toc-nov-2023-8" class="nav-link" data-scroll-target="#nov-2023-8">02-NOV-2023</a></li>
-  <li><a href="#nov-2023-9" id="toc-nov-2023-9" class="nav-link" data-scroll-target="#nov-2023-9">01-NOV-2023</a></li>
+  <li><a href="#nov-2023" id="toc-nov-2023" class="nav-link" data-scroll-target="#nov-2023"><span class="header-section-number">4.3.0.1</span> 27-NOV-2023</a></li>
+  <li><a href="#nov-2023-1" id="toc-nov-2023-1" class="nav-link" data-scroll-target="#nov-2023-1"><span class="header-section-number">4.3.0.2</span> <strong>21-NOV-2023</strong></a></li>
+  <li><a href="#nov-2023-2" id="toc-nov-2023-2" class="nav-link" data-scroll-target="#nov-2023-2"><span class="header-section-number">4.3.0.3</span> 11-NOV-2023</a></li>
+  <li><a href="#nov-2023-3" id="toc-nov-2023-3" class="nav-link" data-scroll-target="#nov-2023-3"><span class="header-section-number">4.3.0.4</span> 10-NOV-2023</a></li>
+  <li><a href="#nov-2023-4" id="toc-nov-2023-4" class="nav-link" data-scroll-target="#nov-2023-4"><span class="header-section-number">4.3.0.5</span> 09-NOV 2023</a></li>
+  <li><a href="#nov-2023-5" id="toc-nov-2023-5" class="nav-link" data-scroll-target="#nov-2023-5"><span class="header-section-number">4.3.0.6</span> 08-NOV-2023</a></li>
+  <li><a href="#nov-2023-6" id="toc-nov-2023-6" class="nav-link" data-scroll-target="#nov-2023-6"><span class="header-section-number">4.3.0.7</span> 05-NOV-2023</a></li>
+  <li><a href="#nov-2023-7" id="toc-nov-2023-7" class="nav-link" data-scroll-target="#nov-2023-7"><span class="header-section-number">4.3.0.8</span> 03-NOV-2023</a></li>
+  <li><a href="#nov-2023-8" id="toc-nov-2023-8" class="nav-link" data-scroll-target="#nov-2023-8"><span class="header-section-number">4.3.0.9</span> 02-NOV-2023</a></li>
+  <li><a href="#nov-2023-9" id="toc-nov-2023-9" class="nav-link" data-scroll-target="#nov-2023-9"><span class="header-section-number">4.3.0.10</span> 01-NOV-2023</a></li>
   </ul></li>
-  <li><a href="#october-2023" id="toc-october-2023" class="nav-link" data-scroll-target="#october-2023">October 2023</a>
+  <li><a href="#october-2023" id="toc-october-2023" class="nav-link" data-scroll-target="#october-2023"><span class="header-section-number">4.4</span> October 2023</a>
   <ul>
-  <li><a href="#oct-2023" id="toc-oct-2023" class="nav-link" data-scroll-target="#oct-2023"><strong>27-OCT-2023</strong></a></li>
-  <li><a href="#oct-2023-1" id="toc-oct-2023-1" class="nav-link" data-scroll-target="#oct-2023-1"><strong>26-OCT-2023</strong></a></li>
-  <li><a href="#oct-2023-2" id="toc-oct-2023-2" class="nav-link" data-scroll-target="#oct-2023-2">24-OCT-2023</a></li>
-  <li><a href="#oct-2023-3" id="toc-oct-2023-3" class="nav-link" data-scroll-target="#oct-2023-3">23-OCT-2023</a></li>
-  <li><a href="#oct-2023-4" id="toc-oct-2023-4" class="nav-link" data-scroll-target="#oct-2023-4">16-OCT-2023</a></li>
-  <li><a href="#oct-2023-5" id="toc-oct-2023-5" class="nav-link" data-scroll-target="#oct-2023-5">11-OCT-2023</a></li>
-  <li><a href="#oct-2023-6" id="toc-oct-2023-6" class="nav-link" data-scroll-target="#oct-2023-6">10-OCT-2023</a></li>
-  <li><a href="#oct-2023-7" id="toc-oct-2023-7" class="nav-link" data-scroll-target="#oct-2023-7">03-OCT-2023</a></li>
-  <li><a href="#oct-2023-8" id="toc-oct-2023-8" class="nav-link" data-scroll-target="#oct-2023-8">02-OCT-2023</a></li>
+  <li><a href="#oct-2023" id="toc-oct-2023" class="nav-link" data-scroll-target="#oct-2023"><span class="header-section-number">4.4.0.1</span> <strong>27-OCT-2023</strong></a></li>
+  <li><a href="#oct-2023-1" id="toc-oct-2023-1" class="nav-link" data-scroll-target="#oct-2023-1"><span class="header-section-number">4.4.0.2</span> <strong>26-OCT-2023</strong></a></li>
+  <li><a href="#oct-2023-2" id="toc-oct-2023-2" class="nav-link" data-scroll-target="#oct-2023-2"><span class="header-section-number">4.4.0.3</span> 24-OCT-2023</a></li>
+  <li><a href="#oct-2023-3" id="toc-oct-2023-3" class="nav-link" data-scroll-target="#oct-2023-3"><span class="header-section-number">4.4.0.4</span> 23-OCT-2023</a></li>
+  <li><a href="#oct-2023-4" id="toc-oct-2023-4" class="nav-link" data-scroll-target="#oct-2023-4"><span class="header-section-number">4.4.0.5</span> 16-OCT-2023</a></li>
+  <li><a href="#oct-2023-5" id="toc-oct-2023-5" class="nav-link" data-scroll-target="#oct-2023-5"><span class="header-section-number">4.4.0.6</span> 11-OCT-2023</a></li>
+  <li><a href="#oct-2023-6" id="toc-oct-2023-6" class="nav-link" data-scroll-target="#oct-2023-6"><span class="header-section-number">4.4.0.7</span> 10-OCT-2023</a></li>
+  <li><a href="#oct-2023-7" id="toc-oct-2023-7" class="nav-link" data-scroll-target="#oct-2023-7"><span class="header-section-number">4.4.0.8</span> 03-OCT-2023</a></li>
+  <li><a href="#oct-2023-8" id="toc-oct-2023-8" class="nav-link" data-scroll-target="#oct-2023-8"><span class="header-section-number">4.4.0.9</span> 02-OCT-2023</a></li>
   </ul></li>
-  <li><a href="#september-2023" id="toc-september-2023" class="nav-link" data-scroll-target="#september-2023">September 2023</a>
+  <li><a href="#september-2023" id="toc-september-2023" class="nav-link" data-scroll-target="#september-2023"><span class="header-section-number">4.5</span> September 2023</a>
   <ul>
-  <li><a href="#sep-2023" id="toc-sep-2023" class="nav-link" data-scroll-target="#sep-2023">20-SEP-2023</a></li>
-  <li><a href="#sep-2023-1" id="toc-sep-2023-1" class="nav-link" data-scroll-target="#sep-2023-1">05-SEP-2023</a></li>
-  <li><a href="#sep-2023-2" id="toc-sep-2023-2" class="nav-link" data-scroll-target="#sep-2023-2">01-SEP-2023</a></li>
+  <li><a href="#sep-2023" id="toc-sep-2023" class="nav-link" data-scroll-target="#sep-2023"><span class="header-section-number">4.5.0.1</span> 20-SEP-2023</a></li>
+  <li><a href="#sep-2023-1" id="toc-sep-2023-1" class="nav-link" data-scroll-target="#sep-2023-1"><span class="header-section-number">4.5.0.2</span> 05-SEP-2023</a></li>
+  <li><a href="#sep-2023-2" id="toc-sep-2023-2" class="nav-link" data-scroll-target="#sep-2023-2"><span class="header-section-number">4.5.0.3</span> 01-SEP-2023</a></li>
   </ul></li>
-  <li><a href="#august-2023" id="toc-august-2023" class="nav-link" data-scroll-target="#august-2023">August 2023</a>
+  <li><a href="#august-2023" id="toc-august-2023" class="nav-link" data-scroll-target="#august-2023"><span class="header-section-number">4.6</span> August 2023</a>
   <ul>
-  <li><a href="#aug-2023" id="toc-aug-2023" class="nav-link" data-scroll-target="#aug-2023">31-AUG-2023</a></li>
-  <li><a href="#aug-2023-1" id="toc-aug-2023-1" class="nav-link" data-scroll-target="#aug-2023-1">29-AUG-2023</a></li>
-  <li><a href="#aug-2023-2" id="toc-aug-2023-2" class="nav-link" data-scroll-target="#aug-2023-2">28-AUG-2023</a></li>
-  <li><a href="#aug-2023-3" id="toc-aug-2023-3" class="nav-link" data-scroll-target="#aug-2023-3">24-AUG-2023</a></li>
-  <li><a href="#aug-2023-4" id="toc-aug-2023-4" class="nav-link" data-scroll-target="#aug-2023-4">17-AUG-2023</a></li>
-  <li><a href="#aug-2023-5" id="toc-aug-2023-5" class="nav-link" data-scroll-target="#aug-2023-5">16-AUG-2023</a></li>
-  <li><a href="#aug-2023-6" id="toc-aug-2023-6" class="nav-link" data-scroll-target="#aug-2023-6">15-AUG-2023</a></li>
-  <li><a href="#aug-2023-7" id="toc-aug-2023-7" class="nav-link" data-scroll-target="#aug-2023-7">03-AUG-2023</a></li>
+  <li><a href="#aug-2023" id="toc-aug-2023" class="nav-link" data-scroll-target="#aug-2023"><span class="header-section-number">4.6.0.1</span> 31-AUG-2023</a></li>
+  <li><a href="#aug-2023-1" id="toc-aug-2023-1" class="nav-link" data-scroll-target="#aug-2023-1"><span class="header-section-number">4.6.0.2</span> 29-AUG-2023</a></li>
+  <li><a href="#aug-2023-2" id="toc-aug-2023-2" class="nav-link" data-scroll-target="#aug-2023-2"><span class="header-section-number">4.6.0.3</span> 28-AUG-2023</a></li>
+  <li><a href="#aug-2023-3" id="toc-aug-2023-3" class="nav-link" data-scroll-target="#aug-2023-3"><span class="header-section-number">4.6.0.4</span> 24-AUG-2023</a></li>
+  <li><a href="#aug-2023-4" id="toc-aug-2023-4" class="nav-link" data-scroll-target="#aug-2023-4"><span class="header-section-number">4.6.0.5</span> 17-AUG-2023</a></li>
+  <li><a href="#aug-2023-5" id="toc-aug-2023-5" class="nav-link" data-scroll-target="#aug-2023-5"><span class="header-section-number">4.6.0.6</span> 16-AUG-2023</a></li>
+  <li><a href="#aug-2023-6" id="toc-aug-2023-6" class="nav-link" data-scroll-target="#aug-2023-6"><span class="header-section-number">4.6.0.7</span> 15-AUG-2023</a></li>
+  <li><a href="#aug-2023-7" id="toc-aug-2023-7" class="nav-link" data-scroll-target="#aug-2023-7"><span class="header-section-number">4.6.0.8</span> 03-AUG-2023</a></li>
   </ul></li>
-  <li><a href="#july-2023" id="toc-july-2023" class="nav-link" data-scroll-target="#july-2023">July 2023</a>
+  <li><a href="#july-2023" id="toc-july-2023" class="nav-link" data-scroll-target="#july-2023"><span class="header-section-number">4.7</span> July 2023</a>
   <ul>
-  <li><a href="#jul-2023" id="toc-jul-2023" class="nav-link" data-scroll-target="#jul-2023">20-JUL-2023</a></li>
-  <li><a href="#jul-2023-1" id="toc-jul-2023-1" class="nav-link" data-scroll-target="#jul-2023-1">19-JUL-2023</a></li>
+  <li><a href="#jul-2023" id="toc-jul-2023" class="nav-link" data-scroll-target="#jul-2023"><span class="header-section-number">4.7.0.1</span> 20-JUL-2023</a></li>
+  <li><a href="#jul-2023-1" id="toc-jul-2023-1" class="nav-link" data-scroll-target="#jul-2023-1"><span class="header-section-number">4.7.0.2</span> 19-JUL-2023</a></li>
   </ul></li>
-  <li><a href="#june-2023" id="toc-june-2023" class="nav-link" data-scroll-target="#june-2023">June 2023</a>
+  <li><a href="#june-2023" id="toc-june-2023" class="nav-link" data-scroll-target="#june-2023"><span class="header-section-number">4.8</span> June 2023</a>
   <ul>
-  <li><a href="#jun-2023" id="toc-jun-2023" class="nav-link" data-scroll-target="#jun-2023">07-JUN-2023</a></li>
-  <li><a href="#jun-2023-1" id="toc-jun-2023-1" class="nav-link" data-scroll-target="#jun-2023-1">06-JUN-2023</a></li>
-  <li><a href="#jun-2023-2" id="toc-jun-2023-2" class="nav-link" data-scroll-target="#jun-2023-2">05-JUN-2023</a></li>
-  <li><a href="#jun-2023-3" id="toc-jun-2023-3" class="nav-link" data-scroll-target="#jun-2023-3">02-JUN-2023</a></li>
-  <li><a href="#jun-2023-4" id="toc-jun-2023-4" class="nav-link" data-scroll-target="#jun-2023-4">01-JUN-2023</a></li>
+  <li><a href="#jun-2023" id="toc-jun-2023" class="nav-link" data-scroll-target="#jun-2023"><span class="header-section-number">4.8.0.1</span> 07-JUN-2023</a></li>
+  <li><a href="#jun-2023-1" id="toc-jun-2023-1" class="nav-link" data-scroll-target="#jun-2023-1"><span class="header-section-number">4.8.0.2</span> 06-JUN-2023</a></li>
+  <li><a href="#jun-2023-2" id="toc-jun-2023-2" class="nav-link" data-scroll-target="#jun-2023-2"><span class="header-section-number">4.8.0.3</span> 05-JUN-2023</a></li>
+  <li><a href="#jun-2023-3" id="toc-jun-2023-3" class="nav-link" data-scroll-target="#jun-2023-3"><span class="header-section-number">4.8.0.4</span> 02-JUN-2023</a></li>
+  <li><a href="#jun-2023-4" id="toc-jun-2023-4" class="nav-link" data-scroll-target="#jun-2023-4"><span class="header-section-number">4.8.0.5</span> 01-JUN-2023</a></li>
   </ul></li>
-  <li><a href="#may-2023" id="toc-may-2023" class="nav-link" data-scroll-target="#may-2023">May 2023</a>
+  <li><a href="#may-2023" id="toc-may-2023" class="nav-link" data-scroll-target="#may-2023"><span class="header-section-number">4.9</span> May 2023</a>
   <ul>
-  <li><a href="#may-2023-1" id="toc-may-2023-1" class="nav-link" data-scroll-target="#may-2023-1">31-MAY-2023</a></li>
-  <li><a href="#may-2023-2" id="toc-may-2023-2" class="nav-link" data-scroll-target="#may-2023-2">29-MAY-2023</a></li>
-  <li><a href="#may-2023-3" id="toc-may-2023-3" class="nav-link" data-scroll-target="#may-2023-3">25-MAY-2023</a></li>
-  <li><a href="#may-2023-4" id="toc-may-2023-4" class="nav-link" data-scroll-target="#may-2023-4">24-MAY-2023</a></li>
-  <li><a href="#may-2023-5" id="toc-may-2023-5" class="nav-link" data-scroll-target="#may-2023-5">23-MAY-2023</a></li>
-  <li><a href="#may-2023-6" id="toc-may-2023-6" class="nav-link" data-scroll-target="#may-2023-6">19-MAY-2023</a></li>
-  <li><a href="#may-2023-7" id="toc-may-2023-7" class="nav-link" data-scroll-target="#may-2023-7">18-MAY-2023</a></li>
-  <li><a href="#may-2023-8" id="toc-may-2023-8" class="nav-link" data-scroll-target="#may-2023-8">04-MAY-2023</a></li>
+  <li><a href="#may-2023-1" id="toc-may-2023-1" class="nav-link" data-scroll-target="#may-2023-1"><span class="header-section-number">4.9.0.1</span> 31-MAY-2023</a></li>
+  <li><a href="#may-2023-2" id="toc-may-2023-2" class="nav-link" data-scroll-target="#may-2023-2"><span class="header-section-number">4.9.0.2</span> 29-MAY-2023</a></li>
+  <li><a href="#may-2023-3" id="toc-may-2023-3" class="nav-link" data-scroll-target="#may-2023-3"><span class="header-section-number">4.9.0.3</span> 25-MAY-2023</a></li>
+  <li><a href="#may-2023-4" id="toc-may-2023-4" class="nav-link" data-scroll-target="#may-2023-4"><span class="header-section-number">4.9.0.4</span> 24-MAY-2023</a></li>
+  <li><a href="#may-2023-5" id="toc-may-2023-5" class="nav-link" data-scroll-target="#may-2023-5"><span class="header-section-number">4.9.0.5</span> 23-MAY-2023</a></li>
+  <li><a href="#may-2023-6" id="toc-may-2023-6" class="nav-link" data-scroll-target="#may-2023-6"><span class="header-section-number">4.9.0.6</span> 19-MAY-2023</a></li>
+  <li><a href="#may-2023-7" id="toc-may-2023-7" class="nav-link" data-scroll-target="#may-2023-7"><span class="header-section-number">4.9.0.7</span> 18-MAY-2023</a></li>
+  <li><a href="#may-2023-8" id="toc-may-2023-8" class="nav-link" data-scroll-target="#may-2023-8"><span class="header-section-number">4.9.0.8</span> 04-MAY-2023</a></li>
   </ul></li>
-  <li><a href="#april-2023" id="toc-april-2023" class="nav-link" data-scroll-target="#april-2023">April 2023</a>
+  <li><a href="#april-2023" id="toc-april-2023" class="nav-link" data-scroll-target="#april-2023"><span class="header-section-number">4.10</span> April 2023</a>
   <ul>
-  <li><a href="#apr-2023" id="toc-apr-2023" class="nav-link" data-scroll-target="#apr-2023">25-APR-2023</a></li>
-  <li><a href="#apr-2023-1" id="toc-apr-2023-1" class="nav-link" data-scroll-target="#apr-2023-1">24-APR-2023</a></li>
-  <li><a href="#apr-2023-2" id="toc-apr-2023-2" class="nav-link" data-scroll-target="#apr-2023-2">21-APR-2023</a></li>
-  <li><a href="#apr-2023-3" id="toc-apr-2023-3" class="nav-link" data-scroll-target="#apr-2023-3">20-APR-2023</a></li>
-  <li><a href="#apr-2023-4" id="toc-apr-2023-4" class="nav-link" data-scroll-target="#apr-2023-4">19-APR-2023</a></li>
-  <li><a href="#apr-2023-5" id="toc-apr-2023-5" class="nav-link" data-scroll-target="#apr-2023-5">18-APR-2023</a></li>
-  <li><a href="#apr-2023-6" id="toc-apr-2023-6" class="nav-link" data-scroll-target="#apr-2023-6">17-APR-2023</a></li>
-  <li><a href="#apr-2023-7" id="toc-apr-2023-7" class="nav-link" data-scroll-target="#apr-2023-7">14-APR-2023</a></li>
-  <li><a href="#apr-2023-8" id="toc-apr-2023-8" class="nav-link" data-scroll-target="#apr-2023-8">11-APR-2023</a></li>
-  <li><a href="#apr-2023-9" id="toc-apr-2023-9" class="nav-link" data-scroll-target="#apr-2023-9">10-APR-2023</a></li>
+  <li><a href="#apr-2023" id="toc-apr-2023" class="nav-link" data-scroll-target="#apr-2023"><span class="header-section-number">4.10.0.1</span> 25-APR-2023</a></li>
+  <li><a href="#apr-2023-1" id="toc-apr-2023-1" class="nav-link" data-scroll-target="#apr-2023-1"><span class="header-section-number">4.10.0.2</span> 24-APR-2023</a></li>
+  <li><a href="#apr-2023-2" id="toc-apr-2023-2" class="nav-link" data-scroll-target="#apr-2023-2"><span class="header-section-number">4.10.0.3</span> 21-APR-2023</a></li>
+  <li><a href="#apr-2023-3" id="toc-apr-2023-3" class="nav-link" data-scroll-target="#apr-2023-3"><span class="header-section-number">4.10.0.4</span> 20-APR-2023</a></li>
+  <li><a href="#apr-2023-4" id="toc-apr-2023-4" class="nav-link" data-scroll-target="#apr-2023-4"><span class="header-section-number">4.10.0.5</span> 19-APR-2023</a></li>
+  <li><a href="#apr-2023-5" id="toc-apr-2023-5" class="nav-link" data-scroll-target="#apr-2023-5"><span class="header-section-number">4.10.0.6</span> 18-APR-2023</a></li>
+  <li><a href="#apr-2023-6" id="toc-apr-2023-6" class="nav-link" data-scroll-target="#apr-2023-6"><span class="header-section-number">4.10.0.7</span> 17-APR-2023</a></li>
+  <li><a href="#apr-2023-7" id="toc-apr-2023-7" class="nav-link" data-scroll-target="#apr-2023-7"><span class="header-section-number">4.10.0.8</span> 14-APR-2023</a></li>
+  <li><a href="#apr-2023-8" id="toc-apr-2023-8" class="nav-link" data-scroll-target="#apr-2023-8"><span class="header-section-number">4.10.0.9</span> 11-APR-2023</a></li>
+  <li><a href="#apr-2023-9" id="toc-apr-2023-9" class="nav-link" data-scroll-target="#apr-2023-9"><span class="header-section-number">4.10.0.10</span> 10-APR-2023</a></li>
   </ul></li>
-  <li><a href="#march-2023" id="toc-march-2023" class="nav-link" data-scroll-target="#march-2023">March 2023</a>
+  <li><a href="#march-2023" id="toc-march-2023" class="nav-link" data-scroll-target="#march-2023"><span class="header-section-number">4.11</span> March 2023</a>
   <ul>
-  <li><a href="#mar-2023" id="toc-mar-2023" class="nav-link" data-scroll-target="#mar-2023">29-MAR-2023</a></li>
-  <li><a href="#mar-2023-1" id="toc-mar-2023-1" class="nav-link" data-scroll-target="#mar-2023-1">28-MAR-2023</a></li>
-  <li><a href="#mar-2023-2" id="toc-mar-2023-2" class="nav-link" data-scroll-target="#mar-2023-2">27-MAR-2023</a>
+  <li><a href="#mar-2023" id="toc-mar-2023" class="nav-link" data-scroll-target="#mar-2023"><span class="header-section-number">4.11.0.1</span> 29-MAR-2023</a></li>
+  <li><a href="#mar-2023-1" id="toc-mar-2023-1" class="nav-link" data-scroll-target="#mar-2023-1"><span class="header-section-number">4.11.0.2</span> 28-MAR-2023</a></li>
+  <li><a href="#mar-2023-2" id="toc-mar-2023-2" class="nav-link" data-scroll-target="#mar-2023-2"><span class="header-section-number">4.11.0.3</span> 27-MAR-2023</a>
   <ul class="collapse">
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="header-section-number">4.11.0.3.1</span> </a></li>
   </ul></li>
-  <li><a href="#mar-2023-3" id="toc-mar-2023-3" class="nav-link" data-scroll-target="#mar-2023-3">21-MAR-2023</a></li>
-  <li><a href="#mar-2023-4" id="toc-mar-2023-4" class="nav-link" data-scroll-target="#mar-2023-4">20-MAR-2023</a></li>
-  <li><a href="#mar-2023-5" id="toc-mar-2023-5" class="nav-link" data-scroll-target="#mar-2023-5">16-MAR-2023</a></li>
-  <li><a href="#mar-2023-6" id="toc-mar-2023-6" class="nav-link" data-scroll-target="#mar-2023-6">15-MAR-2023</a></li>
-  <li><a href="#mar-2023-7" id="toc-mar-2023-7" class="nav-link" data-scroll-target="#mar-2023-7">14-MAR-2023</a></li>
-  <li><a href="#mar-2023-8" id="toc-mar-2023-8" class="nav-link" data-scroll-target="#mar-2023-8">13-MAR-2023</a></li>
-  <li><a href="#mar-2023-9" id="toc-mar-2023-9" class="nav-link" data-scroll-target="#mar-2023-9">10-MAR-2023</a></li>
-  <li><a href="#mar-2023-10" id="toc-mar-2023-10" class="nav-link" data-scroll-target="#mar-2023-10">09-MAR-2023</a></li>
-  <li><a href="#mar-2023-11" id="toc-mar-2023-11" class="nav-link" data-scroll-target="#mar-2023-11">07-MAR-2023</a></li>
-  <li><a href="#mar-2023-12" id="toc-mar-2023-12" class="nav-link" data-scroll-target="#mar-2023-12">06-MAR-2023</a></li>
-  <li><a href="#mar-2023-13" id="toc-mar-2023-13" class="nav-link" data-scroll-target="#mar-2023-13">03-MAR-2023</a></li>
-  <li><a href="#mar-2023-14" id="toc-mar-2023-14" class="nav-link" data-scroll-target="#mar-2023-14">02-MAR-2023</a></li>
+  <li><a href="#mar-2023-3" id="toc-mar-2023-3" class="nav-link" data-scroll-target="#mar-2023-3"><span class="header-section-number">4.11.0.4</span> 21-MAR-2023</a></li>
+  <li><a href="#mar-2023-4" id="toc-mar-2023-4" class="nav-link" data-scroll-target="#mar-2023-4"><span class="header-section-number">4.11.0.5</span> 20-MAR-2023</a></li>
+  <li><a href="#mar-2023-5" id="toc-mar-2023-5" class="nav-link" data-scroll-target="#mar-2023-5"><span class="header-section-number">4.11.0.6</span> 16-MAR-2023</a></li>
+  <li><a href="#mar-2023-6" id="toc-mar-2023-6" class="nav-link" data-scroll-target="#mar-2023-6"><span class="header-section-number">4.11.0.7</span> 15-MAR-2023</a></li>
+  <li><a href="#mar-2023-7" id="toc-mar-2023-7" class="nav-link" data-scroll-target="#mar-2023-7"><span class="header-section-number">4.11.0.8</span> 14-MAR-2023</a></li>
+  <li><a href="#mar-2023-8" id="toc-mar-2023-8" class="nav-link" data-scroll-target="#mar-2023-8"><span class="header-section-number">4.11.0.9</span> 13-MAR-2023</a></li>
+  <li><a href="#mar-2023-9" id="toc-mar-2023-9" class="nav-link" data-scroll-target="#mar-2023-9"><span class="header-section-number">4.11.0.10</span> 10-MAR-2023</a></li>
+  <li><a href="#mar-2023-10" id="toc-mar-2023-10" class="nav-link" data-scroll-target="#mar-2023-10"><span class="header-section-number">4.11.0.11</span> 09-MAR-2023</a></li>
+  <li><a href="#mar-2023-11" id="toc-mar-2023-11" class="nav-link" data-scroll-target="#mar-2023-11"><span class="header-section-number">4.11.0.12</span> 07-MAR-2023</a></li>
+  <li><a href="#mar-2023-12" id="toc-mar-2023-12" class="nav-link" data-scroll-target="#mar-2023-12"><span class="header-section-number">4.11.0.13</span> 06-MAR-2023</a></li>
+  <li><a href="#mar-2023-13" id="toc-mar-2023-13" class="nav-link" data-scroll-target="#mar-2023-13"><span class="header-section-number">4.11.0.14</span> 03-MAR-2023</a></li>
+  <li><a href="#mar-2023-14" id="toc-mar-2023-14" class="nav-link" data-scroll-target="#mar-2023-14"><span class="header-section-number">4.11.0.15</span> 02-MAR-2023</a></li>
   </ul></li>
-  <li><a href="#january-2023" id="toc-january-2023" class="nav-link" data-scroll-target="#january-2023">January 2023</a>
+  <li><a href="#january-2023" id="toc-january-2023" class="nav-link" data-scroll-target="#january-2023"><span class="header-section-number">4.12</span> January 2023</a>
   <ul>
-  <li><a href="#jan-2023" id="toc-jan-2023" class="nav-link" data-scroll-target="#jan-2023">31-JAN-2023</a></li>
-  <li><a href="#jan-2023-1" id="toc-jan-2023-1" class="nav-link" data-scroll-target="#jan-2023-1">20-JAN-2023</a></li>
-  <li><a href="#jan-2023-2" id="toc-jan-2023-2" class="nav-link" data-scroll-target="#jan-2023-2">19-JAN-2023</a></li>
-  <li><a href="#jan-2023-3" id="toc-jan-2023-3" class="nav-link" data-scroll-target="#jan-2023-3">18-JAN-2023</a></li>
-  <li><a href="#jan-2023-4" id="toc-jan-2023-4" class="nav-link" data-scroll-target="#jan-2023-4">17-JAN-2023</a></li>
-  <li><a href="#jan-2023-5" id="toc-jan-2023-5" class="nav-link" data-scroll-target="#jan-2023-5">13-JAN-2023</a></li>
-  <li><a href="#jan-2023-6" id="toc-jan-2023-6" class="nav-link" data-scroll-target="#jan-2023-6">12-JAN-2023</a></li>
-  <li><a href="#jan-2023-7" id="toc-jan-2023-7" class="nav-link" data-scroll-target="#jan-2023-7">09-JAN-2023</a></li>
+  <li><a href="#jan-2023" id="toc-jan-2023" class="nav-link" data-scroll-target="#jan-2023"><span class="header-section-number">4.12.0.1</span> 31-JAN-2023</a></li>
+  <li><a href="#jan-2023-1" id="toc-jan-2023-1" class="nav-link" data-scroll-target="#jan-2023-1"><span class="header-section-number">4.12.0.2</span> 20-JAN-2023</a></li>
+  <li><a href="#jan-2023-2" id="toc-jan-2023-2" class="nav-link" data-scroll-target="#jan-2023-2"><span class="header-section-number">4.12.0.3</span> 19-JAN-2023</a></li>
+  <li><a href="#jan-2023-3" id="toc-jan-2023-3" class="nav-link" data-scroll-target="#jan-2023-3"><span class="header-section-number">4.12.0.4</span> 18-JAN-2023</a></li>
+  <li><a href="#jan-2023-4" id="toc-jan-2023-4" class="nav-link" data-scroll-target="#jan-2023-4"><span class="header-section-number">4.12.0.5</span> 17-JAN-2023</a></li>
+  <li><a href="#jan-2023-5" id="toc-jan-2023-5" class="nav-link" data-scroll-target="#jan-2023-5"><span class="header-section-number">4.12.0.6</span> 13-JAN-2023</a></li>
+  <li><a href="#jan-2023-6" id="toc-jan-2023-6" class="nav-link" data-scroll-target="#jan-2023-6"><span class="header-section-number">4.12.0.7</span> 12-JAN-2023</a></li>
+  <li><a href="#jan-2023-7" id="toc-jan-2023-7" class="nav-link" data-scroll-target="#jan-2023-7"><span class="header-section-number">4.12.0.8</span> 09-JAN-2023</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -619,40 +610,40 @@ div.csl-indent {
 
 
 
-<section id="september-2024" class="level1">
-<h1>September 2024</h1>
-<section id="sep-2024" class="level4">
-<h4 class="anchored" data-anchor-id="sep-2024">03-SEP-2024</h4>
+<section id="september-2024" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> September 2024</h1>
+<section id="sep-2024" class="level4" data-number="1.0.0.1">
+<h4 data-number="1.0.0.1" class="anchored" data-anchor-id="sep-2024"><span class="header-section-number">1.0.0.1</span> 03-SEP-2024</h4>
 <ul>
 <li><p>Received confirmation that RNA is in line for QAQC</p></li>
 <li><p>Read manual for Nikon compound scope, setup for making embryology preservation slides &amp; taking photos</p></li>
 </ul>
 </section>
-<section id="sep-2024-1" class="level4">
-<h4 class="anchored" data-anchor-id="sep-2024-1">02-SEP-2024</h4>
+<section id="sep-2024-1" class="level4" data-number="1.0.0.2">
+<h4 data-number="1.0.0.2" class="anchored" data-anchor-id="sep-2024-1"><span class="header-section-number">1.0.0.2</span> 02-SEP-2024</h4>
 <ul>
 <li><p>Submitted Sample Form to Azenta</p></li>
 <li><p>Writing &amp; editing chapter 1 methods</p></li>
 </ul>
 </section>
 </section>
-<section id="august-2024" class="level1">
-<h1>August 2024</h1>
-<section id="aug-2024" class="level4">
-<h4 class="anchored" data-anchor-id="aug-2024">28-AUG-2024</h4>
+<section id="august-2024" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> August 2024</h1>
+<section id="aug-2024" class="level4" data-number="2.0.0.1">
+<h4 data-number="2.0.0.1" class="anchored" data-anchor-id="aug-2024"><span class="header-section-number">2.0.0.1</span> 28-AUG-2024</h4>
 <ul>
 <li>Received email confirmation of receipt of RNA at Azenta!</li>
 </ul>
 </section>
-<section id="aug-2024-1" class="level4">
-<h4 class="anchored" data-anchor-id="aug-2024-1">27-AUG-2024</h4>
+<section id="aug-2024-1" class="level4" data-number="2.0.0.2">
+<h4 data-number="2.0.0.2" class="anchored" data-anchor-id="aug-2024-1"><span class="header-section-number">2.0.0.2</span> 27-AUG-2024</h4>
 <ul>
 <li><p>Shipped Total RNA to Azenta in 96 well plate on ~16lbs of dry ice, FedEx Priority Overnight from SeaTac FedEx Office Ship Center</p></li>
 <li><p>Tracking #: 278809181237</p></li>
 </ul>
 </section>
-<section id="aug-2024-2" class="level4">
-<h4 class="anchored" data-anchor-id="aug-2024-2">15-AUG-2024</h4>
+<section id="aug-2024-2" class="level4" data-number="2.0.0.3">
+<h4 data-number="2.0.0.3" class="anchored" data-anchor-id="aug-2024-2"><span class="header-section-number">2.0.0.3</span> 15-AUG-2024</h4>
 <ul>
 <li><p>Met with Jefferey Kim of Azenta GeneWiz</p>
 <ul>
@@ -664,10 +655,10 @@ div.csl-indent {
 </ul>
 </section>
 </section>
-<section id="march-2024" class="level1">
-<h1>March 2024</h1>
-<section id="mar-2024" class="level4">
-<h4 class="anchored" data-anchor-id="mar-2024">28-MAR-2024</h4>
+<section id="march-2024" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> March 2024</h1>
+<section id="mar-2024" class="level4" data-number="3.0.0.1">
+<h4 data-number="3.0.0.1" class="anchored" data-anchor-id="mar-2024"><span class="header-section-number">3.0.0.1</span> 28-MAR-2024</h4>
 <ul>
 <li><p>met with Kip and made calendar of assignments due</p></li>
 <li><p>changed out filters on seawater filter rack in PBB</p>
@@ -682,8 +673,8 @@ div.csl-indent {
 <li><p>downloaded AmScope manual: <a href="https://storage.googleapis.com/software-download-d79bb.appspot.com/Manual%20Download%20Files/Manual%20Files/Cameras/MU_MD_Series_Camera_Software_Manual.pdf" class="uri">https://storage.googleapis.com/software-download-d79bb.appspot.com/Manual%20Download%20Files/Manual%20Files/Cameras/MU_MD_Series_Camera_Software_Manual.pdf</a></p></li>
 </ul>
 </section>
-<section id="mar-2024-1" class="level4">
-<h4 class="anchored" data-anchor-id="mar-2024-1">21-MAR-2024</h4>
+<section id="mar-2024-1" class="level4" data-number="3.0.0.2">
+<h4 data-number="3.0.0.2" class="anchored" data-anchor-id="mar-2024-1"><span class="header-section-number">3.0.0.2</span> 21-MAR-2024</h4>
 <ul>
 <li><p>spent nearly all day drying an edge of each petri dish, and gluing bee-tags to them with superglue, then letting it dry by floating the petri dish on a floating rack in the seatable. Took all day..</p></li>
 <li><p>swapped anemones from upper seatable to lower, changed water in upper, and letting it come down to temp (when doing water changes, cannot do it directly, as header water is at room temp and seatables are at 10C…. How will I deal with this during the experiment when each anemone is in a 200mL jar and I’ll be doing water changes every other day</p>
@@ -714,17 +705,17 @@ div.csl-indent {
 <p>12 batches… that’s a lot, and should be plenty since it is a highly concentrated amount that will be diluted.</p>
 <p>How will it be diluted?</p>
 </section>
-<section id="mar-2024-2" class="level4">
-<h4 class="anchored" data-anchor-id="mar-2024-2">20-MAR-2024</h4>
+<section id="mar-2024-2" class="level4" data-number="3.0.0.3">
+<h4 data-number="3.0.0.3" class="anchored" data-anchor-id="mar-2024-2"><span class="header-section-number">3.0.0.3</span> 20-MAR-2024</h4>
 <ul>
 <li>cleaned anemones by picking rocks and debris from them, and squirting with chilled seawater from a lab squeezie bottle. Two were ‘escapees’, one was fully out of the petri dish! I popped it back in. The ones that are nudging around the edge/lip of the petri dish I use my finger to just push their pedal disc back inside the dish… not sure what I can use to deter them from escape that won’t expose them to more chemicals (i.e.&nbsp;tape ahdesive, etc.)</li>
 </ul>
 </section>
 </section>
-<section id="february-2024" class="level1 page-columns page-full">
-<h1>February 2024</h1>
-<section id="feb-2024" class="level4">
-<h4 class="anchored" data-anchor-id="feb-2024">22-FEB-2024</h4>
+<section id="february-2024" class="level1 page-columns page-full" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> February 2024</h1>
+<section id="feb-2024" class="level4" data-number="4.0.0.1">
+<h4 data-number="4.0.0.1" class="anchored" data-anchor-id="feb-2024"><span class="header-section-number">4.0.0.1</span> 22-FEB-2024</h4>
 <ul>
 <li><p>Roberts Lab meeting, received feedback on anemone research proposal: suggested I do initial response curves to find at what temp A. elegantissima experience stress, at what microplastic leachate concentration do they experience stress? Measure response variables ‘quickly’ by respirometry and PAM. Can I make the single stress, multiple response variable, the first chapter of the Master’s thesis? Then, two stressors together with `omics response variables (once we find the inflection points of stress) can be the second chapter…. Ariana pointed out that the paper reviewers are going to want to know why I chose certain concentrations of microplastic leachate. I have to justify that by doing a response curve first. Learned about Roberts Lab pubathon.</p></li>
 <li><p>Took FireSting O2 to IT to try and get correct drivers on <code>mariscos</code> ruggedized laptop to run the program…</p></li>
@@ -740,8 +731,8 @@ div.csl-indent {
 </blockquote></li>
 </ul>
 </section>
-<section id="feb-2024-1" class="level4">
-<h4 class="anchored" data-anchor-id="feb-2024-1">21-FEB-2024</h4>
+<section id="feb-2024-1" class="level4" data-number="4.0.0.2">
+<h4 data-number="4.0.0.2" class="anchored" data-anchor-id="feb-2024-1"><span class="header-section-number">4.0.0.2</span> 21-FEB-2024</h4>
 <ul>
 <li><p>pyroscience FireStingO2 only works on Windows 10!?</p></li>
 <li><p>Ammonia levels in PBB header tank are at 1ppm, something green is growing in there. When was the last time we checked that the UV sterilizer was working? I should change out all the filters on that seawater purification rig, and the reverse osmosis deionized water filter cascade.</p></li>
@@ -888,8 +879,8 @@ div.csl-indent {
 <li><p>reserved SAFS Truck for seawater pickup</p></li>
 </ul>
 </section>
-<section id="feb-2024-2" class="level4">
-<h4 class="anchored" data-anchor-id="feb-2024-2">20-FEB-2024</h4>
+<section id="feb-2024-2" class="level4" data-number="4.0.0.3">
+<h4 data-number="4.0.0.3" class="anchored" data-anchor-id="feb-2024-2"><span class="header-section-number">4.0.0.3</span> 20-FEB-2024</h4>
 <ul>
 <li><p>Downloaded pyroscience FireStingO2 Pyro Oxygen Logger</p>
 <ul>
@@ -898,8 +889,8 @@ div.csl-indent {
 </ul></li>
 </ul>
 </section>
-<section id="feb-2024-3" class="level4">
-<h4 class="anchored" data-anchor-id="feb-2024-3"><strong>02-FEB-2024</strong></h4>
+<section id="feb-2024-3" class="level4" data-number="4.0.0.4">
+<h4 data-number="4.0.0.4" class="anchored" data-anchor-id="feb-2024-3"><span class="header-section-number">4.0.0.4</span> <strong>02-FEB-2024</strong></h4>
 <ul>
 <li><p>Follow-up with UW office of veterans affairs about debt</p></li>
 <li><p>Lab meeting notes:</p>
@@ -929,8 +920,8 @@ div.csl-indent {
 </ul></li>
 </ul>
 </section>
-<section id="feb-2024-4" class="level4">
-<h4 class="anchored" data-anchor-id="feb-2024-4">08-FEB-2024</h4>
+<section id="feb-2024-4" class="level4" data-number="4.0.0.5">
+<h4 data-number="4.0.0.5" class="anchored" data-anchor-id="feb-2024-4"><span class="header-section-number">4.0.0.5</span> 08-FEB-2024</h4>
 <ul>
 <li><p>attended Roberts Lab meeting</p>
 <ul>
@@ -939,15 +930,15 @@ div.csl-indent {
 <li><p>worked on dropbox-uploader app in raven server to try and get data from dropbox directly to raven *not working</p></li>
 </ul>
 </section>
-<section id="feb-2024-5" class="level4">
-<h4 class="anchored" data-anchor-id="feb-2024-5">07-FEB-2024</h4>
+<section id="feb-2024-5" class="level4" data-number="4.0.0.6">
+<h4 data-number="4.0.0.6" class="anchored" data-anchor-id="feb-2024-5"><span class="header-section-number">4.0.0.6</span> 07-FEB-2024</h4>
 <ul>
 <li><p>Identified anemones from Alki Beach have <em>Symbiodinium muscatinei</em></p></li>
 <li><p>Identified anemones from Teddy Bear Cove have <em>Symbiodinium muscatinei</em></p></li>
 </ul>
 </section>
-<section id="feb-2024-6" class="level4">
-<h4 class="anchored" data-anchor-id="feb-2024-6">05-FEB-2024</h4>
+<section id="feb-2024-6" class="level4" data-number="4.0.0.7">
+<h4 data-number="4.0.0.7" class="anchored" data-anchor-id="feb-2024-6"><span class="header-section-number">4.0.0.7</span> 05-FEB-2024</h4>
 <ul>
 <li><p>Lab meeting cancelled</p></li>
 <li><p>emailed Francesco Saliu asking about sending their lab SPME fibers for analysis</p>
@@ -965,16 +956,16 @@ div.csl-indent {
 <li>Get PAM photosynthesis initial data</li>
 </ul>
 </section>
-<section id="january-2024" class="level2">
-<h2 class="anchored" data-anchor-id="january-2024">January 2024</h2>
+<section id="january-2024" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="january-2024"><span class="header-section-number">4.1</span> January 2024</h2>
 </section>
-<section id="december-2023" class="level2">
-<h2 class="anchored" data-anchor-id="december-2023">December 2023</h2>
+<section id="december-2023" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="december-2023"><span class="header-section-number">4.2</span> December 2023</h2>
 </section>
-<section id="november-2023" class="level2">
-<h2 class="anchored" data-anchor-id="november-2023">November 2023</h2>
-<section id="nov-2023" class="level4">
-<h4 class="anchored" data-anchor-id="nov-2023">27-NOV-2023</h4>
+<section id="november-2023" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="november-2023"><span class="header-section-number">4.3</span> November 2023</h2>
+<section id="nov-2023" class="level4" data-number="4.3.0.1">
+<h4 data-number="4.3.0.1" class="anchored" data-anchor-id="nov-2023"><span class="header-section-number">4.3.0.1</span> 27-NOV-2023</h4>
 <ul>
 <li>Lab Meeting:
 <ul>
@@ -987,8 +978,8 @@ div.csl-indent {
 <li>Must order sea urchins on Mon Dec 11th for a Mon Dec 18th/Tues Dec 19th delivery</li>
 </ul>
 </section>
-<section id="nov-2023-1" class="level4">
-<h4 class="anchored" data-anchor-id="nov-2023-1"><strong>21-NOV-2023</strong></h4>
+<section id="nov-2023-1" class="level4" data-number="4.3.0.2">
+<h4 data-number="4.3.0.2" class="anchored" data-anchor-id="nov-2023-1"><span class="header-section-number">4.3.0.2</span> <strong>21-NOV-2023</strong></h4>
 <ul>
 <li><p><a href="../committee-2/index.qmd">2nd Master’s Thesis Committee Meeting</a></p>
 <ul>
@@ -996,32 +987,32 @@ div.csl-indent {
 </ul></li>
 </ul>
 </section>
-<section id="nov-2023-2" class="level4">
-<h4 class="anchored" data-anchor-id="nov-2023-2">11-NOV-2023</h4>
+<section id="nov-2023-2" class="level4" data-number="4.3.0.3">
+<h4 data-number="4.3.0.3" class="anchored" data-anchor-id="nov-2023-2"><span class="header-section-number">4.3.0.3</span> 11-NOV-2023</h4>
 <ul>
 <li>WSN day 4</li>
 </ul>
 </section>
-<section id="nov-2023-3" class="level4">
-<h4 class="anchored" data-anchor-id="nov-2023-3">10-NOV-2023</h4>
+<section id="nov-2023-3" class="level4" data-number="4.3.0.4">
+<h4 data-number="4.3.0.4" class="anchored" data-anchor-id="nov-2023-3"><span class="header-section-number">4.3.0.4</span> 10-NOV-2023</h4>
 <ul>
 <li>WSN day 3</li>
 </ul>
 </section>
-<section id="nov-2023-4" class="level4">
-<h4 class="anchored" data-anchor-id="nov-2023-4">09-NOV 2023</h4>
+<section id="nov-2023-4" class="level4" data-number="4.3.0.5">
+<h4 data-number="4.3.0.5" class="anchored" data-anchor-id="nov-2023-4"><span class="header-section-number">4.3.0.5</span> 09-NOV 2023</h4>
 <ul>
 <li>WSN day 2</li>
 </ul>
 </section>
-<section id="nov-2023-5" class="level4">
-<h4 class="anchored" data-anchor-id="nov-2023-5">08-NOV-2023</h4>
+<section id="nov-2023-5" class="level4" data-number="4.3.0.6">
+<h4 data-number="4.3.0.6" class="anchored" data-anchor-id="nov-2023-5"><span class="header-section-number">4.3.0.6</span> 08-NOV-2023</h4>
 <ul>
 <li>WSN day 1</li>
 </ul>
 </section>
-<section id="nov-2023-6" class="level4">
-<h4 class="anchored" data-anchor-id="nov-2023-6">05-NOV-2023</h4>
+<section id="nov-2023-6" class="level4" data-number="4.3.0.7">
+<h4 data-number="4.3.0.7" class="anchored" data-anchor-id="nov-2023-6"><span class="header-section-number">4.3.0.7</span> 05-NOV-2023</h4>
 <ul>
 <li><p>Undoing large file commit on coral-pae-temp for ~2hrs 🤬, tried to just undo the one commit, but couldn’t get it to work. Had to execute <code>git reset –hard origin/main</code></p></li>
 <li><p>Added the following to the <code>git/hooks/pre-commit</code> file:</p>
@@ -1049,8 +1040,8 @@ then
 fi</code></pre></li>
 </ul>
 </section>
-<section id="nov-2023-7" class="level4">
-<h4 class="anchored" data-anchor-id="nov-2023-7">03-NOV-2023</h4>
+<section id="nov-2023-7" class="level4" data-number="4.3.0.8">
+<h4 data-number="4.3.0.8" class="anchored" data-anchor-id="nov-2023-7"><span class="header-section-number">4.3.0.8</span> 03-NOV-2023</h4>
 <ul>
 <li><p>Finished extraction, nanodrop &amp; qubit for 12 samples</p>
 <ul>
@@ -1069,8 +1060,8 @@ fi</code></pre></li>
 </ul></li>
 </ul>
 </section>
-<section id="nov-2023-8" class="level4">
-<h4 class="anchored" data-anchor-id="nov-2023-8">02-NOV-2023</h4>
+<section id="nov-2023-8" class="level4" data-number="4.3.0.9">
+<h4 data-number="4.3.0.9" class="anchored" data-anchor-id="nov-2023-8"><span class="header-section-number">4.3.0.9</span> 02-NOV-2023</h4>
 <ul>
 <li><p>Started extraction of 12 samples, paused after adding 350uL of DNA/RNA Lysis Buffer to 350uL of PK-Digested sample supernatent, and frozen in -80 freezer:</p>
 <ul>
@@ -1102,8 +1093,8 @@ fi</code></pre></li>
 </ul></li>
 </ul>
 </section>
-<section id="nov-2023-9" class="level4">
-<h4 class="anchored" data-anchor-id="nov-2023-9">01-NOV-2023</h4>
+<section id="nov-2023-9" class="level4" data-number="4.3.0.10">
+<h4 data-number="4.3.0.10" class="anchored" data-anchor-id="nov-2023-9"><span class="header-section-number">4.3.0.10</span> 01-NOV-2023</h4>
 <ul>
 <li><p>Finished extraction &amp; nanodrop of 10 samples:</p>
 <ul>
@@ -1140,18 +1131,18 @@ fi</code></pre></li>
 </ul>
 </section>
 </section>
-<section id="october-2023" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="october-2023">October 2023</h2>
-<section id="oct-2023" class="level4">
-<h4 class="anchored" data-anchor-id="oct-2023"><strong>27-OCT-2023</strong></h4>
+<section id="october-2023" class="level2 page-columns page-full" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="october-2023"><span class="header-section-number">4.4</span> October 2023</h2>
+<section id="oct-2023" class="level4" data-number="4.4.0.1">
+<h4 data-number="4.4.0.1" class="anchored" data-anchor-id="oct-2023"><span class="header-section-number">4.4.0.1</span> <strong>27-OCT-2023</strong></h4>
 <ul>
 <li><p>QA/QC’d samples from 26-OCT-2023</p></li>
 <li><p>Met with Kip &amp; moved experiment setup to PBB</p></li>
 <li><p>Collected glycerol from Jon Bakker at Horticultural Center Merill Hall</p></li>
 </ul>
 </section>
-<section id="oct-2023-1" class="level4">
-<h4 class="anchored" data-anchor-id="oct-2023-1"><strong>26-OCT-2023</strong></h4>
+<section id="oct-2023-1" class="level4" data-number="4.4.0.2">
+<h4 data-number="4.4.0.2" class="anchored" data-anchor-id="oct-2023-1"><span class="header-section-number">4.4.0.2</span> <strong>26-OCT-2023</strong></h4>
 <ul>
 <li><p>extracted samples:</p>
 <ul>
@@ -1168,21 +1159,21 @@ fi</code></pre></li>
 </ul></li>
 </ul>
 </section>
-<section id="oct-2023-2" class="level4">
-<h4 class="anchored" data-anchor-id="oct-2023-2">24-OCT-2023</h4>
+<section id="oct-2023-2" class="level4" data-number="4.4.0.3">
+<h4 data-number="4.4.0.3" class="anchored" data-anchor-id="oct-2023-2"><span class="header-section-number">4.4.0.3</span> 24-OCT-2023</h4>
 <ul>
 <li>working on WSN presentation!</li>
 </ul>
 </section>
-<section id="oct-2023-3" class="level4">
-<h4 class="anchored" data-anchor-id="oct-2023-3">23-OCT-2023</h4>
+<section id="oct-2023-3" class="level4" data-number="4.4.0.4">
+<h4 data-number="4.4.0.4" class="anchored" data-anchor-id="oct-2023-3"><span class="header-section-number">4.4.0.4</span> 23-OCT-2023</h4>
 <ul>
 <li><p>JPG 1on1</p></li>
 <li><p>Bought Amtrak tickets to WSN (refundable)</p></li>
 </ul>
 </section>
-<section id="oct-2023-4" class="level4 page-columns page-full">
-<h4 class="anchored" data-anchor-id="oct-2023-4">16-OCT-2023</h4>
+<section id="oct-2023-4" class="level4 page-columns page-full" data-number="4.4.0.5">
+<h4 data-number="4.4.0.5" class="anchored" data-anchor-id="oct-2023-4"><span class="header-section-number">4.4.0.5</span> 16-OCT-2023</h4>
 <ul>
 <li>attended lab meeting via Zoom</li>
 </ul>
@@ -1190,8 +1181,8 @@ fi</code></pre></li>
 <div class="no-row-height column-margin column-container"><div id="ref-wong2022" class="csl-entry" role="listitem">
 Wong, Kevin H., and Hollie M. Putnam. 2022. <span>“The Genome of the Mustard Hill Coral, Porites Astreoides.”</span> <em>Gigabyte</em> 2022 (July): 1–12. <a href="https://doi.org/10.46471/gigabyte.65">https://doi.org/10.46471/gigabyte.65</a>.
 </div></div></section>
-<section id="oct-2023-5" class="level4">
-<h4 class="anchored" data-anchor-id="oct-2023-5">11-OCT-2023</h4>
+<section id="oct-2023-5" class="level4" data-number="4.4.0.6">
+<h4 data-number="4.4.0.6" class="anchored" data-anchor-id="oct-2023-5"><span class="header-section-number">4.4.0.6</span> 11-OCT-2023</h4>
 <ul>
 <li><p>Attended <a href="https://isbscience.org/">ISB</a> workshop day 1</p>
 <ul>
@@ -1210,8 +1201,8 @@ Wong, Kevin H., and Hollie M. Putnam. 2022. <span>“The Genome of the Mustard H
 </ul></li>
 </ul>
 </section>
-<section id="oct-2023-6" class="level4">
-<h4 class="anchored" data-anchor-id="oct-2023-6">10-OCT-2023</h4>
+<section id="oct-2023-6" class="level4" data-number="4.4.0.7">
+<h4 data-number="4.4.0.7" class="anchored" data-anchor-id="oct-2023-6"><span class="header-section-number">4.4.0.7</span> 10-OCT-2023</h4>
 <ul>
 <li>Bought WSN flights</li>
 <li>Sent list of 123 samples to UW mim_c for formal quote</li>
@@ -1219,14 +1210,14 @@ Wong, Kevin H., and Hollie M. Putnam. 2022. <span>“The Genome of the Mustard H
 <li>updated all extraction notebook posts from handwritten notes</li>
 </ul>
 </section>
-<section id="oct-2023-7" class="level4">
-<h4 class="anchored" data-anchor-id="oct-2023-7">03-OCT-2023</h4>
+<section id="oct-2023-7" class="level4" data-number="4.4.0.8">
+<h4 data-number="4.4.0.8" class="anchored" data-anchor-id="oct-2023-7"><span class="header-section-number">4.4.0.8</span> 03-OCT-2023</h4>
 <ul>
 <li>Submitted abstract to WSN, registered for conference!</li>
 </ul>
 </section>
-<section id="oct-2023-8" class="level4">
-<h4 class="anchored" data-anchor-id="oct-2023-8">02-OCT-2023</h4>
+<section id="oct-2023-8" class="level4" data-number="4.4.0.9">
+<h4 data-number="4.4.0.9" class="anchored" data-anchor-id="oct-2023-8"><span class="header-section-number">4.4.0.9</span> 02-OCT-2023</h4>
 <ul>
 <li><p>Abstratc accepted to SICB for Jan 3rd!</p></li>
 <li><div>
@@ -1243,16 +1234,16 @@ Information regarding presentations at the SICB meeting can be found <a href="ht
 </ul>
 </section>
 </section>
-<section id="september-2023" class="level2">
-<h2 class="anchored" data-anchor-id="september-2023">September 2023</h2>
-<section id="sep-2023" class="level4">
-<h4 class="anchored" data-anchor-id="sep-2023">20-SEP-2023</h4>
+<section id="september-2023" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="september-2023"><span class="header-section-number">4.5</span> September 2023</h2>
+<section id="sep-2023" class="level4" data-number="4.5.0.1">
+<h4 data-number="4.5.0.1" class="anchored" data-anchor-id="sep-2023"><span class="header-section-number">4.5.0.1</span> 20-SEP-2023</h4>
 <ul>
 <li><a href="https://theconversation.com/the-importance-of-shining-a-light-on-hidden-toxic-histories-211657?utm_medium=email&amp;utm_campaign=Daily%20newsletter%20September%2014%202023&amp;utm_content=Daily%20newsletter%20September%2014%202023+CID_1c20b166b5da888ab34925d477cebf8d&amp;utm_source=campaign_monitor_us&amp;utm_term=the%20artists%20and%20activists%20who%20are%20calling%20attention%20to%20toxic%20legacies">Hidden Toxic Histories</a></li>
 </ul>
 </section>
-<section id="sep-2023-1" class="level4">
-<h4 class="anchored" data-anchor-id="sep-2023-1">05-SEP-2023</h4>
+<section id="sep-2023-1" class="level4" data-number="4.5.0.2">
+<h4 data-number="4.5.0.2" class="anchored" data-anchor-id="sep-2023-1"><span class="header-section-number">4.5.0.2</span> 05-SEP-2023</h4>
 <ul>
 <li><p>WSN newsletter says abstracts close Sep 29th 2023</p></li>
 <li><p>5 min lightning talk or 15 minute talk</p></li>
@@ -1266,8 +1257,8 @@ The presentation title should have no more than 130 characters max (including sp
 
 The abstract should have no more than 1600 characters max (including spaces); use standard HTML tags for special formatting (e.g., \&lt;b\&gt;**bold text**\&lt;/b\&gt;, \&lt;i\&gt;*italic text*\&lt;/i\&gt;, etc.)</code></pre>
 </section>
-<section id="sep-2023-2" class="level4">
-<h4 class="anchored" data-anchor-id="sep-2023-2">01-SEP-2023</h4>
+<section id="sep-2023-2" class="level4" data-number="4.5.0.3">
+<h4 data-number="4.5.0.3" class="anchored" data-anchor-id="sep-2023-2"><span class="header-section-number">4.5.0.3</span> 01-SEP-2023</h4>
 <ul>
 <li><p>crashed my bike and badly injured my hands… can’t do lab work 😭</p></li>
 <li><p>met with UW mim_c Steven Salipantes</p>
@@ -1280,10 +1271,10 @@ The abstract should have no more than 1600 characters max (including spaces); us
 </ul>
 </section>
 </section>
-<section id="august-2023" class="level2">
-<h2 class="anchored" data-anchor-id="august-2023">August 2023</h2>
-<section id="aug-2023" class="level4">
-<h4 class="anchored" data-anchor-id="aug-2023">31-AUG-2023</h4>
+<section id="august-2023" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="august-2023"><span class="header-section-number">4.6</span> August 2023</h2>
+<section id="aug-2023" class="level4" data-number="4.6.0.1">
+<h4 data-number="4.6.0.1" class="anchored" data-anchor-id="aug-2023"><span class="header-section-number">4.6.0.1</span> 31-AUG-2023</h4>
 <ul>
 <li><p>purchased additional kits, qubit assays, tubes, etc. to spend down Hall Grant</p></li>
 <li><p>received Qubit and UV-C Sterilizer!</p></li>
@@ -1302,15 +1293,15 @@ The abstract should have no more than 1600 characters max (including spaces); us
 </ul></li>
 </ul>
 </section>
-<section id="aug-2023-1" class="level4">
-<h4 class="anchored" data-anchor-id="aug-2023-1">29-AUG-2023</h4>
+<section id="aug-2023-1" class="level4" data-number="4.6.0.2">
+<h4 data-number="4.6.0.2" class="anchored" data-anchor-id="aug-2023-1"><span class="header-section-number">4.6.0.2</span> 29-AUG-2023</h4>
 <ul>
 <li><p>submitted SICB abstract</p></li>
 <li><p>submitted Kip’s capstone proposal to Greg Jensen</p></li>
 </ul>
 </section>
-<section id="aug-2023-2" class="level4">
-<h4 class="anchored" data-anchor-id="aug-2023-2">28-AUG-2023</h4>
+<section id="aug-2023-2" class="level4" data-number="4.6.0.3">
+<h4 data-number="4.6.0.3" class="anchored" data-anchor-id="aug-2023-2"><span class="header-section-number">4.6.0.3</span> 28-AUG-2023</h4>
 <ul>
 <li><p>Look into the <a href="https://coast.noaa.gov/nerrs/research/davidson-fellowship.html">Margaret A. Davidson Graduate Fellowship</a></p></li>
 <li><p>Wrote abstract for <a href="https://sicb.org/">SICB</a> , Seattle Jan 2-6 … Deadline is Aug 29th!</p></li>
@@ -1320,14 +1311,14 @@ The abstract should have no more than 1600 characters max (including spaces); us
 <li><p>Take Jeremy’s samples out of freezer to thaw at 4PM</p></li>
 </ul>
 </section>
-<section id="aug-2023-3" class="level4">
-<h4 class="anchored" data-anchor-id="aug-2023-3">24-AUG-2023</h4>
+<section id="aug-2023-3" class="level4" data-number="4.6.0.4">
+<h4 data-number="4.6.0.4" class="anchored" data-anchor-id="aug-2023-3"><span class="header-section-number">4.6.0.4</span> 24-AUG-2023</h4>
 <ul>
 <li>Trial with 2 ambient samples of modified extraction protocol and RNA Clean &amp; Concentrator. I did 2 samples because I had a kit that had 2 preps left over. Most of the time spent is in lab bench sterilizing, prepping, labelling, getting ice! Which takes literally a 30 minute hike across campus… But I started at 930AM and finished with Qubit in the FTR Roberts Lab by 4PM. With 2 samples! Extractions take ALL DAY.</li>
 </ul>
 </section>
-<section id="aug-2023-4" class="level4">
-<h4 class="anchored" data-anchor-id="aug-2023-4">17-AUG-2023</h4>
+<section id="aug-2023-4" class="level4" data-number="4.6.0.5">
+<h4 data-number="4.6.0.5" class="anchored" data-anchor-id="aug-2023-4"><span class="header-section-number">4.6.0.5</span> 17-AUG-2023</h4>
 <ul>
 <li><p>Are we sure we want to try TriZol for RNA? It isn’t a phenol-free kit like the Quick DNA/RNA Miniprep, and we have RNA, we just need to purify it. Tomorrow lets run all eluted RNA through RNA Clean &amp; Concentrator, and check it on Nanodrop! LFG.</p></li>
 <li><p><strong>THE BLANK HAD ‘TOO LOW’ DNA IN QUBIT!</strong></p></li>
@@ -1342,8 +1333,8 @@ The abstract should have no more than 1600 characters max (including spaces); us
 </blockquote></li>
 </ul>
 </section>
-<section id="aug-2023-5" class="level4">
-<h4 class="anchored" data-anchor-id="aug-2023-5">16-AUG-2023</h4>
+<section id="aug-2023-5" class="level4" data-number="4.6.0.6">
+<h4 data-number="4.6.0.6" class="anchored" data-anchor-id="aug-2023-5"><span class="header-section-number">4.6.0.6</span> 16-AUG-2023</h4>
 <ul>
 <li><p>asked JPG to buy benchtop UV Sterilizer for me &amp; Callum, got approval! Purchased by Kat same day :D</p></li>
 <li><p>NMDS (non-metric multidimensional scaling) ordination plots</p></li>
@@ -1353,8 +1344,8 @@ The abstract should have no more than 1600 characters max (including spaces); us
 <li><p>Still can’t <code>quarto render</code> in Jupyter Lab on raven server, need to figure out how to get those interactive jupyter plots in my notebook!</p></li>
 </ul>
 </section>
-<section id="aug-2023-6" class="level4">
-<h4 class="anchored" data-anchor-id="aug-2023-6">15-AUG-2023</h4>
+<section id="aug-2023-6" class="level4" data-number="4.6.0.7">
+<h4 data-number="4.6.0.7" class="anchored" data-anchor-id="aug-2023-6"><span class="header-section-number">4.6.0.7</span> 15-AUG-2023</h4>
 <ul>
 <li><p>met with Dr.&nbsp;Amy VanCise about microbiome analysis:</p>
 <ul>
@@ -1372,8 +1363,8 @@ The abstract should have no more than 1600 characters max (including spaces); us
 </ul></li>
 </ul>
 </section>
-<section id="aug-2023-7" class="level4">
-<h4 class="anchored" data-anchor-id="aug-2023-7">03-AUG-2023</h4>
+<section id="aug-2023-7" class="level4" data-number="4.6.0.8">
+<h4 data-number="4.6.0.8" class="anchored" data-anchor-id="aug-2023-7"><span class="header-section-number">4.6.0.8</span> 03-AUG-2023</h4>
 <ul>
 <li><p>Received RNA samples back from UT GSAF</p></li>
 <li><p>Used PCR Inhibitor Removal Kit on five of the samples (see RNA Woes post <a href="https://sarahtanja.github.io/quarto-blog/posts/rna-woes/#:~:text=A260%20value.%E2%80%9D-,Zymo%20OneStep%20PCR%20Inhibitor%20Removal%20Kit,-I%20first%20tried">here</a>) :</p>
@@ -1389,18 +1380,18 @@ The abstract should have no more than 1600 characters max (including spaces); us
 </ul>
 </section>
 </section>
-<section id="july-2023" class="level2">
-<h2 class="anchored" data-anchor-id="july-2023">July 2023</h2>
-<section id="jul-2023" class="level4">
-<h4 class="anchored" data-anchor-id="jul-2023">20-JUL-2023</h4>
+<section id="july-2023" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="july-2023"><span class="header-section-number">4.7</span> July 2023</h2>
+<section id="jul-2023" class="level4" data-number="4.7.0.1">
+<h4 data-number="4.7.0.1" class="anchored" data-anchor-id="jul-2023"><span class="header-section-number">4.7.0.1</span> 20-JUL-2023</h4>
 <ul>
 <li><p><a href="https://forum.qiime2.org/t/tutorial-integrating-qiime2-and-r-for-data-visualization-and-analysis-using-qiime2r/4121">Integrating QIIME2 and R for data viz</a></p></li>
 <li><p>RStudio&gt;Project Options&gt; Python&gt; Python interpreter</p></li>
 <li><p><a href="https://support.posit.co/hc/en-us/articles/1500007929061-Using-Python-with-the-RStudio-IDE">Using Python with the RStudio IDE</a></p></li>
 </ul>
 </section>
-<section id="jul-2023-1" class="level4">
-<h4 class="anchored" data-anchor-id="jul-2023-1">19-JUL-2023</h4>
+<section id="jul-2023-1" class="level4" data-number="4.7.0.2">
+<h4 data-number="4.7.0.2" class="anchored" data-anchor-id="jul-2023-1"><span class="header-section-number">4.7.0.2</span> 19-JUL-2023</h4>
 <ul>
 <li><p>Emailed Jackie about getting another P1000</p></li>
 <li><p>Helped Bob Oxborrow with pipettes for stable isotope sample prep</p></li>
@@ -1415,22 +1406,22 @@ The abstract should have no more than 1600 characters max (including spaces); us
 </ul>
 </section>
 </section>
-<section id="june-2023" class="level2">
-<h2 class="anchored" data-anchor-id="june-2023">June 2023</h2>
-<section id="jun-2023" class="level4">
-<h4 class="anchored" data-anchor-id="jun-2023">07-JUN-2023</h4>
+<section id="june-2023" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="june-2023"><span class="header-section-number">4.8</span> June 2023</h2>
+<section id="jun-2023" class="level4" data-number="4.8.0.1">
+<h4 data-number="4.8.0.1" class="anchored" data-anchor-id="jun-2023"><span class="header-section-number">4.8.0.1</span> 07-JUN-2023</h4>
 <ul>
 <li>Shipped DNA to Mr.&nbsp;DNA and RNA to UT GSAF!</li>
 </ul>
 </section>
-<section id="jun-2023-1" class="level4">
-<h4 class="anchored" data-anchor-id="jun-2023-1">06-JUN-2023</h4>
+<section id="jun-2023-1" class="level4" data-number="4.8.0.2">
+<h4 data-number="4.8.0.2" class="anchored" data-anchor-id="jun-2023-1"><span class="header-section-number">4.8.0.2</span> 06-JUN-2023</h4>
 <ul>
 <li>Normalized all 20 RNA samples</li>
 </ul>
 </section>
-<section id="jun-2023-2" class="level4">
-<h4 class="anchored" data-anchor-id="jun-2023-2">05-JUN-2023</h4>
+<section id="jun-2023-2" class="level4" data-number="4.8.0.3">
+<h4 data-number="4.8.0.3" class="anchored" data-anchor-id="jun-2023-2"><span class="header-section-number">4.8.0.3</span> 05-JUN-2023</h4>
 <ul>
 <li><p>Re-normalized 2-CA2a DNA and successfully got it to 19.5, 19.2 :D</p></li>
 <li><p>Worked all day to normalize RNA with mixed results. In the first batch, 7 out of 20 samples were ‘off’ of the target concentration of 25ng/uL by enough to make me want to redo them (one was way high at 230ng/uL, others were too low at ~10ng/uL)</p></li>
@@ -1448,16 +1439,16 @@ The abstract should have no more than 1600 characters max (including spaces); us
 </ul></li>
 </ul>
 </section>
-<section id="jun-2023-3" class="level4">
-<h4 class="anchored" data-anchor-id="jun-2023-3">02-JUN-2023</h4>
+<section id="jun-2023-3" class="level4" data-number="4.8.0.4">
+<h4 data-number="4.8.0.4" class="anchored" data-anchor-id="jun-2023-3"><span class="header-section-number">4.8.0.4</span> 02-JUN-2023</h4>
 <ul>
 <li>Normalized DNA (still have RNA left to do)</li>
 <li>Tested normalized DNA on Qubit BR DNA assay, results overall were good but a smidge lower than my goal</li>
 <li>blank + microbial standard extraction</li>
 </ul>
 </section>
-<section id="jun-2023-4" class="level4">
-<h4 class="anchored" data-anchor-id="jun-2023-4">01-JUN-2023</h4>
+<section id="jun-2023-4" class="level4" data-number="4.8.0.5">
+<h4 data-number="4.8.0.5" class="anchored" data-anchor-id="jun-2023-4"><span class="header-section-number">4.8.0.5</span> 01-JUN-2023</h4>
 <ul>
 <li>Presented Bioinformatics <a href="https://rpubs.com/sarah_tanja/1048844">final project for FISH 546</a></li>
 <li>Attended GSR Meeting</li>
@@ -1465,10 +1456,10 @@ The abstract should have no more than 1600 characters max (including spaces); us
 </ul>
 </section>
 </section>
-<section id="may-2023" class="level2">
-<h2 class="anchored" data-anchor-id="may-2023">May 2023</h2>
-<section id="may-2023-1" class="level4">
-<h4 class="anchored" data-anchor-id="may-2023-1">31-MAY-2023</h4>
+<section id="may-2023" class="level2" data-number="4.9">
+<h2 data-number="4.9" class="anchored" data-anchor-id="may-2023"><span class="header-section-number">4.9</span> May 2023</h2>
+<section id="may-2023-1" class="level4" data-number="4.9.0.1">
+<h4 data-number="4.9.0.1" class="anchored" data-anchor-id="may-2023-1"><span class="header-section-number">4.9.0.1</span> 31-MAY-2023</h4>
 <ul>
 <li>wrote <code>dilute</code> function to normalize RNA &amp; DNA in <a href="https://github.com/sarahtanja/coral-DNA-RNA-lab-extractions/blob/main/code/03-normalizing.qmd">coral-DNA-RNA-lab-extractions</a> GitHub repo:</li>
 </ul>
@@ -1524,21 +1515,21 @@ The abstract should have no more than 1600 characters max (including spaces); us
 <li>SAFS Spring Picnic!</li>
 </ul>
 </section>
-<section id="may-2023-2" class="level4">
-<h4 class="anchored" data-anchor-id="may-2023-2">29-MAY-2023</h4>
+<section id="may-2023-2" class="level4" data-number="4.9.0.2">
+<h4 data-number="4.9.0.2" class="anchored" data-anchor-id="may-2023-2"><span class="header-section-number">4.9.0.2</span> 29-MAY-2023</h4>
 <ul>
 <li>Worked on Bioinformatics Final Project, RNA expression heat map with Gene Ontology Terms (Protein Functions)</li>
 <li>IBIS Celebration of <a href="https://norahess.quarto.pub/uw-lab-note-book/">Nora’s Blog</a>!</li>
 </ul>
 </section>
-<section id="may-2023-3" class="level4">
-<h4 class="anchored" data-anchor-id="may-2023-3">25-MAY-2023</h4>
+<section id="may-2023-3" class="level4" data-number="4.9.0.3">
+<h4 data-number="4.9.0.3" class="anchored" data-anchor-id="may-2023-3"><span class="header-section-number">4.9.0.3</span> 25-MAY-2023</h4>
 <ul>
 <li>Hosted Dr.&nbsp;Nicola Smith as the GSIS</li>
 </ul>
 </section>
-<section id="may-2023-4" class="level4">
-<h4 class="anchored" data-anchor-id="may-2023-4">24-MAY-2023</h4>
+<section id="may-2023-4" class="level4" data-number="4.9.0.4">
+<h4 data-number="4.9.0.4" class="anchored" data-anchor-id="may-2023-4"><span class="header-section-number">4.9.0.4</span> 24-MAY-2023</h4>
 <ul>
 <li><p>University of Texas at Austin <a href="https://wikis.utexas.edu/display/GSAF/Home+Page">Genomic Sequencing and Analysis Facility (GSAF)</a>:</p>
 <ul>
@@ -1551,8 +1542,8 @@ The abstract should have no more than 1600 characters max (including spaces); us
 </ul></li>
 </ul>
 </section>
-<section id="may-2023-5" class="level4">
-<h4 class="anchored" data-anchor-id="may-2023-5">23-MAY-2023</h4>
+<section id="may-2023-5" class="level4" data-number="4.9.0.5">
+<h4 data-number="4.9.0.5" class="anchored" data-anchor-id="may-2023-5"><span class="header-section-number">4.9.0.5</span> 23-MAY-2023</h4>
 <ul>
 <li>completed UW driver safety training</li>
 <li>met with Steven Roberts, confirmed that no blank/standard is used for RNA-seq</li>
@@ -1562,8 +1553,8 @@ The abstract should have no more than 1600 characters max (including spaces); us
 <li>Tried using <code>quarto publish gh-pages</code> command to publish blog</li>
 </ul>
 </section>
-<section id="may-2023-6" class="level4">
-<h4 class="anchored" data-anchor-id="may-2023-6">19-MAY-2023</h4>
+<section id="may-2023-6" class="level4" data-number="4.9.0.6">
+<h4 data-number="4.9.0.6" class="anchored" data-anchor-id="may-2023-6"><span class="header-section-number">4.9.0.6</span> 19-MAY-2023</h4>
 <ul>
 <li><p>Ran Qubit on ex7 samples</p></li>
 <li><p>Extraction #7 (the redo) on samples:</p>
@@ -1580,14 +1571,14 @@ The abstract should have no more than 1600 characters max (including spaces); us
 <li><p>dry-ice at biochem stockroom is low, have to check that there will be a replenishment next week so I have enough dry ice to ship samples!</p></li>
 </ul>
 </section>
-<section id="may-2023-7" class="level4">
-<h4 class="anchored" data-anchor-id="may-2023-7">18-MAY-2023</h4>
+<section id="may-2023-7" class="level4" data-number="4.9.0.7">
+<h4 data-number="4.9.0.7" class="anchored" data-anchor-id="may-2023-7"><span class="header-section-number">4.9.0.7</span> 18-MAY-2023</h4>
 <ul>
 <li>wrote script to normalize eluted RNA/DNA</li>
 </ul>
 </section>
-<section id="may-2023-8" class="level4">
-<h4 class="anchored" data-anchor-id="may-2023-8">04-MAY-2023</h4>
+<section id="may-2023-8" class="level4" data-number="4.9.0.8">
+<h4 data-number="4.9.0.8" class="anchored" data-anchor-id="may-2023-8"><span class="header-section-number">4.9.0.8</span> 04-MAY-2023</h4>
 <ul>
 <li>received Qubit DNA Broad Range (BR) Assay Kit!</li>
 <li>Gotta get P2 DNA/RNA free tips!</li>
@@ -1595,10 +1586,10 @@ The abstract should have no more than 1600 characters max (including spaces); us
 </ul>
 </section>
 </section>
-<section id="april-2023" class="level2">
-<h2 class="anchored" data-anchor-id="april-2023">April 2023</h2>
-<section id="apr-2023" class="level4">
-<h4 class="anchored" data-anchor-id="apr-2023">25-APR-2023</h4>
+<section id="april-2023" class="level2" data-number="4.10">
+<h2 data-number="4.10" class="anchored" data-anchor-id="april-2023"><span class="header-section-number">4.10</span> April 2023</h2>
+<section id="apr-2023" class="level4" data-number="4.10.0.1">
+<h4 data-number="4.10.0.1" class="anchored" data-anchor-id="apr-2023"><span class="header-section-number">4.10.0.1</span> 25-APR-2023</h4>
 <ul>
 <li>sorted pipettes with Callum</li>
 <li>submitted Bioinformatics Assignment</li>
@@ -1606,8 +1597,8 @@ The abstract should have no more than 1600 characters max (including spaces); us
 <li>ordered film sealing plate roller</li>
 </ul>
 </section>
-<section id="apr-2023-1" class="level4">
-<h4 class="anchored" data-anchor-id="apr-2023-1">24-APR-2023</h4>
+<section id="apr-2023-1" class="level4" data-number="4.10.0.2">
+<h4 data-number="4.10.0.2" class="anchored" data-anchor-id="apr-2023-1"><span class="header-section-number">4.10.0.2</span> 24-APR-2023</h4>
 <ul>
 <li><p>sent draft letter for NAH experiential learning fund to JPG on Monday April 24th</p></li>
 <li><p>found <a href="https://microbe.med.umich.edu/sites/default/files/downloads/2021_ConsolidatedShippingGuide_0.pdf">96-well PCR shipping guide</a></p></li>
@@ -1619,8 +1610,8 @@ The abstract should have no more than 1600 characters max (including spaces); us
 </blockquote></li>
 </ul>
 </section>
-<section id="apr-2023-2" class="level4">
-<h4 class="anchored" data-anchor-id="apr-2023-2">21-APR-2023</h4>
+<section id="apr-2023-2" class="level4" data-number="4.10.0.3">
+<h4 data-number="4.10.0.3" class="anchored" data-anchor-id="apr-2023-2"><span class="header-section-number">4.10.0.3</span> 21-APR-2023</h4>
 <ul>
 <li><p>met with JPG April 1on1</p>
 <ul>
@@ -1642,8 +1633,8 @@ The abstract should have no more than 1600 characters max (including spaces); us
 </ul></li>
 </ul>
 </section>
-<section id="apr-2023-3" class="level4">
-<h4 class="anchored" data-anchor-id="apr-2023-3">20-APR-2023</h4>
+<section id="apr-2023-3" class="level4" data-number="4.10.0.4">
+<h4 data-number="4.10.0.4" class="anchored" data-anchor-id="apr-2023-3"><span class="header-section-number">4.10.0.4</span> 20-APR-2023</h4>
 <ul>
 <li>downloaded fastq files for ‘fake data’ to continue script for bioinformatics workflow</li>
 <li>Received Mortexer! Whoo!</li>
@@ -1657,16 +1648,16 @@ The abstract should have no more than 1600 characters max (including spaces); us
 <li>submitted purchase for mortexer attachment head that will homogenize 12 1.5-2mL tubes at a time horizontal orientation (even better because closer to original lysis protocol for Zymo) Sadly, I should have looked for something like this earlier, but I saw it on the mortexer instruction manual when it was delivered and realized that was what I needed</li>
 </ul>
 </section>
-<section id="apr-2023-4" class="level4">
-<h4 class="anchored" data-anchor-id="apr-2023-4">19-APR-2023</h4>
+<section id="apr-2023-4" class="level4" data-number="4.10.0.5">
+<h4 data-number="4.10.0.5" class="anchored" data-anchor-id="apr-2023-4"><span class="header-section-number">4.10.0.5</span> 19-APR-2023</h4>
 <ul>
 <li>continued draft application for ONeill-Quinn</li>
 <li>continued editing extraction protocol</li>
 <li>expected delivery of mortexer by end of day</li>
 </ul>
 </section>
-<section id="apr-2023-5" class="level4">
-<h4 class="anchored" data-anchor-id="apr-2023-5">18-APR-2023</h4>
+<section id="apr-2023-5" class="level4" data-number="4.10.0.6">
+<h4 data-number="4.10.0.6" class="anchored" data-anchor-id="apr-2023-5"><span class="header-section-number">4.10.0.6</span> 18-APR-2023</h4>
 <ul>
 <li>Met with Nora, selected samples for processing using <a href="https://github.com/sarahtanja/coral-DNA-RNA-lab-extractions/blob/main/rand-sample-processing.Rmd">R script to randomize</a></li>
 <li>Setup workflow in Hyak</li>
@@ -1675,23 +1666,23 @@ The abstract should have no more than 1600 characters max (including spaces); us
 <li>emailed asking for details about Neptune controller unit (it was returned after being sent away for RMA maintenance request, but nothing appears to have been done to it)</li>
 </ul>
 </section>
-<section id="apr-2023-6" class="level4">
-<h4 class="anchored" data-anchor-id="apr-2023-6">17-APR-2023</h4>
+<section id="apr-2023-6" class="level4" data-number="4.10.0.7">
+<h4 data-number="4.10.0.7" class="anchored" data-anchor-id="apr-2023-6"><span class="header-section-number">4.10.0.7</span> 17-APR-2023</h4>
 <ul>
 <li>added to extraction protocol</li>
 <li>read about remote computing, Hyak Mox</li>
 <li>enabled Hyak account</li>
 </ul>
 </section>
-<section id="apr-2023-7" class="level4">
-<h4 class="anchored" data-anchor-id="apr-2023-7">14-APR-2023</h4>
+<section id="apr-2023-7" class="level4" data-number="4.10.0.8">
+<h4 data-number="4.10.0.8" class="anchored" data-anchor-id="apr-2023-7"><span class="header-section-number">4.10.0.8</span> 14-APR-2023</h4>
 <ul>
 <li>attended Cat Fong chalk talk &amp; SAFS Cafe</li>
 <li>gave tour to Edith</li>
 </ul>
 </section>
-<section id="apr-2023-8" class="level4">
-<h4 class="anchored" data-anchor-id="apr-2023-8">11-APR-2023</h4>
+<section id="apr-2023-8" class="level4" data-number="4.10.0.9">
+<h4 data-number="4.10.0.9" class="anchored" data-anchor-id="apr-2023-8"><span class="header-section-number">4.10.0.9</span> 11-APR-2023</h4>
 <ul>
 <li><p>NCBI SRA links downloading RNAseq fastq files</p></li>
 <li><p>Looking for ‘fake data’ for M. capitata</p>
@@ -1704,8 +1695,8 @@ The abstract should have no more than 1600 characters max (including spaces); us
 </ul></li>
 </ul>
 </section>
-<section id="apr-2023-9" class="level4">
-<h4 class="anchored" data-anchor-id="apr-2023-9">10-APR-2023</h4>
+<section id="apr-2023-9" class="level4" data-number="4.10.0.10">
+<h4 data-number="4.10.0.10" class="anchored" data-anchor-id="apr-2023-9"><span class="header-section-number">4.10.0.10</span> 10-APR-2023</h4>
 <ul>
 <li>created script to randomize sample processing in <a href="https://github.com/sarahtanja/coral-DNA-RNA-lab-extractions">coral-DNA-RNA-lab-extractions</a> repo</li>
 <li>called Zymo and learned that ‘mix’ in protocol step can either mean pipette up and down 10-12 times, or briefly touch to vortex mixer for a pulse</li>
@@ -1714,10 +1705,10 @@ The abstract should have no more than 1600 characters max (including spaces); us
 </ul>
 </section>
 </section>
-<section id="march-2023" class="level2">
-<h2 class="anchored" data-anchor-id="march-2023">March 2023</h2>
-<section id="mar-2023" class="level4">
-<h4 class="anchored" data-anchor-id="mar-2023">29-MAR-2023</h4>
+<section id="march-2023" class="level2" data-number="4.11">
+<h2 data-number="4.11" class="anchored" data-anchor-id="march-2023"><span class="header-section-number">4.11</span> March 2023</h2>
+<section id="mar-2023" class="level4" data-number="4.11.0.1">
+<h4 data-number="4.11.0.1" class="anchored" data-anchor-id="mar-2023"><span class="header-section-number">4.11.0.1</span> 29-MAR-2023</h4>
 <ul>
 <li><p>started template for DNA/RNA data extraction sheet in new repo for extractions<br>
 </p></li>
@@ -1745,8 +1736,8 @@ The abstract should have no more than 1600 characters max (including spaces); us
 </ul></li>
 </ul>
 </section>
-<section id="mar-2023-1" class="level4">
-<h4 class="anchored" data-anchor-id="mar-2023-1">28-MAR-2023</h4>
+<section id="mar-2023-1" class="level4" data-number="4.11.0.2">
+<h4 data-number="4.11.0.2" class="anchored" data-anchor-id="mar-2023-1"><span class="header-section-number">4.11.0.2</span> 28-MAR-2023</h4>
 <ul>
 <li><p>read papers:</p>
 <ul>
@@ -1782,8 +1773,8 @@ The abstract should have no more than 1600 characters max (including spaces); us
 </ul></li>
 </ul>
 </section>
-<section id="mar-2023-2" class="level4">
-<h4 class="anchored" data-anchor-id="mar-2023-2">27-MAR-2023</h4>
+<section id="mar-2023-2" class="level4" data-number="4.11.0.3">
+<h4 data-number="4.11.0.3" class="anchored" data-anchor-id="mar-2023-2"><span class="header-section-number">4.11.0.3</span> 27-MAR-2023</h4>
 <ul>
 <li><p>read papers:</p>
 <ul>
@@ -1791,19 +1782,19 @@ The abstract should have no more than 1600 characters max (including spaces); us
 </ul></li>
 <li><p>worked on coral collection report</p></li>
 </ul>
-<section id="section" class="level5">
-<h5 class="anchored" data-anchor-id="section"></h5>
+<section id="section" class="level5" data-number="4.11.0.3.1">
+<h5 data-number="4.11.0.3.1" class="anchored" data-anchor-id="section"><span class="header-section-number">4.11.0.3.1</span> </h5>
 </section>
 </section>
-<section id="mar-2023-3" class="level4">
-<h4 class="anchored" data-anchor-id="mar-2023-3">21-MAR-2023</h4>
+<section id="mar-2023-3" class="level4" data-number="4.11.0.4">
+<h4 data-number="4.11.0.4" class="anchored" data-anchor-id="mar-2023-3"><span class="header-section-number">4.11.0.4</span> 21-MAR-2023</h4>
 <ul>
 <li>interviewed for WSG student assistant position</li>
 <li>began work on himb-2022 coral collection report</li>
 </ul>
 </section>
-<section id="mar-2023-4" class="level4">
-<h4 class="anchored" data-anchor-id="mar-2023-4">20-MAR-2023</h4>
+<section id="mar-2023-4" class="level4" data-number="4.11.0.5">
+<h4 data-number="4.11.0.5" class="anchored" data-anchor-id="mar-2023-4"><span class="header-section-number">4.11.0.5</span> 20-MAR-2023</h4>
 <ul>
 <li>installed Sophos anti-virus on Owl</li>
 <li>attended Robert’s Lab meeting</li>
@@ -1812,35 +1803,35 @@ The abstract should have no more than 1600 characters max (including spaces); us
 <li>wrote <a href="https://sarahtanja.github.io/lab-book/protocols/protocol-qbit/">Qubit RNA Broad Range Protocol</a> post</li>
 </ul>
 </section>
-<section id="mar-2023-5" class="level4">
-<h4 class="anchored" data-anchor-id="mar-2023-5">16-MAR-2023</h4>
+<section id="mar-2023-5" class="level4" data-number="4.11.0.6">
+<h4 data-number="4.11.0.6" class="anchored" data-anchor-id="mar-2023-5"><span class="header-section-number">4.11.0.6</span> 16-MAR-2023</h4>
 <ul>
 <li>finished SMEA/FISH 539 final paper</li>
 </ul>
 </section>
-<section id="mar-2023-6" class="level4">
-<h4 class="anchored" data-anchor-id="mar-2023-6">15-MAR-2023</h4>
+<section id="mar-2023-6" class="level4" data-number="4.11.0.7">
+<h4 data-number="4.11.0.7" class="anchored" data-anchor-id="mar-2023-6"><span class="header-section-number">4.11.0.7</span> 15-MAR-2023</h4>
 <ul>
 <li>out sick</li>
 <li>worked on SMEA/FISH 539 final paper</li>
 </ul>
 </section>
-<section id="mar-2023-7" class="level4">
-<h4 class="anchored" data-anchor-id="mar-2023-7">14-MAR-2023</h4>
+<section id="mar-2023-7" class="level4" data-number="4.11.0.8">
+<h4 data-number="4.11.0.8" class="anchored" data-anchor-id="mar-2023-7"><span class="header-section-number">4.11.0.8</span> 14-MAR-2023</h4>
 <ul>
 <li>out sick</li>
 <li>talked with Hailey Dockery about shadowing RNA extractions</li>
 </ul>
 </section>
-<section id="mar-2023-8" class="level4">
-<h4 class="anchored" data-anchor-id="mar-2023-8">13-MAR-2023</h4>
+<section id="mar-2023-8" class="level4" data-number="4.11.0.9">
+<h4 data-number="4.11.0.9" class="anchored" data-anchor-id="mar-2023-8"><span class="header-section-number">4.11.0.9</span> 13-MAR-2023</h4>
 <ul>
 <li>worked on SMEA/FISH 539 final paper</li>
 <li>updated R &amp; RStudio to latest versions</li>
 </ul>
 </section>
-<section id="mar-2023-9" class="level4">
-<h4 class="anchored" data-anchor-id="mar-2023-9">10-MAR-2023</h4>
+<section id="mar-2023-9" class="level4" data-number="4.11.0.10">
+<h4 data-number="4.11.0.10" class="anchored" data-anchor-id="mar-2023-9"><span class="header-section-number">4.11.0.10</span> 10-MAR-2023</h4>
 <ul>
 <li>finished SMEA/FISH 1page reflection</li>
 <li>worked on SMEA/FISH 539 final paper</li>
@@ -1848,8 +1839,8 @@ The abstract should have no more than 1600 characters max (including spaces); us
 <li>made hotel reservations for GSIS</li>
 </ul>
 </section>
-<section id="mar-2023-10" class="level4">
-<h4 class="anchored" data-anchor-id="mar-2023-10">09-MAR-2023</h4>
+<section id="mar-2023-10" class="level4" data-number="4.11.0.11">
+<h4 data-number="4.11.0.11" class="anchored" data-anchor-id="mar-2023-10"><span class="header-section-number">4.11.0.11</span> 09-MAR-2023</h4>
 <ul>
 <li><p>Attended Coastal Ecology candidate chalk talk</p></li>
 <li><p>Shadowed Grace for new RNA extraction protocol &amp; Qubit QC for RNA quality</p></li>
@@ -1872,8 +1863,8 @@ The abstract should have no more than 1600 characters max (including spaces); us
 </ul></li>
 </ul>
 </section>
-<section id="mar-2023-11" class="level4">
-<h4 class="anchored" data-anchor-id="mar-2023-11">07-MAR-2023</h4>
+<section id="mar-2023-11" class="level4" data-number="4.11.0.12">
+<h4 data-number="4.11.0.12" class="anchored" data-anchor-id="mar-2023-11"><span class="header-section-number">4.11.0.12</span> 07-MAR-2023</h4>
 <ul>
 <li>worked on SMEA/FISH 539 final paper</li>
 <li>met to make GSIS budget w/ Juliette</li>
@@ -1881,24 +1872,24 @@ The abstract should have no more than 1600 characters max (including spaces); us
 <li>participated in SAC interview for ADDEI</li>
 </ul>
 </section>
-<section id="mar-2023-12" class="level4">
-<h4 class="anchored" data-anchor-id="mar-2023-12">06-MAR-2023</h4>
+<section id="mar-2023-12" class="level4" data-number="4.11.0.13">
+<h4 data-number="4.11.0.13" class="anchored" data-anchor-id="mar-2023-12"><span class="header-section-number">4.11.0.13</span> 06-MAR-2023</h4>
 <ul>
 <li>presented final group project in SMEA/FISH 539</li>
 <li>worked on SMEA/FISH 539 final paper</li>
 <li>attended Coastal Ecology faculty candidate seminar</li>
 </ul>
 </section>
-<section id="mar-2023-13" class="level4">
-<h4 class="anchored" data-anchor-id="mar-2023-13">03-MAR-2023</h4>
+<section id="mar-2023-13" class="level4" data-number="4.11.0.14">
+<h4 data-number="4.11.0.14" class="anchored" data-anchor-id="mar-2023-13"><span class="header-section-number">4.11.0.14</span> 03-MAR-2023</h4>
 <ul>
 <li>I swear I’ve done stuff since January / how has winter quarter gone by so fast?!</li>
 <li>submitted <a href="https://pcc.uw.edu/research/funding-opportunities/">PCC Climate Solutions</a> grant funding application this morning</li>
 <li>worked on FSMEA/FISH 539 final project + presentation</li>
 </ul>
 </section>
-<section id="mar-2023-14" class="level4">
-<h4 class="anchored" data-anchor-id="mar-2023-14">02-MAR-2023</h4>
+<section id="mar-2023-14" class="level4" data-number="4.11.0.15">
+<h4 data-number="4.11.0.15" class="anchored" data-anchor-id="mar-2023-14"><span class="header-section-number">4.11.0.15</span> 02-MAR-2023</h4>
 <ul>
 <li>submitted FHL TA application for summer A term marine botany</li>
 <li>helped interview ADDEI candidate</li>
@@ -1908,16 +1899,16 @@ The abstract should have no more than 1600 characters max (including spaces); us
 </ul>
 </section>
 </section>
-<section id="january-2023" class="level2">
-<h2 class="anchored" data-anchor-id="january-2023">January 2023</h2>
-<section id="jan-2023" class="level4">
-<h4 class="anchored" data-anchor-id="jan-2023">31-JAN-2023</h4>
+<section id="january-2023" class="level2" data-number="4.12">
+<h2 data-number="4.12" class="anchored" data-anchor-id="january-2023"><span class="header-section-number">4.12</span> January 2023</h2>
+<section id="jan-2023" class="level4" data-number="4.12.0.1">
+<h4 data-number="4.12.0.1" class="anchored" data-anchor-id="jan-2023"><span class="header-section-number">4.12.0.1</span> 31-JAN-2023</h4>
 <ul>
 <li>prepared 1st committee meeting blog post</li>
 </ul>
 </section>
-<section id="jan-2023-1" class="level4">
-<h4 class="anchored" data-anchor-id="jan-2023-1">20-JAN-2023</h4>
+<section id="jan-2023-1" class="level4" data-number="4.12.0.2">
+<h4 data-number="4.12.0.2" class="anchored" data-anchor-id="jan-2023-1"><span class="header-section-number">4.12.0.2</span> 20-JAN-2023</h4>
 <ul>
 <li>cleaned PBB</li>
 <li>strategized chapter 1: Low Dose Effects &amp; chapter 2: Multiple Stressors for thesis</li>
@@ -1925,8 +1916,8 @@ The abstract should have no more than 1600 characters max (including spaces); us
 <li>completed lab safety trainings</li>
 </ul>
 </section>
-<section id="jan-2023-2" class="level4">
-<h4 class="anchored" data-anchor-id="jan-2023-2">19-JAN-2023</h4>
+<section id="jan-2023-2" class="level4" data-number="4.12.0.3">
+<h4 data-number="4.12.0.3" class="anchored" data-anchor-id="jan-2023-2"><span class="header-section-number">4.12.0.3</span> 19-JAN-2023</h4>
 <ul>
 <li><p>read <a href="https://ahuffmyer.github.io/ASH_Putnam_Lab_Notebook/">Ariana Huffmyer’s</a> lab posts on extraction protocols</p></li>
 <li><p>read <a href="https://www.nature.com/articles/ismej201539.pdf">Ainsworth et al 2015</a> &amp; <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/mec.15899">Brown et al 2021</a></p>
@@ -1938,21 +1929,21 @@ The abstract should have no more than 1600 characters max (including spaces); us
 <li><p>designed graphical methods in Canva for pae-temp experiment</p></li>
 </ul>
 </section>
-<section id="jan-2023-3" class="level4">
-<h4 class="anchored" data-anchor-id="jan-2023-3">18-JAN-2023</h4>
+<section id="jan-2023-3" class="level4" data-number="4.12.0.4">
+<h4 data-number="4.12.0.4" class="anchored" data-anchor-id="jan-2023-3"><span class="header-section-number">4.12.0.4</span> 18-JAN-2023</h4>
 <ul>
 <li>worked with <a href="https://github.com/norahess">norahess</a> to setup collaboration on ibis repo!</li>
 <li>talking about setting up Aiptasia spawning tanks to run experiments with cnidarian model organism reproduction</li>
 </ul>
 </section>
-<section id="jan-2023-4" class="level4">
-<h4 class="anchored" data-anchor-id="jan-2023-4">17-JAN-2023</h4>
+<section id="jan-2023-4" class="level4" data-number="4.12.0.5">
+<h4 data-number="4.12.0.5" class="anchored" data-anchor-id="jan-2023-4"><span class="header-section-number">4.12.0.5</span> 17-JAN-2023</h4>
 <ul>
 <li>attended Roberts lab meeting, discussed curriculum development for Maritime Highschool</li>
 </ul>
 </section>
-<section id="jan-2023-5" class="level4">
-<h4 class="anchored" data-anchor-id="jan-2023-5">13-JAN-2023</h4>
+<section id="jan-2023-5" class="level4" data-number="4.12.0.6">
+<h4 data-number="4.12.0.6" class="anchored" data-anchor-id="jan-2023-5"><span class="header-section-number">4.12.0.6</span> 13-JAN-2023</h4>
 <ul>
 <li>Read up on ‘Omics’, started a post on definitions and basics of the study of DNA &amp; RNA</li>
 <li>Found <a href="https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/montipora%20capitata">whole genome for <em>M. capitata</em> on NCBI</a></li>
@@ -1961,8 +1952,8 @@ The abstract should have no more than 1600 characters max (including spaces); us
 <li>Shumaker, A., Putnam, H. M., Qiu, H., Price, D. C., Zelzion, E., Harel, A., Wagner, N. E., Gates, R. D., Yoon, H. S., &amp; Bhattacharya, D. (2019). Genome analysis of the rice coral Montipora capitata. <em>Scientific Reports</em>, <em>9</em>(1), 2571. https://doi.org/10.1038/s41598-019-39274-3</li>
 </ul>
 </section>
-<section id="jan-2023-6" class="level4">
-<h4 class="anchored" data-anchor-id="jan-2023-6">12-JAN-2023</h4>
+<section id="jan-2023-6" class="level4" data-number="4.12.0.7">
+<h4 data-number="4.12.0.7" class="anchored" data-anchor-id="jan-2023-6"><span class="header-section-number">4.12.0.7</span> 12-JAN-2023</h4>
 <ul>
 <li><p>Explored the use of purple sea urchin and/or Aiptasia for phthalate low-dose effect gametogenesis study (proposal brainstorming) for the <a href="https://environment.uw.edu/students/current-students/identity-belonging-and-inquiry-in-science-ibis-program/">IBIS research mentor program</a></p></li>
 <li><p>Created <a href="https://github.com/sarahtanja/ibis">ibis repo</a> to organize project</p></li>
@@ -1978,8 +1969,8 @@ The abstract should have no more than 1600 characters max (including spaces); us
 </ul></li>
 </ul>
 </section>
-<section id="jan-2023-7" class="level4">
-<h4 class="anchored" data-anchor-id="jan-2023-7">09-JAN-2023</h4>
+<section id="jan-2023-7" class="level4" data-number="4.12.0.8">
+<h4 data-number="4.12.0.8" class="anchored" data-anchor-id="jan-2023-7"><span class="header-section-number">4.12.0.8</span> 09-JAN-2023</h4>
 <ul>
 <li><p>Today I setup my GitHub ‘notebook’! This is the beginning of my exploration of using GitHub to jot down thoughts, record ‘daily bits’, and organize the procedures and methods I’ll use in my thesis research</p></li>
 <li><p><a href="https://github.com/zbengt">zbengt</a> introduced me to ‘<a href="https://elicit.org/">elicit</a>’, a lit review search AI. I searched “What is the role of endocrine signaling in cnidarian development” and found an exciting paper titled <a href="https://www.frontiersin.org/articles/10.3389/fgene.2021.793306/full"><strong>“Sea Anemones Responding to Sex Hormones, Oxybenzone, and Benzyl Butyl Phthalate: Transcriptional Profiling and <em>in Silico</em> Modelling Provide Clues to Decipher Endocrine Disruption in Cnidarians”</strong></a> authored by Morgan et al.&nbsp;in 2022</p></li>

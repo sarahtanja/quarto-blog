@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -258,8 +258,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -272,14 +271,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -404,7 +395,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -414,13 +405,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#caroline-gibson-scholarship-in-marine-studies-northwest-straits-foundation" id="toc-caroline-gibson-scholarship-in-marine-studies-northwest-straits-foundation" class="nav-link active" data-scroll-target="#caroline-gibson-scholarship-in-marine-studies-northwest-straits-foundation">Caroline Gibson Scholarship in Marine Studies (Northwest Straits Foundation)</a>
+  <li><a href="#caroline-gibson-scholarship-in-marine-studies-northwest-straits-foundation" id="toc-caroline-gibson-scholarship-in-marine-studies-northwest-straits-foundation" class="nav-link active" data-scroll-target="#caroline-gibson-scholarship-in-marine-studies-northwest-straits-foundation"><span class="header-section-number">1</span> Caroline Gibson Scholarship in Marine Studies (Northwest Straits Foundation)</a>
   <ul>
-  <li><a href="#smithsonian-institution-fellowship-program-sifp" id="toc-smithsonian-institution-fellowship-program-sifp" class="nav-link" data-scroll-target="#smithsonian-institution-fellowship-program-sifp"><strong>Smithsonian Institution Fellowship Program (SIFP)</strong></a></li>
+  <li><a href="#smithsonian-institution-fellowship-program-sifp" id="toc-smithsonian-institution-fellowship-program-sifp" class="nav-link" data-scroll-target="#smithsonian-institution-fellowship-program-sifp"><span class="header-section-number">1.1</span> <strong>Smithsonian Institution Fellowship Program (SIFP)</strong></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -437,10 +428,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="caroline-gibson-scholarship-in-marine-studies-northwest-straits-foundation" class="level2">
-<h2 class="anchored" data-anchor-id="caroline-gibson-scholarship-in-marine-studies-northwest-straits-foundation"><a href="https://nwstraitsfoundation.org/get-involved/caroline-gibson-scholarship-fund/">Caroline Gibson Scholarship in Marine Studies (Northwest Straits Foundation)</a></h2>
-<section id="smithsonian-institution-fellowship-program-sifp" class="level3">
-<h3 class="anchored" data-anchor-id="smithsonian-institution-fellowship-program-sifp"><a href="https://fellowships.si.edu/opportunity/smithsonian-institution-fellowship-program-sifp"><strong>Smithsonian Institution Fellowship Program (SIFP)</strong></a></h3>
+<section id="caroline-gibson-scholarship-in-marine-studies-northwest-straits-foundation" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="caroline-gibson-scholarship-in-marine-studies-northwest-straits-foundation"><span class="header-section-number">1</span> <a href="https://nwstraitsfoundation.org/get-involved/caroline-gibson-scholarship-fund/">Caroline Gibson Scholarship in Marine Studies (Northwest Straits Foundation)</a></h2>
+<section id="smithsonian-institution-fellowship-program-sifp" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="smithsonian-institution-fellowship-program-sifp"><span class="header-section-number">1.1</span> <a href="https://fellowships.si.edu/opportunity/smithsonian-institution-fellowship-program-sifp"><strong>Smithsonian Institution Fellowship Program (SIFP)</strong></a></h3>
 <p>Smithsonian fellowships are offered to individuals who design and develop proposals to conduct independent research.</p>
 <p>The Smithsonian Institution Fellowship Program offers opportunities for independent research or study related to Smithsonian collections, facilities, and/or research interests of the Institution and its staff. Fellowships are offered to graduate students, predoctoral students, and postdoctoral and senior researchers to conduct independent research and to utilize the resources of the Institution with members of the Smithsonian professional research staff serving as advisors and hosts. These fellowships are offered through the Smithsonian’s Office of Academic Appointments and Internships, and are administered under the charter of the Institution, 20 U.S. Code section 41 et seq.</p>
 <p>About <a href="https://fellowships.si.edu/fellowship-programs">Smithsonian fellowship programs</a></p>

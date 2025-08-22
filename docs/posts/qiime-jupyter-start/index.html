@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-2963c6e6b77d6d6d18f8ef9328ea8c06.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-9f28cff02a7dc990fbb415f4edd25702.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-2963c6e6b77d6d6d18f8ef9328ea8c06.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-c2e3b52ac4c9483bb3333d29b48f0766.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark-c2e3b52ac4c9483bb3333d29b48f0766.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-c2e3b52ac4c9483bb3333d29b48f0766.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -258,8 +258,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -272,14 +271,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -404,7 +395,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -414,24 +405,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#step-1.-get-setup-as-a-user-on-a-remote-linux-server" id="toc-step-1.-get-setup-as-a-user-on-a-remote-linux-server" class="nav-link active" data-scroll-target="#step-1.-get-setup-as-a-user-on-a-remote-linux-server">Step 1. Get setup as a user on a remote Linux server</a></li>
-  <li><a href="#step-2.-download-windows-subsystem-for-linux-wsl-to-your-windows-os-computer" id="toc-step-2.-download-windows-subsystem-for-linux-wsl-to-your-windows-os-computer" class="nav-link" data-scroll-target="#step-2.-download-windows-subsystem-for-linux-wsl-to-your-windows-os-computer">Step 2. Download Windows Subsystem for Linux (WSL) to your Windows OS computer</a></li>
-  <li><a href="#step-3.-download-a-vpn-client" id="toc-step-3.-download-a-vpn-client" class="nav-link" data-scroll-target="#step-3.-download-a-vpn-client">Step 3. Download a VPN Client</a></li>
-  <li><a href="#step-4.-setup-a-tunnel-into-the-remote-server" id="toc-step-4.-setup-a-tunnel-into-the-remote-server" class="nav-link" data-scroll-target="#step-4.-setup-a-tunnel-into-the-remote-server">Step 4. Setup a ‘tunnel’ into the remote server</a></li>
-  <li><a href="#step-5.-follow-qiime2-install" id="toc-step-5.-follow-qiime2-install" class="nav-link" data-scroll-target="#step-5.-follow-qiime2-install">Step 5. Follow QIIME2 Install</a>
+  <li><a href="#step-1.-get-setup-as-a-user-on-a-remote-linux-server" id="toc-step-1.-get-setup-as-a-user-on-a-remote-linux-server" class="nav-link active" data-scroll-target="#step-1.-get-setup-as-a-user-on-a-remote-linux-server"><span class="header-section-number">1</span> Step 1. Get setup as a user on a remote Linux server</a></li>
+  <li><a href="#step-2.-download-windows-subsystem-for-linux-wsl-to-your-windows-os-computer" id="toc-step-2.-download-windows-subsystem-for-linux-wsl-to-your-windows-os-computer" class="nav-link" data-scroll-target="#step-2.-download-windows-subsystem-for-linux-wsl-to-your-windows-os-computer"><span class="header-section-number">2</span> Step 2. Download Windows Subsystem for Linux (WSL) to your Windows OS computer</a></li>
+  <li><a href="#step-3.-download-a-vpn-client" id="toc-step-3.-download-a-vpn-client" class="nav-link" data-scroll-target="#step-3.-download-a-vpn-client"><span class="header-section-number">3</span> Step 3. Download a VPN Client</a></li>
+  <li><a href="#step-4.-setup-a-tunnel-into-the-remote-server" id="toc-step-4.-setup-a-tunnel-into-the-remote-server" class="nav-link" data-scroll-target="#step-4.-setup-a-tunnel-into-the-remote-server"><span class="header-section-number">4</span> Step 4. Setup a ‘tunnel’ into the remote server</a></li>
+  <li><a href="#step-5.-follow-qiime2-install" id="toc-step-5.-follow-qiime2-install" class="nav-link" data-scroll-target="#step-5.-follow-qiime2-install"><span class="header-section-number">5</span> Step 5. Follow QIIME2 Install</a>
   <ul>
-  <li><a href="#step-5.1-install-miniconda" id="toc-step-5.1-install-miniconda" class="nav-link" data-scroll-target="#step-5.1-install-miniconda">Step 5.1 Install <code>Miniconda</code></a></li>
-  <li><a href="#step-5.2-install-qiime2-within-a-conda-environment" id="toc-step-5.2-install-qiime2-within-a-conda-environment" class="nav-link" data-scroll-target="#step-5.2-install-qiime2-within-a-conda-environment">Step 5.2 Install <code>QIIME2</code> within a <code>conda</code> environment</a></li>
-  <li><a href="#step-5.3-activate-conda-environment" id="toc-step-5.3-activate-conda-environment" class="nav-link" data-scroll-target="#step-5.3-activate-conda-environment">Step 5.3 Activate <code>conda</code> environment</a></li>
-  <li><a href="#step-5.4-test-installation" id="toc-step-5.4-test-installation" class="nav-link" data-scroll-target="#step-5.4-test-installation">Step 5.4 Test Installation</a></li>
+  <li><a href="#step-5.1-install-miniconda" id="toc-step-5.1-install-miniconda" class="nav-link" data-scroll-target="#step-5.1-install-miniconda"><span class="header-section-number">5.1</span> Step 5.1 Install <code>Miniconda</code></a></li>
+  <li><a href="#step-5.2-install-qiime2-within-a-conda-environment" id="toc-step-5.2-install-qiime2-within-a-conda-environment" class="nav-link" data-scroll-target="#step-5.2-install-qiime2-within-a-conda-environment"><span class="header-section-number">5.2</span> Step 5.2 Install <code>QIIME2</code> within a <code>conda</code> environment</a></li>
+  <li><a href="#step-5.3-activate-conda-environment" id="toc-step-5.3-activate-conda-environment" class="nav-link" data-scroll-target="#step-5.3-activate-conda-environment"><span class="header-section-number">5.3</span> Step 5.3 Activate <code>conda</code> environment</a></li>
+  <li><a href="#step-5.4-test-installation" id="toc-step-5.4-test-installation" class="nav-link" data-scroll-target="#step-5.4-test-installation"><span class="header-section-number">5.4</span> Step 5.4 Test Installation</a></li>
   </ul></li>
-  <li><a href="#step-6.-download-jupyter-lab-in-qiime2-conda-environment" id="toc-step-6.-download-jupyter-lab-in-qiime2-conda-environment" class="nav-link" data-scroll-target="#step-6.-download-jupyter-lab-in-qiime2-conda-environment">Step 6. Download Jupyter Lab in <code>QIIME2</code> <code>conda</code> environment</a></li>
-  <li><a href="#step-7.-enable-qiime2-plugins-for-python-api-use" id="toc-step-7.-enable-qiime2-plugins-for-python-api-use" class="nav-link" data-scroll-target="#step-7.-enable-qiime2-plugins-for-python-api-use">Step 7. Enable qiime2 plugins for Python API use</a></li>
-  <li><a href="#step-7.-review-startup-sequence" id="toc-step-7.-review-startup-sequence" class="nav-link" data-scroll-target="#step-7.-review-startup-sequence">Step 7. Review Startup Sequence</a></li>
+  <li><a href="#step-6.-download-jupyter-lab-in-qiime2-conda-environment" id="toc-step-6.-download-jupyter-lab-in-qiime2-conda-environment" class="nav-link" data-scroll-target="#step-6.-download-jupyter-lab-in-qiime2-conda-environment"><span class="header-section-number">6</span> Step 6. Download Jupyter Lab in <code>QIIME2</code> <code>conda</code> environment</a></li>
+  <li><a href="#step-7.-enable-qiime2-plugins-for-python-api-use" id="toc-step-7.-enable-qiime2-plugins-for-python-api-use" class="nav-link" data-scroll-target="#step-7.-enable-qiime2-plugins-for-python-api-use"><span class="header-section-number">7</span> Step 7. Enable qiime2 plugins for Python API use</a></li>
+  <li><a href="#step-7.-review-startup-sequence" id="toc-step-7.-review-startup-sequence" class="nav-link" data-scroll-target="#step-7.-review-startup-sequence"><span class="header-section-number">8</span> Step 7. Review Startup Sequence</a></li>
   </ul>
 </nav>
 </nav>
@@ -463,18 +454,18 @@ Objective
 <p>Run <code>qiime2</code> commands in a <code>jupyter notebook</code> on a remote Linux server (from a Windows OS!)</p>
 </div>
 </div>
-<section id="step-1.-get-setup-as-a-user-on-a-remote-linux-server" class="level2">
-<h2 class="anchored" data-anchor-id="step-1.-get-setup-as-a-user-on-a-remote-linux-server">Step 1. Get setup as a user on a remote Linux server</h2>
+<section id="step-1.-get-setup-as-a-user-on-a-remote-linux-server" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="step-1.-get-setup-as-a-user-on-a-remote-linux-server"><span class="header-section-number">1</span> Step 1. Get setup as a user on a remote Linux server</h2>
 <p>This may be the hardest part because you are relying on support from your institution or PI (unless you have the ability to setup your own Linux server, which is outside the scope of this post).</p>
 <p>In Spring of 2023 I had taken the <a href="https://sr320.github.io/course-fish546-2023/schedule.html">Bioinformatics FISH 546</a> taught by Steven Roberts at UW. In that class, I was added as a user to a remote Linux server hosted by the <a href="https://robertslab.github.io/resources/">Roberts Lab</a>. I got permission to continue using the remote server for my Master’s Thesis research bioinformatics analysis. So, the Roberts Lab set me up with a username and a password to access the remote server.</p>
 </section>
-<section id="step-2.-download-windows-subsystem-for-linux-wsl-to-your-windows-os-computer" class="level2">
-<h2 class="anchored" data-anchor-id="step-2.-download-windows-subsystem-for-linux-wsl-to-your-windows-os-computer">Step 2. Download Windows Subsystem for Linux (WSL) to your Windows OS computer</h2>
+<section id="step-2.-download-windows-subsystem-for-linux-wsl-to-your-windows-os-computer" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="step-2.-download-windows-subsystem-for-linux-wsl-to-your-windows-os-computer"><span class="header-section-number">2</span> Step 2. Download Windows Subsystem for Linux (WSL) to your Windows OS computer</h2>
 <p>I followed the instructions found at the Microsoft Documentation website <a href="https://learn.microsoft.com/en-us/windows/wsl/install">Install Linux on Windows with WSL</a>.</p>
 <p>In brief, I opened Windows PowerShell and ran <code>wsl --install</code> which installed the Ubuntu Linux distribution. I kept the default Ubuntu distribution. I continued following the instructions to <a href="https://learn.microsoft.com/en-us/windows/wsl/install#:~:text=use%20with%20WSL.-,Set%20up%20your%20Linux%20user%20info,-Once%20you%20have">Set up your Linux user info</a>, and kept my password secret and safe.</p>
 </section>
-<section id="step-3.-download-a-vpn-client" class="level2">
-<h2 class="anchored" data-anchor-id="step-3.-download-a-vpn-client">Step 3. Download a VPN Client</h2>
+<section id="step-3.-download-a-vpn-client" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="step-3.-download-a-vpn-client"><span class="header-section-number">3</span> Step 3. Download a VPN Client</h2>
 <p>As a student at UW, I have access to some free software through the IT department, and to connect remotely to servers hosted at UW I needed to download the virtual private network (VPN) <a href="https://www.lib.washington.edu/help/connect/husky-onnet">Big-IP Edge Client</a> to my home PC and my mobile laptop.</p>
 <p>So I followed <a href="https://www.lib.washington.edu/help/connect/husky-onnet">these instructions</a> to download the BIG-IP Edge Client for UW students, and I did this for both my home PC and laptop. I then connected to the VPN!</p>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -504,8 +495,8 @@ Important
 </div>
 </div>
 </section>
-<section id="step-4.-setup-a-tunnel-into-the-remote-server" class="level2">
-<h2 class="anchored" data-anchor-id="step-4.-setup-a-tunnel-into-the-remote-server">Step 4. Setup a ‘tunnel’ into the remote server</h2>
+<section id="step-4.-setup-a-tunnel-into-the-remote-server" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="step-4.-setup-a-tunnel-into-the-remote-server"><span class="header-section-number">4</span> Step 4. Setup a ‘tunnel’ into the remote server</h2>
 <p>I opened the WSL Ubuntu terminal 🐧 and made a .ssh directory in my home directory, and then opened the nano text editor to write a config file in the .ssh folder:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> .ssh</span>
@@ -566,11 +557,11 @@ Tip
 </div>
 </div>
 </section>
-<section id="step-5.-follow-qiime2-install" class="level2">
-<h2 class="anchored" data-anchor-id="step-5.-follow-qiime2-install">Step 5. Follow QIIME2 Install</h2>
+<section id="step-5.-follow-qiime2-install" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="step-5.-follow-qiime2-install"><span class="header-section-number">5</span> Step 5. Follow QIIME2 Install</h2>
 <p>I followed the <a href="https://docs.qiime2.org/2023.5/install/native/">QIIME2 Install Instructions</a> for a native install on a Linux OS. The steps below are taken directly from the <code>QIIME2</code> docs instruction on Natively installing <code>QIIME2</code> using <code>Miniconda</code> on a Linux machine.</p>
-<section id="step-5.1-install-miniconda" class="level3">
-<h3 class="anchored" data-anchor-id="step-5.1-install-miniconda">Step 5.1 Install <code>Miniconda</code></h3>
+<section id="step-5.1-install-miniconda" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="step-5.1-install-miniconda"><span class="header-section-number">5.1</span> Step 5.1 Install <code>Miniconda</code></h3>
 <p><a href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a> provides the <code>conda</code> environment and package manager, and is the recommended way to install <code>QIIME 2</code>. Follow the <a href="https://conda.io/projects/conda/en/latest/user-guide/install/index.html">Miniconda instructions</a> for downloading and installing <code>Miniconda</code>.</p>
 <p>Here, I choose to work with <code>Miniconda3</code>, because I also have <code>Python 3</code>. I am also following <a href="https://conda.io/projects/conda/en/latest/user-guide/install/linux.html">instructions for downloading to a Linux environment</a>.</p>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -591,8 +582,8 @@ Important
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-O</span> https://repo.anaconda.com/miniconda/Miniconda3-py311_23.5.2-0-Linux-x86_64.sh</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="step-5.2-install-qiime2-within-a-conda-environment" class="level3">
-<h3 class="anchored" data-anchor-id="step-5.2-install-qiime2-within-a-conda-environment">Step 5.2 Install <code>QIIME2</code> within a <code>conda</code> environment</h3>
+<section id="step-5.2-install-qiime2-within-a-conda-environment" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="step-5.2-install-qiime2-within-a-conda-environment"><span class="header-section-number">5.2</span> Step 5.2 Install <code>QIIME2</code> within a <code>conda</code> environment</h3>
 <p>I continued following the the <a href="https://docs.qiime2.org/2023.5/install/native/">QIIME2 Install Instructions</a> and, in the remote server terminal ran:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://data.qiime2.org/distro/core/qiime2-2023.5-py38-linux-conda.yml</span>
@@ -600,21 +591,21 @@ Important
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> qiime2-2023.5-py38-linux-conda.yml</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="step-5.3-activate-conda-environment" class="level3">
-<h3 class="anchored" data-anchor-id="step-5.3-activate-conda-environment">Step 5.3 Activate <code>conda</code> environment</h3>
+<section id="step-5.3-activate-conda-environment" class="level3" data-number="5.3">
+<h3 data-number="5.3" class="anchored" data-anchor-id="step-5.3-activate-conda-environment"><span class="header-section-number">5.3</span> Step 5.3 Activate <code>conda</code> environment</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate qiime2-2023.5</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="step-5.4-test-installation" class="level3">
-<h3 class="anchored" data-anchor-id="step-5.4-test-installation">Step 5.4 Test Installation</h3>
+<section id="step-5.4-test-installation" class="level3" data-number="5.4">
+<h3 data-number="5.4" class="anchored" data-anchor-id="step-5.4-test-installation"><span class="header-section-number">5.4</span> Step 5.4 Test Installation</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">qiime</span> <span class="at">--help</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
-<section id="step-6.-download-jupyter-lab-in-qiime2-conda-environment" class="level2">
-<h2 class="anchored" data-anchor-id="step-6.-download-jupyter-lab-in-qiime2-conda-environment">Step 6. Download Jupyter Lab in <code>QIIME2</code> <code>conda</code> environment</h2>
+<section id="step-6.-download-jupyter-lab-in-qiime2-conda-environment" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="step-6.-download-jupyter-lab-in-qiime2-conda-environment"><span class="header-section-number">6</span> Step 6. Download Jupyter Lab in <code>QIIME2</code> <code>conda</code> environment</h2>
 <p>Now that I am operating on the remote server, and within the qiime2 conda environment (what a feat!) I can download <code>jupyter lab</code> inside the qiime2-2023.5 env.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">sarahtanja@MINERVA:~$</span> <span class="co"># I started here</span></span>
@@ -626,14 +617,14 @@ Important
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install <span class="at">-c</span> conda-forge jupyterlab</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="step-7.-enable-qiime2-plugins-for-python-api-use" class="level2">
-<h2 class="anchored" data-anchor-id="step-7.-enable-qiime2-plugins-for-python-api-use">Step 7. Enable qiime2 plugins for Python API use</h2>
+<section id="step-7.-enable-qiime2-plugins-for-python-api-use" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="step-7.-enable-qiime2-plugins-for-python-api-use"><span class="header-section-number">7</span> Step 7. Enable qiime2 plugins for Python API use</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> serverextension enable <span class="at">--py</span> qiime2 <span class="at">--sys-prefix</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="step-7.-review-startup-sequence" class="level2">
-<h2 class="anchored" data-anchor-id="step-7.-review-startup-sequence">Step 7. Review Startup Sequence</h2>
+<section id="step-7.-review-startup-sequence" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="step-7.-review-startup-sequence"><span class="header-section-number">8</span> Step 7. Review Startup Sequence</h2>
 <p>If working from a different network than the remote server, start Big IP-Edge VPN Client and connect to ‘All Internet Traffic’ server.</p>
 <p>Open Ubuntu Linux terminal</p>
 <p>Run <code>ssh &lt;server&gt;_tunnel</code> Enter user pasword Run <code>conda activate qiime2-2023.5</code> Run <code>jupyter lab --no-browser --port=9000</code> Ctrl+Click or Copy&amp;Paste the jupyter lab local host url into a browser window</p>

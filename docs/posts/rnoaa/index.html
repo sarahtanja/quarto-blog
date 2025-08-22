@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -259,8 +259,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -273,14 +272,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -404,7 +395,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -414,14 +405,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#install-packages" id="toc-install-packages" class="nav-link active" data-scroll-target="#install-packages">Install packages</a></li>
-  <li><a href="#load-libraries" id="toc-load-libraries" class="nav-link" data-scroll-target="#load-libraries">Load libraries</a></li>
-  <li><a href="#load-data" id="toc-load-data" class="nav-link" data-scroll-target="#load-data">Load Data</a></li>
-  <li><a href="#load-gridded-climate-data" id="toc-load-gridded-climate-data" class="nav-link" data-scroll-target="#load-gridded-climate-data">Load Gridded climate data</a></li>
+  <li><a href="#install-packages" id="toc-install-packages" class="nav-link active" data-scroll-target="#install-packages"><span class="header-section-number">0.1</span> Install packages</a></li>
+  <li><a href="#load-libraries" id="toc-load-libraries" class="nav-link" data-scroll-target="#load-libraries"><span class="header-section-number">0.2</span> Load libraries</a></li>
+  <li><a href="#load-data" id="toc-load-data" class="nav-link" data-scroll-target="#load-data"><span class="header-section-number">0.3</span> Load Data</a></li>
+  <li><a href="#load-gridded-climate-data" id="toc-load-gridded-climate-data" class="nav-link" data-scroll-target="#load-gridded-climate-data"><span class="header-section-number">0.4</span> Load Gridded climate data</a></li>
   </ul>
 </nav>
 </nav>
@@ -440,8 +431,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>“Air temperature and tide data Air temperature and tide level data was obtained from various sources depending on the location. Hourly temperature and tide data for Toke Point and Port Townsend and tide data from Neah Bay and Budd Inlet was obtained from publically available National Oceanic and Atmospheric Administration (NOAA) tide station data using the ‘rnoaa’ package in R (Chamberlin et al.&nbsp;2021, R Core Team 2021). Hourly temperature and tide data for Vancouver and tide data for Pruth Bay was obtained from publically available Department of Fisheries and Oceans (DFO) Canada tide station data. Air temperature data for Pruth Bay was obtained from the Hakai Institute weather station (Giesbrecht et al.&nbsp;2021). Air temperature data for Neah Bay was obtained from a weather station on nearby Tatoosh Island, WA (C. Pfister and T. Wootton personal communication). Air temperature data for Budd Inlet was obtained from the nearby Evergreen State College weather station. If raw data was reported at time scale less than one hour, mean hourly temperature was calculated. These data can be accessed two ways, both of which are available (Raymond, 2022). There, static data files are archived as well as code to query and process them if necessary. Long term, 1991 – 2020, air temperature data was obtained from the National Aeronautical and Space Agency (NASA) DAYMET surface temperature database using the ‘daymetr’ package in R (Hufkens 2021). We extracted maximum and minimum daily surface air temperatures from 2° latitude by 2° longitude grids. Grids were selected by the location of the hourly temperatures/tide stations above. These are Toke Point 46.7499° N -124.0250°W, Budd Inlet 47.0643°N -122.9106°W, Neah Bay 48.3770°N -124.6897°W, Port Townsend and Vancouver 48.1172°N -122.7890°W, and Pruth Bay 51.6271°N -127.6450°W. From this raw daily data, long term daily mean high and low temperatures were calculated. Code to obtain and processes these data in the R environment are available (Raymond, 2022).”</p>
 <p>archived in Zenodo https://zenodo.org/records/6555076</p>
 <p>https://github.com/wraymond/Ecology_heatwave-salish-sea-shellfish/tree/v1.0</p>
-<section id="install-packages" class="level3">
-<h3 class="anchored" data-anchor-id="install-packages">Install packages</h3>
+<section id="install-packages" class="level3" data-number="0.1">
+<h3 data-number="0.1" class="anchored" data-anchor-id="install-packages"><span class="header-section-number">0.1</span> Install packages</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">'tidyverse'</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>()) <span class="sc">==</span> <span class="st">'FALSE'</span>) <span class="fu">install.packages</span>(<span class="st">'tidyverse'</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">'noaaoceans'</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>()) <span class="sc">==</span> <span class="st">'FALSE'</span>) <span class="fu">install.packages</span>(<span class="st">'noaaoceans'</span>)</span>
@@ -453,8 +444,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">'tiff'</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>()) <span class="sc">==</span> <span class="st">'FALSE'</span>) <span class="fu">install.packages</span>(<span class="st">'tiff'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="load-libraries" class="level3">
-<h3 class="anchored" data-anchor-id="load-libraries">Load libraries</h3>
+<section id="load-libraries" class="level3" data-number="0.2">
+<h3 data-number="0.2" class="anchored" data-anchor-id="load-libraries"><span class="header-section-number">0.2</span> Load libraries</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(noaaoceans)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
@@ -532,8 +523,8 @@ The following object is masked from 'package:lubridate':
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_set</span>(<span class="fu">theme_classic</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="load-data" class="level3">
-<h3 class="anchored" data-anchor-id="load-data">Load Data</h3>
+<section id="load-data" class="level3" data-number="0.3">
+<h3 data-number="0.3" class="anchored" data-anchor-id="load-data"><span class="header-section-number">0.3</span> Load Data</h3>
 <p>Import NOAA tide and weather station data</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># NOAA Air temp data from Toke Point, Port Townsend #</span></span>
@@ -574,8 +565,8 @@ The following object is masked from 'package:lubridate':
 <span id="cb29-16"><a href="#cb29-16" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="load-gridded-climate-data" class="level3">
-<h3 class="anchored" data-anchor-id="load-gridded-climate-data">Load Gridded climate data</h3>
+<section id="load-gridded-climate-data" class="level3" data-number="0.4">
+<h3 data-number="0.4" class="anchored" data-anchor-id="load-gridded-climate-data"><span class="header-section-number">0.4</span> Load Gridded climate data</h3>
 <p>Pull from Daymet 2 X 2 degree surface grid. https://daymet.ornl.gov/getdata</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Olympia ##</span></span>

@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -115,7 +115,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta property="og:site_name" content="Sarah Tanja's Open Lab Notebook">
 </head>
 
-<body class="floating nav-fixed slimcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -258,8 +258,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -272,14 +271,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -372,7 +363,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <div class="quarto-title-block"><div><h1 class="title">Summary of previous research on microplastic leachate exposure in marine invertebrate embryonic development</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
@@ -404,7 +395,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -413,45 +404,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul class="collapse">
-  <li><a href="#jimenez-guri-et-al.-2023" id="toc-jimenez-guri-et-al.-2023" class="nav-link active" data-scroll-target="#jimenez-guri-et-al.-2023">Jimenez-Guri et al., 2023</a>
+  <li><a href="#jimenez-guri-et-al.-2023" id="toc-jimenez-guri-et-al.-2023" class="nav-link active" data-scroll-target="#jimenez-guri-et-al.-2023"><span class="header-section-number">1</span> Jimenez-Guri et al., 2023</a>
   <ul class="collapse">
-  <li><a href="#pvc-pellet-leachates-affect-adult-immune-system-and-embryonic-development-but-not-reproductive-capacity-in-the-sea-urchin-paracentrotus-lividus" id="toc-pvc-pellet-leachates-affect-adult-immune-system-and-embryonic-development-but-not-reproductive-capacity-in-the-sea-urchin-paracentrotus-lividus" class="nav-link" data-scroll-target="#pvc-pellet-leachates-affect-adult-immune-system-and-embryonic-development-but-not-reproductive-capacity-in-the-sea-urchin-paracentrotus-lividus"><strong>PVC pellet leachates affect adult immune system and embryonic development but not reproductive capacity in the sea urchin <em>Paracentrotus lividus</em></strong></a></li>
+  <li><a href="#pvc-pellet-leachates-affect-adult-immune-system-and-embryonic-development-but-not-reproductive-capacity-in-the-sea-urchin-paracentrotus-lividus" id="toc-pvc-pellet-leachates-affect-adult-immune-system-and-embryonic-development-but-not-reproductive-capacity-in-the-sea-urchin-paracentrotus-lividus" class="nav-link" data-scroll-target="#pvc-pellet-leachates-affect-adult-immune-system-and-embryonic-development-but-not-reproductive-capacity-in-the-sea-urchin-paracentrotus-lividus"><span class="header-section-number">1.1</span> <strong>PVC pellet leachates affect adult immune system and embryonic development but not reproductive capacity in the sea urchin <em>Paracentrotus lividus</em></strong></a></li>
   </ul></li>
-  <li><a href="#rendell-bhatti-et-al.-2021" id="toc-rendell-bhatti-et-al.-2021" class="nav-link" data-scroll-target="#rendell-bhatti-et-al.-2021">Rendell-Bhatti et al., 2021</a>
+  <li><a href="#rendell-bhatti-et-al.-2021" id="toc-rendell-bhatti-et-al.-2021" class="nav-link" data-scroll-target="#rendell-bhatti-et-al.-2021"><span class="header-section-number">2</span> Rendell-Bhatti et al., 2021</a>
   <ul class="collapse">
-  <li><a href="#developmental-toxicity-of-plastic-leachates-on-the-sea-urchin-paracentrotus-lividus" id="toc-developmental-toxicity-of-plastic-leachates-on-the-sea-urchin-paracentrotus-lividus" class="nav-link" data-scroll-target="#developmental-toxicity-of-plastic-leachates-on-the-sea-urchin-paracentrotus-lividus"><strong>Developmental toxicity of plastic leachates on the sea urchin <em>Paracentrotus lividus</em></strong></a></li>
+  <li><a href="#developmental-toxicity-of-plastic-leachates-on-the-sea-urchin-paracentrotus-lividus" id="toc-developmental-toxicity-of-plastic-leachates-on-the-sea-urchin-paracentrotus-lividus" class="nav-link" data-scroll-target="#developmental-toxicity-of-plastic-leachates-on-the-sea-urchin-paracentrotus-lividus"><span class="header-section-number">2.1</span> <strong>Developmental toxicity of plastic leachates on the sea urchin <em>Paracentrotus lividus</em></strong></a></li>
   </ul></li>
-  <li><a href="#gambardella-et-al.-2024" id="toc-gambardella-et-al.-2024" class="nav-link" data-scroll-target="#gambardella-et-al.-2024">Gambardella et al., 2024</a>
+  <li><a href="#gambardella-et-al.-2024" id="toc-gambardella-et-al.-2024" class="nav-link" data-scroll-target="#gambardella-et-al.-2024"><span class="header-section-number">3</span> Gambardella et al., 2024</a>
   <ul class="collapse">
-  <li><a href="#high-concentrations-of-phthalates-affect-the-early-development-of-the-sea-urchin-paracentrotus-lividus" id="toc-high-concentrations-of-phthalates-affect-the-early-development-of-the-sea-urchin-paracentrotus-lividus" class="nav-link" data-scroll-target="#high-concentrations-of-phthalates-affect-the-early-development-of-the-sea-urchin-paracentrotus-lividus"><strong>High concentrations of phthalates affect the early development of the sea urchin <em>Paracentrotus lividus</em></strong></a></li>
+  <li><a href="#high-concentrations-of-phthalates-affect-the-early-development-of-the-sea-urchin-paracentrotus-lividus" id="toc-high-concentrations-of-phthalates-affect-the-early-development-of-the-sea-urchin-paracentrotus-lividus" class="nav-link" data-scroll-target="#high-concentrations-of-phthalates-affect-the-early-development-of-the-sea-urchin-paracentrotus-lividus"><span class="header-section-number">3.1</span> <strong>High concentrations of phthalates affect the early development of the sea urchin <em>Paracentrotus lividus</em></strong></a></li>
   </ul></li>
-  <li><a href="#gandara-e-silva-et-al.-2016" id="toc-gandara-e-silva-et-al.-2016" class="nav-link" data-scroll-target="#gandara-e-silva-et-al.-2016">Gandara e Silva et al., 2016</a>
+  <li><a href="#gandara-e-silva-et-al.-2016" id="toc-gandara-e-silva-et-al.-2016" class="nav-link" data-scroll-target="#gandara-e-silva-et-al.-2016"><span class="header-section-number">4</span> Gandara e Silva et al., 2016</a>
   <ul class="collapse">
-  <li><a href="#leachate-from-microplastics-impairs-larval-development-in-brown-mussels" id="toc-leachate-from-microplastics-impairs-larval-development-in-brown-mussels" class="nav-link" data-scroll-target="#leachate-from-microplastics-impairs-larval-development-in-brown-mussels"><strong>Leachate from microplastics impairs larval development in brown mussels</strong></a></li>
+  <li><a href="#leachate-from-microplastics-impairs-larval-development-in-brown-mussels" id="toc-leachate-from-microplastics-impairs-larval-development-in-brown-mussels" class="nav-link" data-scroll-target="#leachate-from-microplastics-impairs-larval-development-in-brown-mussels"><span class="header-section-number">4.1</span> <strong>Leachate from microplastics impairs larval development in brown mussels</strong></a></li>
   </ul></li>
-  <li><a href="#mincarelli-et-al.-2021" id="toc-mincarelli-et-al.-2021" class="nav-link" data-scroll-target="#mincarelli-et-al.-2021">Mincarelli et al., 2021</a>
+  <li><a href="#mincarelli-et-al.-2021" id="toc-mincarelli-et-al.-2021" class="nav-link" data-scroll-target="#mincarelli-et-al.-2021"><span class="header-section-number">5</span> Mincarelli et al., 2021</a>
   <ul class="collapse">
-  <li><a href="#consequences-of-combined-exposure-to-thermal-stress-and-the-plasticiser-dehp-in-mytilus-spp.-differ-by-sex" id="toc-consequences-of-combined-exposure-to-thermal-stress-and-the-plasticiser-dehp-in-mytilus-spp.-differ-by-sex" class="nav-link" data-scroll-target="#consequences-of-combined-exposure-to-thermal-stress-and-the-plasticiser-dehp-in-mytilus-spp.-differ-by-sex"><strong>Consequences of combined exposure to thermal stress and the plasticiser DEHP in <em>Mytilus spp.</em> differ by sex</strong></a></li>
+  <li><a href="#consequences-of-combined-exposure-to-thermal-stress-and-the-plasticiser-dehp-in-mytilus-spp.-differ-by-sex" id="toc-consequences-of-combined-exposure-to-thermal-stress-and-the-plasticiser-dehp-in-mytilus-spp.-differ-by-sex" class="nav-link" data-scroll-target="#consequences-of-combined-exposure-to-thermal-stress-and-the-plasticiser-dehp-in-mytilus-spp.-differ-by-sex"><span class="header-section-number">5.1</span> <strong>Consequences of combined exposure to thermal stress and the plasticiser DEHP in <em>Mytilus spp.</em> differ by sex</strong></a></li>
   </ul></li>
-  <li><a href="#paganos-et-al.-2023" id="toc-paganos-et-al.-2023" class="nav-link" data-scroll-target="#paganos-et-al.-2023">Paganos et al., 2023</a>
+  <li><a href="#paganos-et-al.-2023" id="toc-paganos-et-al.-2023" class="nav-link" data-scroll-target="#paganos-et-al.-2023"><span class="header-section-number">6</span> Paganos et al., 2023</a>
   <ul class="collapse">
-  <li><a href="#plastic-leachate-induced-toxicity-during-sea-urchin-embryonic-development-insights-into-the-molecular-pathways-affected-by-pvc" id="toc-plastic-leachate-induced-toxicity-during-sea-urchin-embryonic-development-insights-into-the-molecular-pathways-affected-by-pvc" class="nav-link" data-scroll-target="#plastic-leachate-induced-toxicity-during-sea-urchin-embryonic-development-insights-into-the-molecular-pathways-affected-by-pvc"><strong>Plastic leachate-induced toxicity during sea urchin embryonic development: Insights into the molecular pathways affected by PVC</strong></a></li>
+  <li><a href="#plastic-leachate-induced-toxicity-during-sea-urchin-embryonic-development-insights-into-the-molecular-pathways-affected-by-pvc" id="toc-plastic-leachate-induced-toxicity-during-sea-urchin-embryonic-development-insights-into-the-molecular-pathways-affected-by-pvc" class="nav-link" data-scroll-target="#plastic-leachate-induced-toxicity-during-sea-urchin-embryonic-development-insights-into-the-molecular-pathways-affected-by-pvc"><span class="header-section-number">6.1</span> <strong>Plastic leachate-induced toxicity during sea urchin embryonic development: Insights into the molecular pathways affected by PVC</strong></a></li>
   </ul></li>
-  <li><a href="#xiao-et-al.-2018" id="toc-xiao-et-al.-2018" class="nav-link" data-scroll-target="#xiao-et-al.-2018">Xiao et al., 2018</a>
+  <li><a href="#xiao-et-al.-2018" id="toc-xiao-et-al.-2018" class="nav-link" data-scroll-target="#xiao-et-al.-2018"><span class="header-section-number">7</span> Xiao et al., 2018</a>
   <ul class="collapse">
-  <li><a href="#transcriptional-responses-of-acropora-hyacinthus-embryo-under-the-benzoapyrene-stress-by-deep-sequencing" id="toc-transcriptional-responses-of-acropora-hyacinthus-embryo-under-the-benzoapyrene-stress-by-deep-sequencing" class="nav-link" data-scroll-target="#transcriptional-responses-of-acropora-hyacinthus-embryo-under-the-benzoapyrene-stress-by-deep-sequencing">Transcriptional responses of <em>Acropora hyacinthus</em> embryo under the benzo(<em>a</em>)pyrene stress by deep sequencing</a></li>
+  <li><a href="#transcriptional-responses-of-acropora-hyacinthus-embryo-under-the-benzoapyrene-stress-by-deep-sequencing" id="toc-transcriptional-responses-of-acropora-hyacinthus-embryo-under-the-benzoapyrene-stress-by-deep-sequencing" class="nav-link" data-scroll-target="#transcriptional-responses-of-acropora-hyacinthus-embryo-under-the-benzoapyrene-stress-by-deep-sequencing"><span class="header-section-number">7.1</span> Transcriptional responses of <em>Acropora hyacinthus</em> embryo under the benzo(<em>a</em>)pyrene stress by deep sequencing</a></li>
   </ul></li>
   </ul>
 </nav>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
@@ -461,10 +449,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="jimenez-guri-et-al.-2023" class="level1 page-columns page-full">
-<h1>Jimenez-Guri et al., 2023</h1>
-<section id="pvc-pellet-leachates-affect-adult-immune-system-and-embryonic-development-but-not-reproductive-capacity-in-the-sea-urchin-paracentrotus-lividus" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="pvc-pellet-leachates-affect-adult-immune-system-and-embryonic-development-but-not-reproductive-capacity-in-the-sea-urchin-paracentrotus-lividus"><strong>PVC pellet leachates affect adult immune system and embryonic development but not reproductive capacity in the sea urchin <em>Paracentrotus lividus</em></strong></h2>
+<section id="jimenez-guri-et-al.-2023" class="level1 page-columns page-full" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Jimenez-Guri et al., 2023</h1>
+<section id="pvc-pellet-leachates-affect-adult-immune-system-and-embryonic-development-but-not-reproductive-capacity-in-the-sea-urchin-paracentrotus-lividus" class="level2 page-columns page-full" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="pvc-pellet-leachates-affect-adult-immune-system-and-embryonic-development-but-not-reproductive-capacity-in-the-sea-urchin-paracentrotus-lividus"><span class="header-section-number">1.1</span> <strong>PVC pellet leachates affect adult immune system and embryonic development but not reproductive capacity in the sea urchin <em>Paracentrotus lividus</em></strong></h2>
 <p><span class="citation" data-cites="jimenez-guri2023">(<a href="#ref-jimenez-guri2023" role="doc-biblioref"><strong>jimenez-guri2023?</strong></a>)</span> either exposed adult sea urchins <em>Paracentrotus lividus</em> to excessively high<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> levels of PVC leachate or filtered seawater control for 2 weeks, and then force-spawned twice (once at the end of week 1 and once at the end of week 2) where embryos from control and exposed adults were split and incubated for development in either a filtered seawater control or a 65g/L PVC leachate (they call this 10% PVC leachate) treatment.</p>
 <div class="no-row-height column-margin column-container"><div id="fn1"><ul><sup>1</sup>&nbsp;
 <li><p>1000X higher than environmental measurements in the meditereanean (Middag et al., 2022)</p></li>
@@ -476,47 +464,47 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </blockquote>
 </section>
 </section>
-<section id="rendell-bhatti-et-al.-2021" class="level1">
-<h1>Rendell-Bhatti et al., 2021</h1>
-<section id="developmental-toxicity-of-plastic-leachates-on-the-sea-urchin-paracentrotus-lividus" class="level2">
-<h2 class="anchored" data-anchor-id="developmental-toxicity-of-plastic-leachates-on-the-sea-urchin-paracentrotus-lividus"><strong>Developmental toxicity of plastic leachates on the sea urchin <em>Paracentrotus lividus</em></strong></h2>
+<section id="rendell-bhatti-et-al.-2021" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Rendell-Bhatti et al., 2021</h1>
+<section id="developmental-toxicity-of-plastic-leachates-on-the-sea-urchin-paracentrotus-lividus" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="developmental-toxicity-of-plastic-leachates-on-the-sea-urchin-paracentrotus-lividus"><span class="header-section-number">2.1</span> <strong>Developmental toxicity of plastic leachates on the sea urchin <em>Paracentrotus lividus</em></strong></h2>
 <blockquote class="blockquote">
 <p>Using the sea urchin Paracentrotus lividus as a model, we studied the effects of leachates of three forms of plastic pellet: new industrial pre-production plastic nurdles, beached pre-production nurdles, and floating filters, known as biobeads, also retrieved from the environment. Our chemical analyses show that leachates from beached pellets (biobead and nurdle pellets) and highly plasticised industrial pellets (PVC) contain polycyclic aromatic hydrocarbons and polychlorinated biphenyls, which are known to be detrimental to development and other life stages of animals. We also demonstrate that these microplastic leachates elicit severe, consistent and treatment-specific developmental abnormalities in P. lividus at embryonic and larval stages. Those embryos exposed to virgin polyethylene leachates with no additives nor environmental contaminants developed normally, suggesting that the abnormalities observed are the result of exposure to either environmentally adsorbed contaminants or pre-existing industrial additives within the polymer matrix. In the light of the chemical contents of the leachates and other characteristics of the plastic particles used, we discuss the phenotypes observed during our study, which include abnormal gastrulation, impaired skeletogenesis, abnormal neurogenesis, redistribution of pigmented cells and embryo radialisation <span class="citation" data-cites="rendell-bhatti2021">(<a href="#ref-rendell-bhatti2021" role="doc-biblioref"><strong>rendell-bhatti2021?</strong></a>)</span>.</p>
 </blockquote>
 <p>This study used the same leachate preparation and concentrations as above.</p>
 </section>
 </section>
-<section id="gambardella-et-al.-2024" class="level1">
-<h1>Gambardella et al., 2024</h1>
-<section id="high-concentrations-of-phthalates-affect-the-early-development-of-the-sea-urchin-paracentrotus-lividus" class="level2">
-<h2 class="anchored" data-anchor-id="high-concentrations-of-phthalates-affect-the-early-development-of-the-sea-urchin-paracentrotus-lividus"><strong>High concentrations of phthalates affect the early development of the sea urchin <em>Paracentrotus lividus</em></strong></h2>
+<section id="gambardella-et-al.-2024" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Gambardella et al., 2024</h1>
+<section id="high-concentrations-of-phthalates-affect-the-early-development-of-the-sea-urchin-paracentrotus-lividus" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="high-concentrations-of-phthalates-affect-the-early-development-of-the-sea-urchin-paracentrotus-lividus"><span class="header-section-number">3.1</span> <strong>High concentrations of phthalates affect the early development of the sea urchin <em>Paracentrotus lividus</em></strong></h2>
 <blockquote class="blockquote">
 <p>The toxicity of three phthalates (PAEs) - butylbenzyl phthalate (BBP), diethyl phthalate (DEP), and di-(2-ethylhexyl) phthalate (DEHP) - was tested on the Mediterranean sea urchin Paracentrotus lividus. Fertilized eggs were exposed to environmental and high PAE concentrations for 72 h. The potential toxic effects on larval development and any morphological anomalies were then assessed to estimate PAEs impact. Environmental concentrations never affected development, while high concentrations induced toxic effects in larvae exposed to BBP (EC50: 2.9 ×103 μg/L) and DEHP (EC50: 3.72 ×103 μg/L). High concentrations caused skeletal anomalies, with a slight to moderate impact for DEP/DEHP and BBP, respectively. PAE toxicity was: BBP&gt;DEHP&gt;DEP. In conclusion, the three PAEs at environmental concentrations do not pose a risk to sea urchins. However, PAE concentrations should be further monitored in order not to constitute a concern to marine species, especially at their early developmental stages. - <span class="citation" data-cites="gambardella2024">(<a href="#ref-gambardella2024" role="doc-biblioref"><strong>gambardella2024?</strong></a>)</span></p>
 </blockquote>
 </section>
 </section>
-<section id="gandara-e-silva-et-al.-2016" class="level1">
-<h1>Gandara e Silva et al., 2016</h1>
-<section id="leachate-from-microplastics-impairs-larval-development-in-brown-mussels" class="level2">
-<h2 class="anchored" data-anchor-id="leachate-from-microplastics-impairs-larval-development-in-brown-mussels"><strong>Leachate from microplastics impairs larval development in brown mussels</strong></h2>
+<section id="gandara-e-silva-et-al.-2016" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Gandara e Silva et al., 2016</h1>
+<section id="leachate-from-microplastics-impairs-larval-development-in-brown-mussels" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="leachate-from-microplastics-impairs-larval-development-in-brown-mussels"><span class="header-section-number">4.1</span> <strong>Leachate from microplastics impairs larval development in brown mussels</strong></h2>
 <blockquote class="blockquote">
 <p>In this study, we conducted experiments to evaluate the toxicity of leachates from virgin and beached plastic pellets to embryo development of the brown mussel (Perna perna). We compared the efficiency of two test procedures, and evaluated the toxicity of beached pellets collected in a coastal marine protected area. We observed that mussel embryo is sensitive to leachate from both virgin and beached pellets. However, the toxicity of the leachate from beached pellets was much higher than that of virgin pellets. We suggest contaminants adsorbed onto the surface of beached pellets were responsible for the high toxicity of leachate from beached pellets, while the toxicity of leachate from virgin pellets was mainly due to plastic additives. Our results suggest microplastic debris may be harmful even if ingestion is not the only or main pathway of interaction of marine organisms with contaminated plastic debris. - <span class="citation" data-cites="gandaraesilva2016">(<a href="#ref-gandaraesilva2016" role="doc-biblioref"><strong>gandaraesilva2016?</strong></a>)</span></p>
 </blockquote>
 </section>
 </section>
-<section id="mincarelli-et-al.-2021" class="level1">
-<h1>Mincarelli et al., 2021</h1>
-<section id="consequences-of-combined-exposure-to-thermal-stress-and-the-plasticiser-dehp-in-mytilus-spp.-differ-by-sex" class="level2">
-<h2 class="anchored" data-anchor-id="consequences-of-combined-exposure-to-thermal-stress-and-the-plasticiser-dehp-in-mytilus-spp.-differ-by-sex"><strong>Consequences of combined exposure to thermal stress and the plasticiser DEHP in <em>Mytilus spp.</em> differ by sex</strong></h2>
+<section id="mincarelli-et-al.-2021" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Mincarelli et al., 2021</h1>
+<section id="consequences-of-combined-exposure-to-thermal-stress-and-the-plasticiser-dehp-in-mytilus-spp.-differ-by-sex" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="consequences-of-combined-exposure-to-thermal-stress-and-the-plasticiser-dehp-in-mytilus-spp.-differ-by-sex"><span class="header-section-number">5.1</span> <strong>Consequences of combined exposure to thermal stress and the plasticiser DEHP in <em>Mytilus spp.</em> differ by sex</strong></h2>
 <blockquote class="blockquote">
 <p>Little is known about the combined effect of environmental factors and contaminants on commercially important marine species, and whether this effect differs by sex. In this study, blue mussels were exposed for seven days to both single and combined stressors (i.e., +3 ◦C elevated temperature and two environmentally relevant concentrations of the plastic softener DEHP, 0.5 and 50 μg/l) in a factorial design. Males were observed to be more sensitive to high temperature, demonstrated by the significant increase in out-of-season spawning gonads and higher gene expression of the antioxidant catalase and the estrogen receptor genes. On the other hand, while the gametogenesis cycle in females was more resilient than in males, DEHP exposure altered the estrogen-related receptor gene expression. We show that the combined stressors DEHP and increased temperature, in environmentally relevant magnitudes, have different consequences in male and female mussels, with the potential to impact the timing and breeding season success in Mytilus spp. - <span class="citation" data-cites="mincarelli2021">(<a href="#ref-mincarelli2021" role="doc-biblioref"><strong>mincarelli2021?</strong></a>)</span></p>
 </blockquote>
 </section>
 </section>
-<section id="paganos-et-al.-2023" class="level1">
-<h1>Paganos et al., 2023</h1>
-<section id="plastic-leachate-induced-toxicity-during-sea-urchin-embryonic-development-insights-into-the-molecular-pathways-affected-by-pvc" class="level2">
-<h2 class="anchored" data-anchor-id="plastic-leachate-induced-toxicity-during-sea-urchin-embryonic-development-insights-into-the-molecular-pathways-affected-by-pvc"><strong>Plastic leachate-induced toxicity during sea urchin embryonic development: Insights into the molecular pathways affected by PVC</strong></h2>
+<section id="paganos-et-al.-2023" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Paganos et al., 2023</h1>
+<section id="plastic-leachate-induced-toxicity-during-sea-urchin-embryonic-development-insights-into-the-molecular-pathways-affected-by-pvc" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="plastic-leachate-induced-toxicity-during-sea-urchin-embryonic-development-insights-into-the-molecular-pathways-affected-by-pvc"><span class="header-section-number">6.1</span> <strong>Plastic leachate-induced toxicity during sea urchin embryonic development: Insights into the molecular pathways affected by PVC</strong></h2>
 <blockquote class="blockquote">
 <p>Here we investigate the effects of leachates from new and beach-collected pellets on the embryonic and&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/larval-development" title="Learn more about larval development from ScienceDirect's AI-generated Topic Pages">larval development</a>&nbsp;of the&nbsp;<a href="https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/sea-urchin" title="Learn more about sea urchin from ScienceDirect's AI-generated Topic Pages">sea urchin</a>&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/strongylocentrotus-purpuratus" title="Learn more about Strongylocentrotus purpuratus from ScienceDirect's AI-generated Topic Pages">Strongylocentrotus purpuratus</a>&nbsp;and demonstrate that exposure of developing embryos to these leachates elicits severe, consistent and treatment-specific developmental abnormalities including radialisation of the embryo and&nbsp;<a href="https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/congenital-malformation" title="Learn more about malformation from ScienceDirect's AI-generated Topic Pages">malformation</a>&nbsp;of the&nbsp;<a href="https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/skeleton" title="Learn more about skeleton from ScienceDirect's AI-generated Topic Pages">skeleton</a>, neural and&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/immunocompetent-cell" title="Learn more about immune cells from ScienceDirect's AI-generated Topic Pages">immune cells</a>. Using a multi-omics approach we define the developmental pathways disturbed upon exposure to PVC leachates and provide a mechanistic view that pinpoints cellular&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/redox-stress" title="Learn more about redox stress from ScienceDirect's AI-generated Topic Pages">redox stress</a>&nbsp;and energy production as drivers of phenotypic abnormalities following exposure to PVC leachates. Analysis of leachates identified high concentrations of zinc that are the likely cause of these observed defects. Our findings point to clear and specific detrimental effects of marine&nbsp;<a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/plastic-pollution" title="Learn more about plastic pollution from ScienceDirect's AI-generated Topic Pages">plastic pollution</a>&nbsp;on the development of echinoderms, demonstrating that chemicals leached from plastic particles into sea water can produce strong developmental abnormalities via specific pathways, and therefore have the potential to impact on a wide range of organisms. <span class="citation" data-cites="paganos2023a">(<a href="#ref-paganos2023a" role="doc-biblioref"><strong>paganos2023a?</strong></a>)</span> (Abstract)</p>
 </blockquote>
@@ -556,10 +544,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </blockquote>
 </section>
 </section>
-<section id="xiao-et-al.-2018" class="level1">
-<h1>Xiao et al., 2018</h1>
-<section id="transcriptional-responses-of-acropora-hyacinthus-embryo-under-the-benzoapyrene-stress-by-deep-sequencing" class="level2">
-<h2 class="anchored" data-anchor-id="transcriptional-responses-of-acropora-hyacinthus-embryo-under-the-benzoapyrene-stress-by-deep-sequencing">Transcriptional responses of <em>Acropora hyacinthus</em> embryo under the benzo(<em>a</em>)pyrene stress by deep sequencing</h2>
+<section id="xiao-et-al.-2018" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Xiao et al., 2018</h1>
+<section id="transcriptional-responses-of-acropora-hyacinthus-embryo-under-the-benzoapyrene-stress-by-deep-sequencing" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="transcriptional-responses-of-acropora-hyacinthus-embryo-under-the-benzoapyrene-stress-by-deep-sequencing"><span class="header-section-number">7.1</span> Transcriptional responses of <em>Acropora hyacinthus</em> embryo under the benzo(<em>a</em>)pyrene stress by deep sequencing</h2>
 <blockquote class="blockquote">
 <p>Abstract</p>
 <p>Coral embryos are a critical and sensitive period for the early&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/growth-development-and-aging" title="Learn more about growth and development from ScienceDirect's AI-generated Topic Pages">growth and development</a>&nbsp;of coral. Benzo(<em>a</em>)pyrene (BaP) is widely distributed in the ocean and has strong toxicity, but there is little information on the toxic effects to coral embryos exposed to this widespread environmental contaminant. Thus, in this study, we utilized the Illumina Hiseq™ 4000 platform to explore the gene response of&nbsp;<a href="https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/acropora" title="Learn more about Acropora from ScienceDirect's AI-generated Topic Pages">Acropora</a> <a href="https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/hyacinthus" title="Learn more about hyacinthus from ScienceDirect's AI-generated Topic Pages"><em>hyacinthus</em></a>&nbsp;embryos under the BaP stress. A total of 130,042&nbsp;<a href="https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/unigenes" title="Learn more about Unigenes from ScienceDirect's AI-generated Topic Pages">Unigenes</a>&nbsp;were obtained and analyzed, and approximately 37.67% of those matched with sequences from four different species. In total, 2606 Unigenes were up-regulated, and 3872 Unigenes were down-regulated. After&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/gene-ontology" title="Learn more about Gene Ontology from ScienceDirect's AI-generated Topic Pages">Gene Ontology</a>&nbsp;(GO) annotation, the results show that the “cellular process” and “metabolic process” were leading in the category of&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/biological-phenomena-and-functions-concerning-the-entire-organism" title="Learn more about biological processes from ScienceDirect's AI-generated Topic Pages">biological processes</a>, which the “binding” and “catalytic activity” were the most abundant subcategories in molecular function. Based on the Kyoto Encyclopedia of Genes and Genomes (KEGG) analysis, the most differentially expressed genes (DEGs) were enriched, as well as down-regulated in the pathways of&nbsp;<a href="https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/oxidative-phosphorylation" title="Learn more about oxidative phosphorylation from ScienceDirect's AI-generated Topic Pages">oxidative phosphorylation</a>, metabolism of&nbsp;<a href="https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/xenobiotic-agent" title="Learn more about xenobiotics from ScienceDirect's AI-generated Topic Pages">xenobiotics</a>, immune-related genes,&nbsp;<a href="https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/programmed-cell-death" title="Learn more about apoptosis from ScienceDirect's AI-generated Topic Pages">apoptosis</a>&nbsp;and human disease genes. At the same time, 388,197 of Single-nucleotide Polymorphisms (SNPs) and 6164 of&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/microsatellite-dna" title="Learn more about Simple Sequence Repeats from ScienceDirect's AI-generated Topic Pages">Simple Sequence Repeats</a>&nbsp;(SSRs) were obtained, which can be served as the richer and more valuable SSRs&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/genetic-marker" title="Learn more about molecular markers from ScienceDirect's AI-generated Topic Pages">molecular markers</a>&nbsp;in the future. The results of this study can help to better understand the&nbsp;<a href="https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/toxicological-mechanisms" title="Learn more about toxicological mechanism from ScienceDirect's AI-generated Topic Pages">toxicological mechanism</a>&nbsp;of coral embryo exposed to BaP, and it is also essential for the protection and restoration of coral reef ecosystem in the future.</p>

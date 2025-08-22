@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -115,7 +115,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta property="og:site_name" content="Sarah Tanja's Open Lab Notebook">
 </head>
 
-<body class="floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -258,8 +258,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -272,14 +271,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -372,7 +363,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <div class="quarto-title-block"><div><h1 class="title">Workflow with Git</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
@@ -403,7 +394,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -412,28 +403,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul class="collapse">
-  <li><a href="#setup-for-.gitignore" id="toc-setup-for-.gitignore" class="nav-link active" data-scroll-target="#setup-for-.gitignore">Setup for .gitignore</a></li>
-  <li><a href="#normal-routine-for-git-push" id="toc-normal-routine-for-git-push" class="nav-link" data-scroll-target="#normal-routine-for-git-push">Normal routine for git push</a></li>
-  <li><a href="#write-quit-vim-during-a-merge" id="toc-write-quit-vim-during-a-merge" class="nav-link" data-scroll-target="#write-quit-vim-during-a-merge">Write &amp; quit vim during a merge</a></li>
-  <li><a href="#setup-git-hooks-to-automatically-gitignore-large-files" id="toc-setup-git-hooks-to-automatically-gitignore-large-files" class="nav-link" data-scroll-target="#setup-git-hooks-to-automatically-gitignore-large-files">Setup git hooks to automatically gitignore large files</a></li>
-  <li><a href="#manually-execute-code-to-find-and-add-files-1g-to-.gitignore-before-committing" id="toc-manually-execute-code-to-find-and-add-files-1g-to-.gitignore-before-committing" class="nav-link" data-scroll-target="#manually-execute-code-to-find-and-add-files-1g-to-.gitignore-before-committing">Manually execute code to find and add files &gt;1G to .gitignore before committing</a>
+  <li><a href="#setup-for-.gitignore" id="toc-setup-for-.gitignore" class="nav-link active" data-scroll-target="#setup-for-.gitignore"><span class="header-section-number">1</span> Setup for .gitignore</a></li>
+  <li><a href="#normal-routine-for-git-push" id="toc-normal-routine-for-git-push" class="nav-link" data-scroll-target="#normal-routine-for-git-push"><span class="header-section-number">2</span> Normal routine for git push</a></li>
+  <li><a href="#write-quit-vim-during-a-merge" id="toc-write-quit-vim-during-a-merge" class="nav-link" data-scroll-target="#write-quit-vim-during-a-merge"><span class="header-section-number">3</span> Write &amp; quit vim during a merge</a></li>
+  <li><a href="#setup-git-hooks-to-automatically-gitignore-large-files" id="toc-setup-git-hooks-to-automatically-gitignore-large-files" class="nav-link" data-scroll-target="#setup-git-hooks-to-automatically-gitignore-large-files"><span class="header-section-number">4</span> Setup git hooks to automatically gitignore large files</a></li>
+  <li><a href="#manually-execute-code-to-find-and-add-files-1g-to-.gitignore-before-committing" id="toc-manually-execute-code-to-find-and-add-files-1g-to-.gitignore-before-committing" class="nav-link" data-scroll-target="#manually-execute-code-to-find-and-add-files-1g-to-.gitignore-before-committing"><span class="header-section-number">5</span> Manually execute code to find and add files &gt;1G to .gitignore before committing</a>
   <ul class="collapse">
-  <li><a href="#using-git-revert" id="toc-using-git-revert" class="nav-link" data-scroll-target="#using-git-revert">Using <strong><code>git revert</code></strong>:</a></li>
-  <li><a href="#using-git-reset" id="toc-using-git-reset" class="nav-link" data-scroll-target="#using-git-reset">Using <strong><code>git reset</code></strong></a></li>
+  <li><a href="#using-git-revert" id="toc-using-git-revert" class="nav-link" data-scroll-target="#using-git-revert"><span class="header-section-number">5.1</span> Using <strong><code>git revert</code></strong>:</a></li>
+  <li><a href="#using-git-reset" id="toc-using-git-reset" class="nav-link" data-scroll-target="#using-git-reset"><span class="header-section-number">5.2</span> Using <strong><code>git reset</code></strong></a></li>
   </ul></li>
-  <li><a href="#make-a-backup-and-use-rsync" id="toc-make-a-backup-and-use-rsync" class="nav-link" data-scroll-target="#make-a-backup-and-use-rsync">Make a backup and use <code>rsync</code></a></li>
-  <li><a href="#burn-it-down-with-git-reset-hard" id="toc-burn-it-down-with-git-reset-hard" class="nav-link" data-scroll-target="#burn-it-down-with-git-reset-hard">Burn it down with <code>git reset –hard</code></a></li>
+  <li><a href="#make-a-backup-and-use-rsync" id="toc-make-a-backup-and-use-rsync" class="nav-link" data-scroll-target="#make-a-backup-and-use-rsync"><span class="header-section-number">6</span> Make a backup and use <code>rsync</code></a></li>
+  <li><a href="#burn-it-down-with-git-reset-hard" id="toc-burn-it-down-with-git-reset-hard" class="nav-link" data-scroll-target="#burn-it-down-with-git-reset-hard"><span class="header-section-number">7</span> Burn it down with <code>git reset –hard</code></a></li>
   </ul>
 </nav>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -443,8 +431,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="setup-for-.gitignore" class="level1">
-<h1>Setup for .gitignore</h1>
+<section id="setup-for-.gitignore" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Setup for .gitignore</h1>
 <p><strong><code>.gitignore</code> cannot filter files by size</strong> — it only filters by <strong>path patterns</strong>, like filenames, extensions, or directory names. It doesn’t support dynamic criteria like file size, modification time, etc.</p>
 <p>An example template for a <code>.gitignore</code> while working with large bioinformatics files:</p>
 <pre><code>.Rproj.user 
@@ -462,8 +450,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 *.fa 
 *.gff3</code></pre>
 </section>
-<section id="normal-routine-for-git-push" class="level1">
-<h1>Normal routine for git push</h1>
+<section id="normal-routine-for-git-push" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Normal routine for git push</h1>
 <ol type="1">
 <li><code>git status</code> : check on staged, not staged, and untracked files</li>
 <li><code>find . -type f -size -50M -exec git add {} +</code>
@@ -479,8 +467,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>git push</code></li>
 </ol>
 </section>
-<section id="write-quit-vim-during-a-merge" class="level1">
-<h1>Write &amp; quit vim during a merge</h1>
+<section id="write-quit-vim-during-a-merge" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Write &amp; quit vim during a merge</h1>
 <ol type="1">
 <li><p>Press <code>INS</code> key to insert text, write a short message about the merge</p></li>
 <li><p>Press <code>Esc</code> to make sure you’re in <strong>normal mode</strong>.</p></li>
@@ -488,8 +476,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Then type <code>wq</code> and press <code>Enter</code></p></li>
 </ol>
 </section>
-<section id="setup-git-hooks-to-automatically-gitignore-large-files" class="level1">
-<h1>Setup git hooks to automatically gitignore large files</h1>
+<section id="setup-git-hooks-to-automatically-gitignore-large-files" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Setup git hooks to automatically gitignore large files</h1>
 <p>We can use built-in hooks to automatically ignore files larger than 100 MB (no matter the directory or file name!). Here are the steps to follow:</p>
 <ul>
 <li><p>Create a new text file in the <code>.git/hooks/</code> directory of your repository called <code>pre-commit</code></p></li>
@@ -519,11 +507,11 @@ echo "ignored new large files"</code></pre>
 <pre><code>chmod +x .git/hooks/pre-commit</code></pre>
 <p>With these changes, whenever you run a git commit command, Git will first execute the pre-commit hook, which will automatically add any files larger than 100 MB to the .gitignore file. This will prevent Git from tracking these files in the repository going forward.</p>
 </section>
-<section id="manually-execute-code-to-find-and-add-files-1g-to-.gitignore-before-committing" class="level1">
-<h1>Manually execute code to find and add files &gt;1G to .gitignore before committing</h1>
+<section id="manually-execute-code-to-find-and-add-files-1g-to-.gitignore-before-committing" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Manually execute code to find and add files &gt;1G to .gitignore before committing</h1>
 <p>Use the following code as a bash terminal command to find and add files &gt;1G from repo to .gitignore <code>find . -size +1G | sed 's|^./||g' | cat &gt;&gt; .gitignore</code> from <a href="https://github.com/sr320/course-fish546-2015/issues/43">THIS</a> Robert’s Lab Course Issue</p>
-<section id="using-git-revert" class="level2">
-<h2 class="anchored" data-anchor-id="using-git-revert">Using <strong><code>git revert</code></strong>:</h2>
+<section id="using-git-revert" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="using-git-revert"><span class="header-section-number">5.1</span> Using <strong><code>git revert</code></strong>:</h2>
 <pre><code>-   Open your terminal or command prompt.
 
 -   Navigate to the repository directory using the **`cd`** command.
@@ -534,8 +522,8 @@ echo "ignored new large files"</code></pre>
 
 -   Git will create a new commit that undoes the changes introduced by the previous commit. A text editor will open for you to provide a commit message. Save and close the editor to complete the revert process.</code></pre>
 </section>
-<section id="using-git-reset" class="level2">
-<h2 class="anchored" data-anchor-id="using-git-reset">Using <strong><code>git reset</code></strong></h2>
+<section id="using-git-reset" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="using-git-reset"><span class="header-section-number">5.2</span> Using <strong><code>git reset</code></strong></h2>
 <pre><code>-   Open your terminal or command prompt.
 
 -   Navigate to the repository directory using the **`cd`** command.
@@ -550,8 +538,8 @@ echo "ignored new large files"</code></pre>
 <p>Please exercise caution when using these commands, as they modify the Git history. If you have already pushed the commit you want to undo to a remote repository, it’s generally not recommended to modify the history, as it can cause conflicts for other team members. In that case, it may be better to consider reverting the changes in a new commit and pushing that instead.</p>
 </section>
 </section>
-<section id="make-a-backup-and-use-rsync" class="level1">
-<h1>Make a backup and use <code>rsync</code></h1>
+<section id="make-a-backup-and-use-rsync" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Make a backup and use <code>rsync</code></h1>
 <p>If you’ve made lots of changes along with the large file commit that you don’t want to redo, the best option is to make a backup of your local directory, re-clone the remote git repo, and then use <code>rsync</code> to copy over all your local changes minus the <code>.git</code> folder with its history…</p>
 <ol type="1">
 <li><p>Turn your local directory into a backup</p>
@@ -563,8 +551,8 @@ echo "ignored new large files"</code></pre>
 <li></li>
 </ol>
 </section>
-<section id="burn-it-down-with-git-reset-hard" class="level1">
-<h1>Burn it down with <code>git reset –hard</code></h1>
+<section id="burn-it-down-with-git-reset-hard" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Burn it down with <code>git reset –hard</code></h1>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">

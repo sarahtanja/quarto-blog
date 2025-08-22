@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -257,8 +257,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -271,14 +270,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -402,7 +393,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -412,20 +403,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#day-1" id="toc-day-1" class="nav-link active" data-scroll-target="#day-1">Day 1</a></li>
-  <li><a href="#day-2" id="toc-day-2" class="nav-link" data-scroll-target="#day-2">Day 2</a></li>
-  <li><a href="#day-3" id="toc-day-3" class="nav-link" data-scroll-target="#day-3">Day 3</a></li>
-  <li><a href="#day-4" id="toc-day-4" class="nav-link" data-scroll-target="#day-4">Day 4</a></li>
-  <li><a href="#day-5" id="toc-day-5" class="nav-link" data-scroll-target="#day-5">Day 5</a></li>
-  <li><a href="#day-6" id="toc-day-6" class="nav-link" data-scroll-target="#day-6">Day 6</a></li>
-  <li><a href="#day-7" id="toc-day-7" class="nav-link" data-scroll-target="#day-7">Day 7</a></li>
-  <li><a href="#day-8" id="toc-day-8" class="nav-link" data-scroll-target="#day-8">Day 8</a></li>
-  <li><a href="#day-9" id="toc-day-9" class="nav-link" data-scroll-target="#day-9">Day 9</a></li>
-  <li><a href="#day-10" id="toc-day-10" class="nav-link" data-scroll-target="#day-10">Day 10</a></li>
+  <li><a href="#day-1" id="toc-day-1" class="nav-link active" data-scroll-target="#day-1"><span class="header-section-number">1</span> Day 1</a></li>
+  <li><a href="#day-2" id="toc-day-2" class="nav-link" data-scroll-target="#day-2"><span class="header-section-number">2</span> Day 2</a></li>
+  <li><a href="#day-3" id="toc-day-3" class="nav-link" data-scroll-target="#day-3"><span class="header-section-number">3</span> Day 3</a></li>
+  <li><a href="#day-4" id="toc-day-4" class="nav-link" data-scroll-target="#day-4"><span class="header-section-number">4</span> Day 4</a></li>
+  <li><a href="#day-5" id="toc-day-5" class="nav-link" data-scroll-target="#day-5"><span class="header-section-number">5</span> Day 5</a></li>
+  <li><a href="#day-6" id="toc-day-6" class="nav-link" data-scroll-target="#day-6"><span class="header-section-number">6</span> Day 6</a></li>
+  <li><a href="#day-7" id="toc-day-7" class="nav-link" data-scroll-target="#day-7"><span class="header-section-number">7</span> Day 7</a></li>
+  <li><a href="#day-8" id="toc-day-8" class="nav-link" data-scroll-target="#day-8"><span class="header-section-number">8</span> Day 8</a></li>
+  <li><a href="#day-9" id="toc-day-9" class="nav-link" data-scroll-target="#day-9"><span class="header-section-number">9</span> Day 9</a></li>
+  <li><a href="#day-10" id="toc-day-10" class="nav-link" data-scroll-target="#day-10"><span class="header-section-number">10</span> Day 10</a></li>
   </ul>
 </nav>
 </nav>
@@ -441,51 +432,51 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="day-1" class="level2">
-<h2 class="anchored" data-anchor-id="day-1">Day 1</h2>
+<section id="day-1" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="day-1"><span class="header-section-number">1</span> Day 1</h2>
 <ul>
 <li>Start leachate</li>
 </ul>
 </section>
-<section id="day-2" class="level2">
-<h2 class="anchored" data-anchor-id="day-2">Day 2</h2>
+<section id="day-2" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="day-2"><span class="header-section-number">2</span> Day 2</h2>
 <ul>
 <li><p>Collect anemones</p></li>
 <li><p>Leachate at 24 hrs</p></li>
 </ul>
 </section>
-<section id="day-3" class="level2">
-<h2 class="anchored" data-anchor-id="day-3">Day 3</h2>
+<section id="day-3" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="day-3"><span class="header-section-number">3</span> Day 3</h2>
 <ul>
 <li>Leachate at 42 hrs</li>
 </ul>
 </section>
-<section id="day-4" class="level2">
-<h2 class="anchored" data-anchor-id="day-4">Day 4</h2>
+<section id="day-4" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="day-4"><span class="header-section-number">4</span> Day 4</h2>
 <ul>
 <li>Leachate at 72 hrs</li>
 </ul>
 </section>
-<section id="day-5" class="level2">
-<h2 class="anchored" data-anchor-id="day-5">Day 5</h2>
+<section id="day-5" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="day-5"><span class="header-section-number">5</span> Day 5</h2>
 <ul>
 <li>Leachate at 96 hrs</li>
 </ul>
 </section>
-<section id="day-6" class="level2">
-<h2 class="anchored" data-anchor-id="day-6">Day 6</h2>
+<section id="day-6" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="day-6"><span class="header-section-number">6</span> Day 6</h2>
 <ul>
 <li>Leachate at 120 hrs</li>
 </ul>
 </section>
-<section id="day-7" class="level2">
-<h2 class="anchored" data-anchor-id="day-7">Day 7</h2>
+<section id="day-7" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="day-7"><span class="header-section-number">7</span> Day 7</h2>
 <ul>
 <li>Leachate at 144 hrs</li>
 </ul>
 </section>
-<section id="day-8" class="level2">
-<h2 class="anchored" data-anchor-id="day-8">Day 8</h2>
+<section id="day-8" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="day-8"><span class="header-section-number">8</span> Day 8</h2>
 <ul>
 <li><p>Leachate at 168 hrs</p></li>
 <li><p>Harvest &amp; filter leachate</p></li>
@@ -494,11 +485,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Apply leachate as treatment</p></li>
 </ul>
 </section>
-<section id="day-9" class="level2">
-<h2 class="anchored" data-anchor-id="day-9">Day 9</h2>
+<section id="day-9" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="day-9"><span class="header-section-number">9</span> Day 9</h2>
 </section>
-<section id="day-10" class="level2">
-<h2 class="anchored" data-anchor-id="day-10">Day 10</h2>
+<section id="day-10" class="level2" data-number="10">
+<h2 data-number="10" class="anchored" data-anchor-id="day-10"><span class="header-section-number">10</span> Day 10</h2>
 
 
 <!-- -->

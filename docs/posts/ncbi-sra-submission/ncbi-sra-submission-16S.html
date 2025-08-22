@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -116,7 +116,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta property="og:site_name" content="Sarah Tanja's Open Lab Notebook">
 </head>
 
-<body class="floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -259,8 +259,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -273,14 +272,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -373,7 +364,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <div class="quarto-title-block"><div><h1 class="title">Submitted NGS 16SrRNA sequences to NCBI SRA</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
@@ -405,7 +396,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -414,26 +405,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul class="collapse">
-  <li><a href="#background-research" id="toc-background-research" class="nav-link active" data-scroll-target="#background-research">Background research</a></li>
-  <li><a href="#log-in-to-ncbi" id="toc-log-in-to-ncbi" class="nav-link" data-scroll-target="#log-in-to-ncbi">Log in to NCBI</a></li>
-  <li><a href="#submitter-contact-info-fill-this-out" id="toc-submitter-contact-info-fill-this-out" class="nav-link" data-scroll-target="#submitter-contact-info-fill-this-out">1. Submitter contact info (fill this out)</a></li>
-  <li><a href="#general-info" id="toc-general-info" class="nav-link" data-scroll-target="#general-info">2. General Info</a></li>
-  <li><a href="#project-info" id="toc-project-info" class="nav-link" data-scroll-target="#project-info">3. Project Info</a></li>
-  <li><a href="#biosample-type" id="toc-biosample-type" class="nav-link" data-scroll-target="#biosample-type">4. Biosample Type</a></li>
-  <li><a href="#biosample-attributes" id="toc-biosample-attributes" class="nav-link" data-scroll-target="#biosample-attributes">5. Biosample Attributes</a></li>
-  <li><a href="#sra-metadata" id="toc-sra-metadata" class="nav-link" data-scroll-target="#sra-metadata">6. SRA Metadata</a></li>
-  <li><a href="#file-upload" id="toc-file-upload" class="nav-link" data-scroll-target="#file-upload">7. File Upload</a></li>
+  <li><a href="#background-research" id="toc-background-research" class="nav-link active" data-scroll-target="#background-research"><span class="header-section-number">1</span> Background research</a></li>
+  <li><a href="#log-in-to-ncbi" id="toc-log-in-to-ncbi" class="nav-link" data-scroll-target="#log-in-to-ncbi"><span class="header-section-number">2</span> Log in to NCBI</a></li>
+  <li><a href="#submitter-contact-info-fill-this-out" id="toc-submitter-contact-info-fill-this-out" class="nav-link" data-scroll-target="#submitter-contact-info-fill-this-out"><span class="header-section-number">3</span> 1. Submitter contact info (fill this out)</a></li>
+  <li><a href="#general-info" id="toc-general-info" class="nav-link" data-scroll-target="#general-info"><span class="header-section-number">4</span> 2. General Info</a></li>
+  <li><a href="#project-info" id="toc-project-info" class="nav-link" data-scroll-target="#project-info"><span class="header-section-number">5</span> 3. Project Info</a></li>
+  <li><a href="#biosample-type" id="toc-biosample-type" class="nav-link" data-scroll-target="#biosample-type"><span class="header-section-number">6</span> 4. Biosample Type</a></li>
+  <li><a href="#biosample-attributes" id="toc-biosample-attributes" class="nav-link" data-scroll-target="#biosample-attributes"><span class="header-section-number">7</span> 5. Biosample Attributes</a></li>
+  <li><a href="#sra-metadata" id="toc-sra-metadata" class="nav-link" data-scroll-target="#sra-metadata"><span class="header-section-number">8</span> 6. SRA Metadata</a></li>
+  <li><a href="#file-upload" id="toc-file-upload" class="nav-link" data-scroll-target="#file-upload"><span class="header-section-number">9</span> 7. File Upload</a></li>
   </ul>
 </nav>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -443,16 +431,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="background-research" class="level1">
-<h1>Background research</h1>
+<section id="background-research" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Background research</h1>
 <ul>
 <li><p>Watch this 10min video tutorial: <a href="https://www.youtube.com/watch?v=PTg9Ru68fc0">How to Submit to SRA, A Beginner’s Guide</a></p></li>
 <li><p>Read the <a href="https://www.ncbi.nlm.nih.gov/sra/docs/submitportal/">SRA Submission Wizard Help</a> page</p></li>
 <li><p>Checkout info link on metadata for microbiome datasets <a href="https://www.ncbi.nlm.nih.gov/biosample/docs/organism/#metagenomes:~:text=An%20official%20website%20of%20the%20United%20States%20government,Metagenomes%20(Microbiomes),-We%20consider%20any">Metagenomes (Microbiomes)</a></p></li>
 </ul>
 </section>
-<section id="log-in-to-ncbi" class="level1">
-<h1>Log in to NCBI</h1>
+<section id="log-in-to-ncbi" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Log in to NCBI</h1>
 <p>Navigate to the NCBI Submission Portal: <a href="https://submit.ncbi.nlm.nih.gov/" class="uri">https://submit.ncbi.nlm.nih.gov/</a></p>
 <p>Log-in through a partner sign-in, or sign-up directly with NCBI to create an account.</p>
 <p><img src="ncbi-login.png" class="img-fluid"></p>
@@ -465,24 +453,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Click <strong>New Submission</strong></p>
 <p>There are 5 steps to submission:</p>
 </section>
-<section id="submitter-contact-info-fill-this-out" class="level1">
-<h1>1. Submitter contact info (fill this out)</h1>
+<section id="submitter-contact-info-fill-this-out" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> 1. Submitter contact info (fill this out)</h1>
 </section>
-<section id="general-info" class="level1">
-<h1>2. General Info</h1>
+<section id="general-info" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> 2. General Info</h1>
 <p><img src="ncbi-general-info.png" class="img-fluid"></p>
 <p>Click <strong>CONTINUE</strong></p>
 </section>
-<section id="project-info" class="level1">
-<h1>3. Project Info</h1>
+<section id="project-info" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> 3. Project Info</h1>
 <ul>
 <li><p>Project Title</p></li>
 <li><p>Public description</p></li>
 <li><p>Grants</p></li>
 </ul>
 </section>
-<section id="biosample-type" class="level1">
-<h1>4. Biosample Type</h1>
+<section id="biosample-type" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> 4. Biosample Type</h1>
 <ul>
 <li><p>Typed in <em>Montipora capitata</em></p></li>
 <li><p>Under displayed NCBI packages I selected ‘<strong>Invertebrate</strong>’</p></li>
@@ -492,8 +480,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Clicked <strong>CONTINUE</strong></li>
 </ul>
 </section>
-<section id="biosample-attributes" class="level1">
-<h1>5. Biosample Attributes</h1>
+<section id="biosample-attributes" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> 5. Biosample Attributes</h1>
 <ul>
 <li><p>Use built-in table editor</p>
 <p>The following are the columns:</p></li>
@@ -575,12 +563,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <p>Click CONTINUE</p>
 </section>
-<section id="sra-metadata" class="level1">
-<h1>6. SRA Metadata</h1>
+<section id="sra-metadata" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> 6. SRA Metadata</h1>
 <p>I provided metadata with the built-in table editor, and copied columns from my metadata google sheet into the NIH Submission Portal.</p>
 </section>
-<section id="file-upload" class="level1">
-<h1>7. File Upload</h1>
+<section id="file-upload" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> 7. File Upload</h1>
 <p><img src="provide-files.png" class="img-fluid"></p>
 <p>SRA file transfer protocol directions <a href="https://www.ncbi.nlm.nih.gov/sra/docs/submitfiles/#file-transfer-protocol-ftp">here</a></p>
 <p>Expand the FTP instructions section to follow instuctions mput</p>

@@ -97,9 +97,9 @@ div.csl-indent {
 <link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -310,8 +310,7 @@ window.Quarto = {
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -324,14 +323,6 @@ window.Quarto = {
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -456,7 +447,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -466,31 +457,31 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#materials-list" id="toc-materials-list" class="nav-link" data-scroll-target="#materials-list">Materials list</a>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">1</span> Overview</a></li>
+  <li><a href="#materials-list" id="toc-materials-list" class="nav-link" data-scroll-target="#materials-list"><span class="header-section-number">2</span> Materials list</a>
   <ul>
-  <li><a href="#lab-equipment" id="toc-lab-equipment" class="nav-link" data-scroll-target="#lab-equipment">Lab equipment</a></li>
-  <li><a href="#lab-consumables" id="toc-lab-consumables" class="nav-link" data-scroll-target="#lab-consumables">Lab consumables</a></li>
-  <li><a href="#chemicals-solvents" id="toc-chemicals-solvents" class="nav-link" data-scroll-target="#chemicals-solvents">Chemicals &amp; solvents</a></li>
+  <li><a href="#lab-equipment" id="toc-lab-equipment" class="nav-link" data-scroll-target="#lab-equipment"><span class="header-section-number">2.0.1</span> Lab equipment</a></li>
+  <li><a href="#lab-consumables" id="toc-lab-consumables" class="nav-link" data-scroll-target="#lab-consumables"><span class="header-section-number">2.0.2</span> Lab consumables</a></li>
+  <li><a href="#chemicals-solvents" id="toc-chemicals-solvents" class="nav-link" data-scroll-target="#chemicals-solvents"><span class="header-section-number">2.0.3</span> Chemicals &amp; solvents</a></li>
   </ul></li>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
-  <li><a href="#procedure" id="toc-procedure" class="nav-link" data-scroll-target="#procedure">Procedure</a>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives"><span class="header-section-number">3</span> Objectives</a></li>
+  <li><a href="#procedure" id="toc-procedure" class="nav-link" data-scroll-target="#procedure"><span class="header-section-number">4</span> Procedure</a>
   <ul>
-  <li><a href="#separate-symbiont-protein-fractions" id="toc-separate-symbiont-protein-fractions" class="nav-link" data-scroll-target="#separate-symbiont-protein-fractions">Separate symbiont &amp; protein fractions</a></li>
-  <li><a href="#protein-quantification" id="toc-protein-quantification" class="nav-link" data-scroll-target="#protein-quantification">Protein quantification</a></li>
-  <li><a href="#symbiont-counts" id="toc-symbiont-counts" class="nav-link" data-scroll-target="#symbiont-counts">Symbiont counts</a></li>
-  <li><a href="#chlorophyll-extraction" id="toc-chlorophyll-extraction" class="nav-link" data-scroll-target="#chlorophyll-extraction">Chlorophyll extraction</a></li>
-  <li><a href="#measure-absorbance-using-a-nanodrop-2000c-spectrophotometer" id="toc-measure-absorbance-using-a-nanodrop-2000c-spectrophotometer" class="nav-link" data-scroll-target="#measure-absorbance-using-a-nanodrop-2000c-spectrophotometer">Measure absorbance using a NanoDrop 2000c Spectrophotometer</a>
+  <li><a href="#separate-symbiont-protein-fractions" id="toc-separate-symbiont-protein-fractions" class="nav-link" data-scroll-target="#separate-symbiont-protein-fractions"><span class="header-section-number">4.1</span> Separate symbiont &amp; protein fractions</a></li>
+  <li><a href="#protein-quantification" id="toc-protein-quantification" class="nav-link" data-scroll-target="#protein-quantification"><span class="header-section-number">4.2</span> Protein quantification</a></li>
+  <li><a href="#symbiont-counts" id="toc-symbiont-counts" class="nav-link" data-scroll-target="#symbiont-counts"><span class="header-section-number">4.3</span> Symbiont counts</a></li>
+  <li><a href="#chlorophyll-extraction" id="toc-chlorophyll-extraction" class="nav-link" data-scroll-target="#chlorophyll-extraction"><span class="header-section-number">4.4</span> Chlorophyll extraction</a></li>
+  <li><a href="#measure-absorbance-using-a-nanodrop-2000c-spectrophotometer" id="toc-measure-absorbance-using-a-nanodrop-2000c-spectrophotometer" class="nav-link" data-scroll-target="#measure-absorbance-using-a-nanodrop-2000c-spectrophotometer"><span class="header-section-number">4.5</span> Measure absorbance using a NanoDrop 2000c Spectrophotometer</a>
   <ul>
-  <li><a href="#program-nanodrop-2000c-method-editor" id="toc-program-nanodrop-2000c-method-editor" class="nav-link" data-scroll-target="#program-nanodrop-2000c-method-editor">Program NanoDrop 2000c Method Editor</a></li>
-  <li><a href="#measure-cuvette-blanks-and-samples" id="toc-measure-cuvette-blanks-and-samples" class="nav-link" data-scroll-target="#measure-cuvette-blanks-and-samples">Measure cuvette blanks and samples</a></li>
+  <li><a href="#program-nanodrop-2000c-method-editor" id="toc-program-nanodrop-2000c-method-editor" class="nav-link" data-scroll-target="#program-nanodrop-2000c-method-editor"><span class="header-section-number">4.5.1</span> Program NanoDrop 2000c Method Editor</a></li>
+  <li><a href="#measure-cuvette-blanks-and-samples" id="toc-measure-cuvette-blanks-and-samples" class="nav-link" data-scroll-target="#measure-cuvette-blanks-and-samples"><span class="header-section-number">4.5.2</span> Measure cuvette blanks and samples</a></li>
   </ul></li>
   </ul></li>
-  <li><a href="#calculate-concentrations" id="toc-calculate-concentrations" class="nav-link" data-scroll-target="#calculate-concentrations">Calculate concentrations</a></li>
+  <li><a href="#calculate-concentrations" id="toc-calculate-concentrations" class="nav-link" data-scroll-target="#calculate-concentrations"><span class="header-section-number">5</span> Calculate concentrations</a></li>
   </ul>
 </nav>
 </nav>
@@ -506,8 +497,8 @@ window.Quarto = {
 
 
 
-<section id="overview" class="level1 page-columns page-full">
-<h1>Overview</h1>
+<section id="overview" class="level1 page-columns page-full" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Overview</h1>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -567,10 +558,10 @@ Important
 </blockquote>
 <p>Why is chlorophyll content an important metric if we’ve already used the pulse-amplitude modulated (PAM) fluorometer to measure photosynthetic efficiency, quantum yield, etc.?</p>
 </section>
-<section id="materials-list" class="level1 page-columns page-full">
-<h1>Materials list</h1>
-<section id="lab-equipment" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="lab-equipment">Lab equipment</h3>
+<section id="materials-list" class="level1 page-columns page-full" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Materials list</h1>
+<section id="lab-equipment" class="level3 page-columns page-full" data-number="2.0.1">
+<h3 data-number="2.0.1" class="anchored" data-anchor-id="lab-equipment"><span class="header-section-number">2.0.1</span> Lab equipment</h3>
 <ul>
 <li>tissue homogenizer (like the <a href="https://us.omni-inc.com/omni-tissue-homogenizer-th.html">OMNI TH</a> used by <span class="citation" data-cites="steinberg2021">(<a href="#ref-steinberg2021" role="doc-biblioref">Steinberg et al. 2021</a>)</span> with a 10mm stainless steel bit, we have a Biospec Products Tissue Tearor Model 985-370, which is a slightly older model compared to <a href="https://www.coleparmer.com/i/tissue-tearor-985370-07-homogenizer-120-vac-1-2-a/0475050?PubID=UX&amp;persist=true&amp;ip=no&amp;gad_source=1&amp;gclid=CjwKCAjwx-CyBhAqEiwAeOcTdU_POATJBTiINJzb41uUa_jdZx9EuYzIDbyWBoKMXQRaQdXV3SPlgBoCGr4QAvD_BwE">this here</a>)</li>
 <li>vortex</li>
@@ -581,8 +572,8 @@ Important
 <li>Microscope or Dissecting scope</li>
 </ul>
 <div class="no-row-height column-margin column-container"></div></section>
-<section id="lab-consumables" class="level3">
-<h3 class="anchored" data-anchor-id="lab-consumables">Lab consumables</h3>
+<section id="lab-consumables" class="level3" data-number="2.0.2">
+<h3 data-number="2.0.2" class="anchored" data-anchor-id="lab-consumables"><span class="header-section-number">2.0.2</span> Lab consumables</h3>
 <ul>
 <li>microcentrifuge tubes</li>
 <li>pipettes &amp; tips</li>
@@ -590,8 +581,8 @@ Important
 <li><a href="https://www.simbalion.com/product/detail/A/A10/A10/No.800">ethanol-proof lab markers</a></li>
 </ul>
 </section>
-<section id="chemicals-solvents" class="level3">
-<h3 class="anchored" data-anchor-id="chemicals-solvents">Chemicals &amp; solvents</h3>
+<section id="chemicals-solvents" class="level3" data-number="2.0.3">
+<h3 data-number="2.0.3" class="anchored" data-anchor-id="chemicals-solvents"><span class="header-section-number">2.0.3</span> Chemicals &amp; solvents</h3>
 <ul>
 <li>Milli-Q Water</li>
 <li>10x <a href="https://www.sigmaaldrich.com/US/en/product/sigma/p7059?icid=sharepdp-clipboard-copy-productdetailpage">Phosphate-Buffered Saline (PBS)</a> (room temp storage)</li>
@@ -599,8 +590,8 @@ Important
 </ul>
 </section>
 </section>
-<section id="objectives" class="level1 page-columns page-full">
-<h1>Objectives</h1>
+<section id="objectives" class="level1 page-columns page-full" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Objectives</h1>
 <p>From these samples we already have<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>:</p>
 <div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;We also technically have respirometry data for oxygen consumption and production, however the duration of the respirometry run was not sufficiently long to</p></div></div><ul>
 <li>wet weight</li>
@@ -623,10 +614,10 @@ Important
 Steinberg, Rosemary Kate, Emma L. Johnston, Teresa Bednarek, Katherine A. Dafforn, and Tracy D. Ainsworth. 2021. <span>“Its <span>What</span>’s on the <span>Inside That Counts</span>: <span>An Effective</span>, <span>Efficient</span>, and <span>Streamlined Method</span> for <span>Quantification</span> of <span>Octocoral Symbiodiniaceae</span> and <span>Chlorophyll</span>.”</span> <em>Frontiers in Marine Science</em> 8 (September). <a href="https://doi.org/10.3389/fmars.2021.710730">https://doi.org/10.3389/fmars.2021.710730</a>.
 </div></div></div>
 </section>
-<section id="procedure" class="level1 page-columns page-full">
-<h1>Procedure</h1>
-<section id="separate-symbiont-protein-fractions" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="separate-symbiont-protein-fractions">Separate symbiont &amp; protein fractions</h2>
+<section id="procedure" class="level1 page-columns page-full" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Procedure</h1>
+<section id="separate-symbiont-protein-fractions" class="level2 page-columns page-full" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="separate-symbiont-protein-fractions"><span class="header-section-number">4.1</span> Separate symbiont &amp; protein fractions</h2>
 <ul>
 <li>top off each frozen sample tube with <code>Ultrapure water</code>/ <code>DNA/RNA Shield</code></li>
 <li>thaw on ice until able to remove from tube</li>
@@ -653,8 +644,8 @@ V_{1} = \frac{3xPBS \cdot 100mL}{10xPBS}
 \]</span> <span class="math display">\[
 V_{1} = \frac{300}{10} = 30mL
 \]</span> Therefore <span class="math inline">\(30mL\)</span> of <code>10xPBS</code> added to <span class="math inline">\(70mL\)</span> of <code>Milli-Q Water</code> will give a final concentration of <code>3xPBS</code> in a final volume of <span class="math inline">\(100mL\)</span>.</p></div></div></section>
-<section id="protein-quantification" class="level2">
-<h2 class="anchored" data-anchor-id="protein-quantification">Protein quantification</h2>
+<section id="protein-quantification" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="protein-quantification"><span class="header-section-number">4.2</span> Protein quantification</h2>
 <ul>
 <li>defrost supernatent (protein tube)</li>
 <li>top up with RO water to standard volume</li>
@@ -663,8 +654,8 @@ V_{1} = \frac{300}{10} = 30mL
 <li>report units in <span class="math inline">\(\mu g/mL\)</span></li>
 </ul>
 </section>
-<section id="symbiont-counts" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="symbiont-counts">Symbiont counts</h2>
+<section id="symbiont-counts" class="level2 page-columns page-full" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="symbiont-counts"><span class="header-section-number">4.3</span> Symbiont counts</h2>
 <ul>
 <li>remove 500uL to a new 2mL microcentrifuge tube</li>
 <li>Add 1mL of 3X PBS</li>
@@ -681,8 +672,8 @@ V_{1} = \frac{300}{10} = 30mL
 <p>“The number of Symbiodiniaceae cells was standardized to the total protein concentration of the supernatant. The dilution factor (DF) of the supernatant compared to the resuspended Symbiodiniaceae pellet must be considered when calculating Symbiodiniaceae concentrations. In this study, the supernatant had a volume of 40 ml and the resuspended Symbiodiniaceae had a volume of 5 ml, and as such the DF was 8. Symbiodiniaceae per ml was calculated using the following formula: count ×dilution 6.25 ×10−6 , where 6.25 × 10−6 is the volume of one haemocytometer grid square. Symbiodiniaceae per μg protein was calculated using the following formula: Symbiodiniceae ml DF ×protein( μg ml ) or count ×dilution 6.25 ×10−6 DF ×protein ( μg ml ).” (Steinberg et al., 2021, p.&nbsp;3)</p>
 </blockquote>
 </section>
-<section id="chlorophyll-extraction" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="chlorophyll-extraction">Chlorophyll extraction</h2>
+<section id="chlorophyll-extraction" class="level2 page-columns page-full" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="chlorophyll-extraction"><span class="header-section-number">4.4</span> Chlorophyll extraction</h2>
 <ul>
 <li>vortex the remaining contents of the Chlorophyll tube to re-suspend the symbionts</li>
 <li>centrifuge for 10 minutes at 800 xg</li>
@@ -695,10 +686,10 @@ V_{1} = \frac{300}{10} = 30mL
 <p><img src="steinberg_fig3.png" class="img-fluid"></p>
 </div>
 </section>
-<section id="measure-absorbance-using-a-nanodrop-2000c-spectrophotometer" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="measure-absorbance-using-a-nanodrop-2000c-spectrophotometer">Measure absorbance using a NanoDrop 2000c Spectrophotometer</h2>
-<section id="program-nanodrop-2000c-method-editor" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="program-nanodrop-2000c-method-editor">Program NanoDrop 2000c Method Editor</h3>
+<section id="measure-absorbance-using-a-nanodrop-2000c-spectrophotometer" class="level2 page-columns page-full" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="measure-absorbance-using-a-nanodrop-2000c-spectrophotometer"><span class="header-section-number">4.5</span> Measure absorbance using a NanoDrop 2000c Spectrophotometer</h2>
+<section id="program-nanodrop-2000c-method-editor" class="level3 page-columns page-full" data-number="4.5.1">
+<h3 data-number="4.5.1" class="anchored" data-anchor-id="program-nanodrop-2000c-method-editor"><span class="header-section-number">4.5.1</span> Program NanoDrop 2000c Method Editor</h3>
 <p>I emailed<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> Thermo Fisher for some advice on this procedure and got the following instructions:</p>
 <div class="no-row-height column-margin column-container"><div id="fn8"><p><sup>8</sup>&nbsp;Hello Sarah,&nbsp;<br>
 <br>
@@ -754,8 +745,8 @@ Tel: +1 (302) 479-7707 | Toll Free: +1 (877) 724-7690 ext. 2400109 | Fax: +1 (30
 <p><img src="08_cuvette.PNG" class="img-fluid"></p></li>
 </ol>
 </section>
-<section id="measure-cuvette-blanks-and-samples" class="level3">
-<h3 class="anchored" data-anchor-id="measure-cuvette-blanks-and-samples">Measure cuvette blanks and samples</h3>
+<section id="measure-cuvette-blanks-and-samples" class="level3" data-number="4.5.2">
+<h3 data-number="4.5.2" class="anchored" data-anchor-id="measure-cuvette-blanks-and-samples"><span class="header-section-number">4.5.2</span> Measure cuvette blanks and samples</h3>
 <ol start="6" type="1">
 <li>after the 48hr incubation, pull tubes out of the 4C fridge and centrifuge for 10 minutes at 805 RCF</li>
 <li>transfer 2 2mL aliquots of extracted chlorophyll in acetone from each symbiont tube into two optical glass cuvettes</li>
@@ -764,8 +755,8 @@ Tel: +1 (302) 479-7707 | Toll Free: +1 (877) 724-7690 ext. 2400109 | Fax: +1 (30
 </section>
 </section>
 </section>
-<section id="calculate-concentrations" class="level1 page-columns page-full">
-<h1>Calculate concentrations</h1>
+<section id="calculate-concentrations" class="level1 page-columns page-full" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Calculate concentrations</h1>
 <ul>
 <li><p>calculate concentrations of chlorophyll <span class="math inline">\(a\)</span> and <span class="math inline">\(c_2\)</span> in <span class="math inline">\(\mu g/mL\)</span> using the following equations from <span class="citation" data-cites="jeffrey1975">(<a href="#ref-jeffrey1975" role="doc-biblioref">Jeffrey and Humphrey 1975</a>)</span> Jeffery and Humphrey (1975) for dinoflagellates:</p>
 <p><span class="math display">\[ Chlorophyll a = 11.43E_{663} − 0.64E_{630} \]</span> <span class="math display">\[ Chlorophyll c2 = 27.09E_{630} − 3.63E_{663} \]</span></p></li>

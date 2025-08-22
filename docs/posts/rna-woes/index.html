@@ -97,9 +97,9 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -280,8 +280,7 @@ div.csl-indent {
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -294,14 +293,6 @@ div.csl-indent {
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -425,7 +416,7 @@ div.csl-indent {
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -435,25 +426,25 @@ div.csl-indent {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#so-your-samples-failed-library-prep" id="toc-so-your-samples-failed-library-prep" class="nav-link active" data-scroll-target="#so-your-samples-failed-library-prep">So your samples failed library prep … 😰</a></li>
-  <li><a href="#assessing-purity" id="toc-assessing-purity" class="nav-link" data-scroll-target="#assessing-purity">Assessing Purity</a>
+  <li><a href="#so-your-samples-failed-library-prep" id="toc-so-your-samples-failed-library-prep" class="nav-link active" data-scroll-target="#so-your-samples-failed-library-prep"><span class="header-section-number">1</span> So your samples failed library prep … 😰</a></li>
+  <li><a href="#assessing-purity" id="toc-assessing-purity" class="nav-link" data-scroll-target="#assessing-purity"><span class="header-section-number">2</span> Assessing Purity</a>
   <ul>
-  <li><a href="#phenol-contamination-may-manifest-in-a-260280-ratio-greater-than-2.00" id="toc-phenol-contamination-may-manifest-in-a-260280-ratio-greater-than-2.00" class="nav-link" data-scroll-target="#phenol-contamination-may-manifest-in-a-260280-ratio-greater-than-2.00">⚠️ Phenol Contamination may manifest in a 260/280 ratio greater than 2.00 !</a></li>
+  <li><a href="#phenol-contamination-may-manifest-in-a-260280-ratio-greater-than-2.00" id="toc-phenol-contamination-may-manifest-in-a-260280-ratio-greater-than-2.00" class="nav-link" data-scroll-target="#phenol-contamination-may-manifest-in-a-260280-ratio-greater-than-2.00"><span class="header-section-number">2.0.1</span> ⚠️ Phenol Contamination may manifest in a 260/280 ratio greater than 2.00 !</a></li>
   </ul></li>
-  <li><a href="#zymo-onestep-pcr-inhibitor-removal-kit" id="toc-zymo-onestep-pcr-inhibitor-removal-kit" class="nav-link" data-scroll-target="#zymo-onestep-pcr-inhibitor-removal-kit">Zymo OneStep PCR Inhibitor Removal Kit</a></li>
-  <li><a href="#zymo-rna-clean-concentrator-kit" id="toc-zymo-rna-clean-concentrator-kit" class="nav-link" data-scroll-target="#zymo-rna-clean-concentrator-kit">Zymo RNA Clean &amp; Concentrator Kit</a>
+  <li><a href="#zymo-onestep-pcr-inhibitor-removal-kit" id="toc-zymo-onestep-pcr-inhibitor-removal-kit" class="nav-link" data-scroll-target="#zymo-onestep-pcr-inhibitor-removal-kit"><span class="header-section-number">3</span> Zymo OneStep PCR Inhibitor Removal Kit</a></li>
+  <li><a href="#zymo-rna-clean-concentrator-kit" id="toc-zymo-rna-clean-concentrator-kit" class="nav-link" data-scroll-target="#zymo-rna-clean-concentrator-kit"><span class="header-section-number">4</span> Zymo RNA Clean &amp; Concentrator Kit</a>
   <ul>
-  <li><a href="#did-the-rna-clean-concentrate-kit-improve-the-samples-that-had-already-been-through-the-onestep-pcr-inhibitor-removal-kit" id="toc-did-the-rna-clean-concentrate-kit-improve-the-samples-that-had-already-been-through-the-onestep-pcr-inhibitor-removal-kit" class="nav-link" data-scroll-target="#did-the-rna-clean-concentrate-kit-improve-the-samples-that-had-already-been-through-the-onestep-pcr-inhibitor-removal-kit">Did the RNA Clean &amp; Concentrate Kit improve the samples that had already been through the OneStep PCR Inhibitor Removal Kit?</a></li>
+  <li><a href="#did-the-rna-clean-concentrate-kit-improve-the-samples-that-had-already-been-through-the-onestep-pcr-inhibitor-removal-kit" id="toc-did-the-rna-clean-concentrate-kit-improve-the-samples-that-had-already-been-through-the-onestep-pcr-inhibitor-removal-kit" class="nav-link" data-scroll-target="#did-the-rna-clean-concentrate-kit-improve-the-samples-that-had-already-been-through-the-onestep-pcr-inhibitor-removal-kit"><span class="header-section-number">4.1</span> Did the RNA Clean &amp; Concentrate Kit improve the samples that had already been through the OneStep PCR Inhibitor Removal Kit?</a></li>
   </ul></li>
-  <li><a href="#rna-clean-concentrator-follow-up-tests" id="toc-rna-clean-concentrator-follow-up-tests" class="nav-link" data-scroll-target="#rna-clean-concentrator-follow-up-tests">RNA Clean &amp; Concentrator follow-up tests</a>
+  <li><a href="#rna-clean-concentrator-follow-up-tests" id="toc-rna-clean-concentrator-follow-up-tests" class="nav-link" data-scroll-target="#rna-clean-concentrator-follow-up-tests"><span class="header-section-number">5</span> RNA Clean &amp; Concentrator follow-up tests</a>
   <ul>
-  <li><a href="#aug-2023" id="toc-aug-2023" class="nav-link" data-scroll-target="#aug-2023">24-AUG-2023</a></li>
-  <li><a href="#aug-2023-1" id="toc-aug-2023-1" class="nav-link" data-scroll-target="#aug-2023-1">31-AUG-2023</a></li>
-  <li><a href="#sep-2023" id="toc-sep-2023" class="nav-link" data-scroll-target="#sep-2023">06-SEP-2023</a></li>
+  <li><a href="#aug-2023" id="toc-aug-2023" class="nav-link" data-scroll-target="#aug-2023"><span class="header-section-number">5.0.1</span> 24-AUG-2023</a></li>
+  <li><a href="#aug-2023-1" id="toc-aug-2023-1" class="nav-link" data-scroll-target="#aug-2023-1"><span class="header-section-number">5.0.2</span> 31-AUG-2023</a></li>
+  <li><a href="#sep-2023" id="toc-sep-2023" class="nav-link" data-scroll-target="#sep-2023"><span class="header-section-number">5.0.3</span> 06-SEP-2023</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -470,8 +461,8 @@ div.csl-indent {
 
 
 
-<section id="so-your-samples-failed-library-prep" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="so-your-samples-failed-library-prep">So your samples failed library prep … 😰</h2>
+<section id="so-your-samples-failed-library-prep" class="level2 page-columns page-full" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="so-your-samples-failed-library-prep"><span class="header-section-number">1</span> So your samples failed library prep … 😰</h2>
 <p>After shipping 20 samples to the University of Texas at Austin GSAF for TagSeq on June 7th 2023, I got a message back from them on June 28th 2023:</p>
 <blockquote class="blockquote">
 <p>“Your samples failed in library prep. All 20 of them, the other samples on the 96 well plate as well as our positive control all worked great. We seen this before and it is almost always an indication that there are some type of inhibitors in your samples and it impacted the prep. Based on the quality of the RNA there is nothing more we can do for them, they will not work in the prep until they have been purified, I am not sure how they were cleaned up after the extraction but it needs to be more rigorous and be certain there are no contaminants in the RNA.”</p>
@@ -480,15 +471,15 @@ div.csl-indent {
 <div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;Reverse transcriptase is an enzyme that transcribes single-stranded RNA into complementary DNA (cDNA) during library prep for RNA sequencing. It was discovered in the 1970’s by David Baltimore and Howard Temin when studying retroviruses (checkout this <a href="https://www.youtube.com/watch?app=desktop&amp;v=v9EL8V-6la4">YouTube video</a> for a brief history on reverse transcriptase, and this <a href="https://www.youtube.com/watch?v=POEDYHKyYDk">YouTube video</a> for a brief explanation of how it is used to turn mRNA to cDNA).</p></div></div><p>So what did I find, and what does this mean for my samples?</p>
 <p>The RNA quantity, measured by Qubit Fluorometer, is good. And the RNA quality, measured by UT GSAF Bioanalyzer, is also good. The issue is that there is <em>something else</em> in the sample that is preventing the reverse transcriptase from generating the cDNA.</p>
 </section>
-<section id="assessing-purity" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="assessing-purity">Assessing Purity</h2>
+<section id="assessing-purity" class="level2 page-columns page-full" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="assessing-purity"><span class="header-section-number">2</span> Assessing Purity</h2>
 <p>Nanodrop purity targets<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>:</p>
 <div class="no-row-height column-margin column-container"><div id="fn2"><p><sup>2</sup>&nbsp;Check out <a href="https://toptipbio.com/the-nanodrop-results-explained/">Assessing RNA quantity and purity with Nanodrop</a> by TopTipBio</p></div></div><ul>
 <li><p>260/280 (protein purity) <strong>1.80 - 2.00</strong></p></li>
 <li><p>260/230 (salts purity) <strong>2.00 - 2.20</strong></p></li>
 </ul>
-<section id="phenol-contamination-may-manifest-in-a-260280-ratio-greater-than-2.00" class="level4 page-columns page-full">
-<h4 class="anchored" data-anchor-id="phenol-contamination-may-manifest-in-a-260280-ratio-greater-than-2.00">⚠️ Phenol Contamination may manifest in a 260/280 ratio greater than 2.00 !</h4>
+<section id="phenol-contamination-may-manifest-in-a-260280-ratio-greater-than-2.00" class="level4 page-columns page-full" data-number="2.0.1">
+<h4 data-number="2.0.1" class="anchored" data-anchor-id="phenol-contamination-may-manifest-in-a-260280-ratio-greater-than-2.00"><span class="header-section-number">2.0.1</span> ⚠️ Phenol Contamination may manifest in a 260/280 ratio greater than 2.00 !</h4>
 <div class="page-columns page-full"><blockquote class="blockquote">
 <p>“<strong>A 260/280 ratio greater than 2.0 does NOT indicate the presence of especially high quality DNA, it most often reflects residual contaminants, such as phenol.</strong>” -<span class="citation" data-cites="zotero-2042">(<a href="#ref-zotero-2042" role="doc-biblioref"><span>“Ultraviolet <span>Spectrophotometry</span> - an Overview | <span>ScienceDirect Topics</span>”</span> n.d.</a>)</span></p>
 <p>” … samples with purity ratios that range from 1.8 to 2.0 are typically considered pure. <strong>Although purity ratios are very useful and informative, they do not always provide a complete picture of sample purity.</strong>”</p>
@@ -498,8 +489,8 @@ div.csl-indent {
 </div></div></div>
 </section>
 </section>
-<section id="zymo-onestep-pcr-inhibitor-removal-kit" class="level2">
-<h2 class="anchored" data-anchor-id="zymo-onestep-pcr-inhibitor-removal-kit">Zymo OneStep PCR Inhibitor Removal Kit</h2>
+<section id="zymo-onestep-pcr-inhibitor-removal-kit" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="zymo-onestep-pcr-inhibitor-removal-kit"><span class="header-section-number">3</span> Zymo OneStep PCR Inhibitor Removal Kit</h2>
 <p>I first tried purifying sample RNA using the <a href="https://www.zymoresearch.com/collections/onestep-pcr-inhibitor-removal-kits">Zymo OneStep PCR Inhibitor Removal Kit</a> on a subset of the samples.</p>
 <p>I followed the kit instructions, and assessed the samples for purity using a Nanodrop.</p>
 <dl>
@@ -690,8 +681,8 @@ OneStepPCRInhibitor
 </blockquote>
 <hr>
 </section>
-<section id="zymo-rna-clean-concentrator-kit" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="zymo-rna-clean-concentrator-kit">Zymo RNA Clean &amp; Concentrator Kit</h2>
+<section id="zymo-rna-clean-concentrator-kit" class="level2 page-columns page-full" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="zymo-rna-clean-concentrator-kit"><span class="header-section-number">4</span> Zymo RNA Clean &amp; Concentrator Kit</h2>
 <p>I next tried to purify the RNA with the Zymo RNA Clean &amp; Concentrator Kit:</p>
 <dl>
 <dt><img src="18aug23_drop_plot.jpg" class="img-fluid" alt="Nanodrop plot results"></dt>
@@ -1294,8 +1285,8 @@ RNAClean&amp;Concentrate
 </div>
 </div>
 </div>
-<section id="did-the-rna-clean-concentrate-kit-improve-the-samples-that-had-already-been-through-the-onestep-pcr-inhibitor-removal-kit" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="did-the-rna-clean-concentrate-kit-improve-the-samples-that-had-already-been-through-the-onestep-pcr-inhibitor-removal-kit">Did the RNA Clean &amp; Concentrate Kit improve the samples that had already been through the OneStep PCR Inhibitor Removal Kit?</h3>
+<section id="did-the-rna-clean-concentrate-kit-improve-the-samples-that-had-already-been-through-the-onestep-pcr-inhibitor-removal-kit" class="level3 page-columns page-full" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="did-the-rna-clean-concentrate-kit-improve-the-samples-that-had-already-been-through-the-onestep-pcr-inhibitor-removal-kit"><span class="header-section-number">4.1</span> Did the RNA Clean &amp; Concentrate Kit improve the samples that had already been through the OneStep PCR Inhibitor Removal Kit?</h3>
 <div class="cell page-columns page-full" data-cap-location="margin">
 
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
@@ -1653,10 +1644,10 @@ RNAClean&amp;Concentrate
 <hr>
 </section>
 </section>
-<section id="rna-clean-concentrator-follow-up-tests" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="rna-clean-concentrator-follow-up-tests">RNA Clean &amp; Concentrator follow-up tests</h2>
-<section id="aug-2023" class="level4">
-<h4 class="anchored" data-anchor-id="aug-2023">24-AUG-2023</h4>
+<section id="rna-clean-concentrator-follow-up-tests" class="level2 page-columns page-full" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="rna-clean-concentrator-follow-up-tests"><span class="header-section-number">5</span> RNA Clean &amp; Concentrator follow-up tests</h2>
+<section id="aug-2023" class="level4" data-number="5.0.1">
+<h4 data-number="5.0.1" class="anchored" data-anchor-id="aug-2023"><span class="header-section-number">5.0.1</span> 24-AUG-2023</h4>
 <p><strong>Samples:</strong></p>
 <ul>
 <li>10-Aa</li>
@@ -1788,8 +1779,8 @@ A280
 </div>
 </div>
 </section>
-<section id="aug-2023-1" class="level4">
-<h4 class="anchored" data-anchor-id="aug-2023-1">31-AUG-2023</h4>
+<section id="aug-2023-1" class="level4" data-number="5.0.2">
+<h4 data-number="5.0.2" class="anchored" data-anchor-id="aug-2023-1"><span class="header-section-number">5.0.2</span> 31-AUG-2023</h4>
 <div class="callout callout-style-simple callout-warning">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -2638,8 +2629,8 @@ RNA
 </div>
 </div>
 </section>
-<section id="sep-2023" class="level4 page-columns page-full">
-<h4 class="anchored" data-anchor-id="sep-2023">06-SEP-2023</h4>
+<section id="sep-2023" class="level4 page-columns page-full" data-number="5.0.3">
+<h4 data-number="5.0.3" class="anchored" data-anchor-id="sep-2023"><span class="header-section-number">5.0.3</span> 06-SEP-2023</h4>
 <p>These 12 samples were passed through the Zymo RNA Clean &amp; Concentrator kit a 2nd (or 3rd!) time to see if doing the kit another round made further improvements to purity</p>
 <p>Samples:</p>
 <ul>

@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -144,7 +144,7 @@ window.Quarto = {
 <meta property="og:site_name" content="Sarah Tanja's Open Lab Notebook">
 </head>
 
-<body class="floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -287,8 +287,7 @@ window.Quarto = {
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -301,14 +300,6 @@ window.Quarto = {
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -401,7 +392,7 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <div class="quarto-title-block"><div><h1 class="title">HOBO logger calibrations</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
@@ -433,7 +424,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -442,37 +433,34 @@ window.Quarto = {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul class="collapse">
-  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background"><span class="header-section-number">1</span> Background</a>
   <ul class="collapse">
-  <li><a href="#inputs" id="toc-inputs" class="nav-link" data-scroll-target="#inputs">Inputs</a></li>
-  <li><a href="#outputs" id="toc-outputs" class="nav-link" data-scroll-target="#outputs">Outputs</a></li>
+  <li><a href="#inputs" id="toc-inputs" class="nav-link" data-scroll-target="#inputs"><span class="header-section-number">1.1</span> Inputs</a></li>
+  <li><a href="#outputs" id="toc-outputs" class="nav-link" data-scroll-target="#outputs"><span class="header-section-number">1.2</span> Outputs</a></li>
   </ul></li>
-  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a>
+  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup"><span class="header-section-number">2</span> Setup</a>
   <ul class="collapse">
-  <li><a href="#install-packages" id="toc-install-packages" class="nav-link" data-scroll-target="#install-packages">Install packages</a></li>
-  <li><a href="#load-libraries" id="toc-load-libraries" class="nav-link" data-scroll-target="#load-libraries">Load libraries</a></li>
-  <li><a href="#load-hobo-logs" id="toc-load-hobo-logs" class="nav-link" data-scroll-target="#load-hobo-logs">Load HOBO logs</a></li>
+  <li><a href="#install-packages" id="toc-install-packages" class="nav-link" data-scroll-target="#install-packages"><span class="header-section-number">2.1</span> Install packages</a></li>
+  <li><a href="#load-libraries" id="toc-load-libraries" class="nav-link" data-scroll-target="#load-libraries"><span class="header-section-number">2.2</span> Load libraries</a></li>
+  <li><a href="#load-hobo-logs" id="toc-load-hobo-logs" class="nav-link" data-scroll-target="#load-hobo-logs"><span class="header-section-number">2.3</span> Load HOBO logs</a></li>
   </ul></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
-  <li><a href="#format-logs" id="toc-format-logs" class="nav-link" data-scroll-target="#format-logs">Format logs</a></li>
-  <li><a href="#create-calibrations" id="toc-create-calibrations" class="nav-link" data-scroll-target="#create-calibrations">Create calibrations</a>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">3</span> References</a></li>
+  <li><a href="#format-logs" id="toc-format-logs" class="nav-link" data-scroll-target="#format-logs"><span class="header-section-number">4</span> Format logs</a></li>
+  <li><a href="#create-calibrations" id="toc-create-calibrations" class="nav-link" data-scroll-target="#create-calibrations"><span class="header-section-number">5</span> Create calibrations</a>
   <ul class="collapse">
-  <li><a href="#temp" id="toc-temp" class="nav-link" data-scroll-target="#temp">Temp</a></li>
-  <li><a href="#par" id="toc-par" class="nav-link" data-scroll-target="#par">PAR</a></li>
+  <li><a href="#temp" id="toc-temp" class="nav-link" data-scroll-target="#temp"><span class="header-section-number">5.1</span> Temp</a></li>
+  <li><a href="#par" id="toc-par" class="nav-link" data-scroll-target="#par"><span class="header-section-number">5.2</span> PAR</a></li>
   </ul></li>
-  <li><a href="#apply-calibrations" id="toc-apply-calibrations" class="nav-link" data-scroll-target="#apply-calibrations">Apply calibrations</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#apply-calibrations" id="toc-apply-calibrations" class="nav-link" data-scroll-target="#apply-calibrations"><span class="header-section-number">6</span> Apply calibrations</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">7</span> Summary</a></li>
   </ul>
 </nav>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -482,37 +470,37 @@ window.Quarto = {
 
 
 
-<section id="background" class="level1">
-<h1>Background</h1>
+<section id="background" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Background</h1>
 <p>On July 10th I calibrated the HOBO logs to a Kessler NIST K750 RTD Thermometer and an apogee instruments underwater quantum flux PAR meter.</p>
 <p>Each was a 2 point calibration matching time-stamp to reference instrument read-out.</p>
 <p>NIST temp &amp; time 27.03 , 07/10/2024 10:40:00 27.26, 07/10/2024 11:00:00</p>
 <p>Apogee par &amp; time 1600, 07/10/2024 11:10:00 760, 07/10/2024 11:40:00</p>
-<section id="inputs" class="level2">
-<h2 class="anchored" data-anchor-id="inputs">Inputs</h2>
+<section id="inputs" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="inputs"><span class="header-section-number">1.1</span> Inputs</h2>
 </section>
-<section id="outputs" class="level2">
-<h2 class="anchored" data-anchor-id="outputs">Outputs</h2>
+<section id="outputs" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="outputs"><span class="header-section-number">1.2</span> Outputs</h2>
 </section>
 </section>
-<section id="setup" class="level1">
-<h1>Setup</h1>
-<section id="install-packages" class="level2">
-<h2 class="anchored" data-anchor-id="install-packages">Install packages</h2>
+<section id="setup" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Setup</h1>
+<section id="install-packages" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="install-packages"><span class="header-section-number">2.1</span> Install packages</h2>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">"tidyverse"</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>()) <span class="sc">==</span> <span class="st">'FALSE'</span>) <span class="fu">install.packages</span>(<span class="st">'tidyverse'</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">"broom"</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>()) <span class="sc">==</span> <span class="st">'FALSE'</span>) <span class="fu">install.packages</span>(<span class="st">'broom'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="load-libraries" class="level2">
-<h2 class="anchored" data-anchor-id="load-libraries">Load libraries</h2>
+<section id="load-libraries" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="load-libraries"><span class="header-section-number">2.2</span> Load libraries</h2>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(broom) <span class="co"># for tidy()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="load-hobo-logs" class="level2">
-<h2 class="anchored" data-anchor-id="load-hobo-logs">Load HOBO logs</h2>
+<section id="load-hobo-logs" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="load-hobo-logs"><span class="header-section-number">2.3</span> Load HOBO logs</h2>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>amb1_blue <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"Amb1_blue 2024-07-10 13_10_13 HST (Data HST).csv"</span>)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>amb1_bluegreen <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"Amb1_bluegreen 2024-07-10 13_10_51 HST (Data HST).csv"</span>)</span>
@@ -525,8 +513,8 @@ window.Quarto = {
 </div>
 </section>
 </section>
-<section id="references" class="level1">
-<h1>References</h1>
+<section id="references" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> References</h1>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example inputs for temperature calibration</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>ref_temp <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">27.03</span>, <span class="fl">27.26</span>)  <span class="co"># NIST temperatures</span></span>
@@ -546,8 +534,8 @@ window.Quarto = {
 <span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="format-logs" class="level1">
-<h1>Format logs</h1>
+<section id="format-logs" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Format logs</h1>
 <ol type="1">
 <li>amb1_blue</li>
 </ol>
@@ -664,10 +652,10 @@ window.Quarto = {
 <span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>                  hot2_yellow)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="create-calibrations" class="level1">
-<h1>Create calibrations</h1>
-<section id="temp" class="level2">
-<h2 class="anchored" data-anchor-id="temp">Temp</h2>
+<section id="create-calibrations" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Create calibrations</h1>
+<section id="temp" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="temp"><span class="header-section-number">5.1</span> Temp</h2>
 <p>For each sensor, calculate slope and intercept using the two point calibration</p>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define your calibration temperature reference times</span></span>
@@ -739,8 +727,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="par" class="level2">
-<h2 class="anchored" data-anchor-id="par">PAR</h2>
+<section id="par" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="par"><span class="header-section-number">5.2</span> PAR</h2>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define your calibration PAR reference times</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>cal_par_times <span class="ot">&lt;-</span> <span class="fu">as.POSIXct</span>(<span class="fu">c</span>(<span class="st">"2024-07-10 11:10:00"</span>, <span class="st">"2024-07-10 11:40:00"</span>))</span>
@@ -812,15 +800,15 @@ window.Quarto = {
 </div>
 </section>
 </section>
-<section id="apply-calibrations" class="level1">
-<h1>Apply calibrations</h1>
+<section id="apply-calibrations" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Apply calibrations</h1>
 <p>To apply the intercept and slope from your linear regression calibration to raw data and generate calibrated values, you use the formula:</p>
 <p><span class="math display">\[
 \text{Calibrated value} = (\text{slope} \times \text{raw value}) + \text{intercept}
 \]</span></p>
 </section>
-<section id="summary" class="level1">
-<h1>Summary</h1>
+<section id="summary" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Summary</h1>
 
 
 <!-- -->
@@ -1309,463 +1297,483 @@ window.Quarto = {
 <span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>On July 10th I calibrated the HOBO pendent (temp + lux) loggers to a Kessler NIST K750 RTD Thermometer and an apogee instruments underwater quantum flux PAR meter.</span>
 <span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>Each was a 2 point calibration matching time-stamp to reference instrument read-out.</span>
-<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>NIST temp &amp; time:</span>
-<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>27.03 , 07/10/2024 10<span class="sc">:40:</span>00</span>
-<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>27.26, 07/10/2024 11<span class="sc">:00:</span>00</span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>Typical examples of lux levels:</span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Full daylight: about 10,000 to 25,000 lux</span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Overcast daylight: about 1,000 lux</span>
+<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Typical office lighting: about 300 to 500 lux</span>
+<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Moonlight: about 1 lux</span>
 <span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a>Apogee par &amp; time:</span>
-<span id="cb20-19"><a href="#cb20-19" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>1600, 07/10/2024 11<span class="sc">:10:</span>00 </span>
-<span id="cb20-20"><a href="#cb20-20" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>760, 07/10/2024 11<span class="sc">:40:</span>00</span>
-<span id="cb20-21"><a href="#cb20-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-22"><a href="#cb20-22" aria-hidden="true" tabindex="-1"></a><span class="fu">## Inputs</span></span>
+<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a>Each was a 2 point calibration matching time-stamp to reference instrument read-out.</span>
+<span id="cb20-19"><a href="#cb20-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-20"><a href="#cb20-20" aria-hidden="true" tabindex="-1"></a>NIST temp &amp; time:</span>
+<span id="cb20-21"><a href="#cb20-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>27.03 , 07/10/2024 10<span class="sc">:40:</span>00</span>
+<span id="cb20-22"><a href="#cb20-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>27.26, 07/10/2024 11<span class="sc">:00:</span>00</span>
 <span id="cb20-23"><a href="#cb20-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-24"><a href="#cb20-24" aria-hidden="true" tabindex="-1"></a><span class="fu">## Outputs</span></span>
-<span id="cb20-25"><a href="#cb20-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-26"><a href="#cb20-26" aria-hidden="true" tabindex="-1"></a><span class="fu"># Setup</span></span>
+<span id="cb20-24"><a href="#cb20-24" aria-hidden="true" tabindex="-1"></a>Apogee par &amp; time:</span>
+<span id="cb20-25"><a href="#cb20-25" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>1600, 07/10/2024 11<span class="sc">:10:</span>00 </span>
+<span id="cb20-26"><a href="#cb20-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>760, 07/10/2024 11<span class="sc">:40:</span>00</span>
 <span id="cb20-27"><a href="#cb20-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-28"><a href="#cb20-28" aria-hidden="true" tabindex="-1"></a><span class="in">```{r setup, include=FALSE}</span></span>
-<span id="cb20-29"><a href="#cb20-29" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span>opts_chunk<span class="sc">$</span><span class="fu">set</span>(</span>
-<span id="cb20-30"><a href="#cb20-30" aria-hidden="true" tabindex="-1"></a>  <span class="at">fig.width =</span> <span class="dv">12</span>,</span>
-<span id="cb20-31"><a href="#cb20-31" aria-hidden="true" tabindex="-1"></a>  <span class="at">fig.height =</span> <span class="dv">8</span>,</span>
-<span id="cb20-32"><a href="#cb20-32" aria-hidden="true" tabindex="-1"></a>  <span class="at">fig.align =</span> <span class="st">"center"</span>,</span>
-<span id="cb20-33"><a href="#cb20-33" aria-hidden="true" tabindex="-1"></a>  <span class="at">dpi =</span> <span class="dv">600</span>,</span>
-<span id="cb20-34"><a href="#cb20-34" aria-hidden="true" tabindex="-1"></a>  <span class="at">echo =</span> <span class="cn">TRUE</span>,         <span class="co"># Display code chunks</span></span>
-<span id="cb20-35"><a href="#cb20-35" aria-hidden="true" tabindex="-1"></a>  <span class="at">eval =</span> <span class="cn">TRUE</span>,        <span class="co"># Evaluate code chunks</span></span>
-<span id="cb20-36"><a href="#cb20-36" aria-hidden="true" tabindex="-1"></a>  <span class="at">warning =</span> <span class="cn">FALSE</span>,     <span class="co"># Hide warnings</span></span>
-<span id="cb20-37"><a href="#cb20-37" aria-hidden="true" tabindex="-1"></a>  <span class="at">message =</span> <span class="cn">FALSE</span>,     <span class="co"># Hide messages</span></span>
-<span id="cb20-38"><a href="#cb20-38" aria-hidden="true" tabindex="-1"></a>  <span class="at">comment =</span> <span class="st">""</span>         <span class="co"># Prevents appending '##' to beginning of lines in code output</span></span>
-<span id="cb20-39"><a href="#cb20-39" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb20-40"><a href="#cb20-40" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-41"><a href="#cb20-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-42"><a href="#cb20-42" aria-hidden="true" tabindex="-1"></a><span class="fu">## Install packages</span></span>
-<span id="cb20-43"><a href="#cb20-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-44"><a href="#cb20-44" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval=FALSE}</span></span>
-<span id="cb20-45"><a href="#cb20-45" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">"tidyverse"</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>()) <span class="sc">==</span> <span class="st">'FALSE'</span>) <span class="fu">install.packages</span>(<span class="st">'tidyverse'</span>)</span>
-<span id="cb20-46"><a href="#cb20-46" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">"broom"</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>()) <span class="sc">==</span> <span class="st">'FALSE'</span>) <span class="fu">install.packages</span>(<span class="st">'broom'</span>)</span>
-<span id="cb20-47"><a href="#cb20-47" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-48"><a href="#cb20-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-49"><a href="#cb20-49" aria-hidden="true" tabindex="-1"></a><span class="fu">## Load libraries</span></span>
-<span id="cb20-50"><a href="#cb20-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-53"><a href="#cb20-53" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-54"><a href="#cb20-54" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb20-55"><a href="#cb20-55" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(broom) <span class="co"># for tidy()</span></span>
-<span id="cb20-56"><a href="#cb20-56" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-57"><a href="#cb20-57" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-58"><a href="#cb20-58" aria-hidden="true" tabindex="-1"></a><span class="fu">## Load HOBO calibration logs</span></span>
-<span id="cb20-61"><a href="#cb20-61" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-62"><a href="#cb20-62" aria-hidden="true" tabindex="-1"></a>cal_amb1_blue <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"calibrations/Amb1_blue 2024-07-10 13_10_13 HST (Data HST).csv"</span>)</span>
-<span id="cb20-63"><a href="#cb20-63" aria-hidden="true" tabindex="-1"></a>cal_amb1_bluegreen <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"calibrations/Amb1_bluegreen 2024-07-10 13_10_51 HST (Data HST).csv"</span>)</span>
-<span id="cb20-64"><a href="#cb20-64" aria-hidden="true" tabindex="-1"></a>cal_amb2_orangepink <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"calibrations/Amb2_orangepink 2024-07-10 11_47_18 HST (Data HST).csv"</span>)</span>
-<span id="cb20-65"><a href="#cb20-65" aria-hidden="true" tabindex="-1"></a>cal_amb2_pink <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"calibrations/Amb2_pink 2024-07-10 11_48_03 HST (Data HST).csv"</span>)</span>
-<span id="cb20-66"><a href="#cb20-66" aria-hidden="true" tabindex="-1"></a>cal_hot1_black <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"calibrations/Hot1_black 2024-07-10 13_09_24 HST (Data HST).csv"</span>)</span>
-<span id="cb20-67"><a href="#cb20-67" aria-hidden="true" tabindex="-1"></a>cal_hot1_green <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"calibrations/Hot1_green 2024-07-10 13_08_26 HST (Data HST).csv"</span>)</span>
-<span id="cb20-68"><a href="#cb20-68" aria-hidden="true" tabindex="-1"></a>cal_hot2_orange <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"calibrations/Hot2_orange 2024-07-10 11_44_18 HST (Data HST).csv"</span>)</span>
-<span id="cb20-69"><a href="#cb20-69" aria-hidden="true" tabindex="-1"></a>cal_hot2_yellow <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"calibrations/Hot2_yellow 2024-07-10 11_46_08 HST (Data HST).csv"</span>)</span>
-<span id="cb20-70"><a href="#cb20-70" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-71"><a href="#cb20-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-72"><a href="#cb20-72" aria-hidden="true" tabindex="-1"></a><span class="fu">## Load HOBO experiment logs</span></span>
-<span id="cb20-75"><a href="#cb20-75" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-76"><a href="#cb20-76" aria-hidden="true" tabindex="-1"></a>exp_amb1_blue <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"experiment/Amb1_blue 2024-07-18 10_39_10 HST (Data HST).csv"</span>)</span>
-<span id="cb20-77"><a href="#cb20-77" aria-hidden="true" tabindex="-1"></a>exp_amb1_bluegreen <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"experiment/Amb1_bluegreen 2024-07-18 10_40_19 HST (Data HST).csv"</span>)</span>
-<span id="cb20-78"><a href="#cb20-78" aria-hidden="true" tabindex="-1"></a>exp_amb2_orangepink <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"experiment/Amb2_orangepink 2024-07-18 10_36_23 HST (Data HST).csv"</span>)</span>
-<span id="cb20-79"><a href="#cb20-79" aria-hidden="true" tabindex="-1"></a>exp_amb2_pink <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"experiment/Amb2_pink 2024-07-18 10_35_38 HST (Data HST).csv"</span>)</span>
-<span id="cb20-80"><a href="#cb20-80" aria-hidden="true" tabindex="-1"></a>exp_hot1_black <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"experiment/Hot1_black 2024-07-18 10_38_17 HST (Data HST).csv"</span>)</span>
-<span id="cb20-81"><a href="#cb20-81" aria-hidden="true" tabindex="-1"></a>exp_hot1_green <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"experiment/Hot1_green 2024-07-18 10_37_19 HST (Data HST).csv"</span>)</span>
-<span id="cb20-82"><a href="#cb20-82" aria-hidden="true" tabindex="-1"></a>exp_hot2_orange <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"experiment/Hot2_orange 2024-07-18 10_33_21 HST (Data HST).csv"</span>)</span>
-<span id="cb20-83"><a href="#cb20-83" aria-hidden="true" tabindex="-1"></a>exp_hot2_yellow <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"experiment/Hot2_yellow 2024-07-18 10_34_56 HST (Data HST).csv"</span>)</span>
-<span id="cb20-84"><a href="#cb20-84" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-85"><a href="#cb20-85" aria-hidden="true" tabindex="-1"></a><span class="fu"># References</span></span>
-<span id="cb20-86"><a href="#cb20-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-89"><a href="#cb20-89" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-90"><a href="#cb20-90" aria-hidden="true" tabindex="-1"></a><span class="co"># Example inputs for temperature calibration</span></span>
-<span id="cb20-91"><a href="#cb20-91" aria-hidden="true" tabindex="-1"></a>ref_temp <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">27.03</span>, <span class="fl">27.26</span>)  <span class="co"># NIST temperatures</span></span>
-<span id="cb20-92"><a href="#cb20-92" aria-hidden="true" tabindex="-1"></a>ref_time_temp <span class="ot">&lt;-</span> <span class="fu">as.POSIXct</span>(<span class="fu">c</span>(<span class="st">"07/10/2024 10:40:00"</span>, <span class="st">"07/10/2024 11:00:00"</span>),</span>
-<span id="cb20-93"><a href="#cb20-93" aria-hidden="true" tabindex="-1"></a>                            <span class="at">format=</span><span class="st">"%m/%d/%Y %H:%M:%S"</span>)</span>
-<span id="cb20-94"><a href="#cb20-94" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-95"><a href="#cb20-95" aria-hidden="true" tabindex="-1"></a><span class="co"># For PAR calibration</span></span>
-<span id="cb20-96"><a href="#cb20-96" aria-hidden="true" tabindex="-1"></a>ref_par <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1600</span>, <span class="dv">760</span>)</span>
-<span id="cb20-97"><a href="#cb20-97" aria-hidden="true" tabindex="-1"></a>ref_time_par <span class="ot">&lt;-</span> <span class="fu">as.POSIXct</span>(<span class="fu">c</span>(<span class="st">"07/10/2024 11:10:00"</span>, <span class="st">"07/10/2024 11:40:00"</span>),</span>
-<span id="cb20-98"><a href="#cb20-98" aria-hidden="true" tabindex="-1"></a>                           <span class="at">format=</span><span class="st">"%m/%d/%Y %H:%M:%S"</span>)</span>
-<span id="cb20-99"><a href="#cb20-99" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-100"><a href="#cb20-100" aria-hidden="true" tabindex="-1"></a>cal_table <span class="ot">&lt;-</span> tibble<span class="sc">::</span><span class="fu">tibble</span>(</span>
-<span id="cb20-101"><a href="#cb20-101" aria-hidden="true" tabindex="-1"></a>  <span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(<span class="fu">c</span>(<span class="st">"2024-07-10 10:40:00"</span>, <span class="st">"2024-07-10 11:00:00"</span>,</span>
-<span id="cb20-102"><a href="#cb20-102" aria-hidden="true" tabindex="-1"></a>                          <span class="st">"2024-07-10 11:10:00"</span>, <span class="st">"2024-07-10 11:40:00"</span>)),</span>
-<span id="cb20-103"><a href="#cb20-103" aria-hidden="true" tabindex="-1"></a>  <span class="at">ref_temp =</span> <span class="fu">c</span>(<span class="fl">27.03</span>, <span class="fl">27.26</span>, <span class="cn">NA</span>, <span class="cn">NA</span>),  <span class="co"># NIST</span></span>
-<span id="cb20-104"><a href="#cb20-104" aria-hidden="true" tabindex="-1"></a>  <span class="at">ref_par  =</span> <span class="fu">c</span>(<span class="cn">NA</span>, <span class="cn">NA</span>, <span class="dv">1600</span>, <span class="dv">760</span>)      <span class="co"># Apogee PAR</span></span>
-<span id="cb20-105"><a href="#cb20-105" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb20-106"><a href="#cb20-106" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-107"><a href="#cb20-107" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-108"><a href="#cb20-108" aria-hidden="true" tabindex="-1"></a><span class="fu"># Format calibration logs</span></span>
-<span id="cb20-109"><a href="#cb20-109" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-110"><a href="#cb20-110" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>amb1_blue</span>
-<span id="cb20-111"><a href="#cb20-111" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-114"><a href="#cb20-114" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-115"><a href="#cb20-115" aria-hidden="true" tabindex="-1"></a>cal_amb1_blue <span class="ot">&lt;-</span> cal_amb1_blue <span class="sc">%&gt;%</span> </span>
-<span id="cb20-116"><a href="#cb20-116" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
-<span id="cb20-117"><a href="#cb20-117" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
-<span id="cb20-118"><a href="#cb20-118" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
-<span id="cb20-119"><a href="#cb20-119" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-120"><a href="#cb20-120" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"amb1_blue"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-121"><a href="#cb20-121" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-122"><a href="#cb20-122" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(datetime <span class="sc">%in%</span> <span class="fu">c</span>(ref_time_temp, ref_time_par))</span>
-<span id="cb20-123"><a href="#cb20-123" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-124"><a href="#cb20-124" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-125"><a href="#cb20-125" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>amb1_bluegreen</span>
-<span id="cb20-126"><a href="#cb20-126" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-129"><a href="#cb20-129" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-130"><a href="#cb20-130" aria-hidden="true" tabindex="-1"></a>cal_amb1_bluegreen <span class="ot">&lt;-</span> cal_amb1_bluegreen <span class="sc">%&gt;%</span> </span>
-<span id="cb20-131"><a href="#cb20-131" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
-<span id="cb20-132"><a href="#cb20-132" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
-<span id="cb20-133"><a href="#cb20-133" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
-<span id="cb20-134"><a href="#cb20-134" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-135"><a href="#cb20-135" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"amb1_bluegreen"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-136"><a href="#cb20-136" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-137"><a href="#cb20-137" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(datetime <span class="sc">%in%</span> <span class="fu">c</span>(ref_time_temp, ref_time_par))</span>
-<span id="cb20-138"><a href="#cb20-138" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-139"><a href="#cb20-139" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-140"><a href="#cb20-140" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>amb2_orangepink</span>
-<span id="cb20-141"><a href="#cb20-141" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-144"><a href="#cb20-144" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-145"><a href="#cb20-145" aria-hidden="true" tabindex="-1"></a>cal_amb2_orangepink <span class="ot">&lt;-</span> cal_amb2_orangepink <span class="sc">%&gt;%</span> </span>
-<span id="cb20-146"><a href="#cb20-146" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
-<span id="cb20-147"><a href="#cb20-147" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
-<span id="cb20-148"><a href="#cb20-148" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
-<span id="cb20-149"><a href="#cb20-149" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-150"><a href="#cb20-150" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"amb2_orangepink"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-151"><a href="#cb20-151" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-152"><a href="#cb20-152" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(datetime <span class="sc">%in%</span> <span class="fu">c</span>(ref_time_temp, ref_time_par))</span>
-<span id="cb20-153"><a href="#cb20-153" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-154"><a href="#cb20-154" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-155"><a href="#cb20-155" aria-hidden="true" tabindex="-1"></a><span class="ss">4.  </span>amb2_pink</span>
-<span id="cb20-156"><a href="#cb20-156" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-159"><a href="#cb20-159" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-160"><a href="#cb20-160" aria-hidden="true" tabindex="-1"></a>cal_amb2_pink <span class="ot">&lt;-</span> cal_amb2_pink <span class="sc">%&gt;%</span> </span>
-<span id="cb20-161"><a href="#cb20-161" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
-<span id="cb20-162"><a href="#cb20-162" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
-<span id="cb20-163"><a href="#cb20-163" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
-<span id="cb20-164"><a href="#cb20-164" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-165"><a href="#cb20-165" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"amb2_pink"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-166"><a href="#cb20-166" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-167"><a href="#cb20-167" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(datetime <span class="sc">%in%</span> <span class="fu">c</span>(ref_time_temp, ref_time_par))</span>
-<span id="cb20-168"><a href="#cb20-168" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-169"><a href="#cb20-169" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-170"><a href="#cb20-170" aria-hidden="true" tabindex="-1"></a><span class="ss">5.  </span>hot1_black</span>
-<span id="cb20-171"><a href="#cb20-171" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-174"><a href="#cb20-174" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-175"><a href="#cb20-175" aria-hidden="true" tabindex="-1"></a>cal_hot1_black <span class="ot">&lt;-</span> cal_hot1_black <span class="sc">%&gt;%</span> </span>
-<span id="cb20-176"><a href="#cb20-176" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
-<span id="cb20-177"><a href="#cb20-177" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
-<span id="cb20-178"><a href="#cb20-178" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
-<span id="cb20-179"><a href="#cb20-179" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-180"><a href="#cb20-180" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"hot1_black"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-181"><a href="#cb20-181" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-182"><a href="#cb20-182" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(datetime <span class="sc">%in%</span> <span class="fu">c</span>(ref_time_temp, ref_time_par))</span>
-<span id="cb20-183"><a href="#cb20-183" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-184"><a href="#cb20-184" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-185"><a href="#cb20-185" aria-hidden="true" tabindex="-1"></a><span class="ss">6.  </span>hot1_green</span>
-<span id="cb20-186"><a href="#cb20-186" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-189"><a href="#cb20-189" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-190"><a href="#cb20-190" aria-hidden="true" tabindex="-1"></a>cal_hot1_green <span class="ot">&lt;-</span> cal_hot1_green <span class="sc">%&gt;%</span> </span>
-<span id="cb20-191"><a href="#cb20-191" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
-<span id="cb20-192"><a href="#cb20-192" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
-<span id="cb20-193"><a href="#cb20-193" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
-<span id="cb20-194"><a href="#cb20-194" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-195"><a href="#cb20-195" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"hot1_green"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-196"><a href="#cb20-196" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-197"><a href="#cb20-197" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(datetime <span class="sc">%in%</span> <span class="fu">c</span>(ref_time_temp, ref_time_par))</span>
-<span id="cb20-198"><a href="#cb20-198" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-199"><a href="#cb20-199" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-200"><a href="#cb20-200" aria-hidden="true" tabindex="-1"></a><span class="ss">7.  </span>hot2_orange</span>
-<span id="cb20-201"><a href="#cb20-201" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-204"><a href="#cb20-204" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-205"><a href="#cb20-205" aria-hidden="true" tabindex="-1"></a>cal_hot2_orange <span class="ot">&lt;-</span> cal_hot2_orange <span class="sc">%&gt;%</span> </span>
-<span id="cb20-206"><a href="#cb20-206" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
-<span id="cb20-207"><a href="#cb20-207" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
-<span id="cb20-208"><a href="#cb20-208" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
-<span id="cb20-209"><a href="#cb20-209" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-210"><a href="#cb20-210" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"hot2_orange"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-211"><a href="#cb20-211" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent)<span class="sc">%&gt;%</span> </span>
-<span id="cb20-212"><a href="#cb20-212" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(datetime <span class="sc">%in%</span> <span class="fu">c</span>(ref_time_temp, ref_time_par))</span>
-<span id="cb20-213"><a href="#cb20-213" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-214"><a href="#cb20-214" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-215"><a href="#cb20-215" aria-hidden="true" tabindex="-1"></a><span class="ss">8.  </span>hot2_yellow</span>
-<span id="cb20-216"><a href="#cb20-216" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-219"><a href="#cb20-219" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-220"><a href="#cb20-220" aria-hidden="true" tabindex="-1"></a>cal_hot2_yellow <span class="ot">&lt;-</span> cal_hot2_yellow <span class="sc">%&gt;%</span> </span>
-<span id="cb20-221"><a href="#cb20-221" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
-<span id="cb20-222"><a href="#cb20-222" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
-<span id="cb20-223"><a href="#cb20-223" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
-<span id="cb20-224"><a href="#cb20-224" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-225"><a href="#cb20-225" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"hot2_yellow"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-226"><a href="#cb20-226" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-227"><a href="#cb20-227" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(datetime <span class="sc">%in%</span> <span class="fu">c</span>(ref_time_temp, ref_time_par))</span>
-<span id="cb20-228"><a href="#cb20-228" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-229"><a href="#cb20-229" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-230"><a href="#cb20-230" aria-hidden="true" tabindex="-1"></a>Bind logs</span>
-<span id="cb20-231"><a href="#cb20-231" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-234"><a href="#cb20-234" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-235"><a href="#cb20-235" aria-hidden="true" tabindex="-1"></a>cal_logs <span class="ot">&lt;-</span> <span class="fu">rbind</span>(cal_amb1_blue,</span>
-<span id="cb20-236"><a href="#cb20-236" aria-hidden="true" tabindex="-1"></a>                  cal_amb1_bluegreen,</span>
-<span id="cb20-237"><a href="#cb20-237" aria-hidden="true" tabindex="-1"></a>                  cal_amb2_orangepink,</span>
-<span id="cb20-238"><a href="#cb20-238" aria-hidden="true" tabindex="-1"></a>                  cal_amb2_pink,</span>
-<span id="cb20-239"><a href="#cb20-239" aria-hidden="true" tabindex="-1"></a>                  cal_hot1_black,</span>
-<span id="cb20-240"><a href="#cb20-240" aria-hidden="true" tabindex="-1"></a>                  cal_hot1_green,</span>
-<span id="cb20-241"><a href="#cb20-241" aria-hidden="true" tabindex="-1"></a>                  cal_hot2_orange,</span>
-<span id="cb20-242"><a href="#cb20-242" aria-hidden="true" tabindex="-1"></a>                  cal_hot2_yellow)</span>
-<span id="cb20-243"><a href="#cb20-243" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-244"><a href="#cb20-244" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-245"><a href="#cb20-245" aria-hidden="true" tabindex="-1"></a><span class="fu"># Create calibrations</span></span>
-<span id="cb20-246"><a href="#cb20-246" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-247"><a href="#cb20-247" aria-hidden="true" tabindex="-1"></a><span class="fu">## Temp</span></span>
-<span id="cb20-248"><a href="#cb20-248" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-249"><a href="#cb20-249" aria-hidden="true" tabindex="-1"></a>For each sensor, calculate slope and intercept using the two point calibration</span>
+<span id="cb20-28"><a href="#cb20-28" aria-hidden="true" tabindex="-1"></a><span class="fu">## Inputs</span></span>
+<span id="cb20-29"><a href="#cb20-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-30"><a href="#cb20-30" aria-hidden="true" tabindex="-1"></a><span class="fu">## Outputs</span></span>
+<span id="cb20-31"><a href="#cb20-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-32"><a href="#cb20-32" aria-hidden="true" tabindex="-1"></a><span class="fu"># Setup</span></span>
+<span id="cb20-33"><a href="#cb20-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-34"><a href="#cb20-34" aria-hidden="true" tabindex="-1"></a><span class="in">```{r setup, include=FALSE}</span></span>
+<span id="cb20-35"><a href="#cb20-35" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span>opts_chunk<span class="sc">$</span><span class="fu">set</span>(</span>
+<span id="cb20-36"><a href="#cb20-36" aria-hidden="true" tabindex="-1"></a>  <span class="at">fig.width =</span> <span class="dv">12</span>,</span>
+<span id="cb20-37"><a href="#cb20-37" aria-hidden="true" tabindex="-1"></a>  <span class="at">fig.height =</span> <span class="dv">8</span>,</span>
+<span id="cb20-38"><a href="#cb20-38" aria-hidden="true" tabindex="-1"></a>  <span class="at">fig.align =</span> <span class="st">"center"</span>,</span>
+<span id="cb20-39"><a href="#cb20-39" aria-hidden="true" tabindex="-1"></a>  <span class="at">dpi =</span> <span class="dv">600</span>,</span>
+<span id="cb20-40"><a href="#cb20-40" aria-hidden="true" tabindex="-1"></a>  <span class="at">echo =</span> <span class="cn">TRUE</span>,         <span class="co"># Display code chunks</span></span>
+<span id="cb20-41"><a href="#cb20-41" aria-hidden="true" tabindex="-1"></a>  <span class="at">eval =</span> <span class="cn">TRUE</span>,        <span class="co"># Evaluate code chunks</span></span>
+<span id="cb20-42"><a href="#cb20-42" aria-hidden="true" tabindex="-1"></a>  <span class="at">warning =</span> <span class="cn">FALSE</span>,     <span class="co"># Hide warnings</span></span>
+<span id="cb20-43"><a href="#cb20-43" aria-hidden="true" tabindex="-1"></a>  <span class="at">message =</span> <span class="cn">FALSE</span>,     <span class="co"># Hide messages</span></span>
+<span id="cb20-44"><a href="#cb20-44" aria-hidden="true" tabindex="-1"></a>  <span class="at">comment =</span> <span class="st">""</span>         <span class="co"># Prevents appending '##' to beginning of lines in code output</span></span>
+<span id="cb20-45"><a href="#cb20-45" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb20-46"><a href="#cb20-46" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-47"><a href="#cb20-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-48"><a href="#cb20-48" aria-hidden="true" tabindex="-1"></a><span class="fu">## Install packages</span></span>
+<span id="cb20-49"><a href="#cb20-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-50"><a href="#cb20-50" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval=FALSE}</span></span>
+<span id="cb20-51"><a href="#cb20-51" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">"tidyverse"</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>()) <span class="sc">==</span> <span class="st">'FALSE'</span>) <span class="fu">install.packages</span>(<span class="st">'tidyverse'</span>)</span>
+<span id="cb20-52"><a href="#cb20-52" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">"broom"</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>()) <span class="sc">==</span> <span class="st">'FALSE'</span>) <span class="fu">install.packages</span>(<span class="st">'broom'</span>)</span>
+<span id="cb20-53"><a href="#cb20-53" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-54"><a href="#cb20-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-55"><a href="#cb20-55" aria-hidden="true" tabindex="-1"></a><span class="fu">## Load libraries</span></span>
+<span id="cb20-56"><a href="#cb20-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-59"><a href="#cb20-59" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-60"><a href="#cb20-60" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb20-61"><a href="#cb20-61" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(broom) <span class="co"># for tidy()</span></span>
+<span id="cb20-62"><a href="#cb20-62" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-63"><a href="#cb20-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-64"><a href="#cb20-64" aria-hidden="true" tabindex="-1"></a><span class="fu">## Load HOBO calibration logs</span></span>
+<span id="cb20-67"><a href="#cb20-67" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-68"><a href="#cb20-68" aria-hidden="true" tabindex="-1"></a>cal_amb1_blue <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"calibrations/Amb1_blue 2024-07-10 13_10_13 HST (Data HST).csv"</span>)</span>
+<span id="cb20-69"><a href="#cb20-69" aria-hidden="true" tabindex="-1"></a>cal_amb1_bluegreen <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"calibrations/Amb1_bluegreen 2024-07-10 13_10_51 HST (Data HST).csv"</span>)</span>
+<span id="cb20-70"><a href="#cb20-70" aria-hidden="true" tabindex="-1"></a>cal_amb2_orangepink <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"calibrations/Amb2_orangepink 2024-07-10 11_47_18 HST (Data HST).csv"</span>)</span>
+<span id="cb20-71"><a href="#cb20-71" aria-hidden="true" tabindex="-1"></a>cal_amb2_pink <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"calibrations/Amb2_pink 2024-07-10 11_48_03 HST (Data HST).csv"</span>)</span>
+<span id="cb20-72"><a href="#cb20-72" aria-hidden="true" tabindex="-1"></a>cal_hot1_black <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"calibrations/Hot1_black 2024-07-10 13_09_24 HST (Data HST).csv"</span>)</span>
+<span id="cb20-73"><a href="#cb20-73" aria-hidden="true" tabindex="-1"></a>cal_hot1_green <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"calibrations/Hot1_green 2024-07-10 13_08_26 HST (Data HST).csv"</span>)</span>
+<span id="cb20-74"><a href="#cb20-74" aria-hidden="true" tabindex="-1"></a>cal_hot2_orange <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"calibrations/Hot2_orange 2024-07-10 11_44_18 HST (Data HST).csv"</span>)</span>
+<span id="cb20-75"><a href="#cb20-75" aria-hidden="true" tabindex="-1"></a>cal_hot2_yellow <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"calibrations/Hot2_yellow 2024-07-10 11_46_08 HST (Data HST).csv"</span>)</span>
+<span id="cb20-76"><a href="#cb20-76" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-77"><a href="#cb20-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-78"><a href="#cb20-78" aria-hidden="true" tabindex="-1"></a><span class="fu">## Load HOBO experiment logs</span></span>
+<span id="cb20-81"><a href="#cb20-81" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-82"><a href="#cb20-82" aria-hidden="true" tabindex="-1"></a>exp_amb1_blue <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"experiment/Amb1_blue 2024-07-18 10_39_10 HST (Data HST).csv"</span>)</span>
+<span id="cb20-83"><a href="#cb20-83" aria-hidden="true" tabindex="-1"></a>exp_amb1_bluegreen <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"experiment/Amb1_bluegreen 2024-07-18 10_40_19 HST (Data HST).csv"</span>)</span>
+<span id="cb20-84"><a href="#cb20-84" aria-hidden="true" tabindex="-1"></a>exp_amb2_orangepink <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"experiment/Amb2_orangepink 2024-07-18 10_36_23 HST (Data HST).csv"</span>)</span>
+<span id="cb20-85"><a href="#cb20-85" aria-hidden="true" tabindex="-1"></a>exp_amb2_pink <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"experiment/Amb2_pink 2024-07-18 10_35_38 HST (Data HST).csv"</span>)</span>
+<span id="cb20-86"><a href="#cb20-86" aria-hidden="true" tabindex="-1"></a>exp_hot1_black <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"experiment/Hot1_black 2024-07-18 10_38_17 HST (Data HST).csv"</span>)</span>
+<span id="cb20-87"><a href="#cb20-87" aria-hidden="true" tabindex="-1"></a>exp_hot1_green <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"experiment/Hot1_green 2024-07-18 10_37_19 HST (Data HST).csv"</span>)</span>
+<span id="cb20-88"><a href="#cb20-88" aria-hidden="true" tabindex="-1"></a>exp_hot2_orange <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"experiment/Hot2_orange 2024-07-18 10_33_21 HST (Data HST).csv"</span>)</span>
+<span id="cb20-89"><a href="#cb20-89" aria-hidden="true" tabindex="-1"></a>exp_hot2_yellow <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"experiment/Hot2_yellow 2024-07-18 10_34_56 HST (Data HST).csv"</span>)</span>
+<span id="cb20-90"><a href="#cb20-90" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-91"><a href="#cb20-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-92"><a href="#cb20-92" aria-hidden="true" tabindex="-1"></a><span class="fu"># Calibration references</span></span>
+<span id="cb20-95"><a href="#cb20-95" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-96"><a href="#cb20-96" aria-hidden="true" tabindex="-1"></a><span class="co"># Example inputs for temperature calibration</span></span>
+<span id="cb20-97"><a href="#cb20-97" aria-hidden="true" tabindex="-1"></a>ref_temp <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">27.03</span>, <span class="fl">27.26</span>)  <span class="co"># NIST temperatures</span></span>
+<span id="cb20-98"><a href="#cb20-98" aria-hidden="true" tabindex="-1"></a>ref_time_temp <span class="ot">&lt;-</span> <span class="fu">as.POSIXct</span>(<span class="fu">c</span>(<span class="st">"07/10/2024 10:40:00"</span>, <span class="st">"07/10/2024 11:00:00"</span>),</span>
+<span id="cb20-99"><a href="#cb20-99" aria-hidden="true" tabindex="-1"></a>                            <span class="at">format=</span><span class="st">"%m/%d/%Y %H:%M:%S"</span>)</span>
+<span id="cb20-100"><a href="#cb20-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-101"><a href="#cb20-101" aria-hidden="true" tabindex="-1"></a><span class="co"># For PAR calibration</span></span>
+<span id="cb20-102"><a href="#cb20-102" aria-hidden="true" tabindex="-1"></a>ref_par <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1600</span>, <span class="dv">760</span>)</span>
+<span id="cb20-103"><a href="#cb20-103" aria-hidden="true" tabindex="-1"></a>ref_time_par <span class="ot">&lt;-</span> <span class="fu">as.POSIXct</span>(<span class="fu">c</span>(<span class="st">"07/10/2024 11:10:00"</span>, <span class="st">"07/10/2024 11:40:00"</span>),</span>
+<span id="cb20-104"><a href="#cb20-104" aria-hidden="true" tabindex="-1"></a>                           <span class="at">format=</span><span class="st">"%m/%d/%Y %H:%M:%S"</span>)</span>
+<span id="cb20-105"><a href="#cb20-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-106"><a href="#cb20-106" aria-hidden="true" tabindex="-1"></a>cal_table <span class="ot">&lt;-</span> tibble<span class="sc">::</span><span class="fu">tibble</span>(</span>
+<span id="cb20-107"><a href="#cb20-107" aria-hidden="true" tabindex="-1"></a>  <span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(<span class="fu">c</span>(<span class="st">"2024-07-10 10:40:00"</span>, <span class="st">"2024-07-10 11:00:00"</span>,</span>
+<span id="cb20-108"><a href="#cb20-108" aria-hidden="true" tabindex="-1"></a>                          <span class="st">"2024-07-10 11:10:00"</span>, <span class="st">"2024-07-10 11:40:00"</span>)),</span>
+<span id="cb20-109"><a href="#cb20-109" aria-hidden="true" tabindex="-1"></a>  <span class="at">ref_temp =</span> <span class="fu">c</span>(<span class="fl">27.03</span>, <span class="fl">27.26</span>, <span class="cn">NA</span>, <span class="cn">NA</span>),  <span class="co"># NIST</span></span>
+<span id="cb20-110"><a href="#cb20-110" aria-hidden="true" tabindex="-1"></a>  <span class="at">ref_par  =</span> <span class="fu">c</span>(<span class="cn">NA</span>, <span class="cn">NA</span>, <span class="dv">1600</span>, <span class="dv">760</span>)      <span class="co"># Apogee PAR</span></span>
+<span id="cb20-111"><a href="#cb20-111" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb20-112"><a href="#cb20-112" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-113"><a href="#cb20-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-114"><a href="#cb20-114" aria-hidden="true" tabindex="-1"></a><span class="fu"># Format calibration logs</span></span>
+<span id="cb20-115"><a href="#cb20-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-116"><a href="#cb20-116" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>amb1_blue</span>
+<span id="cb20-117"><a href="#cb20-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-120"><a href="#cb20-120" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-121"><a href="#cb20-121" aria-hidden="true" tabindex="-1"></a>cal_amb1_blue <span class="ot">&lt;-</span> cal_amb1_blue <span class="sc">%&gt;%</span> </span>
+<span id="cb20-122"><a href="#cb20-122" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
+<span id="cb20-123"><a href="#cb20-123" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
+<span id="cb20-124"><a href="#cb20-124" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
+<span id="cb20-125"><a href="#cb20-125" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-126"><a href="#cb20-126" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"amb1_blue"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-127"><a href="#cb20-127" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-128"><a href="#cb20-128" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(datetime <span class="sc">%in%</span> <span class="fu">c</span>(ref_time_temp, ref_time_par))</span>
+<span id="cb20-129"><a href="#cb20-129" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-130"><a href="#cb20-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-131"><a href="#cb20-131" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>amb1_bluegreen</span>
+<span id="cb20-132"><a href="#cb20-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-135"><a href="#cb20-135" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-136"><a href="#cb20-136" aria-hidden="true" tabindex="-1"></a>cal_amb1_bluegreen <span class="ot">&lt;-</span> cal_amb1_bluegreen <span class="sc">%&gt;%</span> </span>
+<span id="cb20-137"><a href="#cb20-137" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
+<span id="cb20-138"><a href="#cb20-138" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
+<span id="cb20-139"><a href="#cb20-139" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
+<span id="cb20-140"><a href="#cb20-140" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-141"><a href="#cb20-141" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"amb1_bluegreen"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-142"><a href="#cb20-142" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-143"><a href="#cb20-143" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(datetime <span class="sc">%in%</span> <span class="fu">c</span>(ref_time_temp, ref_time_par))</span>
+<span id="cb20-144"><a href="#cb20-144" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-145"><a href="#cb20-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-146"><a href="#cb20-146" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>amb2_orangepink</span>
+<span id="cb20-147"><a href="#cb20-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-150"><a href="#cb20-150" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-151"><a href="#cb20-151" aria-hidden="true" tabindex="-1"></a>cal_amb2_orangepink <span class="ot">&lt;-</span> cal_amb2_orangepink <span class="sc">%&gt;%</span> </span>
+<span id="cb20-152"><a href="#cb20-152" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
+<span id="cb20-153"><a href="#cb20-153" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
+<span id="cb20-154"><a href="#cb20-154" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
+<span id="cb20-155"><a href="#cb20-155" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-156"><a href="#cb20-156" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"amb2_orangepink"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-157"><a href="#cb20-157" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-158"><a href="#cb20-158" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(datetime <span class="sc">%in%</span> <span class="fu">c</span>(ref_time_temp, ref_time_par))</span>
+<span id="cb20-159"><a href="#cb20-159" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-160"><a href="#cb20-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-161"><a href="#cb20-161" aria-hidden="true" tabindex="-1"></a><span class="ss">4.  </span>amb2_pink</span>
+<span id="cb20-162"><a href="#cb20-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-165"><a href="#cb20-165" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-166"><a href="#cb20-166" aria-hidden="true" tabindex="-1"></a>cal_amb2_pink <span class="ot">&lt;-</span> cal_amb2_pink <span class="sc">%&gt;%</span> </span>
+<span id="cb20-167"><a href="#cb20-167" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
+<span id="cb20-168"><a href="#cb20-168" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
+<span id="cb20-169"><a href="#cb20-169" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
+<span id="cb20-170"><a href="#cb20-170" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-171"><a href="#cb20-171" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"amb2_pink"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-172"><a href="#cb20-172" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-173"><a href="#cb20-173" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(datetime <span class="sc">%in%</span> <span class="fu">c</span>(ref_time_temp, ref_time_par))</span>
+<span id="cb20-174"><a href="#cb20-174" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-175"><a href="#cb20-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-176"><a href="#cb20-176" aria-hidden="true" tabindex="-1"></a><span class="ss">5.  </span>hot1_black</span>
+<span id="cb20-177"><a href="#cb20-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-180"><a href="#cb20-180" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-181"><a href="#cb20-181" aria-hidden="true" tabindex="-1"></a>cal_hot1_black <span class="ot">&lt;-</span> cal_hot1_black <span class="sc">%&gt;%</span> </span>
+<span id="cb20-182"><a href="#cb20-182" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
+<span id="cb20-183"><a href="#cb20-183" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
+<span id="cb20-184"><a href="#cb20-184" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
+<span id="cb20-185"><a href="#cb20-185" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-186"><a href="#cb20-186" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"hot1_black"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-187"><a href="#cb20-187" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-188"><a href="#cb20-188" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(datetime <span class="sc">%in%</span> <span class="fu">c</span>(ref_time_temp, ref_time_par))</span>
+<span id="cb20-189"><a href="#cb20-189" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-190"><a href="#cb20-190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-191"><a href="#cb20-191" aria-hidden="true" tabindex="-1"></a><span class="ss">6.  </span>hot1_green</span>
+<span id="cb20-192"><a href="#cb20-192" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-195"><a href="#cb20-195" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-196"><a href="#cb20-196" aria-hidden="true" tabindex="-1"></a>cal_hot1_green <span class="ot">&lt;-</span> cal_hot1_green <span class="sc">%&gt;%</span> </span>
+<span id="cb20-197"><a href="#cb20-197" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
+<span id="cb20-198"><a href="#cb20-198" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
+<span id="cb20-199"><a href="#cb20-199" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
+<span id="cb20-200"><a href="#cb20-200" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-201"><a href="#cb20-201" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"hot1_green"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-202"><a href="#cb20-202" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-203"><a href="#cb20-203" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(datetime <span class="sc">%in%</span> <span class="fu">c</span>(ref_time_temp, ref_time_par))</span>
+<span id="cb20-204"><a href="#cb20-204" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-205"><a href="#cb20-205" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-206"><a href="#cb20-206" aria-hidden="true" tabindex="-1"></a><span class="ss">7.  </span>hot2_orange</span>
+<span id="cb20-207"><a href="#cb20-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-210"><a href="#cb20-210" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-211"><a href="#cb20-211" aria-hidden="true" tabindex="-1"></a>cal_hot2_orange <span class="ot">&lt;-</span> cal_hot2_orange <span class="sc">%&gt;%</span> </span>
+<span id="cb20-212"><a href="#cb20-212" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
+<span id="cb20-213"><a href="#cb20-213" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
+<span id="cb20-214"><a href="#cb20-214" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
+<span id="cb20-215"><a href="#cb20-215" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-216"><a href="#cb20-216" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"hot2_orange"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-217"><a href="#cb20-217" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent)<span class="sc">%&gt;%</span> </span>
+<span id="cb20-218"><a href="#cb20-218" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(datetime <span class="sc">%in%</span> <span class="fu">c</span>(ref_time_temp, ref_time_par))</span>
+<span id="cb20-219"><a href="#cb20-219" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-220"><a href="#cb20-220" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-221"><a href="#cb20-221" aria-hidden="true" tabindex="-1"></a><span class="ss">8.  </span>hot2_yellow</span>
+<span id="cb20-222"><a href="#cb20-222" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-225"><a href="#cb20-225" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-226"><a href="#cb20-226" aria-hidden="true" tabindex="-1"></a>cal_hot2_yellow <span class="ot">&lt;-</span> cal_hot2_yellow <span class="sc">%&gt;%</span> </span>
+<span id="cb20-227"><a href="#cb20-227" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
+<span id="cb20-228"><a href="#cb20-228" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
+<span id="cb20-229"><a href="#cb20-229" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
+<span id="cb20-230"><a href="#cb20-230" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-231"><a href="#cb20-231" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"hot2_yellow"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-232"><a href="#cb20-232" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-233"><a href="#cb20-233" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(datetime <span class="sc">%in%</span> <span class="fu">c</span>(ref_time_temp, ref_time_par))</span>
+<span id="cb20-234"><a href="#cb20-234" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-235"><a href="#cb20-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-236"><a href="#cb20-236" aria-hidden="true" tabindex="-1"></a>Bind logs</span>
+<span id="cb20-237"><a href="#cb20-237" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-240"><a href="#cb20-240" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-241"><a href="#cb20-241" aria-hidden="true" tabindex="-1"></a>cal_logs <span class="ot">&lt;-</span> <span class="fu">rbind</span>(cal_amb1_blue,</span>
+<span id="cb20-242"><a href="#cb20-242" aria-hidden="true" tabindex="-1"></a>                  cal_amb1_bluegreen,</span>
+<span id="cb20-243"><a href="#cb20-243" aria-hidden="true" tabindex="-1"></a>                  cal_amb2_orangepink,</span>
+<span id="cb20-244"><a href="#cb20-244" aria-hidden="true" tabindex="-1"></a>                  cal_amb2_pink,</span>
+<span id="cb20-245"><a href="#cb20-245" aria-hidden="true" tabindex="-1"></a>                  cal_hot1_black,</span>
+<span id="cb20-246"><a href="#cb20-246" aria-hidden="true" tabindex="-1"></a>                  cal_hot1_green,</span>
+<span id="cb20-247"><a href="#cb20-247" aria-hidden="true" tabindex="-1"></a>                  cal_hot2_orange,</span>
+<span id="cb20-248"><a href="#cb20-248" aria-hidden="true" tabindex="-1"></a>                  cal_hot2_yellow)</span>
+<span id="cb20-249"><a href="#cb20-249" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb20-250"><a href="#cb20-250" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-253"><a href="#cb20-253" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-254"><a href="#cb20-254" aria-hidden="true" tabindex="-1"></a><span class="co"># Define your calibration temperature reference times</span></span>
-<span id="cb20-255"><a href="#cb20-255" aria-hidden="true" tabindex="-1"></a>cal_temp_times <span class="ot">&lt;-</span> <span class="fu">as.POSIXct</span>(<span class="fu">c</span>(<span class="st">"2024-07-10 10:40:00"</span>, <span class="st">"2024-07-10 11:00:00"</span>))</span>
+<span id="cb20-251"><a href="#cb20-251" aria-hidden="true" tabindex="-1"></a><span class="fu"># Create calibrations</span></span>
+<span id="cb20-252"><a href="#cb20-252" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-253"><a href="#cb20-253" aria-hidden="true" tabindex="-1"></a><span class="fu">## Temp</span></span>
+<span id="cb20-254"><a href="#cb20-254" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-255"><a href="#cb20-255" aria-hidden="true" tabindex="-1"></a>For each sensor, calculate slope and intercept using the two point calibration</span>
 <span id="cb20-256"><a href="#cb20-256" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-257"><a href="#cb20-257" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample dataframe 'cal_logs' containing datetime, temp, lux, pendent</span></span>
-<span id="cb20-258"><a href="#cb20-258" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-259"><a href="#cb20-259" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: Filter calibration temp points only</span></span>
-<span id="cb20-260"><a href="#cb20-260" aria-hidden="true" tabindex="-1"></a>temp_cal_points <span class="ot">&lt;-</span> cal_logs <span class="sc">%&gt;%</span></span>
-<span id="cb20-261"><a href="#cb20-261" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(datetime <span class="sc">%in%</span> cal_temp_times) <span class="sc">%&gt;%</span></span>
-<span id="cb20-262"><a href="#cb20-262" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(pendent, datetime, temp) <span class="sc">%&gt;%</span></span>
-<span id="cb20-263"><a href="#cb20-263" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">ref_temp =</span> <span class="fu">ifelse</span>(datetime <span class="sc">==</span> cal_temp_times[<span class="dv">1</span>], <span class="fl">27.03</span>, <span class="fl">27.26</span>))</span>
+<span id="cb20-259"><a href="#cb20-259" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-260"><a href="#cb20-260" aria-hidden="true" tabindex="-1"></a><span class="co"># Define your calibration temperature reference times</span></span>
+<span id="cb20-261"><a href="#cb20-261" aria-hidden="true" tabindex="-1"></a>cal_temp_times <span class="ot">&lt;-</span> <span class="fu">as.POSIXct</span>(<span class="fu">c</span>(<span class="st">"2024-07-10 10:40:00"</span>, <span class="st">"2024-07-10 11:00:00"</span>))</span>
+<span id="cb20-262"><a href="#cb20-262" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-263"><a href="#cb20-263" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample dataframe 'cal_logs' containing datetime, temp, lux, pendent</span></span>
 <span id="cb20-264"><a href="#cb20-264" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-265"><a href="#cb20-265" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 2: Group by sensor and fit linear model temp ~ ref_temp</span></span>
-<span id="cb20-266"><a href="#cb20-266" aria-hidden="true" tabindex="-1"></a>temp_fit_results <span class="ot">&lt;-</span> temp_cal_points <span class="sc">%&gt;%</span></span>
-<span id="cb20-267"><a href="#cb20-267" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(pendent) <span class="sc">%&gt;%</span></span>
-<span id="cb20-268"><a href="#cb20-268" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb20-269"><a href="#cb20-269" aria-hidden="true" tabindex="-1"></a>    <span class="at">model =</span> <span class="fu">list</span>(<span class="fu">lm</span>(ref_temp <span class="sc">~</span> temp, <span class="at">data =</span> <span class="fu">cur_data</span>()))</span>
-<span id="cb20-270"><a href="#cb20-270" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb20-271"><a href="#cb20-271" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb20-272"><a href="#cb20-272" aria-hidden="true" tabindex="-1"></a>    <span class="at">coef =</span> <span class="fu">map</span>(model, tidy)</span>
-<span id="cb20-273"><a href="#cb20-273" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb20-274"><a href="#cb20-274" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest</span>(coef) <span class="sc">%&gt;%</span></span>
-<span id="cb20-275"><a href="#cb20-275" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(pendent, term, estimate) <span class="sc">%&gt;%</span></span>
-<span id="cb20-276"><a href="#cb20-276" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> term, <span class="at">values_from =</span> estimate) <span class="sc">%&gt;%</span></span>
-<span id="cb20-277"><a href="#cb20-277" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">temp_intercept =</span> <span class="st">`</span><span class="at">(Intercept)</span><span class="st">`</span>, <span class="at">temp_slope =</span> temp)</span>
-<span id="cb20-278"><a href="#cb20-278" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-279"><a href="#cb20-279" aria-hidden="true" tabindex="-1"></a><span class="co"># fit_results now contains one row per sensor with slope and intercept ready to use</span></span>
-<span id="cb20-280"><a href="#cb20-280" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(temp_fit_results)</span>
-<span id="cb20-281"><a href="#cb20-281" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-282"><a href="#cb20-282" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-283"><a href="#cb20-283" aria-hidden="true" tabindex="-1"></a>Average temp calibration</span>
+<span id="cb20-265"><a href="#cb20-265" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: Filter calibration temp points only</span></span>
+<span id="cb20-266"><a href="#cb20-266" aria-hidden="true" tabindex="-1"></a>temp_cal_points <span class="ot">&lt;-</span> cal_logs <span class="sc">%&gt;%</span></span>
+<span id="cb20-267"><a href="#cb20-267" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(datetime <span class="sc">%in%</span> cal_temp_times) <span class="sc">%&gt;%</span></span>
+<span id="cb20-268"><a href="#cb20-268" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(pendent, datetime, temp) <span class="sc">%&gt;%</span></span>
+<span id="cb20-269"><a href="#cb20-269" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">ref_temp =</span> <span class="fu">ifelse</span>(datetime <span class="sc">==</span> cal_temp_times[<span class="dv">1</span>], <span class="fl">27.03</span>, <span class="fl">27.26</span>))</span>
+<span id="cb20-270"><a href="#cb20-270" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-271"><a href="#cb20-271" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 2: Group by sensor and fit linear model temp ~ ref_temp</span></span>
+<span id="cb20-272"><a href="#cb20-272" aria-hidden="true" tabindex="-1"></a>temp_fit_results <span class="ot">&lt;-</span> temp_cal_points <span class="sc">%&gt;%</span></span>
+<span id="cb20-273"><a href="#cb20-273" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(pendent) <span class="sc">%&gt;%</span></span>
+<span id="cb20-274"><a href="#cb20-274" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb20-275"><a href="#cb20-275" aria-hidden="true" tabindex="-1"></a>    <span class="at">model =</span> <span class="fu">list</span>(<span class="fu">lm</span>(ref_temp <span class="sc">~</span> temp, <span class="at">data =</span> <span class="fu">cur_data</span>()))</span>
+<span id="cb20-276"><a href="#cb20-276" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb20-277"><a href="#cb20-277" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb20-278"><a href="#cb20-278" aria-hidden="true" tabindex="-1"></a>    <span class="at">coef =</span> <span class="fu">map</span>(model, tidy)</span>
+<span id="cb20-279"><a href="#cb20-279" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb20-280"><a href="#cb20-280" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest</span>(coef) <span class="sc">%&gt;%</span></span>
+<span id="cb20-281"><a href="#cb20-281" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(pendent, term, estimate) <span class="sc">%&gt;%</span></span>
+<span id="cb20-282"><a href="#cb20-282" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> term, <span class="at">values_from =</span> estimate) <span class="sc">%&gt;%</span></span>
+<span id="cb20-283"><a href="#cb20-283" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">temp_intercept =</span> <span class="st">`</span><span class="at">(Intercept)</span><span class="st">`</span>, <span class="at">temp_slope =</span> temp)</span>
 <span id="cb20-284"><a href="#cb20-284" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-287"><a href="#cb20-287" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-288"><a href="#cb20-288" aria-hidden="true" tabindex="-1"></a>avg_temp <span class="ot">&lt;-</span> temp_fit_results <span class="sc">%&gt;%</span></span>
-<span id="cb20-289"><a href="#cb20-289" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
-<span id="cb20-290"><a href="#cb20-290" aria-hidden="true" tabindex="-1"></a>    <span class="at">avg_temp_intercept =</span> <span class="fu">mean</span>(temp_intercept),</span>
-<span id="cb20-291"><a href="#cb20-291" aria-hidden="true" tabindex="-1"></a>    <span class="at">avg_temp_slope =</span> <span class="fu">mean</span>(temp_slope))</span>
-<span id="cb20-292"><a href="#cb20-292" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-293"><a href="#cb20-293" aria-hidden="true" tabindex="-1"></a>avg_temp</span>
-<span id="cb20-294"><a href="#cb20-294" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-295"><a href="#cb20-295" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-296"><a href="#cb20-296" aria-hidden="true" tabindex="-1"></a><span class="fu">## PAR</span></span>
-<span id="cb20-297"><a href="#cb20-297" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-300"><a href="#cb20-300" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-301"><a href="#cb20-301" aria-hidden="true" tabindex="-1"></a><span class="co"># Define your calibration PAR reference times</span></span>
-<span id="cb20-302"><a href="#cb20-302" aria-hidden="true" tabindex="-1"></a>cal_par_times <span class="ot">&lt;-</span> <span class="fu">as.POSIXct</span>(<span class="fu">c</span>(<span class="st">"2024-07-10 11:10:00"</span>, <span class="st">"2024-07-10 11:40:00"</span>))</span>
+<span id="cb20-285"><a href="#cb20-285" aria-hidden="true" tabindex="-1"></a><span class="co"># fit_results now contains one row per sensor with slope and intercept ready to use</span></span>
+<span id="cb20-286"><a href="#cb20-286" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(temp_fit_results)</span>
+<span id="cb20-287"><a href="#cb20-287" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-288"><a href="#cb20-288" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-289"><a href="#cb20-289" aria-hidden="true" tabindex="-1"></a>Average temp calibration</span>
+<span id="cb20-290"><a href="#cb20-290" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-293"><a href="#cb20-293" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-294"><a href="#cb20-294" aria-hidden="true" tabindex="-1"></a>avg_temp <span class="ot">&lt;-</span> temp_fit_results <span class="sc">%&gt;%</span></span>
+<span id="cb20-295"><a href="#cb20-295" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb20-296"><a href="#cb20-296" aria-hidden="true" tabindex="-1"></a>    <span class="at">avg_temp_intercept =</span> <span class="fu">mean</span>(temp_intercept),</span>
+<span id="cb20-297"><a href="#cb20-297" aria-hidden="true" tabindex="-1"></a>    <span class="at">avg_temp_slope =</span> <span class="fu">mean</span>(temp_slope))</span>
+<span id="cb20-298"><a href="#cb20-298" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-299"><a href="#cb20-299" aria-hidden="true" tabindex="-1"></a>avg_temp</span>
+<span id="cb20-300"><a href="#cb20-300" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-301"><a href="#cb20-301" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(avg_temp, <span class="st">"output/avg_temp.csv"</span>, <span class="at">row.names=</span><span class="cn">FALSE</span>)</span>
+<span id="cb20-302"><a href="#cb20-302" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb20-303"><a href="#cb20-303" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-304"><a href="#cb20-304" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample dataframe 'cal_logs' containing datetime, temp, lux, pendent</span></span>
+<span id="cb20-304"><a href="#cb20-304" aria-hidden="true" tabindex="-1"></a><span class="fu">## PAR</span></span>
 <span id="cb20-305"><a href="#cb20-305" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-306"><a href="#cb20-306" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: Filter calibration par points only</span></span>
-<span id="cb20-307"><a href="#cb20-307" aria-hidden="true" tabindex="-1"></a>par_cal_points <span class="ot">&lt;-</span> cal_logs <span class="sc">%&gt;%</span></span>
-<span id="cb20-308"><a href="#cb20-308" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(datetime <span class="sc">%in%</span> cal_par_times) <span class="sc">%&gt;%</span></span>
-<span id="cb20-309"><a href="#cb20-309" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(pendent, datetime, lux) <span class="sc">%&gt;%</span></span>
-<span id="cb20-310"><a href="#cb20-310" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">ref_par =</span> <span class="fu">ifelse</span>(datetime <span class="sc">==</span> cal_par_times[<span class="dv">1</span>], <span class="dv">1600</span>, <span class="dv">760</span>))</span>
+<span id="cb20-308"><a href="#cb20-308" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-309"><a href="#cb20-309" aria-hidden="true" tabindex="-1"></a><span class="co"># Define your calibration PAR reference times</span></span>
+<span id="cb20-310"><a href="#cb20-310" aria-hidden="true" tabindex="-1"></a>cal_par_times <span class="ot">&lt;-</span> <span class="fu">as.POSIXct</span>(<span class="fu">c</span>(<span class="st">"2024-07-10 11:10:00"</span>, <span class="st">"2024-07-10 11:40:00"</span>))</span>
 <span id="cb20-311"><a href="#cb20-311" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-312"><a href="#cb20-312" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 2: Group by sensor and fit linear model lux ~ ref_par</span></span>
-<span id="cb20-313"><a href="#cb20-313" aria-hidden="true" tabindex="-1"></a>par_fit_results <span class="ot">&lt;-</span> par_cal_points <span class="sc">%&gt;%</span></span>
-<span id="cb20-314"><a href="#cb20-314" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(pendent) <span class="sc">%&gt;%</span></span>
-<span id="cb20-315"><a href="#cb20-315" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb20-316"><a href="#cb20-316" aria-hidden="true" tabindex="-1"></a>    <span class="at">model =</span> <span class="fu">list</span>(<span class="fu">lm</span>(ref_par <span class="sc">~</span> lux, <span class="at">data =</span> <span class="fu">cur_data</span>()))</span>
-<span id="cb20-317"><a href="#cb20-317" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb20-318"><a href="#cb20-318" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb20-319"><a href="#cb20-319" aria-hidden="true" tabindex="-1"></a>    <span class="at">coef =</span> <span class="fu">map</span>(model, tidy)</span>
-<span id="cb20-320"><a href="#cb20-320" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb20-321"><a href="#cb20-321" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest</span>(coef) <span class="sc">%&gt;%</span></span>
-<span id="cb20-322"><a href="#cb20-322" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(pendent, term, estimate) <span class="sc">%&gt;%</span></span>
-<span id="cb20-323"><a href="#cb20-323" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> term, <span class="at">values_from =</span> estimate) <span class="sc">%&gt;%</span></span>
-<span id="cb20-324"><a href="#cb20-324" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">lux_intercept =</span> <span class="st">`</span><span class="at">(Intercept)</span><span class="st">`</span>, <span class="at">lux_slope =</span> lux)</span>
-<span id="cb20-325"><a href="#cb20-325" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-326"><a href="#cb20-326" aria-hidden="true" tabindex="-1"></a><span class="co"># fit_results now contains one row per sensor with slope and intercept ready to use</span></span>
-<span id="cb20-327"><a href="#cb20-327" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(par_fit_results)</span>
-<span id="cb20-328"><a href="#cb20-328" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-329"><a href="#cb20-329" aria-hidden="true" tabindex="-1"></a>:::callout-caution</span>
-<span id="cb20-330"><a href="#cb20-330" aria-hidden="true" tabindex="-1"></a>amb2_pink sensor seems way off compared to the rest</span>
-<span id="cb20-331"><a href="#cb20-331" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb20-332"><a href="#cb20-332" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-333"><a href="#cb20-333" aria-hidden="true" tabindex="-1"></a>Average PAR calibration</span>
-<span id="cb20-334"><a href="#cb20-334" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-337"><a href="#cb20-337" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-338"><a href="#cb20-338" aria-hidden="true" tabindex="-1"></a>avg_par <span class="ot">&lt;-</span> par_fit_results <span class="sc">%&gt;%</span></span>
-<span id="cb20-339"><a href="#cb20-339" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
-<span id="cb20-340"><a href="#cb20-340" aria-hidden="true" tabindex="-1"></a>    <span class="at">avg_par_intercept =</span> <span class="fu">mean</span>(lux_intercept),</span>
-<span id="cb20-341"><a href="#cb20-341" aria-hidden="true" tabindex="-1"></a>    <span class="at">avg_par_slope =</span> <span class="fu">mean</span>(lux_slope))</span>
-<span id="cb20-342"><a href="#cb20-342" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-343"><a href="#cb20-343" aria-hidden="true" tabindex="-1"></a>avg_par</span>
-<span id="cb20-344"><a href="#cb20-344" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-345"><a href="#cb20-345" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-346"><a href="#cb20-346" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-347"><a href="#cb20-347" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-348"><a href="#cb20-348" aria-hidden="true" tabindex="-1"></a><span class="fu"># Format experiment logs</span></span>
-<span id="cb20-349"><a href="#cb20-349" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>amb1_blue</span>
-<span id="cb20-350"><a href="#cb20-350" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-353"><a href="#cb20-353" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-354"><a href="#cb20-354" aria-hidden="true" tabindex="-1"></a>exp_amb1_blue <span class="ot">&lt;-</span> exp_amb1_blue <span class="sc">%&gt;%</span> </span>
-<span id="cb20-355"><a href="#cb20-355" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
-<span id="cb20-356"><a href="#cb20-356" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
-<span id="cb20-357"><a href="#cb20-357" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
-<span id="cb20-358"><a href="#cb20-358" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-359"><a href="#cb20-359" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"amb1_blue"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-360"><a href="#cb20-360" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent)</span>
-<span id="cb20-361"><a href="#cb20-361" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-362"><a href="#cb20-362" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-363"><a href="#cb20-363" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>amb1_bluegreen</span>
+<span id="cb20-312"><a href="#cb20-312" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample dataframe 'cal_logs' containing datetime, temp, lux, pendent</span></span>
+<span id="cb20-313"><a href="#cb20-313" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-314"><a href="#cb20-314" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: Filter calibration par points only</span></span>
+<span id="cb20-315"><a href="#cb20-315" aria-hidden="true" tabindex="-1"></a>par_cal_points <span class="ot">&lt;-</span> cal_logs <span class="sc">%&gt;%</span></span>
+<span id="cb20-316"><a href="#cb20-316" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(datetime <span class="sc">%in%</span> cal_par_times) <span class="sc">%&gt;%</span></span>
+<span id="cb20-317"><a href="#cb20-317" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(pendent, datetime, lux) <span class="sc">%&gt;%</span></span>
+<span id="cb20-318"><a href="#cb20-318" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">ref_par =</span> <span class="fu">ifelse</span>(datetime <span class="sc">==</span> cal_par_times[<span class="dv">1</span>], <span class="dv">1600</span>, <span class="dv">760</span>))</span>
+<span id="cb20-319"><a href="#cb20-319" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-320"><a href="#cb20-320" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 2: Group by sensor and fit linear model lux ~ ref_par</span></span>
+<span id="cb20-321"><a href="#cb20-321" aria-hidden="true" tabindex="-1"></a>par_fit_results <span class="ot">&lt;-</span> par_cal_points <span class="sc">%&gt;%</span></span>
+<span id="cb20-322"><a href="#cb20-322" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(pendent) <span class="sc">%&gt;%</span></span>
+<span id="cb20-323"><a href="#cb20-323" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb20-324"><a href="#cb20-324" aria-hidden="true" tabindex="-1"></a>    <span class="at">model =</span> <span class="fu">list</span>(<span class="fu">lm</span>(ref_par <span class="sc">~</span> lux, <span class="at">data =</span> <span class="fu">cur_data</span>()))</span>
+<span id="cb20-325"><a href="#cb20-325" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb20-326"><a href="#cb20-326" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb20-327"><a href="#cb20-327" aria-hidden="true" tabindex="-1"></a>    <span class="at">coef =</span> <span class="fu">map</span>(model, tidy)</span>
+<span id="cb20-328"><a href="#cb20-328" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb20-329"><a href="#cb20-329" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest</span>(coef) <span class="sc">%&gt;%</span></span>
+<span id="cb20-330"><a href="#cb20-330" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(pendent, term, estimate) <span class="sc">%&gt;%</span></span>
+<span id="cb20-331"><a href="#cb20-331" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> term, <span class="at">values_from =</span> estimate) <span class="sc">%&gt;%</span></span>
+<span id="cb20-332"><a href="#cb20-332" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">lux_intercept =</span> <span class="st">`</span><span class="at">(Intercept)</span><span class="st">`</span>, <span class="at">lux_slope =</span> lux)</span>
+<span id="cb20-333"><a href="#cb20-333" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-334"><a href="#cb20-334" aria-hidden="true" tabindex="-1"></a><span class="co"># fit_results now contains one row per sensor with slope and intercept ready to use</span></span>
+<span id="cb20-335"><a href="#cb20-335" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(par_fit_results)</span>
+<span id="cb20-336"><a href="#cb20-336" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-337"><a href="#cb20-337" aria-hidden="true" tabindex="-1"></a>:::callout-caution</span>
+<span id="cb20-338"><a href="#cb20-338" aria-hidden="true" tabindex="-1"></a>amb2_pink sensor seems way off compared to the rest</span>
+<span id="cb20-339"><a href="#cb20-339" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb20-340"><a href="#cb20-340" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-341"><a href="#cb20-341" aria-hidden="true" tabindex="-1"></a>Remove amb2_pink</span>
+<span id="cb20-344"><a href="#cb20-344" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-345"><a href="#cb20-345" aria-hidden="true" tabindex="-1"></a>par_fit_avg <span class="ot">&lt;-</span> par_fit_results <span class="sc">%&gt;%</span> </span>
+<span id="cb20-346"><a href="#cb20-346" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(pendent <span class="sc">!=</span> <span class="fu">c</span>(<span class="st">"amb2_pink"</span>, <span class="st">"amb2_orangepink"</span>)) <span class="co">#select all rows except amb2 from pendent column</span></span>
+<span id="cb20-347"><a href="#cb20-347" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-348"><a href="#cb20-348" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-349"><a href="#cb20-349" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-350"><a href="#cb20-350" aria-hidden="true" tabindex="-1"></a>Average PAR calibration</span>
+<span id="cb20-351"><a href="#cb20-351" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-354"><a href="#cb20-354" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-355"><a href="#cb20-355" aria-hidden="true" tabindex="-1"></a>avg_par <span class="ot">&lt;-</span> par_fit_avg <span class="sc">%&gt;%</span></span>
+<span id="cb20-356"><a href="#cb20-356" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb20-357"><a href="#cb20-357" aria-hidden="true" tabindex="-1"></a>    <span class="at">avg_par_intercept =</span> <span class="fu">mean</span>(lux_intercept),</span>
+<span id="cb20-358"><a href="#cb20-358" aria-hidden="true" tabindex="-1"></a>    <span class="at">avg_par_slope =</span> <span class="fu">mean</span>(lux_slope))</span>
+<span id="cb20-359"><a href="#cb20-359" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-360"><a href="#cb20-360" aria-hidden="true" tabindex="-1"></a>avg_par</span>
+<span id="cb20-361"><a href="#cb20-361" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-362"><a href="#cb20-362" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(avg_par, <span class="st">"output/avg_par.csv"</span>, <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb20-363"><a href="#cb20-363" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb20-364"><a href="#cb20-364" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-367"><a href="#cb20-367" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-368"><a href="#cb20-368" aria-hidden="true" tabindex="-1"></a>exp_amb1_bluegreen <span class="ot">&lt;-</span> exp_amb1_bluegreen <span class="sc">%&gt;%</span> </span>
-<span id="cb20-369"><a href="#cb20-369" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
-<span id="cb20-370"><a href="#cb20-370" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
-<span id="cb20-371"><a href="#cb20-371" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
-<span id="cb20-372"><a href="#cb20-372" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-373"><a href="#cb20-373" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"amb1_bluegreen"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-374"><a href="#cb20-374" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent) </span>
-<span id="cb20-375"><a href="#cb20-375" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-376"><a href="#cb20-376" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-377"><a href="#cb20-377" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>amb2_orangepink</span>
-<span id="cb20-378"><a href="#cb20-378" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-381"><a href="#cb20-381" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-382"><a href="#cb20-382" aria-hidden="true" tabindex="-1"></a>exp_amb2_orangepink <span class="ot">&lt;-</span> exp_amb2_orangepink <span class="sc">%&gt;%</span> </span>
-<span id="cb20-383"><a href="#cb20-383" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
-<span id="cb20-384"><a href="#cb20-384" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
-<span id="cb20-385"><a href="#cb20-385" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
-<span id="cb20-386"><a href="#cb20-386" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-387"><a href="#cb20-387" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"amb2_orangepink"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-388"><a href="#cb20-388" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent)</span>
-<span id="cb20-389"><a href="#cb20-389" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-390"><a href="#cb20-390" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-391"><a href="#cb20-391" aria-hidden="true" tabindex="-1"></a><span class="ss">4.  </span>amb2_pink</span>
-<span id="cb20-392"><a href="#cb20-392" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-395"><a href="#cb20-395" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-396"><a href="#cb20-396" aria-hidden="true" tabindex="-1"></a>exp_amb2_pink <span class="ot">&lt;-</span> exp_amb2_pink <span class="sc">%&gt;%</span> </span>
-<span id="cb20-397"><a href="#cb20-397" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
-<span id="cb20-398"><a href="#cb20-398" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
-<span id="cb20-399"><a href="#cb20-399" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
-<span id="cb20-400"><a href="#cb20-400" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-401"><a href="#cb20-401" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"amb2_pink"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-402"><a href="#cb20-402" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent)</span>
-<span id="cb20-403"><a href="#cb20-403" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-404"><a href="#cb20-404" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-405"><a href="#cb20-405" aria-hidden="true" tabindex="-1"></a><span class="ss">5.  </span>hot1_black</span>
-<span id="cb20-406"><a href="#cb20-406" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-409"><a href="#cb20-409" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-410"><a href="#cb20-410" aria-hidden="true" tabindex="-1"></a>exp_hot1_black <span class="ot">&lt;-</span> exp_hot1_black <span class="sc">%&gt;%</span> </span>
-<span id="cb20-411"><a href="#cb20-411" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
-<span id="cb20-412"><a href="#cb20-412" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
-<span id="cb20-413"><a href="#cb20-413" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
-<span id="cb20-414"><a href="#cb20-414" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-415"><a href="#cb20-415" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"hot1_black"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-416"><a href="#cb20-416" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent)</span>
-<span id="cb20-417"><a href="#cb20-417" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-418"><a href="#cb20-418" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-419"><a href="#cb20-419" aria-hidden="true" tabindex="-1"></a><span class="ss">6.  </span>hot1_green</span>
-<span id="cb20-420"><a href="#cb20-420" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-423"><a href="#cb20-423" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-424"><a href="#cb20-424" aria-hidden="true" tabindex="-1"></a>exp_hot1_green <span class="ot">&lt;-</span> exp_hot1_green <span class="sc">%&gt;%</span> </span>
-<span id="cb20-425"><a href="#cb20-425" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
-<span id="cb20-426"><a href="#cb20-426" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
-<span id="cb20-427"><a href="#cb20-427" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
-<span id="cb20-428"><a href="#cb20-428" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-429"><a href="#cb20-429" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"hot1_green"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-430"><a href="#cb20-430" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent)</span>
-<span id="cb20-431"><a href="#cb20-431" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-432"><a href="#cb20-432" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-433"><a href="#cb20-433" aria-hidden="true" tabindex="-1"></a><span class="ss">7.  </span>hot2_orange</span>
-<span id="cb20-434"><a href="#cb20-434" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-437"><a href="#cb20-437" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-438"><a href="#cb20-438" aria-hidden="true" tabindex="-1"></a>exp_hot2_orange <span class="ot">&lt;-</span> exp_hot2_orange <span class="sc">%&gt;%</span> </span>
-<span id="cb20-439"><a href="#cb20-439" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
-<span id="cb20-440"><a href="#cb20-440" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
-<span id="cb20-441"><a href="#cb20-441" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
-<span id="cb20-442"><a href="#cb20-442" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-443"><a href="#cb20-443" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"hot2_orange"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-444"><a href="#cb20-444" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent)</span>
-<span id="cb20-445"><a href="#cb20-445" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-446"><a href="#cb20-446" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-447"><a href="#cb20-447" aria-hidden="true" tabindex="-1"></a><span class="ss">8.  </span>hot2_yellow</span>
-<span id="cb20-448"><a href="#cb20-448" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-451"><a href="#cb20-451" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-452"><a href="#cb20-452" aria-hidden="true" tabindex="-1"></a>exp_hot2_yellow <span class="ot">&lt;-</span> exp_hot2_yellow <span class="sc">%&gt;%</span> </span>
-<span id="cb20-453"><a href="#cb20-453" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
-<span id="cb20-454"><a href="#cb20-454" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
-<span id="cb20-455"><a href="#cb20-455" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
-<span id="cb20-456"><a href="#cb20-456" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-457"><a href="#cb20-457" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"hot2_yellow"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-458"><a href="#cb20-458" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent)</span>
-<span id="cb20-459"><a href="#cb20-459" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-460"><a href="#cb20-460" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-461"><a href="#cb20-461" aria-hidden="true" tabindex="-1"></a>Bind experiment logs together</span>
-<span id="cb20-464"><a href="#cb20-464" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-465"><a href="#cb20-465" aria-hidden="true" tabindex="-1"></a>exp_logs <span class="ot">&lt;-</span> <span class="fu">rbind</span>(exp_amb1_blue,</span>
-<span id="cb20-466"><a href="#cb20-466" aria-hidden="true" tabindex="-1"></a>                  exp_amb1_bluegreen,</span>
-<span id="cb20-467"><a href="#cb20-467" aria-hidden="true" tabindex="-1"></a>                  exp_amb2_orangepink,</span>
-<span id="cb20-468"><a href="#cb20-468" aria-hidden="true" tabindex="-1"></a>                  exp_amb2_pink,</span>
-<span id="cb20-469"><a href="#cb20-469" aria-hidden="true" tabindex="-1"></a>                  exp_hot1_black,</span>
-<span id="cb20-470"><a href="#cb20-470" aria-hidden="true" tabindex="-1"></a>                  exp_hot1_green,</span>
-<span id="cb20-471"><a href="#cb20-471" aria-hidden="true" tabindex="-1"></a>                  exp_hot2_orange,</span>
-<span id="cb20-472"><a href="#cb20-472" aria-hidden="true" tabindex="-1"></a>                  exp_hot2_yellow)</span>
-<span id="cb20-473"><a href="#cb20-473" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-474"><a href="#cb20-474" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-475"><a href="#cb20-475" aria-hidden="true" tabindex="-1"></a>Join to calibrations (&amp; remove NAs)</span>
-<span id="cb20-478"><a href="#cb20-478" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-479"><a href="#cb20-479" aria-hidden="true" tabindex="-1"></a>exp_logs <span class="ot">&lt;-</span> exp_logs <span class="sc">%&gt;%</span> </span>
-<span id="cb20-480"><a href="#cb20-480" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(temp_fit_results) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-481"><a href="#cb20-481" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(par_fit_results) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-482"><a href="#cb20-482" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>(temp, lux)</span>
-<span id="cb20-483"><a href="#cb20-483" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-484"><a href="#cb20-484" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-485"><a href="#cb20-485" aria-hidden="true" tabindex="-1"></a><span class="fu"># Apply calibrations</span></span>
-<span id="cb20-486"><a href="#cb20-486" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-487"><a href="#cb20-487" aria-hidden="true" tabindex="-1"></a>To apply the intercept and slope from a linear regression calibration to raw data and generate calibrated values, we can use the formula:</span>
-<span id="cb20-488"><a href="#cb20-488" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-489"><a href="#cb20-489" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb20-490"><a href="#cb20-490" aria-hidden="true" tabindex="-1"></a>\text{Calibrated value} = (\text{slope} \times \text{raw value}) + \text{intercept}</span>
-<span id="cb20-491"><a href="#cb20-491" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb20-494"><a href="#cb20-494" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-495"><a href="#cb20-495" aria-hidden="true" tabindex="-1"></a>exp_logs <span class="ot">&lt;-</span> exp_logs <span class="sc">%&gt;%</span> </span>
-<span id="cb20-496"><a href="#cb20-496" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">raw_temp =</span> temp) <span class="sc">%&gt;%</span> </span>
-<span id="cb20-497"><a href="#cb20-497" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb20-498"><a href="#cb20-498" aria-hidden="true" tabindex="-1"></a>    <span class="at">cal_temp =</span> (temp_slope <span class="sc">*</span> raw_temp) <span class="sc">+</span> temp_intercept,</span>
-<span id="cb20-499"><a href="#cb20-499" aria-hidden="true" tabindex="-1"></a>    <span class="at">par =</span> (lux_slope <span class="sc">*</span> lux) <span class="sc">+</span> lux_intercept)</span>
-<span id="cb20-500"><a href="#cb20-500" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-501"><a href="#cb20-501" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-502"><a href="#cb20-502" aria-hidden="true" tabindex="-1"></a><span class="fu"># Visualize thermal environment</span></span>
-<span id="cb20-505"><a href="#cb20-505" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-506"><a href="#cb20-506" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(exp_logs, <span class="fu">aes</span>(<span class="at">x =</span> datetime, <span class="at">y =</span> cal_temp, <span class="at">color =</span> pendent))<span class="sc">+</span></span>
-<span id="cb20-507"><a href="#cb20-507" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()<span class="sc">+</span></span>
-<span id="cb20-508"><a href="#cb20-508" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>()<span class="sc">+</span></span>
-<span id="cb20-509"><a href="#cb20-509" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Calibrated temperatures across hot and ambient water baths"</span>)<span class="sc">+</span></span>
-<span id="cb20-510"><a href="#cb20-510" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Date-time"</span>, <span class="at">y =</span> <span class="st">"Temperature (°C)"</span>, <span class="at">color =</span> <span class="st">"HOBO Sensor"</span>) </span>
-<span id="cb20-511"><a href="#cb20-511" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-512"><a href="#cb20-512" aria-hidden="true" tabindex="-1"></a><span class="fu"># Visualize PAR environment</span></span>
-<span id="cb20-515"><a href="#cb20-515" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-516"><a href="#cb20-516" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(exp_logs, <span class="fu">aes</span>(<span class="at">x =</span> datetime, <span class="at">y =</span> par, <span class="at">color =</span> pendent))<span class="sc">+</span></span>
-<span id="cb20-517"><a href="#cb20-517" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()<span class="sc">+</span></span>
-<span id="cb20-518"><a href="#cb20-518" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>()<span class="sc">+</span></span>
-<span id="cb20-519"><a href="#cb20-519" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Calibrated PAR across hot and ambient water baths"</span>)<span class="sc">+</span></span>
-<span id="cb20-520"><a href="#cb20-520" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Date-time"</span>, <span class="at">y =</span> <span class="st">"PAR (umol/m2)"</span>, <span class="at">color =</span> <span class="st">"HOBO Sensor"</span>) </span>
-<span id="cb20-521"><a href="#cb20-521" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-522"><a href="#cb20-522" aria-hidden="true" tabindex="-1"></a>::: callout-caution</span>
-<span id="cb20-523"><a href="#cb20-523" aria-hidden="true" tabindex="-1"></a>amb2_pink sensor may have had a bad calibration (it was way off from the others)</span>
-<span id="cb20-524"><a href="#cb20-524" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb20-525"><a href="#cb20-525" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-526"><a href="#cb20-526" aria-hidden="true" tabindex="-1"></a><span class="fu"># Summary</span></span>
-<span id="cb20-527"><a href="#cb20-527" aria-hidden="true" tabindex="-1"></a>In summary, our temp baths hot and ambient separated consistently and our PAR conditions were roughly the same; which was the intent of the experimental setup. amb2_pink PAR calibration may be off, however amb2_orangepink sensor was also in the ambient 2 bath, and shows expected PAR values (the reason we had redundancy in our sensors was in case one went off)</span>
-<span id="cb20-528"><a href="#cb20-528" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-365"><a href="#cb20-365" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-366"><a href="#cb20-366" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-367"><a href="#cb20-367" aria-hidden="true" tabindex="-1"></a><span class="fu"># Format experiment logs</span></span>
+<span id="cb20-368"><a href="#cb20-368" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>amb1_blue</span>
+<span id="cb20-369"><a href="#cb20-369" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-372"><a href="#cb20-372" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-373"><a href="#cb20-373" aria-hidden="true" tabindex="-1"></a>exp_amb1_blue <span class="ot">&lt;-</span> exp_amb1_blue <span class="sc">%&gt;%</span> </span>
+<span id="cb20-374"><a href="#cb20-374" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
+<span id="cb20-375"><a href="#cb20-375" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
+<span id="cb20-376"><a href="#cb20-376" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
+<span id="cb20-377"><a href="#cb20-377" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-378"><a href="#cb20-378" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"amb1_blue"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-379"><a href="#cb20-379" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent)</span>
+<span id="cb20-380"><a href="#cb20-380" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-381"><a href="#cb20-381" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-382"><a href="#cb20-382" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>amb1_bluegreen</span>
+<span id="cb20-383"><a href="#cb20-383" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-386"><a href="#cb20-386" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-387"><a href="#cb20-387" aria-hidden="true" tabindex="-1"></a>exp_amb1_bluegreen <span class="ot">&lt;-</span> exp_amb1_bluegreen <span class="sc">%&gt;%</span> </span>
+<span id="cb20-388"><a href="#cb20-388" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
+<span id="cb20-389"><a href="#cb20-389" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
+<span id="cb20-390"><a href="#cb20-390" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
+<span id="cb20-391"><a href="#cb20-391" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-392"><a href="#cb20-392" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"amb1_bluegreen"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-393"><a href="#cb20-393" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent) </span>
+<span id="cb20-394"><a href="#cb20-394" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-395"><a href="#cb20-395" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-396"><a href="#cb20-396" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>amb2_orangepink</span>
+<span id="cb20-397"><a href="#cb20-397" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-400"><a href="#cb20-400" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-401"><a href="#cb20-401" aria-hidden="true" tabindex="-1"></a>exp_amb2_orangepink <span class="ot">&lt;-</span> exp_amb2_orangepink <span class="sc">%&gt;%</span> </span>
+<span id="cb20-402"><a href="#cb20-402" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
+<span id="cb20-403"><a href="#cb20-403" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
+<span id="cb20-404"><a href="#cb20-404" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
+<span id="cb20-405"><a href="#cb20-405" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-406"><a href="#cb20-406" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"amb2_orangepink"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-407"><a href="#cb20-407" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent)</span>
+<span id="cb20-408"><a href="#cb20-408" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-409"><a href="#cb20-409" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-410"><a href="#cb20-410" aria-hidden="true" tabindex="-1"></a><span class="ss">4.  </span>amb2_pink</span>
+<span id="cb20-411"><a href="#cb20-411" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-414"><a href="#cb20-414" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-415"><a href="#cb20-415" aria-hidden="true" tabindex="-1"></a>exp_amb2_pink <span class="ot">&lt;-</span> exp_amb2_pink <span class="sc">%&gt;%</span> </span>
+<span id="cb20-416"><a href="#cb20-416" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
+<span id="cb20-417"><a href="#cb20-417" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
+<span id="cb20-418"><a href="#cb20-418" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
+<span id="cb20-419"><a href="#cb20-419" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-420"><a href="#cb20-420" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"amb2_pink"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-421"><a href="#cb20-421" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent)</span>
+<span id="cb20-422"><a href="#cb20-422" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-423"><a href="#cb20-423" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-424"><a href="#cb20-424" aria-hidden="true" tabindex="-1"></a><span class="ss">5.  </span>hot1_black</span>
+<span id="cb20-425"><a href="#cb20-425" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-428"><a href="#cb20-428" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-429"><a href="#cb20-429" aria-hidden="true" tabindex="-1"></a>exp_hot1_black <span class="ot">&lt;-</span> exp_hot1_black <span class="sc">%&gt;%</span> </span>
+<span id="cb20-430"><a href="#cb20-430" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
+<span id="cb20-431"><a href="#cb20-431" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
+<span id="cb20-432"><a href="#cb20-432" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
+<span id="cb20-433"><a href="#cb20-433" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-434"><a href="#cb20-434" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"hot1_black"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-435"><a href="#cb20-435" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent)</span>
+<span id="cb20-436"><a href="#cb20-436" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-437"><a href="#cb20-437" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-438"><a href="#cb20-438" aria-hidden="true" tabindex="-1"></a><span class="ss">6.  </span>hot1_green</span>
+<span id="cb20-439"><a href="#cb20-439" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-442"><a href="#cb20-442" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-443"><a href="#cb20-443" aria-hidden="true" tabindex="-1"></a>exp_hot1_green <span class="ot">&lt;-</span> exp_hot1_green <span class="sc">%&gt;%</span> </span>
+<span id="cb20-444"><a href="#cb20-444" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
+<span id="cb20-445"><a href="#cb20-445" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
+<span id="cb20-446"><a href="#cb20-446" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
+<span id="cb20-447"><a href="#cb20-447" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-448"><a href="#cb20-448" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"hot1_green"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-449"><a href="#cb20-449" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent)</span>
+<span id="cb20-450"><a href="#cb20-450" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-451"><a href="#cb20-451" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-452"><a href="#cb20-452" aria-hidden="true" tabindex="-1"></a><span class="ss">7.  </span>hot2_orange</span>
+<span id="cb20-453"><a href="#cb20-453" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-456"><a href="#cb20-456" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-457"><a href="#cb20-457" aria-hidden="true" tabindex="-1"></a>exp_hot2_orange <span class="ot">&lt;-</span> exp_hot2_orange <span class="sc">%&gt;%</span> </span>
+<span id="cb20-458"><a href="#cb20-458" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
+<span id="cb20-459"><a href="#cb20-459" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
+<span id="cb20-460"><a href="#cb20-460" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
+<span id="cb20-461"><a href="#cb20-461" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-462"><a href="#cb20-462" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"hot2_orange"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-463"><a href="#cb20-463" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent)</span>
+<span id="cb20-464"><a href="#cb20-464" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-465"><a href="#cb20-465" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-466"><a href="#cb20-466" aria-hidden="true" tabindex="-1"></a><span class="ss">8.  </span>hot2_yellow</span>
+<span id="cb20-467"><a href="#cb20-467" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-470"><a href="#cb20-470" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-471"><a href="#cb20-471" aria-hidden="true" tabindex="-1"></a>exp_hot2_yellow <span class="ot">&lt;-</span> exp_hot2_yellow <span class="sc">%&gt;%</span> </span>
+<span id="cb20-472"><a href="#cb20-472" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">datetime =</span> Date.Time..HST.,</span>
+<span id="cb20-473"><a href="#cb20-473" aria-hidden="true" tabindex="-1"></a>         <span class="at">temp =</span> Temperature.....C.,</span>
+<span id="cb20-474"><a href="#cb20-474" aria-hidden="true" tabindex="-1"></a>         <span class="at">lux =</span> Light....lux.) <span class="sc">%&gt;%</span></span>
+<span id="cb20-475"><a href="#cb20-475" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">datetime =</span> <span class="fu">as.POSIXct</span>(datetime, <span class="at">format =</span> <span class="st">"%m/%d/%Y %H:%M:%S"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-476"><a href="#cb20-476" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pendent =</span> <span class="st">"hot2_yellow"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-477"><a href="#cb20-477" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(datetime, temp, lux, pendent)</span>
+<span id="cb20-478"><a href="#cb20-478" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-479"><a href="#cb20-479" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-480"><a href="#cb20-480" aria-hidden="true" tabindex="-1"></a>Bind experiment logs together</span>
+<span id="cb20-483"><a href="#cb20-483" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-484"><a href="#cb20-484" aria-hidden="true" tabindex="-1"></a>exp_logs <span class="ot">&lt;-</span> <span class="fu">rbind</span>(exp_amb1_blue,</span>
+<span id="cb20-485"><a href="#cb20-485" aria-hidden="true" tabindex="-1"></a>                  exp_amb1_bluegreen,</span>
+<span id="cb20-486"><a href="#cb20-486" aria-hidden="true" tabindex="-1"></a>                  exp_amb2_orangepink,</span>
+<span id="cb20-487"><a href="#cb20-487" aria-hidden="true" tabindex="-1"></a>                  exp_amb2_pink,</span>
+<span id="cb20-488"><a href="#cb20-488" aria-hidden="true" tabindex="-1"></a>                  exp_hot1_black,</span>
+<span id="cb20-489"><a href="#cb20-489" aria-hidden="true" tabindex="-1"></a>                  exp_hot1_green,</span>
+<span id="cb20-490"><a href="#cb20-490" aria-hidden="true" tabindex="-1"></a>                  exp_hot2_orange,</span>
+<span id="cb20-491"><a href="#cb20-491" aria-hidden="true" tabindex="-1"></a>                  exp_hot2_yellow)</span>
+<span id="cb20-492"><a href="#cb20-492" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-493"><a href="#cb20-493" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-494"><a href="#cb20-494" aria-hidden="true" tabindex="-1"></a>Join to calibrations (&amp; remove NAs)</span>
+<span id="cb20-497"><a href="#cb20-497" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-498"><a href="#cb20-498" aria-hidden="true" tabindex="-1"></a>exp_logs <span class="ot">&lt;-</span> exp_logs <span class="sc">%&gt;%</span> </span>
+<span id="cb20-499"><a href="#cb20-499" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(temp_fit_results) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-500"><a href="#cb20-500" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(par_fit_results) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-501"><a href="#cb20-501" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>(temp, lux)</span>
+<span id="cb20-502"><a href="#cb20-502" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-503"><a href="#cb20-503" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-504"><a href="#cb20-504" aria-hidden="true" tabindex="-1"></a><span class="fu"># Apply calibrations</span></span>
+<span id="cb20-505"><a href="#cb20-505" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-506"><a href="#cb20-506" aria-hidden="true" tabindex="-1"></a>To apply the intercept and slope from a linear regression calibration to raw data and generate calibrated values, we can use the formula:</span>
+<span id="cb20-507"><a href="#cb20-507" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-508"><a href="#cb20-508" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb20-509"><a href="#cb20-509" aria-hidden="true" tabindex="-1"></a>\text{Calibrated value} = (\text{slope} \times \text{raw value}) + \text{intercept}</span>
+<span id="cb20-510"><a href="#cb20-510" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb20-513"><a href="#cb20-513" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-514"><a href="#cb20-514" aria-hidden="true" tabindex="-1"></a>exp_logs_postcal <span class="ot">&lt;-</span> exp_logs <span class="sc">%&gt;%</span> </span>
+<span id="cb20-515"><a href="#cb20-515" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">raw_temp =</span> temp) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-516"><a href="#cb20-516" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb20-517"><a href="#cb20-517" aria-hidden="true" tabindex="-1"></a>    <span class="at">cal_temp =</span> (temp_slope <span class="sc">*</span> raw_temp) <span class="sc">+</span> temp_intercept,</span>
+<span id="cb20-518"><a href="#cb20-518" aria-hidden="true" tabindex="-1"></a>    <span class="at">par0 =</span> (lux_slope <span class="sc">*</span> lux) <span class="sc">+</span> lux_intercept,</span>
+<span id="cb20-519"><a href="#cb20-519" aria-hidden="true" tabindex="-1"></a>    <span class="at">par =</span> <span class="fu">pmax</span>(par0, <span class="dv">0</span>)  ) <span class="co"># PAR cannot be negative</span></span>
+<span id="cb20-520"><a href="#cb20-520" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-521"><a href="#cb20-521" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-522"><a href="#cb20-522" aria-hidden="true" tabindex="-1"></a><span class="fu"># Visualize thermal environment</span></span>
+<span id="cb20-525"><a href="#cb20-525" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-526"><a href="#cb20-526" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(exp_logs_postcal, <span class="fu">aes</span>(<span class="at">x =</span> datetime, <span class="at">y =</span> cal_temp, <span class="at">color =</span> pendent, <span class="at">alpha =</span> <span class="fl">0.4</span>))<span class="sc">+</span></span>
+<span id="cb20-527"><a href="#cb20-527" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()<span class="sc">+</span></span>
+<span id="cb20-528"><a href="#cb20-528" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>()<span class="sc">+</span></span>
+<span id="cb20-529"><a href="#cb20-529" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Calibrated temperatures across hot and ambient water baths"</span>)<span class="sc">+</span></span>
+<span id="cb20-530"><a href="#cb20-530" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Date-time"</span>, <span class="at">y =</span> <span class="st">"Temperature (°C)"</span>, <span class="at">color =</span> <span class="st">"HOBO Sensor"</span>) </span>
+<span id="cb20-531"><a href="#cb20-531" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-532"><a href="#cb20-532" aria-hidden="true" tabindex="-1"></a><span class="fu"># Visualize PAR environment</span></span>
+<span id="cb20-535"><a href="#cb20-535" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-536"><a href="#cb20-536" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(exp_logs_postcal, <span class="fu">aes</span>(<span class="at">x =</span> datetime, <span class="at">y =</span> par, <span class="at">color =</span> pendent, <span class="at">alpha =</span> <span class="fl">0.4</span>))<span class="sc">+</span></span>
+<span id="cb20-537"><a href="#cb20-537" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()<span class="sc">+</span></span>
+<span id="cb20-538"><a href="#cb20-538" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>()<span class="sc">+</span></span>
+<span id="cb20-539"><a href="#cb20-539" aria-hidden="true" tabindex="-1"></a>  <span class="co">#geom_smooth()+</span></span>
+<span id="cb20-540"><a href="#cb20-540" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="dv">0</span>, <span class="dv">500</span>)<span class="sc">+</span></span>
+<span id="cb20-541"><a href="#cb20-541" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Calibrated PAR across hot and ambient water baths"</span>)<span class="sc">+</span></span>
+<span id="cb20-542"><a href="#cb20-542" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Date-time"</span>, <span class="at">y =</span> <span class="st">"PAR (umol/m2)"</span>, <span class="at">color =</span> <span class="st">"HOBO Sensor"</span>) </span>
+<span id="cb20-543"><a href="#cb20-543" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-544"><a href="#cb20-544" aria-hidden="true" tabindex="-1"></a>::: callout-caution</span>
+<span id="cb20-545"><a href="#cb20-545" aria-hidden="true" tabindex="-1"></a>amb2_pink sensor may have had a bad calibration (it was way off from the others)</span>
+<span id="cb20-546"><a href="#cb20-546" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb20-547"><a href="#cb20-547" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-548"><a href="#cb20-548" aria-hidden="true" tabindex="-1"></a><span class="fu"># Summary</span></span>
+<span id="cb20-549"><a href="#cb20-549" aria-hidden="true" tabindex="-1"></a>In summary, our temp baths hot and ambient separated consistently and our PAR conditions were roughly the same; which was the intent of the experimental setup. amb2_pink PAR calibration may be off, however amb2_orangepink sensor was also in the ambient 2 bath, and shows expected PAR values (the reason we had redundancy in our sensors was in case one went off)</span>
+<span id="cb20-550"><a href="#cb20-550" aria-hidden="true" tabindex="-1"></a></span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

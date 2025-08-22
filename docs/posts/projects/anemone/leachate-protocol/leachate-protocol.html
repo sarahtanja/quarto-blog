@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -290,8 +290,7 @@ window.Quarto = {
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -304,14 +303,6 @@ window.Quarto = {
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -435,7 +426,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -445,21 +436,21 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#materials-equipment-list" id="toc-materials-equipment-list" class="nav-link active" data-scroll-target="#materials-equipment-list">Materials &amp; equipment list</a></li>
-  <li><a href="#lab-prep" id="toc-lab-prep" class="nav-link" data-scroll-target="#lab-prep">Lab prep</a>
+  <li><a href="#materials-equipment-list" id="toc-materials-equipment-list" class="nav-link active" data-scroll-target="#materials-equipment-list"><span class="header-section-number">1</span> Materials &amp; equipment list</a></li>
+  <li><a href="#lab-prep" id="toc-lab-prep" class="nav-link" data-scroll-target="#lab-prep"><span class="header-section-number">2</span> Lab prep</a>
   <ul>
-  <li><a href="#step-1.-make-artificial-seawater" id="toc-step-1.-make-artificial-seawater" class="nav-link" data-scroll-target="#step-1.-make-artificial-seawater">Step 1. Make artificial seawater</a></li>
-  <li><a href="#step-2.-mix-seawater-with-microplastics-1-mgml-in-250-ml" id="toc-step-2.-mix-seawater-with-microplastics-1-mgml-in-250-ml" class="nav-link" data-scroll-target="#step-2.-mix-seawater-with-microplastics-1-mgml-in-250-ml">Step 2. Mix seawater with microplastics (1 mg/mL in 250 mL)</a></li>
-  <li><a href="#step-3.-let-soak" id="toc-step-3.-let-soak" class="nav-link" data-scroll-target="#step-3.-let-soak">Step 3. Let soak</a></li>
-  <li><a href="#step-5.-filter" id="toc-step-5.-filter" class="nav-link" data-scroll-target="#step-5.-filter">Step 5. Filter</a></li>
+  <li><a href="#step-1.-make-artificial-seawater" id="toc-step-1.-make-artificial-seawater" class="nav-link" data-scroll-target="#step-1.-make-artificial-seawater"><span class="header-section-number">2.1</span> Step 1. Make artificial seawater</a></li>
+  <li><a href="#step-2.-mix-seawater-with-microplastics-1-mgml-in-250-ml" id="toc-step-2.-mix-seawater-with-microplastics-1-mgml-in-250-ml" class="nav-link" data-scroll-target="#step-2.-mix-seawater-with-microplastics-1-mgml-in-250-ml"><span class="header-section-number">2.2</span> Step 2. Mix seawater with microplastics (1 mg/mL in 250 mL)</a></li>
+  <li><a href="#step-3.-let-soak" id="toc-step-3.-let-soak" class="nav-link" data-scroll-target="#step-3.-let-soak"><span class="header-section-number">2.3</span> Step 3. Let soak</a></li>
+  <li><a href="#step-5.-filter" id="toc-step-5.-filter" class="nav-link" data-scroll-target="#step-5.-filter"><span class="header-section-number">2.4</span> Step 5. Filter</a></li>
   </ul></li>
-  <li><a href="#serial-dilution" id="toc-serial-dilution" class="nav-link" data-scroll-target="#serial-dilution">Serial Dilution</a>
+  <li><a href="#serial-dilution" id="toc-serial-dilution" class="nav-link" data-scroll-target="#serial-dilution"><span class="header-section-number">3</span> Serial Dilution</a>
   <ul>
-  <li><a href="#ml-scintillation-vials" id="toc-ml-scintillation-vials" class="nav-link" data-scroll-target="#ml-scintillation-vials">20mL Scintillation vials</a></li>
+  <li><a href="#ml-scintillation-vials" id="toc-ml-scintillation-vials" class="nav-link" data-scroll-target="#ml-scintillation-vials"><span class="header-section-number">3.1</span> 20mL Scintillation vials</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -491,8 +482,8 @@ window.Quarto = {
 <p>Each microplastic leachate type has a unique thumbprint or ‘signature’ of chemical makeup created via the leaching process and UV photodegradation. The microplastic type I am most keen to study is PVC.</p>
 <p>So how do we use these microplastics to re-create the leachate solutions described above?</p>
 <p>First we need to gather materials &amp; equipment:</p>
-<section id="materials-equipment-list" class="level2">
-<h2 class="anchored" data-anchor-id="materials-equipment-list">Materials &amp; equipment list</h2>
+<section id="materials-equipment-list" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="materials-equipment-list"><span class="header-section-number">1</span> Materials &amp; equipment list</h2>
 <ul>
 <li>Fume hood</li>
 <li>Stir plate, shaker table, or <a href="https://www.velp.com/en-us/fc-s-series-flocculators-with-independent-positions.aspx">flocculator</a> with rpm control (90 rpm) for leachate ‘soak’</li>
@@ -515,14 +506,14 @@ window.Quarto = {
 </ul>
 <p>Then let’s clean &amp; prep our lab space:</p>
 </section>
-<section id="lab-prep" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="lab-prep">Lab prep</h2>
+<section id="lab-prep" class="level2 page-columns page-full" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="lab-prep"><span class="header-section-number">2</span> Lab prep</h2>
 <ul>
 <li>Acid wash all glassware</li>
 </ul>
 <p>The leachate preparation protocol for each microplastic type is as follows:</p>
-<section id="step-1.-make-artificial-seawater" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="step-1.-make-artificial-seawater">Step 1. Make artificial seawater</h3>
+<section id="step-1.-make-artificial-seawater" class="level3 page-columns page-full" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="step-1.-make-artificial-seawater"><span class="header-section-number">2.1</span> Step 1. Make artificial seawater</h3>
 <ul>
 <li><p>Prepare artificial seawater according to <a href="https://drive.google.com/file/d/1QmkJYhUODVJLhCBcDb24XovCmirgV4Fc/view">ASTM D1141-98 technical bulletin</a> (buy salt for artificial seawater <a href="https://lakeproductscompanyshop.com/sea-salt-astm-d1141-98-20lb-pail/">here</a>)</p></li>
 <li><p>The ASTM D1141-98 <code>Sea-Salt mix</code> and resulting <code>Substitute Ocean Water solution</code> should have the following component breakdown:</p></li>
@@ -556,32 +547,32 @@ Note
 <li><p>Optional: filter out any remaining solids<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p></li>
 </ul>
 <div class="no-row-height column-margin column-container"><div id="fn3"><p><sup>3</sup>&nbsp;“The sea salt does include a small number of insoluble solids occurring naturally in some of the main components. This remaining residue can be strained or filtered out and disposed of without affecting the accuracy of the dissolved seawater mixture.”</p></div><div id="fn4"><p><sup>4</sup>&nbsp;“The sea salt does include a small number of insoluble solids occurring naturally in some of the main components. This remaining residue can be strained or filtered out and disposed of without affecting the accuracy of the dissolved seawater mixture.”</p></div></div></section>
-<section id="step-2.-mix-seawater-with-microplastics-1-mgml-in-250-ml" class="level3">
-<h3 class="anchored" data-anchor-id="step-2.-mix-seawater-with-microplastics-1-mgml-in-250-ml">Step 2. Mix seawater with microplastics (1 mg/mL in 250 mL)</h3>
+<section id="step-2.-mix-seawater-with-microplastics-1-mgml-in-250-ml" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="step-2.-mix-seawater-with-microplastics-1-mgml-in-250-ml"><span class="header-section-number">2.2</span> Step 2. Mix seawater with microplastics (1 mg/mL in 250 mL)</h3>
 <ul>
 <li><p>Tare a weigh boat and measure out 250 mg of microplastic</p></li>
 <li><p>Transfer 250 mg of microplastic to the 400 mL beaker via weigh boat</p></li>
 <li><p>Transfer 250 mL of artificial seawater to a 500 mL flask</p></li>
 </ul>
 </section>
-<section id="step-3.-let-soak" class="level3">
-<h3 class="anchored" data-anchor-id="step-3.-let-soak">Step 3. Let soak</h3>
+<section id="step-3.-let-soak" class="level3" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="step-3.-let-soak"><span class="header-section-number">2.3</span> Step 3. Let soak</h3>
 <ul>
 <li><p>Setup stirring station under a hood where it can sit for 7 days (168 hours) in the dark at room temperature</p></li>
 <li><p>Set contents to stir at 90 rotations per minute (This can be achieved either in a <a href="https://www.velp.com/en-us/fc-s-series-flocculators-with-independent-positions.aspx">flocculator</a> or a stir-plate with glass-coated stir rod, or other stirring mechanism with rpm control)</p></li>
 <li><p>Cover lid of flask with parafilm or foil to prevent evaporation</p></li>
 </ul>
 </section>
-<section id="step-5.-filter" class="level3">
-<h3 class="anchored" data-anchor-id="step-5.-filter">Step 5. Filter</h3>
+<section id="step-5.-filter" class="level3" data-number="2.4">
+<h3 data-number="2.4" class="anchored" data-anchor-id="step-5.-filter"><span class="header-section-number">2.4</span> Step 5. Filter</h3>
 <ul>
 <li><p>Filter the leachate solution through 35-45 μm pore size paper filter to retain microplastic particles</p></li>
 <li><p>Store at 4°C for a maximum of 48h prior to use</p></li>
 </ul>
 </section>
 </section>
-<section id="serial-dilution" class="level2">
-<h2 class="anchored" data-anchor-id="serial-dilution">Serial Dilution</h2>
+<section id="serial-dilution" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="serial-dilution"><span class="header-section-number">3</span> Serial Dilution</h2>
 <blockquote class="blockquote">
 <p>To prepare the leachate we put 250mg of material in 250 ml. At the end of the treatment you &nbsp;will have 250ml corresponding to 1g/L of plastic ( PAEs approximately at 10% so 100 mg/L, other contaminants at&nbsp; 10-0.1 mg/L, &nbsp;we will give you the exact concentration for each contaminant)</p>
 <p>By successive dilution you can therefore have 2L &nbsp;in volume at 100 mg/L &nbsp;and as much as you want in term of volume (more than 4L) at 10, 1, 0.1, 0.01 mg/L. with controls ( no plastic added)</p>
@@ -620,8 +611,8 @@ Note
 <ol start="2" type="1">
 <li>Then dilute the stock to each treatment vial/jar</li>
 </ol>
-<section id="ml-scintillation-vials" class="level3">
-<h3 class="anchored" data-anchor-id="ml-scintillation-vials">20mL Scintillation vials</h3>
+<section id="ml-scintillation-vials" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="ml-scintillation-vials"><span class="header-section-number">3.1</span> 20mL Scintillation vials</h3>
 <p>For a 20mL scintillation vial for coral embryo experiments with a final target volume of 18mL:</p>
 <p><strong>1mg/L HIGH treatment</strong></p>
 <p>10mg/L * V1 = 1mg/L * 18mL</p>

@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -261,8 +261,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -275,14 +274,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -406,7 +397,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -416,16 +407,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#goals" id="toc-goals" class="nav-link active" data-scroll-target="#goals">Goals</a></li>
-  <li><a href="#design" id="toc-design" class="nav-link" data-scroll-target="#design">Design</a></li>
-  <li><a href="#gather-materials-tools" id="toc-gather-materials-tools" class="nav-link" data-scroll-target="#gather-materials-tools">Gather materials &amp; tools:</a></li>
-  <li><a href="#d-print-the-petri-stand3" id="toc-d-print-the-petri-stand3" class="nav-link" data-scroll-target="#d-print-the-petri-stand3">3D print the petri stand</a></li>
-  <li><a href="#drill-some-holes" id="toc-drill-some-holes" class="nav-link" data-scroll-target="#drill-some-holes">Drill some holes</a></li>
-  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways">Key takeaways</a></li>
+  <li><a href="#goals" id="toc-goals" class="nav-link active" data-scroll-target="#goals"><span class="header-section-number">1</span> Goals</a></li>
+  <li><a href="#design" id="toc-design" class="nav-link" data-scroll-target="#design"><span class="header-section-number">2</span> Design</a></li>
+  <li><a href="#gather-materials-tools" id="toc-gather-materials-tools" class="nav-link" data-scroll-target="#gather-materials-tools"><span class="header-section-number">3</span> Gather materials &amp; tools:</a></li>
+  <li><a href="#d-print-the-petri-stand3" id="toc-d-print-the-petri-stand3" class="nav-link" data-scroll-target="#d-print-the-petri-stand3"><span class="header-section-number">4</span> 3D print the petri stand</a></li>
+  <li><a href="#drill-some-holes" id="toc-drill-some-holes" class="nav-link" data-scroll-target="#drill-some-holes"><span class="header-section-number">5</span> Drill some holes</a></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways"><span class="header-section-number">6</span> Key takeaways</a></li>
   </ul>
 </nav>
 </nav>
@@ -442,8 +433,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>I had to make some custom respirometry chambers for my experiment. Here’s the requirements I needed to meet, and how I did it!</p>
-<section id="goals" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="goals">Goals</h2>
+<section id="goals" class="level2 page-columns page-full" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="goals"><span class="header-section-number">1</span> Goals</h2>
 <p>The chambers have to hold a small (~30mm cubed) aggregating anemone attached to a 60mm diameter petri dish</p>
 <p>The petri dish has to sit above a stir-rod, which must provide adequate mixing<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;So that there is no oxygen ‘lens’ near the organism. If there was no mixing, a high oxygen ‘bubble’ or ‘lens’ immediately around the organism (due to photosynthesis in photorespiration) or a low oxygen ‘lens’ in dark respiration may occur, and the oxygen optode won’t pick up that signal because it’s trapped!</p></div></div><p>Chambers have to hold a volume ~200-250 mL</p>
@@ -451,11 +442,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>An airtight port for the PreSens dipper oxygen optode (has an OD of ~3.8mm)</p>
 <p>No port needed for temp probe<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
 <div class="no-row-height column-margin column-container"><div id="fn2"><p><sup>2</sup>&nbsp;I called Mark Rowland (the USA sales rep for PreSens) and spoke with him on the phone at length about my experiment and the PresSens oxygen setup for respirometry that our lab uses (Fibox 4 with oxygen dipper probes and temp probes). He shared with me that if you are running a controlled experiment in a water bath, and the whole thing is ‘isothermal’, you don’t need to have the temp probes in the chamber with the organism(s) you are testing. As long as the probes are in the same temperature bath that the chambers are submerged in, the data will be recording the temperature of the bath, and correcting the optodes in accordance with the recorded temperatures. This was very useful information as our alternate experimental chambers have 2 ports (one for the oxygen optode, and one for the temp probe), which doubles the potential for air leaks. In this design, I opted to simplify, follow Mark Rowland’s advice, and simply include 1 port for the dipper oxygen optode</p></div></div></section>
-<section id="design" class="level2">
-<h2 class="anchored" data-anchor-id="design">Design</h2>
+<section id="design" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="design"><span class="header-section-number">2</span> Design</h2>
 </section>
-<section id="gather-materials-tools" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="gather-materials-tools">Gather materials &amp; tools:</h2>
+<section id="gather-materials-tools" class="level2 page-columns page-full" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="gather-materials-tools"><span class="header-section-number">3</span> Gather materials &amp; tools:</h2>
 <ul>
 <li><p>K+S Precision Metals round tubing with 4mm OD (outer diameter), purchased from ACE Tweedy Pop Hardware in Lake City, but can also be found on <a href="https://www.amazon.com/Engineering-Round-Brass-Tube-45/dp/B005WPAQSO/ref=sr_1_3?dib=eyJ2IjoiMSJ9.xqj0N8xcPk4zQPiEjCVxJVOdZTbwnCi-8ubv5hpTlZn5B_NW3JVu_4Ut54tUZ-F0h2Ywv8IK2xzCStL4ObyBJaLsiiXqe98ZQy800YwZSAPdqj9yzUXckltQp0Se8-iGfRgSHxtcbr0qtv2TgtsxYxS9wvW-m4b733OtWDtex_vLFfgbp-KYGhH54feL8ldOZk5xX4BGSt-VXWHtXZjLWeZv32y9pkvhg4xO7R1UtRU.FBRxxU29M4hOPPyh6wpdb1BkAur1ADmCyE2EnuQiWZ0&amp;dib_tag=se&amp;keywords=K%2BS%2Bround%2Btubing%2B4mm%2BOD&amp;qid=1713822376&amp;sr=8-3&amp;th=1">Amazon</a> or directly with <a href="https://ksmetals.com/collections/round-tubing?filter.p.m.custom.outside_diameter=4mm&amp;filter.v.price.gte=&amp;filter.v.price.lte=&amp;sort_by=best-selling">K+S Metals</a> The metal type doesn’t matter, just the OD of 4mm to match the OD of the PreSens dipper optodes.</p></li>
 <li><p><a href="https://www.amazon.com/dp/B07HFZLYYC?ref=ppx_yo2ov_dt_b_product_details&amp;th=1">Silicone rubber tapered plug</a> (only used the 20mm-16mm large red ones, had to buy 2 kits to make 10 chambers, couldn’t find the large plugs sold without the rest of the kit… )</p></li>
@@ -474,12 +465,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p><a href="https://beyondplastic.com/products/flexpha-3d-printer-filament-flex-gen-2-gray">Flex PHA 3D printer filament</a></p></li>
 </ul>
 </section>
-<section id="d-print-the-petri-stand3" class="level2">
-<h2 class="anchored" data-anchor-id="d-print-the-petri-stand3">3D print the petri stand<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></h2>
+<section id="d-print-the-petri-stand3" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="d-print-the-petri-stand3"><span class="header-section-number">4</span> 3D print the petri stand<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></h2>
 <p>Modeled on SolidWorks and Fusion360, sliced on Ultimaker Software. Hot tip: find a nerdy friend (or husband) to do this for you.</p>
 </section>
-<div class="no-row-height column-margin column-container"><div id="fn3"><p><sup>3</sup>&nbsp;I would really like to upgrade this petri stand to be an autoclavable glass or ceramic stand so that there is unequivocally no plastics in these test chambers (because I’m trying to</p></div></div><section id="drill-some-holes" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="drill-some-holes">Drill some holes</h2>
+<div class="no-row-height column-margin column-container"><div id="fn3"><p><sup>3</sup>&nbsp;I would really like to upgrade this petri stand to be an autoclavable glass or ceramic stand so that there is unequivocally no plastics in these test chambers (because I’m trying to</p></div></div><section id="drill-some-holes" class="level2 page-columns page-full" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="drill-some-holes"><span class="header-section-number">5</span> Drill some holes</h2>
 <ol type="1">
 <li><p>Punch out ~4mm hole in silicone tapered plug :</p>
 <p>I hunted down some advice from <a href="https://www.sciencemadness.org/whisper/viewthread.php?tid=15653#:~:text=Try%20putting%20the%20rubbery%20material,lower%20than%20%2D20%20deg%20C.">blogs</a> and <a href="https://www.youtube.com/watch?v=S9Webmd9Jvw">youtube videos</a> on how to ‘drill’ a hole in a plug. The best way to go about it is to use a hand drill and a metal round tube with your target diameter (here I use a 4mm OD brass tubing) to ‘punch’ the hole through with slow speed and soapy water lubrication. Most of the online advice was tailored to rubber plugs, not silicone, and therefore encourage you to use a bench grinder to sharpen the edge of the metal tube to a cutting angle. This didn’t work for me, and made the edges of the punch irregular. Because I was using a softer material, silicone, and I was drilling a very small hole, I found I didn’t need to ‘sharpen’ the edges of the metal tube.</p></li>
@@ -487,8 +478,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>WEAR SAFETY GLASSES. Using a drill press, I inserted the 5/8 in diamond tip hole saw in the drill press chuck and positioned the glass lid on riser-spacers so that the bit could pass clean through. I secured the lid very gently in a horiznotal vice that was mounted to the drill press table. Once I think I tightened the vice a skosh<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> too much, and the lid shattered when I contacted it with the hole saw bit. Secure it <em>very</em> lightly, just enough so that it can’t rotate when the hole saw bit comes into contact with the surface. The WECK glass lids can contain a shallow ‘well’ of water which was very useful during drilling. I simply filled the upper surface of the lid with soapy water, and that served as lubrication while I drilled. I drilled extremely slowly, barely pressing down (just letting the dead weight of my arm press down on the bit). When the hole saw eventually passes all the way through the glass lid, carefully sweep up glass waste and dispose of safely.</p></li>
 </ol>
 <div class="no-row-height column-margin column-container"><div id="fn4"><p><sup>4</sup>&nbsp;The very smallest unit of fake measure, smaller than both the smidge and the tad</p></div></div></section>
-<section id="key-takeaways" class="level2">
-<h2 class="anchored" data-anchor-id="key-takeaways">Key takeaways</h2>
+<section id="key-takeaways" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">6</span> Key takeaways</h2>
 <ul>
 <li>When doing closed-system respirometry using Fibox 4 &amp; dipper probes, the temp probes just need to be in the water bath! Not in the actual sealed chambers!</li>
 </ul>

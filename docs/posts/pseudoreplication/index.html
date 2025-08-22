@@ -97,9 +97,9 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -279,8 +279,7 @@ div.csl-indent {
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -293,14 +292,6 @@ div.csl-indent {
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -424,7 +415,7 @@ div.csl-indent {
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -434,18 +425,18 @@ div.csl-indent {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#simple-pseudoreplication" id="toc-simple-pseudoreplication" class="nav-link active" data-scroll-target="#simple-pseudoreplication">Simple Pseudoreplication</a></li>
-  <li><a href="#temporal-pseudoreplication" id="toc-temporal-pseudoreplication" class="nav-link" data-scroll-target="#temporal-pseudoreplication">Temporal Pseudoreplication</a></li>
-  <li><a href="#sacrificial-pseudoreplication" id="toc-sacrificial-pseudoreplication" class="nav-link" data-scroll-target="#sacrificial-pseudoreplication">Sacrificial Pseudoreplication</a></li>
-  <li><a href="#implicit-pseudoreplication" id="toc-implicit-pseudoreplication" class="nav-link" data-scroll-target="#implicit-pseudoreplication">Implicit Pseudoreplication</a></li>
-  <li><a href="#experimental-tank-arrays" id="toc-experimental-tank-arrays" class="nav-link" data-scroll-target="#experimental-tank-arrays">Experimental tank arrays:</a></li>
-  <li><a href="#tank-types" id="toc-tank-types" class="nav-link" data-scroll-target="#tank-types">Tank types:</a></li>
-  <li><a href="#randomized-complete-block-design" id="toc-randomized-complete-block-design" class="nav-link" data-scroll-target="#randomized-complete-block-design">Randomized Complete Block Design</a></li>
-  <li><a href="#factorial-design" id="toc-factorial-design" class="nav-link" data-scroll-target="#factorial-design">Factorial Design</a></li>
+  <li><a href="#simple-pseudoreplication" id="toc-simple-pseudoreplication" class="nav-link active" data-scroll-target="#simple-pseudoreplication"><span class="header-section-number">1</span> Simple Pseudoreplication</a></li>
+  <li><a href="#temporal-pseudoreplication" id="toc-temporal-pseudoreplication" class="nav-link" data-scroll-target="#temporal-pseudoreplication"><span class="header-section-number">2</span> Temporal Pseudoreplication</a></li>
+  <li><a href="#sacrificial-pseudoreplication" id="toc-sacrificial-pseudoreplication" class="nav-link" data-scroll-target="#sacrificial-pseudoreplication"><span class="header-section-number">3</span> Sacrificial Pseudoreplication</a></li>
+  <li><a href="#implicit-pseudoreplication" id="toc-implicit-pseudoreplication" class="nav-link" data-scroll-target="#implicit-pseudoreplication"><span class="header-section-number">4</span> Implicit Pseudoreplication</a></li>
+  <li><a href="#experimental-tank-arrays" id="toc-experimental-tank-arrays" class="nav-link" data-scroll-target="#experimental-tank-arrays"><span class="header-section-number">5</span> Experimental tank arrays:</a></li>
+  <li><a href="#tank-types" id="toc-tank-types" class="nav-link" data-scroll-target="#tank-types"><span class="header-section-number">6</span> Tank types:</a></li>
+  <li><a href="#randomized-complete-block-design" id="toc-randomized-complete-block-design" class="nav-link" data-scroll-target="#randomized-complete-block-design"><span class="header-section-number">7</span> Randomized Complete Block Design</a></li>
+  <li><a href="#factorial-design" id="toc-factorial-design" class="nav-link" data-scroll-target="#factorial-design"><span class="header-section-number">8</span> Factorial Design</a></li>
   </ul>
 </nav>
 </nav>
@@ -480,16 +471,16 @@ Hurlbert, Stuart H. 1984. <span>“Pseudoreplication and the <span>Design</span>
 <div class="page-columns page-full"><blockquote class="blockquote">
 <p>“If treatment effects are confused with the effects of other factors not under investigation, then an accurate assessment of the effects of the treatment cannot be made.”<span class="citation" data-cites="cornwall2016">(<a href="#ref-cornwall2016" role="doc-biblioref">2016</a>)</span></p>
 </blockquote><div class="no-row-height column-margin column-container"></div></div>
-<section id="simple-pseudoreplication" class="level2">
-<h2 class="anchored" data-anchor-id="simple-pseudoreplication">Simple Pseudoreplication</h2>
+<section id="simple-pseudoreplication" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="simple-pseudoreplication"><span class="header-section-number">1</span> Simple Pseudoreplication</h2>
 <p>One ‘experimental unit’ per treatment and multiple individuals in that treatment whose response is being measured.</p>
 </section>
-<section id="temporal-pseudoreplication" class="level2">
-<h2 class="anchored" data-anchor-id="temporal-pseudoreplication">Temporal Pseudoreplication</h2>
+<section id="temporal-pseudoreplication" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="temporal-pseudoreplication"><span class="header-section-number">2</span> Temporal Pseudoreplication</h2>
 <p>Multiple measurements are made through time on the same experimental unit and treated as independent.</p>
 </section>
-<section id="sacrificial-pseudoreplication" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="sacrificial-pseudoreplication">Sacrificial Pseudoreplication</h2>
+<section id="sacrificial-pseudoreplication" class="level2 page-columns page-full" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="sacrificial-pseudoreplication"><span class="header-section-number">3</span> Sacrificial Pseudoreplication</h2>
 <p>Multiple ‘experimental units’ per treatment and multiple individuals within each experimental unit, but the individuals within each experimental unit are treated as experimental units during the statistical analysis.</p>
 <div class="page-columns page-full"><blockquote class="blockquote">
 <p>“These three definitions demonstrate how a misinterpretation as to what constitutes an experimental unit vs.&nbsp;an”evaluation unit” could lead to inappropriate design and analysis.” (<span class="citation" data-cites="cornwall2016">(<a href="#ref-cornwall2016" role="doc-biblioref">Cornwall and Hurd 2016</a>)</span>, p.&nbsp;573)</p>
@@ -497,11 +488,11 @@ Hurlbert, Stuart H. 1984. <span>“Pseudoreplication and the <span>Design</span>
 Cornwall, Christopher E., and Catriona L. Hurd. 2016. <span>“Experimental Design in Ocean Acidification Research: Problems and Solutions.”</span> <em>ICES Journal of Marine Science</em> 73 (3): 572–81. <a href="https://doi.org/10.1093/icesjms/fsv118">https://doi.org/10.1093/icesjms/fsv118</a>.
 </div></div></div>
 </section>
-<section id="implicit-pseudoreplication" class="level2">
-<h2 class="anchored" data-anchor-id="implicit-pseudoreplication">Implicit Pseudoreplication</h2>
+<section id="implicit-pseudoreplication" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="implicit-pseudoreplication"><span class="header-section-number">4</span> Implicit Pseudoreplication</h2>
 </section>
-<section id="experimental-tank-arrays" class="level2">
-<h2 class="anchored" data-anchor-id="experimental-tank-arrays">Experimental tank arrays:</h2>
+<section id="experimental-tank-arrays" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="experimental-tank-arrays"><span class="header-section-number">5</span> Experimental tank arrays:</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -540,8 +531,8 @@ Bad (pseudoreplication)
 </div>
 </div>
 </section>
-<section id="tank-types" class="level2">
-<h2 class="anchored" data-anchor-id="tank-types">Tank types:</h2>
+<section id="tank-types" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="tank-types"><span class="header-section-number">6</span> Tank types:</h2>
 <ul>
 <li><p>Storage tank: seawater stored before altered</p></li>
 <li><p>Mixing tank: where chemicals and seawater are mixed to create treatments before contact with the study species</p></li>
@@ -549,8 +540,8 @@ Bad (pseudoreplication)
 <li><p>Experimental tank: the ‘experimental unit’ where study species is housed in the treatment</p></li>
 </ul>
 </section>
-<section id="randomized-complete-block-design" class="level2">
-<h2 class="anchored" data-anchor-id="randomized-complete-block-design">Randomized Complete Block Design</h2>
+<section id="randomized-complete-block-design" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="randomized-complete-block-design"><span class="header-section-number">7</span> Randomized Complete Block Design</h2>
 <ul>
 <li><p>blocks are constructed around known or suspected source of variation</p></li>
 <li><p>each block contains all treatments</p></li>
@@ -559,8 +550,8 @@ Bad (pseudoreplication)
 <li><p>variation among blocks can be measured and removed as experimental error</p></li>
 </ul>
 </section>
-<section id="factorial-design" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="factorial-design">Factorial Design</h2>
+<section id="factorial-design" class="level2 page-columns page-full" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="factorial-design"><span class="header-section-number">8</span> Factorial Design</h2>
 <ul>
 <li><p>tests for interaction between multiple variables</p>
 <ul>

@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -258,8 +258,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -272,14 +271,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -404,7 +395,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -414,20 +405,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#sequence-files-background" id="toc-sequence-files-background" class="nav-link active" data-scroll-target="#sequence-files-background">Sequence files background</a></li>
-  <li><a href="#coding-resources" id="toc-coding-resources" class="nav-link" data-scroll-target="#coding-resources">Coding resources</a></li>
-  <li><a href="#pipeline-birds-eye-view" id="toc-pipeline-birds-eye-view" class="nav-link" data-scroll-target="#pipeline-birds-eye-view">Pipeline birds-eye view</a>
+  <li><a href="#sequence-files-background" id="toc-sequence-files-background" class="nav-link active" data-scroll-target="#sequence-files-background"><span class="header-section-number">1</span> Sequence files background</a></li>
+  <li><a href="#coding-resources" id="toc-coding-resources" class="nav-link" data-scroll-target="#coding-resources"><span class="header-section-number">2</span> Coding resources</a></li>
+  <li><a href="#pipeline-birds-eye-view" id="toc-pipeline-birds-eye-view" class="nav-link" data-scroll-target="#pipeline-birds-eye-view"><span class="header-section-number">3</span> Pipeline birds-eye view</a>
   <ul>
-  <li><a href="#receive-raw-fasta-files" id="toc-receive-raw-fasta-files" class="nav-link" data-scroll-target="#receive-raw-fasta-files">1. Receive raw FASTA files</a></li>
-  <li><a href="#qaqc-fasta-files" id="toc-qaqc-fasta-files" class="nav-link" data-scroll-target="#qaqc-fasta-files">2. QAQC FASTA files</a></li>
-  <li><a href="#align-to-reference-genome-assemble" id="toc-align-to-reference-genome-assemble" class="nav-link" data-scroll-target="#align-to-reference-genome-assemble">3. Align to reference genome &amp; assemble</a></li>
-  <li><a href="#create-gene-expression-count-matrix" id="toc-create-gene-expression-count-matrix" class="nav-link" data-scroll-target="#create-gene-expression-count-matrix">4. Create gene expression count matrix</a></li>
-  <li><a href="#data-exploration-using-r-deseq2" id="toc-data-exploration-using-r-deseq2" class="nav-link" data-scroll-target="#data-exploration-using-r-deseq2">5. Data exploration using R &amp; DESeq2</a></li>
-  <li><a href="#identify-differentially-expressed-genes-degs" id="toc-identify-differentially-expressed-genes-degs" class="nav-link" data-scroll-target="#identify-differentially-expressed-genes-degs">6. Identify differentially expressed genes (DEG)s</a></li>
+  <li><a href="#receive-raw-fasta-files" id="toc-receive-raw-fasta-files" class="nav-link" data-scroll-target="#receive-raw-fasta-files"><span class="header-section-number">3.1</span> 1. Receive raw FASTA files</a></li>
+  <li><a href="#qaqc-fasta-files" id="toc-qaqc-fasta-files" class="nav-link" data-scroll-target="#qaqc-fasta-files"><span class="header-section-number">3.2</span> 2. QAQC FASTA files</a></li>
+  <li><a href="#align-to-reference-genome-assemble" id="toc-align-to-reference-genome-assemble" class="nav-link" data-scroll-target="#align-to-reference-genome-assemble"><span class="header-section-number">3.3</span> 3. Align to reference genome &amp; assemble</a></li>
+  <li><a href="#create-gene-expression-count-matrix" id="toc-create-gene-expression-count-matrix" class="nav-link" data-scroll-target="#create-gene-expression-count-matrix"><span class="header-section-number">3.4</span> 4. Create gene expression count matrix</a></li>
+  <li><a href="#data-exploration-using-r-deseq2" id="toc-data-exploration-using-r-deseq2" class="nav-link" data-scroll-target="#data-exploration-using-r-deseq2"><span class="header-section-number">3.5</span> 5. Data exploration using R &amp; DESeq2</a></li>
+  <li><a href="#identify-differentially-expressed-genes-degs" id="toc-identify-differentially-expressed-genes-degs" class="nav-link" data-scroll-target="#identify-differentially-expressed-genes-degs"><span class="header-section-number">3.6</span> 6. Identify differentially expressed genes (DEG)s</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -444,16 +435,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="sequence-files-background" class="level1">
-<h1>Sequence files background</h1>
+<section id="sequence-files-background" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Sequence files background</h1>
 <p>We’ve extracted totalRNA and shipped it to Azenta for sequencing… so what happens next? How did we go from working with microcentrifuge tubes in the lab to large files on the computer?</p>
 <p>First they run the total RNA through quality assessment and quality control steps (QAQC) to make sure it is sufficient in quantity and quality to sequence. Here is the QAQC report from Azenta:</p>
 <p>The total RNA is then subjected to library prep, where the RNA is turned into cDNA.</p>
 <p>The cDNA is what is actually sequenced, with an Illumina sequencer, 20 million reads, Poly-A selection,</p>
 <p>The raw FASTA files come back <code>demultiplexed</code></p>
 </section>
-<section id="coding-resources" class="level1">
-<h1>Coding resources</h1>
+<section id="coding-resources" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Coding resources</h1>
 <p>This roadmap was built off the following resources and references from:</p>
 <ul>
 <li><p>Sam White</p>
@@ -493,18 +484,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul></li>
 </ul>
 </section>
-<section id="pipeline-birds-eye-view" class="level1">
-<h1>Pipeline birds-eye view</h1>
-<section id="receive-raw-fasta-files" class="level2">
-<h2 class="anchored" data-anchor-id="receive-raw-fasta-files">1. Receive raw FASTA files</h2>
+<section id="pipeline-birds-eye-view" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Pipeline birds-eye view</h1>
+<section id="receive-raw-fasta-files" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="receive-raw-fasta-files"><span class="header-section-number">3.1</span> 1. Receive raw FASTA files</h2>
 <ul>
 <li><p>files are already <code>demultiplexed</code></p></li>
 <li><p>files have a <code>.fasta.gz</code> zipped format</p></li>
 <li><p>files must checked to make sure there were no errors in the transfer process (this is done with <code>md5sum</code> )</p></li>
 </ul>
 </section>
-<section id="qaqc-fasta-files" class="level2">
-<h2 class="anchored" data-anchor-id="qaqc-fasta-files">2. QAQC FASTA files</h2>
+<section id="qaqc-fasta-files" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="qaqc-fasta-files"><span class="header-section-number">3.2</span> 2. QAQC FASTA files</h2>
 <div class="callout callout-style-simple callout-tip no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -527,8 +518,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Repeat cleaning steps if needed</p></li>
 </ul>
 </section>
-<section id="align-to-reference-genome-assemble" class="level2">
-<h2 class="anchored" data-anchor-id="align-to-reference-genome-assemble">3. Align to reference genome &amp; assemble</h2>
+<section id="align-to-reference-genome-assemble" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="align-to-reference-genome-assemble"><span class="header-section-number">3.3</span> 3. Align to reference genome &amp; assemble</h2>
 <div class="callout callout-style-simple callout-note no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -553,21 +544,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>StringTie 2</code> , <code>samtools</code> ,</li>
 </ul>
 </section>
-<section id="create-gene-expression-count-matrix" class="level2">
-<h2 class="anchored" data-anchor-id="create-gene-expression-count-matrix">4. Create gene expression count matrix</h2>
+<section id="create-gene-expression-count-matrix" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="create-gene-expression-count-matrix"><span class="header-section-number">3.4</span> 4. Create gene expression count matrix</h2>
 <ul>
 <li>Python script <code>prepDE.py</code> from Steven’s <a href="https://sr320.github.io/tumbling-oysters/posts/sr320-15-coddeg/#5-stringtie">Differentially Expressed Genes</a> post</li>
 <li>Another example by Sam <a href="https://robertslab.github.io/sams-notebook/posts/2024/2024-10-08-RNA-seq-Alignment---A.pulchra-RNA-seq-Alignments-Using-HISAT2-and-StringTie-for-Azenta-Project-30-1047560508/#generate-checksums">here</a> which uses <code>python3</code></li>
 </ul>
 </section>
-<section id="data-exploration-using-r-deseq2" class="level2">
-<h2 class="anchored" data-anchor-id="data-exploration-using-r-deseq2">5. Data exploration using R &amp; DESeq2</h2>
+<section id="data-exploration-using-r-deseq2" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="data-exploration-using-r-deseq2"><span class="header-section-number">3.5</span> 5. Data exploration using R &amp; DESeq2</h2>
 <ul>
 <li><code>DESeq-2</code> vignette found <a href="https://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#standard-workflow">here</a></li>
 </ul>
 </section>
-<section id="identify-differentially-expressed-genes-degs" class="level2">
-<h2 class="anchored" data-anchor-id="identify-differentially-expressed-genes-degs">6. Identify differentially expressed genes (DEG)s</h2>
+<section id="identify-differentially-expressed-genes-degs" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="identify-differentially-expressed-genes-degs"><span class="header-section-number">3.6</span> 6. Identify differentially expressed genes (DEG)s</h2>
 <ul>
 <li><p><code>DESeq-2</code> vignette found <a href="https://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#standard-workflow">here</a></p></li>
 <li><p><a href="https://marineomics.github.io/DGE_comparison_v2.html">Multifactorial DE Analysis</a></p></li>

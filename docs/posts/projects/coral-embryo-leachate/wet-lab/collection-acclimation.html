@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -142,7 +142,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta property="og:image:width" content="2048">
 </head>
 
-<body class="floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -285,8 +285,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -299,14 +298,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -399,7 +390,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <div class="quarto-title-block"><div><h1 class="title">Coral collections &amp; tank acclimation protocol</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
@@ -431,7 +422,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -440,27 +431,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul class="collapse">
-  <li><a href="#goals" id="toc-goals" class="nav-link active" data-scroll-target="#goals">Goals</a></li>
-  <li><a href="#install-load-packages" id="toc-install-load-packages" class="nav-link" data-scroll-target="#install-load-packages">Install &amp; load packages</a></li>
-  <li><a href="#coral-collection-location" id="toc-coral-collection-location" class="nav-link" data-scroll-target="#coral-collection-location">Coral collection location</a></li>
-  <li><a href="#leaflet-interactive-map" id="toc-leaflet-interactive-map" class="nav-link" data-scroll-target="#leaflet-interactive-map">Leaflet interactive map</a></li>
-  <li><a href="#google-static-ggmap-with-cowplot" id="toc-google-static-ggmap-with-cowplot" class="nav-link" data-scroll-target="#google-static-ggmap-with-cowplot">Google static ggmap with cowplot</a>
+  <li><a href="#goals" id="toc-goals" class="nav-link active" data-scroll-target="#goals"><span class="header-section-number">1</span> Goals</a></li>
+  <li><a href="#install-load-packages" id="toc-install-load-packages" class="nav-link" data-scroll-target="#install-load-packages"><span class="header-section-number">2</span> Install &amp; load packages</a></li>
+  <li><a href="#coral-collection-location" id="toc-coral-collection-location" class="nav-link" data-scroll-target="#coral-collection-location"><span class="header-section-number">3</span> Coral collection location</a></li>
+  <li><a href="#leaflet-interactive-map" id="toc-leaflet-interactive-map" class="nav-link" data-scroll-target="#leaflet-interactive-map"><span class="header-section-number">4</span> Leaflet interactive map</a></li>
+  <li><a href="#google-static-ggmap-with-cowplot" id="toc-google-static-ggmap-with-cowplot" class="nav-link" data-scroll-target="#google-static-ggmap-with-cowplot"><span class="header-section-number">5</span> Google static ggmap with cowplot</a>
   <ul class="collapse">
-  <li><a href="#google-main-map" id="toc-google-main-map" class="nav-link" data-scroll-target="#google-main-map">Google main map</a></li>
-  <li><a href="#stadia-main-map" id="toc-stadia-main-map" class="nav-link" data-scroll-target="#stadia-main-map">Stadia main map</a></li>
+  <li><a href="#google-main-map" id="toc-google-main-map" class="nav-link" data-scroll-target="#google-main-map"><span class="header-section-number">5.1</span> Google main map</a></li>
+  <li><a href="#stadia-main-map" id="toc-stadia-main-map" class="nav-link" data-scroll-target="#stadia-main-map"><span class="header-section-number">5.2</span> Stadia main map</a></li>
   </ul></li>
-  <li><a href="#tank-acclimation" id="toc-tank-acclimation" class="nav-link" data-scroll-target="#tank-acclimation">Tank acclimation</a></li>
+  <li><a href="#tank-acclimation" id="toc-tank-acclimation" class="nav-link" data-scroll-target="#tank-acclimation"><span class="header-section-number">6</span> Tank acclimation</a></li>
   </ul>
 </nav>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -470,12 +458,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="goals" class="level1">
-<h1>Goals</h1>
+<section id="goals" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Goals</h1>
 <p>Describe the <em>Montipora capitata</em> coral colony collections under State of Hawai`i SAP2024-35 and tank acclimation prior to spawn night research activities in June &amp; July of 2024.</p>
 </section>
-<section id="install-load-packages" class="level1">
-<h1>Install &amp; load packages</h1>
+<section id="install-load-packages" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Install &amp; load packages</h1>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Install packages</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">"ggmap"</span>, <span class="at">character.only =</span> <span class="cn">TRUE</span>)){ <span class="fu">install.packages</span>(<span class="st">"ggmap"</span>)}</span>
@@ -496,8 +484,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(cowplot)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="coral-collection-location" class="level1">
-<h1>Coral collection location</h1>
+<section id="coral-collection-location" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Coral collection location</h1>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Lagoon surrounding HIMB 21.431215°N, -157.787347°W.png" class="img-fluid figure-img"></p>
@@ -507,8 +495,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="KB-patchreefs-1.jpg" class="img-fluid"></p>
 <p><img src="KB-patchreef-latlon.jpg" class="img-fluid"></p>
 </section>
-<section id="leaflet-interactive-map" class="level1">
-<h1>Leaflet interactive map</h1>
+<section id="leaflet-interactive-map" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Leaflet interactive map</h1>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>coral_collection <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">site =</span> <span class="st">'HIMB'</span>,</span>
@@ -551,8 +539,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="google-static-ggmap-with-cowplot" class="level1">
-<h1>Google static ggmap with cowplot</h1>
+<section id="google-static-ggmap-with-cowplot" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Google static ggmap with cowplot</h1>
 <p>Register your API key with <code>register_google(key = "your api key here")</code></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define coordinates</span></span>
@@ -564,8 +552,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>ℹ &lt;https://maps.googleapis.com/maps/api/staticmap?center=21.43,-157.78&amp;zoom=16&amp;size=640x640&amp;scale=2&amp;maptype=satellite&amp;language=en-EN&amp;key=xxx-_B4kLVVnbt4gpWJqCcY&gt;</code></pre>
 </div>
 </div>
-<section id="google-main-map" class="level2">
-<h2 class="anchored" data-anchor-id="google-main-map">Google main map</h2>
+<section id="google-main-map" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="google-main-map"><span class="header-section-number">5.1</span> Google main map</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>main_map <span class="ot">&lt;-</span> <span class="fu">ggmap</span>(main_basemap) <span class="sc">+</span></span>
@@ -591,8 +579,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="stadia-main-map" class="level2">
-<h2 class="anchored" data-anchor-id="stadia-main-map">Stadia main map</h2>
+<section id="stadia-main-map" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="stadia-main-map"><span class="header-section-number">5.2</span> Stadia main map</h2>
 <p>Register API key</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>bbox <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">left =</span> <span class="sc">-</span><span class="dv">158</span>, <span class="at">bottom =</span> <span class="fl">21.2</span>, <span class="at">right =</span> <span class="sc">-</span><span class="fl">157.4</span>, <span class="at">top =</span> <span class="fl">21.8</span>)</span>
@@ -665,8 +653,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </section>
 </section>
-<section id="tank-acclimation" class="level1">
-<h1>Tank acclimation</h1>
+<section id="tank-acclimation" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Tank acclimation</h1>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="PXL_20220612_035159238~2.jpg" class="img-fluid figure-img"></p>

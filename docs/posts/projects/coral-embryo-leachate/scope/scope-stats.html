@@ -97,9 +97,9 @@ div.csl-indent {
 <link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -281,8 +281,7 @@ div.csl-indent {
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -295,14 +294,6 @@ div.csl-indent {
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -427,7 +418,7 @@ div.csl-indent {
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -437,17 +428,17 @@ div.csl-indent {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#cleavage" id="toc-cleavage" class="nav-link active" data-scroll-target="#cleavage">Cleavage</a></li>
-  <li><a href="#prawn-chip" id="toc-prawn-chip" class="nav-link" data-scroll-target="#prawn-chip">Prawn chip</a></li>
-  <li><a href="#early-gastrula" id="toc-early-gastrula" class="nav-link" data-scroll-target="#early-gastrula">Early gastrula</a>
+  <li><a href="#cleavage" id="toc-cleavage" class="nav-link active" data-scroll-target="#cleavage"><span class="header-section-number">1</span> Cleavage</a></li>
+  <li><a href="#prawn-chip" id="toc-prawn-chip" class="nav-link" data-scroll-target="#prawn-chip"><span class="header-section-number">2</span> Prawn chip</a></li>
+  <li><a href="#early-gastrula" id="toc-early-gastrula" class="nav-link" data-scroll-target="#early-gastrula"><span class="header-section-number">3</span> Early gastrula</a>
   <ul>
-  <li><a href="#assessing-fertilization-success-of-the-coral-montipora-capitata-under-copper-exposure-does-the-night-of-spawning-matterhedouin_assessing_2013" id="toc-assessing-fertilization-success-of-the-coral-montipora-capitata-under-copper-exposure-does-the-night-of-spawning-matterhedouin_assessing_2013" class="nav-link" data-scroll-target="#assessing-fertilization-success-of-the-coral-montipora-capitata-under-copper-exposure-does-the-night-of-spawning-matterhedouin_assessing_2013">Assessing fertilization success of the coral <em>Montipora capitata</em> under copper exposure: Does the night of spawning matter?<span class="citation" data-cites="hedouin_assessing_2013">(<strong>hedouin_assessing_2013?</strong>)</span></a></li>
-  <li><a href="#effects-of-toxic-compounds-in-montipora-capitata-on-exogenous-and-endogenous-zooxanthellae-performance-and-fertilization-successhagedorn_effects_2015" id="toc-effects-of-toxic-compounds-in-montipora-capitata-on-exogenous-and-endogenous-zooxanthellae-performance-and-fertilization-successhagedorn_effects_2015" class="nav-link" data-scroll-target="#effects-of-toxic-compounds-in-montipora-capitata-on-exogenous-and-endogenous-zooxanthellae-performance-and-fertilization-successhagedorn_effects_2015"><strong>Effects of Toxic Compounds in <em>Montipora capitata</em> on Exogenous and Endogenous Zooxanthellae Performance and Fertilization Success</strong><span class="citation" data-cites="hagedorn_effects_2015">(<strong>hagedorn_effects_2015?</strong>)</span></a></li>
-  <li><a href="#energetics-but-not-development-is-impacted-in-coral-embryos-exposed-to-ocean-acidification-chille2022a" id="toc-energetics-but-not-development-is-impacted-in-coral-embryos-exposed-to-ocean-acidification-chille2022a" class="nav-link" data-scroll-target="#energetics-but-not-development-is-impacted-in-coral-embryos-exposed-to-ocean-acidification-chille2022a"><strong>Energetics, but not development, is impacted in coral embryos exposed to ocean acidification</strong> <span class="citation" data-cites="chille2022a">(Chille et al. 2022)</span></a></li>
+  <li><a href="#assessing-fertilization-success-of-the-coral-montipora-capitata-under-copper-exposure-does-the-night-of-spawning-matterhedouin_assessing_2013" id="toc-assessing-fertilization-success-of-the-coral-montipora-capitata-under-copper-exposure-does-the-night-of-spawning-matterhedouin_assessing_2013" class="nav-link" data-scroll-target="#assessing-fertilization-success-of-the-coral-montipora-capitata-under-copper-exposure-does-the-night-of-spawning-matterhedouin_assessing_2013"><span class="header-section-number">4.0.1</span> Assessing fertilization success of the coral <em>Montipora capitata</em> under copper exposure: Does the night of spawning matter?<span class="citation" data-cites="hedouin_assessing_2013">(<strong>hedouin_assessing_2013?</strong>)</span></a></li>
+  <li><a href="#effects-of-toxic-compounds-in-montipora-capitata-on-exogenous-and-endogenous-zooxanthellae-performance-and-fertilization-successhagedorn_effects_2015" id="toc-effects-of-toxic-compounds-in-montipora-capitata-on-exogenous-and-endogenous-zooxanthellae-performance-and-fertilization-successhagedorn_effects_2015" class="nav-link" data-scroll-target="#effects-of-toxic-compounds-in-montipora-capitata-on-exogenous-and-endogenous-zooxanthellae-performance-and-fertilization-successhagedorn_effects_2015"><span class="header-section-number">4.0.2</span> <strong>Effects of Toxic Compounds in <em>Montipora capitata</em> on Exogenous and Endogenous Zooxanthellae Performance and Fertilization Success</strong><span class="citation" data-cites="hagedorn_effects_2015">(<strong>hagedorn_effects_2015?</strong>)</span></a></li>
+  <li><a href="#energetics-but-not-development-is-impacted-in-coral-embryos-exposed-to-ocean-acidification-chille2022a" id="toc-energetics-but-not-development-is-impacted-in-coral-embryos-exposed-to-ocean-acidification-chille2022a" class="nav-link" data-scroll-target="#energetics-but-not-development-is-impacted-in-coral-embryos-exposed-to-ocean-acidification-chille2022a"><span class="header-section-number">4.0.3</span> <strong>Energetics, but not development, is impacted in coral embryos exposed to ocean acidification</strong> <span class="citation" data-cites="chille2022a">(Chille et al. 2022)</span></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -483,11 +474,11 @@ Note
 <p>Answer: We will only assess fertilization success at the point of cleavage, where presumably, we will still see the unfertilized oocytes (any eggs that have not cleaved). In the prawn chip and early gastrula phases, the unfertilized eggs have already dissolved. In these phases, we will assess embryo mortality based on the fertilization rates we find from the cleavage data.</p>
 </div>
 </div>
-<section id="cleavage" class="level1">
-<h1>Cleavage</h1>
+<section id="cleavage" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Cleavage</h1>
 </section>
-<section id="prawn-chip" class="level1">
-<h1>Prawn chip</h1>
+<section id="prawn-chip" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Prawn chip</h1>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="8M9_stitch_001_crop_r90.png" class="img-fluid figure-img"></p>
@@ -495,8 +486,8 @@ Note
 </figure>
 </div>
 </section>
-<section id="early-gastrula" class="level1 page-columns page-full">
-<h1>Early gastrula</h1>
+<section id="early-gastrula" class="level1 page-columns page-full" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Early gastrula</h1>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="6L14_stitch_001.png" class="img-fluid figure-img"></p>
@@ -570,10 +561,10 @@ Note
 <li><strong>Fertilization success (yes/no per cross, binary categorical variable)</strong></li>
 <li>Fertilization success (proportion per treatment, ratios, continuous variable)</li>
 </ol>
-<h1 id="how-have-others-measured-fertilization-success-in-montipora-capitata">How have others measured fertilization success in <em>Montipora capitata</em>?</h1>
+<h1 id="how-have-others-measured-fertilization-success-in-montipora-capitata" data-number="4"><span class="header-section-number">4</span> How have others measured fertilization success in <em>Montipora capitata</em>?</h1>
 </blockquote>
-<section id="assessing-fertilization-success-of-the-coral-montipora-capitata-under-copper-exposure-does-the-night-of-spawning-matterhedouin_assessing_2013" class="level3">
-<h3 class="anchored" data-anchor-id="assessing-fertilization-success-of-the-coral-montipora-capitata-under-copper-exposure-does-the-night-of-spawning-matterhedouin_assessing_2013">Assessing fertilization success of the coral <em>Montipora capitata</em> under copper exposure: Does the night of spawning matter?<span class="citation" data-cites="hedouin_assessing_2013">(<a href="#ref-hedouin_assessing_2013" role="doc-biblioref"><strong>hedouin_assessing_2013?</strong></a>)</span></h3>
+<section id="assessing-fertilization-success-of-the-coral-montipora-capitata-under-copper-exposure-does-the-night-of-spawning-matterhedouin_assessing_2013" class="level3" data-number="4.0.1">
+<h3 data-number="4.0.1" class="anchored" data-anchor-id="assessing-fertilization-success-of-the-coral-montipora-capitata-under-copper-exposure-does-the-night-of-spawning-matterhedouin_assessing_2013"><span class="header-section-number">4.0.1</span> Assessing fertilization success of the coral <em>Montipora capitata</em> under copper exposure: Does the night of spawning matter?<span class="citation" data-cites="hedouin_assessing_2013">(<a href="#ref-hedouin_assessing_2013" role="doc-biblioref"><strong>hedouin_assessing_2013?</strong></a>)</span></h3>
 <ul>
 <li><p>only looked at initial cleavage (3 hpf)</p></li>
 <li><p>bundle-bundle cross in 10mL of 0.45um FSW</p></li>
@@ -584,14 +575,14 @@ Note
 <p>The fertilization rates in the untreated controls were relatively high for all the experiments, ranging from 86% to 96% (<a href="#f0005">Fig. 1</a>), with the exception of the last experiment performed on August 1st, 2008, where almost no fertilization (&lt;10%) was observed in either control and experimental vials. ”</p>
 </blockquote>
 </section>
-<section id="effects-of-toxic-compounds-in-montipora-capitata-on-exogenous-and-endogenous-zooxanthellae-performance-and-fertilization-successhagedorn_effects_2015" class="level3">
-<h3 class="anchored" data-anchor-id="effects-of-toxic-compounds-in-montipora-capitata-on-exogenous-and-endogenous-zooxanthellae-performance-and-fertilization-successhagedorn_effects_2015"><strong>Effects of Toxic Compounds in <em>Montipora capitata</em> on Exogenous and Endogenous Zooxanthellae Performance and Fertilization Success</strong><span class="citation" data-cites="hagedorn_effects_2015">(<a href="#ref-hagedorn_effects_2015" role="doc-biblioref"><strong>hagedorn_effects_2015?</strong></a>)</span></h3>
+<section id="effects-of-toxic-compounds-in-montipora-capitata-on-exogenous-and-endogenous-zooxanthellae-performance-and-fertilization-successhagedorn_effects_2015" class="level3" data-number="4.0.2">
+<h3 data-number="4.0.2" class="anchored" data-anchor-id="effects-of-toxic-compounds-in-montipora-capitata-on-exogenous-and-endogenous-zooxanthellae-performance-and-fertilization-successhagedorn_effects_2015"><span class="header-section-number">4.0.2</span> <strong>Effects of Toxic Compounds in <em>Montipora capitata</em> on Exogenous and Endogenous Zooxanthellae Performance and Fertilization Success</strong><span class="citation" data-cites="hagedorn_effects_2015">(<a href="#ref-hagedorn_effects_2015" role="doc-biblioref"><strong>hagedorn_effects_2015?</strong></a>)</span></h3>
 <blockquote class="blockquote">
 <p>“Fertilization success using untreated sperm was 79 ± 4% SEM, whereas the success rate dropped significantly after exposure to the crushed eggs, 1.3 ± 0% SEM. Unlike the eggs and the larvae, M. capitata sperm did not reduce the photosynthetic competency of P. compressa zooxanthellae, suggesting the sperm was nontoxic.”</p>
 </blockquote>
 </section>
-<section id="energetics-but-not-development-is-impacted-in-coral-embryos-exposed-to-ocean-acidification-chille2022a" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="energetics-but-not-development-is-impacted-in-coral-embryos-exposed-to-ocean-acidification-chille2022a"><strong>Energetics, but not development, is impacted in coral embryos exposed to ocean acidification</strong> <span class="citation" data-cites="chille2022a">(<a href="#ref-chille2022a" role="doc-biblioref">Chille et al. 2022</a>)</span></h3>
+<section id="energetics-but-not-development-is-impacted-in-coral-embryos-exposed-to-ocean-acidification-chille2022a" class="level3 page-columns page-full" data-number="4.0.3">
+<h3 data-number="4.0.3" class="anchored" data-anchor-id="energetics-but-not-development-is-impacted-in-coral-embryos-exposed-to-ocean-acidification-chille2022a"><span class="header-section-number">4.0.3</span> <strong>Energetics, but not development, is impacted in coral embryos exposed to ocean acidification</strong> <span class="citation" data-cites="chille2022a">(<a href="#ref-chille2022a" role="doc-biblioref">Chille et al. 2022</a>)</span></h3>
 <div class="no-row-height column-margin column-container"><div id="ref-chille2022a" class="csl-entry" role="listitem">
 Chille, E. E., E. L. Strand, F. Scucchia, M. Neder, V. Schmidt, M. O. Sherman, T. Mass, and H. M. Putnam. 2022. <span>“Energetics, but Not Development, Is Impacted in Coral Embryos Exposed to Ocean Acidification.”</span> <em>Journal of Experimental Biology</em> 225 (19): jeb243187. <a href="https://doi.org/10.1242/jeb.243187">https://doi.org/10.1242/jeb.243187</a>.
 </div></div><blockquote class="blockquote">

@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -115,7 +115,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta property="og:site_name" content="Sarah Tanja's Open Lab Notebook">
 </head>
 
-<body class="floating nav-fixed slimcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -258,8 +258,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -272,14 +271,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -372,7 +363,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <div class="quarto-title-block"><div><h1 class="title">Spawn night protocol</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
@@ -403,7 +394,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -412,31 +403,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul class="collapse">
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#prep" id="toc-prep" class="nav-link" data-scroll-target="#prep">Prep</a>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">1</span> Overview</a></li>
+  <li><a href="#prep" id="toc-prep" class="nav-link" data-scroll-target="#prep"><span class="header-section-number">2</span> Prep</a>
   <ul class="collapse">
-  <li><a href="#make-stock-leachate" id="toc-make-stock-leachate" class="nav-link" data-scroll-target="#make-stock-leachate">Make Stock Leachate</a></li>
-  <li><a href="#load-20ml-scintillation-vials" id="toc-load-20ml-scintillation-vials" class="nav-link" data-scroll-target="#load-20ml-scintillation-vials">Load 20mL scintillation vials</a></li>
-  <li><a href="#dilute-zfix" id="toc-dilute-zfix" class="nav-link" data-scroll-target="#dilute-zfix">Dilute ZFIX</a></li>
+  <li><a href="#make-stock-leachate" id="toc-make-stock-leachate" class="nav-link" data-scroll-target="#make-stock-leachate"><span class="header-section-number">2.1</span> Make Stock Leachate</a></li>
+  <li><a href="#load-20ml-scintillation-vials" id="toc-load-20ml-scintillation-vials" class="nav-link" data-scroll-target="#load-20ml-scintillation-vials"><span class="header-section-number">2.2</span> Load 20mL scintillation vials</a></li>
+  <li><a href="#dilute-zfix" id="toc-dilute-zfix" class="nav-link" data-scroll-target="#dilute-zfix"><span class="header-section-number">2.3</span> Dilute ZFIX</a></li>
   </ul></li>
-  <li><a href="#protocol" id="toc-protocol" class="nav-link" data-scroll-target="#protocol">Protocol</a>
+  <li><a href="#protocol" id="toc-protocol" class="nav-link" data-scroll-target="#protocol"><span class="header-section-number">3</span> Protocol</a>
   <ul class="collapse">
-  <li><a href="#bundle-bundle-crosses" id="toc-bundle-bundle-crosses" class="nav-link" data-scroll-target="#bundle-bundle-crosses">Bundle-Bundle Crosses</a></li>
-  <li><a href="#fix-microscopy" id="toc-fix-microscopy" class="nav-link" data-scroll-target="#fix-microscopy">Fix (microscopy)</a></li>
-  <li><a href="#freeze-molecular" id="toc-freeze-molecular" class="nav-link" data-scroll-target="#freeze-molecular">Freeze (molecular)</a></li>
+  <li><a href="#bundle-bundle-crosses" id="toc-bundle-bundle-crosses" class="nav-link" data-scroll-target="#bundle-bundle-crosses"><span class="header-section-number">3.1</span> Bundle-Bundle Crosses</a></li>
+  <li><a href="#fix-microscopy" id="toc-fix-microscopy" class="nav-link" data-scroll-target="#fix-microscopy"><span class="header-section-number">3.2</span> Fix (microscopy)</a></li>
+  <li><a href="#freeze-molecular" id="toc-freeze-molecular" class="nav-link" data-scroll-target="#freeze-molecular"><span class="header-section-number">3.3</span> Freeze (molecular)</a></li>
   </ul></li>
-  <li><a href="#spawn-night-checklist" id="toc-spawn-night-checklist" class="nav-link" data-scroll-target="#spawn-night-checklist">Spawn Night Checklist</a></li>
+  <li><a href="#spawn-night-checklist" id="toc-spawn-night-checklist" class="nav-link" data-scroll-target="#spawn-night-checklist"><span class="header-section-number">4</span> Spawn Night Checklist</a></li>
   </ul>
 </nav>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
@@ -446,14 +434,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="overview" class="level1">
-<h1>Overview</h1>
+<section id="overview" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Overview</h1>
 <p>This spawn night checklist was used on July 5th, 6th and 7th 2024 at the Hawaiian Institute of Marine Biology (HIMB) on Moku o Loe in Kaneohe Bay, Oahu. The overarching goal was to have a comprehensive checklist for sleep-deprived scientists to follow after 3 days of pulling nearly all-nighters to collect <strong>Montipora capitata</strong> egg-sperm bundles, conduct bundle-bundle cross fertilizations in 20mL scintillation vials, and then subsequently “Fix and Freeze” the embryos at 4 hours post fertilization (<code>4hpf</code>) when fertilized eggs should be reaching initial cleavage, <code>9hpf</code> when embryos should be in the ‘prawn chip’ phase, and <code>14hpf</code> when embryos should be in the early gastrula phase. The end goal is to see if low levels of PVC leachate (PVC having notably larger amounts of phthalates which are known endocrine disrupting chemicals) negatively impact fertilization success and embryonic development of <em>Montipora capitata</em> embryos.</p>
 </section>
-<section id="prep" class="level1">
-<h1>Prep</h1>
-<section id="make-stock-leachate" class="level2">
-<h2 class="anchored" data-anchor-id="make-stock-leachate">Make Stock Leachate</h2>
+<section id="prep" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Prep</h1>
+<section id="make-stock-leachate" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="make-stock-leachate"><span class="header-section-number">2.1</span> Make Stock Leachate</h2>
 <p>First make 400mL of each stock solution from the 1000 mg/L prepared leachate</p>
 <ul class="task-list">
 <li><p><label><input type="checkbox">Make 10 mg/L stock:</label></p>
@@ -470,8 +458,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>400mL of 0.1mg/L stock = 40mL of 1mg/L stock + 360mL of FSW</p></li>
 </ul>
 </section>
-<section id="load-20ml-scintillation-vials" class="level2">
-<h2 class="anchored" data-anchor-id="load-20ml-scintillation-vials">Load 20mL scintillation vials</h2>
+<section id="load-20ml-scintillation-vials" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="load-20ml-scintillation-vials"><span class="header-section-number">2.2</span> Load 20mL scintillation vials</h2>
 <p>For a 20mL scintillation vial for coral embryo experiments with a final target volume of 20mL:</p>
 <p><strong>1mg/L HIGH treatment</strong></p>
 <p>10mg/L * V1 = 1mg/L * 20mL</p>
@@ -486,8 +474,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>V1 = 2mL</p>
 <p>20mL of 0.01mg/L leachate = 18mL of FSW + 2mL of 0.1mg/L stock</p>
 </section>
-<section id="dilute-zfix" class="level2">
-<h2 class="anchored" data-anchor-id="dilute-zfix">Dilute ZFIX</h2>
+<section id="dilute-zfix" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="dilute-zfix"><span class="header-section-number">2.3</span> Dilute ZFIX</h2>
 <p>To preserve embryos for confocal microscope imaging, and visual determination of developmental stage, we have to preserve the embryo tissue and keep it from disintegrating, bursting, shredding… etc. To do that we can use ZFIX (zinc buffered formalin). There is a wide range (4-20%!) reported in the literature of ZFIX or paraformaldehye concentrations used for tissue preservation. We chose to work with 4% ZFIX. Some constraints we took into account are that FedEx will let you ship any volume of formalin as long as it’s below 10% concentration, and the less concentrated… the ‘safest’ it is for us to handle.</p>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -521,10 +509,10 @@ Important
 </div>
 </section>
 </section>
-<section id="protocol" class="level1">
-<h1>Protocol</h1>
-<section id="bundle-bundle-crosses" class="level2">
-<h2 class="anchored" data-anchor-id="bundle-bundle-crosses">Bundle-Bundle Crosses</h2>
+<section id="protocol" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Protocol</h1>
+<section id="bundle-bundle-crosses" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="bundle-bundle-crosses"><span class="header-section-number">3.1</span> Bundle-Bundle Crosses</h2>
 <p>To conduct bundle-bundle crosses use transfer pipettes to take one intact bundle from each of two genetically distinct parent colonies, and pop them into a single 20mL scintillation vial loaded with the treatment condition of the assay. In this case, each scintillation vial either had only 22 micron filtered seawater (control - 0 mg/L PVC leachate), a low environmental dose (low - 0.01 mg/L PVC leachate), a mid dose (mid - 0.1 mg/L PVC leachate), or a high dose (1mg/L PVC leachate). Each ‘n’ set of treatments, embryonic phases, and sample types (microscopy and molecular) should try to have the same genetic cross (aka same set of parent colonies).</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -541,19 +529,19 @@ Note
 </div>
 <p>As soon as bundles begin to hydrate and ‘break-up’, the ability to do bundle-bundle crosses ends. This gives you a very short (1 hour!) window, as spawning typically starts around ~8:45 - 9:15 PM, and bundles begin hydrating and breaking up ~10:00 - 10:40 PM. we found that a single person can feasibly cross 120 scintillation vials in this timeframe. In our experimental design, that translates to an ‘n’ of 5, or 5 ‘crosses’ each night of spawning.</p>
 </section>
-<section id="fix-microscopy" class="level2">
-<h2 class="anchored" data-anchor-id="fix-microscopy">Fix (microscopy)</h2>
+<section id="fix-microscopy" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="fix-microscopy"><span class="header-section-number">3.2</span> Fix (microscopy)</h2>
 <p>To fix embryos for later microscopic inspection we first used a new transfer pipette to gently transfer embryos from the 20mL scintillation vials to our 1.5mL snap-cap microcentrifuge tubes. We will then carefully pipette off (decant) as much excess FSW out of the tube as possible, and then add ~1mL of 4% ZFIX to each microcentrifuge tube in the fume hood. Then gently invert each capped scintillation vial to mix the ZFIX into the filtered seawater and sample. Arrange in a wax freezer box and set fixed vials in 4C fridge.</p>
 </section>
-<section id="freeze-molecular" class="level2">
-<h2 class="anchored" data-anchor-id="freeze-molecular">Freeze (molecular)</h2>
+<section id="freeze-molecular" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="freeze-molecular"><span class="header-section-number">3.3</span> Freeze (molecular)</h2>
 <p>We will use Zymo DNA/RNA Shield and -80C freezer storage to preserve embryos for RNA extraction and sequencing. We will first very gently use a new transfer pipette to transfer embryos from the 20mL scintillation vials to our 0.5mL screw-cap cryo-tubes. We will then carefully pipette off (decant) as much excess FSW out of the tube as possible, and then add 500uL of Zymo RNA/DNA Shield. Gently invert cryo-tubes a few times to ensure embryos are fully submerged. Once cryo-tubes are filled with their samples, arrange them in wax paper boxes and promptly shift them to -80°C freezer for storage until samples are ready to be processed. The combined DNA/RNA Shield and the quick freeze (due to small size) they will experience in the -80 are together sufficient for preserving RNA.</p>
 </section>
 </section>
-<section id="spawn-night-checklist" class="level1 page-columns page-full">
-<h1>Spawn Night Checklist</h1>
-<section id="section" class="level3">
-<h3 class="anchored" data-anchor-id="section">19:00 - 19:30</h3>
+<section id="spawn-night-checklist" class="level1 page-columns page-full" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Spawn Night Checklist</h1>
+<section id="section" class="level3" data-number="4.0.1">
+<h3 data-number="4.0.1" class="anchored" data-anchor-id="section"><span class="header-section-number">4.0.1</span> 19:00 - 19:30</h3>
 <ul class="task-list">
 <li><label><input type="checkbox">Move each colony to a numbered/named cambro chamber bin or 5 gallon bucket</label></li>
 <li><label><input type="checkbox">Ensure each colony has enough headspace so that bundles can rise to the surface</label></li>
@@ -561,8 +549,8 @@ Note
 <li><label><input type="checkbox">Decant water in chambers such that bouyant bundles don’t spill out</label></li>
 </ul>
 </section>
-<section id="section-1" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="section-1">19:30 - 20:00</h3>
+<section id="section-1" class="level3 page-columns page-full" data-number="4.0.2">
+<h3 data-number="4.0.2" class="anchored" data-anchor-id="section-1"><span class="header-section-number">4.0.2</span> 19:30 - 20:00</h3>
 <ul class="task-list">
 <li><p><label><input type="checkbox">Organize the following collection materials at the spawning tubs:</label></p>
 <ul class="task-list">
@@ -580,8 +568,8 @@ Note
 </ul></li>
 </ul>
 <div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;We used 0.22 micron filtered seawater, but 1.2 micron is also used for <em>Montipora capitata</em></p></div><div id="fn2"><p><sup>2</sup>&nbsp;‘Tip-clipped’ is optional and, like it sounds, is just snipping the tip of a transfer pipette just makes the transfer pipette tip a bit wider. A normal transfer pipette is actually totally fine for collecting small quantities of individual Montipora capitata egg-sperm bundles. If you want to clip the tips, it makes it easier to suck up larger masses of egg-sperm bundles all at once.</p></div></div></section>
-<section id="section-2" class="level3">
-<h3 class="anchored" data-anchor-id="section-2">20:50 - 21:20</h3>
+<section id="section-2" class="level3" data-number="4.0.3">
+<h3 data-number="4.0.3" class="anchored" data-anchor-id="section-2"><span class="header-section-number">4.0.3</span> 20:50 - 21:20</h3>
 <ul class="task-list">
 <li><label><input type="checkbox">Observe for setting (polyp expansion and bundle visibility) via red headlamp</label></li>
 <li><label><input type="checkbox">Find a spawner!</label></li>
@@ -590,16 +578,16 @@ Note
 <li><label><input type="checkbox">1 person will remain and continue to collect bundles from colonies, periodically transferring them to the bundle-bundle crossing station at the dry lab bench</label></li>
 </ul>
 </section>
-<section id="section-3" class="level3">
-<h3 class="anchored" data-anchor-id="section-3">21:20 - 22:00</h3>
+<section id="section-3" class="level3" data-number="4.0.4">
+<h3 data-number="4.0.4" class="anchored" data-anchor-id="section-3"><span class="header-section-number">4.0.4</span> 21:20 - 22:00</h3>
 <ul class="task-list">
 <li><label><input type="checkbox" checked="">Cross fertilize by taking one bundle each from two distinct colonies and transferring them to the same scintillation vial</label></li>
 <li><label><input type="checkbox" checked="">Record the parent colonies of each cross on the embryonic development metadata sheet</label></li>
 <li><label><input type="checkbox" checked="">Only transfer intact bundles! Once eggs break up and begin to hydrate, the spawn party is over</label></li>
 </ul>
 </section>
-<section id="section-4" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="section-4">22:00 - 22:30</h3>
+<section id="section-4" class="level3 page-columns page-full" data-number="4.0.5">
+<h3 data-number="4.0.5" class="anchored" data-anchor-id="section-4"><span class="header-section-number">4.0.5</span> 22:00 - 22:30</h3>
 <ul>
 <li><p><label><input type="checkbox">Observe scintillation vials for bundle breakup and egg hydration</label></p></li>
 <li><p><label><input type="checkbox" checked="">Record the times when the first and last vials experience hydration</label></p>
@@ -620,22 +608,22 @@ Note
 <li><label><input type="checkbox">(&amp; on July 6th make another batch of leachate!)</label></li>
 </ul>
 </div></div></section>
-<section id="section-5" class="level3">
-<h3 class="anchored" data-anchor-id="section-5">22:30 - 23:00</h3>
+<section id="section-5" class="level3" data-number="4.0.6">
+<h3 data-number="4.0.6" class="anchored" data-anchor-id="section-5"><span class="header-section-number">4.0.6</span> 22:30 - 23:00</h3>
 <ul class="task-list">
 <li><p><label><input type="checkbox">Return each colony to blue tank and remove chambers</label></p></li>
 <li><p><label><input type="checkbox">Return water height to normal</label></p></li>
 <li><p><label><input type="checkbox">Clean up anything left outside</label></p></li>
 </ul>
 </section>
-<section id="section-6" class="level3">
-<h3 class="anchored" data-anchor-id="section-6">23:00 - 01:45</h3>
+<section id="section-6" class="level3" data-number="4.0.7">
+<h3 data-number="4.0.7" class="anchored" data-anchor-id="section-6"><span class="header-section-number">4.0.7</span> 23:00 - 01:45</h3>
 <ul class="task-list">
 <li><label><input type="checkbox">2.5 hr nap time!</label></li>
 </ul>
 </section>
-<section id="section-7" class="level3">
-<h3 class="anchored" data-anchor-id="section-7">02:15 - 03:30</h3>
+<section id="section-7" class="level3" data-number="4.0.8">
+<h3 data-number="4.0.8" class="anchored" data-anchor-id="section-7"><span class="header-section-number">4.0.8</span> 02:15 - 03:30</h3>
 <ul class="task-list">
 <li><p><label><input type="checkbox">ZFIX 4hpf samples (4Z)</label></p>
 <ul class="task-list">
@@ -655,14 +643,14 @@ Note
 <li><p><label><input type="checkbox">Make PVC Leachate (on July 6th!)</label></p></li>
 </ul>
 </section>
-<section id="section-8" class="level3">
-<h3 class="anchored" data-anchor-id="section-8">03:30 - 06:45</h3>
+<section id="section-8" class="level3" data-number="4.0.9">
+<h3 data-number="4.0.9" class="anchored" data-anchor-id="section-8"><span class="header-section-number">4.0.9</span> 03:30 - 06:45</h3>
 <ul class="task-list">
 <li><label><input type="checkbox">3.25 hr nap time!</label></li>
 </ul>
 </section>
-<section id="section-9" class="level3">
-<h3 class="anchored" data-anchor-id="section-9">07:15 - 08:30</h3>
+<section id="section-9" class="level3" data-number="4.0.10">
+<h3 data-number="4.0.10" class="anchored" data-anchor-id="section-9"><span class="header-section-number">4.0.10</span> 07:15 - 08:30</h3>
 <ul class="task-list">
 <li><p><label><input type="checkbox">ZFIX 9hpf samples (9Z)</label></p>
 <ul class="task-list">
@@ -681,14 +669,14 @@ Note
 </ul></li>
 </ul>
 </section>
-<section id="section-10" class="level3">
-<h3 class="anchored" data-anchor-id="section-10">08:30 - 11:45</h3>
+<section id="section-10" class="level3" data-number="4.0.11">
+<h3 data-number="4.0.11" class="anchored" data-anchor-id="section-10"><span class="header-section-number">4.0.11</span> 08:30 - 11:45</h3>
 <ul class="task-list">
 <li><label><input type="checkbox">3.25 hr nap time!</label></li>
 </ul>
 </section>
-<section id="section-11" class="level3">
-<h3 class="anchored" data-anchor-id="section-11">12:15 - 13:30</h3>
+<section id="section-11" class="level3" data-number="4.0.12">
+<h3 data-number="4.0.12" class="anchored" data-anchor-id="section-11"><span class="header-section-number">4.0.12</span> 12:15 - 13:30</h3>
 <ul class="task-list">
 <li><p><label><input type="checkbox">ZFIX 14hpf samples (14Z)</label></p>
 <ul class="task-list">

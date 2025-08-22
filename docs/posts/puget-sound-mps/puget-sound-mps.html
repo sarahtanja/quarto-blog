@@ -97,9 +97,9 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -280,8 +280,7 @@ div.csl-indent {
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -294,14 +293,6 @@ div.csl-indent {
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -424,7 +415,7 @@ div.csl-indent {
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -434,21 +425,21 @@ div.csl-indent {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#who-monitors-marine-microplastics-in-puget-sound-and-the-salish-sea-and-what-are-they-finding" id="toc-who-monitors-marine-microplastics-in-puget-sound-and-the-salish-sea-and-what-are-they-finding" class="nav-link active" data-scroll-target="#who-monitors-marine-microplastics-in-puget-sound-and-the-salish-sea-and-what-are-they-finding">Who monitors marine microplastics in Puget Sound and the Salish Sea, and what are they finding?</a>
+  <li><a href="#who-monitors-marine-microplastics-in-puget-sound-and-the-salish-sea-and-what-are-they-finding" id="toc-who-monitors-marine-microplastics-in-puget-sound-and-the-salish-sea-and-what-are-they-finding" class="nav-link active" data-scroll-target="#who-monitors-marine-microplastics-in-puget-sound-and-the-salish-sea-and-what-are-they-finding"><span class="header-section-number">1</span> Who monitors marine microplastics in Puget Sound and the Salish Sea, and what are they finding?</a>
   <ul>
-  <li><a href="#seattle-aquarium" id="toc-seattle-aquarium" class="nav-link" data-scroll-target="#seattle-aquarium">Seattle Aquarium</a></li>
-  <li><a href="#puget-sound-ecosystem-monitoring-program-psemp" id="toc-puget-sound-ecosystem-monitoring-program-psemp" class="nav-link" data-scroll-target="#puget-sound-ecosystem-monitoring-program-psemp">Puget Sound Ecosystem Monitoring Program (PSEMP)</a></li>
-  <li><a href="#pollution-tracker" id="toc-pollution-tracker" class="nav-link" data-scroll-target="#pollution-tracker">Pollution Tracker</a></li>
-  <li><a href="#frances-eshom-arzadon-university-of-washington-school-of-oceanography" id="toc-frances-eshom-arzadon-university-of-washington-school-of-oceanography" class="nav-link" data-scroll-target="#frances-eshom-arzadon-university-of-washington-school-of-oceanography">Frances Eshom-Arzadon, University of Washington School of Oceanography</a></li>
-  <li><a href="#jessica-moats-university-of-washington-school-of-oceanography-vertical-distribution-of-microplastics-in-hood-canal-and-main-basin-puget-sound-washington" id="toc-jessica-moats-university-of-washington-school-of-oceanography-vertical-distribution-of-microplastics-in-hood-canal-and-main-basin-puget-sound-washington" class="nav-link" data-scroll-target="#jessica-moats-university-of-washington-school-of-oceanography-vertical-distribution-of-microplastics-in-hood-canal-and-main-basin-puget-sound-washington">Jessica Moats, University of Washington School of Oceanography, Vertical distribution of microplastics in Hood Canal and Main Basin, Puget Sound, Washington</a></li>
-  <li><a href="#keely-hall-university-of-washington-school-of-oceanography" id="toc-keely-hall-university-of-washington-school-of-oceanography" class="nav-link" data-scroll-target="#keely-hall-university-of-washington-school-of-oceanography">Keely Hall, University of Washington School of Oceanography</a></li>
-  <li><a href="#julie-masura-uw-tacoma-teaching-professor" id="toc-julie-masura-uw-tacoma-teaching-professor" class="nav-link" data-scroll-target="#julie-masura-uw-tacoma-teaching-professor">Julie Masura, UW Tacoma Teaching Professor</a></li>
-  <li><a href="#center-for-urban-waters" id="toc-center-for-urban-waters" class="nav-link" data-scroll-target="#center-for-urban-waters">Center for Urban Waters</a></li>
-  <li><a href="#pacific-northwest-consortium-on-plastics" id="toc-pacific-northwest-consortium-on-plastics" class="nav-link" data-scroll-target="#pacific-northwest-consortium-on-plastics">Pacific Northwest Consortium on Plastics</a></li>
+  <li><a href="#seattle-aquarium" id="toc-seattle-aquarium" class="nav-link" data-scroll-target="#seattle-aquarium"><span class="header-section-number">1.0.1</span> Seattle Aquarium</a></li>
+  <li><a href="#puget-sound-ecosystem-monitoring-program-psemp" id="toc-puget-sound-ecosystem-monitoring-program-psemp" class="nav-link" data-scroll-target="#puget-sound-ecosystem-monitoring-program-psemp"><span class="header-section-number">1.0.2</span> Puget Sound Ecosystem Monitoring Program (PSEMP)</a></li>
+  <li><a href="#pollution-tracker" id="toc-pollution-tracker" class="nav-link" data-scroll-target="#pollution-tracker"><span class="header-section-number">1.0.3</span> Pollution Tracker</a></li>
+  <li><a href="#frances-eshom-arzadon-university-of-washington-school-of-oceanography" id="toc-frances-eshom-arzadon-university-of-washington-school-of-oceanography" class="nav-link" data-scroll-target="#frances-eshom-arzadon-university-of-washington-school-of-oceanography"><span class="header-section-number">1.0.4</span> Frances Eshom-Arzadon, University of Washington School of Oceanography</a></li>
+  <li><a href="#jessica-moats-university-of-washington-school-of-oceanography-vertical-distribution-of-microplastics-in-hood-canal-and-main-basin-puget-sound-washington" id="toc-jessica-moats-university-of-washington-school-of-oceanography-vertical-distribution-of-microplastics-in-hood-canal-and-main-basin-puget-sound-washington" class="nav-link" data-scroll-target="#jessica-moats-university-of-washington-school-of-oceanography-vertical-distribution-of-microplastics-in-hood-canal-and-main-basin-puget-sound-washington"><span class="header-section-number">1.0.5</span> Jessica Moats, University of Washington School of Oceanography, Vertical distribution of microplastics in Hood Canal and Main Basin, Puget Sound, Washington</a></li>
+  <li><a href="#keely-hall-university-of-washington-school-of-oceanography" id="toc-keely-hall-university-of-washington-school-of-oceanography" class="nav-link" data-scroll-target="#keely-hall-university-of-washington-school-of-oceanography"><span class="header-section-number">1.0.6</span> Keely Hall, University of Washington School of Oceanography</a></li>
+  <li><a href="#julie-masura-uw-tacoma-teaching-professor" id="toc-julie-masura-uw-tacoma-teaching-professor" class="nav-link" data-scroll-target="#julie-masura-uw-tacoma-teaching-professor"><span class="header-section-number">1.0.7</span> Julie Masura, UW Tacoma Teaching Professor</a></li>
+  <li><a href="#center-for-urban-waters" id="toc-center-for-urban-waters" class="nav-link" data-scroll-target="#center-for-urban-waters"><span class="header-section-number">1.0.8</span> Center for Urban Waters</a></li>
+  <li><a href="#pacific-northwest-consortium-on-plastics" id="toc-pacific-northwest-consortium-on-plastics" class="nav-link" data-scroll-target="#pacific-northwest-consortium-on-plastics"><span class="header-section-number">1.0.9</span> Pacific Northwest Consortium on Plastics</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -487,10 +478,10 @@ Learning Objective
 <blockquote class="blockquote">
 <p>“Simply stated, we do not currently know levels of microplastics in the ocean (water, sediments, organisms), the spatial and temporal distribution of microplastics, the sources of these materials (either in absolute or relative terms), or the direct or indirect impacts microplastics may be having on marine life. From a basic understanding of the processes degrading plastic in the environment, it is likely that marine microplastics will persist in the ocean for very long times, and that levels of microplastics are likely accumulating world-wide (Thompson et al., 2004).” - <a href="https://www.tacoma.uw.edu/cuw/sources-and-distribution-marine-microplastics">Center for Urban Waters, Sources and Distribution of Marine Microplastics</a></p>
 </blockquote>
-<section id="who-monitors-marine-microplastics-in-puget-sound-and-the-salish-sea-and-what-are-they-finding" class="level1 page-columns page-full">
-<h1>Who monitors marine microplastics in Puget Sound and the Salish Sea, and what are they finding?</h1>
-<section id="seattle-aquarium" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="seattle-aquarium">Seattle Aquarium</h3>
+<section id="who-monitors-marine-microplastics-in-puget-sound-and-the-salish-sea-and-what-are-they-finding" class="level1 page-columns page-full" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Who monitors marine microplastics in Puget Sound and the Salish Sea, and what are they finding?</h1>
+<section id="seattle-aquarium" class="level3 page-columns page-full" data-number="1.0.1">
+<h3 data-number="1.0.1" class="anchored" data-anchor-id="seattle-aquarium"><span class="header-section-number">1.0.1</span> Seattle Aquarium</h3>
 <p><a href="https://www.seattleaquarium.org/conservation/research/plastics-marine-debris/">Seattle Aquarium,</a> Seattle, Washington engages in long-term monitoring of plastics and marine debris collected from their seawater intake pump and off the side of the pier where they are located. They published some of their data taken from 2019-2020 in <span class="citation" data-cites="harris2022">Harris et al. (<a href="#ref-harris2022" role="doc-biblioref">2022</a>)</span>, where they indicate they found between 0.0 and 0.64 microparticles sized between 330 μm to 5000 μm per liter of seawater sampled.</p>
 <div class="no-row-height column-margin column-container"></div><div class="page-columns page-full"><blockquote class="blockquote">
 <p>Only microparticles 330 to 5000 μm (length; Masura et al., 2015) were categorized and measured due to the resolution of the microscope and camera. - <span class="citation" data-cites="harris2022">Harris et al. (<a href="#ref-harris2022" role="doc-biblioref">2022</a>)</span>, p.&nbsp;919</p>
@@ -504,12 +495,12 @@ Harris, Lyda S. T., Laura La Beur, Amy Y. Olsen, Angela Smith, Lindsey Eggers, E
 <li><p>size class: 330 μm to 5000 μm</p></li>
 </ul>
 </section>
-<section id="puget-sound-ecosystem-monitoring-program-psemp" class="level3">
-<h3 class="anchored" data-anchor-id="puget-sound-ecosystem-monitoring-program-psemp">Puget Sound Ecosystem Monitoring Program (PSEMP)</h3>
+<section id="puget-sound-ecosystem-monitoring-program-psemp" class="level3" data-number="1.0.2">
+<h3 data-number="1.0.2" class="anchored" data-anchor-id="puget-sound-ecosystem-monitoring-program-psemp"><span class="header-section-number">1.0.2</span> Puget Sound Ecosystem Monitoring Program (PSEMP)</h3>
 <p><a href="https://www.eopugetsound.org/sites/default/files/features/resources/PSEMP_2022ToxicsMonitoringSynthesis_FINAL1.1.pdf">2022 Toxics Monitoring Synthesis</a></p>
 </section>
-<section id="pollution-tracker" class="level3">
-<h3 class="anchored" data-anchor-id="pollution-tracker">Pollution Tracker</h3>
+<section id="pollution-tracker" class="level3" data-number="1.0.3">
+<h3 data-number="1.0.3" class="anchored" data-anchor-id="pollution-tracker"><span class="header-section-number">1.0.3</span> Pollution Tracker</h3>
 <p>Coast-wide Marine Pollution Monitoring Program in British Columbia, Canada</p>
 <p>Elizabeth Ruberg, Marie Noel, Kelsey Delisle (Ocean Wise, <a href="https://pollutiontracker.org" class="uri">https://pollutiontracker.org</a>)</p>
 <p><a href="https://pollutiontracker.org/contaminants/microplastics/">Pollution Tracker, Microplastics</a></p>
@@ -526,8 +517,8 @@ Harris, Lyda S. T., Laura La Beur, Amy Y. Olsen, Angela Smith, Lindsey Eggers, E
 </ul></li>
 </ul>
 </section>
-<section id="frances-eshom-arzadon-university-of-washington-school-of-oceanography" class="level3">
-<h3 class="anchored" data-anchor-id="frances-eshom-arzadon-university-of-washington-school-of-oceanography">Frances Eshom-Arzadon, University of Washington School of Oceanography</h3>
+<section id="frances-eshom-arzadon-university-of-washington-school-of-oceanography" class="level3" data-number="1.0.4">
+<h3 data-number="1.0.4" class="anchored" data-anchor-id="frances-eshom-arzadon-university-of-washington-school-of-oceanography"><span class="header-section-number">1.0.4</span> Frances Eshom-Arzadon, University of Washington School of Oceanography</h3>
 <ul>
 <li><p>Undergrad senior thesis: <a href="https://digital.lib.washington.edu/researchworks/handle/1773/39723">Concentration of Microplastics in Beach Sediments Surrounding Seattle, Washington in the Puget Sound Estuary</a></p></li>
 <li><p>size class: 300 - 5000 um</p></li>
@@ -656,8 +647,8 @@ font family not found in Windows font database</code></pre>
 <p>“As part of her <a href="#0">senior thesis</a> project, Eshom-Arzadon visited each location once at the same time in the tidal cycle between November and February. She scraped sediment from an area just below the wrack line, the line of debris left by the high tide. She visited beaches from Tolmie State Park near Olympia, along the Seattle and Everett shorelines and as far out as Port Ludlow on the Olympic Peninsula, a control site far from populated areas.” - <a href="#0">Hannah Hickey, UW News</a></p>
 </blockquote>
 </section>
-<section id="jessica-moats-university-of-washington-school-of-oceanography-vertical-distribution-of-microplastics-in-hood-canal-and-main-basin-puget-sound-washington" class="level3">
-<h3 class="anchored" data-anchor-id="jessica-moats-university-of-washington-school-of-oceanography-vertical-distribution-of-microplastics-in-hood-canal-and-main-basin-puget-sound-washington">Jessica Moats, University of Washington School of Oceanography, Vertical distribution of microplastics in Hood Canal and Main Basin, Puget Sound, Washington</h3>
+<section id="jessica-moats-university-of-washington-school-of-oceanography-vertical-distribution-of-microplastics-in-hood-canal-and-main-basin-puget-sound-washington" class="level3" data-number="1.0.5">
+<h3 data-number="1.0.5" class="anchored" data-anchor-id="jessica-moats-university-of-washington-school-of-oceanography-vertical-distribution-of-microplastics-in-hood-canal-and-main-basin-puget-sound-washington"><span class="header-section-number">1.0.5</span> Jessica Moats, University of Washington School of Oceanography, Vertical distribution of microplastics in Hood Canal and Main Basin, Puget Sound, Washington</h3>
 <ul>
 <li>undergrad senior thesis</li>
 <li>mentored by Kathy Newell</li>
@@ -667,8 +658,8 @@ font family not found in Windows font database</code></pre>
 <li>So we’re looking at 3.05X10-8 grams per liter in seawater</li>
 </ul>
 </section>
-<section id="keely-hall-university-of-washington-school-of-oceanography" class="level3">
-<h3 class="anchored" data-anchor-id="keely-hall-university-of-washington-school-of-oceanography">Keely Hall, University of Washington School of Oceanography</h3>
+<section id="keely-hall-university-of-washington-school-of-oceanography" class="level3" data-number="1.0.6">
+<h3 data-number="1.0.6" class="anchored" data-anchor-id="keely-hall-university-of-washington-school-of-oceanography"><span class="header-section-number">1.0.6</span> Keely Hall, University of Washington School of Oceanography</h3>
 <ul>
 <li><p>net tows through Commencement Bay</p></li>
 <li><p>seawater matrix</p></li>
@@ -680,16 +671,16 @@ font family not found in Windows font database</code></pre>
 <li><p>~4-12 particles per liter in 2018</p></li>
 </ul>
 </section>
-<section id="julie-masura-uw-tacoma-teaching-professor" class="level3">
-<h3 class="anchored" data-anchor-id="julie-masura-uw-tacoma-teaching-professor"><a href="https://www.tacoma.uw.edu/news/mud-bugs-andplastic">Julie Masura</a>, <a href="https://directory.tacoma.uw.edu/employee/jmasura?_gl=1*1795dne*_ga*MzY0NzA1ODYuMTY0MzgyNTE5MQ..*_ga_3T65WK0BM8*MTcxMzIxMjI0MS4yNS4xLjE3MTMyMTMyMzkuMC4wLjA.*_ga_JLHM9WH4JV*MTcxMzIxMjI0MS4yNS4xLjE3MTMyMTMyMzkuMC4wLjA.">UW Tacoma Teaching Professor</a></h3>
+<section id="julie-masura-uw-tacoma-teaching-professor" class="level3" data-number="1.0.7">
+<h3 data-number="1.0.7" class="anchored" data-anchor-id="julie-masura-uw-tacoma-teaching-professor"><span class="header-section-number">1.0.7</span> <a href="https://www.tacoma.uw.edu/news/mud-bugs-andplastic">Julie Masura</a>, <a href="https://directory.tacoma.uw.edu/employee/jmasura?_gl=1*1795dne*_ga*MzY0NzA1ODYuMTY0MzgyNTE5MQ..*_ga_3T65WK0BM8*MTcxMzIxMjI0MS4yNS4xLjE3MTMyMTMyMzkuMC4wLjA.*_ga_JLHM9WH4JV*MTcxMzIxMjI0MS4yNS4xLjE3MTMyMTMyMzkuMC4wLjA.">UW Tacoma Teaching Professor</a></h3>
 </section>
-<section id="center-for-urban-waters" class="level3">
-<h3 class="anchored" data-anchor-id="center-for-urban-waters"><a href="https://www.tacoma.uw.edu/cuw/sources-and-distribution-marine-microplastics">Center for Urban Waters</a></h3>
+<section id="center-for-urban-waters" class="level3" data-number="1.0.8">
+<h3 data-number="1.0.8" class="anchored" data-anchor-id="center-for-urban-waters"><span class="header-section-number">1.0.8</span> <a href="https://www.tacoma.uw.edu/cuw/sources-and-distribution-marine-microplastics">Center for Urban Waters</a></h3>
 <p><a href="https://pugetsoundkeeper.org/maps/puget-sound-microplastic-community-science-initiative/">Puget Soundkeeper Microplastic Community Science Initiative</a></p>
 <p>via EPA Microplastic Beach Sediment Protocol and <a href="https://debristracker.org/data">Marine Debris Tracker</a></p>
 </section>
-<section id="pacific-northwest-consortium-on-plastics" class="level3">
-<h3 class="anchored" data-anchor-id="pacific-northwest-consortium-on-plastics"><a href="https://www.pnwmicroplastics.org/">Pacific Northwest Consortium on Plastics</a></h3>
+<section id="pacific-northwest-consortium-on-plastics" class="level3" data-number="1.0.9">
+<h3 data-number="1.0.9" class="anchored" data-anchor-id="pacific-northwest-consortium-on-plastics"><span class="header-section-number">1.0.9</span> <a href="https://www.pnwmicroplastics.org/">Pacific Northwest Consortium on Plastics</a></h3>
 <p>Oceanography senior thesis archive, microplastics search: <a href="https://digital.lib.washington.edu/researchworks/handle/1773/2306/discover" class="uri">https://digital.lib.washington.edu/researchworks/handle/1773/2306/discover</a></p>
 
 

@@ -33,16 +33,16 @@
 
 
 
-<section id="background-research" class="level1">
-<h1>Background research</h1>
+<section id="background-research" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Background research</h1>
 <ul>
 <li><p>Watch this 10min video tutorial: <a href="https://www.youtube.com/watch?v=PTg9Ru68fc0">How to Submit to SRA, A Beginner’s Guide</a></p></li>
 <li><p>Read the <a href="https://www.ncbi.nlm.nih.gov/sra/docs/submitportal/">SRA Submission Wizard Help</a> page</p></li>
 <li><p>Checkout info link on metadata for microbiome datasets <a href="https://www.ncbi.nlm.nih.gov/biosample/docs/organism/#metagenomes:~:text=An%20official%20website%20of%20the%20United%20States%20government,Metagenomes%20(Microbiomes),-We%20consider%20any">Metagenomes (Microbiomes)</a></p></li>
 </ul>
 </section>
-<section id="log-in-to-ncbi" class="level1">
-<h1>Log in to NCBI</h1>
+<section id="log-in-to-ncbi" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Log in to NCBI</h1>
 <p>Navigate to the NCBI Submission Portal: <a href="https://submit.ncbi.nlm.nih.gov/" class="uri">https://submit.ncbi.nlm.nih.gov/</a></p>
 <p>Log-in through a partner sign-in, or sign-up directly with NCBI to create an account.</p>
 <p><img src="https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi-login.png" class="img-fluid"></p>
@@ -55,24 +55,24 @@
 <p>Click <strong>New Submission</strong></p>
 <p>There are 5 steps to submission:</p>
 </section>
-<section id="submitter-contact-info-fill-this-out" class="level1">
-<h1>1. Submitter contact info (fill this out)</h1>
+<section id="submitter-contact-info-fill-this-out" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> 1. Submitter contact info (fill this out)</h1>
 </section>
-<section id="general-info" class="level1">
-<h1>2. General Info</h1>
+<section id="general-info" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> 2. General Info</h1>
 <p><img src="https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi-general-info.png" class="img-fluid"></p>
 <p>Click <strong>CONTINUE</strong></p>
 </section>
-<section id="project-info" class="level1">
-<h1>3. Project Info</h1>
+<section id="project-info" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> 3. Project Info</h1>
 <ul>
 <li><p>Project Title</p></li>
 <li><p>Public description</p></li>
 <li><p>Grants</p></li>
 </ul>
 </section>
-<section id="biosample-type" class="level1">
-<h1>4. Biosample Type</h1>
+<section id="biosample-type" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> 4. Biosample Type</h1>
 <ul>
 <li><p>Typed in <em>Montipora capitata</em></p></li>
 <li><p>Under displayed NCBI packages I selected ‘<strong>Invertebrate</strong>’</p></li>
@@ -82,8 +82,8 @@
 <li>Clicked <strong>CONTINUE</strong></li>
 </ul>
 </section>
-<section id="biosample-attributes" class="level1">
-<h1>5. Biosample Attributes</h1>
+<section id="biosample-attributes" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> 5. Biosample Attributes</h1>
 <ul>
 <li><p>Use built-in table editor</p>
 <p>The following are the columns:</p></li>
@@ -165,12 +165,12 @@
 </ul>
 <p>Click CONTINUE</p>
 </section>
-<section id="sra-metadata" class="level1">
-<h1>6. SRA Metadata</h1>
+<section id="sra-metadata" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> 6. SRA Metadata</h1>
 <p>I provided metadata with the built-in table editor, and copied columns from my metadata google sheet into the NIH Submission Portal.</p>
 </section>
-<section id="file-upload" class="level1">
-<h1>7. File Upload</h1>
+<section id="file-upload" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> 7. File Upload</h1>
 <p><img src="https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/provide-files.png" class="img-fluid"></p>
 <p>SRA file transfer protocol directions <a href="https://www.ncbi.nlm.nih.gov/sra/docs/submitfiles/#file-transfer-protocol-ftp">here</a></p>
 <p>Expand the FTP instructions section to follow instuctions mput</p>
@@ -363,15 +363,15 @@ Tip
 
 
 <p>So you got an email from Azenta saying your files are ready for download! Exciting! It’s the moment we’ve been waiting for. What next??</p>
-<section id="background-research" class="level1">
-<h1>Background research</h1>
+<section id="background-research" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Background research</h1>
 <ul>
 <li><p>Watch this 10min video tutorial: <a href="https://www.youtube.com/watch?v=PTg9Ru68fc0">How to Submit to SRA, A Beginner’s Guide</a></p></li>
 <li><p>Read the <a href="https://www.ncbi.nlm.nih.gov/sra/docs/submitportal/">SRA Submission Wizard Help</a> page</p></li>
 </ul>
 </section>
-<section id="log-in-to-ncbi" class="level1">
-<h1>Log in to NCBI</h1>
+<section id="log-in-to-ncbi" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Log in to NCBI</h1>
 <p>Navigate to the NCBI Submission Portal: <a href="https://submit.ncbi.nlm.nih.gov/" class="uri">https://submit.ncbi.nlm.nih.gov/</a></p>
 <p>Log-in through a partner sign-in, or sign-up directly with NCBI to create an account.</p>
 <p><img src="https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi-login.png" class="img-fluid"></p>
@@ -384,24 +384,24 @@ Tip
 <p>Click <strong>New Submission</strong></p>
 <p>There are 5 steps to submission:</p>
 </section>
-<section id="submitter-contact-info-fill-this-out" class="level1">
-<h1>1. Submitter contact info (fill this out)</h1>
+<section id="submitter-contact-info-fill-this-out" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> 1. Submitter contact info (fill this out)</h1>
 </section>
-<section id="general-info" class="level1">
-<h1>2. General Info</h1>
+<section id="general-info" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> 2. General Info</h1>
 <p><img src="https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi-general-info.png" class="img-fluid"></p>
 <p>Click <strong>CONTINUE</strong></p>
 </section>
-<section id="project-info" class="level1">
-<h1>3. Project Info</h1>
+<section id="project-info" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> 3. Project Info</h1>
 <ul>
 <li><p>Project Title</p></li>
 <li><p>Public description</p></li>
 <li><p>Grants</p></li>
 </ul>
 </section>
-<section id="biosample-type" class="level1">
-<h1>4. Biosample Type</h1>
+<section id="biosample-type" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> 4. Biosample Type</h1>
 <ul>
 <li><p>Typed in <em>Montipora capitata</em></p></li>
 <li><p>Under displayed NCBI packages I selected ‘<strong>Invertebrate</strong>’</p></li>
@@ -411,8 +411,8 @@ Tip
 <li>Clicked <strong>CONTINUE</strong></li>
 </ul>
 </section>
-<section id="biosample-attributes" class="level1">
-<h1>5. Biosample Attributes</h1>
+<section id="biosample-attributes" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> 5. Biosample Attributes</h1>
 <ul>
 <li><p>Use built-in table editor</p>
 <p>The following are the columns:</p></li>
@@ -420,8 +420,8 @@ Tip
 <li><p>Sample title</p></li>
 </ul>
 </section>
-<section id="sra-metadata" class="level1">
-<h1>6. SRA Metadata</h1>
+<section id="sra-metadata" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> 6. SRA Metadata</h1>
 
 
 <!-- -->
@@ -501,16 +501,16 @@ Connected to sftp.genewiz.com.</code></pre>
 
 
 
-<section id="sequence-files-background" class="level1">
-<h1>Sequence files background</h1>
+<section id="sequence-files-background" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Sequence files background</h1>
 <p>We’ve extracted totalRNA and shipped it to Azenta for sequencing… so what happens next? How did we go from working with microcentrifuge tubes in the lab to large files on the computer?</p>
 <p>First they run the total RNA through quality assessment and quality control steps (QAQC) to make sure it is sufficient in quantity and quality to sequence. Here is the QAQC report from Azenta:</p>
 <p>The total RNA is then subjected to library prep, where the RNA is turned into cDNA.</p>
 <p>The cDNA is what is actually sequenced, with an Illumina sequencer, 20 million reads, Poly-A selection,</p>
 <p>The raw FASTA files come back <code>demultiplexed</code></p>
 </section>
-<section id="coding-resources" class="level1">
-<h1>Coding resources</h1>
+<section id="coding-resources" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Coding resources</h1>
 <p>This roadmap was built off the following resources and references from:</p>
 <ul>
 <li><p>Sam White</p>
@@ -550,18 +550,18 @@ Connected to sftp.genewiz.com.</code></pre>
 </ul></li>
 </ul>
 </section>
-<section id="pipeline-birds-eye-view" class="level1">
-<h1>Pipeline birds-eye view</h1>
-<section id="receive-raw-fasta-files" class="level2">
-<h2 class="anchored" data-anchor-id="receive-raw-fasta-files">1. Receive raw FASTA files</h2>
+<section id="pipeline-birds-eye-view" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Pipeline birds-eye view</h1>
+<section id="receive-raw-fasta-files" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="receive-raw-fasta-files"><span class="header-section-number">3.1</span> 1. Receive raw FASTA files</h2>
 <ul>
 <li><p>files are already <code>demultiplexed</code></p></li>
 <li><p>files have a <code>.fasta.gz</code> zipped format</p></li>
 <li><p>files must checked to make sure there were no errors in the transfer process (this is done with <code>md5sum</code> )</p></li>
 </ul>
 </section>
-<section id="qaqc-fasta-files" class="level2">
-<h2 class="anchored" data-anchor-id="qaqc-fasta-files">2. QAQC FASTA files</h2>
+<section id="qaqc-fasta-files" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="qaqc-fasta-files"><span class="header-section-number">3.2</span> 2. QAQC FASTA files</h2>
 <div class="callout callout-style-simple callout-tip no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -584,8 +584,8 @@ Connected to sftp.genewiz.com.</code></pre>
 <li><p>Repeat cleaning steps if needed</p></li>
 </ul>
 </section>
-<section id="align-to-reference-genome-assemble" class="level2">
-<h2 class="anchored" data-anchor-id="align-to-reference-genome-assemble">3. Align to reference genome &amp; assemble</h2>
+<section id="align-to-reference-genome-assemble" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="align-to-reference-genome-assemble"><span class="header-section-number">3.3</span> 3. Align to reference genome &amp; assemble</h2>
 <div class="callout callout-style-simple callout-note no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -610,21 +610,21 @@ Connected to sftp.genewiz.com.</code></pre>
 <li><code>StringTie 2</code> , <code>samtools</code> ,</li>
 </ul>
 </section>
-<section id="create-gene-expression-count-matrix" class="level2">
-<h2 class="anchored" data-anchor-id="create-gene-expression-count-matrix">4. Create gene expression count matrix</h2>
+<section id="create-gene-expression-count-matrix" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="create-gene-expression-count-matrix"><span class="header-section-number">3.4</span> 4. Create gene expression count matrix</h2>
 <ul>
 <li>Python script <code>prepDE.py</code> from Steven’s <a href="https://sr320.github.io/tumbling-oysters/posts/sr320-15-coddeg/#5-stringtie">Differentially Expressed Genes</a> post</li>
 <li>Another example by Sam <a href="https://robertslab.github.io/sams-notebook/posts/2024/2024-10-08-RNA-seq-Alignment---A.pulchra-RNA-seq-Alignments-Using-HISAT2-and-StringTie-for-Azenta-Project-30-1047560508/#generate-checksums">here</a> which uses <code>python3</code></li>
 </ul>
 </section>
-<section id="data-exploration-using-r-deseq2" class="level2">
-<h2 class="anchored" data-anchor-id="data-exploration-using-r-deseq2">5. Data exploration using R &amp; DESeq2</h2>
+<section id="data-exploration-using-r-deseq2" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="data-exploration-using-r-deseq2"><span class="header-section-number">3.5</span> 5. Data exploration using R &amp; DESeq2</h2>
 <ul>
 <li><code>DESeq-2</code> vignette found <a href="https://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#standard-workflow">here</a></li>
 </ul>
 </section>
-<section id="identify-differentially-expressed-genes-degs" class="level2">
-<h2 class="anchored" data-anchor-id="identify-differentially-expressed-genes-degs">6. Identify differentially expressed genes (DEG)s</h2>
+<section id="identify-differentially-expressed-genes-degs" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="identify-differentially-expressed-genes-degs"><span class="header-section-number">3.6</span> 6. Identify differentially expressed genes (DEG)s</h2>
 <ul>
 <li><p><code>DESeq-2</code> vignette found <a href="https://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#standard-workflow">here</a></p></li>
 <li><p><a href="https://marineomics.github.io/DGE_comparison_v2.html">Multifactorial DE Analysis</a></p></li>
@@ -654,10 +654,10 @@ Connected to sftp.genewiz.com.</code></pre>
 
 
 
-<section id="jimenez-guri-et-al.-2023" class="level1 page-columns page-full">
-<h1>Jimenez-Guri et al., 2023</h1>
-<section id="pvc-pellet-leachates-affect-adult-immune-system-and-embryonic-development-but-not-reproductive-capacity-in-the-sea-urchin-paracentrotus-lividus" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="pvc-pellet-leachates-affect-adult-immune-system-and-embryonic-development-but-not-reproductive-capacity-in-the-sea-urchin-paracentrotus-lividus"><strong>PVC pellet leachates affect adult immune system and embryonic development but not reproductive capacity in the sea urchin <em>Paracentrotus lividus</em></strong></h2>
+<section id="jimenez-guri-et-al.-2023" class="level1 page-columns page-full" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Jimenez-Guri et al., 2023</h1>
+<section id="pvc-pellet-leachates-affect-adult-immune-system-and-embryonic-development-but-not-reproductive-capacity-in-the-sea-urchin-paracentrotus-lividus" class="level2 page-columns page-full" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="pvc-pellet-leachates-affect-adult-immune-system-and-embryonic-development-but-not-reproductive-capacity-in-the-sea-urchin-paracentrotus-lividus"><span class="header-section-number">1.1</span> <strong>PVC pellet leachates affect adult immune system and embryonic development but not reproductive capacity in the sea urchin <em>Paracentrotus lividus</em></strong></h2>
 <p><span class="citation" data-cites="jimenez-guri2023">(<strong>jimenez-guri2023?</strong>)</span> either exposed adult sea urchins <em>Paracentrotus lividus</em> to excessively high<sup>1</sup> levels of PVC leachate or filtered seawater control for 2 weeks, and then force-spawned twice (once at the end of week 1 and once at the end of week 2) where embryos from control and exposed adults were split and incubated for development in either a filtered seawater control or a 65g/L PVC leachate (they call this 10% PVC leachate) treatment.</p>
 <div class="no-row-height column-margin column-container"><div id="fn1"><ul><sup>1</sup>&nbsp;
 <li><p>1000X higher than environmental measurements in the meditereanean (Middag et al., 2022)</p></li>
@@ -669,47 +669,47 @@ Connected to sftp.genewiz.com.</code></pre>
 </blockquote>
 </section>
 </section>
-<section id="rendell-bhatti-et-al.-2021" class="level1">
-<h1>Rendell-Bhatti et al., 2021</h1>
-<section id="developmental-toxicity-of-plastic-leachates-on-the-sea-urchin-paracentrotus-lividus" class="level2">
-<h2 class="anchored" data-anchor-id="developmental-toxicity-of-plastic-leachates-on-the-sea-urchin-paracentrotus-lividus"><strong>Developmental toxicity of plastic leachates on the sea urchin <em>Paracentrotus lividus</em></strong></h2>
+<section id="rendell-bhatti-et-al.-2021" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Rendell-Bhatti et al., 2021</h1>
+<section id="developmental-toxicity-of-plastic-leachates-on-the-sea-urchin-paracentrotus-lividus" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="developmental-toxicity-of-plastic-leachates-on-the-sea-urchin-paracentrotus-lividus"><span class="header-section-number">2.1</span> <strong>Developmental toxicity of plastic leachates on the sea urchin <em>Paracentrotus lividus</em></strong></h2>
 <blockquote class="blockquote">
 <p>Using the sea urchin Paracentrotus lividus as a model, we studied the effects of leachates of three forms of plastic pellet: new industrial pre-production plastic nurdles, beached pre-production nurdles, and floating filters, known as biobeads, also retrieved from the environment. Our chemical analyses show that leachates from beached pellets (biobead and nurdle pellets) and highly plasticised industrial pellets (PVC) contain polycyclic aromatic hydrocarbons and polychlorinated biphenyls, which are known to be detrimental to development and other life stages of animals. We also demonstrate that these microplastic leachates elicit severe, consistent and treatment-specific developmental abnormalities in P. lividus at embryonic and larval stages. Those embryos exposed to virgin polyethylene leachates with no additives nor environmental contaminants developed normally, suggesting that the abnormalities observed are the result of exposure to either environmentally adsorbed contaminants or pre-existing industrial additives within the polymer matrix. In the light of the chemical contents of the leachates and other characteristics of the plastic particles used, we discuss the phenotypes observed during our study, which include abnormal gastrulation, impaired skeletogenesis, abnormal neurogenesis, redistribution of pigmented cells and embryo radialisation <span class="citation" data-cites="rendell-bhatti2021">(<strong>rendell-bhatti2021?</strong>)</span>.</p>
 </blockquote>
 <p>This study used the same leachate preparation and concentrations as above.</p>
 </section>
 </section>
-<section id="gambardella-et-al.-2024" class="level1">
-<h1>Gambardella et al., 2024</h1>
-<section id="high-concentrations-of-phthalates-affect-the-early-development-of-the-sea-urchin-paracentrotus-lividus" class="level2">
-<h2 class="anchored" data-anchor-id="high-concentrations-of-phthalates-affect-the-early-development-of-the-sea-urchin-paracentrotus-lividus"><strong>High concentrations of phthalates affect the early development of the sea urchin <em>Paracentrotus lividus</em></strong></h2>
+<section id="gambardella-et-al.-2024" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Gambardella et al., 2024</h1>
+<section id="high-concentrations-of-phthalates-affect-the-early-development-of-the-sea-urchin-paracentrotus-lividus" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="high-concentrations-of-phthalates-affect-the-early-development-of-the-sea-urchin-paracentrotus-lividus"><span class="header-section-number">3.1</span> <strong>High concentrations of phthalates affect the early development of the sea urchin <em>Paracentrotus lividus</em></strong></h2>
 <blockquote class="blockquote">
 <p>The toxicity of three phthalates (PAEs) - butylbenzyl phthalate (BBP), diethyl phthalate (DEP), and di-(2-ethylhexyl) phthalate (DEHP) - was tested on the Mediterranean sea urchin Paracentrotus lividus. Fertilized eggs were exposed to environmental and high PAE concentrations for 72 h. The potential toxic effects on larval development and any morphological anomalies were then assessed to estimate PAEs impact. Environmental concentrations never affected development, while high concentrations induced toxic effects in larvae exposed to BBP (EC50: 2.9 ×103 μg/L) and DEHP (EC50: 3.72 ×103 μg/L). High concentrations caused skeletal anomalies, with a slight to moderate impact for DEP/DEHP and BBP, respectively. PAE toxicity was: BBP&gt;DEHP&gt;DEP. In conclusion, the three PAEs at environmental concentrations do not pose a risk to sea urchins. However, PAE concentrations should be further monitored in order not to constitute a concern to marine species, especially at their early developmental stages. - <span class="citation" data-cites="gambardella2024">(<strong>gambardella2024?</strong>)</span></p>
 </blockquote>
 </section>
 </section>
-<section id="gandara-e-silva-et-al.-2016" class="level1">
-<h1>Gandara e Silva et al., 2016</h1>
-<section id="leachate-from-microplastics-impairs-larval-development-in-brown-mussels" class="level2">
-<h2 class="anchored" data-anchor-id="leachate-from-microplastics-impairs-larval-development-in-brown-mussels"><strong>Leachate from microplastics impairs larval development in brown mussels</strong></h2>
+<section id="gandara-e-silva-et-al.-2016" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Gandara e Silva et al., 2016</h1>
+<section id="leachate-from-microplastics-impairs-larval-development-in-brown-mussels" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="leachate-from-microplastics-impairs-larval-development-in-brown-mussels"><span class="header-section-number">4.1</span> <strong>Leachate from microplastics impairs larval development in brown mussels</strong></h2>
 <blockquote class="blockquote">
 <p>In this study, we conducted experiments to evaluate the toxicity of leachates from virgin and beached plastic pellets to embryo development of the brown mussel (Perna perna). We compared the efficiency of two test procedures, and evaluated the toxicity of beached pellets collected in a coastal marine protected area. We observed that mussel embryo is sensitive to leachate from both virgin and beached pellets. However, the toxicity of the leachate from beached pellets was much higher than that of virgin pellets. We suggest contaminants adsorbed onto the surface of beached pellets were responsible for the high toxicity of leachate from beached pellets, while the toxicity of leachate from virgin pellets was mainly due to plastic additives. Our results suggest microplastic debris may be harmful even if ingestion is not the only or main pathway of interaction of marine organisms with contaminated plastic debris. - <span class="citation" data-cites="gandaraesilva2016">(<strong>gandaraesilva2016?</strong>)</span></p>
 </blockquote>
 </section>
 </section>
-<section id="mincarelli-et-al.-2021" class="level1">
-<h1>Mincarelli et al., 2021</h1>
-<section id="consequences-of-combined-exposure-to-thermal-stress-and-the-plasticiser-dehp-in-mytilus-spp.-differ-by-sex" class="level2">
-<h2 class="anchored" data-anchor-id="consequences-of-combined-exposure-to-thermal-stress-and-the-plasticiser-dehp-in-mytilus-spp.-differ-by-sex"><strong>Consequences of combined exposure to thermal stress and the plasticiser DEHP in <em>Mytilus spp.</em> differ by sex</strong></h2>
+<section id="mincarelli-et-al.-2021" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Mincarelli et al., 2021</h1>
+<section id="consequences-of-combined-exposure-to-thermal-stress-and-the-plasticiser-dehp-in-mytilus-spp.-differ-by-sex" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="consequences-of-combined-exposure-to-thermal-stress-and-the-plasticiser-dehp-in-mytilus-spp.-differ-by-sex"><span class="header-section-number">5.1</span> <strong>Consequences of combined exposure to thermal stress and the plasticiser DEHP in <em>Mytilus spp.</em> differ by sex</strong></h2>
 <blockquote class="blockquote">
 <p>Little is known about the combined effect of environmental factors and contaminants on commercially important marine species, and whether this effect differs by sex. In this study, blue mussels were exposed for seven days to both single and combined stressors (i.e., +3 ◦C elevated temperature and two environmentally relevant concentrations of the plastic softener DEHP, 0.5 and 50 μg/l) in a factorial design. Males were observed to be more sensitive to high temperature, demonstrated by the significant increase in out-of-season spawning gonads and higher gene expression of the antioxidant catalase and the estrogen receptor genes. On the other hand, while the gametogenesis cycle in females was more resilient than in males, DEHP exposure altered the estrogen-related receptor gene expression. We show that the combined stressors DEHP and increased temperature, in environmentally relevant magnitudes, have different consequences in male and female mussels, with the potential to impact the timing and breeding season success in Mytilus spp. - <span class="citation" data-cites="mincarelli2021">(<strong>mincarelli2021?</strong>)</span></p>
 </blockquote>
 </section>
 </section>
-<section id="paganos-et-al.-2023" class="level1">
-<h1>Paganos et al., 2023</h1>
-<section id="plastic-leachate-induced-toxicity-during-sea-urchin-embryonic-development-insights-into-the-molecular-pathways-affected-by-pvc" class="level2">
-<h2 class="anchored" data-anchor-id="plastic-leachate-induced-toxicity-during-sea-urchin-embryonic-development-insights-into-the-molecular-pathways-affected-by-pvc"><strong>Plastic leachate-induced toxicity during sea urchin embryonic development: Insights into the molecular pathways affected by PVC</strong></h2>
+<section id="paganos-et-al.-2023" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Paganos et al., 2023</h1>
+<section id="plastic-leachate-induced-toxicity-during-sea-urchin-embryonic-development-insights-into-the-molecular-pathways-affected-by-pvc" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="plastic-leachate-induced-toxicity-during-sea-urchin-embryonic-development-insights-into-the-molecular-pathways-affected-by-pvc"><span class="header-section-number">6.1</span> <strong>Plastic leachate-induced toxicity during sea urchin embryonic development: Insights into the molecular pathways affected by PVC</strong></h2>
 <blockquote class="blockquote">
 <p>Here we investigate the effects of leachates from new and beach-collected pellets on the embryonic and&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/larval-development" title="Learn more about larval development from ScienceDirect's AI-generated Topic Pages">larval development</a>&nbsp;of the&nbsp;<a href="https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/sea-urchin" title="Learn more about sea urchin from ScienceDirect's AI-generated Topic Pages">sea urchin</a>&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/strongylocentrotus-purpuratus" title="Learn more about Strongylocentrotus purpuratus from ScienceDirect's AI-generated Topic Pages">Strongylocentrotus purpuratus</a>&nbsp;and demonstrate that exposure of developing embryos to these leachates elicits severe, consistent and treatment-specific developmental abnormalities including radialisation of the embryo and&nbsp;<a href="https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/congenital-malformation" title="Learn more about malformation from ScienceDirect's AI-generated Topic Pages">malformation</a>&nbsp;of the&nbsp;<a href="https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/skeleton" title="Learn more about skeleton from ScienceDirect's AI-generated Topic Pages">skeleton</a>, neural and&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/immunocompetent-cell" title="Learn more about immune cells from ScienceDirect's AI-generated Topic Pages">immune cells</a>. Using a multi-omics approach we define the developmental pathways disturbed upon exposure to PVC leachates and provide a mechanistic view that pinpoints cellular&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/redox-stress" title="Learn more about redox stress from ScienceDirect's AI-generated Topic Pages">redox stress</a>&nbsp;and energy production as drivers of phenotypic abnormalities following exposure to PVC leachates. Analysis of leachates identified high concentrations of zinc that are the likely cause of these observed defects. Our findings point to clear and specific detrimental effects of marine&nbsp;<a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/plastic-pollution" title="Learn more about plastic pollution from ScienceDirect's AI-generated Topic Pages">plastic pollution</a>&nbsp;on the development of echinoderms, demonstrating that chemicals leached from plastic particles into sea water can produce strong developmental abnormalities via specific pathways, and therefore have the potential to impact on a wide range of organisms. <span class="citation" data-cites="paganos2023a">(<strong>paganos2023a?</strong>)</span> (Abstract)</p>
 </blockquote>
@@ -749,10 +749,10 @@ Connected to sftp.genewiz.com.</code></pre>
 </blockquote>
 </section>
 </section>
-<section id="xiao-et-al.-2018" class="level1">
-<h1>Xiao et al., 2018</h1>
-<section id="transcriptional-responses-of-acropora-hyacinthus-embryo-under-the-benzoapyrene-stress-by-deep-sequencing" class="level2">
-<h2 class="anchored" data-anchor-id="transcriptional-responses-of-acropora-hyacinthus-embryo-under-the-benzoapyrene-stress-by-deep-sequencing">Transcriptional responses of <em>Acropora hyacinthus</em> embryo under the benzo(<em>a</em>)pyrene stress by deep sequencing</h2>
+<section id="xiao-et-al.-2018" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Xiao et al., 2018</h1>
+<section id="transcriptional-responses-of-acropora-hyacinthus-embryo-under-the-benzoapyrene-stress-by-deep-sequencing" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="transcriptional-responses-of-acropora-hyacinthus-embryo-under-the-benzoapyrene-stress-by-deep-sequencing"><span class="header-section-number">7.1</span> Transcriptional responses of <em>Acropora hyacinthus</em> embryo under the benzo(<em>a</em>)pyrene stress by deep sequencing</h2>
 <blockquote class="blockquote">
 <p>Abstract</p>
 <p>Coral embryos are a critical and sensitive period for the early&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/growth-development-and-aging" title="Learn more about growth and development from ScienceDirect's AI-generated Topic Pages">growth and development</a>&nbsp;of coral. Benzo(<em>a</em>)pyrene (BaP) is widely distributed in the ocean and has strong toxicity, but there is little information on the toxic effects to coral embryos exposed to this widespread environmental contaminant. Thus, in this study, we utilized the Illumina Hiseq™ 4000 platform to explore the gene response of&nbsp;<a href="https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/acropora" title="Learn more about Acropora from ScienceDirect's AI-generated Topic Pages">Acropora</a> <a href="https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/hyacinthus" title="Learn more about hyacinthus from ScienceDirect's AI-generated Topic Pages"><em>hyacinthus</em></a>&nbsp;embryos under the BaP stress. A total of 130,042&nbsp;<a href="https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/unigenes" title="Learn more about Unigenes from ScienceDirect's AI-generated Topic Pages">Unigenes</a>&nbsp;were obtained and analyzed, and approximately 37.67% of those matched with sequences from four different species. In total, 2606 Unigenes were up-regulated, and 3872 Unigenes were down-regulated. After&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/gene-ontology" title="Learn more about Gene Ontology from ScienceDirect's AI-generated Topic Pages">Gene Ontology</a>&nbsp;(GO) annotation, the results show that the “cellular process” and “metabolic process” were leading in the category of&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/biological-phenomena-and-functions-concerning-the-entire-organism" title="Learn more about biological processes from ScienceDirect's AI-generated Topic Pages">biological processes</a>, which the “binding” and “catalytic activity” were the most abundant subcategories in molecular function. Based on the Kyoto Encyclopedia of Genes and Genomes (KEGG) analysis, the most differentially expressed genes (DEGs) were enriched, as well as down-regulated in the pathways of&nbsp;<a href="https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/oxidative-phosphorylation" title="Learn more about oxidative phosphorylation from ScienceDirect's AI-generated Topic Pages">oxidative phosphorylation</a>, metabolism of&nbsp;<a href="https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/xenobiotic-agent" title="Learn more about xenobiotics from ScienceDirect's AI-generated Topic Pages">xenobiotics</a>, immune-related genes,&nbsp;<a href="https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/programmed-cell-death" title="Learn more about apoptosis from ScienceDirect's AI-generated Topic Pages">apoptosis</a>&nbsp;and human disease genes. At the same time, 388,197 of Single-nucleotide Polymorphisms (SNPs) and 6164 of&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/microsatellite-dna" title="Learn more about Simple Sequence Repeats from ScienceDirect's AI-generated Topic Pages">Simple Sequence Repeats</a>&nbsp;(SSRs) were obtained, which can be served as the richer and more valuable SSRs&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/genetic-marker" title="Learn more about molecular markers from ScienceDirect's AI-generated Topic Pages">molecular markers</a>&nbsp;in the future. The results of this study can help to better understand the&nbsp;<a href="https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/toxicological-mechanisms" title="Learn more about toxicological mechanism from ScienceDirect's AI-generated Topic Pages">toxicological mechanism</a>&nbsp;of coral embryo exposed to BaP, and it is also essential for the protection and restoration of coral reef ecosystem in the future.</p>
@@ -815,10 +815,10 @@ Okubo, Nami, Takuma Mezaki, Yoko Nozawa, Yoshikatsu Nakano, Yi-Ting Lien, Hirono
 
 
 
-<section id="caroline-gibson-scholarship-in-marine-studies-northwest-straits-foundation" class="level2">
-<h2 class="anchored" data-anchor-id="caroline-gibson-scholarship-in-marine-studies-northwest-straits-foundation"><a href="https://nwstraitsfoundation.org/get-involved/caroline-gibson-scholarship-fund/">Caroline Gibson Scholarship in Marine Studies (Northwest Straits Foundation)</a></h2>
-<section id="smithsonian-institution-fellowship-program-sifp" class="level3">
-<h3 class="anchored" data-anchor-id="smithsonian-institution-fellowship-program-sifp"><a href="https://fellowships.si.edu/opportunity/smithsonian-institution-fellowship-program-sifp"><strong>Smithsonian Institution Fellowship Program (SIFP)</strong></a></h3>
+<section id="caroline-gibson-scholarship-in-marine-studies-northwest-straits-foundation" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="caroline-gibson-scholarship-in-marine-studies-northwest-straits-foundation"><span class="header-section-number">1</span> <a href="https://nwstraitsfoundation.org/get-involved/caroline-gibson-scholarship-fund/">Caroline Gibson Scholarship in Marine Studies (Northwest Straits Foundation)</a></h2>
+<section id="smithsonian-institution-fellowship-program-sifp" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="smithsonian-institution-fellowship-program-sifp"><span class="header-section-number">1.1</span> <a href="https://fellowships.si.edu/opportunity/smithsonian-institution-fellowship-program-sifp"><strong>Smithsonian Institution Fellowship Program (SIFP)</strong></a></h3>
 <p>Smithsonian fellowships are offered to individuals who design and develop proposals to conduct independent research.</p>
 <p>The Smithsonian Institution Fellowship Program offers opportunities for independent research or study related to Smithsonian collections, facilities, and/or research interests of the Institution and its staff. Fellowships are offered to graduate students, predoctoral students, and postdoctoral and senior researchers to conduct independent research and to utilize the resources of the Institution with members of the Smithsonian professional research staff serving as advisors and hosts. These fellowships are offered through the Smithsonian’s Office of Academic Appointments and Internships, and are administered under the charter of the Institution, 20 U.S. Code section 41 et seq.</p>
 <p>About <a href="https://fellowships.si.edu/fellowship-programs">Smithsonian fellowship programs</a></p>
@@ -852,8 +852,8 @@ Okubo, Nami, Takuma Mezaki, Yoko Nozawa, Yoshikatsu Nakano, Yi-Ting Lien, Hirono
 
 
 
-<section id="annotation-checklist" class="level1">
-<h1>Annotation checklist</h1>
+<section id="annotation-checklist" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Annotation checklist</h1>
 <p>This guide is meant to be a checklist for annotating categories of embryonic development in <em>Montipora capitata</em> using NIS-Elements BR.</p>
 <p>For a basic introduction to using NIS Elements Annotation &amp; Measurement tool, check out <a href="https://www.microscope.healthcare.nikon.com/resources/e-learning/annotations-and-measurements">this elearning video</a>.</p>
 <ol type="1">
@@ -908,88 +908,88 @@ Okubo, Nami, Takuma Mezaki, Yoko Nozawa, Yoshikatsu Nakano, Yi-Ting Lien, Hirono
 </ol>
 <p>Note that the phases in <strong>bold</strong> are the ones that we expect our embryos to be in based on hours post fertilization that they were preserved in 4% ZFIX. In this study, we conducted bundle-bundle crosses in 20mL of treatment solution (either a 0.22 micron filtered seawater <code>control</code>, or three increasing levels of PVC leachate derived from microplastics: 0.01 mg/L PVC leachate <code>low</code>, 0.1mg/L PVC leachate <code>mid</code>, or 1mg/L PVC leachate <code>high</code>).</p>
 </section>
-<section id="oocyte" class="level1">
-<h1>Oocyte</h1>
-<section id="exemplar" class="level4">
-<h4 class="anchored" data-anchor-id="exemplar">exemplar</h4>
+<section id="oocyte" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Oocyte</h1>
+<section id="exemplar" class="level4" data-number="2.0.0.1">
+<h4 data-number="2.0.0.1" class="anchored" data-anchor-id="exemplar"><span class="header-section-number">2.0.0.1</span> exemplar</h4>
 </section>
-<section id="fragmented" class="level4">
-<h4 class="anchored" data-anchor-id="fragmented">fragmented</h4>
+<section id="fragmented" class="level4" data-number="2.0.0.2">
+<h4 data-number="2.0.0.2" class="anchored" data-anchor-id="fragmented"><span class="header-section-number">2.0.0.2</span> fragmented</h4>
 </section>
-<section id="deformed" class="level4">
-<h4 class="anchored" data-anchor-id="deformed">deformed</h4>
-</section>
-</section>
-<section id="cleavage" class="level1">
-<h1>Cleavage</h1>
-<section id="exemplar-1" class="level4">
-<h4 class="anchored" data-anchor-id="exemplar-1">exemplar</h4>
-</section>
-<section id="fragmented-1" class="level4">
-<h4 class="anchored" data-anchor-id="fragmented-1">fragmented</h4>
-</section>
-<section id="deformed-1" class="level4">
-<h4 class="anchored" data-anchor-id="deformed-1">deformed</h4>
+<section id="deformed" class="level4" data-number="2.0.0.3">
+<h4 data-number="2.0.0.3" class="anchored" data-anchor-id="deformed"><span class="header-section-number">2.0.0.3</span> deformed</h4>
 </section>
 </section>
-<section id="cell" class="level1">
-<h1>4-16 cell</h1>
-<section id="exemplar-2" class="level4">
-<h4 class="anchored" data-anchor-id="exemplar-2">exemplar</h4>
+<section id="cleavage" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Cleavage</h1>
+<section id="exemplar-1" class="level4" data-number="3.0.0.1">
+<h4 data-number="3.0.0.1" class="anchored" data-anchor-id="exemplar-1"><span class="header-section-number">3.0.0.1</span> exemplar</h4>
 </section>
-<section id="fragmented-2" class="level4">
-<h4 class="anchored" data-anchor-id="fragmented-2">fragmented</h4>
+<section id="fragmented-1" class="level4" data-number="3.0.0.2">
+<h4 data-number="3.0.0.2" class="anchored" data-anchor-id="fragmented-1"><span class="header-section-number">3.0.0.2</span> fragmented</h4>
 </section>
-<section id="deformed-2" class="level4">
-<h4 class="anchored" data-anchor-id="deformed-2">deformed</h4>
-</section>
-</section>
-<section id="cell-1" class="level1">
-<h1>32-64 cell</h1>
-<section id="exemplar-3" class="level4">
-<h4 class="anchored" data-anchor-id="exemplar-3">exemplar</h4>
-</section>
-<section id="fragmented-3" class="level4">
-<h4 class="anchored" data-anchor-id="fragmented-3">fragmented</h4>
-</section>
-<section id="deformed-3" class="level4">
-<h4 class="anchored" data-anchor-id="deformed-3">deformed</h4>
+<section id="deformed-1" class="level4" data-number="3.0.0.3">
+<h4 data-number="3.0.0.3" class="anchored" data-anchor-id="deformed-1"><span class="header-section-number">3.0.0.3</span> deformed</h4>
 </section>
 </section>
-<section id="prawn-chip" class="level1">
-<h1>Prawn chip</h1>
-<section id="exemplar-4" class="level4">
-<h4 class="anchored" data-anchor-id="exemplar-4">exemplar</h4>
+<section id="cell" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> 4-16 cell</h1>
+<section id="exemplar-2" class="level4" data-number="4.0.0.1">
+<h4 data-number="4.0.0.1" class="anchored" data-anchor-id="exemplar-2"><span class="header-section-number">4.0.0.1</span> exemplar</h4>
 </section>
-<section id="fragmented-4" class="level4">
-<h4 class="anchored" data-anchor-id="fragmented-4">fragmented</h4>
+<section id="fragmented-2" class="level4" data-number="4.0.0.2">
+<h4 data-number="4.0.0.2" class="anchored" data-anchor-id="fragmented-2"><span class="header-section-number">4.0.0.2</span> fragmented</h4>
 </section>
-<section id="deformed-4" class="level4">
-<h4 class="anchored" data-anchor-id="deformed-4">deformed</h4>
-</section>
-</section>
-<section id="early-gastrula" class="level1">
-<h1>Early gastrula</h1>
-<section id="exemplar-5" class="level4">
-<h4 class="anchored" data-anchor-id="exemplar-5">exemplar</h4>
-</section>
-<section id="fragmented-5" class="level4">
-<h4 class="anchored" data-anchor-id="fragmented-5">fragmented</h4>
-</section>
-<section id="deformed-5" class="level4">
-<h4 class="anchored" data-anchor-id="deformed-5">deformed</h4>
+<section id="deformed-2" class="level4" data-number="4.0.0.3">
+<h4 data-number="4.0.0.3" class="anchored" data-anchor-id="deformed-2"><span class="header-section-number">4.0.0.3</span> deformed</h4>
 </section>
 </section>
-<section id="gastrula" class="level1">
-<h1>Gastrula</h1>
-<section id="exemplar-6" class="level4">
-<h4 class="anchored" data-anchor-id="exemplar-6">exemplar</h4>
+<section id="cell-1" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> 32-64 cell</h1>
+<section id="exemplar-3" class="level4" data-number="5.0.0.1">
+<h4 data-number="5.0.0.1" class="anchored" data-anchor-id="exemplar-3"><span class="header-section-number">5.0.0.1</span> exemplar</h4>
 </section>
-<section id="fragmented-6" class="level4">
-<h4 class="anchored" data-anchor-id="fragmented-6">fragmented</h4>
+<section id="fragmented-3" class="level4" data-number="5.0.0.2">
+<h4 data-number="5.0.0.2" class="anchored" data-anchor-id="fragmented-3"><span class="header-section-number">5.0.0.2</span> fragmented</h4>
 </section>
-<section id="deformed-6" class="level4">
-<h4 class="anchored" data-anchor-id="deformed-6">deformed</h4>
+<section id="deformed-3" class="level4" data-number="5.0.0.3">
+<h4 data-number="5.0.0.3" class="anchored" data-anchor-id="deformed-3"><span class="header-section-number">5.0.0.3</span> deformed</h4>
+</section>
+</section>
+<section id="prawn-chip" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Prawn chip</h1>
+<section id="exemplar-4" class="level4" data-number="6.0.0.1">
+<h4 data-number="6.0.0.1" class="anchored" data-anchor-id="exemplar-4"><span class="header-section-number">6.0.0.1</span> exemplar</h4>
+</section>
+<section id="fragmented-4" class="level4" data-number="6.0.0.2">
+<h4 data-number="6.0.0.2" class="anchored" data-anchor-id="fragmented-4"><span class="header-section-number">6.0.0.2</span> fragmented</h4>
+</section>
+<section id="deformed-4" class="level4" data-number="6.0.0.3">
+<h4 data-number="6.0.0.3" class="anchored" data-anchor-id="deformed-4"><span class="header-section-number">6.0.0.3</span> deformed</h4>
+</section>
+</section>
+<section id="early-gastrula" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Early gastrula</h1>
+<section id="exemplar-5" class="level4" data-number="7.0.0.1">
+<h4 data-number="7.0.0.1" class="anchored" data-anchor-id="exemplar-5"><span class="header-section-number">7.0.0.1</span> exemplar</h4>
+</section>
+<section id="fragmented-5" class="level4" data-number="7.0.0.2">
+<h4 data-number="7.0.0.2" class="anchored" data-anchor-id="fragmented-5"><span class="header-section-number">7.0.0.2</span> fragmented</h4>
+</section>
+<section id="deformed-5" class="level4" data-number="7.0.0.3">
+<h4 data-number="7.0.0.3" class="anchored" data-anchor-id="deformed-5"><span class="header-section-number">7.0.0.3</span> deformed</h4>
+</section>
+</section>
+<section id="gastrula" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Gastrula</h1>
+<section id="exemplar-6" class="level4" data-number="8.0.0.1">
+<h4 data-number="8.0.0.1" class="anchored" data-anchor-id="exemplar-6"><span class="header-section-number">8.0.0.1</span> exemplar</h4>
+</section>
+<section id="fragmented-6" class="level4" data-number="8.0.0.2">
+<h4 data-number="8.0.0.2" class="anchored" data-anchor-id="fragmented-6"><span class="header-section-number">8.0.0.2</span> fragmented</h4>
+</section>
+<section id="deformed-6" class="level4" data-number="8.0.0.3">
+<h4 data-number="8.0.0.3" class="anchored" data-anchor-id="deformed-6"><span class="header-section-number">8.0.0.3</span> deformed</h4>
 
 
 <!-- -->
@@ -1058,11 +1058,11 @@ Note
 <p>Answer: We will only assess fertilization success at the point of cleavage, where presumably, we will still see the unfertilized oocytes (any eggs that have not cleaved). In the prawn chip and early gastrula phases, the unfertilized eggs have already dissolved. In these phases, we will assess embryo mortality based on the fertilization rates we find from the cleavage data.</p>
 </div>
 </div>
-<section id="cleavage" class="level1">
-<h1>Cleavage</h1>
+<section id="cleavage" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Cleavage</h1>
 </section>
-<section id="prawn-chip" class="level1">
-<h1>Prawn chip</h1>
+<section id="prawn-chip" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Prawn chip</h1>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/8M9_stitch_001_crop_r90.png" class="img-fluid figure-img"></p>
@@ -1070,8 +1070,8 @@ Note
 </figure>
 </div>
 </section>
-<section id="early-gastrula" class="level1 page-columns page-full">
-<h1>Early gastrula</h1>
+<section id="early-gastrula" class="level1 page-columns page-full" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Early gastrula</h1>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/6L14_stitch_001.png" class="img-fluid figure-img"></p>
@@ -1145,10 +1145,10 @@ Note
 <li><strong>Fertilization success (yes/no per cross, binary categorical variable)</strong></li>
 <li>Fertilization success (proportion per treatment, ratios, continuous variable)</li>
 </ol>
-<h1 id="how-have-others-measured-fertilization-success-in-montipora-capitata">How have others measured fertilization success in <em>Montipora capitata</em>?</h1>
+<h1 id="how-have-others-measured-fertilization-success-in-montipora-capitata" data-number="4"><span class="header-section-number">4</span> How have others measured fertilization success in <em>Montipora capitata</em>?</h1>
 </blockquote>
-<section id="assessing-fertilization-success-of-the-coral-montipora-capitata-under-copper-exposure-does-the-night-of-spawning-matterhedouin_assessing_2013" class="level3">
-<h3 class="anchored" data-anchor-id="assessing-fertilization-success-of-the-coral-montipora-capitata-under-copper-exposure-does-the-night-of-spawning-matterhedouin_assessing_2013">Assessing fertilization success of the coral <em>Montipora capitata</em> under copper exposure: Does the night of spawning matter?<span class="citation" data-cites="hedouin_assessing_2013">(<strong>hedouin_assessing_2013?</strong>)</span></h3>
+<section id="assessing-fertilization-success-of-the-coral-montipora-capitata-under-copper-exposure-does-the-night-of-spawning-matterhedouin_assessing_2013" class="level3" data-number="4.0.1">
+<h3 data-number="4.0.1" class="anchored" data-anchor-id="assessing-fertilization-success-of-the-coral-montipora-capitata-under-copper-exposure-does-the-night-of-spawning-matterhedouin_assessing_2013"><span class="header-section-number">4.0.1</span> Assessing fertilization success of the coral <em>Montipora capitata</em> under copper exposure: Does the night of spawning matter?<span class="citation" data-cites="hedouin_assessing_2013">(<strong>hedouin_assessing_2013?</strong>)</span></h3>
 <ul>
 <li><p>only looked at initial cleavage (3 hpf)</p></li>
 <li><p>bundle-bundle cross in 10mL of 0.45um FSW</p></li>
@@ -1159,14 +1159,14 @@ Note
 <p>The fertilization rates in the untreated controls were relatively high for all the experiments, ranging from 86% to 96% (Fig. 1), with the exception of the last experiment performed on August 1st, 2008, where almost no fertilization (&lt;10%) was observed in either control and experimental vials. ”</p>
 </blockquote>
 </section>
-<section id="effects-of-toxic-compounds-in-montipora-capitata-on-exogenous-and-endogenous-zooxanthellae-performance-and-fertilization-successhagedorn_effects_2015" class="level3">
-<h3 class="anchored" data-anchor-id="effects-of-toxic-compounds-in-montipora-capitata-on-exogenous-and-endogenous-zooxanthellae-performance-and-fertilization-successhagedorn_effects_2015"><strong>Effects of Toxic Compounds in <em>Montipora capitata</em> on Exogenous and Endogenous Zooxanthellae Performance and Fertilization Success</strong><span class="citation" data-cites="hagedorn_effects_2015">(<strong>hagedorn_effects_2015?</strong>)</span></h3>
+<section id="effects-of-toxic-compounds-in-montipora-capitata-on-exogenous-and-endogenous-zooxanthellae-performance-and-fertilization-successhagedorn_effects_2015" class="level3" data-number="4.0.2">
+<h3 data-number="4.0.2" class="anchored" data-anchor-id="effects-of-toxic-compounds-in-montipora-capitata-on-exogenous-and-endogenous-zooxanthellae-performance-and-fertilization-successhagedorn_effects_2015"><span class="header-section-number">4.0.2</span> <strong>Effects of Toxic Compounds in <em>Montipora capitata</em> on Exogenous and Endogenous Zooxanthellae Performance and Fertilization Success</strong><span class="citation" data-cites="hagedorn_effects_2015">(<strong>hagedorn_effects_2015?</strong>)</span></h3>
 <blockquote class="blockquote">
 <p>“Fertilization success using untreated sperm was 79 ± 4% SEM, whereas the success rate dropped significantly after exposure to the crushed eggs, 1.3 ± 0% SEM. Unlike the eggs and the larvae, M. capitata sperm did not reduce the photosynthetic competency of P. compressa zooxanthellae, suggesting the sperm was nontoxic.”</p>
 </blockquote>
 </section>
-<section id="energetics-but-not-development-is-impacted-in-coral-embryos-exposed-to-ocean-acidification-chille2022a" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="energetics-but-not-development-is-impacted-in-coral-embryos-exposed-to-ocean-acidification-chille2022a"><strong>Energetics, but not development, is impacted in coral embryos exposed to ocean acidification</strong> <span class="citation" data-cites="chille2022a">(Chille et al. 2022)</span></h3>
+<section id="energetics-but-not-development-is-impacted-in-coral-embryos-exposed-to-ocean-acidification-chille2022a" class="level3 page-columns page-full" data-number="4.0.3">
+<h3 data-number="4.0.3" class="anchored" data-anchor-id="energetics-but-not-development-is-impacted-in-coral-embryos-exposed-to-ocean-acidification-chille2022a"><span class="header-section-number">4.0.3</span> <strong>Energetics, but not development, is impacted in coral embryos exposed to ocean acidification</strong> <span class="citation" data-cites="chille2022a">(Chille et al. 2022)</span></h3>
 <div class="no-row-height column-margin column-container"><div id="ref-chille2022a" class="csl-entry">
 Chille, E. E., E. L. Strand, F. Scucchia, M. Neder, V. Schmidt, M. O. Sherman, T. Mass, and H. M. Putnam. 2022. <span>“Energetics, but Not Development, Is Impacted in Coral Embryos Exposed to Ocean Acidification.”</span> <em>Journal of Experimental Biology</em> 225 (19): jeb243187. <a href="https://doi.org/10.1242/jeb.243187">https://doi.org/10.1242/jeb.243187</a>.
 </div></div><blockquote class="blockquote">
@@ -1197,8 +1197,8 @@ Chille, E. E., E. L. Strand, F. Scucchia, M. Neder, V. Schmidt, M. O. Sherman, T
 
 
 
-<section id="make-slides" class="level1">
-<h1>Make slides</h1>
+<section id="make-slides" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Make slides</h1>
 <p>Watch <a href="https://www.youtube.com/watch?v=4Nurc1hSN4o">’Mounting Your Specimen</a>’ by Dr.&nbsp;Terry Bruce of Clemson University on YouTube</p>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/4Nurc1hSN4o" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <div class="callout callout-style-default callout-caution callout-titled">
@@ -1235,11 +1235,11 @@ Caution
 </div>
 </div>
 </section>
-<section id="take-nikon-microscopy-manual-stitch-photos" class="level1">
-<h1>Take Nikon Microscopy ‘manual stitch’ photos</h1>
+<section id="take-nikon-microscopy-manual-stitch-photos" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Take Nikon Microscopy ‘manual stitch’ photos</h1>
 <p>Here I use a <a href="https://www.microscope.healthcare.nikon.com/products/cameras/ds-fi3/specifications">Nikon DS-Fi 3 Camera</a> connected to a Nikon Eclipse Ni-U compound microscope and acquire manual large stitched images using NIS Elements BR software.</p>
-<section id="make-sure-camera-scope-are-setup-correctly" class="level4">
-<h4 class="anchored" data-anchor-id="make-sure-camera-scope-are-setup-correctly">Make sure camera &amp; scope are setup correctly</h4>
+<section id="make-sure-camera-scope-are-setup-correctly" class="level4" data-number="2.0.0.1">
+<h4 data-number="2.0.0.1" class="anchored" data-anchor-id="make-sure-camera-scope-are-setup-correctly"><span class="header-section-number">2.0.0.1</span> Make sure camera &amp; scope are setup correctly</h4>
 <p>The camera has a female threaded cap that threads directly onto the Nikon C-Mount Adapter that sits in the Trinocular of the compound scope. If the camera is mounted on the Leica dissecting scope, you have to unthread it from that C-Mount Adapter and thread it into the Nikon C-Mount Adapter.</p>
 <ul>
 <li><p>Turn on lamp power supply</p></li>
@@ -1250,16 +1250,16 @@ Caution
 <li><p>Reference <a href="https://www.mvi-inc.com/wp-content/uploads/Ni-U_E_Assembly_Maintenance.pdf">Nikon Eclipse Ni-U instruction manual</a> for assembly &amp; maintenance</p></li>
 </ul>
 </section>
-<section id="learn-about-nis-elements-software" class="level4">
-<h4 class="anchored" data-anchor-id="learn-about-nis-elements-software">Learn about NIS Elements Software</h4>
+<section id="learn-about-nis-elements-software" class="level4" data-number="2.0.0.2">
+<h4 data-number="2.0.0.2" class="anchored" data-anchor-id="learn-about-nis-elements-software"><span class="header-section-number">2.0.0.2</span> Learn about NIS Elements Software</h4>
 <p><a href="https://www.microscope.healthcare.nikon.com/resources/e-learninghttps://www.microscope.healthcare.nikon.com/resources/e-learning">Nikon e-learning resources</a></p>
 </section>
-<section id="manually-acquire-large-stitched-images" class="level4">
-<h4 class="anchored" data-anchor-id="manually-acquire-large-stitched-images">Manually acquire large stitched images</h4>
+<section id="manually-acquire-large-stitched-images" class="level4" data-number="2.0.0.3">
+<h4 data-number="2.0.0.3" class="anchored" data-anchor-id="manually-acquire-large-stitched-images"><span class="header-section-number">2.0.0.3</span> Manually acquire large stitched images</h4>
 </section>
 </section>
-<section id="permanently-seal-slide" class="level1">
-<h1>Permanently seal slide</h1>
+<section id="permanently-seal-slide" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Permanently seal slide</h1>
 <ul>
 <li>pick up a cover slip and gently lay one edge down over the glycerin drop that is encapsulating the coral embryos, and then gently allow the coverslip to lower over the droplet</li>
 <li>seal the cover slip edges with Insta-Dri clear nail polish and allow to dry for 24 hrs</li>
@@ -1287,8 +1287,8 @@ Caution
 
 
 
-<section id="samples" class="level1 page-columns page-full">
-<h1>Samples</h1>
+<section id="samples" class="level1 page-columns page-full" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Samples</h1>
 <ul>
 <li><p>8C9F, 9C9F = 89C9<sup>1</sup></p></li>
 <li><p>7H14F, 8H14F, 9H14F = 789H14</p></li>
@@ -1301,8 +1301,8 @@ Caution
 <li><p>7M4F, 8M4F, 9M4F = 789M4</p></li>
 </ul>
 <div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;7C9F used in Aug 12th test extraction</p></div></div></section>
-<section id="summary" class="level1">
-<h1>Summary</h1>
+<section id="summary" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Summary</h1>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1317,8 +1317,8 @@ Note
 </div>
 </div>
 </section>
-<section id="extraction-notes" class="level1">
-<h1>Extraction Notes</h1>
+<section id="extraction-notes" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Extraction Notes</h1>
 <p>This uses the Zymo Quick-DNA/RNA Miniprep Plus Kit and unless otherwise specified here, follows the <a href="https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/embryo-extractions.html">M. Capitata Embryo DNA/RNA Extractions Protocol</a>. All centrifugation ocurred at 14800rpm/16,162 xg.</p>
 <ul>
 <li><p>Thaw samples to room temp</p></li>
@@ -1403,8 +1403,8 @@ Note
 <li><p>Warmed Zymo DNase-RNase Free Water to 55C in heat block before elution, and slowly dripped 50uL of water directly over filter.</p></li>
 </ul>
 </section>
-<section id="end-products" class="level1">
-<h1>End Products</h1>
+<section id="end-products" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> End Products</h1>
 <p>eluted DNA volume: 50uL in <code>Zymo DNase-RNase Free Water</code></p>
 <p>eluted RNA volume: 50uL in warmed (55C) <code>Zymo DNase-RNase Free Water</code></p>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -1421,8 +1421,8 @@ Important
 </div>
 </div>
 </section>
-<section id="qubit-qaqc" class="level1 page-columns page-full">
-<h1>Qubit QAQC</h1>
+<section id="qubit-qaqc" class="level1 page-columns page-full" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Qubit QAQC</h1>
 <p>Using the Invitrogen Thermo Fischer RNA High Sensitivity Assay Kit.</p>
 <p>Prepared working solution for 6 samples and two standards (plus some extra) in a 5mL tube:</p>
 <div class="cell">
@@ -1457,8 +1457,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <pre><code>[1] 15</code></pre>
 </div>
 </div>
-<section id="rna" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="rna">RNA</h3>
+<section id="rna" class="level3 page-columns page-full" data-number="5.0.1">
+<h3 data-number="5.0.1" class="anchored" data-anchor-id="rna"><span class="header-section-number">5.0.1</span> RNA</h3>
 <p>standard 1: 92.47</p>
 <p>standard 2: 1889.51</p>
 <p>RunID: 2024-08-27_054059<sup>2</sup></p>
@@ -1543,8 +1543,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 </table>
 </section>
 </section>
-<section id="storage-location" class="level1">
-<h1>Storage Location</h1>
+<section id="storage-location" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Storage Location</h1>
 <p>RNA samples are stored in -80C ‘JPG Lab Thermo’ freezer on shelf 1 (top shelf) in <code>coral-embryo-leachate RNA</code> wax freezer boxes with green label tape.</p>
 <p>DNA samples (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate DNA</code> wax freezer box with yellow label tape.</p>
 <p>Protein flow-through (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate PROTEIN</code> wax freezer box with blue label tape.</p>
@@ -1571,8 +1571,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 
 
 
-<section id="samples" class="level1 page-columns page-full">
-<h1>Samples</h1>
+<section id="samples" class="level1 page-columns page-full" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Samples</h1>
 <ul>
 <li><p>4L14F, 5CL14F, 6L14HF = 456L14</p></li>
 <li><p>4M14F, 5M14F, 6M14F = 456M14</p></li>
@@ -1586,8 +1586,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <li><p>13L9F, 14L9F, 15L9F = 131415L9</p></li>
 </ul>
 <div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;No 7C14F sample</p></div></div></section>
-<section id="summary" class="level1">
-<h1>Summary</h1>
+<section id="summary" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Summary</h1>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1602,8 +1602,8 @@ Note
 </div>
 </div>
 </section>
-<section id="extraction-notes" class="level1">
-<h1>Extraction Notes</h1>
+<section id="extraction-notes" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Extraction Notes</h1>
 <p>This uses the Zymo Quick-DNA/RNA Miniprep Plus Kit and unless otherwise specified here, follows the <a href="https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/embryo-extractions.html">M. Capitata Embryo DNA/RNA Extractions Protocol</a>. All centrifugation ocurred at 14800rpm/16,162 xg.</p>
 <ul>
 <li><p>Thaw samples to room temp</p></li>
@@ -1701,8 +1701,8 @@ Note
 <li>Warmed Zymo DNase-RNase Free Water to 55C in heat block before elution, and slowly dripped 50uL of water directly over filter.</li>
 </ul>
 </section>
-<section id="end-products" class="level1">
-<h1>End Products</h1>
+<section id="end-products" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> End Products</h1>
 <p>eluted DNA volume: 50uL in <code>Zymo DNase-RNase Free Water</code></p>
 <p>eluted RNA volume: 50uL in warmed (55C) <code>Zymo DNase-RNase Free Water</code></p>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -1719,8 +1719,8 @@ Important
 </div>
 </div>
 </section>
-<section id="qubit-qaqc" class="level1 page-columns page-full">
-<h1>Qubit QAQC</h1>
+<section id="qubit-qaqc" class="level1 page-columns page-full" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Qubit QAQC</h1>
 <p>Using the Invitrogen Thermo Fischer RNA High Sensitivity Assay Kit.</p>
 <p>Prepared working solution for 6 samples and two standards (plus some extra) in a 5mL tube:</p>
 <div class="cell">
@@ -1755,8 +1755,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <pre><code>[1] 15</code></pre>
 </div>
 </div>
-<section id="rna" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="rna">RNA</h3>
+<section id="rna" class="level3 page-columns page-full" data-number="5.0.1">
+<h3 data-number="5.0.1" class="anchored" data-anchor-id="rna"><span class="header-section-number">5.0.1</span> RNA</h3>
 <p>standard 1: 96.18</p>
 <p>standard 2: 1912.96</p>
 <p>RunID: 2024-08-24_xxxxxx<sup>2</sup></p>
@@ -1848,8 +1848,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 </table>
 </section>
 </section>
-<section id="storage-location" class="level1">
-<h1>Storage Location</h1>
+<section id="storage-location" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Storage Location</h1>
 <p>RNA samples are stored in -80C ‘JPG Lab Thermo’ freezer on shelf 1 (top shelf) in <code>coral-embryo-leachate RNA</code> wax freezer boxes with green label tape.</p>
 <p>DNA samples (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate DNA</code> wax freezer box with yellow label tape.</p>
 <p>Protein flow-through (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate PROTEIN</code> wax freezer box with blue label tape.</p>
@@ -1876,8 +1876,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 
 
 
-<section id="samples" class="level1 page-columns page-full">
-<h1>Samples</h1>
+<section id="samples" class="level1 page-columns page-full" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Samples</h1>
 <ul>
 <li><p>1C14F, 2C14F, 3C14HF = 123C14</p></li>
 <li><p>8M9F, 9M9F = 89M9<sup>1</sup></p></li>
@@ -1889,8 +1889,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <li><p>13H9F, 14H9F, 15H9F = 131415H9</p></li>
 </ul>
 <div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;Sample 7M9F resulted in no surviving embryos and therefore we had no saved material for that vial</p></div></div></section>
-<section id="summary" class="level1">
-<h1>Summary</h1>
+<section id="summary" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Summary</h1>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1905,8 +1905,8 @@ Note
 </div>
 </div>
 </section>
-<section id="extraction-notes" class="level1">
-<h1>Extraction Notes</h1>
+<section id="extraction-notes" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Extraction Notes</h1>
 <p>This uses the Zymo Quick-DNA/RNA Miniprep Plus Kit and unless otherwise specified here, follows the <a href="https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/embryo-extractions.html">M. Capitata Embryo DNA/RNA Extractions Protocol</a>. All centrifugation ocurred at 14800rpm/16,162 xg.</p>
 <ul>
 <li><p>Thaw samples to room temp</p></li>
@@ -2000,8 +2000,8 @@ Note
 <li>Warmed Zymo DNase-RNase Free Water to 55C in heat block before elution, and slowly dripped 50uL of water directly over filter.</li>
 </ul>
 </section>
-<section id="end-products" class="level1">
-<h1>End Products</h1>
+<section id="end-products" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> End Products</h1>
 <p>eluted DNA volume: 50uL in <code>Zymo DNase-RNase Free Water</code></p>
 <p>eluted RNA volume: 50uL in warmed (55C) <code>Zymo DNase-RNase Free Water</code></p>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -2018,8 +2018,8 @@ Important
 </div>
 </div>
 </section>
-<section id="qubit-qaqc" class="level1 page-columns page-full">
-<h1>Qubit QAQC</h1>
+<section id="qubit-qaqc" class="level1 page-columns page-full" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Qubit QAQC</h1>
 <p>Using the Invitrogen Thermo Fischer RNA High Sensitivity Assay Kit.</p>
 <p>Prepared working solution for 6 samples and two standards (plus some extra) in a 5mL tube:</p>
 <div class="cell">
@@ -2054,8 +2054,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <pre><code>[1] 15</code></pre>
 </div>
 </div>
-<section id="rna" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="rna">RNA</h3>
+<section id="rna" class="level3 page-columns page-full" data-number="5.0.1">
+<h3 data-number="5.0.1" class="anchored" data-anchor-id="rna"><span class="header-section-number">5.0.1</span> RNA</h3>
 <p>standard 1: 94.53</p>
 <p>standard 2: 1590.87</p>
 <p>RunID: 2024-08-22_062101<sup>2</sup></p>
@@ -2133,8 +2133,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 </table>
 </section>
 </section>
-<section id="storage-location" class="level1">
-<h1>Storage Location</h1>
+<section id="storage-location" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Storage Location</h1>
 <p>RNA samples are stored in -80C ‘JPG Lab Thermo’ freezer on shelf 1 (top shelf) in <code>coral-embryo-leachate RNA</code> wax freezer boxes with green label tape.</p>
 <p>DNA samples (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate DNA</code> wax freezer box with yellow label tape.</p>
 <p>Protein flow-through (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate PROTEIN</code> wax freezer box with blue label tape.</p>
@@ -2161,8 +2161,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 
 
 
-<section id="samples" class="level1">
-<h1>Samples</h1>
+<section id="samples" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Samples</h1>
 <ul>
 <li><p>1H9F, 2H9F, 3H9F = 123H9</p></li>
 <li><p>4M4F, 5M4F, 6M4F = 456M4</p></li>
@@ -2174,8 +2174,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <li><p>13C14F, 14C14F, 15C14F = 131415C14</p></li>
 </ul>
 </section>
-<section id="summary" class="level1">
-<h1>Summary</h1>
+<section id="summary" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Summary</h1>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -2190,8 +2190,8 @@ Note
 </div>
 </div>
 </section>
-<section id="extraction-notes" class="level1">
-<h1>Extraction Notes</h1>
+<section id="extraction-notes" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Extraction Notes</h1>
 <p>kit: Zymo Quick-DNA/RNA Miniprep Plus Kit</p>
 <ul>
 <li><p>Thaw samples to room temp</p></li>
@@ -2273,8 +2273,8 @@ Note
 <li>Warmed Zymo DNase-RNase Free Water to 55C in heat block before elution, and slowly dripped 50uL of water directly over filter.</li>
 </ul>
 </section>
-<section id="end-products" class="level1">
-<h1>End Products</h1>
+<section id="end-products" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> End Products</h1>
 <p>eluted DNA volume: 50uL in <code>Zymo DNase-RNase Free Water</code></p>
 <p>eluted RNA volume: 50uL in warmed (55C) <code>Zymo DNase-RNase Free Water</code></p>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -2291,8 +2291,8 @@ Important
 </div>
 </div>
 </section>
-<section id="qubit-qaqc" class="level1">
-<h1>Qubit QAQC</h1>
+<section id="qubit-qaqc" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Qubit QAQC</h1>
 <p>Using the Invitrogen Thermo Fischer RNA High Sensitivity Assay Kit.</p>
 <p>Prepared working solution for 6 samples and two standards (plus some extra) in a 5mL tube:</p>
 <div class="cell">
@@ -2327,8 +2327,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <pre><code>[1] 10</code></pre>
 </div>
 </div>
-<section id="rna" class="level3">
-<h3 class="anchored" data-anchor-id="rna">RNA</h3>
+<section id="rna" class="level3" data-number="5.0.1">
+<h3 data-number="5.0.1" class="anchored" data-anchor-id="rna"><span class="header-section-number">5.0.1</span> RNA</h3>
 <p>standard 1: 92.70</p>
 <p>standard 2: 1770.25</p>
 <p>RunID: 2024-08-21_054905</p>
@@ -2406,8 +2406,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 </table>
 </section>
 </section>
-<section id="storage-location" class="level1">
-<h1>Storage Location</h1>
+<section id="storage-location" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Storage Location</h1>
 <p>RNA samples are stored in -80C ‘JPG Lab Thermo’ freezer on shelf 1 in <code>coral-embryo-leachate RNA</code> wax freezer boxes with green label tape:</p>
 <p>DNA samples (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate DNA</code> wax freezer box with yellow label tape:</p>
 <p>Protein flow-through (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate PROTEIN</code> wax freezer box with blue label tape:</p>
@@ -2433,8 +2433,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 
 
 
-<section id="samples" class="level1">
-<h1>Samples</h1>
+<section id="samples" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Samples</h1>
 <ul>
 <li><p>4H9F, 5H9F, 6H9F = 456H9</p></li>
 <li><p>1H4F, 2H4F, 3H4F = 123H4</p></li>
@@ -2444,8 +2444,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <li><p>13L4F, 14L4F, 15L4F = 131415L4</p></li>
 </ul>
 </section>
-<section id="summary" class="level1">
-<h1>Summary</h1>
+<section id="summary" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Summary</h1>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -2460,8 +2460,8 @@ Note
 </div>
 </div>
 </section>
-<section id="extraction-notes" class="level1">
-<h1>Extraction Notes</h1>
+<section id="extraction-notes" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Extraction Notes</h1>
 <p>kit: Zymo Quick-DNA/RNA Miniprep Plus Kit</p>
 <ul>
 <li><p>Thaw samples to room temp</p></li>
@@ -2549,8 +2549,8 @@ Note
 <li>Warmed Zymo DNase-RNase Free Water to 55C in heat block before elution, and slowly dripped 50uL of water directly over filter.</li>
 </ul>
 </section>
-<section id="end-products" class="level1">
-<h1>End Products</h1>
+<section id="end-products" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> End Products</h1>
 <p>eluted DNA volume: 50uL in <code>Zymo DNase-RNase Free Water</code></p>
 <p>eluted RNA volume: 50uL in warmed (55C) <code>Zymo DNase-RNase Free Water</code></p>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -2567,8 +2567,8 @@ Important
 </div>
 </div>
 </section>
-<section id="qubit-qaqc" class="level1">
-<h1>Qubit QAQC</h1>
+<section id="qubit-qaqc" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Qubit QAQC</h1>
 <p>Using the Invitrogen Thermo Fischer RNA High Sensitivity Assay Kit.</p>
 <p>Prepared working solution for 6 samples and two standards (plus some extra) in a 5mL tube:</p>
 <div class="cell">
@@ -2603,8 +2603,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <pre><code>[1] 10</code></pre>
 </div>
 </div>
-<section id="rna" class="level3">
-<h3 class="anchored" data-anchor-id="rna">RNA</h3>
+<section id="rna" class="level3" data-number="5.0.1">
+<h3 data-number="5.0.1" class="anchored" data-anchor-id="rna"><span class="header-section-number">5.0.1</span> RNA</h3>
 <p>standard 1: 105.99</p>
 <p>standard 2: 1962.49</p>
 <p>RunID: 2024-08-20_060012</p>
@@ -2668,8 +2668,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 </table>
 </section>
 </section>
-<section id="storage-location" class="level1">
-<h1>Storage Location</h1>
+<section id="storage-location" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Storage Location</h1>
 <p>RNA samples are stored in -80C ‘JPG Lab Thermo’ freezer on shelf 1 in <code>coral-embryo-leachate RNA</code> wax freezer boxes with green label tape:</p>
 <p>DNA samples (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate DNA</code> wax freezer box with yellow label tape:</p>
 <p>Protein flow-through (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate PROTEIN</code> wax freezer box with blue label tape:</p>
@@ -2695,8 +2695,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 
 
 
-<section id="samples" class="level1">
-<h1>Samples</h1>
+<section id="samples" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Samples</h1>
 <ul>
 <li><p>1L4F, 2L4F, 3L4F = 123L4</p>
 <ul>
@@ -2724,8 +2724,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 </ul></li>
 </ul>
 </section>
-<section id="summary" class="level1">
-<h1>Summary</h1>
+<section id="summary" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Summary</h1>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -2740,8 +2740,8 @@ Note
 </div>
 </div>
 </section>
-<section id="extraction-notes" class="level1">
-<h1>Extraction Notes</h1>
+<section id="extraction-notes" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Extraction Notes</h1>
 <p>date: 16-AUG-2024</p>
 <p>kit: Zymo Quick-DNA/RNA Miniprep Plus Kit</p>
 <ul>
@@ -2833,8 +2833,8 @@ Important
 </div>
 </div>
 </section>
-<section id="qubit" class="level1">
-<h1>Qubit</h1>
+<section id="qubit" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Qubit</h1>
 <p>Using the Invitrogen Thermo Fischer RNA High Sensitivity Assay Kit.</p>
 <p>Prepared working solution for 6 samples and two standards (plus some extra) in a 5mL tube:</p>
 <div class="cell">
@@ -2869,8 +2869,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 <pre><code>[1] 10</code></pre>
 </div>
 </div>
-<section id="rna" class="level3">
-<h3 class="anchored" data-anchor-id="rna">RNA</h3>
+<section id="rna" class="level3" data-number="4.0.1">
+<h3 data-number="4.0.1" class="anchored" data-anchor-id="rna"><span class="header-section-number">4.0.1</span> RNA</h3>
 <p>standard 1: 96.43</p>
 <p>standard 2: Error… re-run cal standards? No…</p>
 <p>RunID: 2024-08-17_045016</p>
@@ -2917,8 +2917,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 </table>
 </section>
 </section>
-<section id="storage-location" class="level1">
-<h1>Storage Location</h1>
+<section id="storage-location" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Storage Location</h1>
 <p>RNA samples are stored in -80C ‘Old Friedman’ Sanyo freezer on shelf 1 in <code>coral-embryo-leachate RNA</code> wax freezer boxes with green label tape:</p>
 <p>DNA samples (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate DNA</code> wax freezer box with yellow label tape:</p>
 <p>Protein flow-through (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate PROTEIN</code> wax freezer box with blue label tape:</p>
@@ -2944,8 +2944,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 
 
 
-<section id="samples" class="level1">
-<h1>Samples</h1>
+<section id="samples" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Samples</h1>
 <ul>
 <li><p>4C14F, 5C14F = 45C14</p>
 <ul>
@@ -2973,8 +2973,8 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
 </ul></li>
 </ul>
 </section>
-<section id="summary" class="level1">
-<h1>Summary</h1>
+<section id="summary" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Summary</h1>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -2989,8 +2989,8 @@ Caution
 </div>
 </div>
 </section>
-<section id="extraction-notes" class="level1">
-<h1>Extraction Notes</h1>
+<section id="extraction-notes" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Extraction Notes</h1>
 <p>date: 15-AUG-2024</p>
 <p>kit: Zymo Quick-DNA/RNA Miniprep Plus Kit</p>
 <ul>
@@ -3081,8 +3081,8 @@ Important
 </div>
 </div>
 </section>
-<section id="qubit" class="level1">
-<h1>Qubit</h1>
+<section id="qubit" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Qubit</h1>
 <p>Using the Invitrogen Thermo Fischer RNA High Sensitivity Assay Kit.</p>
 <p>Prepared working solution for 3 samples and two standards:</p>
 <div class="cell">
@@ -3099,8 +3099,8 @@ font-style: inherit;">6</span></span></code></pre></div>
 </div>
 <p>Qubit RNA HS reagent in DMSO = 1uL * 5 = 6uL</p>
 <p>Qubit RNA HS Buffer = 199uL * 5 = 1194uL</p>
-<section id="rna" class="level3">
-<h3 class="anchored" data-anchor-id="rna">RNA</h3>
+<section id="rna" class="level3" data-number="4.0.1">
+<h3 data-number="4.0.1" class="anchored" data-anchor-id="rna"><span class="header-section-number">4.0.1</span> RNA</h3>
 <p>standard 1: 94.63</p>
 <p>standard 2: 1803.97</p>
 <p>RunID: 2024-08-16_074027</p>
@@ -3147,8 +3147,8 @@ font-style: inherit;">6</span></span></code></pre></div>
 </table>
 </section>
 </section>
-<section id="storage-location" class="level1">
-<h1>Storage Location</h1>
+<section id="storage-location" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Storage Location</h1>
 <p>RNA samples are stored in -80C ‘JPG Lab’ Thermo freezer on shelf 1 in <code>coral-embryo-leachate RNA</code> wax freezer boxes with green label tape:</p>
 <p>DNA samples (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate DNA</code> wax freezer box with yellow label tape:</p>
 <p>Protein flow-through (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate PROTEIN</code> wax freezer box with blue label tape:</p>

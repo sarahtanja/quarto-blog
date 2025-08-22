@@ -97,9 +97,9 @@ div.csl-indent {
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -310,8 +310,7 @@ window.Quarto = {
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -324,14 +323,6 @@ window.Quarto = {
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -465,43 +456,43 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#tuesday-nov-21st-2023" id="toc-tuesday-nov-21st-2023" class="nav-link active" data-scroll-target="#tuesday-nov-21st-2023"><em>Tuesday Nov 21st 2023</em></a>
+  <li><a href="#tuesday-nov-21st-2023" id="toc-tuesday-nov-21st-2023" class="nav-link active" data-scroll-target="#tuesday-nov-21st-2023"><span class="header-section-number">1</span> <em>Tuesday Nov 21st 2023</em></a>
   <ul>
-  <li><a href="#agenda" id="toc-agenda" class="nav-link" data-scroll-target="#agenda">Agenda</a></li>
-  <li><a href="#committee" id="toc-committee" class="nav-link" data-scroll-target="#committee">Committee</a></li>
-  <li><a href="#agreements" id="toc-agreements" class="nav-link" data-scroll-target="#agreements">Agreements</a>
+  <li><a href="#agenda" id="toc-agenda" class="nav-link" data-scroll-target="#agenda"><span class="header-section-number">1.1</span> Agenda</a></li>
+  <li><a href="#committee" id="toc-committee" class="nav-link" data-scroll-target="#committee"><span class="header-section-number">1.2</span> Committee</a></li>
+  <li><a href="#agreements" id="toc-agreements" class="nav-link" data-scroll-target="#agreements"><span class="header-section-number">1.3</span> Agreements</a>
   <ul>
-  <li><a href="#our-shared-vision-of-success-looks-like" id="toc-our-shared-vision-of-success-looks-like" class="nav-link" data-scroll-target="#our-shared-vision-of-success-looks-like">Our shared vision of success looks like:</a></li>
-  <li><a href="#sarahs-thesis-progress" id="toc-sarahs-thesis-progress" class="nav-link" data-scroll-target="#sarahs-thesis-progress">Sarah’s Thesis Progress</a></li>
-  <li><a href="#thesis-research-questions" id="toc-thesis-research-questions" class="nav-link" data-scroll-target="#thesis-research-questions">Thesis Research Questions</a></li>
+  <li><a href="#our-shared-vision-of-success-looks-like" id="toc-our-shared-vision-of-success-looks-like" class="nav-link" data-scroll-target="#our-shared-vision-of-success-looks-like"><span class="header-section-number">1.3.1</span> Our shared vision of success looks like:</a></li>
+  <li><a href="#sarahs-thesis-progress" id="toc-sarahs-thesis-progress" class="nav-link" data-scroll-target="#sarahs-thesis-progress"><span class="header-section-number">1.3.2</span> Sarah’s Thesis Progress</a></li>
+  <li><a href="#thesis-research-questions" id="toc-thesis-research-questions" class="nav-link" data-scroll-target="#thesis-research-questions"><span class="header-section-number">1.3.3</span> Thesis Research Questions</a></li>
   </ul></li>
   </ul></li>
-  <li><a href="#issue" id="toc-issue" class="nav-link" data-scroll-target="#issue">ISSUE</a>
+  <li><a href="#issue" id="toc-issue" class="nav-link" data-scroll-target="#issue"><span class="header-section-number">2</span> ISSUE</a>
   <ul>
-  <li><a href="#lack-of-solvent-control" id="toc-lack-of-solvent-control" class="nav-link" data-scroll-target="#lack-of-solvent-control">Lack of Solvent Control</a>
+  <li><a href="#lack-of-solvent-control" id="toc-lack-of-solvent-control" class="nav-link" data-scroll-target="#lack-of-solvent-control"><span class="header-section-number">2.1</span> Lack of Solvent Control</a>
   <ul>
-  <li><a href="#what-i-did" id="toc-what-i-did" class="nav-link" data-scroll-target="#what-i-did">What I did:</a></li>
-  <li><a href="#if-i-could-turn-back-time5" id="toc-if-i-could-turn-back-time5" class="nav-link" data-scroll-target="#if-i-could-turn-back-time5">If I could turn back time:</a></li>
+  <li><a href="#what-i-did" id="toc-what-i-did" class="nav-link" data-scroll-target="#what-i-did"><span class="header-section-number">2.1.0.0.1</span> What I did:</a></li>
+  <li><a href="#if-i-could-turn-back-time5" id="toc-if-i-could-turn-back-time5" class="nav-link" data-scroll-target="#if-i-could-turn-back-time5"><span class="header-section-number">2.1.0.0.2</span> If I could turn back time:</a></li>
   </ul></li>
   </ul></li>
-  <li><a href="#options" id="toc-options" class="nav-link" data-scroll-target="#options">OPTIONS</a>
+  <li><a href="#options" id="toc-options" class="nav-link" data-scroll-target="#options"><span class="header-section-number">3</span> OPTIONS</a>
   <ul>
-  <li><a href="#filter-justify" id="toc-filter-justify" class="nav-link" data-scroll-target="#filter-justify">1. Filter &amp; justify</a></li>
-  <li><a href="#conduct-separate-solvent-experiment" id="toc-conduct-separate-solvent-experiment" class="nav-link" data-scroll-target="#conduct-separate-solvent-experiment">2. Conduct separate solvent experiment</a></li>
-  <li><a href="#redo-with-solvent-control" id="toc-redo-with-solvent-control" class="nav-link" data-scroll-target="#redo-with-solvent-control">3. Redo with solvent control</a></li>
-  <li><a href="#redo-using-home-brewed-leachates" id="toc-redo-using-home-brewed-leachates" class="nav-link" data-scroll-target="#redo-using-home-brewed-leachates">4. Redo using home-brewed leachates</a></li>
-  <li><a href="#redo-with-aiptasia-model-organism" id="toc-redo-with-aiptasia-model-organism" class="nav-link" data-scroll-target="#redo-with-aiptasia-model-organism">5. Redo with Aiptasia model organism</a></li>
-  <li><a href="#redo-microbiome-study-with-pnw-crustose-coralline-algae-cca" id="toc-redo-microbiome-study-with-pnw-crustose-coralline-algae-cca" class="nav-link" data-scroll-target="#redo-microbiome-study-with-pnw-crustose-coralline-algae-cca">6. Redo microbiome study with PNW crustose coralline algae (CCA)</a></li>
+  <li><a href="#filter-justify" id="toc-filter-justify" class="nav-link" data-scroll-target="#filter-justify"><span class="header-section-number">3.1</span> 1. Filter &amp; justify</a></li>
+  <li><a href="#conduct-separate-solvent-experiment" id="toc-conduct-separate-solvent-experiment" class="nav-link" data-scroll-target="#conduct-separate-solvent-experiment"><span class="header-section-number">3.2</span> 2. Conduct separate solvent experiment</a></li>
+  <li><a href="#redo-with-solvent-control" id="toc-redo-with-solvent-control" class="nav-link" data-scroll-target="#redo-with-solvent-control"><span class="header-section-number">3.3</span> 3. Redo with solvent control</a></li>
+  <li><a href="#redo-using-home-brewed-leachates" id="toc-redo-using-home-brewed-leachates" class="nav-link" data-scroll-target="#redo-using-home-brewed-leachates"><span class="header-section-number">3.4</span> 4. Redo using home-brewed leachates</a></li>
+  <li><a href="#redo-with-aiptasia-model-organism" id="toc-redo-with-aiptasia-model-organism" class="nav-link" data-scroll-target="#redo-with-aiptasia-model-organism"><span class="header-section-number">3.5</span> 5. Redo with Aiptasia model organism</a></li>
+  <li><a href="#redo-microbiome-study-with-pnw-crustose-coralline-algae-cca" id="toc-redo-microbiome-study-with-pnw-crustose-coralline-algae-cca" class="nav-link" data-scroll-target="#redo-microbiome-study-with-pnw-crustose-coralline-algae-cca"><span class="header-section-number">3.6</span> 6. Redo microbiome study with PNW crustose coralline algae (CCA)</a></li>
   </ul></li>
-  <li><a href="#original-experimental-design" id="toc-original-experimental-design" class="nav-link" data-scroll-target="#original-experimental-design">Original Experimental Design</a>
+  <li><a href="#original-experimental-design" id="toc-original-experimental-design" class="nav-link" data-scroll-target="#original-experimental-design"><span class="header-section-number">4</span> Original Experimental Design</a>
   <ul>
-  <li><a href="#other-limitations" id="toc-other-limitations" class="nav-link" data-scroll-target="#other-limitations"><strong>Other Limitations:</strong></a></li>
+  <li><a href="#other-limitations" id="toc-other-limitations" class="nav-link" data-scroll-target="#other-limitations"><span class="header-section-number">4.0.1</span> <strong>Other Limitations:</strong></a></li>
   </ul></li>
-  <li><a href="#feedback" id="toc-feedback" class="nav-link" data-scroll-target="#feedback">FEEDBACK</a></li>
+  <li><a href="#feedback" id="toc-feedback" class="nav-link" data-scroll-target="#feedback"><span class="header-section-number">5</span> FEEDBACK</a></li>
   </ul>
 </nav>
 </nav>
@@ -517,16 +508,16 @@ window.Quarto = {
 
 
 
-<section id="tuesday-nov-21st-2023" class="level1 page-columns page-full">
-<h1><em>Tuesday Nov 21st 2023</em></h1>
-<section id="agenda" class="level2">
-<h2 class="anchored" data-anchor-id="agenda">Agenda</h2>
+<section id="tuesday-nov-21st-2023" class="level1 page-columns page-full" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> <em>Tuesday Nov 21st 2023</em></h1>
+<section id="agenda" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="agenda"><span class="header-section-number">1.1</span> Agenda</h2>
 <p>Introduce <a href="#issue">issue</a> with lack of solvent control in experimental design - 5 mins</p>
 <p>Introduce <a href="#options">options</a> for addressing the issue - 15 mins</p>
 <p>Seek <a href="#feedback">feedback</a> &amp; advice - 40 mins</p>
 </section>
-<section id="committee" class="level2">
-<h2 class="anchored" data-anchor-id="committee">Committee</h2>
+<section id="committee" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="committee"><span class="header-section-number">1.2</span> Committee</h2>
 <ul>
 <li>Supervisory Committee Chair - Dr.&nbsp;Jacqueline L Padilla-Gamiño, jpgamino@uw.edu</li>
 <li>Committee UW SAFS Core Faculty - Dr.&nbsp;Steven B Roberts, sr320@uw.edu</li>
@@ -535,8 +526,8 @@ window.Quarto = {
 <li>Graduate Student, (Master’s Thesis) - Sarah S Tanja, stanja@uw.edu</li>
 </ul>
 </section>
-<section id="agreements" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="agreements">Agreements</h2>
+<section id="agreements" class="level2 page-columns page-full" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="agreements"><span class="header-section-number">1.3</span> Agreements</h2>
 <div class="callout callout-style-simple callout-note no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -563,8 +554,8 @@ window.Quarto = {
 <li>Sarah is on a learning curve and will need to reach out to the committee for guidance; at the same time it is her responsibility to own the project and learn the analyses she is conducting</li>
 <li>Sarah will maintain an <a href="https://sarahtanja.github.io/quarto-blog/">open lab notebook</a> and post (at least weekly) to it</li>
 </ul>
-<section id="our-shared-vision-of-success-looks-like" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="our-shared-vision-of-success-looks-like">Our shared vision of success looks like:</h3>
+<section id="our-shared-vision-of-success-looks-like" class="level3 page-columns page-full" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="our-shared-vision-of-success-looks-like"><span class="header-section-number">1.3.1</span> Our shared vision of success looks like:</h3>
 <ul class="task-list">
 <li><label><input type="checkbox">two published manuscripts (one for each chapter)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></label></li>
 <li><label><input type="checkbox">two complete thesis chapters<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></label></li>
@@ -573,11 +564,11 @@ window.Quarto = {
 <li><label><input type="checkbox">prioritize researcher safety &amp; environmental health</label></li>
 </ul>
 <div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;Publication is not a requirement for graduation, but it is something I want to do in order to prove that I am a scientist</p></div><div id="fn2"><p><sup>2</sup>&nbsp;Only one chapter is required by UW for a Master’s degree but SAFS faculty often push students to do two</p></div><div id="fn3"><p><sup>3</sup>&nbsp;Previous graduation goal was SP ’24. My Post 9-11 GI Bill Funding ends after SP ’24. We plan to extend my program by two quarter through a 1-quarter TAship and a 1-quarter SAFS Finishing Fellowship.</p></div></div></section>
-<section id="sarahs-thesis-progress" class="level3">
-<h3 class="anchored" data-anchor-id="sarahs-thesis-progress"><a href="../thesis-progress/index.qmd">Sarah’s Thesis Progress</a></h3>
+<section id="sarahs-thesis-progress" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="sarahs-thesis-progress"><span class="header-section-number">1.3.2</span> <a href="../thesis-progress/index.qmd">Sarah’s Thesis Progress</a></h3>
 </section>
-<section id="thesis-research-questions" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="thesis-research-questions">Thesis Research Questions</h3>
+<section id="thesis-research-questions" class="level3 page-columns page-full" data-number="1.3.3">
+<h3 data-number="1.3.3" class="anchored" data-anchor-id="thesis-research-questions"><span class="header-section-number">1.3.3</span> Thesis Research Questions</h3>
 <ol type="1">
 <li><p><strong>What are the combined effects of temperature and phthalates on the <em>M. capitata</em> coral microbiome?</strong></p></li>
 <li><p><strong>What are the combined effects of temperature and phthalates on <em>M. capitata</em> coral gene expression?</strong></p></li>
@@ -593,10 +584,10 @@ Fuess, Lauren E., Stijn Den Haan, Fei Ling, Jesse N. Weber, Natalie C. Steinel, 
 </div><div id="fn4"><p><sup>4</sup>&nbsp;A new question that I’ve been curious about, but that may not fit into the scope and timeline of a Master’s Thesis</p></div></div></section>
 </section>
 </section>
-<section id="issue" class="level1 page-columns page-full">
-<h1>ISSUE</h1>
-<section id="lack-of-solvent-control" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="lack-of-solvent-control">Lack of Solvent Control</h2>
+<section id="issue" class="level1 page-columns page-full" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> ISSUE</h1>
+<section id="lack-of-solvent-control" class="level2 page-columns page-full" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="lack-of-solvent-control"><span class="header-section-number">2.1</span> Lack of Solvent Control</h2>
 <p>I used the <a href="https://www.sigmaaldrich.com/US/en/product/supelco/48223?gclid=CjwKCAjw-8qVBhANEiwAfjXLrp8fD-G8yiB_NyrA3OLy3r2jdylgBmHVPUfGFnMp4CMfuVwePGi1dxoCBQIQAvD_BwE">EPA 506 phthalate esters mix 1</a> as my standard from which I created my phthalate doses.</p>
 <p>The EPA 506 phthalate esteres mix 1 is a 1mL vial that includes the <strong>6 most common phthalates added to consumer products</strong> each at a concentration of 500<span class="math inline">\(\mu\)</span>g / mL, <em>(500,000</em><span class="math inline">\(\mu\)</span>g/L) <strong>in methanol.</strong></p>
 <p>However, I neglected to include a <strong>methanol solvent control</strong> in my experimental design.</p>
@@ -613,8 +604,8 @@ Zhou, Yanfei, Yanping Li, Wenlu Lan, Hao Jiang, and Ke Pan. 2022. <span>“Short
 </div><div id="ref-mauduit2023" class="csl-entry" role="listitem">
 Mauduit, Florian, Amelie Segarra, Julia R. Sherman, Michelle L. Hladik, Luann Wong, Thomas M. Young, Levi S. Lewis, Tien-Chieh Hung, Nann A. Fangue, and Richard E. Connon. 2023. <span>“Bifenthrin, a <span>Ubiquitous Contaminant</span>, <span>Impairs</span> the <span>Development</span> and <span>Behavior</span> of the <span>Threatened Longfin Smelt</span> During <span>Early Life Stages</span>.”</span> <em>Environmental Science &amp; Technology</em> 57 (26): 9580–91. <a href="https://doi.org/10.1021/acs.est.3c01319">https://doi.org/10.1021/acs.est.3c01319</a>.
 </div></div><p>Still other studies that focus on different environmental toxins use solvent controls as common practice <span class="citation" data-cites="mauduit2023">(<a href="#ref-mauduit2023" role="doc-biblioref">Mauduit et al. 2023</a>)</span>.</p>
-<section id="what-i-did" class="level5">
-<h5 class="anchored" data-anchor-id="what-i-did">What I did:</h5>
+<section id="what-i-did" class="level5" data-number="2.1.0.0.1">
+<h5 data-number="2.1.0.0.1" class="anchored" data-anchor-id="what-i-did"><span class="header-section-number">2.1.0.0.1</span> What I did:</h5>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="redo-with-solvent-exp.png" class="img-fluid figure-img"></p>
@@ -682,8 +673,8 @@ Mauduit, Florian, Amelie Segarra, Julia R. Sherman, Michelle L. Hladik, Luann Wo
 </tbody>
 </table>
 </section>
-<section id="if-i-could-turn-back-time5" class="level5">
-<h5 class="anchored" data-anchor-id="if-i-could-turn-back-time5">If I could turn back time<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>:</h5>
+<section id="if-i-could-turn-back-time5" class="level5" data-number="2.1.0.0.2">
+<h5 data-number="2.1.0.0.2" class="anchored" data-anchor-id="if-i-could-turn-back-time5"><span class="header-section-number">2.1.0.0.2</span> If I could turn back time<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>:</h5>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="redo-with-solvent-exp2.png" class="img-fluid figure-img"></p>
@@ -787,10 +778,10 @@ Important
 </section>
 <div class="no-row-height column-margin column-container"><div id="fn5"><p><sup>5</sup>&nbsp;Like Cher on the USS Missouri in June of 1989</p></div></div></section>
 </section>
-<section id="options" class="level1 page-columns page-full">
-<h1>OPTIONS</h1>
-<section id="filter-justify" class="level2">
-<h2 class="anchored" data-anchor-id="filter-justify">1. Filter &amp; justify</h2>
+<section id="options" class="level1 page-columns page-full" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> OPTIONS</h1>
+<section id="filter-justify" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="filter-justify"><span class="header-section-number">3.1</span> 1. Filter &amp; justify</h2>
 <p>I could address the issue of the lack of methanol control in the microbiome chapter by filtering out the methylophaga bacteria that are known to ‘feed’ on methanol. This is operating under the assumption that the methylophaga bacteria present in all the samples, but especially in the ‘polluted’ samples, were only present because of the methanol solvent. This doesn’t attribute other potentially pathogenic bacteria to the presence of methanol. It’s a pretty weak method of addressing the issue.</p>
 <p>I could further justify the results of any differences in differentially expressed genes in the transcriptomics chapter by focusing the discussion on known pathways that are affected by phthalates, such as those involved in oxidative stress, and the transcriptions of enzymes like superoxide dismutase (SOD), catalase (CAT) and peroxidase (POD). Similar to above, this is a pretty weak method and it’s likely those same pathways may be affected by the methanol solvent.</p>
 <table class="caption-top table">
@@ -821,8 +812,8 @@ Important
 </table>
 <p>This is the easiest, quickest option. However, it seems unlikely that the results from this would pass peer review and make it into a published manuscript. The results from this option may have too many limitations to be impactful.</p>
 </section>
-<section id="conduct-separate-solvent-experiment" class="level2">
-<h2 class="anchored" data-anchor-id="conduct-separate-solvent-experiment">2. Conduct separate solvent experiment</h2>
+<section id="conduct-separate-solvent-experiment" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="conduct-separate-solvent-experiment"><span class="header-section-number">3.2</span> 2. Conduct separate solvent experiment</h2>
 <p>This would involve justifying the existing data with a separate study that looks at the impacts of only the methanol solvent on the coral microbiome and gene expression. Unfortunately, this would still involve traveling to HIMB, setting up the experiment, and running a 6X2X10 factorial experiment (120 samples!) because each concentration of phthalates corresponds to a different concentration of methanol solvent.</p>
 <table class="caption-top table">
 <colgroup>
@@ -934,8 +925,8 @@ Note
 </tbody>
 </table>
 </section>
-<section id="redo-with-solvent-control" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="redo-with-solvent-control">3. Redo with solvent control</h2>
+<section id="redo-with-solvent-control" class="level2 page-columns page-full" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="redo-with-solvent-control"><span class="header-section-number">3.3</span> 3. Redo with solvent control</h2>
 <p>We could redo the whole experiment with a single solvent control by increasing the concentration of methanol solvent in each treatment to be uniform.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></p>
 <div class="no-row-height column-margin column-container"><div id="fn6"><p><sup>6</sup>&nbsp;Big thank you to <a href="https://valeste.github.io/">Celeste Valdivia</a> who introduced me to this method for ecotoxicologists!</p></div></div><table class="caption-top table">
 <colgroup>
@@ -968,8 +959,8 @@ Note
 </tbody>
 </table>
 </section>
-<section id="redo-using-home-brewed-leachates" class="level2">
-<h2 class="anchored" data-anchor-id="redo-using-home-brewed-leachates">4. Redo using home-brewed leachates</h2>
+<section id="redo-using-home-brewed-leachates" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="redo-using-home-brewed-leachates"><span class="header-section-number">3.4</span> 4. Redo using home-brewed leachates</h2>
 <p>We could redo the whole experiment and sub in home-brewed leachate instead of the EPA 506 Phthalate ester mix, thus getting rid of the need to run a solvent control.</p>
 <table class="caption-top table">
 <colgroup>
@@ -1020,8 +1011,8 @@ Note
 </div>
 </div>
 </section>
-<section id="redo-with-aiptasia-model-organism" class="level2">
-<h2 class="anchored" data-anchor-id="redo-with-aiptasia-model-organism">5. Redo with Aiptasia model organism</h2>
+<section id="redo-with-aiptasia-model-organism" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="redo-with-aiptasia-model-organism"><span class="header-section-number">3.5</span> 5. Redo with Aiptasia model organism</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -1045,8 +1036,8 @@ Note
 </tbody>
 </table>
 </section>
-<section id="redo-microbiome-study-with-pnw-crustose-coralline-algae-cca" class="level2">
-<h2 class="anchored" data-anchor-id="redo-microbiome-study-with-pnw-crustose-coralline-algae-cca">6. Redo microbiome study with PNW crustose coralline algae (CCA)</h2>
+<section id="redo-microbiome-study-with-pnw-crustose-coralline-algae-cca" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="redo-microbiome-study-with-pnw-crustose-coralline-algae-cca"><span class="header-section-number">3.6</span> 6. Redo microbiome study with PNW crustose coralline algae (CCA)</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -1071,13 +1062,13 @@ Note
 </table>
 </section>
 </section>
-<section id="original-experimental-design" class="level1">
-<h1>Original Experimental Design</h1>
+<section id="original-experimental-design" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Original Experimental Design</h1>
 <p>PAE-TEMP | <em>M. capitata</em> Acute Phthalate &amp; Thermal Stress Exposure (As conducted in August 2022)</p>
 <p><img src="graphical-methods.png" class="img-fluid" alt="pae-temp-graphical-methods"><em>graphical methods</em></p>
 <p><strong>In Summary:</strong> the <a href="https://github.com/sarahtanja/coral-pae-temp">coral-pae-temp</a> experiment resulted in a total of 140 samples, with an n=10, that were flash-frozen in liquid nitrogen and can be used for DNA/RNA studies.</p>
-<section id="other-limitations" class="level3">
-<h3 class="anchored" data-anchor-id="other-limitations"><strong>Other Limitations:</strong></h3>
+<section id="other-limitations" class="level3" data-number="4.0.1">
+<h3 data-number="4.0.1" class="anchored" data-anchor-id="other-limitations"><span class="header-section-number">4.0.1</span> <strong>Other Limitations:</strong></h3>
 <ul>
 <li><p><strong>Closed system</strong>: In order to ensure the phthalate concentration was controlled in each treatment, the 20mL scintillation vials were a closed-system, and the corals did not receive water changes during the short 48hr exposure. Because of this, I expect we will see degradation between the environmental and experimental control samples. <strong>Good news, we didn’t see this in microbiome pilot data</strong></p></li>
 <li><p><strong>Ubiquitous exposure</strong>: This study can’t account for the fact that corals in Kaneohe Bay may already be exposed to chronic low-levels of PAE pollution, so we can’t say our control baseline is ‘zero PAE exposure’.</p></li>
@@ -1086,8 +1077,8 @@ Note
 </ul>
 </section>
 </section>
-<section id="feedback" class="level1">
-<h1>FEEDBACK</h1>
+<section id="feedback" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> FEEDBACK</h1>
 <hr>
 <p>I was able to meet with Amy and Steven from 12:30-1:00PM</p>
 <p>They suggested that as a Master’s Student it may be acceptable to work with the existing samples and dig into the limitations with post-hoc analysis of the data.</p>

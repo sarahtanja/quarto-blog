@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -258,8 +258,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -272,14 +271,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -403,7 +394,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -413,14 +404,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#sarahs-masters-thesis-progress" id="toc-sarahs-masters-thesis-progress" class="nav-link active" data-scroll-target="#sarahs-masters-thesis-progress">Sarah’s Master’s Thesis Progress:</a></li>
-  <li><a href="#completed-coursework" id="toc-completed-coursework" class="nav-link" data-scroll-target="#completed-coursework">Completed Coursework</a></li>
-  <li><a href="#audited-coursework" id="toc-audited-coursework" class="nav-link" data-scroll-target="#audited-coursework">Audited Coursework</a></li>
-  <li><a href="#in-progress-coursework" id="toc-in-progress-coursework" class="nav-link" data-scroll-target="#in-progress-coursework">In-Progress Coursework</a></li>
+  <li><a href="#sarahs-masters-thesis-progress" id="toc-sarahs-masters-thesis-progress" class="nav-link active" data-scroll-target="#sarahs-masters-thesis-progress"><span class="header-section-number">1</span> Sarah’s Master’s Thesis Progress:</a></li>
+  <li><a href="#completed-coursework" id="toc-completed-coursework" class="nav-link" data-scroll-target="#completed-coursework"><span class="header-section-number">2</span> Completed Coursework</a></li>
+  <li><a href="#audited-coursework" id="toc-audited-coursework" class="nav-link" data-scroll-target="#audited-coursework"><span class="header-section-number">3</span> Audited Coursework</a></li>
+  <li><a href="#in-progress-coursework" id="toc-in-progress-coursework" class="nav-link" data-scroll-target="#in-progress-coursework"><span class="header-section-number">4</span> In-Progress Coursework</a></li>
   </ul>
 </nav>
 </nav>
@@ -437,8 +428,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>SAFS Masters Thesis Milestones are laid out <a href="https://fish.uw.edu/wp-content/uploads/sites/29/2021/08/SAFS-MS-Procedures-Checklist.pdf">here</a></p>
-<section id="sarahs-masters-thesis-progress" class="level1">
-<h1>Sarah’s Master’s Thesis Progress:</h1>
+<section id="sarahs-masters-thesis-progress" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Sarah’s Master’s Thesis Progress:</h1>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -502,8 +493,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </table>
 <p>Check Degree Audit for SAFS <a href="https://myplan.uw.edu/audit/#/degree?states=N4Ig7gDgziBcLADrgJYDsAmB7MAJApigOYAWALsrAMxUCctANMmOtmAApZQpkpZqUAjAFYALAF8Q4oA">here</a></p>
 </section>
-<section id="completed-coursework" class="level1">
-<h1>Completed Coursework</h1>
+<section id="completed-coursework" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Completed Coursework</h1>
 <div class="callout callout-style-simple callout-tip no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -652,8 +643,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="audited-coursework" class="level1">
-<h1>Audited Coursework</h1>
+<section id="audited-coursework" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Audited Coursework</h1>
 <div class="callout callout-style-simple callout-important no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -682,8 +673,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="in-progress-coursework" class="level1">
-<h1>In-Progress Coursework</h1>
+<section id="in-progress-coursework" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> In-Progress Coursework</h1>
 <div class="callout callout-style-simple callout-important no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">

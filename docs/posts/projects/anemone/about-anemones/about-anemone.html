@@ -97,9 +97,9 @@ div.csl-indent {
 <link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -308,8 +308,7 @@ window.Quarto = {
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -322,14 +321,6 @@ window.Quarto = {
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -454,7 +445,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -464,27 +455,27 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#what-are-anthopleura-elegantissima" id="toc-what-are-anthopleura-elegantissima" class="nav-link active" data-scroll-target="#what-are-anthopleura-elegantissima"><em>What are Anthopleura elegantissima?</em></a>
+  <li><a href="#what-are-anthopleura-elegantissima" id="toc-what-are-anthopleura-elegantissima" class="nav-link active" data-scroll-target="#what-are-anthopleura-elegantissima"><span class="header-section-number">1</span> <em>What are Anthopleura elegantissima?</em></a>
   <ul>
-  <li><a href="#taxonomy" id="toc-taxonomy" class="nav-link" data-scroll-target="#taxonomy">Taxonomy</a></li>
+  <li><a href="#taxonomy" id="toc-taxonomy" class="nav-link" data-scroll-target="#taxonomy"><span class="header-section-number">1.1</span> Taxonomy</a></li>
   </ul></li>
-  <li><a href="#where-are-aggregating-anemones-found" id="toc-where-are-aggregating-anemones-found" class="nav-link" data-scroll-target="#where-are-aggregating-anemones-found">Where are aggregating anemones found?</a></li>
-  <li><a href="#who-studies-them-in-the-pnw" id="toc-who-studies-them-in-the-pnw" class="nav-link" data-scroll-target="#who-studies-them-in-the-pnw">Who studies them in the PNW?</a></li>
-  <li><a href="#what-have-they-found" id="toc-what-have-they-found" class="nav-link" data-scroll-target="#what-have-they-found">What have they found?</a>
+  <li><a href="#where-are-aggregating-anemones-found" id="toc-where-are-aggregating-anemones-found" class="nav-link" data-scroll-target="#where-are-aggregating-anemones-found"><span class="header-section-number">2</span> Where are aggregating anemones found?</a></li>
+  <li><a href="#who-studies-them-in-the-pnw" id="toc-who-studies-them-in-the-pnw" class="nav-link" data-scroll-target="#who-studies-them-in-the-pnw"><span class="header-section-number">3</span> Who studies them in the PNW?</a></li>
+  <li><a href="#what-have-they-found" id="toc-what-have-they-found" class="nav-link" data-scroll-target="#what-have-they-found"><span class="header-section-number">4</span> What have they found?</a>
   <ul>
-  <li><a href="#they-may-have-underappreciated-importance-as-coastal-primary-producers" id="toc-they-may-have-underappreciated-importance-as-coastal-primary-producers" class="nav-link" data-scroll-target="#they-may-have-underappreciated-importance-as-coastal-primary-producers">They may have underappreciated importance as coastal primary producers</a></li>
-  <li><a href="#they-have-a-broad-5-33.6c-thermal-tolerance" id="toc-they-have-a-broad-5-33.6c-thermal-tolerance" class="nav-link" data-scroll-target="#they-have-a-broad-5-33.6c-thermal-tolerance">They have a broad (5-33.6C) thermal tolerance</a></li>
-  <li><a href="#they-have-warriors-at-their-aggregate-boundaries" id="toc-they-have-warriors-at-their-aggregate-boundaries" class="nav-link" data-scroll-target="#they-have-warriors-at-their-aggregate-boundaries">They have warriors at their aggregate boundaries</a></li>
-  <li><a href="#they-have-a-linear-relationship-between-wet-weight-oral-disc-diameter-and-protein-content" id="toc-they-have-a-linear-relationship-between-wet-weight-oral-disc-diameter-and-protein-content" class="nav-link" data-scroll-target="#they-have-a-linear-relationship-between-wet-weight-oral-disc-diameter-and-protein-content">They have a linear relationship between wet weight, oral disc diameter and protein content</a></li>
-  <li><a href="#animal-husbandry" id="toc-animal-husbandry" class="nav-link" data-scroll-target="#animal-husbandry">Animal husbandry</a>
+  <li><a href="#they-may-have-underappreciated-importance-as-coastal-primary-producers" id="toc-they-may-have-underappreciated-importance-as-coastal-primary-producers" class="nav-link" data-scroll-target="#they-may-have-underappreciated-importance-as-coastal-primary-producers"><span class="header-section-number">4.1</span> They may have underappreciated importance as coastal primary producers</a></li>
+  <li><a href="#they-have-a-broad-5-33.6c-thermal-tolerance" id="toc-they-have-a-broad-5-33.6c-thermal-tolerance" class="nav-link" data-scroll-target="#they-have-a-broad-5-33.6c-thermal-tolerance"><span class="header-section-number">4.2</span> They have a broad (5-33.6C) thermal tolerance</a></li>
+  <li><a href="#they-have-warriors-at-their-aggregate-boundaries" id="toc-they-have-warriors-at-their-aggregate-boundaries" class="nav-link" data-scroll-target="#they-have-warriors-at-their-aggregate-boundaries"><span class="header-section-number">4.3</span> They have warriors at their aggregate boundaries</a></li>
+  <li><a href="#they-have-a-linear-relationship-between-wet-weight-oral-disc-diameter-and-protein-content" id="toc-they-have-a-linear-relationship-between-wet-weight-oral-disc-diameter-and-protein-content" class="nav-link" data-scroll-target="#they-have-a-linear-relationship-between-wet-weight-oral-disc-diameter-and-protein-content"><span class="header-section-number">4.4</span> They have a linear relationship between wet weight, oral disc diameter and protein content</a></li>
+  <li><a href="#animal-husbandry" id="toc-animal-husbandry" class="nav-link" data-scroll-target="#animal-husbandry"><span class="header-section-number">4.5</span> Animal husbandry</a>
   <ul>
-  <li><a href="#irradiance-of-b.-muscatinei-hosting-anemones" id="toc-irradiance-of-b.-muscatinei-hosting-anemones" class="nav-link" data-scroll-target="#irradiance-of-b.-muscatinei-hosting-anemones">Irradiance of B. muscatinei hosting Anemones</a></li>
+  <li><a href="#irradiance-of-b.-muscatinei-hosting-anemones" id="toc-irradiance-of-b.-muscatinei-hosting-anemones" class="nav-link" data-scroll-target="#irradiance-of-b.-muscatinei-hosting-anemones"><span class="header-section-number">4.5.1</span> Irradiance of B. muscatinei hosting Anemones</a></li>
   </ul></li>
-  <li><a href="#symbiosis" id="toc-symbiosis" class="nav-link" data-scroll-target="#symbiosis">Symbiosis</a></li>
+  <li><a href="#symbiosis" id="toc-symbiosis" class="nav-link" data-scroll-target="#symbiosis"><span class="header-section-number">4.6</span> Symbiosis</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -501,8 +492,8 @@ window.Quarto = {
 
 
 
-<section id="what-are-anthopleura-elegantissima" class="level1 page-columns page-full">
-<h1><em>What are Anthopleura elegantissima?</em></h1>
+<section id="what-are-anthopleura-elegantissima" class="level1 page-columns page-full" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> <em>What are Anthopleura elegantissima?</em></h1>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../../..\posts/projects/anemone/field-collection/field-pics/1/PXL_20240319_011553108.jpg" class="img-fluid figure-img"></p>
@@ -513,8 +504,8 @@ window.Quarto = {
 <div class="page-columns page-full"><blockquote class="blockquote">
 <p>“This anemone is an effective predator living in zooplankton-rich water, so one would not expect it to be as nutrient-limited, nor as dependent on algal photosynthetic productivity as its tropical symbiotic counterparts. It is also adapted to prolonged aerial exposure and greater temperature extremes; the animal feeds and its symbionts photosynthesize at temperatures approaching 5°C.” - <span class="citation" data-cites="mccloskey1996">McCloskey, Cove, and Verde (<a href="#ref-mccloskey1996" role="doc-biblioref">1996</a>)</span></p>
 </blockquote><div class="no-row-height column-margin column-container"></div></div>
-<section id="taxonomy" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="taxonomy">Taxonomy</h2>
+<section id="taxonomy" class="level2 page-columns page-full" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="taxonomy"><span class="header-section-number">1.1</span> Taxonomy</h2>
 <p>The aggregating anemone was first described in scientific literature by Johann-Friedrich Brandt in 1835. Their taxonomic name, <em>Anthopleura elegantissima (Brandt 1835)</em>, is thus tied to a latin description which can be translated:</p>
 <blockquote class="blockquote">
 <p>“The body is large, pustular, red, green, blue, or brown, or even spotted with green and purple. The disc is oval, with a white striated margin and a sub-pentangular margin of half a foot in diameter. The tentacles at the base and apex are narrowed and widened white, the apex is purple, marked with a purple band in the middle. On the shores of the island of Sitka.”</p>
@@ -532,8 +523,8 @@ window.Quarto = {
 <p><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=6110&amp;lvl=0" class="uri">https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=6110&amp;lvl=0</a></p>
 </section>
 </section>
-<section id="where-are-aggregating-anemones-found" class="level1">
-<h1>Where are aggregating anemones found?</h1>
+<section id="where-are-aggregating-anemones-found" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Where are aggregating anemones found?</h1>
 <p>From Baja California to Southeast Alaska all along the Eastern Pacific Coast.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -543,24 +534,24 @@ window.Quarto = {
 </div>
 <p><strong><em>A. elegantissima</em></strong> <strong>is very tolerant to a broad range of thermal exposures.</strong> As an intertidal organism, <em>A. elegantissima</em> regularly experience large temperature shifts throughout the day coinciding with desiccation at low tide. They are found from Baja, California to Southeast Alaska, and in anemones hosting the brown alga <em>Breviolum muscatinei</em>, temperatures from 6<sup>o</sup>C to 24<sup>o</sup>C do not significantly affect their algal density, mitotic index, or total chlorophyll (a + c), but net photosynthesis and anemone respiration both increase with temperature <span class="citation" data-cites="Verde.2002">(<a href="#ref-Verde.2002" role="doc-biblioref"><strong>Verde.2002?</strong></a>)</span>.</p>
 </section>
-<section id="who-studies-them-in-the-pnw" class="level1">
-<h1>Who studies them in the PNW?</h1>
+<section id="who-studies-them-in-the-pnw" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Who studies them in the PNW?</h1>
 <p>E. Alan Verde</p>
 <p>L.R. McClosky</p>
 <p>Brian Bingham</p>
 <p>Virginia Weiss</p>
 <p>James Dimond</p>
 </section>
-<section id="what-have-they-found" class="level1 page-columns page-full">
-<h1>What have they found?</h1>
-<section id="they-may-have-underappreciated-importance-as-coastal-primary-producers" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="they-may-have-underappreciated-importance-as-coastal-primary-producers">They may have underappreciated importance as coastal primary producers</h2>
+<section id="what-have-they-found" class="level1 page-columns page-full" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> What have they found?</h1>
+<section id="they-may-have-underappreciated-importance-as-coastal-primary-producers" class="level2 page-columns page-full" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="they-may-have-underappreciated-importance-as-coastal-primary-producers"><span class="header-section-number">4.1</span> They may have underappreciated importance as coastal primary producers</h2>
 <div class="page-columns page-full"><blockquote class="blockquote">
 <p>“The sea anemone Anthopleura elegantissima (BRANDT 1835) is an important member of many rocky intertidal communities along the west coast of North America, with extensive aggregations of these clonal animals stretching from high to low intertidal zones (Dayton 1971; Sebens 1982a). Even where they co-occur with spatially dominant mussels, densities of A. elegantissima can reach 500 individuals m2 (Sebens 1982b). Hosting symbiotic green chlorophytes (Elliptochloris marina LETSCH) and brown dinophytes (Symbiodinium spp.), members of A. elegantissima contribute significantly to intertidal productivity; in Southern California, their photosynthetic contribution is on par with that of intertidal seaweeds (Fitt et al.&nbsp;1982).” (<span class="citation" data-cites="bingham2011">(<a href="#ref-bingham2011" role="doc-biblioref">Bingham et al. 2011</a>)</span>, p.&nbsp;291)</p>
 </blockquote><div class="no-row-height column-margin column-container"></div></div>
 </section>
-<section id="they-have-a-broad-5-33.6c-thermal-tolerance" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="they-have-a-broad-5-33.6c-thermal-tolerance">They have a broad (5-33.6C) thermal tolerance</h2>
+<section id="they-have-a-broad-5-33.6c-thermal-tolerance" class="level2 page-columns page-full" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="they-have-a-broad-5-33.6c-thermal-tolerance"><span class="header-section-number">4.2</span> They have a broad (5-33.6C) thermal tolerance</h2>
 <div class="page-columns page-full"><blockquote class="blockquote">
 <p>“Members of A. elegantissima can tolerate much higher temperatures, at least for short periods. Dayton (1971) monitored internal body temperatures of A. elegantissima in the field and found that anemones could survive body temperatures as high as 33.6°C with no apparent negative effect. Over 3 d of field study, with different levels of sunlight and wind, body temperatures of A. elegantissima in our treatments often exceeded 24°C, and reached 32°C in the most extreme cases. Although not lethal, temperatures in this range induce the production of heat shock proteins in A. elegantissima (Snyder &amp; Rossi 2004), which may involve significant metabolic costs (Somero 2002).” (<span class="citation" data-cites="bingham2011">(<a href="#ref-bingham2011" role="doc-biblioref">Bingham et al. 2011</a>)</span>, p.&nbsp;296)</p>
 </blockquote><div class="no-row-height column-margin column-container"></div></div>
@@ -574,16 +565,16 @@ window.Quarto = {
 Snyder, Mark, and Sergio Rossi. 2004. <span>“Stress Protein (<span>HSP70</span> Family) Expression in Intertidal Benthic Organisms: <span>The</span> Example of <span>Anthopleura</span> Elegantissima (<span>Cnidaria</span>: <span>Anthozoa</span>).”</span> <em>Scientia Marina</em> 68 (April).
 </div></div></div>
 </section>
-<section id="they-have-warriors-at-their-aggregate-boundaries" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="they-have-warriors-at-their-aggregate-boundaries">They have warriors at their aggregate boundaries</h2>
+<section id="they-have-warriors-at-their-aggregate-boundaries" class="level2 page-columns page-full" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="they-have-warriors-at-their-aggregate-boundaries"><span class="header-section-number">4.3</span> They have warriors at their aggregate boundaries</h2>
 <div class="page-columns page-full"><blockquote class="blockquote">
 <p>Although aggregation has clear benefits for offsetting temperature increases, the benefits may not be shared equally by all members of the group; anemones on the edges of the clone, with their more exposed body surfaces, experienced more extreme temperatures than did individuals inside the aggregation. Individuals on the edges of clonal aggregations of A. elegantissima function as warriors, developing large acrorhagi (specialized organs filled with nematocysts) to defend the boundaries of the clone (Francis 1976). The warriors are smaller, have lower fission rates, and lack gonads, presumably because energy is diverted to defensive activities (Francis 1976).”(<span class="citation" data-cites="bingham2011">(<a href="#ref-bingham2011" role="doc-biblioref">Bingham et al. 2011</a>)</span>, p.&nbsp;298)</p>
 </blockquote><div class="no-row-height column-margin column-container"><div id="ref-bingham2011" class="csl-entry" role="listitem">
 Bingham, Brian L., Ileana Freytes, Meredith Emery, James Dimond, and Gisèle Muller-Parker. 2011. <span>“Aerial Exposure and Body Temperature of the Intertidal Sea Anemone <span>Anthopleura</span> Elegantissima.”</span> <em>Invertebrate Biology</em> 130 (4): 291–301. <a href="https://doi.org/10.1111/j.1744-7410.2011.00241.x">https://doi.org/10.1111/j.1744-7410.2011.00241.x</a>.
 </div></div></div>
 </section>
-<section id="they-have-a-linear-relationship-between-wet-weight-oral-disc-diameter-and-protein-content" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="they-have-a-linear-relationship-between-wet-weight-oral-disc-diameter-and-protein-content">They have a linear relationship between wet weight, oral disc diameter and protein content</h2>
+<section id="they-have-a-linear-relationship-between-wet-weight-oral-disc-diameter-and-protein-content" class="level2 page-columns page-full" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="they-have-a-linear-relationship-between-wet-weight-oral-disc-diameter-and-protein-content"><span class="header-section-number">4.4</span> They have a linear relationship between wet weight, oral disc diameter and protein content</h2>
 <p>In a paper <span class="citation" data-cites="dimond2011">J. L. Dimond et al. (<a href="#ref-dimond2011" role="doc-biblioref">2011</a>)</span>, a year-long survey of <em>Anthopleura elegantissima</em> anemones to assess seasonality provides background information about the seasonal variation in anemone size and symbiosis.</p>
 <div class="no-row-height column-margin column-container"></div><div class="page-columns page-full"><blockquote class="blockquote">
 <p>“Anemone biomass and symbiosis—All metrics of anemone size (Table 1) indicated significant seasonal variation (protein biomass, F3,286 5 12.9, p , 0.001; wet weight, F3,287 5 3.52, p 5 0.02; oral disk diameter, F3,287 5 9.60, p , 0.001). There were no significant shore height differences in any measure (protein biomass, F2,286 5 2.36, p 5 0.09; wet weight, F2,287 5 1.97, p 5 0.14; oral disk diameter, F2,287 5 1.35, p 5 0.26) and no significant interaction effects (protein biomass, F6,286 5 0.84, p 5 0.54; wet weight, F6,287 5 0.96, p 5 0.45; oral disk diameter, F6,287 5 1.24, p 5 0.29). Wet weight was a better predictor of protein biomass than was oral disk diameter (Table 1). However, although protein biomass was significantly higher in November than in all other months, wet weight was not significantly different among July, November, and February.” - <span class="citation" data-cites="dimond2011">J. L. Dimond et al. (<a href="#ref-dimond2011" role="doc-biblioref">2011</a>)</span></p>
@@ -602,12 +593,12 @@ r^{2} = 0.80
 <div class="no-row-height column-margin column-container"><div id="ref-dimond2011" class="csl-entry" role="listitem">
 Dimond, J. L., B. L. Bingham, G. Muller-Parker, K. Wuesthoff, and L. Francis. 2011. <span>“Seasonal Stability of a Flexible Algal–Cnidarian Symbiosis in a Highly Variable Temperate Environment.”</span> <em>Limnology and Oceanography</em> 56 (6): 2233–42. <a href="https://doi.org/10.4319/lo.2011.56.6.2233">https://doi.org/10.4319/lo.2011.56.6.2233</a>.
 </div></div></section>
-<section id="animal-husbandry" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="animal-husbandry">Animal husbandry</h2>
+<section id="animal-husbandry" class="level2 page-columns page-full" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="animal-husbandry"><span class="header-section-number">4.5</span> Animal husbandry</h2>
 <p>In the paper by <span class="citation" data-cites="mccloskey1996">McCloskey, Cove, and Verde (<a href="#ref-mccloskey1996" role="doc-biblioref">1996</a>)</span> the anemone’s were fed every other day with ~30mg of freshly hatched <em>Artemia nauplii</em> and maintained for 22 days with a single anemone each in its own 100mL jar, with seawater replaced every other day at 14°C ±2°C.</p>
 <div class="no-row-height column-margin column-container"></div><p>In the study by <span class="citation" data-cites="dimond2017">James L. Dimond et al. (<a href="#ref-dimond2017" role="doc-biblioref">2017</a>)</span>, anemones were housed in 200mL glass beakers in a seawater flow-through tank as a bath, with the water level just below the top of the beakers.</p>
-<section id="irradiance-of-b.-muscatinei-hosting-anemones" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="irradiance-of-b.-muscatinei-hosting-anemones">Irradiance of B. muscatinei hosting Anemones</h3>
+<section id="irradiance-of-b.-muscatinei-hosting-anemones" class="level3 page-columns page-full" data-number="4.5.1">
+<h3 data-number="4.5.1" class="anchored" data-anchor-id="irradiance-of-b.-muscatinei-hosting-anemones"><span class="header-section-number">4.5.1</span> Irradiance of B. muscatinei hosting Anemones</h3>
 <p>McFarland &amp; Muller-Parker 1993 report greater photosynthetic productivity in the brown dinoflagellate (*B. muscatinei*) compared to the green chlorophyte, especially at higher irradiances. <em>B. muscatinei</em></p>
 <p>For anemones hosting <em>B. muscatinei</em> :</p>
 <blockquote class="blockquote page-columns page-full">
@@ -622,8 +613,8 @@ E., Verde, and McCloskey L. 2002. <span>“A Comparative Analysis of the Photobi
 </div></div></blockquote>
 </section>
 </section>
-<section id="symbiosis" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="symbiosis">Symbiosis</h2>
+<section id="symbiosis" class="level2 page-columns page-full" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="symbiosis"><span class="header-section-number">4.6</span> Symbiosis</h2>
 <p><strong><em>A. elegantissima</em></strong> <strong>gains symbionts through horizontal transmission</strong> <span class="citation" data-cites="lajeunesse2000a">(<a href="#ref-lajeunesse2000a" role="doc-biblioref">Lajeunesse and Trench 2000</a>)</span><strong>. (Trench 1987)</strong></p>
 <div class="no-row-height column-margin column-container"></div><p>Normally, <em>A. elegantissima</em> expels symbionts from its coelenteron in a bolus of mucus and undigested material. Expulsion of symbionts should not be confused with “bleaching” phenomenon in reef corals, and may serve an ulterior purpose and undergo a different process. The anemones ‘cull’ or ‘weed’ the symbionts to maintain an optimal symbiont population density.</p>
 <p>The optimized symbiont density is reported in the literature as 10<sup>6</sup> cells·mg<sup>-1</sup> of host protein and 1-5·10<sup>6</sup> cells·cm<sup>-2</sup> <span class="citation" data-cites="mccloskey1996">(<a href="#ref-mccloskey1996" role="doc-biblioref">McCloskey, Cove, and Verde 1996</a>)</span>.</p>

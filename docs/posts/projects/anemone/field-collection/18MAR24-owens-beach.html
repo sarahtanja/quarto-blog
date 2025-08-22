@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -285,8 +285,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -299,14 +298,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -430,7 +421,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -440,28 +431,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#data-sheet" id="toc-data-sheet" class="nav-link active" data-scroll-target="#data-sheet">Data sheet</a></li>
-  <li><a href="#collection-map" id="toc-collection-map" class="nav-link" data-scroll-target="#collection-map">Collection map</a></li>
-  <li><a href="#aggregates-in-detail" id="toc-aggregates-in-detail" class="nav-link" data-scroll-target="#aggregates-in-detail">Aggregates (in detail)</a>
+  <li><a href="#data-sheet" id="toc-data-sheet" class="nav-link active" data-scroll-target="#data-sheet"><span class="header-section-number">1</span> Data sheet</a></li>
+  <li><a href="#collection-map" id="toc-collection-map" class="nav-link" data-scroll-target="#collection-map"><span class="header-section-number">2</span> Collection map</a></li>
+  <li><a href="#aggregates-in-detail" id="toc-aggregates-in-detail" class="nav-link" data-scroll-target="#aggregates-in-detail"><span class="header-section-number">3</span> Aggregates (in detail)</a>
   <ul>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">1</a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2</a></li>
-  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">3</a></li>
-  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">4</a></li>
-  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4">5</a></li>
-  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5">6</a></li>
-  <li><a href="#section-6" id="toc-section-6" class="nav-link" data-scroll-target="#section-6">7</a></li>
-  <li><a href="#section-7" id="toc-section-7" class="nav-link" data-scroll-target="#section-7">8</a></li>
-  <li><a href="#section-8" id="toc-section-8" class="nav-link" data-scroll-target="#section-8">9</a></li>
-  <li><a href="#section-9" id="toc-section-9" class="nav-link" data-scroll-target="#section-9">10</a></li>
-  <li><a href="#section-10" id="toc-section-10" class="nav-link" data-scroll-target="#section-10">11</a></li>
-  <li><a href="#section-11" id="toc-section-11" class="nav-link" data-scroll-target="#section-11">12</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="header-section-number">3.1</span> 1</a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"><span class="header-section-number">3.2</span> 2</a></li>
+  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2"><span class="header-section-number">3.3</span> 3</a></li>
+  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3"><span class="header-section-number">3.4</span> 4</a></li>
+  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4"><span class="header-section-number">3.5</span> 5</a></li>
+  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5"><span class="header-section-number">3.6</span> 6</a></li>
+  <li><a href="#section-6" id="toc-section-6" class="nav-link" data-scroll-target="#section-6"><span class="header-section-number">3.7</span> 7</a></li>
+  <li><a href="#section-7" id="toc-section-7" class="nav-link" data-scroll-target="#section-7"><span class="header-section-number">3.8</span> 8</a></li>
+  <li><a href="#section-8" id="toc-section-8" class="nav-link" data-scroll-target="#section-8"><span class="header-section-number">3.9</span> 9</a></li>
+  <li><a href="#section-9" id="toc-section-9" class="nav-link" data-scroll-target="#section-9"><span class="header-section-number">3.10</span> 10</a></li>
+  <li><a href="#section-10" id="toc-section-10" class="nav-link" data-scroll-target="#section-10"><span class="header-section-number">3.11</span> 11</a></li>
+  <li><a href="#section-11" id="toc-section-11" class="nav-link" data-scroll-target="#section-11"><span class="header-section-number">3.12</span> 12</a></li>
   </ul></li>
-  <li><a href="#takeaways" id="toc-takeaways" class="nav-link" data-scroll-target="#takeaways">Takeaways</a></li>
+  <li><a href="#takeaways" id="toc-takeaways" class="nav-link" data-scroll-target="#takeaways"><span class="header-section-number">4</span> Takeaways</a></li>
   </ul>
 </nav>
 </nav>
@@ -497,8 +488,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="data-sheet" class="level2">
-<h2 class="anchored" data-anchor-id="data-sheet">Data sheet</h2>
+<section id="data-sheet" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="data-sheet"><span class="header-section-number">1</span> Data sheet</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>anemone_collection <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">'18MAR24-anemone-collections.csv'</span>,</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>                               <span class="at">col_types =</span> <span class="fu">cols</span>(</span>
@@ -564,8 +555,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="collection-map" class="level2">
-<h2 class="anchored" data-anchor-id="collection-map">Collection map</h2>
+<section id="collection-map" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="collection-map"><span class="header-section-number">2</span> Collection map</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Prepare the text for the tooltip:</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>mytext <span class="ot">&lt;-</span> <span class="fu">paste</span>(</span>
@@ -591,10 +582,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="aggregates-in-detail" class="level2">
-<h2 class="anchored" data-anchor-id="aggregates-in-detail">Aggregates (in detail)</h2>
-<section id="section" class="level3">
-<h3 class="anchored" data-anchor-id="section">1</h3>
+<section id="aggregates-in-detail" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="aggregates-in-detail"><span class="header-section-number">3</span> Aggregates (in detail)</h2>
+<section id="section" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="section"><span class="header-section-number">3.1</span> 1</h3>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
@@ -612,8 +603,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <hr>
 </section>
-<section id="section-1" class="level3">
-<h3 class="anchored" data-anchor-id="section-1">2</h3>
+<section id="section-1" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="section-1"><span class="header-section-number">3.2</span> 2</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="field-pics/2/PXL_20240319_013050577.jpg" class="img-fluid figure-img"></p>
@@ -622,8 +613,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <hr>
 </section>
-<section id="section-2" class="level3">
-<h3 class="anchored" data-anchor-id="section-2">3</h3>
+<section id="section-2" class="level3" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="section-2"><span class="header-section-number">3.3</span> 3</h3>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
@@ -646,14 +637,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <hr>
 </section>
-<section id="section-3" class="level3">
-<h3 class="anchored" data-anchor-id="section-3">4</h3>
+<section id="section-3" class="level3" data-number="3.4">
+<h3 data-number="3.4" class="anchored" data-anchor-id="section-3"><span class="header-section-number">3.4</span> 4</h3>
 <p><img src="field-pics/IMG_4098.jpg" class="img-fluid"></p>
 <p>*need to find a better shot of aggregate no. 4…</p>
 <hr>
 </section>
-<section id="section-4" class="level3">
-<h3 class="anchored" data-anchor-id="section-4">5</h3>
+<section id="section-4" class="level3" data-number="3.5">
+<h3 data-number="3.5" class="anchored" data-anchor-id="section-4"><span class="header-section-number">3.5</span> 5</h3>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
@@ -676,8 +667,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <hr>
 </section>
-<section id="section-5" class="level3">
-<h3 class="anchored" data-anchor-id="section-5">6</h3>
+<section id="section-5" class="level3" data-number="3.6">
+<h3 data-number="3.6" class="anchored" data-anchor-id="section-5"><span class="header-section-number">3.6</span> 6</h3>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
@@ -700,8 +691,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <hr>
 </section>
-<section id="section-6" class="level3">
-<h3 class="anchored" data-anchor-id="section-6">7</h3>
+<section id="section-6" class="level3" data-number="3.7">
+<h3 data-number="3.7" class="anchored" data-anchor-id="section-6"><span class="header-section-number">3.7</span> 7</h3>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
@@ -724,8 +715,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <hr>
 </section>
-<section id="section-7" class="level3">
-<h3 class="anchored" data-anchor-id="section-7">8</h3>
+<section id="section-7" class="level3" data-number="3.8">
+<h3 data-number="3.8" class="anchored" data-anchor-id="section-7"><span class="header-section-number">3.8</span> 8</h3>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
@@ -748,8 +739,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <hr>
 </section>
-<section id="section-8" class="level3">
-<h3 class="anchored" data-anchor-id="section-8">9</h3>
+<section id="section-8" class="level3" data-number="3.9">
+<h3 data-number="3.9" class="anchored" data-anchor-id="section-8"><span class="header-section-number">3.9</span> 9</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="field-pics/9/IMG_4790.jpg" class="img-fluid figure-img"></p>
@@ -758,8 +749,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <hr>
 </section>
-<section id="section-9" class="level3">
-<h3 class="anchored" data-anchor-id="section-9">10</h3>
+<section id="section-9" class="level3" data-number="3.10">
+<h3 data-number="3.10" class="anchored" data-anchor-id="section-9"><span class="header-section-number">3.10</span> 10</h3>
 <div class="quarto-layout-panel" data-layout-ncol="3">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
@@ -790,8 +781,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <hr>
 </section>
-<section id="section-10" class="level3">
-<h3 class="anchored" data-anchor-id="section-10">11</h3>
+<section id="section-10" class="level3" data-number="3.11">
+<h3 data-number="3.11" class="anchored" data-anchor-id="section-10"><span class="header-section-number">3.11</span> 11</h3>
 <div class="quarto-layout-panel" data-layout-ncol="3">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
@@ -812,8 +803,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <hr>
 </section>
-<section id="section-11" class="level3">
-<h3 class="anchored" data-anchor-id="section-11">12</h3>
+<section id="section-11" class="level3" data-number="3.12">
+<h3 data-number="3.12" class="anchored" data-anchor-id="section-11"><span class="header-section-number">3.12</span> 12</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="field-pics/12/PXL_20240319_021738372.jpg" class="img-fluid figure-img"></p>
@@ -850,8 +841,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </section>
 </section>
-<section id="takeaways" class="level2">
-<h2 class="anchored" data-anchor-id="takeaways">Takeaways</h2>
+<section id="takeaways" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="takeaways"><span class="header-section-number">4</span> Takeaways</h2>
 <ul>
 <li><strong>Include your friends in field work, science is for everybody!</strong></li>
 <li><em>Anthopleura elegantissima</em> like wet shade, look for them at low tide, shaded parts of the beach, and under rocks and boulders.</li>

@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -258,8 +258,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -272,14 +271,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -402,7 +393,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -412,19 +403,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#samples" id="toc-samples" class="nav-link active" data-scroll-target="#samples">Samples</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
-  <li><a href="#extraction-notes" id="toc-extraction-notes" class="nav-link" data-scroll-target="#extraction-notes">Extraction Notes</a></li>
-  <li><a href="#end-products" id="toc-end-products" class="nav-link" data-scroll-target="#end-products">End Products</a></li>
-  <li><a href="#qubit-qaqc" id="toc-qubit-qaqc" class="nav-link" data-scroll-target="#qubit-qaqc">Qubit QAQC</a>
+  <li><a href="#samples" id="toc-samples" class="nav-link active" data-scroll-target="#samples"><span class="header-section-number">1</span> Samples</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">2</span> Summary</a></li>
+  <li><a href="#extraction-notes" id="toc-extraction-notes" class="nav-link" data-scroll-target="#extraction-notes"><span class="header-section-number">3</span> Extraction Notes</a></li>
+  <li><a href="#end-products" id="toc-end-products" class="nav-link" data-scroll-target="#end-products"><span class="header-section-number">4</span> End Products</a></li>
+  <li><a href="#qubit-qaqc" id="toc-qubit-qaqc" class="nav-link" data-scroll-target="#qubit-qaqc"><span class="header-section-number">5</span> Qubit QAQC</a>
   <ul>
-  <li><a href="#rna" id="toc-rna" class="nav-link" data-scroll-target="#rna">RNA</a></li>
+  <li><a href="#rna" id="toc-rna" class="nav-link" data-scroll-target="#rna"><span class="header-section-number">5.0.1</span> RNA</a></li>
   </ul></li>
-  <li><a href="#storage-location" id="toc-storage-location" class="nav-link" data-scroll-target="#storage-location">Storage Location</a></li>
+  <li><a href="#storage-location" id="toc-storage-location" class="nav-link" data-scroll-target="#storage-location"><span class="header-section-number">6</span> Storage Location</a></li>
   </ul>
 </nav>
 </nav>
@@ -440,8 +431,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="samples" class="level1 page-columns page-full">
-<h1>Samples</h1>
+<section id="samples" class="level1 page-columns page-full" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Samples</h1>
 <ul>
 <li><p>4L14F, 5CL14F, 6L14HF = 456L14</p></li>
 <li><p>4M14F, 5M14F, 6M14F = 456M14</p></li>
@@ -455,8 +446,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>13L9F, 14L9F, 15L9F = 131415L9</p></li>
 </ul>
 <div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;No 7C14F sample</p></div></div></section>
-<section id="summary" class="level1">
-<h1>Summary</h1>
+<section id="summary" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Summary</h1>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -471,8 +462,8 @@ Note
 </div>
 </div>
 </section>
-<section id="extraction-notes" class="level1">
-<h1>Extraction Notes</h1>
+<section id="extraction-notes" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Extraction Notes</h1>
 <p>This uses the Zymo Quick-DNA/RNA Miniprep Plus Kit and unless otherwise specified here, follows the <a href="https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/embryo-extractions.html">M. Capitata Embryo DNA/RNA Extractions Protocol</a>. All centrifugation ocurred at 14800rpm/16,162 xg.</p>
 <ul>
 <li><p>Thaw samples to room temp</p></li>
@@ -550,8 +541,8 @@ Note
 <li>Warmed Zymo DNase-RNase Free Water to 55C in heat block before elution, and slowly dripped 50uL of water directly over filter.</li>
 </ul>
 </section>
-<section id="end-products" class="level1">
-<h1>End Products</h1>
+<section id="end-products" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> End Products</h1>
 <p>eluted DNA volume: 50uL in <code>Zymo DNase-RNase Free Water</code></p>
 <p>eluted RNA volume: 50uL in warmed (55C) <code>Zymo DNase-RNase Free Water</code></p>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -568,8 +559,8 @@ Important
 </div>
 </div>
 </section>
-<section id="qubit-qaqc" class="level1 page-columns page-full">
-<h1>Qubit QAQC</h1>
+<section id="qubit-qaqc" class="level1 page-columns page-full" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Qubit QAQC</h1>
 <p>Using the Invitrogen Thermo Fischer RNA High Sensitivity Assay Kit.</p>
 <p>Prepared working solution for 6 samples and two standards (plus some extra) in a 5mL tube:</p>
 <div class="cell">
@@ -584,8 +575,8 @@ Important
 <pre><code>[1] 15</code></pre>
 </div>
 </div>
-<section id="rna" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="rna">RNA</h3>
+<section id="rna" class="level3 page-columns page-full" data-number="5.0.1">
+<h3 data-number="5.0.1" class="anchored" data-anchor-id="rna"><span class="header-section-number">5.0.1</span> RNA</h3>
 <p>standard 1: 96.18</p>
 <p>standard 2: 1912.96</p>
 <p>RunID: 2024-08-24_xxxxxx<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
@@ -677,8 +668,8 @@ Important
 </table>
 </section>
 </section>
-<section id="storage-location" class="level1">
-<h1>Storage Location</h1>
+<section id="storage-location" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Storage Location</h1>
 <p>RNA samples are stored in -80C ‘JPG Lab Thermo’ freezer on shelf 1 (top shelf) in <code>coral-embryo-leachate RNA</code> wax freezer boxes with green label tape.</p>
 <p>DNA samples (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate DNA</code> wax freezer box with yellow label tape.</p>
 <p>Protein flow-through (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate PROTEIN</code> wax freezer box with blue label tape.</p>

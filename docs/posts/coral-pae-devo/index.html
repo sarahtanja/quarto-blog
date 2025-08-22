@@ -97,9 +97,9 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -307,8 +307,7 @@ window.Quarto = {
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -321,14 +320,6 @@ window.Quarto = {
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -453,7 +444,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -463,30 +454,30 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#acute-plasticizer-exposure-to-montipora-capitata-egg-sperm-bundle-crosses" id="toc-acute-plasticizer-exposure-to-montipora-capitata-egg-sperm-bundle-crosses" class="nav-link active" data-scroll-target="#acute-plasticizer-exposure-to-montipora-capitata-egg-sperm-bundle-crosses">Acute plasticizer exposure to <em>Montipora capitata</em> egg-sperm bundle crosses</a>
+  <li><a href="#acute-plasticizer-exposure-to-montipora-capitata-egg-sperm-bundle-crosses" id="toc-acute-plasticizer-exposure-to-montipora-capitata-egg-sperm-bundle-crosses" class="nav-link active" data-scroll-target="#acute-plasticizer-exposure-to-montipora-capitata-egg-sperm-bundle-crosses"><span class="header-section-number">1</span> Acute plasticizer exposure to <em>Montipora capitata</em> egg-sperm bundle crosses</a>
   <ul>
-  <li><a href="#project-overview" id="toc-project-overview" class="nav-link" data-scroll-target="#project-overview">Project Overview</a>
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link" data-scroll-target="#project-overview"><span class="header-section-number">1.1</span> Project Overview</a>
   <ul>
-  <li><a href="#safety-considerations" id="toc-safety-considerations" class="nav-link" data-scroll-target="#safety-considerations">Safety Considerations</a></li>
+  <li><a href="#safety-considerations" id="toc-safety-considerations" class="nav-link" data-scroll-target="#safety-considerations"><span class="header-section-number">1.1.0.1</span> Safety Considerations</a></li>
   </ul></li>
-  <li><a href="#phthalates" id="toc-phthalates" class="nav-link" data-scroll-target="#phthalates">Phthalates</a>
+  <li><a href="#phthalates" id="toc-phthalates" class="nav-link" data-scroll-target="#phthalates"><span class="header-section-number">1.2</span> Phthalates</a>
   <ul>
-  <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a></li>
-  <li><a href="#dilution-plan" id="toc-dilution-plan" class="nav-link" data-scroll-target="#dilution-plan">Dilution Plan</a></li>
-  <li><a href="#prepare-phthalate-stock-solutions-in-1l-reagent-bottles" id="toc-prepare-phthalate-stock-solutions-in-1l-reagent-bottles" class="nav-link" data-scroll-target="#prepare-phthalate-stock-solutions-in-1l-reagent-bottles">Prepare phthalate stock solutions in 1L reagent bottles</a>
+  <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials"><span class="header-section-number">1.2.0.1</span> Materials</a></li>
+  <li><a href="#dilution-plan" id="toc-dilution-plan" class="nav-link" data-scroll-target="#dilution-plan"><span class="header-section-number">1.2.1</span> Dilution Plan</a></li>
+  <li><a href="#prepare-phthalate-stock-solutions-in-1l-reagent-bottles" id="toc-prepare-phthalate-stock-solutions-in-1l-reagent-bottles" class="nav-link" data-scroll-target="#prepare-phthalate-stock-solutions-in-1l-reagent-bottles"><span class="header-section-number">1.2.2</span> Prepare phthalate stock solutions in 1L reagent bottles</a>
   <ul class="collapse">
-  <li><a href="#overdose-make-500ml-of-500-mu-gl-using-epa-standard-mix" id="toc-overdose-make-500ml-of-500-mu-gl-using-epa-standard-mix" class="nav-link" data-scroll-target="#overdose-make-500ml-of-500-mu-gl-using-epa-standard-mix">OVERDOSE: Make 500mL of <span class="math inline">\(500 \mu g/L\)</span> using EPA standard mix</a></li>
-  <li><a href="#peak-make-1000ml-of-150-mu-gl-using-epa-standard-mix" id="toc-peak-make-1000ml-of-150-mu-gl-using-epa-standard-mix" class="nav-link" data-scroll-target="#peak-make-1000ml-of-150-mu-gl-using-epa-standard-mix">PEAK: Make 1000mL of <span class="math inline">\(150 \mu g/L\)</span> using EPA standard mix</a></li>
-  <li><a href="#high-make-1000ml-of-50-mu-gl-stock-using-epa-standard-mix" id="toc-high-make-1000ml-of-50-mu-gl-stock-using-epa-standard-mix" class="nav-link" data-scroll-target="#high-make-1000ml-of-50-mu-gl-stock-using-epa-standard-mix">HIGH: Make 1000mL of <span class="math inline">\(50 \mu g/L\)</span> stock using EPA standard mix</a></li>
-  <li><a href="#mid-make-1000ml-of-5mugl-stock-using-50mugl-stock" id="toc-mid-make-1000ml-of-5mugl-stock-using-50mugl-stock" class="nav-link" data-scroll-target="#mid-make-1000ml-of-5mugl-stock-using-50mugl-stock">MID: Make 1000mL of 5<span class="math inline">\(\mu\)</span>g/L stock using 50<span class="math inline">\(\mu\)</span>g/L stock</a></li>
-  <li><a href="#low-make-1000ml-of-0.5mugl-stock-using-5mugl-stock" id="toc-low-make-1000ml-of-0.5mugl-stock-using-5mugl-stock" class="nav-link" data-scroll-target="#low-make-1000ml-of-0.5mugl-stock-using-5mugl-stock">LOW: Make 1000mL of 0.5<span class="math inline">\(\mu\)</span>g/L stock using 5<span class="math inline">\(\mu\)</span>g/L stock</a></li>
+  <li><a href="#overdose-make-500ml-of-500-mu-gl-using-epa-standard-mix" id="toc-overdose-make-500ml-of-500-mu-gl-using-epa-standard-mix" class="nav-link" data-scroll-target="#overdose-make-500ml-of-500-mu-gl-using-epa-standard-mix"><span class="header-section-number">1.2.2.1</span> OVERDOSE: Make 500mL of <span class="math inline">\(500 \mu g/L\)</span> using EPA standard mix</a></li>
+  <li><a href="#peak-make-1000ml-of-150-mu-gl-using-epa-standard-mix" id="toc-peak-make-1000ml-of-150-mu-gl-using-epa-standard-mix" class="nav-link" data-scroll-target="#peak-make-1000ml-of-150-mu-gl-using-epa-standard-mix"><span class="header-section-number">1.2.2.2</span> PEAK: Make 1000mL of <span class="math inline">\(150 \mu g/L\)</span> using EPA standard mix</a></li>
+  <li><a href="#high-make-1000ml-of-50-mu-gl-stock-using-epa-standard-mix" id="toc-high-make-1000ml-of-50-mu-gl-stock-using-epa-standard-mix" class="nav-link" data-scroll-target="#high-make-1000ml-of-50-mu-gl-stock-using-epa-standard-mix"><span class="header-section-number">1.2.2.3</span> HIGH: Make 1000mL of <span class="math inline">\(50 \mu g/L\)</span> stock using EPA standard mix</a></li>
+  <li><a href="#mid-make-1000ml-of-5mugl-stock-using-50mugl-stock" id="toc-mid-make-1000ml-of-5mugl-stock-using-50mugl-stock" class="nav-link" data-scroll-target="#mid-make-1000ml-of-5mugl-stock-using-50mugl-stock"><span class="header-section-number">1.2.2.4</span> MID: Make 1000mL of 5<span class="math inline">\(\mu\)</span>g/L stock using 50<span class="math inline">\(\mu\)</span>g/L stock</a></li>
+  <li><a href="#low-make-1000ml-of-0.5mugl-stock-using-5mugl-stock" id="toc-low-make-1000ml-of-0.5mugl-stock-using-5mugl-stock" class="nav-link" data-scroll-target="#low-make-1000ml-of-0.5mugl-stock-using-5mugl-stock"><span class="header-section-number">1.2.2.5</span> LOW: Make 1000mL of 0.5<span class="math inline">\(\mu\)</span>g/L stock using 5<span class="math inline">\(\mu\)</span>g/L stock</a></li>
   </ul></li>
-  <li><a href="#prepare-treatments-in-20ml-scintillation-vials" id="toc-prepare-treatments-in-20ml-scintillation-vials" class="nav-link" data-scroll-target="#prepare-treatments-in-20ml-scintillation-vials">Prepare treatments in 20mL scintillation vials</a></li>
-  <li><a href="#collect-egg-sperm-bundles-and-perform-bundle-bundle-crosses" id="toc-collect-egg-sperm-bundles-and-perform-bundle-bundle-crosses" class="nav-link" data-scroll-target="#collect-egg-sperm-bundles-and-perform-bundle-bundle-crosses">Collect egg-sperm bundles and perform bundle-bundle crosses</a></li>
+  <li><a href="#prepare-treatments-in-20ml-scintillation-vials" id="toc-prepare-treatments-in-20ml-scintillation-vials" class="nav-link" data-scroll-target="#prepare-treatments-in-20ml-scintillation-vials"><span class="header-section-number">1.2.3</span> Prepare treatments in 20mL scintillation vials</a></li>
+  <li><a href="#collect-egg-sperm-bundles-and-perform-bundle-bundle-crosses" id="toc-collect-egg-sperm-bundles-and-perform-bundle-bundle-crosses" class="nav-link" data-scroll-target="#collect-egg-sperm-bundles-and-perform-bundle-bundle-crosses"><span class="header-section-number">1.2.4</span> Collect egg-sperm bundles and perform bundle-bundle crosses</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -504,13 +495,13 @@ window.Quarto = {
 
 
 
-<section id="acute-plasticizer-exposure-to-montipora-capitata-egg-sperm-bundle-crosses" class="level1 page-columns page-full">
-<h1>Acute plasticizer exposure to <em>Montipora capitata</em> egg-sperm bundle crosses</h1>
-<section id="project-overview" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
+<section id="acute-plasticizer-exposure-to-montipora-capitata-egg-sperm-bundle-crosses" class="level1 page-columns page-full" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Acute plasticizer exposure to <em>Montipora capitata</em> egg-sperm bundle crosses</h1>
+<section id="project-overview" class="level2 page-columns page-full" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="project-overview"><span class="header-section-number">1.1</span> Project Overview</h2>
 <p>Plasticizers are a suite of chemicals added to plastic consumer products to increase flexibily. The most widely used plasticizers are phthalate acid esters (PAEs). PAE’s are classified as endocrine-disrupting chemicals, and can mimic estrogen. In this experiment, I exposed coral embryos and larvae to phthalates in filtered seawater and assess any toxic effects on the survival and development of the coral embryos. This experiment will be conducted in closed-system <span class="math inline">\(20mL\)</span> scintillation vials with foil-lined caps.</p>
-<section id="safety-considerations" class="level4 page-columns page-full">
-<h4 class="anchored" data-anchor-id="safety-considerations">Safety Considerations</h4>
+<section id="safety-considerations" class="level4 page-columns page-full" data-number="1.1.0.1">
+<h4 data-number="1.1.0.1" class="anchored" data-anchor-id="safety-considerations"><span class="header-section-number">1.1.0.1</span> Safety Considerations</h4>
 <p>Please review the <a href="https://www.sigmaaldrich.com/US/en/sds/supelco/48223">SDS</a> for EPA 506 phthalate mix, 500<span class="math inline">\(\mu\)</span>g/L in methanol before working with this chemical!</p>
 <p>Hazard statements:</p>
 <ul>
@@ -535,8 +526,8 @@ Caution
 Tetu, Sasha G., Indrani Sarker, Verena Schrameyer, Russell Pickford, Liam D. H. Elbourne, Lisa R. Moore, and Ian T. Paulsen. 2019. <span>“Plastic Leachates Impair Growth and Oxygen Production in <span>Prochlorococcus</span>, the Ocean’s Most Abundant Photosynthetic Bacteria.”</span> <em>Communications Biology</em> 2 (May): 184. <a href="https://doi.org/10.1038/s42003-019-0410-x">https://doi.org/10.1038/s42003-019-0410-x</a>.
 </div></div></section>
 </section>
-<section id="phthalates" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="phthalates">Phthalates</h2>
+<section id="phthalates" class="level2 page-columns page-full" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="phthalates"><span class="header-section-number">1.2</span> Phthalates</h2>
 <p>I used the <a href="https://www.sigmaaldrich.com/US/en/product/supelco/48223?gclid=CjwKCAjw-8qVBhANEiwAfjXLrp8fD-G8yiB_NyrA3OLy3r2jdylgBmHVPUfGFnMp4CMfuVwePGi1dxoCBQIQAvD_BwE">EPA 506 phthalate esters mix 1</a>, which comes as a 1mL ampule vial with a glass break-off cap. It includes 6 common phthalates each at a concentration of <span class="math inline">\(500\mu g/mL\)</span>, aka <span class="math inline">\((500,000 \mu g/L)\)</span>.</p>
 <p>The mix contained the following 6 phthalates:</p>
 <ul>
@@ -680,8 +671,8 @@ Tip
 <p>Doses will be graphed on a log scale x axis</p>
 </div>
 </div>
-<section id="materials" class="level4">
-<h4 class="anchored" data-anchor-id="materials">Materials</h4>
+<section id="materials" class="level4" data-number="1.2.0.1">
+<h4 data-number="1.2.0.1" class="anchored" data-anchor-id="materials"><span class="header-section-number">1.2.0.1</span> Materials</h4>
 <ul>
 <li>1mL of <a href="https://www.sigmaaldrich.com/US/en/product/supelco/48223">EPA 506 phthalate mix , <span class="math inline">\(500 \mu g/mL\)</span> in methanol</a> (keep refrigerated)</li>
 </ul>
@@ -736,15 +727,15 @@ Tip
 <li><p>500<span class="math inline">\(\mu\)</span>g/L (0.500<span class="math inline">\(\mu\)</span>g/mL): an overdose above environmental relevance to be used as a positive control</p></li>
 </ul>
 </section>
-<section id="dilution-plan" class="level3">
-<h3 class="anchored" data-anchor-id="dilution-plan">Dilution Plan</h3>
+<section id="dilution-plan" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="dilution-plan"><span class="header-section-number">1.2.1</span> Dilution Plan</h3>
 <p>The EPA standard mix is <span class="math inline">\(500 \mu g/mL\)</span> (or also <span class="math inline">\(500,000 \mu g/L\)</span>). This is our known concentration <span class="math inline">\(C_1\)</span>. We also know our desired diluted concentration, <span class="math inline">\(C_2\)</span>, and the volume we need. Use the dilution equation, <span class="math inline">\(C_1V_1 = C_2 V_2\)</span>, to solve for <span class="math inline">\(V_1\)</span>, and find out how much of <span class="math inline">\(C_1\)</span> we need to add to filtered seawater make the total end volume <span class="math inline">\(V_2\)</span>.</p>
 </section>
-<section id="prepare-phthalate-stock-solutions-in-1l-reagent-bottles" class="level3">
-<h3 class="anchored" data-anchor-id="prepare-phthalate-stock-solutions-in-1l-reagent-bottles">Prepare phthalate stock solutions in 1L reagent bottles</h3>
+<section id="prepare-phthalate-stock-solutions-in-1l-reagent-bottles" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="prepare-phthalate-stock-solutions-in-1l-reagent-bottles"><span class="header-section-number">1.2.2</span> Prepare phthalate stock solutions in 1L reagent bottles</h3>
 <p>Final volume of stock solutions must be enough to use in subsequent serial dilutions and in sample vials over the course of three nights of spawning. Keep stock solutions between -3<span class="math inline">\(\degree\)</span>C to -8<span class="math inline">\(\degree\)</span>C in a chemical storage refrigerator (same as the EPA standards mix).</p>
-<section id="overdose-make-500ml-of-500-mu-gl-using-epa-standard-mix" class="level4">
-<h4 class="anchored" data-anchor-id="overdose-make-500ml-of-500-mu-gl-using-epa-standard-mix">OVERDOSE: Make 500mL of <span class="math inline">\(500 \mu g/L\)</span> using EPA standard mix</h4>
+<section id="overdose-make-500ml-of-500-mu-gl-using-epa-standard-mix" class="level4" data-number="1.2.2.1">
+<h4 data-number="1.2.2.1" class="anchored" data-anchor-id="overdose-make-500ml-of-500-mu-gl-using-epa-standard-mix"><span class="header-section-number">1.2.2.1</span> OVERDOSE: Make 500mL of <span class="math inline">\(500 \mu g/L\)</span> using EPA standard mix</h4>
 <p><span class="math display">\[
 500\mu g(V_1)=0.500\mu g(500mL) \\
 V_1= \frac{0.500\mu g (500mL)}{500 \mu g} \\
@@ -754,8 +745,8 @@ mL
 <p><span class="math inline">\(500mL - 0.5mL = 499.5mL\)</span> : volume of filtered seawater to add to 1000mL reagent jar <em>(Do this via graduated cylinder, then add via p200 pipette)</em></p>
 <p><span class="math inline">\(0.5mL = 500\mu L\)</span> : volume of EPA standard mix to add to 1000mL reagent jar to attain end volume of 500mL <em>(use p200 pipette)</em></p>
 </section>
-<section id="peak-make-1000ml-of-150-mu-gl-using-epa-standard-mix" class="level4">
-<h4 class="anchored" data-anchor-id="peak-make-1000ml-of-150-mu-gl-using-epa-standard-mix">PEAK: Make 1000mL of <span class="math inline">\(150 \mu g/L\)</span> using EPA standard mix</h4>
+<section id="peak-make-1000ml-of-150-mu-gl-using-epa-standard-mix" class="level4" data-number="1.2.2.2">
+<h4 data-number="1.2.2.2" class="anchored" data-anchor-id="peak-make-1000ml-of-150-mu-gl-using-epa-standard-mix"><span class="header-section-number">1.2.2.2</span> PEAK: Make 1000mL of <span class="math inline">\(150 \mu g/L\)</span> using EPA standard mix</h4>
 <p><span class="math display">\[
 500\mu g(V_1)=0.150\mu g(1000mL) \\
 V_1= \frac{0.150\mu g (1000mL)}{500 \mu g} \\
@@ -765,8 +756,8 @@ mL
 <p><span class="math inline">\(1000mL - 0.3mL = 999.7mL\)</span> : volume of filtered seawater to add to 1000mL reagent jar <em>(Do this via graduated cylinder, then add via p200 pipette)</em></p>
 <p><span class="math inline">\(0.3mL = 300\mu L\)</span> : volume of EPA standard mix to add to 1000mL reagent jar to attain end volume of 1000mL <em>(use p200 pipette)</em></p>
 </section>
-<section id="high-make-1000ml-of-50-mu-gl-stock-using-epa-standard-mix" class="level4">
-<h4 class="anchored" data-anchor-id="high-make-1000ml-of-50-mu-gl-stock-using-epa-standard-mix">HIGH: Make 1000mL of <span class="math inline">\(50 \mu g/L\)</span> stock using EPA standard mix</h4>
+<section id="high-make-1000ml-of-50-mu-gl-stock-using-epa-standard-mix" class="level4" data-number="1.2.2.3">
+<h4 data-number="1.2.2.3" class="anchored" data-anchor-id="high-make-1000ml-of-50-mu-gl-stock-using-epa-standard-mix"><span class="header-section-number">1.2.2.3</span> HIGH: Make 1000mL of <span class="math inline">\(50 \mu g/L\)</span> stock using EPA standard mix</h4>
 <p><span class="math display">\[
 500\mu g(V_1)=0.05\mu g(1000mL) \\
 V_1= \frac{0.05\mu g (1000mL)}{500\mu g} \\
@@ -775,8 +766,8 @@ V_1 = 0.1mL
 <p><span class="math inline">\(1000mL - 0.1mL = 999.9mL\)</span> : volume of filtered seawater to add to autoclaved 1000mL reagent jar to (Do this via graduated cylinder, then add via sereological and p200 pipette)</p>
 <p><span class="math inline">\(0.1mL = 100\mu L\)</span> : volume of EPA standard mix to add to autoclaved 1000mL reagent jar to attain end volume of 1000mL <em>(use p200 pipette)</em></p>
 </section>
-<section id="mid-make-1000ml-of-5mugl-stock-using-50mugl-stock" class="level4">
-<h4 class="anchored" data-anchor-id="mid-make-1000ml-of-5mugl-stock-using-50mugl-stock">MID: Make 1000mL of 5<span class="math inline">\(\mu\)</span>g/L stock using 50<span class="math inline">\(\mu\)</span>g/L stock</h4>
+<section id="mid-make-1000ml-of-5mugl-stock-using-50mugl-stock" class="level4" data-number="1.2.2.4">
+<h4 data-number="1.2.2.4" class="anchored" data-anchor-id="mid-make-1000ml-of-5mugl-stock-using-50mugl-stock"><span class="header-section-number">1.2.2.4</span> MID: Make 1000mL of 5<span class="math inline">\(\mu\)</span>g/L stock using 50<span class="math inline">\(\mu\)</span>g/L stock</h4>
 <p><span class="math display">\[
 0.05\mu g(V_1)=0.005\mu g(1000mL) \\
 V_1= \frac{0.005\mu g (1000mL)}{0.05 \mu g} \\
@@ -785,8 +776,8 @@ V_1 = 100mL
 <p><span class="math inline">\(1000mL - 100mL = 900mL\)</span> : volume of filtered seawater to add to autoclaved 1000mL reagent jar <em>(Do this via graduated cylinder)</em></p>
 <p><span class="math inline">\(100mL\)</span> : volume of 50<span class="math inline">\(\mu\)</span>g/L stock to add to 0.005<span class="math inline">\(\mu\)</span>g/mL stock 1000mL reagent jar to attain end volume of 1000mL <em>(do this via 4 pulls of 25mL serological pipette)</em></p>
 </section>
-<section id="low-make-1000ml-of-0.5mugl-stock-using-5mugl-stock" class="level4">
-<h4 class="anchored" data-anchor-id="low-make-1000ml-of-0.5mugl-stock-using-5mugl-stock">LOW: Make 1000mL of 0.5<span class="math inline">\(\mu\)</span>g/L stock using 5<span class="math inline">\(\mu\)</span>g/L stock</h4>
+<section id="low-make-1000ml-of-0.5mugl-stock-using-5mugl-stock" class="level4" data-number="1.2.2.5">
+<h4 data-number="1.2.2.5" class="anchored" data-anchor-id="low-make-1000ml-of-0.5mugl-stock-using-5mugl-stock"><span class="header-section-number">1.2.2.5</span> LOW: Make 1000mL of 0.5<span class="math inline">\(\mu\)</span>g/L stock using 5<span class="math inline">\(\mu\)</span>g/L stock</h4>
 <p><span class="math display">\[
 0.005\mu g(V_1)=0.0005\mu g(1000mL) \\
 V_1= \frac{0.0005\mu g (1000mL)}{0.005 \mu g} \\
@@ -796,14 +787,14 @@ V_1 = 100mL
 <p><span class="math inline">\(100mL\)</span> : volume of 5<span class="math inline">\(\mu\)</span>g/L stock to add to 0.05<span class="math inline">\(\mu\)</span>g/mL stock 1000mL reagent jar to attain end volume of 1000mL <em>(do this via 4 pulls of 25mL serological pipette)</em></p>
 </section>
 </section>
-<section id="prepare-treatments-in-20ml-scintillation-vials" class="level3">
-<h3 class="anchored" data-anchor-id="prepare-treatments-in-20ml-scintillation-vials">Prepare treatments in 20mL scintillation vials</h3>
+<section id="prepare-treatments-in-20ml-scintillation-vials" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" class="anchored" data-anchor-id="prepare-treatments-in-20ml-scintillation-vials"><span class="header-section-number">1.2.3</span> Prepare treatments in 20mL scintillation vials</h3>
 <ul>
 <li>Use a 20mL serological pipette to transfer 19mL of stock solution to a 20mL scintillation vial</li>
 </ul>
 </section>
-<section id="collect-egg-sperm-bundles-and-perform-bundle-bundle-crosses" class="level3">
-<h3 class="anchored" data-anchor-id="collect-egg-sperm-bundles-and-perform-bundle-bundle-crosses">Collect egg-sperm bundles and perform bundle-bundle crosses</h3>
+<section id="collect-egg-sperm-bundles-and-perform-bundle-bundle-crosses" class="level3" data-number="1.2.4">
+<h3 data-number="1.2.4" class="anchored" data-anchor-id="collect-egg-sperm-bundles-and-perform-bundle-bundle-crosses"><span class="header-section-number">1.2.4</span> Collect egg-sperm bundles and perform bundle-bundle crosses</h3>
 
 
 <!-- -->

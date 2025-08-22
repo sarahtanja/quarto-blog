@@ -232,7 +232,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -243,15 +243,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul class="collapse">
-  <li><a href="#install-packages" id="toc-install-packages" class="nav-link active" data-scroll-target="#install-packages">Install Packages</a></li>
-  <li><a href="#load-packages" id="toc-load-packages" class="nav-link" data-scroll-target="#load-packages">Load packages</a></li>
-  <li><a href="#use-curl-to-get-ndbc-data" id="toc-use-curl-to-get-ndbc-data" class="nav-link" data-scroll-target="#use-curl-to-get-ndbc-data">Use <code>curl</code> to get NDBC data</a></li>
-  <li><a href="#gunzip-data-files" id="toc-gunzip-data-files" class="nav-link" data-scroll-target="#gunzip-data-files"><code>gunzip</code> data files</a></li>
-  <li><a href="#read-data-into-r-and-look-at-it" id="toc-read-data-into-r-and-look-at-it" class="nav-link" data-scroll-target="#read-data-into-r-and-look-at-it">Read data into R and look at it!</a></li>
+  <li><a href="#install-packages" id="toc-install-packages" class="nav-link active" data-scroll-target="#install-packages"><span class="header-section-number">1</span> Install Packages</a></li>
+  <li><a href="#load-packages" id="toc-load-packages" class="nav-link" data-scroll-target="#load-packages"><span class="header-section-number">2</span> Load packages</a></li>
+  <li><a href="#use-curl-to-get-ndbc-data" id="toc-use-curl-to-get-ndbc-data" class="nav-link" data-scroll-target="#use-curl-to-get-ndbc-data"><span class="header-section-number">3</span> Use <code>curl</code> to get NDBC data</a></li>
+  <li><a href="#gunzip-data-files" id="toc-gunzip-data-files" class="nav-link" data-scroll-target="#gunzip-data-files"><span class="header-section-number">4</span> <code>gunzip</code> data files</a></li>
+  <li><a href="#read-data-into-r-and-look-at-it" id="toc-read-data-into-r-and-look-at-it" class="nav-link" data-scroll-target="#read-data-into-r-and-look-at-it"><span class="header-section-number">5</span> Read data into R and look at it!</a></li>
   </ul>
 </nav>
     </div>
@@ -284,15 +284,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </figure>
 </div>
 </div></div><p>Historical Data: <a href="https://www.ndbc.noaa.gov/station_history.php?station=tcnw1" class="uri">https://www.ndbc.noaa.gov/station_history.php?station=tcnw1</a></p>
-<section id="install-packages" class="level2">
-<h2 class="anchored" data-anchor-id="install-packages">Install Packages</h2>
+<section id="install-packages" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="install-packages"><span class="header-section-number">1</span> Install Packages</h2>
 <div class="cell" data-layout-align="center" data-hash="heat-wave_cache/html/install-packages_f16c9afb9c0db82db5d3d813762114a9">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">"tidyverse"</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>()) <span class="sc">==</span> <span class="st">'FALSE'</span>) <span class="fu">install.packages</span>(<span class="st">'tidyverse'</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">"plotly"</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>()) <span class="sc">==</span> <span class="st">'FALSE'</span>) <span class="fu">install.packages</span>(<span class="st">'plotly'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="load-packages" class="level2">
-<h2 class="anchored" data-anchor-id="load-packages">Load packages</h2>
+<section id="load-packages" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="load-packages"><span class="header-section-number">2</span> Load packages</h2>
 <div class="cell" data-layout-align="center" data-hash="heat-wave_cache/html/load-packages_a77f5330a7af652c474436169aae2ee0">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -302,8 +302,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> <span class="at">-p</span> data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="use-curl-to-get-ndbc-data" class="level2">
-<h2 class="anchored" data-anchor-id="use-curl-to-get-ndbc-data">Use <code>curl</code> to get NDBC data</h2>
+<section id="use-curl-to-get-ndbc-data" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="use-curl-to-get-ndbc-data"><span class="header-section-number">3</span> Use <code>curl</code> to get NDBC data</h2>
 <p>Pull data from the year 2021 in which the June record-breaking heat wave occurred…</p>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># navigate to data directory</span></span>
@@ -318,8 +318,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-O</span> https://www.ndbc.noaa.gov/data/historical/stdmet/tcmw1h2021.txt.gz</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="gunzip-data-files" class="level2">
-<h2 class="anchored" data-anchor-id="gunzip-data-files"><code>gunzip</code> data files</h2>
+<section id="gunzip-data-files" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="gunzip-data-files"><span class="header-section-number">4</span> <code>gunzip</code> data files</h2>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">gunzip</span> data/tcnw1h2021.txt.gz </span>
@@ -327,8 +327,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">gunzip</span> data/tcmw1h2021.txt.gz</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="read-data-into-r-and-look-at-it" class="level2">
-<h2 class="anchored" data-anchor-id="read-data-into-r-and-look-at-it">Read data into R and look at it!</h2>
+<section id="read-data-into-r-and-look-at-it" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="read-data-into-r-and-look-at-it"><span class="header-section-number">5</span> Read data into R and look at it!</h2>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>read_tsv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>

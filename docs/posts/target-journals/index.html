@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -257,8 +257,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -271,14 +270,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -401,7 +392,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -411,12 +402,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#environmental-pollution" id="toc-environmental-pollution" class="nav-link active" data-scroll-target="#environmental-pollution">Environmental Pollution</a></li>
-  <li><a href="#marine-pollution-bulletin" id="toc-marine-pollution-bulletin" class="nav-link" data-scroll-target="#marine-pollution-bulletin">Marine Pollution Bulletin</a></li>
+  <li><a href="#environmental-pollution" id="toc-environmental-pollution" class="nav-link active" data-scroll-target="#environmental-pollution"><span class="header-section-number">1</span> Environmental Pollution</a></li>
+  <li><a href="#marine-pollution-bulletin" id="toc-marine-pollution-bulletin" class="nav-link" data-scroll-target="#marine-pollution-bulletin"><span class="header-section-number">2</span> Marine Pollution Bulletin</a></li>
   </ul>
 </nav>
 </nav>
@@ -432,8 +423,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="environmental-pollution" class="level2">
-<h2 class="anchored" data-anchor-id="environmental-pollution"><a href="https://www-sciencedirect-com.offcampus.lib.washington.edu/journal/environmental-pollution">Environmental Pollution</a></h2>
+<section id="environmental-pollution" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="environmental-pollution"><span class="header-section-number">1</span> <a href="https://www-sciencedirect-com.offcampus.lib.washington.edu/journal/environmental-pollution">Environmental Pollution</a></h2>
 <blockquote class="blockquote">
 <p>Impact Factor 8.9</p>
 <p>Site score 14.9</p>
@@ -446,8 +437,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 Footnotes should be used sparingly. Number them consecutively throughout the article.</p>
 </blockquote>
 </section>
-<section id="marine-pollution-bulletin" class="level2">
-<h2 class="anchored" data-anchor-id="marine-pollution-bulletin"><a href="https://www-sciencedirect-com.offcampus.lib.washington.edu/journal/marine-pollution-bulletin">Marine Pollution Bulletin</a></h2>
+<section id="marine-pollution-bulletin" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="marine-pollution-bulletin"><span class="header-section-number">2</span> <a href="https://www-sciencedirect-com.offcampus.lib.washington.edu/journal/marine-pollution-bulletin">Marine Pollution Bulletin</a></h2>
 <blockquote class="blockquote">
 <p>Impact Factor 5.8</p>
 <p>Cite score 10.1</p>

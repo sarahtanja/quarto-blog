@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -261,8 +261,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -275,14 +274,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -406,7 +397,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -416,18 +407,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#lights" id="toc-lights" class="nav-link active" data-scroll-target="#lights">Lights</a>
+  <li><a href="#lights" id="toc-lights" class="nav-link active" data-scroll-target="#lights"><span class="header-section-number">1</span> Lights</a>
   <ul>
-  <li><a href="#ai" id="toc-ai" class="nav-link" data-scroll-target="#ai">AI</a></li>
-  <li><a href="#kessil-lights" id="toc-kessil-lights" class="nav-link" data-scroll-target="#kessil-lights">Kessil lights</a></li>
+  <li><a href="#ai" id="toc-ai" class="nav-link" data-scroll-target="#ai"><span class="header-section-number">1.1</span> AI</a></li>
+  <li><a href="#kessil-lights" id="toc-kessil-lights" class="nav-link" data-scroll-target="#kessil-lights"><span class="header-section-number">1.2</span> Kessil lights</a></li>
   </ul></li>
-  <li><a href="#apex" id="toc-apex" class="nav-link" data-scroll-target="#apex">Apex</a></li>
-  <li><a href="#pumps" id="toc-pumps" class="nav-link" data-scroll-target="#pumps">Pumps</a></li>
-  <li><a href="#float-valve" id="toc-float-valve" class="nav-link" data-scroll-target="#float-valve">Float Valve</a></li>
+  <li><a href="#apex" id="toc-apex" class="nav-link" data-scroll-target="#apex"><span class="header-section-number">2</span> Apex</a></li>
+  <li><a href="#pumps" id="toc-pumps" class="nav-link" data-scroll-target="#pumps"><span class="header-section-number">3</span> Pumps</a></li>
+  <li><a href="#float-valve" id="toc-float-valve" class="nav-link" data-scroll-target="#float-valve"><span class="header-section-number">4</span> Float Valve</a></li>
   </ul>
 </nav>
 </nav>
@@ -443,10 +434,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="lights" class="level2">
-<h2 class="anchored" data-anchor-id="lights">Lights</h2>
-<section id="ai" class="level3">
-<h3 class="anchored" data-anchor-id="ai">AI</h3>
+<section id="lights" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="lights"><span class="header-section-number">1</span> Lights</h2>
+<section id="ai" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="ai"><span class="header-section-number">1.1</span> AI</h3>
 <p><a href="https://support.aquaillumination.com/hc/en-us/article_attachments/4402389133335">Hydra 32HD manual</a></p>
 <p>serial number: 897600704A2</p>
 <p>Phone</p>
@@ -468,8 +459,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Connect to JPG-Lab network: ed_cW=#Wbb_ZWF[_aYW@</p>
 <p>Lights will attempt to connect to Wi-Fi Network…. needed for firmware updates…</p>
 </section>
-<section id="kessil-lights" class="level3">
-<h3 class="anchored" data-anchor-id="kessil-lights">Kessil lights</h3>
+<section id="kessil-lights" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="kessil-lights"><span class="header-section-number">1.2</span> Kessil lights</h3>
 <p>Download the <a href="https://kessil.com/products/app_wifi.php">Kessil App</a></p>
 <p>We are using these two Kessil Products together:</p>
 <ul>
@@ -484,8 +475,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Open the app and select <code>Quick Reload</code></p>
 </section>
 </section>
-<section id="apex" class="level2">
-<h2 class="anchored" data-anchor-id="apex">Apex</h2>
+<section id="apex" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="apex"><span class="header-section-number">2</span> Apex</h2>
 <p>Sign-in to Apex Fusion account.</p>
 <p>The seatables are controlled by Apex controller <code>Rack6-Trays-1-2</code></p>
 <p>The dashboard will look like:</p>
@@ -508,12 +499,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>What happens if you accidently touch the ‘other’ potentiometers? I’m asking because I did this, and now they are no longer linked to the ‘main’ potentiometer on the WiFi Dongle light…</p>
 <p>Let’s measure the light level with the apogee light meter, apogee instruments Model MQ-510 serial # 2116.</p>
 </section>
-<section id="pumps" class="level2">
-<h2 class="anchored" data-anchor-id="pumps">Pumps</h2>
+<section id="pumps" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="pumps"><span class="header-section-number">3</span> Pumps</h2>
 <p>SICCE Syncra silent multifunction pump 4.0, HMAX 3.7m (12.5ft), QMAX: 3500 L/H (951 gph). Though tray 2 of the seatables rack is lower(meaning that the pump had to work harder to move water from the tray to the heat exchangers mounted above), the flow rate was adjusted so that each seatable tray had a GPH flow rate of ~20gph.</p>
 </section>
-<section id="float-valve" class="level2">
-<h2 class="anchored" data-anchor-id="float-valve">Float Valve</h2>
+<section id="float-valve" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="float-valve"><span class="header-section-number">4</span> Float Valve</h2>
 
 
 <!-- -->

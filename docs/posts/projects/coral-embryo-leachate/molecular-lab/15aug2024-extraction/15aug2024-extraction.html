@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -116,7 +116,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta property="og:site_name" content="Sarah Tanja's Open Lab Notebook">
 </head>
 
-<body class="floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -259,8 +259,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -273,14 +272,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -373,7 +364,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <div class="quarto-title-block"><div><h1 class="title">15-Aug-2024 Embryo RNA Extractions</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
@@ -403,7 +394,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -412,22 +403,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul class="collapse">
-  <li><a href="#samples" id="toc-samples" class="nav-link active" data-scroll-target="#samples">Samples</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
-  <li><a href="#extraction-notes" id="toc-extraction-notes" class="nav-link" data-scroll-target="#extraction-notes">Extraction Notes</a></li>
-  <li><a href="#qubit" id="toc-qubit" class="nav-link" data-scroll-target="#qubit">Qubit</a></li>
-  <li><a href="#storage-location" id="toc-storage-location" class="nav-link" data-scroll-target="#storage-location">Storage Location</a></li>
+  <li><a href="#samples" id="toc-samples" class="nav-link active" data-scroll-target="#samples"><span class="header-section-number">1</span> Samples</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">2</span> Summary</a></li>
+  <li><a href="#extraction-notes" id="toc-extraction-notes" class="nav-link" data-scroll-target="#extraction-notes"><span class="header-section-number">3</span> Extraction Notes</a></li>
+  <li><a href="#qubit" id="toc-qubit" class="nav-link" data-scroll-target="#qubit"><span class="header-section-number">4</span> Qubit</a></li>
+  <li><a href="#storage-location" id="toc-storage-location" class="nav-link" data-scroll-target="#storage-location"><span class="header-section-number">5</span> Storage Location</a></li>
   </ul>
 </nav>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -437,8 +425,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="samples" class="level1">
-<h1>Samples</h1>
+<section id="samples" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Samples</h1>
 <ul>
 <li><p>4C14F, 5C14F = 45C14</p>
 <ul>
@@ -466,8 +454,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul></li>
 </ul>
 </section>
-<section id="summary" class="level1">
-<h1>Summary</h1>
+<section id="summary" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Summary</h1>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -482,8 +470,8 @@ Caution
 </div>
 </div>
 </section>
-<section id="extraction-notes" class="level1">
-<h1>Extraction Notes</h1>
+<section id="extraction-notes" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Extraction Notes</h1>
 <p>date: 15-AUG-2024</p>
 <p>kit: Zymo Quick-DNA/RNA Miniprep Plus Kit</p>
 <ul>
@@ -554,8 +542,8 @@ Important
 </div>
 </div>
 </section>
-<section id="qubit" class="level1">
-<h1>Qubit</h1>
+<section id="qubit" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Qubit</h1>
 <p>Using the Invitrogen Thermo Fischer RNA High Sensitivity Assay Kit.</p>
 <p>Prepared working solution for 3 samples and two standards:</p>
 <div class="cell">
@@ -566,8 +554,8 @@ Important
 </div>
 <p>Qubit RNA HS reagent in DMSO = 1uL * 5 = 6uL</p>
 <p>Qubit RNA HS Buffer = 199uL * 5 = 1194uL</p>
-<section id="rna" class="level3">
-<h3 class="anchored" data-anchor-id="rna">RNA</h3>
+<section id="rna" class="level3" data-number="4.0.1">
+<h3 data-number="4.0.1" class="anchored" data-anchor-id="rna"><span class="header-section-number">4.0.1</span> RNA</h3>
 <p>standard 1: 94.63</p>
 <p>standard 2: 1803.97</p>
 <p>RunID: 2024-08-16_074027</p>
@@ -614,8 +602,8 @@ Important
 </table>
 </section>
 </section>
-<section id="storage-location" class="level1">
-<h1>Storage Location</h1>
+<section id="storage-location" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Storage Location</h1>
 <p>RNA samples are stored in -80C ‘JPG Lab’ Thermo freezer on shelf 1 in <code>coral-embryo-leachate RNA</code> wax freezer boxes with green label tape:</p>
 <p>DNA samples (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate DNA</code> wax freezer box with yellow label tape:</p>
 <p>Protein flow-through (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate PROTEIN</code> wax freezer box with blue label tape:</p>

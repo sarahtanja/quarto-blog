@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -258,8 +258,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -272,14 +271,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -402,7 +393,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -412,15 +403,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#thursday-june-27th-2024" id="toc-thursday-june-27th-2024" class="nav-link active" data-scroll-target="#thursday-june-27th-2024">Thursday June 27th, 2024</a></li>
-  <li><a href="#saturday-june-29th-2024" id="toc-saturday-june-29th-2024" class="nav-link" data-scroll-target="#saturday-june-29th-2024">Saturday June 29th, 2024</a></li>
-  <li><a href="#saturday-july-6th-2024" id="toc-saturday-july-6th-2024" class="nav-link" data-scroll-target="#saturday-july-6th-2024">Saturday July 6th, 2024</a></li>
-  <li><a href="#tuesday-july-9th-2024" id="toc-tuesday-july-9th-2024" class="nav-link" data-scroll-target="#tuesday-july-9th-2024">Tuesday July 9th, 2024</a></li>
-  <li><a href="#wednesday-july-10th-2024" id="toc-wednesday-july-10th-2024" class="nav-link" data-scroll-target="#wednesday-july-10th-2024">Wednesday July 10th, 2024</a></li>
+  <li><a href="#thursday-june-27th-2024" id="toc-thursday-june-27th-2024" class="nav-link active" data-scroll-target="#thursday-june-27th-2024"><span class="header-section-number">0.1</span> Thursday June 27th, 2024</a></li>
+  <li><a href="#saturday-june-29th-2024" id="toc-saturday-june-29th-2024" class="nav-link" data-scroll-target="#saturday-june-29th-2024"><span class="header-section-number">0.2</span> Saturday June 29th, 2024</a></li>
+  <li><a href="#saturday-july-6th-2024" id="toc-saturday-july-6th-2024" class="nav-link" data-scroll-target="#saturday-july-6th-2024"><span class="header-section-number">0.3</span> Saturday July 6th, 2024</a></li>
+  <li><a href="#tuesday-july-9th-2024" id="toc-tuesday-july-9th-2024" class="nav-link" data-scroll-target="#tuesday-july-9th-2024"><span class="header-section-number">0.4</span> Tuesday July 9th, 2024</a></li>
+  <li><a href="#wednesday-july-10th-2024" id="toc-wednesday-july-10th-2024" class="nav-link" data-scroll-target="#wednesday-july-10th-2024"><span class="header-section-number">0.5</span> Wednesday July 10th, 2024</a></li>
   </ul>
 </nav>
 </nav>
@@ -436,24 +427,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="thursday-june-27th-2024" class="level3">
-<h3 class="anchored" data-anchor-id="thursday-june-27th-2024">Thursday June 27th, 2024</h3>
+<section id="thursday-june-27th-2024" class="level3" data-number="0.1">
+<h3 data-number="0.1" class="anchored" data-anchor-id="thursday-june-27th-2024"><span class="header-section-number">0.1</span> Thursday June 27th, 2024</h3>
 <p>Kat and Callum collected 10 distinct <em>Montipora capitata</em> colonies of approximately 30cm in diameter from Kaneohe Bay, Hawaii under permit</p>
 </section>
-<section id="saturday-june-29th-2024" class="level3">
-<h3 class="anchored" data-anchor-id="saturday-june-29th-2024">Saturday June 29th, 2024</h3>
+<section id="saturday-june-29th-2024" class="level3" data-number="0.2">
+<h3 data-number="0.2" class="anchored" data-anchor-id="saturday-june-29th-2024"><span class="header-section-number">0.2</span> Saturday June 29th, 2024</h3>
 <p>All nubbins were shifted from the blue tanks to the black tanks at the Point Lab at 4PM</p>
 </section>
-<section id="saturday-july-6th-2024" class="level3">
-<h3 class="anchored" data-anchor-id="saturday-july-6th-2024">Saturday July 6th, 2024</h3>
+<section id="saturday-july-6th-2024" class="level3" data-number="0.3">
+<h3 data-number="0.3" class="anchored" data-anchor-id="saturday-july-6th-2024"><span class="header-section-number">0.3</span> Saturday July 6th, 2024</h3>
 <p>Leachate was prepared according to the leachate protocol, and began stirring on a shaker plate at ~4AM</p>
 </section>
-<section id="tuesday-july-9th-2024" class="level3">
-<h3 class="anchored" data-anchor-id="tuesday-july-9th-2024">Tuesday July 9th, 2024</h3>
+<section id="tuesday-july-9th-2024" class="level3" data-number="0.4">
+<h3 data-number="0.4" class="anchored" data-anchor-id="tuesday-july-9th-2024"><span class="header-section-number">0.4</span> Tuesday July 9th, 2024</h3>
 <p>Rio 90 pumps borrowed from the Donohue Lab.</p>
 </section>
-<section id="wednesday-july-10th-2024" class="level3">
-<h3 class="anchored" data-anchor-id="wednesday-july-10th-2024">Wednesday July 10th, 2024</h3>
+<section id="wednesday-july-10th-2024" class="level3" data-number="0.5">
+<h3 data-number="0.5" class="anchored" data-anchor-id="wednesday-july-10th-2024"><span class="header-section-number">0.5</span> Wednesday July 10th, 2024</h3>
 <p>Start 3 day temp ramp</p>
 
 

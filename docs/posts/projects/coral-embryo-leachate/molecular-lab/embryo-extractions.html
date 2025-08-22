@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -148,7 +148,7 @@ window.Quarto = {
 <meta property="og:site_name" content="Sarah Tanja's Open Lab Notebook">
 </head>
 
-<body class="floating nav-fixed slimcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -291,8 +291,7 @@ window.Quarto = {
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -305,14 +304,6 @@ window.Quarto = {
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -405,7 +396,7 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <div class="quarto-title-block"><div><h1 class="title">M. Capitata Embryo DNA/RNA Extractions Protocol</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
@@ -436,7 +427,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -445,46 +436,43 @@ window.Quarto = {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul class="collapse">
-  <li><a href="#biological-sample-info" id="toc-biological-sample-info" class="nav-link active" data-scroll-target="#biological-sample-info">Biological Sample Info</a></li>
-  <li><a href="#materials-list" id="toc-materials-list" class="nav-link" data-scroll-target="#materials-list">Materials List</a>
+  <li><a href="#biological-sample-info" id="toc-biological-sample-info" class="nav-link active" data-scroll-target="#biological-sample-info"><span class="header-section-number">1</span> Biological Sample Info</a></li>
+  <li><a href="#materials-list" id="toc-materials-list" class="nav-link" data-scroll-target="#materials-list"><span class="header-section-number">2</span> Materials List</a>
   <ul class="collapse">
-  <li><a href="#kits-tubes" id="toc-kits-tubes" class="nav-link" data-scroll-target="#kits-tubes"><em>Kits &amp; Tubes</em></a></li>
-  <li><a href="#qubit-rna-broad-range-assay-kits-needed-for-rna-quantification" id="toc-qubit-rna-broad-range-assay-kits-needed-for-rna-quantification" class="nav-link" data-scroll-target="#qubit-rna-broad-range-assay-kits-needed-for-rna-quantification"><em>Qubit RNA Broad-Range Assay Kits (needed for RNA quantification!)</em></a></li>
-  <li><a href="#reagents" id="toc-reagents" class="nav-link" data-scroll-target="#reagents"><em>Reagents</em></a></li>
-  <li><a href="#ppe" id="toc-ppe" class="nav-link" data-scroll-target="#ppe"><em>PPE</em></a></li>
-  <li><a href="#lab-equipment" id="toc-lab-equipment" class="nav-link" data-scroll-target="#lab-equipment">Lab Equipment</a></li>
-  <li><a href="#sterilizing" id="toc-sterilizing" class="nav-link" data-scroll-target="#sterilizing"><em>Sterilizing</em></a></li>
-  <li><a href="#pipettes-tips" id="toc-pipettes-tips" class="nav-link" data-scroll-target="#pipettes-tips"><em>Pipettes &amp; Tips</em></a></li>
+  <li><a href="#kits-tubes" id="toc-kits-tubes" class="nav-link" data-scroll-target="#kits-tubes"><span class="header-section-number">2.1</span> <em>Kits &amp; Tubes</em></a></li>
+  <li><a href="#qubit-rna-broad-range-assay-kits-needed-for-rna-quantification" id="toc-qubit-rna-broad-range-assay-kits-needed-for-rna-quantification" class="nav-link" data-scroll-target="#qubit-rna-broad-range-assay-kits-needed-for-rna-quantification"><span class="header-section-number">2.2</span> <em>Qubit RNA Broad-Range Assay Kits (needed for RNA quantification!)</em></a></li>
+  <li><a href="#reagents" id="toc-reagents" class="nav-link" data-scroll-target="#reagents"><span class="header-section-number">2.3</span> <em>Reagents</em></a></li>
+  <li><a href="#ppe" id="toc-ppe" class="nav-link" data-scroll-target="#ppe"><span class="header-section-number">2.4</span> <em>PPE</em></a></li>
+  <li><a href="#lab-equipment" id="toc-lab-equipment" class="nav-link" data-scroll-target="#lab-equipment"><span class="header-section-number">2.5</span> Lab Equipment</a></li>
+  <li><a href="#sterilizing" id="toc-sterilizing" class="nav-link" data-scroll-target="#sterilizing"><span class="header-section-number">2.6</span> <em>Sterilizing</em></a></li>
+  <li><a href="#pipettes-tips" id="toc-pipettes-tips" class="nav-link" data-scroll-target="#pipettes-tips"><span class="header-section-number">2.7</span> <em>Pipettes &amp; Tips</em></a></li>
   </ul></li>
-  <li><a href="#randomize-sample-processing" id="toc-randomize-sample-processing" class="nav-link" data-scroll-target="#randomize-sample-processing">Randomize Sample Processing</a></li>
-  <li><a href="#lab-setup" id="toc-lab-setup" class="nav-link" data-scroll-target="#lab-setup">Lab Setup</a>
+  <li><a href="#randomize-sample-processing" id="toc-randomize-sample-processing" class="nav-link" data-scroll-target="#randomize-sample-processing"><span class="header-section-number">3</span> Randomize Sample Processing</a></li>
+  <li><a href="#lab-setup" id="toc-lab-setup" class="nav-link" data-scroll-target="#lab-setup"><span class="header-section-number">4</span> Lab Setup</a>
   <ul class="collapse">
-  <li><a href="#sterilize" id="toc-sterilize" class="nav-link" data-scroll-target="#sterilize">Sterilize</a></li>
-  <li><a href="#arrange-lab-bench-tubes" id="toc-arrange-lab-bench-tubes" class="nav-link" data-scroll-target="#arrange-lab-bench-tubes">Arrange Lab Bench + Tubes</a></li>
-  <li><a href="#label-tubes" id="toc-label-tubes" class="nav-link" data-scroll-target="#label-tubes">Label Tubes</a></li>
+  <li><a href="#sterilize" id="toc-sterilize" class="nav-link" data-scroll-target="#sterilize"><span class="header-section-number">4.1</span> Sterilize</a></li>
+  <li><a href="#arrange-lab-bench-tubes" id="toc-arrange-lab-bench-tubes" class="nav-link" data-scroll-target="#arrange-lab-bench-tubes"><span class="header-section-number">4.2</span> Arrange Lab Bench + Tubes</a></li>
+  <li><a href="#label-tubes" id="toc-label-tubes" class="nav-link" data-scroll-target="#label-tubes"><span class="header-section-number">4.3</span> Label Tubes</a></li>
   </ul></li>
-  <li><a href="#prepare-buffers" id="toc-prepare-buffers" class="nav-link" data-scroll-target="#prepare-buffers">Prepare Buffers</a></li>
-  <li><a href="#lyse-bead-bash-samples" id="toc-lyse-bead-bash-samples" class="nav-link" data-scroll-target="#lyse-bead-bash-samples">Lyse: Bead-Bash Samples</a></li>
-  <li><a href="#proteinase-k-digestion" id="toc-proteinase-k-digestion" class="nav-link" data-scroll-target="#proteinase-k-digestion">Proteinase-K Digestion</a></li>
-  <li><a href="#purify-dna-rna" id="toc-purify-dna-rna" class="nav-link" data-scroll-target="#purify-dna-rna">Purify DNA &amp; RNA</a>
+  <li><a href="#prepare-buffers" id="toc-prepare-buffers" class="nav-link" data-scroll-target="#prepare-buffers"><span class="header-section-number">5</span> Prepare Buffers</a></li>
+  <li><a href="#lyse-bead-bash-samples" id="toc-lyse-bead-bash-samples" class="nav-link" data-scroll-target="#lyse-bead-bash-samples"><span class="header-section-number">6</span> Lyse: Bead-Bash Samples</a></li>
+  <li><a href="#proteinase-k-digestion" id="toc-proteinase-k-digestion" class="nav-link" data-scroll-target="#proteinase-k-digestion"><span class="header-section-number">7</span> Proteinase-K Digestion</a></li>
+  <li><a href="#purify-dna-rna" id="toc-purify-dna-rna" class="nav-link" data-scroll-target="#purify-dna-rna"><span class="header-section-number">8</span> Purify DNA &amp; RNA</a>
   <ul class="collapse">
-  <li><a href="#rna-clean-up" id="toc-rna-clean-up" class="nav-link" data-scroll-target="#rna-clean-up">RNA Clean-up</a></li>
+  <li><a href="#rna-clean-up" id="toc-rna-clean-up" class="nav-link" data-scroll-target="#rna-clean-up"><span class="header-section-number">8.1</span> RNA Clean-up</a></li>
   </ul></li>
-  <li><a href="#qubit-prep" id="toc-qubit-prep" class="nav-link" data-scroll-target="#qubit-prep">Qubit Prep</a>
+  <li><a href="#qubit-prep" id="toc-qubit-prep" class="nav-link" data-scroll-target="#qubit-prep"><span class="header-section-number">9</span> Qubit Prep</a>
   <ul class="collapse">
-  <li><a href="#end-products" id="toc-end-products" class="nav-link" data-scroll-target="#end-products">End Products</a></li>
+  <li><a href="#end-products" id="toc-end-products" class="nav-link" data-scroll-target="#end-products"><span class="header-section-number">9.1</span> End Products</a></li>
   </ul></li>
   </ul>
 </nav>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
@@ -528,15 +516,15 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<section id="biological-sample-info" class="level1">
-<h1>Biological Sample Info</h1>
+<section id="biological-sample-info" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Biological Sample Info</h1>
 <p>The samples I am working with are frozen <em>Montipora capitata</em> coral embryos held at -80°C, with <code>Zymo DNA/RNA Shield</code>, in 0.5mL screw-cap cryovials. The samples are representative of 3 distinct phases of embryonic development: 1. Initial cleavage, or 4 hours post fertilization 2. Prawn chip, or 9 hours post fertilization 3. Early gastrula, or 14 hours post fertilization. Each vial of embryos may have anywhere from 10-25 teeny tiny embryos, which means we are working with a <em>very small amount of starting material</em>.</p>
 <p>They have been exposed to either a filtered-seawater control or PVC leachate concentrations (Low 0.01mg/L, Mid 0.1mg/L, High 1mg/L) through bundle-bundle cross fertilization in 20mL scintillation vials, and left to incubate and develop according to the above cutoffs.</p>
 </section>
-<section id="materials-list" class="level1 page-columns page-full">
-<h1>Materials List</h1>
-<section id="kits-tubes" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="kits-tubes"><em>Kits &amp; Tubes</em></h2>
+<section id="materials-list" class="level1 page-columns page-full" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Materials List</h1>
+<section id="kits-tubes" class="level2 page-columns page-full" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="kits-tubes"><span class="header-section-number">2.1</span> <em>Kits &amp; Tubes</em></h2>
 <ul class="task-list">
 <li><p><label><input type="checkbox">Zymo Research <a href="https://www.zymoresearch.com/products/quick-dna-rna-miniprep-plus-kit">Quick-DNA/RNA Miniprep Plus Kit</a> (50 prep D7003, or 10 prep D7003T) <em>1 prep = 1 sample that results in DNA in one tube, and RNA in another</em></label></p></li>
 <li><p><label><input type="checkbox"><a href="https://www.zymoresearch.com/collections/lysis-tubes/products/zr-bashingbead-lysis-tubes-0-1-0-5-mm">ZR BashingBead Lysis 2mL Tubes with 0.1 &amp; 0.5mm beads</a>, 1 per prep</label></p></li>
@@ -544,15 +532,15 @@ window.Quarto = {
 <li><p><label><input type="checkbox"><a href="https://www.zymoresearch.com/products/rna-clean-concentrator-5?gad=1&amp;gclid=Cj0KCQjw3JanBhCPARIsAJpXTx6_HqFIKQUjYO9E6qR9e9s4gPbpSk6wIvu14hZOfUxQJ3I6kISe2bgaAtTxEALw_wcB">RNA Clean &amp; Concentrator-5, DNase not Included</a><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></label></p></li>
 </ul>
 <div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;<a href="https://urldefense.com/v3/__https://www.zymoresearch.com/products/rna-clean-concentrator-5__;!!K-Hz7m0Vt54!hR2-lkKEDNSp8jnMNOSVR-eH6FDvAmxFQ8SAc6nqkmfQy-HeMxMt7PXcmGztye4mcxtq1kbGQCmqcA$">RNA Clean &amp; Concentrator-5</a>&nbsp;is used to further clean-up and concentrate your extracted RNA samples of low purity readings</p></div></div></section>
-<section id="qubit-rna-broad-range-assay-kits-needed-for-rna-quantification" class="level2">
-<h2 class="anchored" data-anchor-id="qubit-rna-broad-range-assay-kits-needed-for-rna-quantification"><em>Qubit RNA Broad-Range Assay Kits (needed for RNA quantification!)</em></h2>
+<section id="qubit-rna-broad-range-assay-kits-needed-for-rna-quantification" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="qubit-rna-broad-range-assay-kits-needed-for-rna-quantification"><span class="header-section-number">2.2</span> <em>Qubit RNA Broad-Range Assay Kits (needed for RNA quantification!)</em></h2>
 <ul class="task-list">
 <li><p><label><input type="checkbox"><a href="https://www.thermofisher.com/order/catalog/product/Q32856?gclid=CjwKCAjwuqiiBhBtEiwATgvixAYKxw1FwdqIxIiPSxZ-ngW738s6bl94L2cdLCFjXfosHgMX1hyAShoCv9cQAvD_BwE&amp;ef_id=CjwKCAjwuqiiBhBtEiwATgvixAYKxw1FwdqIxIiPSxZ-ngW738s6bl94L2cdLCFjXfosHgMX1hyAShoCv9cQAvD_BwE:G:s&amp;s_kwcid=AL!3652!3!529745253294!p!!g!!qubit%20tubes!7851124045!80648205054&amp;cid=bid_pca_aqb_r01_co_cp1359_pjt0000_bid00000_0se_gaw_bt_pur_con">Qubit® assay tubes</a>(Invitrogen Cat. no. Q32856, 500 tubes) or <a href="https://us.vwr.com/store/product?keyword=10011-830">Axygen PCR-05-C tubes</a>(VWR, part number 10011-830).</label></p></li>
 <li><p><label><input type="checkbox"><a href="https://www.thermofisher.com/order/catalog/product/Q10210">Qubit™ RNA High Sensitivity (HS) or Broad Range (BR) Assay Kit</a></label></p></li>
 </ul>
 </section>
-<section id="reagents" class="level2">
-<h2 class="anchored" data-anchor-id="reagents"><em>Reagents</em></h2>
+<section id="reagents" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="reagents"><span class="header-section-number">2.3</span> <em>Reagents</em></h2>
 <div class="callout callout-style-simple callout-important">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -571,15 +559,15 @@ window.Quarto = {
 <li><label><input type="checkbox">99.5% (200 proof) molecular-grade ethanol</label></li>
 </ul>
 </section>
-<section id="ppe" class="level2">
-<h2 class="anchored" data-anchor-id="ppe"><em>PPE</em></h2>
+<section id="ppe" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="ppe"><span class="header-section-number">2.4</span> <em>PPE</em></h2>
 <ul class="task-list">
 <li><label><input type="checkbox">nitrile gloves</label></li>
 <li><label><input type="checkbox">lab coats</label></li>
 </ul>
 </section>
-<section id="lab-equipment" class="level2">
-<h2 class="anchored" data-anchor-id="lab-equipment">Lab Equipment</h2>
+<section id="lab-equipment" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="lab-equipment"><span class="header-section-number">2.5</span> Lab Equipment</h2>
 <ul class="task-list">
 <li><label><input type="checkbox"><a href="https://www.beckman.com/landing/ppc/cent/benchtop/microcentrifuges?utm_source=google&amp;utm_medium=cpc&amp;utm_term=microcentrifuge&amp;gclid=CjwKCAjw586hBhBrEiwAQYEnHYq-F4WNopG5rWYG4Bb0YjPlfXL7pVCESNmTwqyT6Cgxty-Si8AAdhoC8I0QAvD_BwE">Beckman Coulter Microfuge 16</a></label></li>
 <li><label><input type="checkbox">mortexer / homogenizer</label>
@@ -589,8 +577,8 @@ window.Quarto = {
 </ul></li>
 </ul>
 </section>
-<section id="sterilizing" class="level2">
-<h2 class="anchored" data-anchor-id="sterilizing"><em>Sterilizing</em></h2>
+<section id="sterilizing" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="sterilizing"><span class="header-section-number">2.6</span> <em>Sterilizing</em></h2>
 <ul class="task-list">
 <li><label><input type="checkbox">10% bleach in spray-bottle</label></li>
 <li><label><input type="checkbox">70% ethanol in spray-bottle</label></li>
@@ -599,8 +587,8 @@ window.Quarto = {
 <li><label><input type="checkbox">Kimwipes/paper towels</label></li>
 </ul>
 </section>
-<section id="pipettes-tips" class="level2">
-<h2 class="anchored" data-anchor-id="pipettes-tips"><em>Pipettes &amp; Tips</em></h2>
+<section id="pipettes-tips" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="pipettes-tips"><span class="header-section-number">2.7</span> <em>Pipettes &amp; Tips</em></h2>
 <ul class="task-list">
 <li><label><input type="checkbox">P10 + filtered tips <em>DNase/RNase free</em></label></li>
 <li><label><input type="checkbox">P100 + filtered tips <em>DNase/RNase free</em></label></li>
@@ -609,8 +597,8 @@ window.Quarto = {
 </ul>
 </section>
 </section>
-<section id="randomize-sample-processing" class="level1">
-<h1>Randomize Sample Processing</h1>
+<section id="randomize-sample-processing" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Randomize Sample Processing</h1>
 <div class="callout callout-style-simple callout-tip">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -622,10 +610,10 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="lab-setup" class="level1 page-columns page-full">
-<h1>Lab Setup</h1>
-<section id="sterilize" class="level2">
-<h2 class="anchored" data-anchor-id="sterilize">Sterilize</h2>
+<section id="lab-setup" class="level1 page-columns page-full" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Lab Setup</h1>
+<section id="sterilize" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="sterilize"><span class="header-section-number">4.1</span> Sterilize</h2>
 <ul>
 <li><p>Don lab coat 🥼 &amp; tie hair back , glove up 🧤</p></li>
 <li><p>Spray down <code>benchtop</code>, <code>microcentrifuge tube racks</code>, <code>pipettes</code>, and <code>pipette tip boxes</code> with:</p>
@@ -645,8 +633,8 @@ window.Quarto = {
 <li><p>Spray <code>RNase away</code>on gloves and rub hands together :::</p></li>
 </ul>
 </section>
-<section id="arrange-lab-bench-tubes" class="level2">
-<h2 class="anchored" data-anchor-id="arrange-lab-bench-tubes">Arrange Lab Bench + Tubes</h2>
+<section id="arrange-lab-bench-tubes" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="arrange-lab-bench-tubes"><span class="header-section-number">4.2</span> Arrange Lab Bench + Tubes</h2>
 <p><strong>Lysing Station</strong></p>
 <ul>
 <li>❄️ ice bucket with defrosting samples</li>
@@ -701,8 +689,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="label-tubes" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="label-tubes">Label Tubes</h2>
+<section id="label-tubes" class="level2 page-columns page-full" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="label-tubes"><span class="header-section-number">4.3</span> Label Tubes</h2>
 <ol type="1">
 <li>pick out three microcentrifuge tube racks:</li>
 </ol>
@@ -779,8 +767,8 @@ SST</code></pre>
 </div>
 </section>
 </section>
-<section id="prepare-buffers" class="level1">
-<h1>Prepare Buffers</h1>
+<section id="prepare-buffers" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Prepare Buffers</h1>
 <ul class="task-list">
 <li><p><label><input type="checkbox">If using the 50-prep kit (D7003), add <code>96 ml 100% ethanol (104 ml 95% ethanol)</code> to the 24 ml DNA/RNA Wash Buffer concentrate.</label></p>
 <p>​ <em>If using the 10-prep kit, DNA/RNA Wash Buffer (D7003T) is supplied ready-to-use and does not require the addition of ethanol.</em></p></li>
@@ -797,8 +785,8 @@ SST</code></pre>
 <li><p><label><input type="checkbox">To prepare a 1X solution of <code>DNA/RNA Shield™</code>, add an equal volume (5mL for the whole solution) of <code>nuclease-free water</code> (not provided) to the <code>DNA/RNA Shield™</code> (2X concentrate) (1:1) and mix with a quick pulse on the vortexer.</label></p></li>
 </ul>
 </section>
-<section id="lyse-bead-bash-samples" class="level1 page-columns page-full">
-<h1>Lyse: Bead-Bash Samples</h1>
+<section id="lyse-bead-bash-samples" class="level1 page-columns page-full" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Lyse: Bead-Bash Samples</h1>
 <ul>
 <li>Wait for samples to fully thaw on ice. Samples are already stored in ~500uL of Zymo DNA/RNA Shield</li>
 <li>Use a P-1000 to transfer all of the sample to each respective 2mL (0.1 - 0.5mm) bead-bashing tube</li>
@@ -811,8 +799,8 @@ SST</code></pre>
 <p>“A minimum of 800 µl of liquid volume is what we typically recommend when working with the BashingBead Tubes. This is because anything lower may lead to inefficient bead movement during shaking, oversaturation of content, and difficulties when transferring sample from the tube without disturbing the debris. All of these can lead to impurity by precipitation/clogging in the columns.”</p>
 </blockquote>
 </div></div></section>
-<section id="proteinase-k-digestion" class="level1 page-columns page-full">
-<h1>Proteinase-K Digestion</h1>
+<section id="proteinase-k-digestion" class="level1 page-columns page-full" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Proteinase-K Digestion</h1>
 <ul>
 <li><p>Get the Proteinase K out of the -20 freezer &amp; set the heat-block to warm up to 55C for 30mins</p></li>
 <li><p>After bead bashing, tubes are <a href="https://meschedl.github.io/MESPutnam_Open_Lab_Notebook/Larvae-Ex-Protocol/#:~:text=Tubes%20after%20vortexing%20are%20intensely%20bubbly">‘intensely bubbly’</a>, to tamp down bubbles, centrifuge in the mini-centrifuge for 1min</p></li>
@@ -838,8 +826,8 @@ SST</code></pre>
 <p>“We are worried about the sample debris remaining in the tube, which should still contain protein. One of the reasons for Proteinase K treatment at this step is to break down protein in the solution to make it less viscous/sticky, so the column can process it without issue. By transferring the mixture out, the treatment could be more efficient.”</p>
 </blockquote>
 </div></div></section>
-<section id="purify-dna-rna" class="level1 page-columns page-full">
-<h1>Purify DNA &amp; RNA</h1>
+<section id="purify-dna-rna" class="level1 page-columns page-full" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Purify DNA &amp; RNA</h1>
 <p>Transfer the buffered supernatent (should be a total of 700uL, which can be passed through the filter in one go) to yellow <strong><code>Spin-Away Filter</code></strong> in a <strong><code>Collection Tube</code></strong> and centrifuge at 16,000xg for 30 sec</p>
 <div class="callout callout-style-simple callout-warning">
 <div class="callout-body d-flex">
@@ -857,7 +845,7 @@ SST</code></pre>
 <li><p>The RNA+ethanol volume is now 1,400uL. In aliquots up to 700uL, transfer the RNA sample to the green <strong><code>Zymo-Spin IIICG Column</code></strong> in a <strong><code>Collection Tube</code></strong>, centrifuge, and discard the flow-through. Dab the rim of the collection tube with a Kim Wipe to clean off any residual flow-through. This step binds the RNA to the green column filter. Repeat until all RNA Sample has passed through the filter.</p></li>
 </ul>
 <blockquote class="blockquote">
-<h4 id="dnase-1-treatment-for-rna" class="anchored">DNase 1 Treatment for RNA</h4>
+<h4 id="dnase-1-treatment-for-rna" data-number="8.0.0.1" class="anchored"><span class="header-section-number">8.0.0.1</span> DNase 1 Treatment for RNA</h4>
 <ul>
 <li><p>Add 400uL <strong><code>DNA/RNA Wash Buffer</code></strong> to the <code>green Zymo-Spin IIICG Column</code>, centrifuge and discard the flow-through</p></li>
 <li><p>For each sample to be treated, prepare <strong><code>DNase 1 Reaction Mix</code></strong>: <span class="math display">\[
@@ -871,8 +859,8 @@ DNA\, Digestion\, Buffer\, volume  = 75 \mu L * (no.\, of\, sample\, preps)
 <li><p>Carefully drip 80uL of <strong><code>DNase 1 Reaction Mix</code></strong> directly onto the <code>green Zymo-Spin IIICG Column</code> filter and let incubate at room temperature for <strong>15mins</strong></p></li>
 </ul>
 </blockquote>
-<section id="wash-elute" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="wash-elute">Wash &amp; Elute</h3>
+<section id="wash-elute" class="level3 page-columns page-full" data-number="8.0.1">
+<h3 data-number="8.0.1" class="anchored" data-anchor-id="wash-elute"><span class="header-section-number">8.0.1</span> Wash &amp; Elute</h3>
 <ul>
 <li><p>Add 400uL <strong><code>DNA/RNA Prep Buffer</code></strong> to each column and centrifuge at 16,000xg for 30s, then discard the flow-through</p></li>
 <li><p>Add 700uL of <strong><code>DNA/RNA Wash Buffer</code></strong> <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>to each column and centrifuge at 16,000xg for 30s, then discard the flow-through</p></li>
@@ -892,10 +880,10 @@ DNA\, Digestion\, Buffer\, volume  = 75 \mu L * (no.\, of\, sample\, preps)
 </blockquote>
 </div></div><hr>
 </section>
-<section id="rna-clean-up" class="level2">
-<h2 class="anchored" data-anchor-id="rna-clean-up">RNA Clean-up</h2>
-<section id="rna-clean-concentrator-5" class="level3">
-<h3 class="anchored" data-anchor-id="rna-clean-concentrator-5">RNA Clean &amp; Concentrator-5</h3>
+<section id="rna-clean-up" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="rna-clean-up"><span class="header-section-number">8.1</span> RNA Clean-up</h2>
+<section id="rna-clean-concentrator-5" class="level3" data-number="8.1.1">
+<h3 data-number="8.1.1" class="anchored" data-anchor-id="rna-clean-concentrator-5"><span class="header-section-number">8.1.1</span> RNA Clean &amp; Concentrator-5</h3>
 <ul>
 <li><p>Open the <strong><code>RNA Clean &amp; Concentrator-5</code></strong> kit</p></li>
 <li><p>Add 140uL of <strong><code>RNA Binding Buffer</code></strong> to each 70uL of eluted RNA sample (2:1, <strong><code>RNA Binding Buffer</code></strong>:eluted RNA sample)</p></li>
@@ -910,13 +898,13 @@ DNA\, Digestion\, Buffer\, volume  = 75 \mu L * (no.\, of\, sample\, preps)
 </section>
 </section>
 </section>
-<section id="qubit-prep" class="level1">
-<h1>Qubit Prep</h1>
+<section id="qubit-prep" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Qubit Prep</h1>
 <ul>
 <li>Transfer 1uL of each eluted &amp; purified DNA/RNA sample to their respectively labelled Qubit assay tube, and keep on ice to continue work, or freeze in the -80C for later</li>
 </ul>
-<section id="end-products" class="level2">
-<h2 class="anchored" data-anchor-id="end-products">End Products</h2>
+<section id="end-products" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="end-products"><span class="header-section-number">9.1</span> End Products</h2>
 <p>The end products are:</p>
 <ul>
 <li><p>70ul of DNA in nuclease-free water</p></li>

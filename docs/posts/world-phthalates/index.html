@@ -97,9 +97,9 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -308,8 +308,7 @@ window.Quarto = {
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -322,14 +321,6 @@ window.Quarto = {
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -452,7 +443,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -462,14 +453,14 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#what-are-phthalates" id="toc-what-are-phthalates" class="nav-link active" data-scroll-target="#what-are-phthalates">What are phthalates?</a></li>
-  <li><a href="#environmental-pollution-of-phthalates-in-marine-waters" id="toc-environmental-pollution-of-phthalates-in-marine-waters" class="nav-link" data-scroll-target="#environmental-pollution-of-phthalates-in-marine-waters">Environmental pollution of phthalates in marine waters</a></li>
-  <li><a href="#ecological-relevance" id="toc-ecological-relevance" class="nav-link" data-scroll-target="#ecological-relevance">Ecological Relevance</a></li>
-  <li><a href="#quantifying-phthalates" id="toc-quantifying-phthalates" class="nav-link" data-scroll-target="#quantifying-phthalates">Quantifying phthalates</a></li>
+  <li><a href="#what-are-phthalates" id="toc-what-are-phthalates" class="nav-link active" data-scroll-target="#what-are-phthalates"><span class="header-section-number">1</span> What are phthalates?</a></li>
+  <li><a href="#environmental-pollution-of-phthalates-in-marine-waters" id="toc-environmental-pollution-of-phthalates-in-marine-waters" class="nav-link" data-scroll-target="#environmental-pollution-of-phthalates-in-marine-waters"><span class="header-section-number">2</span> Environmental pollution of phthalates in marine waters</a></li>
+  <li><a href="#ecological-relevance" id="toc-ecological-relevance" class="nav-link" data-scroll-target="#ecological-relevance"><span class="header-section-number">3</span> Ecological Relevance</a></li>
+  <li><a href="#quantifying-phthalates" id="toc-quantifying-phthalates" class="nav-link" data-scroll-target="#quantifying-phthalates"><span class="header-section-number">4</span> Quantifying phthalates</a></li>
   </ul>
 </nav>
 </nav>
@@ -501,8 +492,8 @@ Learning Objective
 <div class="page-columns page-full"><blockquote class="blockquote">
 <p>The toxicity of PAEs remains under debate because the debate is characterized by tension between the commercial importance of PAEs and their impact on human health and on the environment. - <span class="citation" data-cites="net2015">Net et al. (<a href="#ref-net2015" role="doc-biblioref">2015</a>)</span></p>
 </blockquote><div class="no-row-height column-margin column-container"></div></div>
-<section id="what-are-phthalates" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="what-are-phthalates">What are phthalates?</h2>
+<section id="what-are-phthalates" class="level2 page-columns page-full" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="what-are-phthalates"><span class="header-section-number">1</span> What are phthalates?</h2>
 <p>Phthalates are a suite of chemicals that share the base structure of a benzene ring and alkyl chains of varying lengths. They are commonly added to consumer products. Lower molecular weight phthalates are primarily used as solvents in cosmetics while higher molecular weight phthalates are added to plastics like polyvinyl chloride (PVC) to increase flexibility.</p>
 <div class="page-columns page-full"><blockquote class="blockquote">
 <p>“Plasticizers work by reducing the chemical affinity between molecules when embedded between chains of plastic raw materials (or act as monomers in polycarbonate plastic), but as plasticizers are not especially stable in these products, they can leach out and thus end up in the environment. Phthalates are not classified as persistent compounds (Staples et al.1997), but their occurrence in the environment has been reported widely, possibly arguing against a rapid biodegradation in some environments (Fatoki &amp; Vernon 1990; Bauer &amp; Herrmann 1997; Heemken et al.&nbsp;2001; Fromme et al.&nbsp;2002; Beauchesne et al.2007)” - <span class="citation" data-cites="oehlmann2009">Oehlmann et al. (<a href="#ref-oehlmann2009" role="doc-biblioref">2009</a>)</span></p>
@@ -559,8 +550,8 @@ Zhao, Ruoshi, Zhongqiao Li, Aung Aung Aye, Hao Zheng, Weifang Jin, Jingjing Zhan
 Net, Sopheak, Richard Sempéré, Anne Delmont, Andrea Paluselli, and Baghdad Ouddane. 2015. <span>“Occurrence, <span>Fate</span>, <span>Behavior</span> and <span>Ecotoxicological State</span> of <span>Phthalates</span> in <span>Different Environmental Matrices</span>.”</span> <em>Environmental Science &amp; Technology</em> 49 (7): 4019–35. <a href="https://doi.org/10.1021/es505233b">https://doi.org/10.1021/es505233b</a>.
 </div></div></div>
 </section>
-<section id="environmental-pollution-of-phthalates-in-marine-waters" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="environmental-pollution-of-phthalates-in-marine-waters">Environmental pollution of phthalates in marine waters</h2>
+<section id="environmental-pollution-of-phthalates-in-marine-waters" class="level2 page-columns page-full" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="environmental-pollution-of-phthalates-in-marine-waters"><span class="header-section-number">2</span> Environmental pollution of phthalates in marine waters</h2>
 <p>I found a good table by <span class="citation" data-cites="hermabessiere2017">Hermabessiere et al. (<a href="#ref-hermabessiere2017" role="doc-biblioref">2017</a>)</span> that shows a review of papers that report levels of phthalates in marine waters.. however most of the sampling sites are in Europe and the Mediterranean. I’d like to expand on the table to get a better global picture of phthalate pollution levels in coastal marine waters.</p>
 <div class="no-row-height column-margin column-container"><div id="ref-hermabessiere2017" class="csl-entry" role="listitem">
 Hermabessiere, Ludovic, Alexandre Dehaut, Ika Paul-Pont, Camille Lacroix, Ronan Jezequel, Philippe Soudant, and Guillaume Duflos. 2017. <span>“Occurrence and Effects of Plastic Additives on Marine Environments and Organisms: <span>A</span> Review.”</span> <em>CHEMOSPHERE</em> 182 (September): 781–93. <a href="https://doi.org/10.1016/j.chemosphere.2017.05.096">https://doi.org/10.1016/j.chemosphere.2017.05.096</a>.
@@ -571,16 +562,16 @@ Law, R. J., T. W. Fileman, and P. Matthiessen. 1991. <span>“Phthalate <span>Es
 <p>“The marine sediments contained about half the concentration as the freshwater lake sediments, but in both matrices DINP had the highest concentrations of all analytes. DINP has been found at higher concentrations than other phthalates in sediments of urban areas, which has been suggested to be due to its higher environmental persistence and rising use following DEHP restrictions (Björklund et al., 2009).” (Mathieu and Bednarek, 2022, p.&nbsp;23) <span class="citation" data-cites="mathieu2022">(<a href="#ref-mathieu2022" role="doc-biblioref">Mathieu and Bednarek 2022</a>)</span></p>
 </blockquote><div class="no-row-height column-margin column-container"></div></div>
 </section>
-<section id="ecological-relevance" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="ecological-relevance">Ecological Relevance</h2>
+<section id="ecological-relevance" class="level2 page-columns page-full" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="ecological-relevance"><span class="header-section-number">3</span> Ecological Relevance</h2>
 <p><a href="https://www.norman-network.com/nds/ecotox/">Norman Ecotoxicology Database</a></p>
 <p>predicted no-effect concentrations (PNEC)</p>
 <div class="page-columns page-full"><blockquote class="blockquote">
 <p>“Due to the lack of ecotoxicity thresholds in the United States, results from this study were compared to lowest predicted no-effects concentrations (PNECs) estimated from the European Union’s NORMAN Ecotoxicology database.5 The EU PNECs are based on either experimental ecotoxicity data or quantitative structure-activity relationship (QSAR) predictions where empirical data is lacking. A measured environmental concentration that exceeds a lowest PNEC is considered by European Union member states to warrant further review for regulatory concern. These values are not considered robust thresholds; rather they are agreed-upon values by NORMAN experts to be used for preliminary prioritization of chemicals. When available, additional thresholds are used in this report, such as the sediment management standards (SMS) values for sediment cleanup objectives (SCO) and cleanup screening levels (CSLs) (Ecology, 2013; WAC 173-204).” <span class="citation" data-cites="mathieu2022">(<a href="#ref-mathieu2022" role="doc-biblioref">Mathieu and Bednarek 2022</a>)</span></p>
 </blockquote><div class="no-row-height column-margin column-container"></div></div>
 </section>
-<section id="quantifying-phthalates" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="quantifying-phthalates">Quantifying phthalates</h2>
+<section id="quantifying-phthalates" class="level2 page-columns page-full" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="quantifying-phthalates"><span class="header-section-number">4</span> Quantifying phthalates</h2>
 <p>Survey of Phthalates in Washington State Waterbodies, 2021 <span class="citation" data-cites="mathieu2022">(<a href="#ref-mathieu2022" role="doc-biblioref">Mathieu and Bednarek 2022</a>)</span></p>
 <div class="no-row-height column-margin column-container"><div id="ref-mathieu2022" class="csl-entry" role="listitem">
 Mathieu, C, and J Bednarek. 2022. <span>“Survey of <span>Phthalates</span> in <span>Washington State Waterbodies</span>, 2021.”</span> 22-03-027. Washington State Department of Ecology, Olympia. <a href="https://apps.ecology.wa.gov/publications/documents/2203027.pdf">https://apps.ecology.wa.gov/publications/documents/2203027.pdf</a>.

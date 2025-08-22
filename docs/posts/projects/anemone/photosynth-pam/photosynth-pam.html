@@ -97,9 +97,9 @@ div.csl-indent {
 <link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -310,8 +310,7 @@ window.Quarto = {
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -324,14 +323,6 @@ window.Quarto = {
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -456,7 +447,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
       
@@ -466,19 +457,19 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Contents <i class="bi bi-bookmark-heart"></i></h2>
    
   <ul>
-  <li><a href="#a-deep-dive-in-photosynthesis" id="toc-a-deep-dive-in-photosynthesis" class="nav-link active" data-scroll-target="#a-deep-dive-in-photosynthesis">A deep dive in photosynthesis</a>
+  <li><a href="#a-deep-dive-in-photosynthesis" id="toc-a-deep-dive-in-photosynthesis" class="nav-link active" data-scroll-target="#a-deep-dive-in-photosynthesis"><span class="header-section-number">1</span> A deep dive in photosynthesis</a>
   <ul>
-  <li><a href="#primary-endosymbiosis" id="toc-primary-endosymbiosis" class="nav-link" data-scroll-target="#primary-endosymbiosis">Primary endosymbiosis</a></li>
-  <li><a href="#light-dependent-reactions-in-oxygenic-photosynthesis" id="toc-light-dependent-reactions-in-oxygenic-photosynthesis" class="nav-link" data-scroll-target="#light-dependent-reactions-in-oxygenic-photosynthesis">Light-dependent reactions in oxygenic photosynthesis</a></li>
-  <li><a href="#cyclic-electron-flow" id="toc-cyclic-electron-flow" class="nav-link" data-scroll-target="#cyclic-electron-flow">Cyclic electron flow</a></li>
+  <li><a href="#primary-endosymbiosis" id="toc-primary-endosymbiosis" class="nav-link" data-scroll-target="#primary-endosymbiosis"><span class="header-section-number">1.1</span> Primary endosymbiosis</a></li>
+  <li><a href="#light-dependent-reactions-in-oxygenic-photosynthesis" id="toc-light-dependent-reactions-in-oxygenic-photosynthesis" class="nav-link" data-scroll-target="#light-dependent-reactions-in-oxygenic-photosynthesis"><span class="header-section-number">1.2</span> Light-dependent reactions in oxygenic photosynthesis</a></li>
+  <li><a href="#cyclic-electron-flow" id="toc-cyclic-electron-flow" class="nav-link" data-scroll-target="#cyclic-electron-flow"><span class="header-section-number">1.3</span> Cyclic electron flow</a></li>
   </ul></li>
-  <li><a href="#how-do-we-measure-photosynthesis" id="toc-how-do-we-measure-photosynthesis" class="nav-link" data-scroll-target="#how-do-we-measure-photosynthesis">How do we measure photosynthesis?</a></li>
-  <li><a href="#dont-forget-photosynthesizers-also-do-respiration" id="toc-dont-forget-photosynthesizers-also-do-respiration" class="nav-link" data-scroll-target="#dont-forget-photosynthesizers-also-do-respiration">Don’t forget, photosynthesizers also do respiration!</a></li>
-  <li><a href="#oxygen-measurement-with-oxygen-meter-firestingo2-fluorescense-with-mini-pam-ii" id="toc-oxygen-measurement-with-oxygen-meter-firestingo2-fluorescense-with-mini-pam-ii" class="nav-link" data-scroll-target="#oxygen-measurement-with-oxygen-meter-firestingo2-fluorescense-with-mini-pam-ii">Oxygen Measurement with Oxygen Meter FireStingO2 &amp; Fluorescense with MINI-PAM-II</a></li>
+  <li><a href="#how-do-we-measure-photosynthesis" id="toc-how-do-we-measure-photosynthesis" class="nav-link" data-scroll-target="#how-do-we-measure-photosynthesis"><span class="header-section-number">2</span> How do we measure photosynthesis?</a></li>
+  <li><a href="#dont-forget-photosynthesizers-also-do-respiration" id="toc-dont-forget-photosynthesizers-also-do-respiration" class="nav-link" data-scroll-target="#dont-forget-photosynthesizers-also-do-respiration"><span class="header-section-number">3</span> Don’t forget, photosynthesizers also do respiration!</a></li>
+  <li><a href="#oxygen-measurement-with-oxygen-meter-firestingo2-fluorescense-with-mini-pam-ii" id="toc-oxygen-measurement-with-oxygen-meter-firestingo2-fluorescense-with-mini-pam-ii" class="nav-link" data-scroll-target="#oxygen-measurement-with-oxygen-meter-firestingo2-fluorescense-with-mini-pam-ii"><span class="header-section-number">4</span> Oxygen Measurement with Oxygen Meter FireStingO2 &amp; Fluorescense with MINI-PAM-II</a></li>
   </ul>
 </nav>
 </nav>
@@ -526,8 +517,8 @@ window.Quarto = {
 8 rETR         relative electron transport rate   </code></pre>
 </div>
 </div>
-<section id="a-deep-dive-in-photosynthesis" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="a-deep-dive-in-photosynthesis">A deep dive in photosynthesis</h2>
+<section id="a-deep-dive-in-photosynthesis" class="level2 page-columns page-full" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="a-deep-dive-in-photosynthesis"><span class="header-section-number">1</span> A deep dive in photosynthesis</h2>
 <p>Photosynthesis is magic. Four proteins embedded in a delicate lipid membrane turn light into sugar. It’s energy transformation! The process by which light energy is transformed into chemical energy (aka sugar energy!). Photosynthesis is the original tool that cyanobacteria used to start the <a href="https://en.wikipedia.org/wiki/Great_Oxidation_Event">Great Oxygenation Event</a> 2.4 billion years ago.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> It is effectively the only source of molecular oxygen that supports higher life.</p>
 <div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;#wedidn’tstartthefire</p></div></div><div class="page-columns page-full"><blockquote class="blockquote">
 <p>“The most important thing as far as astrobiologists are concerned is the fact that&nbsp;<em>there are no known abiotic mechanisms of producing an O2-rich atmosphere</em>. If we find a planet with O2 in its atmosphere, would be forced to conclude that life was the cause. A remarkable 99.9999% of the oxygen in Earth’s atmosphere was produced by life, the tiny remainder being a result of photodissociation of H2O [4].” - <a href="https://newworlds.colorado.edu/search/o2.htm">New Worlds</a>, University of Colorado, Boulder<span class="citation" data-cites="zotero-3402">(<a href="#ref-zotero-3402" role="doc-biblioref"><span>“New <span>Worlds</span>”</span> n.d.</a>)</span></p>
@@ -540,8 +531,8 @@ window.Quarto = {
 \]</span></p>
 <p>The breathable molecular oxygen on Earth today is produced through photosynthesis. The oxygen and sugar molecules that travel through our blood were made by cyanobacteria, algae, and plants. For how important this process is, it’s so often overlooked or skimmed past. In this post, I will take a deep dive. So grab a cup of tea and a sketch pad and take a deep breath. We’re going under!</p>
 <p>Photosynthesis occurs in two out of three Domains of life: Bacteria (cyanobacteria, (a.k.a. blue-green algae) &amp; Eukarya (red, brown, &amp; green algae &amp; plants!) Archaea, the third Domain, is made up of a group of single-celled microorganisms that do not photosynthesize. Here, I will focus mostly on the marine endosymbionts that form symbioses with marine invertebrates.</p>
-<section id="primary-endosymbiosis" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="primary-endosymbiosis">Primary endosymbiosis</h3>
+<section id="primary-endosymbiosis" class="level3 page-columns page-full" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="primary-endosymbiosis"><span class="header-section-number">1.1</span> Primary endosymbiosis</h3>
 <p>The evolution of the chloroplast can be traced back to when an alphaproteobacterium engulfed a cyanobacterium. This event is called the ‘primary endosymbiosis’ and is illustrated in the diagram below by a green pac-man shape (the alphaproteobacterium) engulfing a blue football-shaped cyanobacterium. Primary endosymbiosis resulted in plastids (here plastids mean chloroplasts and mitochondria) that are bounded by two membranes. The lineage of primary endosymbiosis diverged into three: red algae, green algae, and glaucophytes.</p>
 <p>The green algae are thus products of primary endosymbiosis and are characterized by two layers of membranes around their plastids. This includes their chloroplasts.</p>
 <div class="quarto-figure quarto-figure-center page-columns page-full">
@@ -553,8 +544,8 @@ Keeling, Patrick J. 2010. <span>“The Endosymbiotic Origin, Diversification and
 </div></div></figure>
 </div>
 </section>
-<section id="light-dependent-reactions-in-oxygenic-photosynthesis" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="light-dependent-reactions-in-oxygenic-photosynthesis">Light-dependent reactions in oxygenic photosynthesis</h3>
+<section id="light-dependent-reactions-in-oxygenic-photosynthesis" class="level3 page-columns page-full" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="light-dependent-reactions-in-oxygenic-photosynthesis"><span class="header-section-number">1.2</span> Light-dependent reactions in oxygenic photosynthesis</h3>
 <p>A brief <a href="https://www.khanacademy.org/science/ap-biology/cellular-energetics/photosynthesis/a/intro-to-photosynthesis">intro to photosynthesis</a> by Khan Academy</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -571,13 +562,13 @@ Shevela, Dmitry, Jan F. Kern, Govindjee Govindjee, and Johannes Messinger. 2023.
 </div></div></figure>
 </div>
 </section>
-<section id="cyclic-electron-flow" class="level3">
-<h3 class="anchored" data-anchor-id="cyclic-electron-flow">Cyclic electron flow</h3>
+<section id="cyclic-electron-flow" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="cyclic-electron-flow"><span class="header-section-number">1.3</span> Cyclic electron flow</h3>
 <p>Finally, cyclic electron flow may play a photoprotective role, preventing excess light from damaging photosystem proteins and promoting repair of light-induced damage</p>
 </section>
 </section>
-<section id="how-do-we-measure-photosynthesis" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="how-do-we-measure-photosynthesis">How do we measure photosynthesis?</h2>
+<section id="how-do-we-measure-photosynthesis" class="level2 page-columns page-full" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="how-do-we-measure-photosynthesis"><span class="header-section-number">2</span> How do we measure photosynthesis?</h2>
 <p>PAM fluorescence measurements analyze the state and turnover of photosystem II reaction centers. Combined with oxygen consumption, we an assess the role of alternative oxygen-processing pathways.</p>
 <p>The MINI-PAM-II uses an oxygen optode, the sensor’s responsive element is a luminescent dye whose light emission is quenched by oxygen. The optode measurement does not consume oxygen.</p>
 <p>What is fluorescence?</p>
@@ -591,12 +582,12 @@ Shevela, Dmitry, Jan F. Kern, Govindjee Govindjee, and Johannes Messinger. 2023.
 <div class="no-row-height column-margin column-container"><div id="ref-ralph2005" class="csl-entry" role="listitem">
 Ralph, Peter J., and Rolf Gademann. 2005. <span>“Rapid Light Curves: <span>A</span> Powerful Tool to Assess Photosynthetic Activity.”</span> <em>Aquatic Botany</em> 82 (3): 222–37. <a href="https://doi.org/10.1016/j.aquabot.2005.02.006">https://doi.org/10.1016/j.aquabot.2005.02.006</a>.
 </div></div></section>
-<section id="dont-forget-photosynthesizers-also-do-respiration" class="level2">
-<h2 class="anchored" data-anchor-id="dont-forget-photosynthesizers-also-do-respiration">Don’t forget, photosynthesizers also do respiration!</h2>
+<section id="dont-forget-photosynthesizers-also-do-respiration" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="dont-forget-photosynthesizers-also-do-respiration"><span class="header-section-number">3</span> Don’t forget, photosynthesizers also do respiration!</h2>
 <p>They don’t just produce oxygen, they also consume it and release carbon dioxide (CO<sub>2</sub>).</p>
 </section>
-<section id="oxygen-measurement-with-oxygen-meter-firestingo2-fluorescense-with-mini-pam-ii" class="level2">
-<h2 class="anchored" data-anchor-id="oxygen-measurement-with-oxygen-meter-firestingo2-fluorescense-with-mini-pam-ii">Oxygen Measurement with Oxygen Meter FireStingO2 &amp; Fluorescense with MINI-PAM-II</h2>
+<section id="oxygen-measurement-with-oxygen-meter-firestingo2-fluorescense-with-mini-pam-ii" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="oxygen-measurement-with-oxygen-meter-firestingo2-fluorescense-with-mini-pam-ii"><span class="header-section-number">4</span> Oxygen Measurement with Oxygen Meter FireStingO2 &amp; Fluorescense with MINI-PAM-II</h2>
 <p>Download the Oxygen Logger software for the <a href="https://www.pyroscience.com/en/downloads/legacy">FireStingO2</a> at the legacy downloads site for PyroSciences.</p>
 <p>Before connecting the FireStingO2 to the Walz Mini-PAM II, you need to configure the software to the particular oxygen optode sensor used. Anytime you download new software, or switch sensors, you will need to do this step. For this, you only need the FireStingO2, the oxygen optode sensor you will be using, and the micro-USB cable that connects the FireStingO2 to a computer with <code>Oxygen Logger</code> software installed.</p>
 <div class="callout callout-style-default callout-warning callout-titled">

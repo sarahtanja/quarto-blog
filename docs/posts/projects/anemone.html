@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet" class="quarto-color-scheme-extra">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-e2b38b794831ff325e66a6a88120557b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-869eb0ff6db83d51c3d8117e186cf13a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-d52ece2354203a40f5eed1795016a412.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -117,7 +117,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-categories','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-categories','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
       searchColumns: ["listing-date","listing-title","listing-author"],
     };
@@ -317,8 +317,7 @@ window.Quarto = {
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -331,14 +330,6 @@ window.Quarto = {
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -448,7 +439,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 20, 2025</p>
+        <p class="date-modified">August 22, 2025</p>
       </div>
     </div>
     </div>
@@ -504,10 +495,6 @@ Title
 </th>
 
 <th>
-Author
-</th>
-
-<th>
 Categories
 </th>
 
@@ -527,9 +514,6 @@ Reading Time
 <a href="../../posts/projects/anemone/chlorophyll/chlorophyll.html" class="title listing-title">Extracting &amp; measuring chlorophyll a &amp; c2 concentrations</a>
 </td>
 <td>
-<span class="listing-author">Sarah Tanja</span>
-</td>
-<td>
 <span class="listing-categories">protocols, anemones</span>
 </td>
 <td>
@@ -544,9 +528,6 @@ Reading Time
 </td>
 <td>
 <a href="../../posts/projects/anemone/single-stress/pilot-single-stress.html" class="title listing-title">Single stressor leachate exposure summary</a>
-</td>
-<td>
-<span class="listing-author">Sarah Tanja</span>
 </td>
 <td>
 <span class="listing-categories">lab records</span>
@@ -565,9 +546,6 @@ Reading Time
 <a href="../../posts/projects/anemone/about-anemones/about-anemone.html" class="title listing-title">All about the aggregating anemone</a>
 </td>
 <td>
-<span class="listing-author">Sarah Tanja</span>
-</td>
-<td>
 <span class="listing-categories">learning journey, anemones</span>
 </td>
 <td>
@@ -582,9 +560,6 @@ Reading Time
 </td>
 <td>
 <a href="../../posts/projects/anemone/plan/experiment-schedule.html" class="title listing-title">Anemone Leachate Heat Experiment Recipe</a>
-</td>
-<td>
-<span class="listing-author">Sarah Tanja</span>
 </td>
 <td>
 <span class="listing-categories">anemones, protocols</span>
@@ -603,9 +578,6 @@ Reading Time
 <a href="../../posts/projects/anemone/making-chambers/making-chambers.html" class="title listing-title">How to make a custom respirometry chamber</a>
 </td>
 <td>
-<span class="listing-author">Sarah Tanja</span>
-</td>
-<td>
 <span class="listing-categories">protocols, anemones</span>
 </td>
 <td>
@@ -620,9 +592,6 @@ Reading Time
 </td>
 <td>
 <a href="../../posts/projects/anemone/field-collection/30MAR24-alki.html" class="title listing-title">Field collection at Constellation Park, Alki, West Seattle</a>
-</td>
-<td>
-<span class="listing-author">Sarah Tanja</span>
 </td>
 <td>
 <span class="listing-categories">anemones, lab records</span>
@@ -641,9 +610,6 @@ Reading Time
 <a href="../../posts/projects/anemone/field-collection/18MAR24-owens-beach.html" class="title listing-title">Field collection at Owens Beach, Point Defiance Park, Tacoma</a>
 </td>
 <td>
-<span class="listing-author">Sarah Tanja</span>
-</td>
-<td>
 <span class="listing-categories">anemones, lab records</span>
 </td>
 <td>
@@ -658,9 +624,6 @@ Reading Time
 </td>
 <td>
 <a href="../../posts/projects/anemone/heat-stress/heat-wave.html" class="title listing-title">Environmental Landscape of an Intertidal Heat Wave</a>
-</td>
-<td>
-<span class="listing-author">Sarah Tanja</span>
 </td>
 <td>
 <span class="listing-categories">&nbsp;</span>
@@ -679,9 +642,6 @@ Reading Time
 <a href="../../posts/projects/anemone/leachate-protocol/leachate-protocol.html" class="title listing-title">Leachate preparation &amp; dilution protocol</a>
 </td>
 <td>
-<span class="listing-author">Sarah Tanja</span>
-</td>
-<td>
 <span class="listing-categories">protocols</span>
 </td>
 <td>
@@ -696,9 +656,6 @@ Reading Time
 </td>
 <td>
 <a href="../../posts/projects/anemone/tanks/tanks.html" class="title listing-title">Experimental tank setup</a>
-</td>
-<td>
-<span class="listing-author">Sarah Tanja</span>
 </td>
 <td>
 <span class="listing-categories">protocols, anemones</span>
@@ -717,9 +674,6 @@ Reading Time
 <a href="../../posts/projects/anemone/photosynth-pam/photosynth-pam.html" class="title listing-title">Measuring photosynthesis</a>
 </td>
 <td>
-<span class="listing-author">Sarah Tanja</span>
-</td>
-<td>
 <span class="listing-categories">learning journey, anemones</span>
 </td>
 <td>
@@ -734,9 +688,6 @@ Reading Time
 </td>
 <td>
 <a href="../../posts/projects/anemone/plan/project-planning.html" class="title listing-title">Anemone Project Planning</a>
-</td>
-<td>
-<span class="listing-author">Sarah Tanja</span>
 </td>
 <td>
 <span class="listing-categories">anemones</span>
@@ -1233,7 +1184,7 @@ Reading Time
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co">  categories: true</span></span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co">  sort-ui: false</span></span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">  filter-ui: false</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">  fields: [date, title, author, categories, reading-time]</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">  fields: [date, title, categories, reading-time]</span></span>
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="an">page-layout:</span><span class="co"> full</span></span>
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="an">title-block-banner:</span><span class="co"> true</span></span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>

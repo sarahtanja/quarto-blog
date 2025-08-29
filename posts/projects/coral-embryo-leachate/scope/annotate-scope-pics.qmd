@@ -86,25 +86,12 @@ For a basic introduction to using NIS Elements Annotation & Measurement tool, ch
 
 16. Reopen .nd2 file with annotations showing
 
-17. Fill out google sheet
+17. Fill out Google sheet for each stitched sample slide
 
-18. Save Google Sheet
 
-19. egg (unfertilized oocyte)
 
-20. **cleavage** (3-4 hours post fertilization)
 
-21. 4-16 cell stage
-
-22. 32-64 cell stage
-
-23. **prawn chip** (9 hours post fertilization)
-
-24. **early gastrula** (14 hours post fertilization)
-
-Note that the phases in **bold** are the ones that we expect our embryos to be in based on hours post fertilization that they were preserved in 4% ZFIX. In this study, we conducted bundle-bundle crosses in 20mL of treatment solution (either a 0.22 micron filtered seawater `control`, or three increasing levels of PVC leachate derived from microplastics: 0.01 mg/L PVC leachate `low`, 0.1mg/L PVC leachate `mid`, or 1mg/L PVC leachate `high`).
-
-# Oocyte
+# Egg
 
 #### exemplar
 
@@ -137,7 +124,7 @@ Note that the phases in **bold** are the ones that we expect our embryos to be i
 #### deformed
 
 # Prawn chip
-
+![2x Nikon scope image of sample 8M9 \| cross 8, Mid PVC treatment 0.1mg/L, 9 hours post fertilization (prawn chip phase)](8M9_stitch_001_crop_r90.png)
 #### exemplar
 
 #### fragmented
@@ -145,7 +132,7 @@ Note that the phases in **bold** are the ones that we expect our embryos to be i
 #### deformed
 
 # Early gastrula
-
+![4x Nikon scope image of sample 6L14 (cross 6, Low PVC treatment 0.01mg/L, 14 hours post fertilization (early gastrula phase))](6L14_stitch_001.png)
 #### exemplar
 
 #### fragmented

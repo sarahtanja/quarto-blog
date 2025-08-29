@@ -8,24 +8,21 @@ date-modified: today
 categories: [protocols, records]
 ---
 
-# Goals
+# Background
 
-Describe the *Montipora capitata* coral colony collections under State of Hawai\`i SAP2024-35 and tank acclimation prior to spawn night research activities in June & July of 2024.
+Describe the *Montipora capitata* coral colony collections under State of Hawai\`i Special Activities Permit 2024-35 and tank acclimation prior to spawn night research activities in June & July 2024 at HIMB.
 
-# Install & load packages
+## Install & load packages
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
-
+```{r eval=FALSE, message=FALSE, warning=FALSE}
 ## Install packages
 if (!require("ggmap", character.only = TRUE)){ install.packages("ggmap")}
-
 if (!require("ggplot2", character.only = TRUE)){ install.packages("ggplot2")}
-
 if (!require("cowplot", character.only = TRUE)){ install.packages("cowplot")}
-
 if (!require("ggplotify", character.only = TRUE)){ install.packages("ggplotify")}
+```
 
-
+```{r}
 ## Load packages
 library(ggplotify)
 library(tidyverse)

@@ -2,22 +2,11 @@
 title: "Make a secret tunnel"
 subtitle: "use `.ssh/config` file to connect to a remote server"
 author: "Sarah Tanja"
-draft: true
 date: 11/04/2024
-date-format: long
-date-modified: today
 categories: [code]
-toc: true
-toc-title: Contents <i class="bi bi-bookmark-heart"></i>
-toc-depth: 5
-toc-location: left
-reference-location: margin
-citation-location: margin
-link-external-icon: true
-link-external-newwindow: true
 ---
 
-## How to setup a 'tunnel' into the remote server
+## How to setup a 'tunnel' into a remote server
 
 Open a terminal ( I opened my WSL Ubuntu terminal 🐧) and make a .ssh directory in the home directory, and then open the nano text editor to write a config file in the .ssh folder:
 
@@ -70,3 +59,13 @@ The tunnel connected me to the remote server and prompted me to enter the passwo
 ::: callout-tip
 Once tunneled into the remote server you'll notice the \<username\>\@\<server\> in the terminal changes from your local computer to the remote server.
 :::
+
+You can go back and check on the .ssh/config file by navigating to the .ssh directory and running `cat` on the config file. `cat` is useful for small text files, it displays the contents directly in the terminal.
+
+::: callout-caution
+Careful about calling `cat` on really large files because everything is printed at once and the output will scroll past very quickly (and often this is not useful)
+:::
+
+```{r, engine='bash', eval= FALSE, echo=TRUE}
+cat config
+```

@@ -352,6 +352,136 @@ Tip
   <media:content url="https://sarahtanja.github.io/quarto-blog/posts/workflow/Newrsynclogo.png" medium="image" type="image/png" height="70" width="144"/>
 </item>
 <item>
+  <title>Make a secret tunnel</title>
+  <dc:creator>Sarah Tanja</dc:creator>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/workflow/tunnel.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<section id="how-to-setup-a-tunnel-into-the-remote-server" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="how-to-setup-a-tunnel-into-the-remote-server"><span class="header-section-number">1</span> How to setup a ‘tunnel’ into the remote server</h2>
+<p>Open a terminal ( I opened my WSL Ubuntu terminal 🐧) and make a .ssh directory in the home directory, and then open the nano text editor to write a config file in the .ssh folder:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mkdir</span> .ssh nano ~/.ssh/config</span></code></pre></div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The .ssh directory is hidden because it starts with a <code>.</code>, and you won’t see it unless you run <code>ls -a</code></p>
+</div>
+</div>
+<p>In the nano text editor I copied the following:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># secret tunnel     </span></span>
+<span id="cb2-2"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">Host</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span>server<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span>_tunnel         </span>
+<span id="cb2-3">    <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">HostName</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span>123.45.678.90<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span>         </span>
+<span id="cb2-4">    <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">User</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span>username<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span>         </span>
+<span id="cb2-5">    <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">ControlMaster</span> auto         </span>
+<span id="cb2-6">    <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">ServerAliveInterval</span> 30         </span>
+<span id="cb2-7">    <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">ServerAliveCountMax</span> 1200         </span>
+<span id="cb2-8">    <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">ForwardX11</span> yes         </span>
+<span id="cb2-9">    <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">LocalForward</span> localhost:9000 127.0.0.1:9000</span></code></pre></div>
+</div>
+<p>where:</p>
+<ul>
+<li><p><strong>&lt;server&gt;</strong> is the remote server name (make this short and sweet, since you will execute this as a command later on and must needs type it out)</p></li>
+<li><p><strong>&lt;123.45.678.90&gt;</strong> is the remote server IP address in the HostName field</p></li>
+<li><p><strong>&lt;username</strong>&gt; is the username setup for the remote server in the User field</p></li>
+</ul>
+<p>I saved the config file by writing it out (Ctrl+X) and pressing Enter.</p>
+<p>Next, I tested the tunnel by opening a new Linux Ubuntu terminal and running:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ssh</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span>server<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span>_tunnel</span></code></pre></div>
+</div>
+<p>In addition, you can test direct access to the remote server (not using the tunnel) with:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ssh</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span>username<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span>@<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span>IP-address<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span></span></code></pre></div>
+</div>
+<p>The tunnel connected me to the remote server and prompted me to enter the password associated with my user on the remote server.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Once tunneled into the remote server you’ll notice the &lt;username&gt;@&lt;server&gt; in the terminal changes from your local computer to the remote server.</p>
+</div>
+</div>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>code</category>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/workflow/tunnel.html</guid>
+  <pubDate>Mon, 04 Nov 2024 08:00:00 GMT</pubDate>
+</item>
+<item>
   <title>Submitting NGS sequences to NCBI SRA</title>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi-sra-submission.html</link>
@@ -2996,237 +3126,6 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
   <category>lab records</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/16aug2024-extraction/16aug2024-extraction.html</guid>
   <pubDate>Fri, 16 Aug 2024 07:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>15-Aug-2024 Embryo RNA Extractions</title>
-  <dc:creator>Sarah Tanja</dc:creator>
-  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/15aug2024-extraction/15aug2024-extraction.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-
-<section id="samples" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Samples</h1>
-<ul>
-<li><p>4C14F, 5C14F = 45C14</p>
-<ul>
-<li>2 min Qiagin Tissue Disruption Tubes</li>
-</ul></li>
-<li><p>4L4F, 5L4F, 6L4F = 456L4</p>
-<ul>
-<li>2 min Qiagin Tissue Disruption Tubes</li>
-</ul></li>
-<li><p>4M9F, 5M9F, 6M9F = 456M9</p>
-<ul>
-<li>2 min Qiagin Tissue Disruption Tubes</li>
-</ul></li>
-<li><p>4H4F, 5H4F, 6H4F = 456H4</p>
-<ul>
-<li>2 min Qiagin Tissue Disruption Tubes</li>
-</ul></li>
-<li><p>4C9F, 5C9F = 45C9</p>
-<ul>
-<li>2 min Qiagin Tissue Disruption Tubes</li>
-</ul></li>
-<li><p>4L9F, 5L9F, 6L9F = 456L9</p>
-<ul>
-<li>2 min Qiagin Tissue Disruption Tubes</li>
-</ul></li>
-</ul>
-</section>
-<section id="summary" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Summary</h1>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Caution
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This extraction was overall bad… The main difference was I re-introduced Proteinase K digestion (hoping to maintain RNA quality &amp; integrity… But RNA quantity suffered A LOT (And I’m not measuring RIN… just crossing my fingers and sending it to Azenta)</p>
-</div>
-</div>
-</section>
-<section id="extraction-notes" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Extraction Notes</h1>
-<p>date: 15-AUG-2024</p>
-<p>kit: Zymo Quick-DNA/RNA Miniprep Plus Kit</p>
-<ul>
-<li><p>Thaw samples to room temp</p></li>
-<li><p>Vortex to mix</p></li>
-<li><p>Transfer to Qiagin Tissue Disruption Tube</p></li>
-<li><p>Homogenize for 2 minutes</p></li>
-<li><p>Centrifuge 1 minute to get rid of bubbles</p>
-<ul>
-<li>Checked for complete lysis… still saw entact cells so I homogenized again for 1 minute with 1/3 of Zymo 0.1 &amp; 0.5 mm glass beads poured in each tube. This resulted in complete lysis. Centrifuged again for 1 minute</li>
-</ul></li>
-<li><p>Split into two aliquots of 500uL &amp; transfered to two new nuclease-free tubes</p></li>
-<li><p>Proteinase K Digestion for 40 minutes at 55C</p></li>
-<li><p>Added 700uL of DNA/RNA Lysis Buffer to each tube ( a total of 1400uL volume in each tube )</p></li>
-<li><p>Vortex to mix for 5 seconds</p></li>
-<li><p>Check to see that embryos have dissolved and liquid is clear</p></li>
-</ul>
-<p>—&gt; Proceed to purification</p>
-<ul>
-<li><p>Sequentially transfer 2800uL of each sample in aliquots of 700uL into yellow Spin-Away Filter in a Collection Tube and centrifuge for 30s. <strong>SAVE THE FLOW THROUGH FOR RNA PURIFICATION by tipping flow through into falcon tube</strong></p></li>
-<li><p>Doubled volume of 100% (200 proof) ethanol to the RNA flow through in a falcon tube and vortexed to mix. End volume of flow through + ethanol = 5mL</p></li>
-<li><p>Sequentially transfer RNA flow-through + ethanol in volumes =&gt;700uL into the green Zymo Spin IIICG Column in a Collection Tube</p></li>
-<li><p>Saved 1st 1400uL for protein</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This took 7 passes!</p>
-</div>
-</div></li>
-<li><p>Performed DNase I Treatment on green RNA spin column</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">DB <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">75</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">4</span></span>
-<span id="cb1-2"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">print</span>(DB)</span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 300</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">Dnase <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">5</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">4</span> </span>
-<span id="cb3-2"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">print</span>(Dnase)</span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 20</code></pre>
-</div>
-</div>
-<ul>
-<li>I didn’t invert to mix… I always lose some volume ‘beads’ in the lid when I do this. Instead I flicked the tube to mix it and kept all the volume down in the cnical end of the tube. This worked well and I had a full 80uL of treatment per spin column to work with.</li>
-</ul></li>
-<li><p>Warmed Zymo DNase-RNase Free Water to 55C in heat block before elution, and slowly dripped water directly over filter.</p></li>
-</ul>
-<p>eluted DNA volume: 30uL in <code>Zymo DNase-RNase Free Water</code></p>
-<p>eluted RNA volume: 30uL in <code>Zymo DNase-RNase Free Water</code></p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>I spoke with Azenta rep on morning of 15-Aug-2024 and learned that they don’t require a Nanodrop quality check, just a Qubit double-stranded quantity measurement by flourescence. The target is 100ng of total RNA, in a minimum of 20uL of buffer. So from here on out I’m just checking quantity using the Qubit and the Invitrogen High Sensitivity (HS) RNA assay.</p>
-</div>
-</div>
-</section>
-<section id="qubit" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Qubit</h1>
-<p>Using the Invitrogen Thermo Fischer RNA High Sensitivity Assay Kit.</p>
-<p>Prepared working solution for 3 samples and two standards:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">199</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">6</span></span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 1194</code></pre>
-</div>
-</div>
-<p>Qubit RNA HS reagent in DMSO = 1uL * 5 = 6uL</p>
-<p>Qubit RNA HS Buffer = 199uL * 5 = 1194uL</p>
-<section id="rna" class="level3" data-number="4.0.1">
-<h3 data-number="4.0.1" class="anchored" data-anchor-id="rna"><span class="header-section-number">4.0.1</span> RNA</h3>
-<p>standard 1: 94.63</p>
-<p>standard 2: 1803.97</p>
-<p>RunID: 2024-08-16_074027</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>sample_id</th>
-<th>qubit_rna_1</th>
-<th>qubit_rna_2</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>45C14</td>
-<td>8.70 ng/uL</td>
-<td>8.88 ng/uL</td>
-</tr>
-<tr class="even">
-<td>456L4</td>
-<td>too low</td>
-<td>too low</td>
-</tr>
-<tr class="odd">
-<td>456M9</td>
-<td>too low</td>
-<td>too low</td>
-</tr>
-<tr class="even">
-<td>456H4</td>
-<td>too low</td>
-<td>too low</td>
-</tr>
-<tr class="odd">
-<td>45C9</td>
-<td>too low</td>
-<td>too low</td>
-</tr>
-<tr class="even">
-<td>456L9</td>
-<td>8.34 ng/uL</td>
-<td>8.22 ng/uL</td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
-<section id="storage-location" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Storage Location</h1>
-<p>RNA samples are stored in -80C ‘JPG Lab’ Thermo freezer on shelf 1 in <code>coral-embryo-leachate RNA</code> wax freezer boxes with green label tape:</p>
-<p>DNA samples (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate DNA</code> wax freezer box with yellow label tape:</p>
-<p>Protein flow-through (not quantified) are stored in -20C in JPG Lab FSH 236 in shelf 2 in <code>coral-embryo-leachate PROTEIN</code> wax freezer box with blue label tape:</p>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>lab records</category>
-  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/15aug2024-extraction/15aug2024-extraction.html</guid>
-  <pubDate>Thu, 15 Aug 2024 07:00:00 GMT</pubDate>
-  <media:content url="https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/15aug2024-extraction/samples-in-rack.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>

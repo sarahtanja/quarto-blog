@@ -135,43 +135,88 @@ get_stadiamap(
 ```
 
 ```{r}
-# Define coordinates
-location <- c(lon = -157.787347, lat = 21.431215)
+#| fig-width: 10
+#| fig-height: 8
+#| warning: false
+#| message: false
 
-# Get map
+# Define collection location coordinates as specified
+location <- c(lon = -157.78, lat = 21.43)
+
+# Get main map (collection site)
 main_basemap <- get_map(location = location, zoom = 17, maptype = "satellite")
 
+# Create main map with collection point
+main_map <- ggmap(main_basemap) +
+  geom_point(
+    aes(x = -157.78, y = 21.43),
+    color = "orange",
+    size = 5,
+    shape = 21,
+    fill = "orange",
+    stroke = 2
+  ) +
+  labs(
+    x = "Longitude",
+    y = "Latitude"
+  ) +
+  theme_minimal() +
+  theme(
+    axis.title = element_text(size = 10),
+    axis.text = element_text(size = 8)
+  )
 
-
-
+# Get inset map showing Hawaiian Islands
+# Bounding box to capture main Hawaiian Islands (Kauai to Hawaii Island)
 inset_basemap <- get_stadiamap(
-  bbox = c(left = -158, bottom = 21.2, right = -157.4, top = 21.8),
-  zoom = 8,
-  filetype = "stamen_watercolor" 
+  bbox = c(left = -160.5, bottom = 18.8, right = -154.7, top = 22.3),
+  zoom = 7,
+  maptype = "stamen_terrain"
 )
 
-# 1. Bounding box from main map
+# Get bounding box from main map for reference rectangle
 main_bbox <- attr(main_basemap, "bb")
 
-# 2. Inset map with bounding box from main map
+# Create inset map with Hawaiian Islands labels
 inset_map <- ggmap(inset_basemap) +
+  # Add rectangle showing main map location
   annotate("rect", 
            xmin = main_bbox$ll.lon, xmax = main_bbox$ur.lon,
            ymin = main_bbox$ll.lat, ymax = main_bbox$ur.lat,
-           color = "yellow", fill = NA, linewidth = 1) +
-  theme_void()
+           color = "red", fill = NA, linewidth = 1.5) +
+  # Add collection point on inset
+  geom_point(
+    aes(x = -157.78, y = 21.43),
+    color = "red",
+    size = 3
+  ) +
+  # Add Hawaiian Islands labels
+  annotate("text", x = -159.5, y = 22.0, label = "Kaua'i", 
+           size = 3, fontface = "italic") +
+  annotate("text", x = -157.0, y = 21.1, label = "O'ahu", 
+           size = 3, fontface = "italic") +
+  annotate("text", x = -156.9, y = 20.8, label = "Moloka'i", 
+           size = 3, fontface = "italic") +
+  annotate("text", x = -156.6, y = 20.5, label = "Lana'i", 
+           size = 2.5, fontface = "italic") +
+  annotate("text", x = -156.3, y = 20.8, label = "Maui", 
+           size = 3, fontface = "italic") +
+  annotate("text", x = -155.5, y = 19.6, label = "Hawai'i", 
+           size = 3, fontface = "italic") +
+  # Add overall label
+  annotate("text", x = -157.5, y = 19.2, label = "Hawaiian Islands", 
+           size = 4, fontface = "bold") +
+  theme_void() +
+  theme(
+    panel.border = element_rect(colour = "black", fill = NA, linewidth = 1)
+  )
 
-# 3. Convert both to standard ggplot objects
-main_map_plot <- as.ggplot(main_map)
-inset_map_plot <- as.ggplot(inset_map)
-
-# 4. Compose using cowplot
+# Compose using cowplot to create final map with inset
 final_plot <- ggdraw() +
-  draw_plot(main_map_plot) +
-  draw_plot(inset_map_plot, x = 0.65, y = 0.65, width = 0.3, height = 0.3)
+  draw_plot(main_map) +
+  draw_plot(inset_map, x = 0.05, y = 0.65, width = 0.35, height = 0.35)
 
 print(final_plot)
-
 ```
 
 # Tank acclimation

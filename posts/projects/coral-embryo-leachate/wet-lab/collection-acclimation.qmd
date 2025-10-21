@@ -134,11 +134,16 @@ get_stadiamap(
 
 ```
 
+## Collection site map with Hawaiian Islands inset
+
+This map shows the coral collection location (21.43°N, 157.78°W) near HIMB with an inset map displaying all the Hawaiian Islands.
+
 ```{r}
 #| fig-width: 10
 #| fig-height: 8
 #| warning: false
 #| message: false
+#| fig-cap: "Coral collection site on O'ahu with inset map showing location within the Hawaiian Islands"
 
 # Define collection location coordinates as specified
 location <- c(lon = -157.78, lat = 21.43)

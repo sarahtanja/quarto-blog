@@ -52,8 +52,8 @@ format:
     date-format: long
     date-modified: today
     theme: 
-      light: [solar]
-      dark: [solar]
+      light: [journal]
+      dark: [journal]
       #light: [solar, light-theme.css]
       #dark: [solar, dark-theme.css]
     highlight-style:

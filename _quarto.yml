@@ -16,6 +16,8 @@ website:
     foreground: light
     search: true
     right: #align navbar items to right/left/center
+      - text: "Learning"
+        file: learning.qmd
       - text: "Projects"
         file: projects.qmd
       - text: "Posts"

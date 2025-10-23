@@ -64,7 +64,7 @@ This is a Quarto-based website serving as an open lab notebook for marine biolog
 
 When working with content, be aware of these research themes:
 - Marine biology and ecology
-- Plastic pollution (microplastic-associated impacts)
+- Plastic pollution (microplastics-associated impacts)
 - Climate change and heat stress
 - Photosynthetic efficiency
 - Coral and sea anemone biology
@@ -115,7 +115,7 @@ quarto render path/to/file.qmd
 
 ## Common Tasks
 
-- **Adding a new blog post:** Create a new .qmd file in `posts/[category]/` with proper frontmatter
+- **Adding a new blog post:** Create a new .qmd file in `posts/` or in a category folder like `posts/projects/`, `posts/workflow/`, or `posts/grants-fellowships/` with proper frontmatter
 - **Updating navigation:** Edit the navbar section in `_quarto.yml`
 - **Modifying themes:** Edit `light-theme.css` or `dark-theme.css`
 - **Adding references:** Update `references.bib` with new BibTeX entries

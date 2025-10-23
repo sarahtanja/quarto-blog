@@ -9,19 +9,6 @@
     ]
   },
   {
-    "listing": "/posts/projects/coral-pae-temp.html",
-    "items": [
-      "/posts/projects/coral-pae-temp/dna-rna-extractions/dna-rna-coral-extractions.html"
-    ]
-  },
-  {
-    "listing": "/posts/projects/coral-leachate-heat.html",
-    "items": [
-      "/posts/projects/coral-leachate-heat/hobo-calibrations/hobo-calibrations.html",
-      "/posts/projects/coral-leachate-heat/log.html"
-    ]
-  },
-  {
     "listing": "/posts/projects/anemone.html",
     "items": [
       "/posts/projects/anemone/chlorophyll/chlorophyll.html",
@@ -30,19 +17,25 @@
       "/posts/projects/anemone/plan/experiment-schedule.html",
       "/posts/projects/anemone/making-chambers/making-chambers.html",
       "/posts/projects/anemone/field-collection/30MAR24-alki.html",
-      "/posts/projects/anemone/field-collection/18MAR24-owens-beach.html",
-      "/posts/projects/anemone/heat-stress/heat-wave.html",
       "/posts/projects/anemone/leachate-protocol/leachate-protocol.html",
+      "/posts/projects/anemone/field-collection/18MAR24-owens-beach.html",
       "/posts/projects/anemone/tanks/tanks.html",
       "/posts/projects/anemone/photosynth-pam/photosynth-pam.html",
-      "/posts/projects/anemone/plan/project-planning.html"
+      "/posts/projects/anemone/plan/project-planning.html",
+      "/posts/projects/anemone/heat-stress/heat-wave.html"
+    ]
+  },
+  {
+    "listing": "/posts/projects/coral-pae-temp.html",
+    "items": [
+      "/posts/projects/coral-pae-temp/dna-rna-extractions/dna-rna-coral-extractions.html"
     ]
   },
   {
     "listing": "/posts/projects/coral-embryo-leachate.html",
     "items": [
-      "/posts/projects/coral-embryo-leachate/transcriptomics/bioinformatics-pipeline/pipeline-overview.html",
       "/posts/projects/coral-embryo-leachate/transcriptomics/previous-research/previous-research.html",
+      "/posts/projects/coral-embryo-leachate/transcriptomics/bioinformatics-pipeline/pipeline-overview.html",
       "/posts/projects/coral-embryo-leachate/scope/ontogenetic-development/ontogenetic-development.html",
       "/posts/projects/coral-embryo-leachate/scope/annotate-scope-pics.html",
       "/posts/projects/coral-embryo-leachate/scope/scope-stats.html",
@@ -59,8 +52,15 @@
       "/posts/projects/coral-embryo-leachate/molecular-lab/12aug2024-extraction/12aug2024-extraction.html",
       "/posts/projects/coral-embryo-leachate/molecular-lab/embryo-extractions.html",
       "/posts/projects/coral-embryo-leachate/wet-lab/bench-incubation.html",
-      "/posts/projects/coral-embryo-leachate/wet-lab/collection-acclimation.html",
-      "/posts/projects/coral-embryo-leachate/wet-lab/spawn-night.html"
+      "/posts/projects/coral-embryo-leachate/wet-lab/spawn-night.html",
+      "/posts/projects/coral-embryo-leachate/wet-lab/collection-acclimation.html"
+    ]
+  },
+  {
+    "listing": "/posts/projects/coral-leachate-heat.html",
+    "items": [
+      "/posts/projects/coral-leachate-heat/hobo-calibrations/hobo-calibrations.html",
+      "/posts/projects/coral-leachate-heat/log.html"
     ]
   },
   {

@@ -5,6 +5,17 @@
   max-height: 200px;
 }
 
+/* Favicon in navbar - size and hover effect */
+.navbar-brand img.navbar-logo {
+  max-height: 40px;
+  transition: transform 0.3s ease, max-height 0.3s ease;
+}
+
+.navbar-brand img.navbar-logo:hover {
+  transform: scale(1.3);
+  max-height: 52px;
+}
+
 /* Style actual images inside the thumbnail div */
 .thumbnail img {
   width: 100%;

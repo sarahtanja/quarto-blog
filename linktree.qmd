@@ -1,0 +1,68 @@
+---
+title: "Links"
+page-layout: full
+---
+
+<style>
+.linktree-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.linktree-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: inherit;
+}
+
+.linktree-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: inherit;
+  opacity: 0.8;
+}
+
+.linktree-link {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.linktree-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  color: inherit;
+}
+
+.linktree-link i {
+  margin-right: 10px;
+  font-size: 1.3rem;
+}
+</style>
+
+<div class="linktree-container">
+  <h1 class="linktree-title">Sarah Tanja</h1>
+  <p class="linktree-subtitle">Marine Biologist & Data Scientist</p>
+  
+  <a href="https://www.linkedin.com/in/sarah-tanja-595722146/" class="linktree-link" target="_blank">
+    <i class="bi bi-linkedin"></i>
+    LinkedIn
+  </a>
+  
+  <a href="https://github.com/sarahtanja" class="linktree-link" target="_blank">
+    <i class="bi bi-github"></i>
+    GitHub
+  </a>
+</div>

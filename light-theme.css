@@ -1,5 +1,10 @@
 /*-- scss:defaults --*/
 
+/* Navbar background color to match favicon yellow */
+.navbar {
+  background-color: #d4aa00 !important;
+}
+
 /* nav bar logo size*/
 .navbar-logo {
   max-height: 200px;

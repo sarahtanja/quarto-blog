@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Sarah Tanja">
 <meta name="dcterms.date" content="2023-08-22">
 
-<title>The RNA Inhibitors – Sarah Tanja’s Open Lab Notebook</title>
+<title>Sarah Tanja’s Open Lab Notebook - The RNA Inhibitors</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -35,7 +35,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -126,7 +126,7 @@ div.csl-indent {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<meta property="og:title" content="The RNA Inhibitors – Sarah Tanja’s Open Lab Notebook">
+<meta property="og:title" content="Sarah Tanja’s Open Lab Notebook - The RNA Inhibitors">
 <meta property="og:description" content="A tragic saga of continued troubles">
 <meta property="og:site_name" content="Sarah Tanja's Open Lab Notebook">
 </head>
@@ -146,7 +146,7 @@ div.csl-indent {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -173,7 +173,7 @@ div.csl-indent {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-github" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-github" role="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span>
@@ -202,7 +202,7 @@ div.csl-indent {
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-envelope-paper" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-envelope-paper" role="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="bi bi-envelope-paper" role="img">
 </i> 
  <span class="menu-text"></span>
@@ -217,7 +217,7 @@ div.csl-indent {
   </li>
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+          <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
@@ -290,7 +290,7 @@ div.csl-indent {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
@@ -306,13 +306,13 @@ div.csl-indent {
 <p>“Your samples failed in library prep. All 20 of them, the other samples on the 96 well plate as well as our positive control all worked great. We seen this before and it is almost always an indication that there are some type of inhibitors in your samples and it impacted the prep. Based on the quality of the RNA there is nothing more we can do for them, they will not work in the prep until they have been purified, I am not sure how they were cleaned up after the extraction but it needs to be more rigorous and be certain there are no contaminants in the RNA.”</p>
 </blockquote>
 <p>After initial panic and frustration 😨😭… I started researching reverse transcriptase<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> inhibitors and reaching out to the <a href="https://robertslab.github.io/resources/">Roberts</a> and <a href="http://putnamlab.com/">Putnam</a> Labs to ask for advice (recorded in this Roberts Lab <a href="https://github.com/RobertsLab/resources/issues/1670">github issue</a>).</p>
-<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;Reverse transcriptase is an enzyme that transcribes single-stranded RNA into complementary DNA (cDNA) during library prep for RNA sequencing. It was discovered in the 1970’s by David Baltimore and Howard Temin when studying retroviruses (checkout this <a href="https://www.youtube.com/watch?app=desktop&amp;v=v9EL8V-6la4">YouTube video</a> for a brief history on reverse transcriptase, and this <a href="https://www.youtube.com/watch?v=POEDYHKyYDk">YouTube video</a> for a brief explanation of how it is used to turn mRNA to cDNA).</p></div></div><p>So what did I find, and what does this mean for my samples?</p>
+<div class="no-row-height column-margin column-container"><p><sup>1</sup>&nbsp;Reverse transcriptase is an enzyme that transcribes single-stranded RNA into complementary DNA (cDNA) during library prep for RNA sequencing. It was discovered in the 1970’s by David Baltimore and Howard Temin when studying retroviruses (checkout this <a href="https://www.youtube.com/watch?app=desktop&amp;v=v9EL8V-6la4">YouTube video</a> for a brief history on reverse transcriptase, and this <a href="https://www.youtube.com/watch?v=POEDYHKyYDk">YouTube video</a> for a brief explanation of how it is used to turn mRNA to cDNA).</p></div><p>So what did I find, and what does this mean for my samples?</p>
 <p>The RNA quantity, measured by Qubit Fluorometer, is good. And the RNA quality, measured by UT GSAF Bioanalyzer, is also good. The issue is that there is <em>something else</em> in the sample that is preventing the reverse transcriptase from generating the cDNA.</p>
 </section>
 <section id="assessing-purity" class="level2 page-columns page-full" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="assessing-purity"><span class="header-section-number">2</span> Assessing Purity</h2>
 <p>Nanodrop purity targets<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>:</p>
-<div class="no-row-height column-margin column-container"><div id="fn2"><p><sup>2</sup>&nbsp;Check out <a href="https://toptipbio.com/the-nanodrop-results-explained/">Assessing RNA quantity and purity with Nanodrop</a> by TopTipBio</p></div></div><ul>
+<div class="no-row-height column-margin column-container"><p><sup>2</sup>&nbsp;Check out <a href="https://toptipbio.com/the-nanodrop-results-explained/">Assessing RNA quantity and purity with Nanodrop</a> by TopTipBio</p></div><ul>
 <li><p>260/280 (protein purity) <strong>1.80 - 2.00</strong></p></li>
 <li><p>260/230 (salts purity) <strong>2.00 - 2.20</strong></p></li>
 </ul>
@@ -3431,7 +3431,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -3463,29 +3474,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
   const viewSource = window.document.getElementById('quarto-view-source') ||
                      window.document.getElementById('quarto-code-tools-source');
   if (viewSource) {
@@ -3544,15 +3533,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
           // target, if specified
           link.setAttribute("target", "_blank");
           if (link.getAttribute("rel") === null) {
@@ -3596,11 +3580,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
+      return note.innerHTML;
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -4282,7 +4262,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-422"><a href="#cb1-422" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-423"><a href="#cb1-423" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-424"><a href="#cb1-424" aria-hidden="true" tabindex="-1"></a>Really still frustrated that I'm not getting consistent results... Does this kit work to purify the samples? Not in large batches.... few of the samples meet the purity targets. I'm also worried that the more I work with the RNA the more it degrades and I'm losing quantity (ng/uL) and possibly the quality (time will tell when the RIN scores come back from UT GSAF)</span>
-</code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

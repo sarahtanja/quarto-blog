@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Sarah Tanja">
 <meta name="dcterms.date" content="2023-06-08">
 
-<title>Choosing 16S Primers for M. capitata microbiome – Sarah Tanja's Open Lab Notebook</title>
+<title>Sarah Tanja’s Open Lab Notebook - Choosing 16S Primers for M. capitata microbiome</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -35,7 +35,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -126,7 +126,7 @@ div.csl-indent {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<meta property="og:title" content="Choosing 16S Primers for M. capitata microbiome – Sarah Tanja’s Open Lab Notebook">
+<meta property="og:title" content="Sarah Tanja’s Open Lab Notebook - Choosing 16S Primers for M. capitata microbiome">
 <meta property="og:site_name" content="Sarah Tanja's Open Lab Notebook">
 </head>
 
@@ -145,7 +145,7 @@ div.csl-indent {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -172,7 +172,7 @@ div.csl-indent {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-github" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-github" role="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span>
@@ -201,7 +201,7 @@ div.csl-indent {
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-envelope-paper" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-envelope-paper" role="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="bi bi-envelope-paper" role="img">
 </i> 
  <span class="menu-text"></span>
@@ -216,7 +216,7 @@ div.csl-indent {
   </li>
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+          <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
@@ -281,7 +281,7 @@ div.csl-indent {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
@@ -506,7 +506,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -538,29 +549,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
   const viewSource = window.document.getElementById('quarto-view-source') ||
                      window.document.getElementById('quarto-code-tools-source');
   if (viewSource) {
@@ -619,15 +608,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
           // target, if specified
           link.setAttribute("target", "_blank");
           if (link.getAttribute("rel") === null) {
@@ -671,11 +655,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
+      return note.innerHTML;
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -978,7 +958,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="fu">### Galkiewicz &amp; Kellog 2008</span></span>
 <span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; " The use of&nbsp;*Bacteria*-specific primer 63F (</span><span class="co">[</span><span class="ot">23</span><span class="co">](https://journals.asm.org/doi/10.1128/AEM.01303-08#core-R23)</span><span class="at">) and universal primer 1542R (</span><span class="co">[</span><span class="ot">24</span><span class="co">](https://journals.asm.org/doi/10.1128/AEM.01303-08#core-R24)</span><span class="at">) had several advantages. The sequence homology between the primers and coral DNA was low, with only 7 of 21 bp matching in 63F and 7 of 20 bp matching in 1542R (Fig.&nbsp;</span><span class="co">[</span><span class="ot">1</span><span class="co">](https://journals.asm.org/doi/10.1128/AEM.01303-08#F1)</span><span class="at">). With such low binding strength, limited coral DNA amplification was expected. In addition, any coral 18S rRNA gene that was amplified would result in an amplicon length of 0.6 kbp, whereas bacterial 16S rRNA genes would have an amplicon length of 1.5 kbp. Test results indicated that during PCR, coral rRNA genes were amplified and appeared as a distinct band on the gel (Fig.&nbsp;</span><span class="co">[</span><span class="ot">2</span><span class="co">](https://journals.asm.org/doi/10.1128/AEM.01303-08#F2)</span><span class="at">, lane 3). This clear separation between coral and bacterial DNA allowed the isolation of the bacterial rRNA genes for further analysis. " - </span><span class="co">[</span><span class="ot">@galkiewicz2008</span><span class="co">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; " The use of&nbsp;*Bacteria*-specific primer 63F (</span><span class="co">[</span><span class="ot">23</span><span class="co">](https://journals.asm.org/doi/10.1128/AEM.01303-08#core-R23)</span><span class="at">) and universal primer 1542R (</span><span class="co">[</span><span class="ot">24</span><span class="co">](https://journals.asm.org/doi/10.1128/AEM.01303-08#core-R24)</span><span class="at">) had several advantages. The sequence homology between the primers and coral DNA was low, with only 7 of 21 bp matching in 63F and 7 of 20 bp matching in 1542R (Fig.&nbsp;</span><span class="co">[</span><span class="ot">1</span><span class="co">](https://journals.asm.org/doi/10.1128/AEM.01303-08#F1)</span><span class="at">). With such low binding strength, limited coral DNA amplification was expected. In addition, any coral 18S rRNA gene that was amplified would result in an amplicon length of 0.6 kbp, whereas bacterial 16S rRNA genes would have an amplicon length of 1.5 kbp. Test results indicated that during PCR, coral rRNA genes were amplified and appeared as a distinct band on the gel (Fig.&nbsp;</span><span class="co">[</span><span class="ot">2</span><span class="co">](https://journals.asm.org/doi/10.1128/AEM.01303-08#F2)</span><span class="at">, lane 3). This clear separation between coral and bacterial DNA allowed the isolation of the bacterial rRNA genes for further analysis. " - </span><span class="co">[</span><span class="ot">@galkiewicz2008</span><span class="co">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

@@ -9,8 +9,8 @@
 <link>https://sarahtanja.github.io/quarto-blog/posts.html</link>
 <atom:link href="https://sarahtanja.github.io/quarto-blog/posts.xml" rel="self" type="application/rss+xml"/>
 <description>This Open Lab Notebook is a creative landing space for learning about Bioinformatics, Marine Botany, &amp; Data Science. It&#39;s mostly for me, but also for you! 😘</description>
-<generator>quarto-1.7.31</generator>
-<lastBuildDate>Tue, 06 May 2025 07:00:00 GMT</lastBuildDate>
+<generator>quarto-1.5.57</generator>
+<lastBuildDate>Tue, 06 May 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title></title>
   <dc:creator>Sarah Tanja</dc:creator>
@@ -19,7 +19,7 @@
   <category>committee</category>
   <category>presentations</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/thesis/committee-3/committee-3.html</guid>
-  <pubDate>Tue, 06 May 2025 07:00:00 GMT</pubDate>
+  <pubDate>Tue, 06 May 2025 00:00:00 GMT</pubDate>
   <media:content url="https://sarahtanja.github.io/quarto-blog/posts/thesis/committee-3/counts_viable_boxplot.png" medium="image" type="image/png" height="108" width="144"/>
 </item>
 <item>
@@ -27,7 +27,6 @@
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi-sra-submission-16S.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -207,7 +206,7 @@
   <category>lab records</category>
   <category>code</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi-sra-submission-16S.html</guid>
-  <pubDate>Fri, 13 Dec 2024 08:00:00 GMT</pubDate>
+  <pubDate>Fri, 13 Dec 2024 00:00:00 GMT</pubDate>
   <media:content url="https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -215,7 +214,6 @@
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/workflow/rsync.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -348,7 +346,7 @@ Tip
  ]]></description>
   <category>workflow</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/workflow/rsync.html</guid>
-  <pubDate>Mon, 04 Nov 2024 08:00:00 GMT</pubDate>
+  <pubDate>Mon, 04 Nov 2024 00:00:00 GMT</pubDate>
   <media:content url="https://sarahtanja.github.io/quarto-blog/posts/workflow/Newrsynclogo.png" medium="image" type="image/png" height="70" width="144"/>
 </item>
 <item>
@@ -356,7 +354,6 @@ Tip
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/workflow/tunnel.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -479,14 +476,13 @@ Tip
  ]]></description>
   <category>code</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/workflow/tunnel.html</guid>
-  <pubDate>Mon, 04 Nov 2024 08:00:00 GMT</pubDate>
+  <pubDate>Mon, 04 Nov 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Submitting NGS sequences to NCBI SRA</title>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi-sra-submission.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -562,14 +558,13 @@ Tip
   <category>learning journey</category>
   <category>code</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi-sra-submission.html</guid>
-  <pubDate>Tue, 08 Oct 2024 07:00:00 GMT</pubDate>
+  <pubDate>Tue, 08 Oct 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Transfer data files from Azenta to a local server</title>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/sftp-azenta/azenta-sftp.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -618,14 +613,13 @@ Connected to sftp.genewiz.com.</code></pre>
   <category>learning journey</category>
   <category>code</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/sftp-azenta/azenta-sftp.html</guid>
-  <pubDate>Tue, 08 Oct 2024 07:00:00 GMT</pubDate>
+  <pubDate>Tue, 08 Oct 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Bioinformatics Pipeline Roadmap</title>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/transcriptomics/bioinformatics-pipeline/pipeline-overview.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -771,14 +765,13 @@ Connected to sftp.genewiz.com.</code></pre>
   <category>code</category>
   <category>coral</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/transcriptomics/bioinformatics-pipeline/pipeline-overview.html</guid>
-  <pubDate>Mon, 07 Oct 2024 07:00:00 GMT</pubDate>
+  <pubDate>Mon, 07 Oct 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Summary of previous research on microplastic leachate exposure in marine invertebrate embryonic development</title>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/transcriptomics/previous-research/previous-research.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -841,13 +834,13 @@ Connected to sftp.genewiz.com.</code></pre>
 <section id="plastic-leachate-induced-toxicity-during-sea-urchin-embryonic-development-insights-into-the-molecular-pathways-affected-by-pvc" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="plastic-leachate-induced-toxicity-during-sea-urchin-embryonic-development-insights-into-the-molecular-pathways-affected-by-pvc"><span class="header-section-number">6.1</span> <strong>Plastic leachate-induced toxicity during sea urchin embryonic development: Insights into the molecular pathways affected by PVC</strong></h2>
 <blockquote class="blockquote">
-<p>Here we investigate the effects of leachates from new and beach-collected pellets on the embryonic and&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/larval-development" title="Learn more about larval development from ScienceDirect's AI-generated Topic Pages">larval development</a>&nbsp;of the&nbsp;<a href="https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/sea-urchin" title="Learn more about sea urchin from ScienceDirect's AI-generated Topic Pages">sea urchin</a>&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/strongylocentrotus-purpuratus" title="Learn more about Strongylocentrotus purpuratus from ScienceDirect's AI-generated Topic Pages">Strongylocentrotus purpuratus</a>&nbsp;and demonstrate that exposure of developing embryos to these leachates elicits severe, consistent and treatment-specific developmental abnormalities including radialisation of the embryo and&nbsp;<a href="https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/congenital-malformation" title="Learn more about malformation from ScienceDirect's AI-generated Topic Pages">malformation</a>&nbsp;of the&nbsp;<a href="https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/skeleton" title="Learn more about skeleton from ScienceDirect's AI-generated Topic Pages">skeleton</a>, neural and&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/immunocompetent-cell" title="Learn more about immune cells from ScienceDirect's AI-generated Topic Pages">immune cells</a>. Using a multi-omics approach we define the developmental pathways disturbed upon exposure to PVC leachates and provide a mechanistic view that pinpoints cellular&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/redox-stress" title="Learn more about redox stress from ScienceDirect's AI-generated Topic Pages">redox stress</a>&nbsp;and energy production as drivers of phenotypic abnormalities following exposure to PVC leachates. Analysis of leachates identified high concentrations of zinc that are the likely cause of these observed defects. Our findings point to clear and specific detrimental effects of marine&nbsp;<a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/plastic-pollution" title="Learn more about plastic pollution from ScienceDirect's AI-generated Topic Pages">plastic pollution</a>&nbsp;on the development of echinoderms, demonstrating that chemicals leached from plastic particles into sea water can produce strong developmental abnormalities via specific pathways, and therefore have the potential to impact on a wide range of organisms. <span class="citation" data-cites="paganos2023a">(<strong>paganos2023a?</strong>)</span> (Abstract)</p>
+<p>Here we investigate the effects of leachates from new and beach-collected pellets on the embryonic and&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/larval-development" title="Learn more about larval development from ScienceDirect's AI-generated Topic Pages">larval development</a>&nbsp;of the&nbsp;<a href="https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/sea-urchin" title="Learn more about sea urchin from ScienceDirect's AI-generated Topic Pages">sea urchin</a>&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/strongylocentrotus-purpuratus" title="Learn more about Strongylocentrotus purpuratus from ScienceDirect's AI-generated Topic Pages">Strongylocentrotus purpuratus</a>&nbsp;and demonstrate that exposure of developing embryos to these leachates elicits severe, consistent and treatment-specific developmental abnormalities including radialisation of the embryo and&nbsp;<a href="https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/congenital-malformation" title="Learn more about malformation from ScienceDirect's AI-generated Topic Pages">malformation</a>&nbsp;of the&nbsp;<a href="https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/skeleton" title="Learn more about skeleton from ScienceDirect's AI-generated Topic Pages">skeleton</a>, neural and&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/immunocompetent-cell" title="Learn more about immune cells from ScienceDirect's AI-generated Topic Pages">immune cells</a>. Using a multi-omics approach we define the developmental pathways disturbed upon exposure to PVC leachates and provide a mechanistic view that pinpoints cellular&nbsp;<a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/redox-stress" title="Learn more about redox stress from ScienceDirect's AI-generated Topic Pages">redox stress</a>&nbsp;and energy production as drivers of phenotypic abnormalities following exposure to PVC leachates. Analysis of leachates identified high concentrations of zinc that are the likely cause of these observed defects. Our findings point to clear and specific detrimental effects of marine&nbsp;<a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/plastic-pollution" title="Learn more about plastic pollution from ScienceDirect's AI-generated Topic Pages">plastic pollution</a>&nbsp;on the development of echinoderms, demonstrating that chemicals leached from plastic particles into sea water can produce strong developmental abnormalities via specific pathways, and therefore have the potential to impact on a wide range of organisms. -<span class="citation" data-cites="paganos2023a">(<strong>paganos2023a?</strong>)</span> (Abstract)</p>
 </blockquote>
 <ul>
 <li>used nurdle beach pellets collected from Cornwall, UK &amp; pre-production commercial PVC nurdles</li>
 </ul>
 <blockquote class="blockquote">
-<p>These results are consistent with those observed previously in P. lividus, where beached and PVC pellet leachates elicited changes including abnormal gastrulation, impaired skeletogenesis, abnormal neurogenesis and embryo radialisation (Rendell-Bhatti et al., 2020), indicating that these types of developmental abnormalities may not be species-specific but affect the whole clade similarly. The PVC treatment-induced phenotype was of particular interest as it clearly resembles the one obtained when the specification of the secondary axis of the sea urchin embryo (oral-aboral) is disturbed. Similar to our P. lividus data (Rendell-Bhatti et al., 2020), <strong>embryos exposed to PVC leachates are unable to produce a proper skeleton.</strong> In normal gastrula embryos, skeletogenic cells are spatially organised around the archenteron, forming a syncytium to which biominerals are deposited (Fig. 2. E). At the pluteus stage, the larval skeleton consists of different skeletal rods that are responsible for the characteristic shape of the larvae (Fig. 2. F). PVC leachate-treated S. purpuratus gastrulae seem to be missing differentiated skeletogenic cells as indicated by the absence of the skeletal marker MSP130 immunoreactivity (Fig. 2. I), while the same marker at 72 hpf reveals the presence of radialised syncytium of differentiated skeletogenic cells (Fig. 2. J). Another visible abnormality of the treated larvae is the absence of a well-formed ciliary band, an observation confirmed by the β-tubulin staining showing a reduced ciliary surface when compared to controls (Fig. 2. G, H). <strong>Esophageal muscles originate from myoblasts that at gastrula stage populate the tip of the embryonic foregut and at the pluteus stage they differentiate towards circumesophageal muscles controlling the contraction of the sea urchin esophageal region and therefore feeding</strong> (Andrikou et al., 2013, 2015). Immunohistochemical staining for the esophageal muscles marker Sp-MHC revealed that <strong>exogastrulated larvae are lacking any muscular structure</strong> suggesting that exogastrulation impaired muscle development (Fig. 2. K, L). In the Rendell-Bhatti et al.&nbsp;(2020) study we found PCB and PAH in the leachates of environmental samples, and PAH and HCB in PVC leachates, which we suggested were the possible causes of the malformations observed (Rendell-Bhatti et al., 2020). We had not observed exogastrulas before, but another study had found otherwise well-formed P. lividus pluteus larvae with everted gut rudiments when exposed to micronized plastic toys (Oliviero et al., 2019). However, <strong>the phenotypes here observed in the PVC treatments clearly mirror phenotypes from classical and new experiments exposing S. purpuratus and other sea urchins to heavy metals</strong> (Mitsunaga and Yasumasu, 1984; Kobayashi and Okamura, 2004; Cunningham et al., 2020), as well as to <strong>oral-aboral axis formation disorganisation</strong> (Duboc et al., 2004). Indeed, we see radialised/oralised embryos similar to those described when the developmental pathways involved in oral/aboral (O/A) and left/right (L/R) axis formation are disrupted (Duboc et al., 2004, 2008). These results prompted us to investigate what transcriptomic changes were taking place in the embryos to be able to identify the mechanisms by which the plastic leachates were affecting development. <span class="citation" data-cites="paganos2023a">(<strong>paganos2023a?</strong>)</span></p>
+<p>These results are consistent with those observed previously in P. lividus, where beached and PVC pellet leachates elicited changes including abnormal gastrulation, impaired skeletogenesis, abnormal neurogenesis and embryo radialisation (Rendell-Bhatti et al., 2020), indicating that these types of developmental abnormalities may not be species-specific but affect the whole clade similarly. The PVC treatment-induced phenotype was of particular interest as it clearly resembles the one obtained when the specification of the secondary axis of the sea urchin embryo (oral-aboral) is disturbed. Similar to our P. lividus data (Rendell-Bhatti et al., 2020), <strong>embryos exposed to PVC leachates are unable to produce a proper skeleton.</strong> In normal gastrula embryos, skeletogenic cells are spatially organised around the archenteron, forming a syncytium to which biominerals are deposited (Fig. 2. E). At the pluteus stage, the larval skeleton consists of different skeletal rods that are responsible for the characteristic shape of the larvae (Fig. 2. F). PVC leachate-treated S. purpuratus gastrulae seem to be missing differentiated skeletogenic cells as indicated by the absence of the skeletal marker MSP130 immunoreactivity (Fig. 2. I), while the same marker at 72 hpf reveals the presence of radialised syncytium of differentiated skeletogenic cells (Fig. 2. J). Another visible abnormality of the treated larvae is the absence of a well-formed ciliary band, an observation confirmed by the β-tubulin staining showing a reduced ciliary surface when compared to controls (Fig. 2. G, H). <strong>Esophageal muscles originate from myoblasts that at gastrula stage populate the tip of the embryonic foregut and at the pluteus stage they differentiate towards circumesophageal muscles controlling the contraction of the sea urchin esophageal region and therefore feeding</strong> (Andrikou et al., 2013, 2015). Immunohistochemical staining for the esophageal muscles marker Sp-MHC revealed that <strong>exogastrulated larvae are lacking any muscular structure</strong> suggesting that exogastrulation impaired muscle development (Fig. 2. K, L). In the Rendell-Bhatti et al.&nbsp;(2020) study we found PCB and PAH in the leachates of environmental samples, and PAH and HCB in PVC leachates, which we suggested were the possible causes of the malformations observed (Rendell-Bhatti et al., 2020). We had not observed exogastrulas before, but another study had found otherwise well-formed P. lividus pluteus larvae with everted gut rudiments when exposed to micronized plastic toys (Oliviero et al., 2019). However, <strong>the phenotypes here observed in the PVC treatments clearly mirror phenotypes from classical and new experiments exposing S. purpuratus and other sea urchins to heavy metals</strong> (Mitsunaga and Yasumasu, 1984; Kobayashi and Okamura, 2004; Cunningham et al., 2020), as well as to <strong>oral-aboral axis formation disorganisation</strong> (Duboc et al., 2004). Indeed, we see radialised/oralised embryos similar to those described when the developmental pathways involved in oral/aboral (O/A) and left/right (L/R) axis formation are disrupted (Duboc et al., 2004, 2008). These results prompted us to investigate what transcriptomic changes were taking place in the embryos to be able to identify the mechanisms by which the plastic leachates were affecting development. -<span class="citation" data-cites="paganos2023a">(<strong>paganos2023a?</strong>)</span></p>
 </blockquote>
 <ul>
 <li><p>disturbs differentiation of skeletogenic cells</p></li>
@@ -856,10 +849,10 @@ Connected to sftp.genewiz.com.</code></pre>
 <li><p>mirrors effects of exposure to heavy metal, esp.&nbsp;zinc</p></li>
 </ul>
 <blockquote class="blockquote">
-<p>“down-regulated genes represented &gt;75 % of the differentially expressed genes (86 % at 48 hpf and 77 % at 72 hpf) suggesting that the effect by PVC leachates is of repressive nature, leading to a developmental program failure” <span class="citation" data-cites="paganos2023a">(<strong>paganos2023a?</strong>)</span></p>
+<p>“down-regulated genes represented &gt;75 % of the differentially expressed genes (86 % at 48 hpf and 77 % at 72 hpf) suggesting that the effect by PVC leachates is of repressive nature, leading to a developmental program failure” -<span class="citation" data-cites="paganos2023a">(<strong>paganos2023a?</strong>)</span></p>
 </blockquote>
 <blockquote class="blockquote">
-<p>To analyse what type of processes are altered in the treated embryos we performed a gene ontology (GO) enrichment analysis using ShinyGO 0.76 platform (Ge et al., 2020) followed by REVIGO (Supek et al., 2011) to reduce redundant terms and visualise the data, separately for up- and down-regulated genes and each time point. <span class="citation" data-cites="paganos2023a">(<strong>paganos2023a?</strong>)</span></p>
+<p>To analyse what type of processes are altered in the treated embryos we performed a gene ontology (GO) enrichment analysis using ShinyGO 0.76 platform (Ge et al., 2020) followed by REVIGO (Supek et al., 2011) to reduce redundant terms and visualise the data, separately for up- and down-regulated genes and each time point. -<span class="citation" data-cites="paganos2023a">(<strong>paganos2023a?</strong>)</span></p>
 </blockquote>
 <ul>
 <li>More downregulated genes than upregulated</li>
@@ -875,7 +868,7 @@ Connected to sftp.genewiz.com.</code></pre>
 <p>- metabolic processes</p>
 <p>- regulation and development</p>
 <blockquote class="blockquote">
-<p>Moreover, for up-regulated genes we see response to external stimuli and cell organisation GO terms overrepresented, while for down-regulated genes we find signaling pathways and transport overrepresented. <span class="citation" data-cites="paganos2023a">(<strong>paganos2023a?</strong>)</span></p>
+<p>Moreover, for up-regulated genes we see response to external stimuli and cell organisation GO terms overrepresented, while for down-regulated genes we find signaling pathways and transport overrepresented. -<span class="citation" data-cites="paganos2023a">(<strong>paganos2023a?</strong>)</span></p>
 </blockquote>
 </section>
 </section>
@@ -899,14 +892,13 @@ Connected to sftp.genewiz.com.</code></pre>
   <category>learning journey</category>
   <category>coral</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/transcriptomics/previous-research/previous-research.html</guid>
-  <pubDate>Mon, 07 Oct 2024 07:00:00 GMT</pubDate>
+  <pubDate>Mon, 07 Oct 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Ontogenetic Development of Montipora capitata</title>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/ontogenetic-development/ontogenetic-development.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -932,14 +924,13 @@ Okubo, Nami, Takuma Mezaki, Yoko Nozawa, Yoshikatsu Nakano, Yi-Ting Lien, Hirono
   <category>learning journey</category>
   <category>coral</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/ontogenetic-development/ontogenetic-development.html</guid>
-  <pubDate>Mon, 30 Sep 2024 07:00:00 GMT</pubDate>
+  <pubDate>Mon, 30 Sep 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Grants &amp; Fellowships</title>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/grants-fellowships/grants-fellowships.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -969,14 +960,13 @@ Okubo, Nami, Takuma Mezaki, Yoko Nozawa, Yoshikatsu Nakano, Yi-Ting Lien, Hirono
   <category>stats</category>
   <category>coral</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/grants-fellowships/grants-fellowships.html</guid>
-  <pubDate>Mon, 09 Sep 2024 07:00:00 GMT</pubDate>
+  <pubDate>Mon, 09 Sep 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Nikon scope pictures annotation &amp; data collection</title>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/annotate-scope-pics.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -1119,14 +1109,13 @@ Okubo, Nami, Takuma Mezaki, Yoko Nozawa, Yoshikatsu Nakano, Yi-Ting Lien, Hirono
   <category>protocols</category>
   <category>coral</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/annotate-scope-pics.html</guid>
-  <pubDate>Mon, 09 Sep 2024 07:00:00 GMT</pubDate>
+  <pubDate>Mon, 09 Sep 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Timeline &amp; Goals Planning</title>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/thesis/goals-timeline.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -1144,14 +1133,13 @@ Okubo, Nami, Takuma Mezaki, Yoko Nozawa, Yoshikatsu Nakano, Yi-Ting Lien, Hirono
   <category>committee</category>
   <category>goals</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/thesis/goals-timeline.html</guid>
-  <pubDate>Sun, 08 Sep 2024 07:00:00 GMT</pubDate>
+  <pubDate>Sun, 08 Sep 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Statistics for embryo scope data</title>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/scope-stats.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -1378,14 +1366,13 @@ Chille, E. E., E. L. Strand, F. Scucchia, M. Neder, V. Schmidt, M. O. Sherman, T
   <category>stats</category>
   <category>coral</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/scope-stats.html</guid>
-  <pubDate>Fri, 06 Sep 2024 07:00:00 GMT</pubDate>
+  <pubDate>Fri, 06 Sep 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Nikon scope pictures &amp; slide preservation protocol</title>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/nikon-scope.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -1468,14 +1455,13 @@ Caution
  ]]></description>
   <category>protocols</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/nikon-scope.html</guid>
-  <pubDate>Tue, 03 Sep 2024 07:00:00 GMT</pubDate>
+  <pubDate>Tue, 03 Sep 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>26-Aug-2024 Embryo RNA Extractions</title>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/26aug2024-extraction/26aug2024-extraction.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -1752,14 +1738,13 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
  ]]></description>
   <category>lab records</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/26aug2024-extraction/26aug2024-extraction.html</guid>
-  <pubDate>Mon, 26 Aug 2024 07:00:00 GMT</pubDate>
+  <pubDate>Mon, 26 Aug 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>23-Aug-2024 Embryo RNA Extractions</title>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/23aug2024-extraction/23aug2024-extraction.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -2057,14 +2042,13 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
  ]]></description>
   <category>lab records</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/23aug2024-extraction/23aug2024-extraction.html</guid>
-  <pubDate>Fri, 23 Aug 2024 07:00:00 GMT</pubDate>
+  <pubDate>Fri, 23 Aug 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>21-Aug-2024 Embryo RNA Extractions</title>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/21aug2024-extraction/21aug2024-extraction.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -2342,14 +2326,13 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
  ]]></description>
   <category>lab records</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/21aug2024-extraction/21aug2024-extraction.html</guid>
-  <pubDate>Wed, 21 Aug 2024 07:00:00 GMT</pubDate>
+  <pubDate>Wed, 21 Aug 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>20-Aug-2024 Embryo RNA Extractions</title>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/20aug2024-extraction/20aug2024-extraction.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -2614,14 +2597,13 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
  ]]></description>
   <category>lab records</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/20aug2024-extraction/20aug2024-extraction.html</guid>
-  <pubDate>Tue, 20 Aug 2024 07:00:00 GMT</pubDate>
+  <pubDate>Tue, 20 Aug 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>19-Aug-2024 Embryo RNA Extractions</title>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/19aug2024-extraction/19aug2024-extraction.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -2876,14 +2858,13 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
  ]]></description>
   <category>lab records</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/19aug2024-extraction/19aug2024-extraction.html</guid>
-  <pubDate>Mon, 19 Aug 2024 07:00:00 GMT</pubDate>
+  <pubDate>Mon, 19 Aug 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>16-Aug-2024 Embryo RNA Extractions</title>
   <dc:creator>Sarah Tanja</dc:creator>
   <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/16aug2024-extraction/16aug2024-extraction.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -3125,7 +3106,7 @@ font-style: inherit;">print</span>(reagent)</span></code></pre></div>
  ]]></description>
   <category>lab records</category>
   <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/16aug2024-extraction/16aug2024-extraction.html</guid>
-  <pubDate>Fri, 16 Aug 2024 07:00:00 GMT</pubDate>
+  <pubDate>Fri, 16 Aug 2024 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

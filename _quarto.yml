@@ -16,7 +16,7 @@ website:
     foreground: light
     search: true
     logo: images/favicon.png
-    logo-href: linktree.qmd
+    logo-href: linktree.html
     right: #align navbar items to right/left/center
       - text: "Learning"
         file: learning.qmd

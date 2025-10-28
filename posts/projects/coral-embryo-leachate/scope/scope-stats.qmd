@@ -100,7 +100,184 @@ Across samples we want to analyze for:
 -   Appropriate statistical tests/models: Logistic regression, binomial models, or Z-tests for proportions.
 
 # Timing
+
+## Analyzing Embryonic Development Timing with Proportions and Dirichlet Regression
+
+When analyzing the timing of embryonic development across treatment groups, we are interested in how the distribution of embryos across different developmental stages (e.g., cleavage, prawn chip, early gastrula) varies by treatment and time. Since each sample contains embryos at multiple developmental stages, and we want to express these as proportions of the total, **Dirichlet regression** is the appropriate statistical approach.
+
+### Why Use Proportions and Dirichlet Regression?
+
+- **Proportions are compositional data**: The proportions of embryos at each developmental stage must sum to 1 (or 100%), making this compositional data.
+- **Dirichlet regression** models the entire composition simultaneously, accounting for the constraint that proportions sum to 1.
+- This approach is superior to analyzing each stage separately because it preserves the compositional nature of the data and accounts for dependencies between categories.
+
+### Data Structure for Timing Analysis
+
+For each sample (bundle-bundle cross), calculate the proportion of embryos at each developmental stage:
+
+| Sample ID | Treatment | Time (hpf) | Prop_Cleavage | Prop_PrawnChip | Prop_EarlyGastrula | Prop_Other |
+|-----------|-----------|------------|---------------|----------------|---------------------|------------|
+| Sample_1  | Control   | 4          | 0.85          | 0.10           | 0.05                | 0.00       |
+| Sample_2  | Low       | 4          | 0.75          | 0.20           | 0.05                | 0.00       |
+| ...       | ...       | ...        | ...           | ...            | ...                 | ...        |
+
+### Statistical Analysis Steps
+
+1. **Calculate proportions** for each developmental stage within each sample
+2. **Fit a Dirichlet regression model** with treatment and time as predictors:
+   - Response: compositional vector of proportions across developmental stages
+   - Predictors: Treatment (Control, Low, Mid, High), Time (4, 9, 14 hpf), and their interaction
+3. **Test for significant effects** of treatment, time, and their interaction on the distribution of developmental stages
+4. **Post-hoc comparisons** to identify which treatment groups differ in their developmental timing
+
+### R Implementation
+
+```r
+# Load required packages
+library(DirichletReg)
+library(tidyverse)
+
+# Prepare data: create a compositional matrix
+# Assuming data frame 'timing_data' with columns for each stage proportion
+Y <- DR_data(timing_data[, c("Prop_Cleavage", "Prop_PrawnChip", 
+                              "Prop_EarlyGastrula", "Prop_Other")])
+
+# Fit Dirichlet regression model
+model_timing <- DirichReg(Y ~ Treatment * Time, data = timing_data)
+
+# View model summary
+summary(model_timing)
+
+# Test for treatment effects
+anova(model_timing)
+
+# Post-hoc pairwise comparisons if needed
+# (may require additional packages like emmeans with DirichletReg support)
+```
+
+### Interpretation
+
+- **Significant treatment effect**: Indicates that leachate exposure affects the distribution of embryos across developmental stages
+- **Significant time effect**: Shows that the composition changes over time (expected developmental progression)
+- **Significant interaction**: Suggests that treatment effects on developmental timing vary across time points (e.g., developmental delays become more pronounced over time)
+
+### Visualization
+
+Create stacked bar plots or ternary diagrams to visualize the compositional changes across treatments and time points.
 # Abnormalities
+
+## Analyzing Abnormalities Across Treatment Groups with Proportions and Dirichlet Regression
+
+When assessing embryo abnormalities, each embryo is classified into one of three mutually exclusive categories: **typical**, **uncertain**, or **malformed**. Since we're interested in how the distribution across these categories varies by treatment group, and the proportions must sum to 1, **Dirichlet regression** is again the appropriate analytical approach.
+
+### Why Use Proportions and Dirichlet Regression for Abnormalities?
+
+- **Three-category compositional data**: Each sample has proportions of typical, uncertain, and malformed embryos that sum to 100%.
+- **Dirichlet regression** naturally handles this multivariate compositional outcome.
+- This approach is more powerful than separate binomial tests (e.g., typical vs. non-typical) because it models the full distribution across all three categories simultaneously.
+- Accounts for the trade-offs between categories (e.g., if more embryos are malformed, fewer can be typical).
+
+### Data Structure for Abnormality Analysis
+
+For each sample, calculate the proportion of embryos in each abnormality category:
+
+| Sample ID | Treatment | Time (hpf) | Prop_Typical | Prop_Uncertain | Prop_Malformed |
+|-----------|-----------|------------|--------------|----------------|----------------|
+| Sample_1  | Control   | 4          | 0.90         | 0.05           | 0.05           |
+| Sample_2  | Low       | 4          | 0.85         | 0.08           | 0.07           |
+| Sample_3  | Mid       | 9          | 0.70         | 0.15           | 0.15           |
+| Sample_4  | High      | 14         | 0.50         | 0.20           | 0.30           |
+| ...       | ...       | ...        | ...          | ...            | ...            |
+
+### Statistical Analysis Steps
+
+1. **Calculate proportions** of typical, uncertain, and malformed embryos for each sample
+2. **Handle zeros**: If any sample has zero embryos in a category, add a small constant (e.g., 0.001) to all proportions and re-normalize to sum to 1 (Dirichlet regression cannot handle exact zeros)
+3. **Fit a Dirichlet regression model**:
+   - Response: compositional vector of abnormality proportions (typical, uncertain, malformed)
+   - Predictors: Treatment (Control, Low, Mid, High), optionally Time if analyzing across timepoints
+4. **Test for treatment effects** on the distribution of abnormality categories
+5. **Post-hoc pairwise comparisons** between treatment groups to identify which treatments increase malformation rates
+
+### R Implementation
+
+```r
+# Load required packages
+library(DirichletReg)
+library(tidyverse)
+
+# Prepare data
+# Handle zeros by adding small constant if needed
+abnorm_data <- abnorm_data %>%
+  mutate(across(c(Prop_Typical, Prop_Uncertain, Prop_Malformed), 
+                ~ifelse(. == 0, 0.001, .))) %>%
+  mutate(total = Prop_Typical + Prop_Uncertain + Prop_Malformed,
+         Prop_Typical = Prop_Typical / total,
+         Prop_Uncertain = Prop_Uncertain / total,
+         Prop_Malformed = Prop_Malformed / total)
+
+# Create compositional response matrix
+Y_abnorm <- DR_data(abnorm_data[, c("Prop_Typical", "Prop_Uncertain", 
+                                     "Prop_Malformed")])
+
+# Fit Dirichlet regression model
+model_abnorm <- DirichReg(Y_abnorm ~ Treatment, data = abnorm_data)
+
+# If including time as a factor:
+# model_abnorm <- DirichReg(Y_abnorm ~ Treatment + Time, data = abnorm_data)
+# Or with interaction:
+# model_abnorm <- DirichReg(Y_abnorm ~ Treatment * Time, data = abnorm_data)
+
+# View model summary
+summary(model_abnorm)
+
+# Test for treatment effects
+anova(model_abnorm)
+
+# Extract predicted proportions for each treatment
+# Can be used for visualization
+predicted_props <- predict(model_abnorm, 
+                           newdata = data.frame(Treatment = c("Control", "Low", "Mid", "High")))
+```
+
+### Interpretation
+
+- **Significant treatment effect**: Indicates that leachate exposure affects the distribution of embryos across abnormality categories
+- **Model coefficients**: Indicate how each treatment changes the expected proportion in each category relative to the control
+- **Predicted proportions**: Show the expected composition of typical, uncertain, and malformed embryos for each treatment level
+
+### Post-hoc Comparisons
+
+To determine which specific treatments differ from control or from each other:
+
+```r
+# Pairwise comparisons between treatments
+# May require custom contrasts or bootstrap methods
+# Example approach using predicted values and confidence intervals
+```
+
+### Visualization
+
+Create stacked bar plots showing the proportion of each abnormality category by treatment:
+
+```r
+# Example visualization code
+ggplot(abnorm_data, aes(x = Treatment)) +
+  geom_col(aes(y = Prop_Typical, fill = "Typical"), position = "stack") +
+  geom_col(aes(y = Prop_Uncertain, fill = "Uncertain"), position = "stack") +
+  geom_col(aes(y = Prop_Malformed, fill = "Malformed"), position = "stack") +
+  scale_fill_manual(values = c("Typical" = "green", 
+                               "Uncertain" = "yellow", 
+                               "Malformed" = "red")) +
+  labs(y = "Proportion", fill = "Category") +
+  theme_minimal()
+```
+
+### Key Considerations
+
+- **Sample size**: Ensure adequate replication within each treatment group for reliable estimates
+- **Independence**: Samples (bundle-bundle crosses) should be independent
+- **Biological relevance**: Consider whether "uncertain" category should be combined with typical or malformed, or analyzed separately based on biological interpretation
 # Survival 
 
 If you only have the **number of embryos observed at each timepoint** without knowing the initial total, you should analyze the apparent decline over time to estimate survival, using methods that compare counts between timepoints. In this case, the data represent **cross-sectional snapshots** of different samples at 4, 9, and 14 hours post-fertilization, each independent from one another. The appropriate analysis approach is to treat the observations at each timepoint as separate groups and compare them accordingly using methods for independent samples rather than longitudinal repeated measures.

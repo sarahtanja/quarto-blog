@@ -11,7 +11,8 @@ listing:
    - "!posts/projects/coral-leachate-heat.qmd"
    - "!posts/projects/coral-pae-temp.qmd"
   sort: "date desc" # Sorts the posts by date in descending order
-  type: default # `default`, `grid` or `table`
+  type: table # `default`, `grid` or `table`
+  fields: [image, date, title, subtitle, reading-time]
   categories: true # allows you to sort posts by assigned categories 
   feed: true # Allows for generating an RSS feed
 ---

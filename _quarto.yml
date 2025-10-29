@@ -79,6 +79,7 @@ format:
     reference-location: margin
     citation-location: margin
     repo-actions: [edit, issue]
+    include-after-body: fix-categories.html
 
 
 editor: visual

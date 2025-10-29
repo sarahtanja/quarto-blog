@@ -2,7 +2,7 @@
 title: "Posts"
 #title-block-banner: true
 #toc: true
-page-layout: full # article, full, or custom
+page-layout: article # article, full, or custom
 listing:
   contents: 
    - "posts/**/*.qmd" # all posts in all subdirectories

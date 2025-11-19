@@ -15,9 +15,8 @@ flowchart TB
     A --> D[Blog Posts]
     A --> E[Configuration]
     
-    B --> B1[home.qmd]
-    B --> B2[about.qmd]
-    B --> B3[contact.qmd]
+    B --> B1[index.qmd - About/Landing page]
+    B --> B2[contact.qmd]
     
     C --> C1[Coral Embryo Leachate]
     C --> C2[Coral Photophysiology]

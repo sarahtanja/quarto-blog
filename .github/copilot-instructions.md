@@ -19,8 +19,7 @@ This is a Quarto-based website serving as an open lab notebook for marine biolog
 ```
 .
 ├── _quarto.yml          # Main configuration file
-├── home.qmd             # Homepage
-├── about.qmd            # About page with research background
+├── index.qmd            # Landing page / About page with research background
 ├── contact.qmd          # Contact information
 ├── posts.qmd            # Blog posts listing
 ├── projects.qmd         # Research projects listing
@@ -119,7 +118,7 @@ quarto render path/to/file.qmd
 - **Updating navigation:** Edit the navbar section in `_quarto.yml`
 - **Modifying themes:** Edit `light-theme.css` or `dark-theme.css`
 - **Adding references:** Update `references.bib` with new BibTeX entries
-- **Updating about page:** Edit `about.qmd` and `about.bib`
+- **Updating about/landing page:** Edit `index.qmd` and `about.bib`
 
 ## Notes for AI Assistance
 

@@ -156,7 +156,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Posts</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../../about.html"> 
+    <a class="nav-link" href="../../../../index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -247,7 +247,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">October 23, 2025</p>
+        <p class="date-modified">November 19, 2025</p>
       </div>
     </div>
       
@@ -1256,74 +1256,124 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb22-146"><a href="#cb22-146" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb22-147"><a href="#cb22-147" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb22-148"><a href="#cb22-148" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-151"><a href="#cb22-151" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb22-152"><a href="#cb22-152" aria-hidden="true" tabindex="-1"></a><span class="co"># Define coordinates</span></span>
-<span id="cb22-153"><a href="#cb22-153" aria-hidden="true" tabindex="-1"></a>location <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">lon =</span> <span class="sc">-</span><span class="fl">157.787347</span>, <span class="at">lat =</span> <span class="fl">21.431215</span>)</span>
-<span id="cb22-154"><a href="#cb22-154" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-155"><a href="#cb22-155" aria-hidden="true" tabindex="-1"></a><span class="co"># Get map</span></span>
-<span id="cb22-156"><a href="#cb22-156" aria-hidden="true" tabindex="-1"></a>main_basemap <span class="ot">&lt;-</span> <span class="fu">get_map</span>(<span class="at">location =</span> location, <span class="at">zoom =</span> <span class="dv">17</span>, <span class="at">maptype =</span> <span class="st">"satellite"</span>)</span>
-<span id="cb22-157"><a href="#cb22-157" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-158"><a href="#cb22-158" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-159"><a href="#cb22-159" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-160"><a href="#cb22-160" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-161"><a href="#cb22-161" aria-hidden="true" tabindex="-1"></a>inset_basemap <span class="ot">&lt;-</span> <span class="fu">get_stadiamap</span>(</span>
-<span id="cb22-162"><a href="#cb22-162" aria-hidden="true" tabindex="-1"></a>  <span class="at">bbox =</span> <span class="fu">c</span>(<span class="at">left =</span> <span class="sc">-</span><span class="dv">158</span>, <span class="at">bottom =</span> <span class="fl">21.2</span>, <span class="at">right =</span> <span class="sc">-</span><span class="fl">157.4</span>, <span class="at">top =</span> <span class="fl">21.8</span>),</span>
-<span id="cb22-163"><a href="#cb22-163" aria-hidden="true" tabindex="-1"></a>  <span class="at">zoom =</span> <span class="dv">8</span>,</span>
-<span id="cb22-164"><a href="#cb22-164" aria-hidden="true" tabindex="-1"></a>  <span class="at">filetype =</span> <span class="st">"stamen_watercolor"</span> </span>
-<span id="cb22-165"><a href="#cb22-165" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb22-166"><a href="#cb22-166" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-167"><a href="#cb22-167" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Bounding box from main map</span></span>
-<span id="cb22-168"><a href="#cb22-168" aria-hidden="true" tabindex="-1"></a>main_bbox <span class="ot">&lt;-</span> <span class="fu">attr</span>(main_basemap, <span class="st">"bb"</span>)</span>
-<span id="cb22-169"><a href="#cb22-169" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-170"><a href="#cb22-170" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Inset map with bounding box from main map</span></span>
-<span id="cb22-171"><a href="#cb22-171" aria-hidden="true" tabindex="-1"></a>inset_map <span class="ot">&lt;-</span> <span class="fu">ggmap</span>(inset_basemap) <span class="sc">+</span></span>
-<span id="cb22-172"><a href="#cb22-172" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"rect"</span>, </span>
-<span id="cb22-173"><a href="#cb22-173" aria-hidden="true" tabindex="-1"></a>           <span class="at">xmin =</span> main_bbox<span class="sc">$</span>ll.lon, <span class="at">xmax =</span> main_bbox<span class="sc">$</span>ur.lon,</span>
-<span id="cb22-174"><a href="#cb22-174" aria-hidden="true" tabindex="-1"></a>           <span class="at">ymin =</span> main_bbox<span class="sc">$</span>ll.lat, <span class="at">ymax =</span> main_bbox<span class="sc">$</span>ur.lat,</span>
-<span id="cb22-175"><a href="#cb22-175" aria-hidden="true" tabindex="-1"></a>           <span class="at">color =</span> <span class="st">"yellow"</span>, <span class="at">fill =</span> <span class="cn">NA</span>, <span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
-<span id="cb22-176"><a href="#cb22-176" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_void</span>()</span>
-<span id="cb22-177"><a href="#cb22-177" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-178"><a href="#cb22-178" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Convert both to standard ggplot objects</span></span>
-<span id="cb22-179"><a href="#cb22-179" aria-hidden="true" tabindex="-1"></a>main_map_plot <span class="ot">&lt;-</span> <span class="fu">as.ggplot</span>(main_map)</span>
-<span id="cb22-180"><a href="#cb22-180" aria-hidden="true" tabindex="-1"></a>inset_map_plot <span class="ot">&lt;-</span> <span class="fu">as.ggplot</span>(inset_map)</span>
-<span id="cb22-181"><a href="#cb22-181" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-182"><a href="#cb22-182" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Compose using cowplot</span></span>
-<span id="cb22-183"><a href="#cb22-183" aria-hidden="true" tabindex="-1"></a>final_plot <span class="ot">&lt;-</span> <span class="fu">ggdraw</span>() <span class="sc">+</span></span>
-<span id="cb22-184"><a href="#cb22-184" aria-hidden="true" tabindex="-1"></a>  <span class="fu">draw_plot</span>(main_map_plot) <span class="sc">+</span></span>
-<span id="cb22-185"><a href="#cb22-185" aria-hidden="true" tabindex="-1"></a>  <span class="fu">draw_plot</span>(inset_map_plot, <span class="at">x =</span> <span class="fl">0.65</span>, <span class="at">y =</span> <span class="fl">0.65</span>, <span class="at">width =</span> <span class="fl">0.3</span>, <span class="at">height =</span> <span class="fl">0.3</span>)</span>
-<span id="cb22-186"><a href="#cb22-186" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-187"><a href="#cb22-187" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(final_plot)</span>
-<span id="cb22-188"><a href="#cb22-188" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-189"><a href="#cb22-189" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb22-190"><a href="#cb22-190" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-191"><a href="#cb22-191" aria-hidden="true" tabindex="-1"></a><span class="fu"># Tank acclimation</span></span>
-<span id="cb22-192"><a href="#cb22-192" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-193"><a href="#cb22-193" aria-hidden="true" tabindex="-1"></a><span class="al">![HIMB blue tank dimensions](PXL_20220612_035159238~2.jpg)</span></span>
-<span id="cb22-194"><a href="#cb22-194" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-195"><a href="#cb22-195" aria-hidden="true" tabindex="-1"></a>In inches the tank dimensions are 48in W x 55in L x 18in D. The water height was variable, and determined by the level of the stand-pipe. During acclimation 30cm diameter corals were kept in water \~15in deep. Total volume of water that corals were acclimated in was therefore:</span>
-<span id="cb22-196"><a href="#cb22-196" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-199"><a href="#cb22-199" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb22-200"><a href="#cb22-200" aria-hidden="true" tabindex="-1"></a>incube <span class="ot">&lt;-</span> <span class="dv">48</span><span class="sc">*</span><span class="dv">15</span><span class="sc">*</span><span class="dv">55</span></span>
-<span id="cb22-201"><a href="#cb22-201" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(incube,<span class="st">'inches cubed'</span>))</span>
-<span id="cb22-202"><a href="#cb22-202" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb22-203"><a href="#cb22-203" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-204"><a href="#cb22-204" aria-hidden="true" tabindex="-1"></a>1in^3^ (1 cubic inch) is equal to 0.0043290043 US gallons.</span>
-<span id="cb22-205"><a href="#cb22-205" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-206"><a href="#cb22-206" aria-hidden="true" tabindex="-1"></a>The volume of water in gallons is therefore:</span>
-<span id="cb22-207"><a href="#cb22-207" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-210"><a href="#cb22-210" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb22-211"><a href="#cb22-211" aria-hidden="true" tabindex="-1"></a>gal <span class="ot">&lt;-</span> incube<span class="sc">*</span><span class="fl">0.0043290043</span></span>
-<span id="cb22-212"><a href="#cb22-212" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(gal, <span class="st">'gallons'</span>))</span>
-<span id="cb22-213"><a href="#cb22-213" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb22-214"><a href="#cb22-214" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-215"><a href="#cb22-215" aria-hidden="true" tabindex="-1"></a>Finally, 1US gallon = 3.78541 liters</span>
-<span id="cb22-216"><a href="#cb22-216" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-219"><a href="#cb22-219" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb22-220"><a href="#cb22-220" aria-hidden="true" tabindex="-1"></a>L <span class="ot">&lt;-</span> gal<span class="sc">*</span><span class="fl">3.78541</span></span>
-<span id="cb22-221"><a href="#cb22-221" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(L, <span class="st">'liters'</span>))</span>
-<span id="cb22-222"><a href="#cb22-222" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb22-223"><a href="#cb22-223" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-224"><a href="#cb22-224" aria-hidden="true" tabindex="-1"></a>We used <span class="co">[</span><span class="ot">12qt(11.4L) cambro chambers</span><span class="co">](https://www.cambro.com/Products/food-storage/square-food-storage-containers/camsquares-classic-food-storage-containers/camsquares-camwear/12SFSCW135)</span> as the individual bins for spawning.</span>
+<span id="cb22-149"><a href="#cb22-149" aria-hidden="true" tabindex="-1"></a><span class="fu">## Collection site map with Hawaiian Islands inset</span></span>
+<span id="cb22-150"><a href="#cb22-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-151"><a href="#cb22-151" aria-hidden="true" tabindex="-1"></a>This map shows the coral collection location (21.43°N, 157.78°W) near HIMB with an inset map displaying all the Hawaiian Islands.</span>
+<span id="cb22-152"><a href="#cb22-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-155"><a href="#cb22-155" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb22-156"><a href="#cb22-156" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-width: 10</span></span>
+<span id="cb22-157"><a href="#cb22-157" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-height: 8</span></span>
+<span id="cb22-158"><a href="#cb22-158" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb22-159"><a href="#cb22-159" aria-hidden="true" tabindex="-1"></a><span class="co">#| message: false</span></span>
+<span id="cb22-160"><a href="#cb22-160" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Coral collection site on O'ahu with inset map showing location within the Hawaiian Islands"</span></span>
+<span id="cb22-161"><a href="#cb22-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-162"><a href="#cb22-162" aria-hidden="true" tabindex="-1"></a><span class="co"># Define collection location coordinates as specified</span></span>
+<span id="cb22-163"><a href="#cb22-163" aria-hidden="true" tabindex="-1"></a>location <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">lon =</span> <span class="sc">-</span><span class="fl">157.78</span>, <span class="at">lat =</span> <span class="fl">21.43</span>)</span>
+<span id="cb22-164"><a href="#cb22-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-165"><a href="#cb22-165" aria-hidden="true" tabindex="-1"></a><span class="co"># Get main map (collection site)</span></span>
+<span id="cb22-166"><a href="#cb22-166" aria-hidden="true" tabindex="-1"></a>main_basemap <span class="ot">&lt;-</span> <span class="fu">get_map</span>(<span class="at">location =</span> location, <span class="at">zoom =</span> <span class="dv">17</span>, <span class="at">maptype =</span> <span class="st">"satellite"</span>)</span>
+<span id="cb22-167"><a href="#cb22-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-168"><a href="#cb22-168" aria-hidden="true" tabindex="-1"></a><span class="co"># Create main map with collection point</span></span>
+<span id="cb22-169"><a href="#cb22-169" aria-hidden="true" tabindex="-1"></a>main_map <span class="ot">&lt;-</span> <span class="fu">ggmap</span>(main_basemap) <span class="sc">+</span></span>
+<span id="cb22-170"><a href="#cb22-170" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(</span>
+<span id="cb22-171"><a href="#cb22-171" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x =</span> <span class="sc">-</span><span class="fl">157.78</span>, <span class="at">y =</span> <span class="fl">21.43</span>),</span>
+<span id="cb22-172"><a href="#cb22-172" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"orange"</span>,</span>
+<span id="cb22-173"><a href="#cb22-173" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> <span class="dv">5</span>,</span>
+<span id="cb22-174"><a href="#cb22-174" aria-hidden="true" tabindex="-1"></a>    <span class="at">shape =</span> <span class="dv">21</span>,</span>
+<span id="cb22-175"><a href="#cb22-175" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">"orange"</span>,</span>
+<span id="cb22-176"><a href="#cb22-176" aria-hidden="true" tabindex="-1"></a>    <span class="at">stroke =</span> <span class="dv">2</span></span>
+<span id="cb22-177"><a href="#cb22-177" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb22-178"><a href="#cb22-178" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb22-179"><a href="#cb22-179" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Longitude"</span>,</span>
+<span id="cb22-180"><a href="#cb22-180" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Latitude"</span></span>
+<span id="cb22-181"><a href="#cb22-181" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb22-182"><a href="#cb22-182" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb22-183"><a href="#cb22-183" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb22-184"><a href="#cb22-184" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">10</span>),</span>
+<span id="cb22-185"><a href="#cb22-185" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">8</span>)</span>
+<span id="cb22-186"><a href="#cb22-186" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb22-187"><a href="#cb22-187" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-188"><a href="#cb22-188" aria-hidden="true" tabindex="-1"></a><span class="co"># Get inset map showing Hawaiian Islands</span></span>
+<span id="cb22-189"><a href="#cb22-189" aria-hidden="true" tabindex="-1"></a><span class="co"># Bounding box to capture main Hawaiian Islands (Kauai to Hawaii Island)</span></span>
+<span id="cb22-190"><a href="#cb22-190" aria-hidden="true" tabindex="-1"></a>inset_basemap <span class="ot">&lt;-</span> <span class="fu">get_stadiamap</span>(</span>
+<span id="cb22-191"><a href="#cb22-191" aria-hidden="true" tabindex="-1"></a>  <span class="at">bbox =</span> <span class="fu">c</span>(<span class="at">left =</span> <span class="sc">-</span><span class="fl">160.5</span>, <span class="at">bottom =</span> <span class="fl">18.8</span>, <span class="at">right =</span> <span class="sc">-</span><span class="fl">154.7</span>, <span class="at">top =</span> <span class="fl">22.3</span>),</span>
+<span id="cb22-192"><a href="#cb22-192" aria-hidden="true" tabindex="-1"></a>  <span class="at">zoom =</span> <span class="dv">7</span>,</span>
+<span id="cb22-193"><a href="#cb22-193" aria-hidden="true" tabindex="-1"></a>  <span class="at">maptype =</span> <span class="st">"stamen_terrain"</span></span>
+<span id="cb22-194"><a href="#cb22-194" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb22-195"><a href="#cb22-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-196"><a href="#cb22-196" aria-hidden="true" tabindex="-1"></a><span class="co"># Get bounding box from main map for reference rectangle</span></span>
+<span id="cb22-197"><a href="#cb22-197" aria-hidden="true" tabindex="-1"></a>main_bbox <span class="ot">&lt;-</span> <span class="fu">attr</span>(main_basemap, <span class="st">"bb"</span>)</span>
+<span id="cb22-198"><a href="#cb22-198" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-199"><a href="#cb22-199" aria-hidden="true" tabindex="-1"></a><span class="co"># Create inset map with Hawaiian Islands labels</span></span>
+<span id="cb22-200"><a href="#cb22-200" aria-hidden="true" tabindex="-1"></a>inset_map <span class="ot">&lt;-</span> <span class="fu">ggmap</span>(inset_basemap) <span class="sc">+</span></span>
+<span id="cb22-201"><a href="#cb22-201" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Add rectangle showing main map location</span></span>
+<span id="cb22-202"><a href="#cb22-202" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"rect"</span>, </span>
+<span id="cb22-203"><a href="#cb22-203" aria-hidden="true" tabindex="-1"></a>           <span class="at">xmin =</span> main_bbox<span class="sc">$</span>ll.lon, <span class="at">xmax =</span> main_bbox<span class="sc">$</span>ur.lon,</span>
+<span id="cb22-204"><a href="#cb22-204" aria-hidden="true" tabindex="-1"></a>           <span class="at">ymin =</span> main_bbox<span class="sc">$</span>ll.lat, <span class="at">ymax =</span> main_bbox<span class="sc">$</span>ur.lat,</span>
+<span id="cb22-205"><a href="#cb22-205" aria-hidden="true" tabindex="-1"></a>           <span class="at">color =</span> <span class="st">"red"</span>, <span class="at">fill =</span> <span class="cn">NA</span>, <span class="at">linewidth =</span> <span class="fl">1.5</span>) <span class="sc">+</span></span>
+<span id="cb22-206"><a href="#cb22-206" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Add collection point on inset</span></span>
+<span id="cb22-207"><a href="#cb22-207" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(</span>
+<span id="cb22-208"><a href="#cb22-208" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x =</span> <span class="sc">-</span><span class="fl">157.78</span>, <span class="at">y =</span> <span class="fl">21.43</span>),</span>
+<span id="cb22-209"><a href="#cb22-209" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"red"</span>,</span>
+<span id="cb22-210"><a href="#cb22-210" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> <span class="dv">3</span></span>
+<span id="cb22-211"><a href="#cb22-211" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb22-212"><a href="#cb22-212" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Add Hawaiian Islands labels</span></span>
+<span id="cb22-213"><a href="#cb22-213" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="sc">-</span><span class="fl">159.5</span>, <span class="at">y =</span> <span class="fl">22.0</span>, <span class="at">label =</span> <span class="st">"Kaua'i"</span>, </span>
+<span id="cb22-214"><a href="#cb22-214" aria-hidden="true" tabindex="-1"></a>           <span class="at">size =</span> <span class="dv">3</span>, <span class="at">fontface =</span> <span class="st">"italic"</span>) <span class="sc">+</span></span>
+<span id="cb22-215"><a href="#cb22-215" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="sc">-</span><span class="fl">157.0</span>, <span class="at">y =</span> <span class="fl">21.1</span>, <span class="at">label =</span> <span class="st">"O'ahu"</span>, </span>
+<span id="cb22-216"><a href="#cb22-216" aria-hidden="true" tabindex="-1"></a>           <span class="at">size =</span> <span class="dv">3</span>, <span class="at">fontface =</span> <span class="st">"italic"</span>) <span class="sc">+</span></span>
+<span id="cb22-217"><a href="#cb22-217" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="sc">-</span><span class="fl">156.9</span>, <span class="at">y =</span> <span class="fl">20.8</span>, <span class="at">label =</span> <span class="st">"Moloka'i"</span>, </span>
+<span id="cb22-218"><a href="#cb22-218" aria-hidden="true" tabindex="-1"></a>           <span class="at">size =</span> <span class="dv">3</span>, <span class="at">fontface =</span> <span class="st">"italic"</span>) <span class="sc">+</span></span>
+<span id="cb22-219"><a href="#cb22-219" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="sc">-</span><span class="fl">156.6</span>, <span class="at">y =</span> <span class="fl">20.5</span>, <span class="at">label =</span> <span class="st">"Lana'i"</span>, </span>
+<span id="cb22-220"><a href="#cb22-220" aria-hidden="true" tabindex="-1"></a>           <span class="at">size =</span> <span class="fl">2.5</span>, <span class="at">fontface =</span> <span class="st">"italic"</span>) <span class="sc">+</span></span>
+<span id="cb22-221"><a href="#cb22-221" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="sc">-</span><span class="fl">156.3</span>, <span class="at">y =</span> <span class="fl">20.8</span>, <span class="at">label =</span> <span class="st">"Maui"</span>, </span>
+<span id="cb22-222"><a href="#cb22-222" aria-hidden="true" tabindex="-1"></a>           <span class="at">size =</span> <span class="dv">3</span>, <span class="at">fontface =</span> <span class="st">"italic"</span>) <span class="sc">+</span></span>
+<span id="cb22-223"><a href="#cb22-223" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="sc">-</span><span class="fl">155.5</span>, <span class="at">y =</span> <span class="fl">19.6</span>, <span class="at">label =</span> <span class="st">"Hawai'i"</span>, </span>
+<span id="cb22-224"><a href="#cb22-224" aria-hidden="true" tabindex="-1"></a>           <span class="at">size =</span> <span class="dv">3</span>, <span class="at">fontface =</span> <span class="st">"italic"</span>) <span class="sc">+</span></span>
+<span id="cb22-225"><a href="#cb22-225" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Add overall label</span></span>
+<span id="cb22-226"><a href="#cb22-226" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="sc">-</span><span class="fl">157.5</span>, <span class="at">y =</span> <span class="fl">19.2</span>, <span class="at">label =</span> <span class="st">"Hawaiian Islands"</span>, </span>
+<span id="cb22-227"><a href="#cb22-227" aria-hidden="true" tabindex="-1"></a>           <span class="at">size =</span> <span class="dv">4</span>, <span class="at">fontface =</span> <span class="st">"bold"</span>) <span class="sc">+</span></span>
+<span id="cb22-228"><a href="#cb22-228" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_void</span>() <span class="sc">+</span></span>
+<span id="cb22-229"><a href="#cb22-229" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb22-230"><a href="#cb22-230" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.border =</span> <span class="fu">element_rect</span>(<span class="at">colour =</span> <span class="st">"black"</span>, <span class="at">fill =</span> <span class="cn">NA</span>, <span class="at">linewidth =</span> <span class="dv">1</span>)</span>
+<span id="cb22-231"><a href="#cb22-231" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb22-232"><a href="#cb22-232" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-233"><a href="#cb22-233" aria-hidden="true" tabindex="-1"></a><span class="co"># Compose using cowplot to create final map with inset</span></span>
+<span id="cb22-234"><a href="#cb22-234" aria-hidden="true" tabindex="-1"></a>final_plot <span class="ot">&lt;-</span> <span class="fu">ggdraw</span>() <span class="sc">+</span></span>
+<span id="cb22-235"><a href="#cb22-235" aria-hidden="true" tabindex="-1"></a>  <span class="fu">draw_plot</span>(main_map) <span class="sc">+</span></span>
+<span id="cb22-236"><a href="#cb22-236" aria-hidden="true" tabindex="-1"></a>  <span class="fu">draw_plot</span>(inset_map, <span class="at">x =</span> <span class="fl">0.05</span>, <span class="at">y =</span> <span class="fl">0.65</span>, <span class="at">width =</span> <span class="fl">0.35</span>, <span class="at">height =</span> <span class="fl">0.35</span>)</span>
+<span id="cb22-237"><a href="#cb22-237" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-238"><a href="#cb22-238" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(final_plot)</span>
+<span id="cb22-239"><a href="#cb22-239" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb22-240"><a href="#cb22-240" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-241"><a href="#cb22-241" aria-hidden="true" tabindex="-1"></a><span class="fu"># Tank acclimation</span></span>
+<span id="cb22-242"><a href="#cb22-242" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-243"><a href="#cb22-243" aria-hidden="true" tabindex="-1"></a><span class="al">![HIMB blue tank dimensions](PXL_20220612_035159238~2.jpg)</span></span>
+<span id="cb22-244"><a href="#cb22-244" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-245"><a href="#cb22-245" aria-hidden="true" tabindex="-1"></a>In inches the tank dimensions are 48in W x 55in L x 18in D. The water height was variable, and determined by the level of the stand-pipe. During acclimation 30cm diameter corals were kept in water \~15in deep. Total volume of water that corals were acclimated in was therefore:</span>
+<span id="cb22-246"><a href="#cb22-246" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-249"><a href="#cb22-249" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb22-250"><a href="#cb22-250" aria-hidden="true" tabindex="-1"></a>incube <span class="ot">&lt;-</span> <span class="dv">48</span><span class="sc">*</span><span class="dv">15</span><span class="sc">*</span><span class="dv">55</span></span>
+<span id="cb22-251"><a href="#cb22-251" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(incube,<span class="st">'inches cubed'</span>))</span>
+<span id="cb22-252"><a href="#cb22-252" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb22-253"><a href="#cb22-253" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-254"><a href="#cb22-254" aria-hidden="true" tabindex="-1"></a>1in^3^ (1 cubic inch) is equal to 0.0043290043 US gallons.</span>
+<span id="cb22-255"><a href="#cb22-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-256"><a href="#cb22-256" aria-hidden="true" tabindex="-1"></a>The volume of water in gallons is therefore:</span>
+<span id="cb22-257"><a href="#cb22-257" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-260"><a href="#cb22-260" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb22-261"><a href="#cb22-261" aria-hidden="true" tabindex="-1"></a>gal <span class="ot">&lt;-</span> incube<span class="sc">*</span><span class="fl">0.0043290043</span></span>
+<span id="cb22-262"><a href="#cb22-262" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(gal, <span class="st">'gallons'</span>))</span>
+<span id="cb22-263"><a href="#cb22-263" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb22-264"><a href="#cb22-264" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-265"><a href="#cb22-265" aria-hidden="true" tabindex="-1"></a>Finally, 1US gallon = 3.78541 liters</span>
+<span id="cb22-266"><a href="#cb22-266" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-269"><a href="#cb22-269" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb22-270"><a href="#cb22-270" aria-hidden="true" tabindex="-1"></a>L <span class="ot">&lt;-</span> gal<span class="sc">*</span><span class="fl">3.78541</span></span>
+<span id="cb22-271"><a href="#cb22-271" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(L, <span class="st">'liters'</span>))</span>
+<span id="cb22-272"><a href="#cb22-272" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb22-273"><a href="#cb22-273" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-274"><a href="#cb22-274" aria-hidden="true" tabindex="-1"></a>We used <span class="co">[</span><span class="ot">12qt(11.4L) cambro chambers</span><span class="co">](https://www.cambro.com/Products/food-storage/square-food-storage-containers/camsquares-classic-food-storage-containers/camsquares-camwear/12SFSCW135)</span> as the individual bins for spawning.</span>
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

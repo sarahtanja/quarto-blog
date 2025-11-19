@@ -25,7 +25,7 @@ website:
       - text: "Posts"
         file: posts.qmd
       - text: "About"
-        file: about.qmd
+        file: index.qmd
       - icon: linkedin #bootstrap icon
         url: https://www.linkedin.com/in/sarah-tanja-595722146/
       - icon: github

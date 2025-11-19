@@ -1282,15 +1282,561 @@ Chille, E. E., E. L. Strand, F. Scucchia, M. Neder, V. Schmidt, M. O. Sherman, T
 </section>
 <section id="timing" class="level1" data-number="4">
 <h1 data-number="4"><span class="header-section-number">4</span> Timing</h1>
+<section id="analyzing-embryonic-development-timing-with-proportions-and-dirichlet-regression" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="analyzing-embryonic-development-timing-with-proportions-and-dirichlet-regression"><span class="header-section-number">4.1</span> Analyzing Embryonic Development Timing with Proportions and Dirichlet Regression</h2>
+<p>When analyzing the timing of embryonic development across treatment groups, we are interested in how the distribution of embryos across different developmental stages (e.g., cleavage, prawn chip, early gastrula) varies by treatment and time. Since each sample contains embryos at multiple developmental stages, and we want to express these as proportions of the total, <strong>Dirichlet regression</strong> is the appropriate statistical approach.</p>
+<section id="why-use-proportions-and-dirichlet-regression" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="why-use-proportions-and-dirichlet-regression"><span class="header-section-number">4.1.1</span> Why Use Proportions and Dirichlet Regression?</h3>
+<ul>
+<li><strong>Proportions are compositional data</strong>: The proportions of embryos at each developmental stage must sum to 1 (or 100%), making this compositional data.</li>
+<li><strong>Dirichlet regression</strong> models the entire composition simultaneously, accounting for the constraint that proportions sum to 1.</li>
+<li>This approach is superior to analyzing each stage separately because it preserves the compositional nature of the data and accounts for dependencies between categories.</li>
+</ul>
 </section>
-<section id="abnormalities" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Abnormalities</h1>
+<section id="data-structure-for-timing-analysis" class="level3" data-number="4.1.2">
+<h3 data-number="4.1.2" class="anchored" data-anchor-id="data-structure-for-timing-analysis"><span class="header-section-number">4.1.2</span> Data Structure for Timing Analysis</h3>
+<p>For each sample (bundle-bundle cross), calculate the proportion of embryos at each developmental stage:</p>
+<table class="table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 12%">
+<col style="width: 15%">
+<col style="width: 16%">
+<col style="width: 21%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Sample ID</th>
+<th>Treatment</th>
+<th>Time (hpf)</th>
+<th>Prop_Cleavage</th>
+<th>Prop_PrawnChip</th>
+<th>Prop_EarlyGastrula</th>
+<th>Prop_Other</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sample_1</td>
+<td>Control</td>
+<td>4</td>
+<td>0.85</td>
+<td>0.10</td>
+<td>0.05</td>
+<td>0.00</td>
+</tr>
+<tr class="even">
+<td>Sample_2</td>
+<td>Low</td>
+<td>4</td>
+<td>0.75</td>
+<td>0.20</td>
+<td>0.05</td>
+<td>0.00</td>
+</tr>
+<tr class="odd">
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="survival" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Survival</h1>
+<section id="statistical-analysis-steps" class="level3" data-number="4.1.3">
+<h3 data-number="4.1.3" class="anchored" data-anchor-id="statistical-analysis-steps"><span class="header-section-number">4.1.3</span> Statistical Analysis Steps</h3>
+<ol type="1">
+<li><strong>Calculate proportions</strong> for each developmental stage within each sample</li>
+<li><strong>Fit a Dirichlet regression model</strong> with treatment and time as predictors:
+<ul>
+<li>Response: compositional vector of proportions across developmental stages</li>
+<li>Predictors: Treatment (Control, Low, Mid, High), Time (4, 9, 14 hpf), and their interaction</li>
+</ul></li>
+<li><strong>Test for significant effects</strong> of treatment, time, and their interaction on the distribution of developmental stages</li>
+<li><strong>Post-hoc comparisons</strong> to identify which treatment groups differ in their developmental timing</li>
+</ol>
+</section>
+<section id="r-implementation" class="level3" data-number="4.1.4">
+<h3 data-number="4.1.4" class="anchored" data-anchor-id="r-implementation"><span class="header-section-number">4.1.4</span> R Implementation</h3>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Load required packages</span></span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(DirichletReg)</span>
+<span id="cb1-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(tidyverse)</span>
+<span id="cb1-4"></span>
+<span id="cb1-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Prepare data: create a compositional matrix</span></span>
+<span id="cb1-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Assuming data frame 'timing_data' with columns for each stage proportion</span></span>
+<span id="cb1-7">Y <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">DR_data</span>(timing_data[, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Prop_Cleavage"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Prop_PrawnChip"</span>, </span>
+<span id="cb1-8">                              <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Prop_EarlyGastrula"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Prop_Other"</span>)])</span>
+<span id="cb1-9"></span>
+<span id="cb1-10"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Fit Dirichlet regression model</span></span>
+<span id="cb1-11">model_timing <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">DirichReg</span>(Y <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">~</span> Treatment <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> Time, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">data =</span> timing_data)</span>
+<span id="cb1-12"></span>
+<span id="cb1-13"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># View model summary</span></span>
+<span id="cb1-14"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">summary</span>(model_timing)</span>
+<span id="cb1-15"></span>
+<span id="cb1-16"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Test for treatment effects</span></span>
+<span id="cb1-17"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">anova</span>(model_timing)</span>
+<span id="cb1-18"></span>
+<span id="cb1-19"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Post-hoc pairwise comparisons if needed</span></span>
+<span id="cb1-20"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># (may require additional packages like emmeans with DirichletReg support)</span></span></code></pre></div>
+</section>
+<section id="interpretation" class="level3" data-number="4.1.5">
+<h3 data-number="4.1.5" class="anchored" data-anchor-id="interpretation"><span class="header-section-number">4.1.5</span> Interpretation</h3>
+<ul>
+<li><strong>Significant treatment effect</strong>: Indicates that leachate exposure affects the distribution of embryos across developmental stages</li>
+<li><strong>Significant time effect</strong>: Shows that the composition changes over time (expected developmental progression)</li>
+<li><strong>Significant interaction</strong>: Suggests that treatment effects on developmental timing vary across time points (e.g., developmental delays become more pronounced over time)</li>
+</ul>
+</section>
+<section id="visualization" class="level3" data-number="4.1.6">
+<h3 data-number="4.1.6" class="anchored" data-anchor-id="visualization"><span class="header-section-number">4.1.6</span> Visualization</h3>
+<p>Create stacked bar plots or ternary diagrams to visualize the compositional changes across treatments and time points. # Abnormalities</p>
+</section>
+</section>
+<section id="analyzing-abnormalities-across-treatment-groups-with-proportions-and-dirichlet-regression" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="analyzing-abnormalities-across-treatment-groups-with-proportions-and-dirichlet-regression"><span class="header-section-number">4.2</span> Analyzing Abnormalities Across Treatment Groups with Proportions and Dirichlet Regression</h2>
+<p>When assessing embryo abnormalities, each embryo is classified into one of three mutually exclusive categories: <strong>typical</strong>, <strong>uncertain</strong>, or <strong>malformed</strong>. Since we’re interested in how the distribution across these categories varies by treatment group, and the proportions must sum to 1, <strong>Dirichlet regression</strong> is again the appropriate analytical approach.</p>
+<section id="why-use-proportions-and-dirichlet-regression-for-abnormalities" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="why-use-proportions-and-dirichlet-regression-for-abnormalities"><span class="header-section-number">4.2.1</span> Why Use Proportions and Dirichlet Regression for Abnormalities?</h3>
+<ul>
+<li><strong>Three-category compositional data</strong>: Each sample has proportions of typical, uncertain, and malformed embryos that sum to 100%.</li>
+<li><strong>Dirichlet regression</strong> naturally handles this multivariate compositional outcome.</li>
+<li>This approach is more powerful than separate binomial tests (e.g., typical vs.&nbsp;non-typical) because it models the full distribution across all three categories simultaneously.</li>
+<li>Accounts for the trade-offs between categories (e.g., if more embryos are malformed, fewer can be typical).</li>
+</ul>
+</section>
+<section id="data-structure-for-abnormality-analysis" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="data-structure-for-abnormality-analysis"><span class="header-section-number">4.2.2</span> Data Structure for Abnormality Analysis</h3>
+<p>For each sample, calculate the proportion of embryos in each abnormality category:</p>
+<table class="table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 15%">
+<col style="width: 17%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Sample ID</th>
+<th>Treatment</th>
+<th>Time (hpf)</th>
+<th>Prop_Typical</th>
+<th>Prop_Uncertain</th>
+<th>Prop_Malformed</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sample_1</td>
+<td>Control</td>
+<td>4</td>
+<td>0.90</td>
+<td>0.05</td>
+<td>0.05</td>
+</tr>
+<tr class="even">
+<td>Sample_2</td>
+<td>Low</td>
+<td>4</td>
+<td>0.85</td>
+<td>0.08</td>
+<td>0.07</td>
+</tr>
+<tr class="odd">
+<td>Sample_3</td>
+<td>Mid</td>
+<td>9</td>
+<td>0.70</td>
+<td>0.15</td>
+<td>0.15</td>
+</tr>
+<tr class="even">
+<td>Sample_4</td>
+<td>High</td>
+<td>14</td>
+<td>0.50</td>
+<td>0.20</td>
+<td>0.30</td>
+</tr>
+<tr class="odd">
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="statistical-analysis-steps-1" class="level3" data-number="4.2.3">
+<h3 data-number="4.2.3" class="anchored" data-anchor-id="statistical-analysis-steps-1"><span class="header-section-number">4.2.3</span> Statistical Analysis Steps</h3>
+<ol type="1">
+<li><strong>Calculate proportions</strong> of typical, uncertain, and malformed embryos for each sample</li>
+<li><strong>Handle zeros</strong>: If any sample has zero embryos in a category, add a small constant (e.g., 0.001) to all proportions and re-normalize to sum to 1 (Dirichlet regression cannot handle exact zeros)</li>
+<li><strong>Fit a Dirichlet regression model</strong>:
+<ul>
+<li>Response: compositional vector of abnormality proportions (typical, uncertain, malformed)</li>
+<li>Predictors: Treatment (Control, Low, Mid, High), optionally Time if analyzing across timepoints</li>
+</ul></li>
+<li><strong>Test for treatment effects</strong> on the distribution of abnormality categories</li>
+<li><strong>Post-hoc pairwise comparisons</strong> between treatment groups to identify which treatments increase malformation rates</li>
+</ol>
+</section>
+<section id="r-implementation-1" class="level3" data-number="4.2.4">
+<h3 data-number="4.2.4" class="anchored" data-anchor-id="r-implementation-1"><span class="header-section-number">4.2.4</span> R Implementation</h3>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Load required packages</span></span>
+<span id="cb2-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(DirichletReg)</span>
+<span id="cb2-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(tidyverse)</span>
+<span id="cb2-4"></span>
+<span id="cb2-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Prepare data</span></span>
+<span id="cb2-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Handle zeros by adding small constant if needed</span></span>
+<span id="cb2-7">abnorm_data <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> abnorm_data <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb2-8">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">across</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(Prop_Typical, Prop_Uncertain, Prop_Malformed), </span>
+<span id="cb2-9">                <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">~</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ifelse</span>(. <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.001</span>, .))) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb2-10">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">total =</span> Prop_Typical <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> Prop_Uncertain <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> Prop_Malformed,</span>
+<span id="cb2-11">         <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Prop_Typical =</span> Prop_Typical <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> total,</span>
+<span id="cb2-12">         <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Prop_Uncertain =</span> Prop_Uncertain <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> total,</span>
+<span id="cb2-13">         <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Prop_Malformed =</span> Prop_Malformed <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> total)</span>
+<span id="cb2-14"></span>
+<span id="cb2-15"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Create compositional response matrix</span></span>
+<span id="cb2-16">Y_abnorm <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">DR_data</span>(abnorm_data[, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Prop_Typical"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Prop_Uncertain"</span>, </span>
+<span id="cb2-17">                                     <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Prop_Malformed"</span>)])</span>
+<span id="cb2-18"></span>
+<span id="cb2-19"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Fit Dirichlet regression model</span></span>
+<span id="cb2-20">model_abnorm <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">DirichReg</span>(Y_abnorm <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">~</span> Treatment, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">data =</span> abnorm_data)</span>
+<span id="cb2-21"></span>
+<span id="cb2-22"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># If including time as a factor:</span></span>
+<span id="cb2-23"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># model_abnorm &lt;- DirichReg(Y_abnorm ~ Treatment + Time, data = abnorm_data)</span></span>
+<span id="cb2-24"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Or with interaction:</span></span>
+<span id="cb2-25"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># model_abnorm &lt;- DirichReg(Y_abnorm ~ Treatment * Time, data = abnorm_data)</span></span>
+<span id="cb2-26"></span>
+<span id="cb2-27"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># View model summary</span></span>
+<span id="cb2-28"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">summary</span>(model_abnorm)</span>
+<span id="cb2-29"></span>
+<span id="cb2-30"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Test for treatment effects</span></span>
+<span id="cb2-31"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">anova</span>(model_abnorm)</span>
+<span id="cb2-32"></span>
+<span id="cb2-33"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Extract predicted proportions for each treatment</span></span>
+<span id="cb2-34"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Can be used for visualization</span></span>
+<span id="cb2-35">predicted_props <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">predict</span>(model_abnorm, </span>
+<span id="cb2-36">                           <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">newdata =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">data.frame</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Treatment =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Control"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Low"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Mid"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"High"</span>)))</span></code></pre></div>
+</section>
+<section id="interpretation-1" class="level3" data-number="4.2.5">
+<h3 data-number="4.2.5" class="anchored" data-anchor-id="interpretation-1"><span class="header-section-number">4.2.5</span> Interpretation</h3>
+<ul>
+<li><strong>Significant treatment effect</strong>: Indicates that leachate exposure affects the distribution of embryos across abnormality categories</li>
+<li><strong>Model coefficients</strong>: Indicate how each treatment changes the expected proportion in each category relative to the control</li>
+<li><strong>Predicted proportions</strong>: Show the expected composition of typical, uncertain, and malformed embryos for each treatment level</li>
+</ul>
+</section>
+<section id="post-hoc-comparisons" class="level3" data-number="4.2.6">
+<h3 data-number="4.2.6" class="anchored" data-anchor-id="post-hoc-comparisons"><span class="header-section-number">4.2.6</span> Post-hoc Comparisons</h3>
+<p>To determine which specific treatments differ from control or from each other:</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Pairwise comparisons between treatments</span></span>
+<span id="cb3-2"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># May require custom contrasts or bootstrap methods</span></span>
+<span id="cb3-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Example approach using predicted values and confidence intervals</span></span></code></pre></div>
+</section>
+<section id="visualization-1" class="level3" data-number="4.2.7">
+<h3 data-number="4.2.7" class="anchored" data-anchor-id="visualization-1"><span class="header-section-number">4.2.7</span> Visualization</h3>
+<p>Create stacked bar plots showing the proportion of each abnormality category by treatment:</p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Example visualization code</span></span>
+<span id="cb4-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggplot</span>(abnorm_data, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x =</span> Treatment)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb4-3">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_col</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y =</span> Prop_Typical, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">fill =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Typical"</span>), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">position =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"stack"</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb4-4">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_col</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y =</span> Prop_Uncertain, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">fill =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Uncertain"</span>), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">position =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"stack"</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb4-5">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_col</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y =</span> Prop_Malformed, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">fill =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Malformed"</span>), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">position =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"stack"</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb4-6">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">scale_fill_manual</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">values =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Typical"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"green"</span>, </span>
+<span id="cb4-7">                               <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Uncertain"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"yellow"</span>, </span>
+<span id="cb4-8">                               <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Malformed"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"red"</span>)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb4-9">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">labs</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Proportion"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">fill =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Category"</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb4-10">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">theme_minimal</span>()</span></code></pre></div>
+</section>
+<section id="key-considerations" class="level3" data-number="4.2.8">
+<h3 data-number="4.2.8" class="anchored" data-anchor-id="key-considerations"><span class="header-section-number">4.2.8</span> Key Considerations</h3>
+<ul>
+<li><strong>Sample size</strong>: Ensure adequate replication within each treatment group for reliable estimates</li>
+<li><strong>Independence</strong>: Samples (bundle-bundle crosses) should be independent</li>
+<li><strong>Biological relevance</strong>: Consider whether “uncertain” category should be combined with typical or malformed, or analyzed separately based on biological interpretation # Survival</li>
+</ul>
 <p>If you only have the <strong>number of embryos observed at each timepoint</strong> without knowing the initial total, you should analyze the apparent decline over time to estimate survival, using methods that compare counts between timepoints. In this case, the data represent <strong>cross-sectional snapshots</strong> of different samples at 4, 9, and 14 hours post-fertilization, each independent from one another. The appropriate analysis approach is to treat the observations at each timepoint as separate groups and compare them accordingly using methods for independent samples rather than longitudinal repeated measures.</p>
-<section id="key-points-for-independent-samples-at-different-timepoints" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="key-points-for-independent-samples-at-different-timepoints"><span class="header-section-number">6.1</span> Key Points for Independent Samples at Different Timepoints</h2>
+</section>
+</section>
+<section id="key-points-for-independent-samples-at-different-timepoints" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="key-points-for-independent-samples-at-different-timepoints"><span class="header-section-number">4.3</span> Key Points for Independent Samples at Different Timepoints</h2>
 <ul>
 <li><p>Each timepoint group is treated as an independent sample.</p></li>
 <li><p>Compare counts (or proportions if normalized) between groups using tests for independent samples like ANOVA or Kruskal-Wallis for continuous/ratio data or Chi-square for count/frequency data.</p></li>
@@ -1300,11 +1846,11 @@ Chille, E. E., E. L. Strand, F. Scucchia, M. Neder, V. Schmidt, M. O. Sherman, T
 <p>This means that instead of modeling within-sample changes over time, you compare the observed embryo counts or survival proportions between independent groups at 4, 9, and 14 hours using statistical tests appropriate for independent samples, such as ANOVA or Kruskal-Wallis for continuous data or Chi-square tests for counts/frequencies.</p>
 <p>Thus, your analysis approach focuses on comparing independent groups rather than modeling longitudinal trajectories within subjects or samples. This aligns with the “pre-post no control group” design where different subjects are sampled at each timepoint.</p>
 </section>
-<section id="approach-overview" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="approach-overview"><span class="header-section-number">6.2</span> Approach Overview</h2>
+<section id="approach-overview" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="approach-overview"><span class="header-section-number">4.4</span> Approach Overview</h2>
 </section>
-<section id="structure-your-data" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="structure-your-data"><span class="header-section-number">6.3</span> Structure Your Data</h2>
+<section id="structure-your-data" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="structure-your-data"><span class="header-section-number">4.5</span> Structure Your Data</h2>
 <ul>
 <li><p>For each sample, you have:</p>
 <ul>
@@ -1314,29 +1860,29 @@ Chille, E. E., E. L. Strand, F. Scucchia, M. Neder, V. Schmidt, M. O. Sherman, T
 <li><p><strong>You can summarize the data by calculating the mean and variance of embryo counts at each timepoint.</strong></p></li>
 </ul>
 </section>
-<section id="comparing-embryo-counts-over-time" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="comparing-embryo-counts-over-time"><span class="header-section-number">6.4</span> Comparing Embryo Counts Over Time</h2>
+<section id="comparing-embryo-counts-over-time" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="comparing-embryo-counts-over-time"><span class="header-section-number">4.6</span> Comparing Embryo Counts Over Time</h2>
 <ul>
 <li><p>Analyze how the <strong>average count of viable embryos per sample</strong> changes across timepoints.</p></li>
 <li><p>Calculate the proportionate change from one time point to the next:</p></li>
 </ul>
 </section>
-<section id="statistical-analysis" class="level2" data-number="6.5">
-<h2 data-number="6.5" class="anchored" data-anchor-id="statistical-analysis"><span class="header-section-number">6.5</span> Statistical Analysis</h2>
+<section id="statistical-analysis" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="statistical-analysis"><span class="header-section-number">4.7</span> Statistical Analysis</h2>
 <ul>
 <li><p>If samples are independent at each timepoint, use one-way ANOVA or nonparametric tests like Kruskal-Wallis.</p></li>
 <li><p>To estimate “survival,” take the percentage decrease in embryo count between each timepoint as a proxy for mortality.</p></li>
 </ul>
 </section>
-<section id="visualization" class="level2" data-number="6.6">
-<h2 data-number="6.6" class="anchored" data-anchor-id="visualization"><span class="header-section-number">6.6</span> Visualization</h2>
+<section id="visualization-2" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="visualization-2"><span class="header-section-number">4.8</span> Visualization</h2>
 <ul>
 <li><p>Create a plot showing the <strong>mean embryo count per sample at each timepoint</strong>.</p></li>
 <li><p>This will visualize survival (or mortality) dynamics for the groups over time.</p></li>
 </ul>
 </section>
-<section id="example-calculation" class="level2" data-number="6.7">
-<h2 data-number="6.7" class="anchored" data-anchor-id="example-calculation"><span class="header-section-number">6.7</span> Example Calculation</h2>
+<section id="example-calculation" class="level2" data-number="4.9">
+<h2 data-number="4.9" class="anchored" data-anchor-id="example-calculation"><span class="header-section-number">4.9</span> Example Calculation</h2>
 <p>Let’s say you have the following average embryo counts per sample:</p>
 <ul>
 <li><p>4 hours: mean = 18 embryos</p></li>
@@ -1345,8 +1891,8 @@ Chille, E. E., E. L. Strand, F. Scucchia, M. Neder, V. Schmidt, M. O. Sherman, T
 </ul>
 <p><strong>Survival proportion to 9 hours:</strong> <img src="https://latex.codecogs.com/png.latex?12/18=0.67">(67%) <strong>Survival proportion to 14 hours:</strong> <img src="https://latex.codecogs.com/png.latex?7/18=0.39">(39%).</p>
 </section>
-<section id="important-notes" class="level2" data-number="6.8">
-<h2 data-number="6.8" class="anchored" data-anchor-id="important-notes"><span class="header-section-number">6.8</span> Important Notes</h2>
+<section id="important-notes" class="level2" data-number="4.10">
+<h2 data-number="4.10" class="anchored" data-anchor-id="important-notes"><span class="header-section-number">4.10</span> Important Notes</h2>
 <ul>
 <li><p>Without initial counts, you can only describe relative survival between timepoints, not absolute survival from fertilization.</p></li>
 <li><p>Ensure consistency in sample handling to minimize bias.</p></li>

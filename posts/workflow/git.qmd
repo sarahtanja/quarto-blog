@@ -177,3 +177,11 @@ If you've made lots of changes along with the large file commit that you don't w
 > ```{r, engine='bash'}
 > #git reset --hard origin/main
 > ```
+
+5.  Merge conflict
+
+In order to checkout the remote file (this writes over your local changes)
+```{r, engine='bash'}
+#git checkout --theirs path/to/file
+#git add path/to/file
+```

@@ -3,7 +3,7 @@
 // Base document colors
 $body-bg: #12253B; /*the page background color is dark blue*/
 $body-color: #FFFCF0; /*the page text color is off-white*/
-/*$link-color: #F6E2A0; /*the page link color is light blue*/
+$link-color: #d4aa00; /*the page link color is gold*/
 $body-secondary: #ABCFE2; /*blockquotes & captions color is gold*/
 $code-block-bg: #FAEEC6; /*the code block background color is butter*/
 

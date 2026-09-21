@@ -16,7 +16,7 @@ website:
     foreground: light
     search: true
     logo: images/favicon.png
-    logo-href: posts.qmd
+    logo-href: linktree.qmd
     right: #align navbar items to right/left/center
       - text: "Projects"
         file: projects.qmd
@@ -24,8 +24,6 @@ website:
         file: posts.qmd
       - text: "About"
         file: about.qmd
-      - icon: linkedin #bootstrap icon
-        url: https://www.linkedin.com/in/sarah-tanja-595722146/
       - icon: github
         menu:
           - text: Sarah's GitHub
@@ -38,11 +36,6 @@ website:
             url: https://github.com/sarahtanja/anemone-leachate-heat
           - text: Coral Microbiome Project Repository
             url: https://github.com/sarahtanja/coral-pae-temp
-      - icon: envelope-paper #bootstrap icon
-        menu:
-          - text: stanja@uw.edu
-          - file: contact.qmd
-          
 
    
   page-footer: 

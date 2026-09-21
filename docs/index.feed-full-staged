@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Sarah Tanja&#39;s Open Lab Notebook</title>
+<link>https://sarahtanja.github.io/quarto-blog/</link>
+<atom:link href="https://sarahtanja.github.io/quarto-blog/index.xml" rel="self" type="application/rss+xml"/>
+<description>This Open Lab Notebook is a creative landing space for learning about Bioinformatics, Marine Botany, &amp; Data Science. It&#39;s mostly for me, but also for you! 😘</description>
+<generator>quarto-1.9.36</generator>
+<lastBuildDate>Tue, 06 May 2025 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>{B4F502887207:/posts/thesis/committee-3/committee-3.html}</title>
+  <dc:creator>Sarah Tanja</dc:creator>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/thesis/committee-3/committee-3.html</link>
+  <description>{B4F502887207:/posts/thesis/committee-3/committee-3.html}</description>
+  <category>committee</category>
+  <category>presentations</category>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/thesis/committee-3/committee-3.html</guid>
+  <pubDate>Tue, 06 May 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://sarahtanja.github.io/quarto-blog/posts/thesis/committee-3/counts_viable_boxplot.png" medium="image" type="image/png" height="108" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/ncbi-sra-submission/ncbi-sra-submission-16S.html}</title>
+  <dc:creator>Sarah Tanja</dc:creator>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi-sra-submission-16S.html</link>
+  <description>{B4F502887207:/posts/ncbi-sra-submission/ncbi-sra-submission-16S.html}</description>
+  <category>lab records</category>
+  <category>code</category>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi-sra-submission-16S.html</guid>
+  <pubDate>Fri, 13 Dec 2024 08:00:00 GMT</pubDate>
+  <media:content url="https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/workflow/rsync.html}</title>
+  <dc:creator>Sarah Tanja</dc:creator>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/workflow/rsync.html</link>
+  <description>{B4F502887207:/posts/workflow/rsync.html}</description>
+  <category>workflow</category>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/workflow/rsync.html</guid>
+  <pubDate>Mon, 04 Nov 2024 08:00:00 GMT</pubDate>
+  <media:content url="https://sarahtanja.github.io/quarto-blog/posts/workflow/Newrsynclogo.png" medium="image" type="image/png" height="70" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/workflow/tunnel.html}</title>
+  <dc:creator>Sarah Tanja</dc:creator>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/workflow/tunnel.html</link>
+  <description>{B4F502887207:/posts/workflow/tunnel.html}</description>
+  <category>code</category>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/workflow/tunnel.html</guid>
+  <pubDate>Mon, 04 Nov 2024 08:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/ncbi-sra-submission/ncbi-sra-submission.html}</title>
+  <dc:creator>Sarah Tanja</dc:creator>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi-sra-submission.html</link>
+  <description>{B4F502887207:/posts/ncbi-sra-submission/ncbi-sra-submission.html}</description>
+  <category>learning journey</category>
+  <category>code</category>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/ncbi-sra-submission/ncbi-sra-submission.html</guid>
+  <pubDate>Tue, 08 Oct 2024 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/sftp-azenta/azenta-sftp.html}</title>
+  <dc:creator>Sarah Tanja</dc:creator>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/sftp-azenta/azenta-sftp.html</link>
+  <description>{B4F502887207:/posts/sftp-azenta/azenta-sftp.html}</description>
+  <category>learning journey</category>
+  <category>code</category>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/sftp-azenta/azenta-sftp.html</guid>
+  <pubDate>Tue, 08 Oct 2024 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/projects/coral-embryo-leachate/transcriptomics/bioinformatics-pipeline/pipeline-overview.html}</title>
+  <dc:creator>Sarah Tanja</dc:creator>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/transcriptomics/bioinformatics-pipeline/pipeline-overview.html</link>
+  <description>{B4F502887207:/posts/projects/coral-embryo-leachate/transcriptomics/bioinformatics-pipeline/pipeline-overview.html}</description>
+  <category>code</category>
+  <category>coral</category>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/transcriptomics/bioinformatics-pipeline/pipeline-overview.html</guid>
+  <pubDate>Mon, 07 Oct 2024 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/projects/coral-embryo-leachate/transcriptomics/previous-research/previous-research.html}</title>
+  <dc:creator>Sarah Tanja</dc:creator>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/transcriptomics/previous-research/previous-research.html</link>
+  <description>{B4F502887207:/posts/projects/coral-embryo-leachate/transcriptomics/previous-research/previous-research.html}</description>
+  <category>learning journey</category>
+  <category>coral</category>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/transcriptomics/previous-research/previous-research.html</guid>
+  <pubDate>Mon, 07 Oct 2024 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/projects/coral-embryo-leachate/scope/ontogenetic-development/ontogenetic-development.html}</title>
+  <dc:creator>Sarah Tanja</dc:creator>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/ontogenetic-development/ontogenetic-development.html</link>
+  <description>{B4F502887207:/posts/projects/coral-embryo-leachate/scope/ontogenetic-development/ontogenetic-development.html}</description>
+  <category>learning journey</category>
+  <category>coral</category>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/ontogenetic-development/ontogenetic-development.html</guid>
+  <pubDate>Mon, 30 Sep 2024 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/grants-fellowships/grants-fellowships.html}</title>
+  <dc:creator>Sarah Tanja</dc:creator>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/grants-fellowships/grants-fellowships.html</link>
+  <description>{B4F502887207:/posts/grants-fellowships/grants-fellowships.html}</description>
+  <category>stats</category>
+  <category>coral</category>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/grants-fellowships/grants-fellowships.html</guid>
+  <pubDate>Mon, 09 Sep 2024 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/projects/coral-embryo-leachate/scope/annotate-scope-pics.html}</title>
+  <dc:creator>Sarah Tanja</dc:creator>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/annotate-scope-pics.html</link>
+  <description>{B4F502887207:/posts/projects/coral-embryo-leachate/scope/annotate-scope-pics.html}</description>
+  <category>protocols</category>
+  <category>coral</category>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/annotate-scope-pics.html</guid>
+  <pubDate>Mon, 09 Sep 2024 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/thesis/goals-timeline.html}</title>
+  <dc:creator>Sarah Tanja</dc:creator>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/thesis/goals-timeline.html</link>
+  <description>{B4F502887207:/posts/thesis/goals-timeline.html}</description>
+  <category>committee</category>
+  <category>goals</category>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/thesis/goals-timeline.html</guid>
+  <pubDate>Sun, 08 Sep 2024 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/projects/coral-embryo-leachate/scope/scope-stats.html}</title>
+  <dc:creator>Sarah Tanja</dc:creator>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/scope-stats.html</link>
+  <description>{B4F502887207:/posts/projects/coral-embryo-leachate/scope/scope-stats.html}</description>
+  <category>stats</category>
+  <category>coral</category>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/scope-stats.html</guid>
+  <pubDate>Fri, 06 Sep 2024 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/projects/coral-embryo-leachate/scope/nikon-scope.html}</title>
+  <dc:creator>Sarah Tanja</dc:creator>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/nikon-scope.html</link>
+  <description>{B4F502887207:/posts/projects/coral-embryo-leachate/scope/nikon-scope.html}</description>
+  <category>protocols</category>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/scope/nikon-scope.html</guid>
+  <pubDate>Tue, 03 Sep 2024 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/projects/coral-embryo-leachate/molecular-lab/26aug2024-extraction/26aug2024-extraction.html}</title>
+  <dc:creator>Sarah Tanja</dc:creator>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/26aug2024-extraction/26aug2024-extraction.html</link>
+  <description>{B4F502887207:/posts/projects/coral-embryo-leachate/molecular-lab/26aug2024-extraction/26aug2024-extraction.html}</description>
+  <category>lab records</category>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/26aug2024-extraction/26aug2024-extraction.html</guid>
+  <pubDate>Mon, 26 Aug 2024 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/projects/coral-embryo-leachate/molecular-lab/23aug2024-extraction/23aug2024-extraction.html}</title>
+  <dc:creator>Sarah Tanja</dc:creator>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/23aug2024-extraction/23aug2024-extraction.html</link>
+  <description>{B4F502887207:/posts/projects/coral-embryo-leachate/molecular-lab/23aug2024-extraction/23aug2024-extraction.html}</description>
+  <category>lab records</category>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/23aug2024-extraction/23aug2024-extraction.html</guid>
+  <pubDate>Fri, 23 Aug 2024 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/projects/coral-embryo-leachate/molecular-lab/21aug2024-extraction/21aug2024-extraction.html}</title>
+  <dc:creator>Sarah Tanja</dc:creator>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/21aug2024-extraction/21aug2024-extraction.html</link>
+  <description>{B4F502887207:/posts/projects/coral-embryo-leachate/molecular-lab/21aug2024-extraction/21aug2024-extraction.html}</description>
+  <category>lab records</category>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/21aug2024-extraction/21aug2024-extraction.html</guid>
+  <pubDate>Wed, 21 Aug 2024 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/projects/coral-embryo-leachate/molecular-lab/20aug2024-extraction/20aug2024-extraction.html}</title>
+  <dc:creator>Sarah Tanja</dc:creator>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/20aug2024-extraction/20aug2024-extraction.html</link>
+  <description>{B4F502887207:/posts/projects/coral-embryo-leachate/molecular-lab/20aug2024-extraction/20aug2024-extraction.html}</description>
+  <category>lab records</category>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/20aug2024-extraction/20aug2024-extraction.html</guid>
+  <pubDate>Tue, 20 Aug 2024 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/projects/coral-embryo-leachate/molecular-lab/19aug2024-extraction/19aug2024-extraction.html}</title>
+  <dc:creator>Sarah Tanja</dc:creator>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/19aug2024-extraction/19aug2024-extraction.html</link>
+  <description>{B4F502887207:/posts/projects/coral-embryo-leachate/molecular-lab/19aug2024-extraction/19aug2024-extraction.html}</description>
+  <category>lab records</category>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/19aug2024-extraction/19aug2024-extraction.html</guid>
+  <pubDate>Mon, 19 Aug 2024 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/projects/coral-embryo-leachate/molecular-lab/16aug2024-extraction/16aug2024-extraction.html}</title>
+  <dc:creator>Sarah Tanja</dc:creator>
+  <link>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/16aug2024-extraction/16aug2024-extraction.html</link>
+  <description>{B4F502887207:/posts/projects/coral-embryo-leachate/molecular-lab/16aug2024-extraction/16aug2024-extraction.html}</description>
+  <category>lab records</category>
+  <guid>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/molecular-lab/16aug2024-extraction/16aug2024-extraction.html</guid>
+  <pubDate>Fri, 16 Aug 2024 07:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

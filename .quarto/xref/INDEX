@@ -388,5 +388,14 @@
   },
   "linktree.qmd": {
     "linktree.html": "1417fa55"
+  },
+  "posts/projects/hershman.qmd": {
+    "hershman.html": "b9058c5f"
+  },
+  "posts/projects/hershman/background.qmd": {
+    "background.html": "839ce620"
+  },
+  "docs/posts/projects/hershman.qmd": {
+    "hershman.html": "c88846e6"
   }
 }

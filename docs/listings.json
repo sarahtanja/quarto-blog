@@ -67,7 +67,6 @@
   {
     "listing": "/posts.html",
     "items": [
-      "/posts/projects/hershman/background.html",
       "/posts/ncbi-sra-submission/ncbi-sra-submission-16S.html",
       "/posts/ncbi-sra-submission/ncbi-sra-submission.html",
       "/posts/grants-fellowships/grants-fellowships.html",
@@ -104,6 +103,7 @@
       "/posts/normalize-rna-dna/index.html",
       "/posts/pcc-grant-app/index.html",
       "/posts/projects/anemone/heat-stress/heat-wave.html",
+      "/posts/projects/hershman/background.html",
       "/posts/thesis/committee-3/committee-3.html",
       "/posts/workflow/reference-manager.html",
       "/posts/workflow/rsync.html",
@@ -143,8 +143,6 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/projects/hershman.html",
-      "/posts/projects/hershman/background.html",
       "/posts/ncbi-sra-submission/ncbi-sra-submission-16S.html",
       "/posts/ncbi-sra-submission/ncbi-sra-submission.html",
       "/posts/grants-fellowships/grants-fellowships.html",
@@ -181,6 +179,7 @@
       "/posts/normalize-rna-dna/index.html",
       "/posts/pcc-grant-app/index.html",
       "/posts/projects/anemone/heat-stress/heat-wave.html",
+      "/posts/projects/hershman/background.html",
       "/posts/thesis/committee-3/committee-3.html",
       "/posts/workflow/reference-manager.html",
       "/posts/workflow/rsync.html",

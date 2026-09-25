@@ -2,7 +2,6 @@
 title: "Projects"
 page-layout: full
 title-block-banner: true
-toc: true
 listing: 
   contents: 
     - posts/projects/anemone.qmd
@@ -15,6 +14,5 @@ listing:
   grid-item-align: center
   sort-ui: false
   filter-ui: false
-  fields: [image, title, subtitle]
-#title-block-banner: true
+  fields: [image, title, subtitle, categories]
 ---

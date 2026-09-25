@@ -5,7 +5,9 @@ $body-bg: #12253B; /*the page background color is dark blue*/
 $body-color: #FFFCF0; /*the page text color is off-white*/
 $link-color: #97FFFF; /*the page link color is darkslategray1*/
 $body-secondary: #ABCFE2; /*blockquotes & captions color is gold*/
-$code-block-bg: #00688B; /*the code block background color is deepskyblue4*/
+$code-block-bg: #00688B; /*the fenced code block background color is deepskyblue4*/
+$code-bg: #00688B; /*the inline code block background color is deepskyblue4*/
+
 
 /* Navbar background color to match favicon yellow */
 .navbar {

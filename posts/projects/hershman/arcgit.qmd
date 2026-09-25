@@ -1,0 +1,138 @@
+---
+title: "ArcGIS, Jupyter Notebook, and Git"
+subtitle: "A reproducible workflow for ArcGIS spatial analysis using Jupyter Notebook and versioned with Git"
+date: '09/24/2026'
+toc: true
+categories: [workflow, ArcGIS, JupyterNotebook, Git]
+format: html
+---
+
+## Aims
+
+Here we want to figure out a simple reproducible workflow that allows researchers to work using ArcGIS Pro's integrated Jupyter Notebook and back up and version their work using Git. The goal is for the Git repository to become the durable record of how the analysis works, while Microsoft Teams can remain the home for source/spatial data that may prove too large for Git.
+
+We need to:
+
+1.  create a new Git repo inside the existing [University of Washington Puget Sound Institute](https://%60Git%60hub.com/UW-PSI) GitHub organization[^1]
+
+2.  create a `.Gitignore` file that will exclude anything not needed for reproducibility
+
+3.  be mindful of GitHub's large file size limits
+
+    |   | GitHub limit |   |
+    |------------------------|---------------------------|------------------------|
+    | Normal Git file | **100 MB** |  |
+    | File \>50 MB | GitHub warns large file |  |
+    | Browser upload | **25 MB max** | \*when uploading files directly through GitHub's website |
+    | Single push | **2 GB max** |  |
+    | Repository .Git size | 10 GB recommended maximum |  |
+    | GitLarge File Storage (LFS) file | **2–5 GB/file**, depending on payment plan | \*we are not using LFS |
+
+[^1]: Admin for the org is currently Stefano Mazzilli (9/24/2026)
+
+## Background
+
+The context for this is that I am picking up a spatial critical analysis project (Marine Protected Area Impacts on Marine Vegetation... Characterizing eelgrass and kelp conservation in Puget Sound protected areas) that was started by Sandra Dorning in September of 2025, but I only have one year in the WA Seagrant Fellowship to try and complete the analysis. I want to structure the project such that if it needs to be re-run in the future (to add more or updated data), or if I need to pass the baton before it's finalized, that what I've done is reproducible.
+
+The big-picture end-products that we want for this is a grey-literature Puget Sound Institute report guiding answers to the question “Are marine protected areas effective at protecting marine vegetation from risks in Puget Sound?”, a manuscript for submission to a peer-reviewed journal, a web-app map, and a story map.
+
+## Workflow environment
+
+- Download [ESRI ArcGIS Pro from University of Washington Information Technology Services](https://it.uw.edu/uware/arcgis-esri/), following their instructions. You will need a UW NetID and password.
+
+::: callout-important
+You need a PC or Linux to use ArcGIS Pro!
+:::
+
+- If you don't already have it, [Install](https://%60Git%60-scm.com/book/en/v2/Getting-Started-Installing-%60Git%60)Git
+
+- Sign in to OneDrive with the same account used to access PSI Microsoft Teams
+
+- If you don't already have one, [sign up for a GitHub account](https://%60Git%60hub.com/signup)
+
+## Migrate existing project files
+
+Existing files for the project live on PSI's Microsoft Teams Critical Analysis channel at `Protected Areas SLD 2026/`
+
+I started by selecting the folder's three-dot `...` `More Options` menu and clicking `Add Shortcut to OneDrive`/ `My Files`
+
+I then opened my file explorer and navigated to the OneDrive folder for my University of Washington account. The `UWT PSI - Protected Areas SLD 2026` folder was present in my OneDrive as a shortcut. The status symbol was a blue cloud, indicating I could only access the files when online, and they weren't copied locally to my computer.
+
+::: callout-warning
+The entire folder is 2,652 files and 253 GB! The next step (syncing the files to keep them on my own computer) took a long time....
+:::
+
+I right-clicked on the file and selected `Always keep on this device`
+
+The `GIS Analysis` subdirectory contains the following subdirectories:
+
+- CA_DataExploration
+- CA_King_County_Parks_map
+- CA_KingCountyParks
+- CA_MPA_Round1
+- CA_RCO_Public_Lands
+- CA_WA_Bathymetry_CoNED_MLLW
+- NHDNat2Exploration
+
+Each subdirectory contains the following files and subdirectories:
+
+- `.aprx`
+  - ArcGIS Pro project file, It stores information about things such as:
+
+    - maps
+
+    - which layers are in those maps
+
+    - symbology
+
+    - labeling
+
+    - layouts
+
+    - connections to databases/folders
+
+    - references to data sources
+
+    - project configuration
+
+    Crucially, it generally **does not contain the actual spatial datasets**.
+
+    `.aprx` files are binary, so Git can tell that it changed but cannot show diffs. Two researchers editing the same `.aprx` can create merge conflicts that Git can't resolve. The `.aprx` files can be included in the Git repo for version history and recovery, but not for collaborative merging.
+
+    > `.aprx` files are tracked in Git but are binary and cannot be merged reliably.
+    >
+    > Before editing an `.aprx`, confirm that no other active branch is modifying the same file.
+    >
+    > Keep `.aprx` changes isolated from unrelated code changes where practical.
+    >
+    > Pull/rebase from `main` immediately before beginning `.aprx` work.
+    >
+    > Complete and merge `.aprx` changes promptly rather than maintaining long-running branches containing `.aprx` modifications.
+    >
+    > Do not resolve `.aprx` merge conflicts using Git's automatic merge tools. Determine which version is authoritative and manually reproduce the required ArcGIS Pro changes in that version.
+- .atbx
+  - ArcGIS toolbox, contains geoprocessing tools
+- .gdb
+  - Geodatabase file, where actual GIS datasets live, a directory containing many internal files.
+
+    > Large files
+- RasterFunctionTemplates/
+  - definitions for raster processing
+- Index/
+  - ArcGIS search cache
+  - **Not needed for reproducibility**
+- ImportLog/
+  - Logs of imported or converted material
+  - **Not needed for reproducibility**
+- GpMessages/
+  - ArcGIS history
+  - **Not needed for reproducibility**
+- .backups/
+  - versions for recovery after a crash
+  - **Not needed for reproducibility**
+
+## Proposed `.gitignore`
+
+```         
+**/.backups/
+```

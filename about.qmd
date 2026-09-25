@@ -1,6 +1,8 @@
 ---
 title: "Sarah Tanja"
 image: images/kelp-queen.jpg
+toc: false
+number-sections: false
 bibliography: about.bib
 reference-location: margin
 citation-location: margin
@@ -14,14 +16,14 @@ about:
     - icon: github
       text: Github
       href: https://github.com/sarahtanja
-    - icon: envelope-heart
-      text: stanja@uw.edu
 ---
 
 :::: {#hero-heading}
-Hello! I'm currently a Masters student in the [Padilla-Gamiño Lab](https://padilla-gaminolab.weebly.com/) and part of the [School of Aquatic and Fishery Sciences](https://fish.uw.edu/) at the University of Washington in Seattle. Please reach out if you have any questions or are interested in connecting!
+Hello! I'm currently a [Wasington Sea Grant Hershman Fellow](https://waseagrant.uw.edu/fellowships/current-fellows/#:~:text=other%20aquaculture%20opportunities.-,SARAH%20TANJA,-Tenacious%20and%20curious) at the [Puget Sound Institute](https://www.pugetsoundinstitute.org/).
 
-# Research Interests
+I recently graduated with my M.S. from the [Padilla-Gamiño Lab](https://padilla-gaminolab.weebly.com/) at the [School of Aquatic and Fishery Sciences](https://fish.uw.edu/), University of Washington, Seattle.
+
+## Research Interests
 
 My research focuses on the multiple stressor impacts of microplastic-associated pollution and heat stress on coastal primary producers.
 
@@ -34,7 +36,7 @@ I'm interested in exploring this question in the context of marine coastal habit
 Other questions I like to explore are "Do microplastic-associated pollutants alter the beneficial microbiome in marine organisms?", "Do microplastic pollutants alter gene expression in marine organisms?", and "Do microplastic pollutants decrease photosynthetic efficiency in the ocean?".
 ::::
 
-# Research Influences
+## Research Influences
 
 I first began circling the issue of plastic pollution and marine debris in 2012 as an [intern](https://www.adfg.alaska.gov/index.cfm?adfg=internexp.donohoe) with the Alaska Dept. of Fish & Game at a remote Steller sea lion rookery near Dixon Entrance. During population surveys, I photographed sea lions entangled in plastic trash, and later worked with the Pinniped Entanglement Group [(PEG)](https://pinnipedentanglementgroup.org/) to research biodegradable alternatives to plastic packing bands on fish boxes. I learned how difficult it is to amend a system reliant on plastic.
 

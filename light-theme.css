@@ -1,8 +1,21 @@
 /*-- scss:defaults --*/
+// Base document colors
+$body-bg: #FFFCF0; /*an off-white paper from flexoki*/
+$body-color: #12253B; /*the page text color is dark blue*/
+$code-block-bg: #FAEEC6; /*the code block background color is butter*/
 
 /* Navbar background color to match favicon yellow */
 .navbar {
   background-color: #d4aa00 !important;
+}
+
+/* Inline code appearing in article title/header */
+.quarto-title code {
+  background-color: #00688B;
+}
+
+.quarto-title .subtitle code {
+  background-color:  #00688B;
 }
 
 /* nav bar logo size*/
@@ -47,12 +60,6 @@
 body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-// Base document colors
-$body-bg: #FFFCF0; /*an off-white paper from flexoki*/
-$body-color: #12253B; /*the page text color is dark blue*/
-$code-block-bg: #FAEEC6; /*the code block background color is butter*/
-
 
 /* Change dropdown menu background */
 .navbar .dropdown-menu {

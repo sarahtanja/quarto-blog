@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Sarah Tanja's Open Lab Notebook"
+  title: "Sarah Tanja's Open Lab Notebook - Home"
   favicon: images/favicon.png
   open-graph: true
   page-navigation: true
@@ -16,7 +16,7 @@ website:
     foreground: light
     search: true
     logo: images/favicon.png
-    logo-href: linktree.qmd
+    #logo-href: https://sarahtanja.github.io/quarto-blog/index.html
     right: #align navbar items to right/left/center
       - text: "Projects"
         file: projects.qmd
@@ -24,6 +24,9 @@ website:
         file: posts.qmd
       - text: "About"
         file: about.qmd
+      - text: "Links"
+        file: linktree.qmd
+        
       - icon: github
         menu:
           - text: Sarah's GitHub
@@ -59,9 +62,9 @@ format:
       toggle: true
     toc: true
     toc-title: "Contents <i class='bi bi-bookmark-heart'></i>"
-    toc-depth: 2
+    toc-depth: 4
     toc-expand: true
-    toc-location: right
+    toc-location: left
     number-sections: true
     df-print: kable
     smooth-scroll: true
@@ -71,7 +74,6 @@ format:
     citation-location: margin
     repo-actions: [edit, issue]
 
-
 editor: visual
-bibliography: references.bib
+
 

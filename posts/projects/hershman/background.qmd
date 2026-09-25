@@ -11,11 +11,11 @@ The Salish Sea is a bioregion encompassing the inland marine waterways of Britis
 
 ![The Salish Sea is a bioregion encompassing the inland marine waterways of British Columbia and Washington and their watersheds. The Puget Sound encompasses the southern half of the Salish Sea within Washington. Map from Puget Sound Partnership.](PugetSound.png){fig-align="center"}
 
-# 1988 National Estuary Program
+## 1988 National Estuary Program
 
 Congress created the **National Estuary Program** (NEP) in 1987 and initiated Puget Sound as an Estuary of National Significance in 1988. Puget Sound is the 2nd largest estuary in the U.S (after Chesapeake Bay).
 
-# 2000 Joint Statement of Cooperation
+## 2000 Joint Statement of Cooperation
 
 In 2000, the EPA and Environment and Climate Change Canada signed a *J[oint Statement of Cooperation](https://www.epa.gov/puget-sound/us-canada-cooperation-salish-sea)* that commits to work collaboratively to achieve common goals. This agreement calls for the two agencies to develop and periodically update a [Salish Sea Action Plan](https://www.epa.gov/puget-sound/us-canada-cooperation-salish-sea), often titled Canada - U.S. Cooperation in the Salish Sea Action Plan. This plan focuses on areas where U.S. and Canada can coordinate protections and restoration priorities. It is collaboratively written by a coalition of advisory members.
 
@@ -35,7 +35,7 @@ In 2000, the EPA and Environment and Climate Change Canada signed a *J[oint Stat
 >
 > - Salish Sea Institute at Western Washington University
 
-# 2007 Puget Sound Partnership
+## 2007 Puget Sound Partnership
 
 The Washington State Legislature created the **Puget Sound Partnership** in 2007 as a state agency assigned to coordinating and leading restoration and protection efforts in Puget Sound. Read more about Puget Sound Partnership's role [here](https://www.psp.wa.gov/nep-overview.php).
 
@@ -45,7 +45,7 @@ The Washington State Legislature created the **Puget Sound Partnership** in 2007
 
 The Puget Sound Partnership curates the [Puget Sound Action Agenda](https://www.psp.wa.gov/2022AAupdate.php) which is the Management Conference's shared plan for recovery. The Puget Sound Action Agenda is re-worked every four years in a cycle meant to continually assess priorities, incorporate the best available science, and respond to the needs, concerns, and guidance of the Management Conference. The Puget Sound Action Agenda doubles as the Comprehensive Conservation Management Plan (CCMP), which is a statutory mandate tied to the designation as an Estuary of National Significance and funding from the NEP.
 
-## Habitata Strategic Initiative Lead (HSIL)
+## Habitat Strategic Initiative Lead (HSIL)
 
 The [Habitat Strategic Initiative Lead](https://pugetsoundestuary.wa.gov/habitat-strategic-initiative/)'s role is to put in place strategies that improve the restoration and protection of the rivers, forests, shorelines, estuaries, kelp, and eelgrass meadows that make up Puget Sound.
 
@@ -67,9 +67,9 @@ Puget Sound Partnership and Washington State Recreation and Conservation Office 
 
 PSAR investments have helped restore and protect over 3,300 acres of estuary habitat, more than 150 miles for fish passage, and over 14,000 acres of watershed habitat. These projects support multiple benefits in addition to Puget Sound salmon, including climate resilience and flood protection, recreation, and tribal treaty rights.
 
-# Marine Vegetation Implementation Strategy
+## Marine Vegetation Implementation Strategy
 
-# 2016 Puget Sound Recovery National Program Office
+## 2016 Puget Sound Recovery National Program Office
 
 Congress established the Puget Sound Recovery National Program Office within the Environmental Protection Agency (EPA) in 2016 to coordinate funding and grants from the EPA's NEP
 

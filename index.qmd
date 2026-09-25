@@ -1,19 +1,43 @@
 ---
-title: "Posts"
-#title-block-banner: true
-#toc: true
-page-layout: article # article, full, or custom
-listing:
-  contents: 
-   - "posts/**/*.qmd" # all posts in all subdirectories
-   - "!posts/projects/anemone.qmd" # except the project listing pages
-   - "!posts/projects/coral-embryo-leachate.qmd" 
-   - "!posts/projects/coral-leachate-heat.qmd"
-   - "!posts/projects/coral-pae-temp.qmd"
-   - "!posts/projects/hershman.qmd"
-  sort: "date desc" # Sorts the posts by date in descending order
-  type: table # `default`, `grid` or `table`
-  fields: [image, date, title, subtitle, reading-time]
-  categories: true # allows you to sort posts by assigned categories 
-  feed: true # Allows for generating an RSS feed
+title: "Sarah Tanja's Open Lab Notebook"
+page-layout: full
+toc: false
+number-sections: false
 ---
+
+::: {.column-page}
+
+# Welcome
+
+This Open Lab Notebook is Sarah's mind palace and a landing space for learning about
+Bioinformatics, Marine Botany, & Data Science.
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+## [Projects](projects.qmd)
+
+Research projects, analyses, workflows, and ongoing work.
+:::
+
+::: {.g-col-12 .g-col-md-6}
+## [Posts](posts.qmd)
+
+Notes, tutorials, code, ideas, and things I've learned along the way.
+:::
+
+::: {.g-col-12 .g-col-md-6}
+## [About](about.qmd)
+
+More about me, my research, and the work I do.
+:::
+
+::: {.g-col-12 .g-col-md-6}
+## [Links](linktree.qmd)
+
+GitHub, professional profiles, repositories, and other places to find me.
+:::
+
+:::
+
+:::

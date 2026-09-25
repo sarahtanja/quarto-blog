@@ -397,5 +397,8 @@
   },
   "docs/posts/projects/hershman.qmd": {
     "hershman.html": "c88846e6"
+  },
+  "posts/projects/hershman/arcgit.qmd": {
+    "arcgit.html": "71973990"
   }
 }

@@ -31,9 +31,9 @@
 <li><p>be mindful of GitHub’s large file size limits</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 32%">
-<col style="width: 36%">
-<col style="width: 32%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -217,7 +217,7 @@ Warning
   <pubDate>Thu, 24 Sep 2026 07:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>Management Background</title>
+  <title>Puget Sound’s marine vegetation management background</title>
   <link>https://sarahtanja.github.io/quarto-blog/posts/projects/hershman/background.html</link>
   <description><![CDATA[ 
 
@@ -226,7 +226,8 @@ Warning
 
 
 
-<p>The Salish Sea is a bioregion encompassing the inland marine waterways of British Columbia and Washington State’s watersheds. The Puget Sound is the southern portion of the Salish Sea that falls within Washington State inland marine waters. The Puget Sound is a fjord-formed estuary, a place where freshwater from rivers and watershed mixes with saltwater from the ocean.</p>
+<p>Kelp and eelgrass meadows are nearshore habitats that provide physical complexity (aka places to lay eggs and hide from predators) in temperate marine waters. They’re also important for their roles as primary producers (fueling up from the bottom of the food chain), producing the oxygen that fish (and humans!) breathe (through the magic of photosynthesis), and aid in carbon storage (by producing biomass that stays put). For these reasons, they are</p>
+<p>The Puget Sound forms the southern reaches of the Salish Sea, which is a larger bioregion encompassing the inland marine waterways of British Columbia and Washington State. The Puget Sound is a fjord-formed estuary, a place where freshwater from rivers mixes with saltwater from the ocean in deep ravines, muddy brackish tidelands, and rocky rugged points.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://sarahtanja.github.io/quarto-blog/posts/projects/hershman/PugetSound.png" class="img-fluid figure-img"></p>
@@ -234,11 +235,11 @@ Warning
 </figure>
 </div>
 <section id="national-estuary-program" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="national-estuary-program"><span class="header-section-number">1</span> 1988 National Estuary Program</h2>
-<p>Congress created the <strong>National Estuary Program</strong> (NEP) in 1987 and initiated Puget Sound as an Estuary of National Significance in 1988. Puget Sound is the 2nd largest estuary in the U.S (after Chesapeake Bay).</p>
+<h2 data-number="1" class="anchored" data-anchor-id="national-estuary-program"><span class="header-section-number">1</span> National Estuary Program</h2>
+<p>Congress created the <strong>National Estuary Program</strong> (NEP) in <strong>1987</strong> and initiated Puget Sound as an Estuary of National Significance in <strong>1988</strong>. Puget Sound is the 2nd largest estuary in the U.S (after Chesapeake Bay).</p>
 </section>
 <section id="joint-statement-of-cooperation" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="joint-statement-of-cooperation"><span class="header-section-number">2</span> 2000 Joint Statement of Cooperation</h2>
+<h2 data-number="2" class="anchored" data-anchor-id="joint-statement-of-cooperation"><span class="header-section-number">2</span> Joint Statement of Cooperation</h2>
 <p>In 2000, the EPA and Environment and Climate Change Canada signed a <em>J<a href="https://www.epa.gov/puget-sound/us-canada-cooperation-salish-sea">oint Statement of Cooperation</a></em> that commits to work collaboratively to achieve common goals. This agreement calls for the two agencies to develop and periodically update a <a href="https://www.epa.gov/puget-sound/us-canada-cooperation-salish-sea">Salish Sea Action Plan</a>, often titled Canada - U.S. Cooperation in the Salish Sea Action Plan. This plan focuses on areas where U.S. and Canada can coordinate protections and restoration priorities. It is collaboratively written by a coalition of advisory members.</p>
 <blockquote class="blockquote">
 <p>Current advisory members represent the following organizations:</p>

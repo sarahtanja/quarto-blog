@@ -1,21 +1,23 @@
 ---
-title: "Management Background"
-subtitle: "Puget Sound's kelp and eelgrass management and environmental landscapes across the decades"
+title: "Puget Sound's marine vegetation management background"
+subtitle: "Understanding the many groups that coordinate management and restoration of kelp and eelgrass habitats in Puget Sound"
 date: '09/21/2026'
 toc: true
 categories: [policy]
 format: html
 ---
 
-The Salish Sea is a bioregion encompassing the inland marine waterways of British Columbia and Washington State's watersheds. The Puget Sound is the southern portion of the Salish Sea that falls within Washington State inland marine waters. The Puget Sound is a fjord-formed estuary, a place where freshwater from rivers and watershed mixes with saltwater from the ocean.
+Kelp and eelgrass meadows are nearshore habitats that provide physical complexity (aka places to lay eggs and hide from predators) in temperate marine waters. They're also important for their roles as primary producers (fueling up from the bottom of the food chain), producing the oxygen that fish (and humans!) breathe (through the magic of photosynthesis), and aid in carbon storage (by producing biomass that stays put). For these reasons, they are
+
+The Puget Sound forms the southern reaches of the Salish Sea, which is a larger bioregion encompassing the inland marine waterways of British Columbia and Washington State. The Puget Sound is a fjord-formed estuary, a place where freshwater from rivers mixes with saltwater from the ocean in deep ravines, muddy brackish tidelands, and rocky rugged points.
 
 ![The Salish Sea is a bioregion encompassing the inland marine waterways of British Columbia and Washington and their watersheds. The Puget Sound encompasses the southern half of the Salish Sea within Washington. Map from Puget Sound Partnership.](PugetSound.png){fig-align="center"}
 
-## 1988 National Estuary Program
+## National Estuary Program
 
-Congress created the **National Estuary Program** (NEP) in 1987 and initiated Puget Sound as an Estuary of National Significance in 1988. Puget Sound is the 2nd largest estuary in the U.S (after Chesapeake Bay).
+Congress created the **National Estuary Program** (NEP) in **1987** and initiated Puget Sound as an Estuary of National Significance in **1988**. Puget Sound is the 2nd largest estuary in the U.S (after Chesapeake Bay).
 
-## 2000 Joint Statement of Cooperation
+## Joint Statement of Cooperation
 
 In 2000, the EPA and Environment and Climate Change Canada signed a *J[oint Statement of Cooperation](https://www.epa.gov/puget-sound/us-canada-cooperation-salish-sea)* that commits to work collaboratively to achieve common goals. This agreement calls for the two agencies to develop and periodically update a [Salish Sea Action Plan](https://www.epa.gov/puget-sound/us-canada-cooperation-salish-sea), often titled Canada - U.S. Cooperation in the Salish Sea Action Plan. This plan focuses on areas where U.S. and Canada can coordinate protections and restoration priorities. It is collaboratively written by a coalition of advisory members.
 

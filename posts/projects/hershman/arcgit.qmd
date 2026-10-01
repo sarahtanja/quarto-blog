@@ -20,7 +20,7 @@ We need to:
 3.  be mindful of GitHub's large file size limits
 
     |   | GitHub limit |   |
-    |------------------------|---------------------------|------------------------|
+    |----|----|----|
     | Normal Git file | **100 MB** |  |
     | File \>50 MB | GitHub warns large file |  |
     | Browser upload | **25 MB max** | \*when uploading files directly through GitHub's website |

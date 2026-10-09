@@ -1,11 +1,11 @@
 ---
 title: "Embryonic development of Montipora capitata coral exposed to PVC leachate"
 subtitle: "An ecotoxicological assay of Montipora capitata coral embryo development and gene expression under increasing PVC leachate exposures"
-image: "night-spawn.jpg"
+image: "6L14_stitch_scale.jpg"
 about:
   id: description
   template: trestles
-  image: "night-spawn.jpg"
+  image: "6L14_stitch_scale.jpg"
   links:
     - icon: github
       text: https://github.com/sarahtanja/coral-embryo-leachate
@@ -25,11 +25,9 @@ format:
 ---
 
 :::: {#description}
-<div>
-
+::: {}
 This project is a single-stressor ecotoxicology assay experiment conducted in July 2024 at the Hawaii Institute of Marine Biology (HIMB) in Kaneohe Bay.
-
-</div>
+:::
 
 In this experiment, I track differences in embryonic development of corals exposed to PVC leachate with microscopy and RNAseq gene expression.
 

@@ -400,5 +400,53 @@
   },
   "posts/projects/hershman/arcgit.qmd": {
     "arcgit.html": "71973990"
+  },
+  "posts/projects/eelgrass/eelgrass.qmd": {
+    "eelgrass.html": "705981b0"
+  },
+  "posts/projects/eelgrass.qmd": {
+    "eelgrass.html": "ebc08b14"
+  },
+  "projects/anemone/about-anemones/about-anemone.qmd": {
+    "about-anemone.html": "77f71649"
+  },
+  "projects/anemone/anemone.qmd": {
+    "anemone.html": "8ecc77b1"
+  },
+  "projects/anemone/artemia/artemia.qmd": {
+    "artemia.html": "721b6ac5"
+  },
+  "projects/anemone/chlorophyll/chlorophyll.qmd": {
+    "chlorophyll.html": "238ba53f"
+  },
+  "projects/anemone/field-collection/18MAR24-owens-beach.qmd": {
+    "18MAR24-owens-beach.html": "5e587f78"
+  },
+  "projects/anemone/field-collection/30MAR24-alki.qmd": {
+    "30MAR24-alki.html": "9f2d7d82"
+  },
+  "projects/anemone/heat-stress/heat-wave.qmd": {
+    "heat-wave.html": "9db05236"
+  },
+  "projects/anemone/leachate-protocol/leachate-protocol.qmd": {
+    "leachate-protocol.html": "77a1278a"
+  },
+  "projects/anemone/making-chambers/making-chambers.qmd": {
+    "making-chambers.html": "8166504b"
+  },
+  "projects/anemone/oxygen-fire-sting.qmd": {
+    "oxygen-fire-sting.html": "9f753880"
+  },
+  "projects/anemone/photosynth-pam/photosynth-pam.qmd": {
+    "photosynth-pam.html": "81affa31"
+  },
+  "projects/anemone/plan/experiment-schedule.qmd": {
+    "experiment-schedule.html": "6d3bee66"
+  },
+  "projects/anemone/plan/project-planning.qmd": {
+    "project-planning.html": "bdbc4c4a"
+  },
+  "projects/hershman/background/background.qmd": {
+    "background.html": "98669655"
   }
 }

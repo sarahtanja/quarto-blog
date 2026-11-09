@@ -4,11 +4,12 @@ page-layout: full
 title-block-banner: true
 listing: 
   contents: 
-    - posts/projects/anemone.qmd
-    - posts/projects/coral-pae-temp.qmd
-    - posts/projects/coral-leachate-heat.qmd
-    - posts/projects/coral-embryo-leachate.qmd
-    - posts/projects/hershman.qmd
+    - projects/anemone/anemone.qmd
+    - projects/EPA506mix/coral-pae-temp.qmd
+    - projects/nubbins/coral-leachate-heat.qmd
+    - projects/embryos/coral-embryo-leachate.qmd
+    - projects/hershman/hershman.qmd
+    - projects/eelgrass/eelgrass.qmd
   sort: 'false'
   type: grid
   grid-item-align: center

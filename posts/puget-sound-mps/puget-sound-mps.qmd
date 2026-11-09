@@ -39,13 +39,13 @@ What are the commonly measured concentrations of microplastics in Puget Sound, W
 
 > Only microparticles 330 to 5000 μm (length; Masura et al., 2015) were categorized and measured due to the resolution of the microscope and camera. - @harris2022, p. 919
 
--   data from years 2019-2020
+- data from years 2019-2020
 
--   data from 9m depth at Seattle Aquarium intake pump in downtown Seattle
+- data from 9m depth at Seattle Aquarium intake pump in downtown Seattle
 
--   seawater matrix
+- seawater matrix
 
--   size class: 330 μm to 5000 μm
+- size class: 330 μm to 5000 μm
 
 ### Puget Sound Ecosystem Monitoring Program (PSEMP)
 
@@ -59,29 +59,29 @@ Elizabeth Ruberg, Marie Noel, Kelsey Delisle (Ocean Wise, <https://pollutiontrac
 
 [Pollution Tracker, Microplastics](https://pollutiontracker.org/contaminants/microplastics/)
 
--   Pollution Tracker Phase 1 (2015-2017) and Phase 2 (2018-2020) provide a high-quality coast wide baseline dataset
+- Pollution Tracker Phase 1 (2015-2017) and Phase 2 (2018-2020) provide a high-quality coast wide baseline dataset
 
--   During Phases 1 (2015-2017) and 2 (2018-2020), both legacy pollutants and emerging contaminants of concern were measured in sediment and mussels
+- During Phases 1 (2015-2017) and 2 (2018-2020), both legacy pollutants and emerging contaminants of concern were measured in sediment and mussels
 
--   Microplastics were characterized in sediment and mussels
+- Microplastics were characterized in sediment and mussels
 
--   Phase 1 results have been summarized in Noel et al. 2022 (under review) and will be posted once published. Key results include:
+- Phase 1 results have been summarized in Noel et al. 2022 (under review) and will be posted once published. Key results include:
 
-    -   Microplastics averaged 32.6 ± 5.3 particles per kg in sediment and 0.38 ± 0.04 particles per individual mussel
+  - Microplastics averaged 32.6 ± 5.3 particles per kg in sediment and 0.38 ± 0.04 particles per individual mussel
 
-    -   Victoria Harbour and the North Coast were microplastics hotspots along the BC coast
+  - Victoria Harbour and the North Coast were microplastics hotspots along the BC coast
 
-    -   Polyester and polyethylene dominated the polymer patterns in sediment and mussels
+  - Polyester and polyethylene dominated the polymer patterns in sediment and mussels
 
-    -   Analysis of Phase 2 microplastics samples and interpretation of results is in progress.
+  - Analysis of Phase 2 microplastics samples and interpretation of results is in progress.
 
 ### Frances Eshom-Arzadon, University of Washington School of Oceanography
 
--   Undergrad senior thesis: [Concentration of Microplastics in Beach Sediments Surrounding Seattle, Washington in the Puget Sound Estuary](https://digital.lib.washington.edu/researchworks/handle/1773/39723)
+- Undergrad senior thesis: [Concentration of Microplastics in Beach Sediments Surrounding Seattle, Washington in the Puget Sound Estuary](https://digital.lib.washington.edu/researchworks/handle/1773/39723)
 
--   size class: 300 - 5000 um
+- size class: 300 - 5000 um
 
--   Eshom-Arzadon found between \~312-30 microplastic pieces per square meter across 12 sites
+- Eshom-Arzadon found between \~312-30 microplastic pieces per square meter across 12 sites
 
 ```{r}
 site <- c('alki', 'carkeek', 'goldengardens', 'howarth', 'mukilteo', 'dash', 'tolmie', 'elliot', 'discovery', 'shine', 'picnic', 'edmonds')
@@ -114,36 +114,36 @@ eshomarzadon %>%
   theme_ipsum()
 ```
 
--   followed NOAA Marine Debris Program lab manual methods
+- followed NOAA Marine Debris Program lab manual methods
 
 > "As part of her [senior thesis](#0) project, Eshom-Arzadon visited each location once at the same time in the tidal cycle between November and February. She scraped sediment from an area just below the wrack line, the line of debris left by the high tide. She visited beaches from Tolmie State Park near Olympia, along the Seattle and Everett shorelines and as far out as Port Ludlow on the Olympic Peninsula, a control site far from populated areas." - [Hannah Hickey, UW News](#0)
 
 ### Jessica Moats, University of Washington School of Oceanography, Vertical distribution of microplastics in Hood Canal and Main Basin, Puget Sound, Washington
 
--   undergrad senior thesis
--   mentored by Kathy Newell
--   followed NOAA Marine Debris Program lab manual methods
--   3.05x10-5 g/m3 average microplastic concentration across depths and sites
--   1 cubic meter is 1000 liters
--   So we're looking at 3.05X10-8 grams per liter in seawater
+- undergrad senior thesis
+- mentored by Kathy Newell
+- followed NOAA Marine Debris Program lab manual methods
+- 3.05x10-5 g/m3 average microplastic concentration across depths and sites
+- 1 cubic meter is 1000 liters
+- So we're looking at 3.05X10-8 grams per liter in seawater
 
 ### Keely Hall, University of Washington School of Oceanography
 
--   net tows through Commencement Bay
+- net tows through Commencement Bay
 
--   seawater matrix
+- seawater matrix
 
--   data from UW Tacoma
+- data from UW Tacoma
 
--   data from years 2017 - 2018
+- data from years 2017 - 2018
 
--   63% fibers, 37% fragment in 2018
+- 63% fibers, 37% fragment in 2018
 
--   100% fibers in 2017
+- 100% fibers in 2017
 
--   \~30-4 particles per liter in 2017
+- \~30-4 particles per liter in 2017
 
--   \~4-12 particles per liter in 2018
+- \~4-12 particles per liter in 2018
 
 ### [Julie Masura](https://www.tacoma.uw.edu/news/mud-bugs-andplastic), [UW Tacoma Teaching Professor](https://directory.tacoma.uw.edu/employee/jmasura?_gl=1*1795dne*_ga*MzY0NzA1ODYuMTY0MzgyNTE5MQ..*_ga_3T65WK0BM8*MTcxMzIxMjI0MS4yNS4xLjE3MTMyMTMyMzkuMC4wLjA.*_ga_JLHM9WH4JV*MTcxMzIxMjI0MS4yNS4xLjE3MTMyMTMyMzkuMC4wLjA.)
 

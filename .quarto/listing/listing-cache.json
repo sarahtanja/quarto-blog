@@ -28,7 +28,26 @@
       "posts/projects/coral-pae-temp.qmd",
       "posts/projects/coral-leachate-heat.qmd",
       "posts/projects/coral-embryo-leachate.qmd",
-      "posts/projects/hershman.qmd"
+      "posts/projects/hershman.qmd",
+      "projects/anemone.qmd",
+      "projects/coral-pae-temp.qmd",
+      "projects/coral-leachate-heat.qmd",
+      "projects/coral-embryo-leachate.qmd",
+      "projects/hershman.qmd",
+      "projects/eelgrass/eelgrass.qmd",
+      "projects/anemanemone.qmd",
+      "projects/pthalates/coral-pae-temp.qmd",
+      "projects/embryo/coral-embryo-leachate.qmd",
+      "projects/hershman/hershman.qmd"
+    ],
+    "posts\\projects\\eelgrass\\eelgrass.qmd": [
+      "eelgrass"
+    ],
+    "posts\\projects\\eelgrass.qmd": [
+      "eelgrass"
+    ],
+    "projects\\anemone\\anemone.qmd": [
+      "anemone"
     ]
   }
 }

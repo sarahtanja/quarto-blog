@@ -1,0 +1,28 @@
+---
+title: "Eelgrass and Enterococcus in Puget Sound"
+subtitle: "Research led by Corinne Klohman and Dr. Jacqueline Padilla-Gamino on Enterococcus pathogens inside versus outside Puget Sound eelgrass meadows"
+image: "eelgrass/eelgrass.jpeg"
+about:
+  id: description
+  template: trestles
+  image: "eelgrass/eelgrass.jpeg"
+  links:
+    - text: eelgrass-filter github repository
+      href: https://github.com/sarahtanja/eelgrass-filter
+listing: 
+  contents: eelgrass
+  sort: "date desc"
+  type: table
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  fields: [date, title, subtitle, categories, reading-time]
+page-layout: full
+title-block-banner: true
+format:
+  html
+---
+
+::: {#description}
+The samples for this research were collected in 2020 at Alki Beach, Smith's Cove, and Golden Gardens.
+:::

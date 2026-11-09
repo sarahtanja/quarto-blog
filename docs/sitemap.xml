@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/projects.html</loc>
-    <lastmod>2026-09-25T00:06:20.638Z</lastmod>
+    <lastmod>2026-10-22T23:09:22.392Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/world-phthalates/index.html</loc>
@@ -42,7 +42,7 @@
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/projects/hershman.html</loc>
-    <lastmod>2026-09-24T22:51:46.098Z</lastmod>
+    <lastmod>2026-10-22T22:40:57.284Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/projects/hershman/arcgit.html</loc>
@@ -58,11 +58,11 @@
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate.html</loc>
-    <lastmod>2026-10-08T18:14:39.625Z</lastmod>
+    <lastmod>2026-10-13T18:32:59.373Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/wet-lab/collection-acclimation.html</loc>
-    <lastmod>2026-10-08T17:10:49.819Z</lastmod>
+    <lastmod>2026-10-13T18:32:59.374Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/projects/coral-embryo-leachate/transcriptomics/previous-research/previous-research.html</loc>
@@ -254,7 +254,7 @@
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/projects/hershman/background.html</loc>
-    <lastmod>2026-10-05T23:49:21.356Z</lastmod>
+    <lastmod>2026-10-22T22:11:56.740Z</lastmod>
   </url>
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts/pseudoreplication/index.html</loc>
@@ -291,5 +291,17 @@
   <url>
     <loc>https://sarahtanja.github.io/quarto-blog/posts.html</loc>
     <lastmod>2026-09-25T00:06:50.273Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sarahtanja.github.io/quarto-blog/posts/projects/eelgrass/eelgrass.html</loc>
+    <lastmod>2026-10-22T23:04:35.110Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sarahtanja.github.io/quarto-blog/posts/projects/eelgrass.html</loc>
+    <lastmod>2026-10-22T23:05:02.191Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sarahtanja.github.io/quarto-blog/projects/hershman/background/background.html</loc>
+    <lastmod>2026-11-09T20:29:00.108Z</lastmod>
   </url>
 </urlset>

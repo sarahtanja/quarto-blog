@@ -1,0 +1,52 @@
+---
+title: "spatial_sandbox"
+format: html
+---
+
+```{r setup}
+
+```
+
+```{r}
+if (!exists("pkgs", envir = .GlobalEnv)) {
+  message("Loading required packages (automatically installing any missing)")
+  pkgs = c(
+    # data manipulation
+    "tidyverse",
+    # GIS
+    "rnaturalearth",
+    "ggnewscale",
+    "grid",
+    "sf",
+    "tigris",
+    # plotting
+    "rmapshaper",
+    "patchwork",
+    "ggimage",
+    "colorspace",
+    # utility
+    "readxl",
+    "janitor", 
+    "kableExtra"
+  )
+  print(sapply(pkgs, function(pkg) {
+    if (!pkg %in% installed.packages()[, "Package"]) install.packages(pkg, dependencies = TRUE)
+    library(pkg, character.only = TRUE)
+    as.character(packageVersion(pkg)) # print package version
+  }))
+}
+```
+
+```{r}
+options(tigris_use_cache = TRUE)
+```
+
+# Load Data
+
+## NOAA MPA Inventory
+
+https://marineprotectedareas.noaa.gov/media/data/NOAA_Marine_Protected_Areas_Inventory_2023.zip
+
+```{r}
+
+```
